@@ -1,3 +1,9 @@
+mx-user (0.14.1mx141+3) mx; urgency=low
+
+  * Updated languages
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 17 Jun 2014 13:45:19 -0400
+
 mx-user (0.14.1mx141+2) mx; urgency=low
 
   * Update for MX 14.1 
