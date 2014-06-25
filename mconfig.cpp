@@ -877,7 +877,7 @@ void MConfig::on_buttonAbout_clicked() {
       configuration for antiX MX</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">\
       http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">Copyright (c) antiX<br /><br /></p>"), 0, this);
   msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
-  msgBox.addButton(QMessageBox::Cancel);
+  msgBox.addButton(tr("Cancel"), QMessageBox::DestructiveRole);
   if (msgBox.exec() == QMessageBox::AcceptRole)
     displaySite("file:///usr/local/share/doc/mx-user-license.html");
 }

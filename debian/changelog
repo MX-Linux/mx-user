@@ -1,3 +1,9 @@
+mx-user (0.14.1mx141+4) mx; urgency=low
+
+  * added button translation
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 25 Jun 2014 10:35:47 -0400
+
 mx-user (0.14.1mx141+3) mx; urgency=low
 
   * Updated languages
