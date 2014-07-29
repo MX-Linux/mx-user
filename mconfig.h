@@ -74,7 +74,6 @@ public slots:
     virtual void on_tabWidget_currentChanged();
     virtual void on_buttonApply_clicked();
     virtual void on_buttonCancel_clicked();
-    virtual void on_buttonOk_clicked();
     virtual void on_buttonAbout_clicked();
     virtual void on_buttonHelp_clicked();
 

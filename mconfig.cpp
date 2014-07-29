@@ -138,33 +138,28 @@ void MConfig::refresh() {
 
     case 1:
         refreshRestore();
-        buttonApply->setEnabled(false);
-        buttonOk->setEnabled(true);
+        buttonApply->setEnabled(false);        
         break;
 
     case 2:
         refreshDesktop();
         buttonApply->setEnabled(true);
-        buttonOk->setEnabled(false);
         break;
 
     case 3:
         refreshGroups();
         buttonApply->setEnabled(false);
-        buttonOk->setEnabled(true);
         break;
 
     case 4:
         refreshMembership();
         buttonApply->setEnabled(false);
-        buttonOk->setEnabled(true);
         break;
 
     default:
         refreshAdd();
         refreshDelete();
         buttonApply->setEnabled(false);
-        buttonOk->setEnabled(true);
         break;
     }
 }
@@ -838,12 +833,6 @@ void MConfig::on_tabWidget_currentChanged() {
 
 // close but do not apply
 void MConfig::on_buttonCancel_clicked() {
-    close();
-}
-
-// apply then close
-void MConfig::on_buttonOk_clicked() {
-    on_buttonApply_clicked();
     close();
 }
 
