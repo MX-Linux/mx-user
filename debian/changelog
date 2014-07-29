@@ -1,3 +1,9 @@
+mx-user (0.14.1mx141+5) mx; urgency=low
+
+  * added APT sources restore function
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 28 Jul 2014 21:41:44 -0400
+
 mx-user (0.14.1mx141+4) mx; urgency=low
 
   * added button translation

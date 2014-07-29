@@ -296,85 +296,7 @@
        <property name="spacing">
         <number>6</number>
        </property>
-       <item row="1" column="0" colspan="3">
-        <widget class="QGroupBox" name="restoreGroupBox">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>500</width>
-           <height>130</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>Restore Defaults</string>
-         </property>
-         <layout class="QGridLayout">
-          <property name="margin">
-           <number>9</number>
-          </property>
-          <property name="spacing">
-           <number>6</number>
-          </property>
-          <item row="0" column="0">
-           <widget class="QCheckBox" name="checkGroups">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="toolTip">
-             <string>Restore group memberships to MX defaults</string>
-            </property>
-            <property name="whatsThis">
-             <string/>
-            </property>
-            <property name="text">
-             <string>Group memberships</string>
-            </property>
-            <property name="shortcut">
-             <string>Alt+G</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QCheckBox" name="checkMozilla">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="toolTip">
-             <string>Restore browser configs to MX defaults</string>
-            </property>
-            <property name="whatsThis">
-             <string/>
-            </property>
-            <property name="text">
-             <string>Mozilla (Iceweasel or Firefox) configs</string>
-            </property>
-            <property name="shortcut">
-             <string>Alt+X</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QCheckBox" name="checkQupzilla">
-            <property name="text">
-             <string>Qupzilla configs</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item row="2" column="0" colspan="3">
+       <item row="3" column="0" colspan="3">
         <spacer>
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -419,6 +341,85 @@
             </property>
             <property name="toolTip">
              <string>Select user to repair</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="restoreGroupBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>500</width>
+           <height>130</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Restore Defaults</string>
+         </property>
+         <layout class="QGridLayout">
+          <property name="margin">
+           <number>9</number>
+          </property>
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="checkMozilla">
+            <property name="toolTip">
+             <string>Restore browser configs to MX defaults</string>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Mozilla (Iceweasel or Firefox) configs</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+X</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QCheckBox" name="checkQupzilla">
+            <property name="toolTip">
+             <string>Restore Qupzilla configs to MX defaults</string>
+            </property>
+            <property name="text">
+             <string>Qupzilla configs</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="checkGroups">
+            <property name="toolTip">
+             <string>Restore group memberships to MX defaults</string>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Group memberships</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+G</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QCheckBox" name="checkApt">
+            <property name="toolTip">
+             <string>Restore APT sources to MX defaults</string>
+            </property>
+            <property name="text">
+             <string>Restore APT sources</string>
             </property>
            </widget>
           </item>
@@ -1234,7 +1235,6 @@
   <tabstop>buttonOk</tabstop>
   <tabstop>buttonApply</tabstop>
   <tabstop>buttonCancel</tabstop>
-  <tabstop>checkGroups</tabstop>
   <tabstop>userNameEdit</tabstop>
   <tabstop>userPasswordEdit</tabstop>
   <tabstop>userPassword2Edit</tabstop>
