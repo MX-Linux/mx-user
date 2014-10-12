@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -187,31 +185,27 @@ please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="892"/>
         <source>MX User Manager</source>
-        <translation type="unfinished">MX User Manager</translation>
+        <translation>MX User Manager</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="893"/>
         <source>Simple user configuration for antiX MX</source>
-        <translation type="unfinished"></translation>
+        <translation>antiX MX のシンプルなユーザー設定</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="894"/>
         <source>Copyright (c) antiX</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="896"/>
-        <source>Cancel</source>
-        <translation type="unfinished">キャンセル</translation>
-    </message>
-    <message>
-        <source>&lt;img src=&quot;/usr/share/icons/mx-user.png&quot;      alt=&quot;logo&quot; /&gt;&lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;h2&gt;MX User Manager&lt;/h2&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MX14+git20140224&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Simple user      configuration for antiX MX&lt;/h3&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.mepiscommunity.org/mx&quot;&gt;      http://www.mepiscommunity.org/mx&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (c) antiX&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;img src=&quot;/usr/share/icons/mx-user.png&quot;      alt=&quot;logo&quot; /&gt;&lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;h2&gt;MX ユーザーマネージャー&lt;/h2&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MX14+git20140224&lt;/p&gt;&lt;p&gt;&lt;h3&gt;antiX MX のシンプルなユーザー設定&lt;/h3&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.mepiscommunity.org/mx&quot;&gt;      http://www.mepiscommunity.org/mx&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (c) antiX&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</translation>
+        <translation>Copyright (c) antiX</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="895"/>
         <source>License</source>
         <translation>ライセンス</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="896"/>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
     </message>
 </context>
 <context>
@@ -229,7 +223,7 @@ please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="56"/>
         <source>Add a new user</source>
-        <translation>新規ユーザの追加</translation>
+        <translation>新規ユーザーの追加</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="74"/>
@@ -240,17 +234,17 @@ please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="92"/>
         <location filename="../meconfig.ui" line="127"/>
         <source>Password for new user</source>
-        <translation>新規ユーザのパスワード</translation>
+        <translation>新規ユーザーのパスワード</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="95"/>
         <source>Confirm user password:</source>
-        <translation>ユーザパスワードの確認:</translation>
+        <translation>ユーザーパスワード 確認:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="108"/>
         <source>Enter password for new user</source>
-        <translation>新規ユーザのパスワードを入れて下さい</translation>
+        <translation>新規ユーザーのパスワードを入れて下さい</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="130"/>
@@ -261,7 +255,7 @@ please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="143"/>
         <location filename="../meconfig.ui" line="809"/>
         <source>Enter username of new user</source>
-        <translation>新規ユーザのユーザー名を入れて下さい</translation>
+        <translation>新規ユーザーのユーザー名を入れて下さい</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="149"/>
@@ -272,7 +266,7 @@ please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="162"/>
         <location filename="../meconfig.ui" line="828"/>
         <source>Username of new user</source>
-        <translation>新規ユーザのユーザー名</translation>
+        <translation>新規ユーザーのユーザー名</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="165"/>
@@ -287,7 +281,7 @@ please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="213"/>
         <source>Delete User Account</source>
-        <translation>ユーザアカウントの削除</translation>
+        <translation>ユーザーアカウントの削除</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="231"/>
@@ -307,7 +301,7 @@ please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="945"/>
         <location filename="../meconfig.ui" line="958"/>
         <source>Select user to delete</source>
-        <translation>削除するユーザを選択</translation>
+        <translation>削除するユーザーを選択</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="259"/>
@@ -323,47 +317,6 @@ please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="290"/>
         <source>Repair a user configuration</source>
         <translation>ユーザー設定の復旧</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="365"/>
-        <source>Restore Defaults</source>
-        <translation>デフォルトの復旧</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="403"/>
-        <source>Restore group memberships to MX defaults</source>
-        <translation>グループユーザーを MX の初期状態へ戻す</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="409"/>
-        <source>Group memberships</source>
-        <translation>グループユーザー</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="412"/>
-        <source>Alt+G</source>
-        <translation>Alt+G</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="377"/>
-        <source>Restore browser configs to MX defaults</source>
-        <translation>ブラウザ設定を MX 初期状態へ戻す</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="383"/>
-        <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation>Mozilla (Iceweasel または Firefox) 設定</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="386"/>
-        <source>Alt+X</source>
-        <translation>Alt+X</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="396"/>
-        <location filename="../meconfig.ui" line="670"/>
-        <source>Qupzilla configs</source>
-        <translation>QupZilla 設定</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="315"/>
@@ -382,19 +335,60 @@ please choose another name before proceeding.</source>
         <translation>復旧ユーザーアカウント: </translation>
     </message>
     <message>
+        <location filename="../meconfig.ui" line="365"/>
+        <source>Restore Defaults</source>
+        <translation>デフォルトの復旧</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="377"/>
+        <source>Restore browser configs to MX defaults</source>
+        <translation>ブラウザ設定を MX 初期状態へ戻す</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="383"/>
+        <source>Mozilla (Iceweasel or Firefox) configs</source>
+        <translation>Mozilla (Iceweasel または Firefox) 設定</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="386"/>
+        <source>Alt+X</source>
+        <translation>Alt+X</translation>
+    </message>
+    <message>
         <location filename="../meconfig.ui" line="393"/>
         <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Qupzilla 設定を MX のデフォルトに復旧</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="396"/>
+        <location filename="../meconfig.ui" line="670"/>
+        <source>Qupzilla configs</source>
+        <translation>QupZilla 設定</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="403"/>
+        <source>Restore group memberships to MX defaults</source>
+        <translation>グループユーザーを MX の初期状態へ戻す</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="409"/>
+        <source>Group memberships</source>
+        <translation>グループユーザー</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="412"/>
+        <source>Alt+G</source>
+        <translation>Alt+G</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="419"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>APT ソースを MX デフォルトに復旧</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="422"/>
         <source>Restore APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation>APT ソースの復旧</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="437"/>
@@ -570,19 +564,6 @@ please choose another name before proceeding.</source>
         <translation>* この適用を行う前に再度確認して下さい。誤ったグループの設定によりシステムは破壊される事がでます。もし誤った設定を行った場合、復旧タブから元の設定へ復旧する事ができます。</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1100"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Apply any changes then quit</source>
-        <translation type="obsolete">変更を適用して終了</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="1080"/>
         <source>Apply any changes</source>
         <translation>変更を適用</translation>
@@ -603,8 +584,9 @@ please choose another name before proceeding.</source>
         <translation>変更をキャンセルして終了</translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation type="obsolete">キャンセル</translation>
+        <location filename="../meconfig.ui" line="1100"/>
+        <source>Close</source>
+        <translation>閉じる</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1107"/>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -187,31 +185,27 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../mconfig.cpp" line="892"/>
         <source>MX User Manager</source>
-        <translation type="unfinished">MX Gebruikersbeheer</translation>
+        <translation>MX Gebruikersbeheer</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="893"/>
         <source>Simple user configuration for antiX MX</source>
-        <translation type="unfinished"></translation>
+        <translation>Eenvoudige gebruikersconfiguratie voor antiX MX </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="894"/>
         <source>Copyright (c) antiX</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="896"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Annuleren</translation>
-    </message>
-    <message>
-        <source>&lt;img src=&quot;/usr/share/icons/mx-user.png&quot;      alt=&quot;logo&quot; /&gt;&lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;h2&gt;MX User Manager&lt;/h2&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MX14+git20140224&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Simple user      configuration for antiX MX&lt;/h3&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.mepiscommunity.org/mx&quot;&gt;      http://www.mepiscommunity.org/mx&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (c) antiX&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;img src=&quot;/usr/share/icons/mx-user.png&quot; alt=&quot;logo&quot; /&gt;&lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;h2&gt;MX Gebruikersbeheer&lt;/h2&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MX14+git20140224&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Eenvoudige gebruikersconfiguratie voor antiX MX&lt;/h3&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.mepiscommunity.org/mx&quot;&gt; http://www.mepiscommunity.org/mx&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (c) antiX&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</translation>
+        <translation>Copyright (c) antiX</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="895"/>
         <source>License</source>
         <translation>Licentie</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="896"/>
+        <source>Cancel</source>
+        <translation>Cancel</translation>
     </message>
 </context>
 <context>
@@ -245,7 +239,7 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../meconfig.ui" line="95"/>
         <source>Confirm user password:</source>
-        <translation>Bevestig wachtwoord voor de gebruiker:</translation>
+        <translation>Bevestig gebruikerswachtwoord:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="108"/>
@@ -325,24 +319,25 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>Een gebruikersconfiguratie repareren</translation>
     </message>
     <message>
+        <location filename="../meconfig.ui" line="315"/>
+        <source>Repair User Account</source>
+        <translation>Repareer Gebruikersaccount</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="327"/>
+        <location filename="../meconfig.ui" line="343"/>
+        <source>Select user to repair</source>
+        <translation>Selecteer een gebruiker voor reparatie</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="330"/>
+        <source>User account to repair:</source>
+        <translation>Gebruikersaccount dat gerepareerd moet worden:</translation>
+    </message>
+    <message>
         <location filename="../meconfig.ui" line="365"/>
         <source>Restore Defaults</source>
         <translation>Standaardinstellingen herstellen</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="403"/>
-        <source>Restore group memberships to MX defaults</source>
-        <translation>Herstel groepslidmaatschappen naar MX standaard</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="409"/>
-        <source>Group memberships</source>
-        <translation>Groepslidmaatschappen</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="412"/>
-        <source>Alt+G</source>
-        <translation>Alt+G</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="377"/>
@@ -360,41 +355,40 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>Alt+X</translation>
     </message>
     <message>
+        <location filename="../meconfig.ui" line="393"/>
+        <source>Restore Qupzilla configs to MX defaults</source>
+        <translation>Herstel Qupzilla configuraties naar MX standaard</translation>
+    </message>
+    <message>
         <location filename="../meconfig.ui" line="396"/>
         <location filename="../meconfig.ui" line="670"/>
         <source>Qupzilla configs</source>
         <translation>Qupzilla configuraties</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="315"/>
-        <source>Repair User Account</source>
-        <translation>Repareer Gebruikersaccount</translation>
+        <location filename="../meconfig.ui" line="403"/>
+        <source>Restore group memberships to MX defaults</source>
+        <translation>Herstel groepslidmaatschappen naar MX standaard</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="327"/>
-        <location filename="../meconfig.ui" line="343"/>
-        <source>Select user to repair</source>
-        <translation>Selecteer een gebruiker voor reparatie</translation>
+        <location filename="../meconfig.ui" line="409"/>
+        <source>Group memberships</source>
+        <translation>Groepslidmaatschappen</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="330"/>
-        <source>User account to repair:</source>
-        <translation>Gebruikersaccount dat gerepareerd moet worden:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="393"/>
-        <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <location filename="../meconfig.ui" line="412"/>
+        <source>Alt+G</source>
+        <translation>Alt+G</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="419"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Herstel APT bronnen naar MX standaard</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="422"/>
         <source>Restore APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Herstel APT bronnen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="437"/>
@@ -570,19 +564,6 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>*Controleer a.u.b. uw selecties alvorens deze toe te passen, het toewijzen van verkeerde groepslidmaatschappen kan uw systeem schade toebrengen. Gebruik de Repareer tab om de originele lidmaatschappen terug te zetten als u een fout heeft gemaakt.</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1100"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Apply any changes then quit</source>
-        <translation type="obsolete">Veranderingen toepassen en dan afsluiten</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="1080"/>
         <source>Apply any changes</source>
         <translation>Veranderingen toepassen</translation>
@@ -600,11 +581,12 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../meconfig.ui" line="1097"/>
         <source>Cancel any changes then quit</source>
-        <translation>Veranderingen ongedaan maken, daarna afsluiten</translation>
+        <translation>Iedere verandering ongedaan maken, dan afsluiten</translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Annuleren</translation>
+        <location filename="../meconfig.ui" line="1100"/>
+        <source>Close</source>
+        <translation>Sluiten</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1107"/>

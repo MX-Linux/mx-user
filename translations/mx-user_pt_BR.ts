@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="pt_BR">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt_BR" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -185,27 +183,27 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../mconfig.cpp" line="892"/>
         <source>MX User Manager</source>
-        <translation type="unfinished">Gerenciador de Usuários do MX</translation>
+        <translation>Gerenciador de Usuários do MX</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="893"/>
         <source>Simple user configuration for antiX MX</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="894"/>
         <source>Copyright (c) antiX</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="896"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Cancelar</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="895"/>
         <source>License</source>
         <translation>licença</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="896"/>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
     </message>
 </context>
 <context>
@@ -319,9 +317,51 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
         <translation>Reparar uma configuração de usuário</translation>
     </message>
     <message>
+        <location filename="../meconfig.ui" line="315"/>
+        <source>Repair User Account</source>
+        <translation>Repara Conta de Usuário</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="327"/>
+        <location filename="../meconfig.ui" line="343"/>
+        <source>Select user to repair</source>
+        <translation>Selecione o usuário a reparar</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="330"/>
+        <source>User account to repair:</source>
+        <translation>Conta de usuário para reparo:</translation>
+    </message>
+    <message>
         <location filename="../meconfig.ui" line="365"/>
         <source>Restore Defaults</source>
         <translation>Restaurar o Padrão</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="377"/>
+        <source>Restore browser configs to MX defaults</source>
+        <translation>Restaurar a configuração do navegador ao padrão no MX</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="383"/>
+        <source>Mozilla (Iceweasel or Firefox) configs</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="386"/>
+        <source>Alt+X</source>
+        <translation>Alt+X</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="393"/>
+        <source>Restore Qupzilla configs to MX defaults</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="396"/>
+        <location filename="../meconfig.ui" line="670"/>
+        <source>Qupzilla configs</source>
+        <translation>Configuração do Qupzilla</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="403"/>
@@ -339,56 +379,14 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
         <translation>Alt+G</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="377"/>
-        <source>Restore browser configs to MX defaults</source>
-        <translation>Restaurar a configuração do navegador ao padrão no MX</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="383"/>
-        <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="386"/>
-        <source>Alt+X</source>
-        <translation>Alt+X</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="396"/>
-        <location filename="../meconfig.ui" line="670"/>
-        <source>Qupzilla configs</source>
-        <translation>Configuração do Qupzilla</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="315"/>
-        <source>Repair User Account</source>
-        <translation>Repara Conta de Usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="327"/>
-        <location filename="../meconfig.ui" line="343"/>
-        <source>Select user to repair</source>
-        <translation>Selecione o usuário a reparar</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="330"/>
-        <source>User account to repair:</source>
-        <translation>Conta de usuário para reparo:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="393"/>
-        <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="419"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="422"/>
         <source>Restore APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="437"/>
@@ -465,12 +463,12 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../meconfig.ui" line="637"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="640"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="653"/>
@@ -556,25 +554,12 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../meconfig.ui" line="1003"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1026"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="1100"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Apply any changes then quit</source>
-        <translation type="obsolete">Aplicar as mudanças e encerrar</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1080"/>
@@ -597,8 +582,9 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
         <translation>Cancelar mudanças e encerrar</translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Cancelar</translation>
+        <location filename="../meconfig.ui" line="1100"/>
+        <source>Close</source>
+        <translation>Encerrar</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1107"/>
@@ -613,7 +599,7 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../meconfig.ui" line="1148"/>
         <source>Help</source>
-        <translation>Ajudar</translation>
+        <translation>Ajuda</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1155"/>
