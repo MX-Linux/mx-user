@@ -1,3 +1,27 @@
+mx-user (14.2+1) mx; urgency=low
+
+  * added APT sources restore function, changed version format
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 11 Oct 2014 16:32:25 -0400
+
+mx-user (0.14.1mx141+5) mx; urgency=low
+
+  * added APT sources restore function
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 28 Jul 2014 21:41:44 -0400
+
+mx-user (0.14.1mx141+4) mx; urgency=low
+
+  * added button translation
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 25 Jun 2014 10:35:47 -0400
+
+mx-user (0.14.1mx141+3) mx; urgency=low
+
+  * Updated languages
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 17 Jun 2014 13:45:19 -0400
+
 mx-user (0.14.1mx141+2) mx; urgency=low
 
   * Update for MX 14.1 

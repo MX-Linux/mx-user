@@ -27,14 +27,14 @@
 #include <qtimer.h>
 
 class MConfig : public QDialog, public Ui::MEConfig {
-  Q_OBJECT
-  protected:
+    Q_OBJECT
+protected:
     QProcess *proc;
     QTimer *timer;
 
 public:
-  MConfig(QWidget* parent = 0);
-  ~MConfig();
+    MConfig(QWidget* parent = 0);
+    ~MConfig();
     // helpers
     static QString getCmdOut(QString cmd);
     static QStringList getCmdOuts(QString cmd);
@@ -74,7 +74,6 @@ public slots:
     virtual void on_tabWidget_currentChanged();
     virtual void on_buttonApply_clicked();
     virtual void on_buttonCancel_clicked();
-    virtual void on_buttonOk_clicked();
     virtual void on_buttonAbout_clicked();
     virtual void on_buttonHelp_clicked();
 
@@ -84,7 +83,7 @@ private:
     static bool hasInternetConnection();
     static void executeChild(const char* cmd, const char* param);
 protected slots:
-  /*$PROTECTED_SLOTS$*/
+    /*$PROTECTED_SLOTS$*/
 
 };
 

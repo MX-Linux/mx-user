@@ -21,25 +21,25 @@
 #include <unistd.h>
 
 int main( int argc, char ** argv ) {
-  QApplication app(argc, argv);
-  app.setWindowIcon(QIcon("/usr/share/icons/mx-user.png"));
+    QApplication app(argc, argv);
+    app.setWindowIcon(QIcon("/usr/share/pixmaps/mx/mx-user.png"));
 
-  QTranslator qtTran;
-  qtTran.load(QString("qt_") + QLocale::system().name());
-  app.installTranslator(&qtTran);
-  QTranslator appTran;
-  appTran.load(QString("mx-user_") + QLocale::system().name(), "/usr/share/mx-user/locale");
-  app.installTranslator(&appTran);
+    QTranslator qtTran;
+    qtTran.load(QString("qt_") + QLocale::system().name());
+    app.installTranslator(&qtTran);
+    QTranslator appTran;
+    appTran.load(QString("mx-user_") + QLocale::system().name(), "/usr/share/mx-user/locale");
+    app.installTranslator(&appTran);
 
-  if (getuid() == 0) {
-    MConfig mw;
-    mw.show();
-    return app.exec();
-  } else {
-    QApplication::beep();
-    QMessageBox::critical(0, QString::null,
-     QApplication::tr("You must run this program as root."));
-   return 1;
-  }
+    if (getuid() == 0) {
+        MConfig mw;
+        mw.show();
+        return app.exec();
+    } else {
+        QApplication::beep();
+        QMessageBox::critical(0, QString::null,
+                              QApplication::tr("You must run this program as root."));
+        return 1;
+    }
 }
 

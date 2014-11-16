@@ -1,5 +1,5 @@
-mx-user 			 usr/sbin
+mx-user 		 usr/sbin
 mx-user.desktop		 usr/share/applications/mx
-mx-user.png       usr/share/pixmaps/mx
+mx-user.png              usr/share/pixmaps/mx
 translations/*.qm 	 usr/share/mx-user/locale
 icons/*                  usr/share/mx-user/icons
