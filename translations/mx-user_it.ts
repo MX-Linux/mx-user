@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
         <location filename="mconfig.cpp" line="320"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>Es repararà la configuració d&apos;usuari. Si us plau, tanqueu tots els altres programes. En acabar, torneu a entrar o arrencar. Esteu segur que voleu reparar-ho ara?</translation>
+        <translation>La configurazione utente verrà riparata. Ora chiudi tutte le altre applicazioni. Quando avrai finito dovrai riavviare o chiudere il computer. Sei sicuro di voler fare la riparazione ora?</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="321"/>
@@ -13,7 +13,7 @@
         <location filename="mconfig.cpp" line="571"/>
         <location filename="mconfig.cpp" line="598"/>
         <source>Yes</source>
-        <translation>Sí</translation>
+        <translation>Sì</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="321"/>
@@ -27,168 +27,170 @@
     <message>
         <location filename="mconfig.cpp" line="383"/>
         <source>You must specify a &apos;copy to&apos; destination. You can not copy to the desktop you are logged in to.</source>
-        <translation>Cal especificar una destinació per a copiar. No podeu copiar-ho a l&apos;escriptori on esteu ara.</translation>
+        <translation>Devi specificare una destinazione in cui copiare. Non puoi copiare nella scrivania, anche chiamata desktop, in cui hai eseguito l&apos;accesso.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="387"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation>Abans de copiar, cal tancar tots els altres programes. Assegureu-vos que la destinació te prou lloc per encabir tots els fitxers que copiareu. Copiar entre escriptoris pot sobreescriure o esborrar fitxers o preferències a l&apos;escriptori destinació. Esteu segur que voleu continuar?</translation>
+        <translation>Prima della copia, chiudi tutte le altre applicazioni. Assicurati che la destinazione della copia sia abbastanza larga da contenere i file che stai copiando. La copiatura tra  desktops potrebbe sovrascrivere o eliminare i tuoi file o preferenze sul desktop di destinazione. Sei sicuro di voler procedere?</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="412"/>
         <source>Synchronizing desktop...</source>
-        <translation>Sincronitzant escriptori...</translation>
+        <translation>Sincronizzazione del desktop in corso...</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="414"/>
         <source>Copying desktop...</source>
-        <translation>Copiant escriptori...</translation>
+        <translation>Copia del desktop in corso...</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="437"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>El nom d&apos;usuari ha de tenir com a mínim 2 caràcters. Si us plau, trieu un nom més llarg abans de continuar.</translation>
+        <translation>Il nome utente deve essere lungo almeno 2 caratteri. Per favore, seleziona un nome più lungo prima di procedere.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="441"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
-        <translation>El nom d&apos;usuari ha d&apos;estar en minúscules i no pot contenir caràcters especials o espais.
-Si us plau, escolliu un altre nom abans de continuar.</translation>
+        <translation>Il nome utente deve essere scritto in minuscolo
+e non può contenere caratteri speciali o spazi
+prego, scegli un altro nome prima di procedere.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="450"/>
         <source>Sorry that name is in use. Please select a different name.</source>
-        <translation>Ho sento, aquest nom ja està en ús. Si us plau, trieu-ne un altre.</translation>
+        <translation>Spiacente, quel nome è già in uso. Prego, scegli un nome differente.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="455"/>
         <source>The user password entries do not match.  Please try again.</source>
-        <translation>Les contrasenyes d&apos;entrada no coincideixen. Proveu-ho un altre cop.</translation>
+        <translation>Utente e password inseriti non corrispondono. Prego, riprova.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="460"/>
         <source>The user password needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>La contrasenya d&apos;usuari ha de tenir com a mínim 2 caràcters. Si us plau, trieu-ne una altra més llarga.</translation>
+        <translation>La password utente deve essere lunga almeno 2 caratteri. Prego, scegli un nome più lungo prima di procedere.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="488"/>
         <source>The user was added ok.</source>
-        <translation>S&apos;ha afegit l&apos;usuari correctament.</translation>
+        <translation>Utente aggiunto con successo.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="492"/>
         <source>Failed to add the user.</source>
-        <translation>Ha fallat en afegir l&apos;usuari.</translation>
+        <translation>Aggiunta dell&apos;utente fallita.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="497"/>
         <source>This action can not be undone. Are you sure you want to delete user %1?</source>
-        <translation>Aquesta acció és irreversible. Esteu segur que voleu esborrar l&apos;usuari %1 ?</translation>
+        <translation>Questa azione non può essere annullata. Sei sicuro di volere eliminare l&apos;utente %1?</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="527"/>
         <source>The user has been deleted.</source>
-        <translation>L&apos;usuari ha estat esborrat.</translation>
+        <translation>L&apos;utente è stato eliminato.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="530"/>
         <source>Failed to delete the user.</source>
-        <translation>No s&apos;ha pogut eliminar l&apos;usuari.</translation>
+        <translation>Eliminazione dell&apos;utente fallita.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="543"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>El nom de grups ha de tenir com a mínim 2 caràcters. Si us plau, trieu un nom més llarg abans de continuar.</translation>
+        <translation>Il nome del gruppo deve essere lungo almeno 2 caratteri. Prego, seleziona un nome più lungo prima di procedere.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="547"/>
         <source>The group name needs be lower case and it 
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
-        <translation>El nom  ha d&apos;estar en minúscules i no pot contenir caràcters especials o espais.
-Si us plau, escolliu un altre nom abans de continuar.</translation>
+        <translation>ll nome del gruppo deve essere scritto in minuscolo 
+e non può contenere caratteri speciali o spazi
+prego, scegli un altro nome prima di procedere.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="556"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
-        <translation>Ho sento, aquest nom de grups ja està en ús. Si us plau, trieu-ne un altre.</translation>
+        <translation>Spiacente, esiste già un gruppo con quel nome. Prego, scegli un nome differente.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="563"/>
         <source>The system group was added ok.</source>
-        <translation>S&apos;ha afegit la grups correctament.</translation>
+        <translation>Il gruppo di sistema è stato aggiunto con successo.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="566"/>
         <source>Failed to add the system group.</source>
-        <translation>Ha fallat en afegir la grups</translation>
+        <translation>Aggiunta del gruppo di sistema fallita.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="569"/>
         <source>This action can not be undone. Are you sure you want to delete group %1?</source>
-        <translation>Aquesta acció és irreversible. Esteu segur que voleu esborrar grup %1 ?</translation>
+        <translation>Questa azione non può essere annullata. Sei sicuro di volere eliminare il gruppo %1?</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="576"/>
         <source>The group has been deleted.</source>
-        <translation>El grup ha estat eliminat.</translation>
+        <translation>Il gruppo è stato eliminato.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="579"/>
         <source>Failed to delete the group.</source>
-        <translation>Error en eliminar el grup.</translation>
+        <translation>Eliminazione del gruppo fallita.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="597"/>
         <source>Are you sure you want to make these changes?</source>
-        <translation>Està segur que vol fer aquests canvis?</translation>
+        <translation>Sei sicuro di voler fare questi cambiamenti?</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="603"/>
         <source>The changes have been applied.</source>
-        <translation>S&apos;han aplicat els canvis.</translation>
+        <translation>I cambiamenti sono stati applicati.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="606"/>
         <source>Failed to apply group changes</source>
-        <translation>Error en aplicar canvis de grup</translation>
+        <translation>Applicazione dei cambiamenti del gruppo fallita</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="667"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Sincronitzant escriptori... Bé</translation>
+        <translation>Sincronizzazione del desktop in corso... OK</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="669"/>
         <source>Copying desktop...ok</source>
-        <translation>Copiant escriptori... Bé</translation>
+        <translation>Copia del desktop in corso... OK</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="673"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Sincronitzant escriptori... fallat</translation>
+        <translation>Sincronizzazione del desktop... fallita</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="675"/>
         <source>Copying desktop...failed</source>
-        <translation>Copiant escriptori... fallat</translation>
+        <translation>Copia del desktop... fallita</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="891"/>
         <source>About MX User Manager</source>
-        <translation>Quant a Administrador d&apos;Usuaris de MX</translation>
+        <translation>A proposito di MX Manager Utenti</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="892"/>
         <source>MX User Manager</source>
-        <translation>Administrador d&apos;Usuaris MX</translation>
+        <translation>MX Manager Utenti</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="893"/>
         <source>Simple user configuration for antiX MX</source>
-        <translation>Configuració d&apos;Usuari simple per antiX MX</translation>
+        <translation>Semplice configurazione utente per antiX MX</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="894"/>
@@ -198,12 +200,12 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
     <message>
         <location filename="mconfig.cpp" line="895"/>
         <source>License</source>
-        <translation>Llicència</translation>
+        <translation>Licenza</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="896"/>
         <source>Cancel</source>
-        <translation>Cancel·la</translation>
+        <translation>Annulla</translation>
     </message>
 </context>
 <context>
@@ -211,85 +213,85 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
     <message>
         <location filename="meconfig.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>Administrador d&apos;Usuaris MX</translation>
+        <translation>MX Manager Utenti</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="53"/>
         <source>Add/Remove User</source>
-        <translation>Afegir / treure </translation>
+        <translation>Aggiungi/Rimuovi un utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="56"/>
         <source>Add a new user</source>
-        <translation>Afegeix nou usuari</translation>
+        <translation>Aggiungi un nuovo utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="74"/>
         <source>Add User Account</source>
-        <translation>Compte d&apos;usuari afegit</translation>
+        <translation>Aggiungi un account utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="92"/>
         <location filename="meconfig.ui" line="127"/>
         <source>Password for new user</source>
-        <translation>Contrasenya pel nou usuari</translation>
+        <translation>Password per il nuovo utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="95"/>
         <source>Confirm user password:</source>
-        <translation>Confirmeu la contrasenya d&apos;usuari:</translation>
+        <translation>Conferma la password dell&apos;utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="108"/>
         <source>Enter password for new user</source>
-        <translation>Introduïu la contrasenya pel nou usuari</translation>
+        <translation>Inserisci la password per il nuovo utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="130"/>
         <source>User password:</source>
-        <translation>Contrasenya d&apos;usuari:</translation>
+        <translation>Password dell&apos;utente:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="143"/>
         <location filename="meconfig.ui" line="809"/>
         <source>Enter username of new user</source>
-        <translation>Entreu el nom del nou usuari</translation>
+        <translation>Inserisci il nome utente del nuovo utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="149"/>
         <source>username</source>
-        <translation>nomdusuari</translation>
+        <translation>nome utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="162"/>
         <location filename="meconfig.ui" line="828"/>
         <source>Username of new user</source>
-        <translation>Nom del nou usuari</translation>
+        <translation>Nome utente del nuovo utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="165"/>
         <source>User login name:</source>
-        <translation>Nom d&apos;entrada de l&apos;usuari:</translation>
+        <translation>Nome di Login dell&apos;utente:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="178"/>
         <source>Reenter password for new user</source>
-        <translation>Torneu a entrar la contrasenya pel nou usuari</translation>
+        <translation>Re-inserisci la password del nuovo utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="213"/>
         <source>Delete User Account</source>
-        <translation>Esborra un compte d&apos;usuari</translation>
+        <translation>Elimina l&apos;account utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="231"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation>Esborra també el directori personal</translation>
+        <translation>Elimina anche la cartella home dell&apos;utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="234"/>
         <source>Delete user home directory</source>
-        <translation>Eliminar el directori d&apos;inici de l&apos;usuari</translation>
+        <translation>Elimina la cartella home dell&apos;utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="250"/>
@@ -299,53 +301,53 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
         <location filename="meconfig.ui" line="945"/>
         <location filename="meconfig.ui" line="958"/>
         <source>Select user to delete</source>
-        <translation>Trieu l&apos;usuari a esborrar</translation>
+        <translation>Seleziona l&apos;utente da eliminare</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="259"/>
         <source>User to delete:</source>
-        <translation>Usuari a esborrar:</translation>
+        <translation>Utente da eliminare:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="287"/>
         <source>Repair</source>
-        <translation>Repara</translation>
+        <translation>Ripara</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="290"/>
         <source>Repair a user configuration</source>
-        <translation>Repara una configuració d&apos;usuari</translation>
+        <translation>Ripara una configurazione utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="315"/>
         <source>Repair User Account</source>
-        <translation>Reparació de comptes d&apos;usuari</translation>
+        <translation>Ripara un account utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="327"/>
         <location filename="meconfig.ui" line="343"/>
         <source>Select user to repair</source>
-        <translation>Trieu l&apos;usuari a reparar</translation>
+        <translation>Seleziona un utente da riparare</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="330"/>
         <source>User account to repair:</source>
-        <translation>Compte d&apos;usuari a la reparació:</translation>
+        <translation>Account utente da riparare:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="365"/>
         <source>Restore Defaults</source>
-        <translation>Restaura Predeterminats</translation>
+        <translation>Ripristina predefiniti</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="377"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation>Restaura navegador a predeterminats de MX</translation>
+        <translation>Riporta le configurazioni del browser a quelle predefinite di MX</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="383"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation>Paràmetres de Mozilla (Iceweasel o Firefox)</translation>
+        <translation>Configurazioni di Mozilla (Iceweasel o Firefox)</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="386"/>
@@ -355,23 +357,23 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
     <message>
         <location filename="meconfig.ui" line="393"/>
         <source>Restore Qupzilla configs to MX defaults</source>
-        <translation>Restaura la configuració de Qupzilla als predeterminats de MX</translation>
+        <translation>Riporta le configurazioni di Qupzilla a quelle predefinite di MX</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="396"/>
         <location filename="meconfig.ui" line="670"/>
         <source>Qupzilla configs</source>
-        <translation>Configuració de Qupzilla</translation>
+        <translation>Configurazioni di Qupzilla</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="403"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation>Restaura l&apos;afiliació a grups als predeterminats MX</translation>
+        <translation>Ripristina le appartenenze al gruppo a quelli predefiniti di MX</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="409"/>
         <source>Group memberships</source>
-        <translation>Afiliació a Grups</translation>
+        <translation>Appartenenze al gruppo</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="412"/>
@@ -381,49 +383,49 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
     <message>
         <location filename="meconfig.ui" line="419"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation>Restaura les fonts d&apos;APT als predeterminats de MX</translation>
+        <translation>Ripristina le sorgenti del software di APT a quelli predefiniti di MX</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="422"/>
         <source>Restore APT sources</source>
-        <translation>Restaura les fonts d&apos;APT</translation>
+        <translation>Ripristina le sorgenti del software di APT</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="437"/>
         <source>Copy/Sync</source>
-        <translation>Còpia/Sinc</translation>
+        <translation>Copia/Sincronizza</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="455"/>
         <source>Copy Between Desktops</source>
-        <translation>Copia entre escriptoris</translation>
+        <translation>Copia tra  i Desktops</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="473"/>
         <source>Select to copy and then delete differences</source>
-        <translation>Marqueu per copiar i després esborrar diferències</translation>
+        <translation>Seleziona per copiare e poi eliminare le differenze</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="476"/>
         <source>Sync</source>
-        <translation>Sinc</translation>
+        <translation>Sincronizza</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="492"/>
         <location filename="meconfig.ui" line="568"/>
         <source>Select desktop to copy from</source>
-        <translation>Trieu l&apos;escriptori des d&apos;on copiar</translation>
+        <translation>Seleziona il desktop da cui copiare</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="501"/>
         <source>Copy from:</source>
-        <translation>Copia de:</translation>
+        <translation>Copia da:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="514"/>
         <location filename="meconfig.ui" line="536"/>
         <source>Select desktop to copy to</source>
-        <translation>Trieu l&apos;escrptori a on copiar</translation>
+        <translation>Seleziona il desktop su cui copiare</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="523"/>
@@ -433,143 +435,143 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
     <message>
         <location filename="meconfig.ui" line="549"/>
         <source>Select to only copy files</source>
-        <translation>Marqueu per copiar només fitxers</translation>
+        <translation>Seleziona per copiare solo i file</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="552"/>
         <source>Copy only</source>
-        <translation>Només copiar</translation>
+        <translation>Copia solo</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="602"/>
         <source>Select to copy/sync Shared</source>
-        <translation>Marqueu per copiar/sincronitzar Shared</translation>
+        <translation>Seleziona per copiare/sincronizzare la cartella Condivisa </translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="605"/>
         <source>Shared folder</source>
-        <translation>Directori Shared</translation>
+        <translation>Cartella Condivisa</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="618"/>
         <source>Select to copy/sync entire home</source>
-        <translation>Marqueu per copiar/sinc. tot el directori d&apos;inici</translation>
+        <translation>Seleziona per copiare/sincronizzare l&apos;intera home</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="621"/>
         <source>Entire home</source>
-        <translation>Tot el directori d&apos;Inici</translation>
+        <translation>Intera home</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="637"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation>Marqueu per copiar/sinc la configuració del navegador</translation>
+        <translation>Seleziona per copiare/sincronizzare la configurazione del browser</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="640"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation>Configuració de Mozilla (Firefox o Iceweasel)</translation>
+        <translation>Configurazioni di Mozilla (Firefox o Iceweasel)</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="653"/>
         <source>Select to copy/sync Documents</source>
-        <translation>Marqueu per copiar/sinc. Documents</translation>
+        <translation>Seleziona per copiare/sincronizzare la cartella Documenti</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="656"/>
         <source>Documents folder</source>
-        <translation>Directori de Documents</translation>
+        <translation>Cartella Documenti</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="663"/>
         <source>What to copy/sync:</source>
-        <translation>Què Copiar/Sincronitzar</translation>
+        <translation>Cosa copiare/sincronizzare:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="686"/>
         <source>Progress</source>
-        <translation>Progrés</translation>
+        <translation>Avanzamento</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="707"/>
         <location filename="meconfig.ui" line="723"/>
         <source>Status of the changes</source>
-        <translation>Estat dels canvis</translation>
+        <translation>Stato dei cambiamenti</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="726"/>
         <source>Status:</source>
-        <translation>Estat:</translation>
+        <translation>Stato:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="742"/>
         <source>Progress of the changes</source>
-        <translation>Progrés dels canvis</translation>
+        <translation>Avanzamento dei cambiamenti</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="779"/>
         <source>Add/Remove Groups</source>
-        <translation>Afegir / treure grups</translation>
+        <translation>Aggiungi/Rimuovi dei gruppi</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="791"/>
         <source>Add Group</source>
-        <translation>Afegir grup</translation>
+        <translation>Aggiungi un gruppo</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="815"/>
         <source>groupname</source>
-        <translation>nombregrupo</translation>
+        <translation>nome del gruppo</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="831"/>
         <source>Group name:</source>
-        <translation>Nom del grup:</translation>
+        <translation>Nome del gruppo:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="847"/>
         <source>Delete Group</source>
-        <translation>Eliminar grup</translation>
+        <translation>Elimina gruppo</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="874"/>
         <source>Group to delete:</source>
-        <translation>Grup eliminar:</translation>
+        <translation>Gruppo da eliminare:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="915"/>
         <source>Group Membership</source>
-        <translation>Pertinença a grups</translation>
+        <translation>Gruppo di appartenenza</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="927"/>
         <source>Modify User Account</source>
-        <translation>Modificar comptes d&apos;usuari</translation>
+        <translation>Modifica Account Utente</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="967"/>
         <source>User to change:</source>
-        <translation>Usuari canviar:</translation>
+        <translation>Utente da cambiare:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1003"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation>Grups d&apos;usuaris pertany (canviar els grups seleccionant / deseleccionant les caselles corresponents):</translation>
+        <translation>Appartenenza utente ai gruppi (cambiare i gruppi selezionando/deselezionando le caselle corrispondenti):</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1026"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>* Si us plau revisi de nou les seves seleccions abans d&apos;aplicar, l&apos;assignació de la pertinença a grups equivocades pot trencar el sistema. Utilitzeu la fitxa Reparar per restaurar les afiliacions originals si cometeu un error.</translation>
+        <translation>* Si prega di ricontrollare le tue selezionii prima di applicare, assegnando le appartenenze a gruppi sbagliati si può danneggiare il sistema. Se hai fatto un errore, utilizza la scheda Riparazione per ripristinare le appartenenze originali.</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1080"/>
         <source>Apply any changes</source>
-        <translation>Aplica els canvis</translation>
+        <translation>Applica tutti i cambiamenti</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1083"/>
         <source>Apply</source>
-        <translation>Aplica</translation>
+        <translation>Applica</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1090"/>
@@ -579,12 +581,12 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
     <message>
         <location filename="meconfig.ui" line="1097"/>
         <source>Cancel any changes then quit</source>
-        <translation>Cancel·la els canvis i surt</translation>
+        <translation>Cancella tutte le modifiche quando chiudi</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1100"/>
         <source>Close</source>
-        <translation>Tanca</translation>
+        <translation>Chiudi</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1107"/>
@@ -594,12 +596,12 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
     <message>
         <location filename="meconfig.ui" line="1145"/>
         <source>Display help </source>
-        <translation>Mostra ajuda</translation>
+        <translation>Visualizza aiuto</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1148"/>
         <source>Help</source>
-        <translation>Ajuda</translation>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1155"/>
@@ -609,12 +611,12 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
     <message>
         <location filename="meconfig.ui" line="1162"/>
         <source>About this application</source>
-        <translation>Quant al programa</translation>
+        <translation>A proposito di questa applicazione</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1165"/>
         <source>About...</source>
-        <translation>Quant a...</translation>
+        <translation>A proposito di...</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1172"/>
@@ -627,7 +629,7 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
     <message>
         <location filename="main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>Cal ser administrador per executar aquest programa</translation>
+        <translation>Devi eseguire questo programma come amministratore</translation>
     </message>
 </context>
 </TS>
