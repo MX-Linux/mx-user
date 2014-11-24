@@ -5,6 +5,7 @@ TRANSLATIONS += translations/mx-user_ca.ts \
                 translations/mx-user_de.ts \
                 translations/mx-user_es.ts \
                 translations/mx-user_fr.ts \
+                translations/mx-user_it.ts \
                 translations/mx-user_ja.ts \
                 translations/mx-user_nl.ts \
                 translations/mx-user_pt_BR.ts \ 
