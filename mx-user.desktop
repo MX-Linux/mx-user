@@ -1,20 +1,22 @@
 [Desktop Entry]
 Name=MX User Manager
 Name[ca]=Administrador d'Usuaris MX
-Name[de]=MX Benutzer-Manager
-Name[es]=Gestor de usuarios de MX
-Name[fr]=MX Gestionnaire des utilisateurs
+Name[de]=Benutzer-Manager für MX
+Name[el]=διαχειριστής του χρήστη για MX
+Name[es]=Gestor de usuarios para MX
+Name[fr]=Gestionnaire de l'utilisateur pour MX
+Name[it]=Gestore di utenti per MX
 Name[ja]=MX ユーザーマネージャー
 Name[nl]=MX Gebruikersbeheer
 Name[pt_BR]=Gerenciador de Usuários do MX
 Name[ro]=MX Manager Utilizator
-Name[sv]=MX Användarhanterare
+Name[ru]=абонентская система управления для MX
+Name[sv]=Användarhanterare för MX
 Comment=Simple user configuration
 Comment[ca]=Configuració d'Usuari simple
 Comment[de]=Einfache Benutzer-Konfiguration
 Comment[es]=Configuración simple de usuarios
 Comment[fr]=Configuration utilisateur simple
-Comment[ja]=Simple user configuration
 Comment[nl]=Eenvoudige gebruikersconfiguratie
 Comment[pt_BR]=Simple user configuration
 Comment[ro]=Simplu configurator de conturi utilizator 
