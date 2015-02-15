@@ -138,7 +138,7 @@ void MConfig::refresh() {
 
     case 1:
         refreshRestore();
-        buttonApply->setEnabled(false);        
+        buttonApply->setEnabled(false);
         break;
 
     case 2:
@@ -356,7 +356,7 @@ void MConfig::applyRestore() {
         cmd = QString("mv -b %1/MX-14_sources-master/* /etc/apt/sources.list.d/").arg(path);
         system(cmd.toAscii());
         // delete temp folder
-        cmd = QString("rm -rf %1").arg(path);        
+        cmd = QString("rm -rf %1").arg(path);
         system(cmd.toAscii());
         // get system language
         QString lang = getCmdOut("grep 'LANG=' /etc/default/locale | cut -f2 -d= | cut -f1 -d.");
@@ -885,31 +885,28 @@ void MConfig::executeChild(const char* cmd, const char* param)
     }
 }
 
+// Get version of the program
+QString MConfig::getVersion(QString name) {
+    QString cmd = QString("dpkg -l %1 | awk 'NR==6 {print $3}'").arg(name);
+    return getCmdOut(cmd);
+}
+
 // show about
 void MConfig::on_buttonAbout_clicked() {
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX User Manager"), "<p align=\"center\"><b><h2>" +
-                       tr("MX User Manager") + "</h2></b></p><p align=\"center\">MX14+git20141011</p><p align=\"center\"><h3>" +
+                       tr("MX User Manager") + "</h2></b></p><p align=\"center\">" + "Version: " +
+                       getVersion("mx-user") + "</p><p align=\"center\"><h3>" +
+                       "</h2></b></p><p align=\"center\">MX14+git20141011</p><p align=\"center\"><h3>" +
                        tr("Simple user configuration for antiX MX") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) antiX") + "<br /><br /></p>", 0, this);
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::DestructiveRole);
     if (msgBox.exec() == QMessageBox::AcceptRole)
-        displaySite("file:///usr/local/share/doc/mx-user-license.html");
+        system("mx-viewer file:///usr/local/share/doc/mx-user-license.html 'MX User License'");
 }
 
 // Help button clicked
 void MConfig::on_buttonHelp_clicked() {
-    displaySite("file:///usr/local/share/doc/mxapps.html#user");
-}
-
-// pop up a window and display website
-void MConfig::displaySite(QString site) {
-    QWidget *window = new QWidget(this, Qt::Dialog);
-    window->setWindowTitle(this->windowTitle());
-    window->resize(800, 500);
-    QWebView *webview = new QWebView(window);
-    webview->load(QUrl(site));
-    webview->show();
-    window->show();
+    system("mx-viwer http://www.mepiscommunity.org/public_html/user_manual_mx15/mxum.html#user");
 }

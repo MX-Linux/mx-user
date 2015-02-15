@@ -1,3 +1,9 @@
+mx-user (15.2) mx; urgency=medium
+
+  * changed manual URL, added mx-viewer dependency
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 15 Feb 2015 10:55:58 -0500
+
 mx-user (14.2+1) mx; urgency=low
 
   * added APT sources restore function, changed version format

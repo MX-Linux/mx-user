@@ -38,7 +38,6 @@ public:
     // helpers
     static QString getCmdOut(QString cmd);
     static QStringList getCmdOuts(QString cmd);
-    void displaySite(QString site);
     static QString getCmdValue(QString cmd, QString key, QString keydel, QString valdel);
     static QStringList getCmdValues(QString cmd, QString key, QString keydel, QString valdel);
     static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
@@ -58,6 +57,7 @@ public:
     void applyGroup();
     void applyMembership();
     void buildListGroups();
+    QString getVersion(QString name);
 
 public slots:
     void syncStart();
