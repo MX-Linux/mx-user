@@ -897,12 +897,11 @@ void MConfig::on_buttonAbout_clicked() {
                        tr("About MX User Manager"), "<p align=\"center\"><b><h2>" +
                        tr("MX User Manager") + "</h2></b></p><p align=\"center\">" + "Version: " +
                        getVersion("mx-user") + "</p><p align=\"center\"><h3>" +
-                       "</h2></b></p><p align=\"center\">MX14+git20141011</p><p align=\"center\"><h3>" +
                        tr("Simple user configuration for antiX MX") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) antiX") + "<br /><br /></p>", 0, this);
-    msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
-    msgBox.addButton(tr("Cancel"), QMessageBox::DestructiveRole);
-    if (msgBox.exec() == QMessageBox::AcceptRole)
+    msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
+    msgBox.addButton(tr("License"), QMessageBox::RejectRole);
+    if (msgBox.exec() == QMessageBox::RejectRole)
         system("mx-viewer file:///usr/local/share/doc/mx-user-license.html 'MX User License'");
 }
 
