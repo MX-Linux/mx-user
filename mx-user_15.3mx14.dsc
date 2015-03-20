@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: mx-user
 Binary: mx-user
 Architecture: any
-Version: 15.3
+Version: 15.3mx14
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Homepage: https://github.com/timkb4cq/mx-user
 Standards-Version: 3.9.5
@@ -10,8 +10,8 @@ Build-Depends: libqt4-dev, debhelper (>= 7.0.50~)
 Package-List: 
  mx-user deb system optional
 Checksums-Sha1: 
- 01759c55071337626f0c0b966c22f8161d724336 53613 mx-user_15.3.tar.gz
+ 847c01a7a2c6e158495126ac5c56ec1d790dcd52 53864 mx-user_15.3mx14.tar.gz
 Checksums-Sha256: 
- 6cce204968539908aaa0793fc6d3a2d2860188ed9fc890dd7ae1eb74f7cb349d 53613 mx-user_15.3.tar.gz
+ 059a0714c4504cc0f5e64c961e9e24e486001b78f083718b990c39104aa57fc1 53864 mx-user_15.3mx14.tar.gz
 Files: 
- e19e5d7e9010a57233864f5e1f68526b 53613 mx-user_15.3.tar.gz
+ 3917b47337902d4645b942fd61208363 53864 mx-user_15.3mx14.tar.gz
