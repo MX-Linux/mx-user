@@ -20,9 +20,6 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include <QWebView>
-#include <QUrl>
-
 MConfig::MConfig(QWidget* parent) : QDialog(parent) {
     setupUi(this);
     setWindowIcon(QApplication::windowIcon());

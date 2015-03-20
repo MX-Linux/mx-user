@@ -15,14 +15,14 @@ Changes:
  .
    * changed manual URL
 Checksums-Sha1: 
- 20a0a669cd8617fc0f75af83e4d70e89ce4b46b2 596 mx-user_15.3mx14.dsc
- 847c01a7a2c6e158495126ac5c56ec1d790dcd52 53864 mx-user_15.3mx14.tar.gz
- 91df9e2b4eccf3bc0e329b64fd47fb888e6fe8ee 79696 mx-user_15.3mx14_i386.deb
+ 09edb5a42fd139fa58995ce05d8d0b97541711a9 596 mx-user_15.3mx14.dsc
+ e68cc0c54c9389a7f093b8f3154ca63d89e6e9cd 53799 mx-user_15.3mx14.tar.gz
+ 91dec085e97ce957884ecf9b6996359f5d96f12a 79362 mx-user_15.3mx14_i386.deb
 Checksums-Sha256: 
- d8fdb78b86816d6468f2110e7063643da1c529404cc3f6a721cdf0b3313f5519 596 mx-user_15.3mx14.dsc
- 059a0714c4504cc0f5e64c961e9e24e486001b78f083718b990c39104aa57fc1 53864 mx-user_15.3mx14.tar.gz
- 4ce75f4c98cc55161592a08a05f407202c29cf1bdbc9bc98df1f44209b7996eb 79696 mx-user_15.3mx14_i386.deb
+ 96bdc659871b590f8f7a39fc99de51648c6637d6a53a92ddfaf962575cb25709 596 mx-user_15.3mx14.dsc
+ 0c1bb5b897472ee67e280b3f2258e5a1669d79358188c474678bece48fce2baa 53799 mx-user_15.3mx14.tar.gz
+ fb1d70f8e2e0ed25c2f2b0dc8303c55db18bb9f092aba42bf4a4dd7c0bd52a52 79362 mx-user_15.3mx14_i386.deb
 Files: 
- 9967a4b5dfc44282893b1b19ffadf2f6 596 system optional mx-user_15.3mx14.dsc
- 3917b47337902d4645b942fd61208363 53864 system optional mx-user_15.3mx14.tar.gz
- c2dbc40b30f4a20b2cbf45b3eb32d513 79696 system optional mx-user_15.3mx14_i386.deb
+ 4ffbf899488528f02a497740c93c80de 596 system optional mx-user_15.3mx14.dsc
+ e67c039c9b9711713d78cbdcf1ac56d5 53799 system optional mx-user_15.3mx14.tar.gz
+ 375cdd627a601df224f647865d7456a4 79362 system optional mx-user_15.3mx14_i386.deb
