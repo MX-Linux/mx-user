@@ -907,5 +907,5 @@ void MConfig::on_buttonAbout_clicked() {
 
 // Help button clicked
 void MConfig::on_buttonHelp_clicked() {
-    system("mx-viewer http://www.mepiscommunity.org/user_manual_mx15/mxum.html#user");
+    system("mx-viewer http://mepiscommunity.org/doc_mx/user.html");
 }

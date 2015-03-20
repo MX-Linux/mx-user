@@ -1,3 +1,9 @@
+mx-user (15.3) mx; urgency=medium
+
+  * changed manual URL
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 20 Mar 2015 16:17:50 -0400
+
 mx-user (15.2) mx; urgency=medium
 
   * changed manual URL, added mx-viewer dependency

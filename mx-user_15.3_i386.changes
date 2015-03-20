@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 20 Mar 2015 16:17:50 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source i386
+Version: 15.3
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-user    - MX User manager
+Changes: 
+ mx-user (15.3) mx; urgency=medium
+ .
+   * changed manual URL
+Checksums-Sha1: 
+ 4b01b2a26f96483d278c88470e6b3f1c39f08a64 580 mx-user_15.3.dsc
+ 01759c55071337626f0c0b966c22f8161d724336 53613 mx-user_15.3.tar.gz
+ a7049d57789f7334429772e38eeb1712257a29a3 79726 mx-user_15.3_i386.deb
+Checksums-Sha256: 
+ 51c3804f8b860c05e579af08b324ff9f7e3bf24fa0762ad1f8490ff48ea2bea7 580 mx-user_15.3.dsc
+ 6cce204968539908aaa0793fc6d3a2d2860188ed9fc890dd7ae1eb74f7cb349d 53613 mx-user_15.3.tar.gz
+ 59d0b753c06918c7ab7910357b6fb3624b446f37598fef70a9e4382930d534a5 79726 mx-user_15.3_i386.deb
+Files: 
+ 23fbd55f49a82319fb161c63935faf45 580 system optional mx-user_15.3.dsc
+ e19e5d7e9010a57233864f5e1f68526b 53613 system optional mx-user_15.3.tar.gz
+ 8399ac5394130c46d4748df7f63bb687 79726 system optional mx-user_15.3_i386.deb
