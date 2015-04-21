@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="ro">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ro" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -203,14 +201,14 @@ alegeți alt nume de grup inainte de a continua.</translation>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="900"/>
-        <source>License</source>
-        <translation>Licență</translation>
-    </message>
-    <message>
         <location filename="../mconfig.cpp" line="899"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="900"/>
+        <source>License</source>
+        <translation>Licență</translation>
     </message>
 </context>
 <context>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -29,7 +27,7 @@
     <message>
         <location filename="../mconfig.cpp" line="380"/>
         <source>You must specify a &apos;copy to&apos; destination. You can not copy to the desktop you are logged in to.</source>
-        <translation>Devi specificare una destinazione in cui copiare. Non puoi copiare nella scrivania, anche chiamata desktop, in cui hai eseguito l&apos;accesso.</translation>
+        <translation>Devi specificare una destinazione in cui copiare. Non puoi copiare nel desktop in cui hai eseguito l&apos;accesso.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="384"/>
@@ -200,14 +198,14 @@ prego, scegli un altro nome prima di procedere.</translation>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="900"/>
-        <source>License</source>
-        <translation>Licenza</translation>
-    </message>
-    <message>
         <location filename="../mconfig.cpp" line="899"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="900"/>
+        <source>License</source>
+        <translation>Licenza</translation>
     </message>
 </context>
 <context>
@@ -385,7 +383,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="419"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation>Ripristina le sorgenti del software di APT a quelli predefiniti di MX</translation>
+        <translation>Ripristina le sorgenti del software di APT a quelle di default di MX</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="422"/>
@@ -553,7 +551,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="967"/>
         <source>User to change:</source>
-        <translation>Utente da cambiare:</translation>
+        <translation>Utente da modificare:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1003"/>
@@ -563,7 +561,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1026"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>* Si prega di ricontrollare le tue selezionii prima di applicare, assegnando le appartenenze a gruppi sbagliati si può danneggiare il sistema. Se hai fatto un errore, utilizza la scheda Riparazione per ripristinare le appartenenze originali.</translation>
+        <translation>* Si prega di ricontrollare le tue selezioni prima di applicare, assegnando le appartenenze a gruppi sbagliati si può danneggiare il sistema. Se hai fatto un errore, utilizza la scheda Ripara per ripristinare le appartenenze originali.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1080"/>
@@ -613,12 +611,12 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1162"/>
         <source>About this application</source>
-        <translation>A proposito di questa applicazione</translation>
+        <translation>Informazioni riguardo questa applicazione</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1165"/>
         <source>About...</source>
-        <translation>A proposito di...</translation>
+        <translation>Info...</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1172"/>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="pt_BR">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt_BR" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -190,22 +188,22 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../mconfig.cpp" line="897"/>
         <source>Simple user configuration for antiX MX</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="898"/>
         <source>Copyright (c) antiX</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="900"/>
-        <source>License</source>
-        <translation>licença</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="899"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="900"/>
+        <source>License</source>
+        <translation>licença</translation>
     </message>
 </context>
 <context>
@@ -347,7 +345,7 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../meconfig.ui" line="383"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="386"/>
@@ -357,7 +355,7 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../meconfig.ui" line="393"/>
         <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="396"/>
@@ -383,12 +381,12 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../meconfig.ui" line="419"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="422"/>
         <source>Restore APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="437"/>
@@ -465,12 +463,12 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../meconfig.ui" line="637"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="640"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="653"/>
@@ -556,12 +554,12 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../meconfig.ui" line="1003"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1026"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1080"/>

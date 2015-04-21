@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -199,14 +197,14 @@ SVP choisir un autre nom avant de poursuivre.</translation>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="900"/>
-        <source>License</source>
-        <translation>License</translation>
-    </message>
-    <message>
         <location filename="../mconfig.cpp" line="899"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="900"/>
+        <source>License</source>
+        <translation>License</translation>
     </message>
 </context>
 <context>
@@ -358,7 +356,7 @@ SVP choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="../meconfig.ui" line="393"/>
         <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Rétablir la configuration par défaut de Qupzilla</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="396"/>
@@ -384,12 +382,12 @@ SVP choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="../meconfig.ui" line="419"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Rétablir la configuration par défaut des sources pour APT </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="422"/>
         <source>Restore APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Rétablir la configuration des sources pour APT </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="437"/>

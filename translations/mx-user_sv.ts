@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -200,14 +198,14 @@ var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="900"/>
-        <source>License</source>
-        <translation>Licens</translation>
-    </message>
-    <message>
         <location filename="../mconfig.cpp" line="899"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="900"/>
+        <source>License</source>
+        <translation>Licens</translation>
     </message>
 </context>
 <context>
