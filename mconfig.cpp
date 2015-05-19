@@ -20,6 +20,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
+#include <QDebug>
+
 MConfig::MConfig(QWidget* parent) : QDialog(parent) {
     setupUi(this);
     setWindowIcon(QApplication::windowIcon());
@@ -130,6 +132,7 @@ bool MConfig::replaceStringInFile(QString oldtext, QString newtext, QString file
 // common
 
 void MConfig::refresh() {
+    setCursor(QCursor(Qt::ArrowCursor));
     int i = tabWidget->currentIndex();
     switch (i) {
 
@@ -144,11 +147,16 @@ void MConfig::refresh() {
         break;
 
     case 3:
-        refreshGroups();
+        refreshClean();
         buttonApply->setEnabled(false);
         break;
 
     case 4:
+        refreshGroups();
+        buttonApply->setEnabled(false);
+        break;
+
+    case 5:
         refreshMembership();
         buttonApply->setEnabled(false);
         break;
@@ -251,6 +259,38 @@ void MConfig::refreshDelete() {
         pclose(fp);
     }
 }
+
+void MConfig::refreshClean() {
+    tmpCheckBox->setChecked(true);
+    cacheCheckBox->setChecked(true);
+    thumbCheckBox->setChecked(true);
+    autocleanRB->setChecked(true);
+    oldLogsRB->setChecked(true);
+    selectedUserCB->setChecked(true);
+    char line[130];
+    char line2[130];
+    char *tok;
+    FILE *fp;
+    int i;
+    userCleanCB->clear();
+    userCleanCB->addItem("none");
+    fp = popen("ls -1 /home", "r");
+    if (fp != NULL) {
+        while (fgets(line, sizeof line, fp) != NULL) {
+            i = strlen(line);
+            line[--i] = '\0';
+            tok = strtok(line, " ");
+            if (tok != NULL && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
+                sprintf(line2, "grep '^%s' /etc/passwd >/dev/null", tok);
+                if (system(line2) == 0) {
+                    userCleanCB->addItem(tok);
+                }
+            }
+        }
+        pclose(fp);
+    }
+}
+
 
 void MConfig::refreshGroups() {
     char line[130];
@@ -605,6 +645,35 @@ void MConfig::applyMembership() {
     }
 }
 
+// run clean (free disk) commands
+void MConfig::applyClean() {
+    setCursor(QCursor(Qt::BusyCursor));
+    if (tmpCheckBox->isChecked()) {
+        system("rm -r /tmp/* 2>/dev/null");
+    }
+    if (cacheCheckBox->isChecked()) {
+        system("rm -r /home/" + userCleanCB->currentText().toAscii() + "/.cache/* 2>/dev/null");
+    }
+    if (thumbCheckBox->isChecked()) {
+        system("rm -r /home/" + userCleanCB->currentText().toAscii() + "/.thumbnails/* 2>/dev/null");
+    }
+    if (autocleanRB->isChecked()) {
+        system("apt-get autoclean");
+    } else {
+        system("apt-get clean");
+    }
+    if (oldLogsRB->isChecked()) {
+        system("find /var/log -name \"*.gz\" -o -name \"*.old\" -type f -delete 2>/dev/null");
+    } else {
+        system("bash -c -O extglob \"rm -r /var/log/!(samba) /var/log/samba/*\""); // don't remove /var/log/samba folder
+    }
+    if (selectedUserCB->isChecked()) {
+        system("rm -r /home/" + userCleanCB->currentText().toAscii() +"/.local/share/Trash/* 2>/dev/null");
+    } else {
+        system("rm -r /home/*/.local/share/Trash/* 2>/dev/null");
+    }
+    refresh();
+}
 
 /////////////////////////////////////////////////////////////////////////
 // sync process events
@@ -754,6 +823,13 @@ void MConfig::on_userComboMembership_activated() {
     }
 }
 
+void MConfig::on_userCleanCB_activated() {
+    buttonApply->setEnabled(true);
+    if (userCleanCB->currentText() == "none") {
+        refresh();
+    }
+}
+
 void MConfig::buildListGroups(){
     char line[130];
     FILE *fp;
@@ -794,6 +870,7 @@ void MConfig::on_buttonApply_clicked() {
     }
 
     int i = tabWidget->currentIndex();
+
     switch (i) {
 
     case 1:
@@ -809,13 +886,18 @@ void MConfig::on_buttonApply_clicked() {
         break;
 
     case 3:
+        applyClean();
+        buttonApply->setEnabled(false);
+        break;
+
+    case 4:
         setCursor(QCursor(Qt::WaitCursor));
         applyGroup();
         setCursor(QCursor(Qt::ArrowCursor));
         buttonApply->setEnabled(false);
         break;
 
-    case 4:
+    case 5:
         setCursor(QCursor(Qt::WaitCursor));
         applyMembership();
         setCursor(QCursor(Qt::ArrowCursor));
@@ -832,6 +914,45 @@ void MConfig::on_buttonApply_clicked() {
         setCursor(QCursor(Qt::ArrowCursor));
         break;
     }
+}
+
+// install and run baobab
+void MConfig::on_baobabPushButton_clicked()
+{
+    if (system("[ -f /usr/bin/baobab ]") != 0) {
+        setCursor(QCursor(Qt::BusyCursor));
+        mbox = new QMessageBox();
+        mbox->setWindowTitle(tr("Baobab installation"));
+        mbox->setText(tr("Wait while Baobab is installing..."));
+        mbox->setStandardButtons(0);
+        this->hide();
+        mbox->show();
+        //qApp->processEvents();
+        //system("apt-get update && apt-get install baobab");
+        //qApp->processEvents();
+        //delete msgBox;
+        disconnect(timer, SIGNAL(timeout()), 0, 0);
+        disconnect(proc, SIGNAL(started()), 0, 0);
+        disconnect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), 0, 0);
+        connect(timer, SIGNAL(timeout()), this, SLOT(syncTime()));
+        connect(proc, SIGNAL(started()), this, SLOT(syncStart()));
+        connect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(installDone(int, QProcess::ExitStatus)));
+        proc->start("/bin/bash  -c \"apt-get update && apt-get install baobab\"");
+    } else {
+        this->hide();
+        system("baobab");
+        this->show();
+    }
+}
+
+// after installing baobab
+void MConfig::installDone(int exitCode, QProcess::ExitStatus) {
+    setCursor(QCursor(Qt::ArrowCursor));
+    delete mbox;
+    if (exitCode == 0) {
+        system("baobab");
+    }
+    this->show();
 }
 
 void MConfig::on_tabWidget_currentChanged() {
@@ -867,20 +988,6 @@ bool MConfig::hasInternetConnection()
     return internetConnection;
 }
 
-void MConfig::executeChild(const char* cmd, const char* param)
-{
-    pid_t childId;
-    childId = fork();
-    if (childId >= 0)
-    {
-        if (childId == 0)
-        {
-            execl(cmd, cmd, param, (char *) 0);
-
-            //system(cmd);
-        }
-    }
-}
 
 // Get version of the program
 QString MConfig::getVersion(QString name) {
@@ -906,3 +1013,6 @@ void MConfig::on_buttonAbout_clicked() {
 void MConfig::on_buttonHelp_clicked() {
     system("mx-viewer http://mepiscommunity.org/doc_mx/user.html");
 }
+
+
+

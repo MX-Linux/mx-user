@@ -18,13 +18,9 @@
 #define MCONFIG_H
 
 #include "ui_meconfig.h"
-#include <qlistview.h>
-#include <qcheckbox.h>
-#include <qmessagebox.h>
-#include <qcombobox.h>
-#include <qcursor.h>
-#include <qprocess.h>
-#include <qtimer.h>
+#include <QMessageBox>
+#include <QProcess>
+#include <QTimer>
 
 class MConfig : public QDialog, public Ui::MEConfig {
     Q_OBJECT
@@ -32,9 +28,11 @@ protected:
     QProcess *proc;
     QTimer *timer;
 
+
 public:
     MConfig(QWidget* parent = 0);
     ~MConfig();
+    QMessageBox *mbox;
     // helpers
     static QString getCmdOut(QString cmd);
     static QStringList getCmdOuts(QString cmd);
@@ -48,6 +46,7 @@ public:
     void refreshDesktop();
     void refreshAdd();
     void refreshDelete();
+    void refreshClean();
     void refreshGroups();
     void refreshMembership();
     void applyRestore();
@@ -56,6 +55,7 @@ public:
     void applyDelete();
     void applyGroup();
     void applyMembership();
+    void applyClean();
     void buildListGroups();
     QString getVersion(QString name);
 
@@ -63,6 +63,7 @@ public slots:
     void syncStart();
     void syncTime();
     void syncDone(int exitCode, QProcess::ExitStatus exitStatus);
+    void installDone(int exitCode, QProcess::ExitStatus exitStatus);
 
     virtual void on_fromUserComboBox_activated();
     virtual void on_userComboBox_activated();
@@ -71,6 +72,7 @@ public slots:
     virtual void on_userNameEdit_textEdited();
     virtual void on_groupNameEdit_textEdited();
     virtual void on_deleteGroupCombo_activated();
+    virtual void on_userCleanCB_activated();
     virtual void on_tabWidget_currentChanged();
     virtual void on_buttonApply_clicked();
     virtual void on_buttonCancel_clicked();
@@ -81,10 +83,11 @@ protected:
 
 private:
     static bool hasInternetConnection();
-    static void executeChild(const char* cmd, const char* param);
 protected slots:
     /*$PROTECTED_SLOTS$*/
 
+private slots:
+    void on_baobabPushButton_clicked();
 };
 
 #endif

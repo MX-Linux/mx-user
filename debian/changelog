@@ -1,3 +1,9 @@
+mx-user (15.5mx14) mx; urgency=medium
+
+  * added clean up tab
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 19 May 2015 13:16:00 -0400
+
 mx-user (15.4mx14) mx; urgency=medium
 
   * added translation

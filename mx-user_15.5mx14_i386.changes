@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 19 May 2015 13:16:00 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source i386
+Version: 15.5mx14
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-user    - MX User manager
+Changes: 
+ mx-user (15.5mx14) mx; urgency=medium
+ .
+   * added clean up tab
+Checksums-Sha1: 
+ de3353ed76409185d5a51203f111fab69ea67f72 599 mx-user_15.5mx14.dsc
+ da65482ececfd8df5d995d5d6098188d5f8dde22 128444 mx-user_15.5mx14.tar.gz
+ 37f233ad7804f4e9ae54b52113a73f82ebf7fdcc 88130 mx-user_15.5mx14_i386.deb
+Checksums-Sha256: 
+ 8a1d3779498df012bcead0287e8a3c920eed7b91640155d3605c6340143737cd 599 mx-user_15.5mx14.dsc
+ dc1edb3046bb3e86233386e99109efb4316e49149ac5e0bd94a80a2e071247d5 128444 mx-user_15.5mx14.tar.gz
+ b9b8a382d3ef817c30d9d57f1fbe43ca52fd1e7c6edef11e37645df7471b59ce 88130 mx-user_15.5mx14_i386.deb
+Files: 
+ 879dbf7b8b0c82967d3462056157a707 599 system optional mx-user_15.5mx14.dsc
+ ac5de702c66e1230e874caea98d7fb8f 128444 system optional mx-user_15.5mx14.tar.gz
+ 04a39b9564f7275085d6d23f59b7633b 88130 system optional mx-user_15.5mx14_i386.deb
