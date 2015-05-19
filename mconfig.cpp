@@ -927,10 +927,6 @@ void MConfig::on_baobabPushButton_clicked()
         mbox->setStandardButtons(0);
         this->hide();
         mbox->show();
-        //qApp->processEvents();
-        //system("apt-get update && apt-get install baobab");
-        //qApp->processEvents();
-        //delete msgBox;
         disconnect(timer, SIGNAL(timeout()), 0, 0);
         disconnect(proc, SIGNAL(started()), 0, 0);
         disconnect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), 0, 0);
