@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>824</width>
+    <width>830</width>
     <height>632</height>
    </rect>
   </property>
@@ -51,7 +51,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="userTab">
       <attribute name="icon">
@@ -866,7 +866,7 @@
         <normaloff>../../../../../../../../usr/share/mx-user/icons/edit-clear.png</normaloff>../../../../../../../../usr/share/mx-user/icons/edit-clear.png</iconset>
       </attribute>
       <attribute name="title">
-       <string>Free Space</string>
+       <string>Free Up Space</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
@@ -981,7 +981,7 @@
           <item>
            <widget class="QRadioButton" name="oldLogsRB">
             <property name="text">
-             <string>delete old logs</string>
+             <string>delete old logs (delete .gz, .old, and .1 log files)</string>
             </property>
             <property name="checked">
              <bool>true</bool>

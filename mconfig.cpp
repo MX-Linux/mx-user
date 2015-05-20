@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include <QDebug>
+//#include <QDebug>
 
 MConfig::MConfig(QWidget* parent) : QDialog(parent) {
     setupUi(this);

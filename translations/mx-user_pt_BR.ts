@@ -522,7 +522,12 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="869"/>
-        <source>Free Space</source>
+        <source>Free Up Space</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="984"/>
+        <source>delete old logs (delete .gz, .old, and .1 log files)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -573,11 +578,6 @@ Por favor, escolha outro nome antes de prosseguir.</translation>
     <message>
         <location filename="../meconfig.ui" line="978"/>
         <source>Delete logs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="984"/>
-        <source>delete old logs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
