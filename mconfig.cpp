@@ -927,11 +927,7 @@ void MConfig::on_baobabPushButton_clicked()
         mbox->setStandardButtons(0);
         this->hide();
         mbox->show();
-        disconnect(timer, SIGNAL(timeout()), 0, 0);
-        disconnect(proc, SIGNAL(started()), 0, 0);
         disconnect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), 0, 0);
-        connect(timer, SIGNAL(timeout()), this, SLOT(syncTime()));
-        connect(proc, SIGNAL(started()), this, SLOT(syncStart()));
         connect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(installDone(int, QProcess::ExitStatus)));
         proc->start("/bin/bash  -c \"apt-get update && apt-get install baobab\"");
     } else {

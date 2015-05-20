@@ -188,32 +188,32 @@ Si us plau, escolliu un altre nom abans de continuar.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="997"/>
+        <location filename="../mconfig.cpp" line="993"/>
         <source>About MX User Manager</source>
         <translation>Quant a Administrador d&apos;Usuaris de MX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="998"/>
+        <location filename="../mconfig.cpp" line="994"/>
         <source>MX User Manager</source>
         <translation>Administrador d&apos;Usuaris MX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1000"/>
+        <location filename="../mconfig.cpp" line="996"/>
         <source>Simple user configuration for antiX MX</source>
         <translation>Configuració d&apos;Usuari simple per antiX MX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1001"/>
+        <location filename="../mconfig.cpp" line="997"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1002"/>
+        <location filename="../mconfig.cpp" line="998"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1003"/>
+        <location filename="../mconfig.cpp" line="999"/>
         <source>License</source>
         <translation>Llicència</translation>
     </message>

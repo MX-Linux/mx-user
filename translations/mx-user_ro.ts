@@ -193,32 +193,32 @@ alegeți alt nume de grup inainte de a continua.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="997"/>
+        <location filename="../mconfig.cpp" line="993"/>
         <source>About MX User Manager</source>
         <translation>Info despre MX Manager Utilizator</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="998"/>
+        <location filename="../mconfig.cpp" line="994"/>
         <source>MX User Manager</source>
         <translation>MX Manager Utilizator</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1000"/>
+        <location filename="../mconfig.cpp" line="996"/>
         <source>Simple user configuration for antiX MX</source>
         <translation>Simplu configurator de conturi utilizator pentru antiX MX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1001"/>
+        <location filename="../mconfig.cpp" line="997"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1002"/>
+        <location filename="../mconfig.cpp" line="998"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1003"/>
+        <location filename="../mconfig.cpp" line="999"/>
         <source>License</source>
         <translation>Licență</translation>
     </message>
