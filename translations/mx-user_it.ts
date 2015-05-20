@@ -190,32 +190,32 @@ prego, scegli un altro nome prima di procedere.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1001"/>
+        <location filename="../mconfig.cpp" line="997"/>
         <source>About MX User Manager</source>
         <translation>A proposito di MX Manager Utenti</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1002"/>
+        <location filename="../mconfig.cpp" line="998"/>
         <source>MX User Manager</source>
         <translation>MX Manager Utenti</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1004"/>
+        <location filename="../mconfig.cpp" line="1000"/>
         <source>Simple user configuration for antiX MX</source>
         <translation>Semplice configurazione utente per antiX MX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1005"/>
+        <location filename="../mconfig.cpp" line="1001"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1006"/>
+        <location filename="../mconfig.cpp" line="1002"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1007"/>
+        <location filename="../mconfig.cpp" line="1003"/>
         <source>License</source>
         <translation>Licenza</translation>
     </message>

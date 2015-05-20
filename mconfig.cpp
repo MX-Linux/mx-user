@@ -663,9 +663,9 @@ void MConfig::applyClean() {
         system("apt-get clean");
     }
     if (oldLogsRB->isChecked()) {
-        system("find /var/log -name \"*.gz\" -o -name \"*.old\" -type f -delete 2>/dev/null");
+        system("find /var/log -name \"*.gz\" -o -name \"*.old\" -o -name \"*.1\" -type f -delete 2>/dev/null");
     } else {
-        system("bash -c -O extglob \"rm -r /var/log/!(samba) /var/log/samba/*\""); // don't remove /var/log/samba folder
+        system("find /var/log -type f -exec sh -c \"echo > '{}'\" \\;");  // empty the logs
     }
     if (selectedUserCB->isChecked()) {
         system("rm -r /home/" + userCleanCB->currentText().toAscii() +"/.local/share/Trash/* 2>/dev/null");

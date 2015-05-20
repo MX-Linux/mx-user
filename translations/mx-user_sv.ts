@@ -190,32 +190,32 @@ var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1001"/>
+        <location filename="../mconfig.cpp" line="997"/>
         <source>About MX User Manager</source>
         <translation>Om MX Användarhanterare</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1002"/>
+        <location filename="../mconfig.cpp" line="998"/>
         <source>MX User Manager</source>
         <translation>MX Användarhanterare</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1004"/>
+        <location filename="../mconfig.cpp" line="1000"/>
         <source>Simple user configuration for antiX MX</source>
         <translation>Enkel codecs nerladdare för antiX MX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1005"/>
+        <location filename="../mconfig.cpp" line="1001"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1006"/>
+        <location filename="../mconfig.cpp" line="1002"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1007"/>
+        <location filename="../mconfig.cpp" line="1003"/>
         <source>License</source>
         <translation>Licens</translation>
     </message>
