@@ -417,7 +417,7 @@ void MConfig::applyDesktop() {
 
     if (toUserComboBox->currentText().isEmpty()) {
         QMessageBox::information(0, QString::null,
-                                 tr("You must specify a 'copy to' destination. You can not copy to the desktop you are logged in to."));
+                                 tr("You must specify a 'copy to' destination. You cannot copy to the desktop you are logged in to."));
         return;
     }
     // verify
@@ -475,9 +475,9 @@ void MConfig::applyAdd() {
         return;
     } else if (!userNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
         QMessageBox::critical(0, QString::null,
-                              tr("The user name needs be lower case and it\n"
-                                 "cannot contain special characters or spaces\n"
-                                 "please choose another name before proceeding."));
+                              tr("The user name needs to be lower case and it\n"
+                                 "cannot contain special characters or spaces.\n"
+                                 "Please choose another name before proceeding."));
         return;
     }
     // check that user name is not already used
@@ -531,7 +531,7 @@ void MConfig::applyAdd() {
 }
 
 void MConfig::applyDelete() {
-    QString cmd = QString(tr("This action can not be undone. Are you sure you want to delete user %1?")).arg(deleteUserCombo->currentText());
+    QString cmd = QString(tr("This action cannot be undone. Are you sure you want to delete user %1?")).arg(deleteUserCombo->currentText());
     int ans = QMessageBox::warning(this, QString::null, cmd,
                                    tr("Yes"), tr("No"));
     if (ans == 0) {
@@ -581,9 +581,9 @@ void MConfig::applyGroup() {
             return;
         } else if (!groupNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
             QMessageBox::critical(0, QString::null,
-                                  tr("The group name needs be lower case and it \n"
-                                     "cannot contain special characters or spaces\n"
-                                     "please choose another name before proceeding."));
+                                  tr("The group name needs to be lower case and it \n"
+                                     "cannot contain special characters or spaces.\n"
+                                     "Please choose another name before proceeding."));
             return;
         }
         // check that group name is not already used
@@ -603,7 +603,7 @@ void MConfig::applyGroup() {
                                   tr("Failed to add the system group."));
         }
     }  else { //deleting group if addBox disabled
-        QString cmd = QString(tr("This action can not be undone. Are you sure you want to delete group %1?")).arg(deleteGroupCombo->currentText());
+        QString cmd = QString(tr("This action cannot be undone. Are you sure you want to delete group %1?")).arg(deleteGroupCombo->currentText());
         int ans = QMessageBox::warning(this, QString::null, cmd,
                                        tr("Yes"), tr("No"));
         if (ans == 0) {

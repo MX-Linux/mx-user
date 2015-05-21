@@ -15,14 +15,14 @@ Changes:
  .
    * added clean up tab
 Checksums-Sha1: 
- 653a4de2f8a2b994c844fc95c97a21a408b3cd14 599 mx-user_15.5mx14.dsc
- 63ab9b02ce66eb5a5e9ce28c4031f0972fc1652c 133550 mx-user_15.5mx14.tar.gz
- 0536e40ba311061679332a298aff8ab45079ea85 87806 mx-user_15.5mx14_i386.deb
+ c53401bb7dfe5910a0682567d4d7a1fe6a51b367 596 mx-user_15.5mx14.dsc
+ 9a96b3ae4e2d41af16a8018c87d027967fa8d082 81574 mx-user_15.5mx14.tar.gz
+ 20b69276f9448bcfd643ffd890a9633d13d0bd04 85886 mx-user_15.5mx14_i386.deb
 Checksums-Sha256: 
- 01d3d8a66fab1a4633349c86460f734896c7573d32836c31ebf89f79e48bc437 599 mx-user_15.5mx14.dsc
- 97f856ecd2fda4ddce49b73940aaa0b6725ff731bedb7ccd3f6b1512be16a4b3 133550 mx-user_15.5mx14.tar.gz
- 03201aec7ec5a18ff6af5771148e7db583daf2d80232dca00d4a485adc7328e3 87806 mx-user_15.5mx14_i386.deb
+ 8f0f94d7c45a795382da86cb2b56ae6c4e471bac0ae4055f98f69f7f5ebe23a5 596 mx-user_15.5mx14.dsc
+ e547e7d839e233b54b577979278aa0f123f1ca015adfb5146d074b6871ee0000 81574 mx-user_15.5mx14.tar.gz
+ 7845d657b7d7408d05e7e1a6af55ad8f4c99e7c1248332b15c3ad646bd706047 85886 mx-user_15.5mx14_i386.deb
 Files: 
- 29009b9c636b9f33df8df71a0b855dce 599 system optional mx-user_15.5mx14.dsc
- 4efc4fcdd6e4108eff8aa6f19dfbe6ef 133550 system optional mx-user_15.5mx14.tar.gz
- 219e491f539803f36afb611a920d6de8 87806 system optional mx-user_15.5mx14_i386.deb
+ dceeca6b06821ea4ba5eef392d237d6e 596 system optional mx-user_15.5mx14.dsc
+ c849ef584846b5afc69a8d82af825bf7 81574 system optional mx-user_15.5mx14.tar.gz
+ 79dc67c6a1d6684a61c01bd45d7fdeba 85886 system optional mx-user_15.5mx14_i386.deb

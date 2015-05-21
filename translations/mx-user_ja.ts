@@ -27,9 +27,8 @@
         <translation>いいえ</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="420"/>
         <source>You must specify a &apos;copy to&apos; destination. You can not copy to the desktop you are logged in to.</source>
-        <translation>「コピー先」の場所を指定する必要があります。保存する先へはデスクトップをコピーできません。</translation>
+        <translation type="obsolete">「コピー先」の場所を指定する必要があります。保存する先へはデスクトップをコピーできません。</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="424"/>
@@ -52,11 +51,10 @@
         <translation>ユーザー名は2文字より長くする必要があります。もっと長い名前にして下さい。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="478"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
-        <translation>ユーザー名は小文字である必要があり、
+        <translation type="obsolete">ユーザー名は小文字である必要があり、
 記号・空白は使用できません。
 他の名前を入力して下さい。</translation>
     </message>
@@ -86,9 +84,8 @@ please choose another name before proceeding.</source>
         <translation>ユーザーの追加に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="534"/>
         <source>This action can not be undone. Are you sure you want to delete user %1?</source>
-        <translation>この作業は完了していません。ユーザー %1 の削除を行ってもよろしいですか？</translation>
+        <translation type="obsolete">この作業は完了していません。ユーザー %1 の削除を行ってもよろしいですか？</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="564"/>
@@ -106,11 +103,10 @@ please choose another name before proceeding.</source>
         <translation>グループ名は2文字より長くする必要があります。もっと長いグループ名にして下さい。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="584"/>
         <source>The group name needs be lower case and it 
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
-        <translation>グループ名は小文字で記号・スペースを
+        <translation type="obsolete">グループ名は小文字で記号・スペースを
 使用する事ができません。
 再度グループ名を入力して下さい。</translation>
     </message>
@@ -130,9 +126,37 @@ please choose another name before proceeding.</source>
         <translation>システムグループの追加に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="606"/>
         <source>This action can not be undone. Are you sure you want to delete group %1?</source>
-        <translation>この動作が完了していません。グループ %1 を削除してもよろしいですか？</translation>
+        <translation type="obsolete">この動作が完了していません。グループ %1 を削除してもよろしいですか？</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="420"/>
+        <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="478"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="534"/>
+        <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="584"/>
+        <source>The group name needs to be lower case and it 
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="606"/>
+        <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="613"/>

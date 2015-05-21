@@ -27,9 +27,8 @@
         <translation>Non</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="420"/>
         <source>You must specify a &apos;copy to&apos; destination. You can not copy to the desktop you are logged in to.</source>
-        <translation>Vous devez définir un répertoire de destination. Vous ne pouvez pas copier le bureau en cours d&apos;utilisation.</translation>
+        <translation type="obsolete">Vous devez définir un répertoire de destination. Vous ne pouvez pas copier le bureau en cours d&apos;utilisation.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="424"/>
@@ -52,11 +51,10 @@
         <translation>Le nom d&apos;utilisateur doit comporter au moins 2 caractères. Veuillez choisir un nom d&apos;utilisateur plus long avant de continuer.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="478"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
-        <translation>Le nom d&apos;utilisateur doit être en minuscules et ne peut pas contenir de caractères spéciaux ou espaces.
+        <translation type="obsolete">Le nom d&apos;utilisateur doit être en minuscules et ne peut pas contenir de caractères spéciaux ou espaces.
 S&apos;il vous plaît choisir un autre nom avant de poursuivre.</translation>
     </message>
     <message>
@@ -85,9 +83,8 @@ S&apos;il vous plaît choisir un autre nom avant de poursuivre.</translation>
         <translation>Ajout de l&apos;utilisateur impossible.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="534"/>
         <source>This action can not be undone. Are you sure you want to delete user %1?</source>
-        <translation>Cette action est irréversible. Êtes-vous sûr(e) de vouloir supprimer l&apos;utilisateur %1?</translation>
+        <translation type="obsolete">Cette action est irréversible. Êtes-vous sûr(e) de vouloir supprimer l&apos;utilisateur %1?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="564"/>
@@ -105,11 +102,10 @@ S&apos;il vous plaît choisir un autre nom avant de poursuivre.</translation>
         <translation>Le nom du groupe doit être d&apos;au moins 2 caractères. S&apos;il vous plaît sélectionner un nom plus long avant de poursuivre.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="584"/>
         <source>The group name needs be lower case and it 
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
-        <translation>Le nom du groupe doit être en  minuscules et  
+        <translation type="obsolete">Le nom du groupe doit être en  minuscules et  
 ne peut pas contenir des caractères spéciaux ou d&apos;espaces 
 SVP choisir un autre nom avant de poursuivre.</translation>
     </message>
@@ -129,9 +125,37 @@ SVP choisir un autre nom avant de poursuivre.</translation>
         <translation>Impossible d&apos;ajouter le groupe du système.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="606"/>
         <source>This action can not be undone. Are you sure you want to delete group %1?</source>
-        <translation>Cette action ne peut être annulée. Etes-vous sûr de vouloir supprimer le groupe %1?</translation>
+        <translation type="obsolete">Cette action ne peut être annulée. Etes-vous sûr de vouloir supprimer le groupe %1?</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="420"/>
+        <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="478"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="534"/>
+        <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="584"/>
+        <source>The group name needs to be lower case and it 
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="606"/>
+        <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="613"/>
