@@ -998,7 +998,7 @@ void MConfig::on_buttonAbout_clicked() {
     msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
     msgBox.addButton(tr("License"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::RejectRole)
-        system("mx-viewer file:///usr/local/share/doc/mx-user-license.html 'MX User License'");
+        system("mx-viewer http://www.mepiscommunity.org/doc_mx/mx-user-license.html 'MX User License'");
 }
 
 // Help button clicked
