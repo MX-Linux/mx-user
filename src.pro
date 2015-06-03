@@ -3,6 +3,7 @@ TEMPLATE = app
 TARGET = mx-user
 TRANSLATIONS += translations/mx-user_ca.ts \
                 translations/mx-user_de.ts \
+                translations/mx-user_el.ts \
                 translations/mx-user_es.ts \
                 translations/mx-user_fr.ts \
                 translations/mx-user_it.ts \

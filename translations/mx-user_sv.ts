@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -27,8 +25,9 @@
         <translation>Nej</translation>
     </message>
     <message>
-        <source>You must specify a &apos;copy to&apos; destination. You can not copy to the desktop you are logged in to.</source>
-        <translation type="obsolete">Du måste ange en plats att kopiera till. Du kan inte kopiera till skrivbordet du är inloggad till.</translation>
+        <location filename="../mconfig.cpp" line="420"/>
+        <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
+        <translation>Du måste ange en plats att &quot;kopiera till&quot;. Du kan inte kopiera till skrivbordet du är inloggad till.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="424"/>
@@ -51,12 +50,13 @@
         <translation>Användarnamnet måste vara åtminstone 2 bokstäver långt. Var vänlig välj ett längre namn innan du går vidare.</translation>
     </message>
     <message>
-        <source>The user name needs be lower case and it
-cannot contain special characters or spaces
-please choose another name before proceeding.</source>
-        <translation type="obsolete">Användarnamnet måste skrivas med små bokstäver
-och det kan inte innehålla specialtecken eller mellanslag
-var vänlig välj ett annat namn innan du fortsätter.</translation>
+        <location filename="../mconfig.cpp" line="478"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>Användarnamnet måste skrivas med små bokstäver och det
+ kan inte innehålla specialtecken eller mellanslag.
+ Var vänlig välj ett annat namn innan du fortsätter.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="487"/>
@@ -84,8 +84,9 @@ var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Misslyckades med att lägga till användaren.</translation>
     </message>
     <message>
-        <source>This action can not be undone. Are you sure you want to delete user %1?</source>
-        <translation type="obsolete">Denna åtgärd kan inte återställas. Är du säker på att du vill ta bort användare %1?</translation>
+        <location filename="../mconfig.cpp" line="534"/>
+        <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
+        <translation>Denna åtgärd kan inte göras ogjord. Är du säker på att du vill ta bort användare %1?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="564"/>
@@ -103,12 +104,13 @@ var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Grupp-namnet måste vara åtminstone 2 bokstäver långt. Var vänlig välj ett längre namn innan du fortsätter.</translation>
     </message>
     <message>
-        <source>The group name needs be lower case and it 
-cannot contain special characters or spaces
-please choose another name before proceeding.</source>
-        <translation type="obsolete">Gruppnamnet måste skrivas med små bokstäver och
-det kan inte innehålla specialtecken eller mellanslag
-var vänlig välj ett annat namn innan du fortsätter.</translation>
+        <location filename="../mconfig.cpp" line="584"/>
+        <source>The group name needs to be lower case and it 
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>Gruppnamnet måste skrivas med små bokstäver och det
+kan inte innehålla specialtecken eller mellanslag.
+Var vänlig välj ett annat namn innan du fortsätter.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="593"/>
@@ -126,37 +128,9 @@ var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Misslyckades med att lägga till system-gruppen.</translation>
     </message>
     <message>
-        <source>This action can not be undone. Are you sure you want to delete group %1?</source>
-        <translation type="obsolete">Denna åtgärd kan inte återställas. Är du säker på att du vill ta bort grupp %1?</translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="420"/>
-        <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="478"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="534"/>
-        <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="584"/>
-        <source>The group name needs to be lower case and it 
-cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mconfig.cpp" line="606"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Denna åtgärd kan inte göras ogjord. Är du säker på att du vill ta bort grupp %1?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="613"/>
@@ -206,12 +180,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="925"/>
         <source>Baobab installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Baobab installering</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="926"/>
         <source>Wait while Baobab is installing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Vänta medan Baobab installeras...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="993"/>
@@ -549,92 +523,92 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="869"/>
         <source>Free Up Space</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="984"/>
-        <source>delete old logs (delete .gz, .old, and .1 log files)</source>
-        <translation type="unfinished"></translation>
+        <translation>Frigöra Utrymme</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="875"/>
         <source>Free disk space for user</source>
-        <translation type="unfinished"></translation>
+        <translation>Ledigt hårddiskutrymme för användare</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="890"/>
         <source>User account:</source>
-        <translation type="unfinished"></translation>
+        <translation>Användarkonto:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="913"/>
         <source>Folders to clean</source>
-        <translation type="unfinished"></translation>
+        <translation>Kataloger att rensa</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="919"/>
         <source>Delete /tmp files</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort /tmp filer</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="929"/>
         <source>Delete ~/.thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort ~/.thumbnails</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="939"/>
         <source>Delete ~/.cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort ~/.cache</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="952"/>
         <source>Clear APT cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Töm APT cache</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="958"/>
         <source>autoclean (only removes old cache files that can no longer be downloaded)</source>
-        <translation type="unfinished"></translation>
+        <translation>autoclean (tar bara bort gamla cache-filer som inte längre kan laddas ner)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="968"/>
         <source>clean (delete all cache files)</source>
-        <translation type="unfinished"></translation>
+        <translation>rensa (ta bort alla cache-filer)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="978"/>
         <source>Delete logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort loggar</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="984"/>
+        <source>delete old logs (delete .gz, .old, and .1 log files)</source>
+        <translation>ta bort gamla loggar (ta bort .gz, .old, och .1 loggfiler)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="997"/>
         <source>delete all logs</source>
-        <translation type="unfinished"></translation>
+        <translation>ta bort alla loggar</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1013"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Töm Trash</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1022"/>
         <source>selected user Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>vald användares Trash</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1032"/>
         <source>empty Trash for all users</source>
-        <translation type="unfinished"></translation>
+        <translation>töm Trash för alla användare</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1042"/>
         <source>Graphical tool for analysing disk usage</source>
-        <translation type="unfinished"></translation>
+        <translation>Grafiskt verktyg för att analysera diskanvändning</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1048"/>
         <source>Run Baobab</source>
-        <translation type="unfinished"></translation>
+        <translation>Kör Baobab</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1089"/>
