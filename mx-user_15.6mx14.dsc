@@ -10,8 +10,8 @@ Build-Depends: libqt4-dev, debhelper (>= 7.0.50~)
 Package-List: 
  mx-user deb system optional
 Checksums-Sha1: 
- df8056bbde2073b61e12b9e83527a7ecaf07ebeb 80590 mx-user_15.6mx14.tar.gz
+ f09849f8d069d3fb0c0816116c9ccb2182cd4a30 69716 mx-user_15.6mx14.tar.gz
 Checksums-Sha256: 
- 020b9328d1f5819c69989b3d5a068e07902827c9d337243ad07c16cfd65a3739 80590 mx-user_15.6mx14.tar.gz
+ e81c773dbd9c306d9e42922c4c6d4e6ba35b72d1168327d37b9bd0c53d0be87c 69716 mx-user_15.6mx14.tar.gz
 Files: 
- 1eceba0a03890b31e3d3cbf5c5c9fe0b 80590 mx-user_15.6mx14.tar.gz
+ b366940f20c1c62cf0df8ca09c45f66a 69716 mx-user_15.6mx14.tar.gz

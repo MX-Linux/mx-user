@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="nl">
 <context>
     <name>MConfig</name>
     <message>
@@ -523,12 +525,12 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../meconfig.ui" line="869"/>
         <source>Free Up Space</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="875"/>
         <source>Free disk space for user</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="890"/>
@@ -593,22 +595,22 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../meconfig.ui" line="1022"/>
         <source>selected user Trash</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1032"/>
         <source>empty Trash for all users</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1042"/>
         <source>Graphical tool for analysing disk usage</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1048"/>
         <source>Run Baobab</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1089"/>

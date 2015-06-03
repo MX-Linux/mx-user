@@ -15,14 +15,14 @@ Changes:
  .
    * changed documentation URL
 Checksums-Sha1: 
- a28167881ca3b335b8ab5c9cb8c6884bdd619d7e 596 mx-user_15.6mx14.dsc
- df8056bbde2073b61e12b9e83527a7ecaf07ebeb 80590 mx-user_15.6mx14.tar.gz
- 6bcc6ad5becc2e898a8658bd6bd5676c84b95dd5 86276 mx-user_15.6mx14_i386.deb
+ 876244e8e1e97915c174dd94badca7cb7aef292e 596 mx-user_15.6mx14.dsc
+ f09849f8d069d3fb0c0816116c9ccb2182cd4a30 69716 mx-user_15.6mx14.tar.gz
+ 3cfc711f9f85697005a73053c7189d5b6c95a44e 91924 mx-user_15.6mx14_i386.deb
 Checksums-Sha256: 
- 23418640608e1b42c8aad8cc5b9ea8a76b613a9c253241d63c65a6ddebb5b7cb 596 mx-user_15.6mx14.dsc
- 020b9328d1f5819c69989b3d5a068e07902827c9d337243ad07c16cfd65a3739 80590 mx-user_15.6mx14.tar.gz
- 98fd04a57e33edf4fb0ad47db46753061820af20685ad4891f2bae046a2d3c39 86276 mx-user_15.6mx14_i386.deb
+ 00d51ee40db7cceded787cd6125950e9044df4c8c45d912193a80d27baec35b2 596 mx-user_15.6mx14.dsc
+ e81c773dbd9c306d9e42922c4c6d4e6ba35b72d1168327d37b9bd0c53d0be87c 69716 mx-user_15.6mx14.tar.gz
+ 291dca967d8b84707ae6b90b54b8e14c02fe177b6d15c9711c239a4d85a961c5 91924 mx-user_15.6mx14_i386.deb
 Files: 
- 60fcb701e107b334d9b003a4ff4c6982 596 system optional mx-user_15.6mx14.dsc
- 1eceba0a03890b31e3d3cbf5c5c9fe0b 80590 system optional mx-user_15.6mx14.tar.gz
- 07cb0cba335a528bac1d1f5703c84ce6 86276 system optional mx-user_15.6mx14_i386.deb
+ b6fa6f8de033ac308b0bd178e7171f44 596 system optional mx-user_15.6mx14.dsc
+ b366940f20c1c62cf0df8ca09c45f66a 69716 system optional mx-user_15.6mx14.tar.gz
+ a7f76ac9299d2fb0f13395e6dc2f0e83 91924 system optional mx-user_15.6mx14_i386.deb
