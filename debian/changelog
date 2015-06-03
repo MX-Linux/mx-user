@@ -1,3 +1,9 @@
+mx-user (15.6mx14) mx; urgency=medium
+
+  * changed documentation URL
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 03 Jun 2015 13:14:19 -0400
+
 mx-user (15.5mx14) mx; urgency=medium
 
   * added clean up tab

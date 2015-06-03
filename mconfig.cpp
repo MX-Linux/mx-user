@@ -1003,7 +1003,7 @@ void MConfig::on_buttonAbout_clicked() {
 
 // Help button clicked
 void MConfig::on_buttonHelp_clicked() {
-    system("mx-viewer http://mepiscommunity.org/doc_mx/user.html");
+    system("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-user-manager");
 }
 
 

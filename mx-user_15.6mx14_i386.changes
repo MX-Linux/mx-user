@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 03 Jun 2015 13:14:19 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source i386
+Version: 15.6mx14
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-user    - MX User manager
+Changes: 
+ mx-user (15.6mx14) mx; urgency=medium
+ .
+   * changed documentation URL
+Checksums-Sha1: 
+ 2f1914c199784166f3ae27eda939646e9d65a8ff 596 mx-user_15.6mx14.dsc
+ 9c9389a39bc9a89488fef46a5853fe29fdd32706 79399 mx-user_15.6mx14.tar.gz
+ 9807e9b9294ac3b7dca819b51bc4d57efbca0261 86030 mx-user_15.6mx14_i386.deb
+Checksums-Sha256: 
+ 0dcecc4c6b77c8fed1def15a8b757d95c18ed95a61008d99d496d2042aa1e8d7 596 mx-user_15.6mx14.dsc
+ dadea7192a9c2d60326049da70a90aaec867e26badc701dc78e90f618ee77628 79399 mx-user_15.6mx14.tar.gz
+ d27de76cc5df4b18786ac34a3a040113c2bbfa04f4db707d9dbe7c3869c822b4 86030 mx-user_15.6mx14_i386.deb
+Files: 
+ 1a39ec4f701aa52a0c81b8d2e4559315 596 system optional mx-user_15.6mx14.dsc
+ 1ab30170b3a5094b611492d82781178f 79399 system optional mx-user_15.6mx14.tar.gz
+ 2dfb3f9f18c8626c0f30e6c298520dad 86030 system optional mx-user_15.6mx14_i386.deb
