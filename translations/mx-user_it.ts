@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -27,8 +25,9 @@
         <translation>No</translation>
     </message>
     <message>
-        <source>You must specify a &apos;copy to&apos; destination. You can not copy to the desktop you are logged in to.</source>
-        <translation type="obsolete">Devi specificare una destinazione in cui copiare. Non puoi copiare nel desktop in cui hai eseguito l&apos;accesso.</translation>
+        <location filename="../mconfig.cpp" line="420"/>
+        <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
+        <translation>Devi specificare una destinazione dove compiere l&apos;operazione di &quot;copia su&quot;. Non puoi copiare nel desktop in cui hai eseguito l&apos;accesso.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="424"/>
@@ -51,11 +50,12 @@
         <translation>Il nome utente deve essere lungo almeno 2 caratteri. Per favore, seleziona un nome più lungo prima di procedere.</translation>
     </message>
     <message>
-        <source>The user name needs be lower case and it
-cannot contain special characters or spaces
-please choose another name before proceeding.</source>
-        <translation type="obsolete">Il nome utente deve essere scritto in minuscolo
-e non può contenere caratteri speciali o spazi
+        <location filename="../mconfig.cpp" line="478"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>Il nome utente deve essere scritto in minuscolo e
+non può contenere caratteri speciali o spazi
 prego, scegli un altro nome prima di procedere.</translation>
     </message>
     <message>
@@ -84,8 +84,9 @@ prego, scegli un altro nome prima di procedere.</translation>
         <translation>Aggiunta dell&apos;utente fallita.</translation>
     </message>
     <message>
-        <source>This action can not be undone. Are you sure you want to delete user %1?</source>
-        <translation type="obsolete">Questa azione non può essere annullata. Sei sicuro di volere eliminare l&apos;utente %1?</translation>
+        <location filename="../mconfig.cpp" line="534"/>
+        <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
+        <translation>Questa azione non può essere annullata. Sei sicuro di voler eliminare l&apos;utente %1?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="564"/>
@@ -103,11 +104,12 @@ prego, scegli un altro nome prima di procedere.</translation>
         <translation>Il nome del gruppo deve essere lungo almeno 2 caratteri. Prego, seleziona un nome più lungo prima di procedere.</translation>
     </message>
     <message>
-        <source>The group name needs be lower case and it 
-cannot contain special characters or spaces
-please choose another name before proceeding.</source>
-        <translation type="obsolete">ll nome del gruppo deve essere scritto in minuscolo 
-e non può contenere caratteri speciali o spazi
+        <location filename="../mconfig.cpp" line="584"/>
+        <source>The group name needs to be lower case and it 
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>ll nome del gruppo deve essere scritto in minuscolo e
+non può contenere caratteri speciali o spazi
 prego, scegli un altro nome prima di procedere.</translation>
     </message>
     <message>
@@ -126,37 +128,9 @@ prego, scegli un altro nome prima di procedere.</translation>
         <translation>Aggiunta del gruppo di sistema fallita.</translation>
     </message>
     <message>
-        <source>This action can not be undone. Are you sure you want to delete group %1?</source>
-        <translation type="obsolete">Questa azione non può essere annullata. Sei sicuro di volere eliminare il gruppo %1?</translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="420"/>
-        <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="478"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="534"/>
-        <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="584"/>
-        <source>The group name needs to be lower case and it 
-cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mconfig.cpp" line="606"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Questa azione non può essere annullata. Sei sicuro di volere eliminare il gruppo %1?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="613"/>
@@ -206,17 +180,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="925"/>
         <source>Baobab installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Installazione di Baobab</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="926"/>
         <source>Wait while Baobab is installing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Attendere che si completi l&apos;installazione di Baobab ... </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="993"/>
         <source>About MX User Manager</source>
-        <translation>A proposito di MX Manager Utenti</translation>
+        <translation>Informazioni su MX Manager Utenti</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="994"/>
@@ -226,7 +200,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="996"/>
         <source>Simple user configuration for antiX MX</source>
-        <translation>Semplice configurazione utente per antiX MX</translation>
+        <translation>Gestore di configurazione degli utenti di facile uso</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="997"/>
@@ -549,92 +523,92 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="869"/>
         <source>Free Up Space</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="984"/>
-        <source>delete old logs (delete .gz, .old, and .1 log files)</source>
-        <translation type="unfinished"></translation>
+        <translation>Spazio libero sopra</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="875"/>
         <source>Free disk space for user</source>
-        <translation type="unfinished"></translation>
+        <translation>Spazio libero sul disco per l&apos;utente</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="890"/>
         <source>User account:</source>
-        <translation type="unfinished"></translation>
+        <translation>Account Utente:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="913"/>
         <source>Folders to clean</source>
-        <translation type="unfinished"></translation>
+        <translation>Cartelle da pulire</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="919"/>
         <source>Delete /tmp files</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina files in /tmp</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="929"/>
         <source>Delete ~/.thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina ~/.thumbnails</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="939"/>
         <source>Delete ~/.cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina ~/.cache</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="952"/>
         <source>Clear APT cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Pulisci la cache di APT</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="958"/>
         <source>autoclean (only removes old cache files that can no longer be downloaded)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pulisci in automatico (rimuovi i vecchi file dalla cache ad eccezione di quelli il cui download non è terminato)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="968"/>
         <source>clean (delete all cache files)</source>
-        <translation type="unfinished"></translation>
+        <translation>pulisci (elimina tutti i file dalla cache)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="978"/>
         <source>Delete logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina i logs</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="984"/>
+        <source>delete old logs (delete .gz, .old, and .1 log files)</source>
+        <translation>Elimina i vecchi logs (elimina i files di log  .gz, .old, e .1)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="997"/>
         <source>delete all logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina tutti i logs</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1013"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Svuota Cestino</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1022"/>
         <source>selected user Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>seleziona l&apos;utente del cestino</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1032"/>
         <source>empty Trash for all users</source>
-        <translation type="unfinished"></translation>
+        <translation>svuota cestino a tutti gli utenti</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1042"/>
         <source>Graphical tool for analysing disk usage</source>
-        <translation type="unfinished"></translation>
+        <translation>Strumento grafico di analisi dell&apos;uso del disco</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1048"/>
         <source>Run Baobab</source>
-        <translation type="unfinished"></translation>
+        <translation>Avvia Baobab</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1089"/>
