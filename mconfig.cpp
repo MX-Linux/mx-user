@@ -42,7 +42,7 @@ MConfig::~MConfig(){
 QString MConfig::getCmdOut(QString cmd) {
     char line[260];
     const char* ret = "";
-    FILE* fp = popen(cmd.toAscii(), "r");
+    FILE* fp = popen(cmd.toUtf8(), "r");
     if (fp == NULL) {
         return QString (ret);
     }
@@ -58,7 +58,7 @@ QString MConfig::getCmdOut(QString cmd) {
 
 QStringList MConfig::getCmdOuts(QString cmd) {
     char line[260];
-    FILE* fp = popen(cmd.toAscii(), "r");
+    FILE* fp = popen(cmd.toUtf8(), "r");
     QStringList results;
     if (fp == NULL) {
         return results;
@@ -79,12 +79,12 @@ QString MConfig::getCmdValue(QString cmd, QString key, QString keydel, QString v
 
     QStringList strings = getCmdOuts(cmd);
     for (QStringList::Iterator it = strings.begin(); it != strings.end(); ++it) {
-        strcpy(line, ((QString)*it).toAscii());
-        char* keyptr = strstr(line, key.toAscii());
+        strcpy(line, ((QString)*it).toUtf8());
+        char* keyptr = strstr(line, key.toUtf8());
         if (keyptr != NULL) {
             // key found
-            strtok(keyptr, keydel.toAscii());
-            const char* val = strtok(NULL, valdel.toAscii());
+            strtok(keyptr, keydel.toUtf8());
+            const char* val = strtok(NULL, valdel.toUtf8());
             if (val != NULL) {
                 ret = val;
             }
@@ -96,7 +96,7 @@ QString MConfig::getCmdValue(QString cmd, QString key, QString keydel, QString v
 
 QStringList MConfig::getCmdValues(QString cmd, QString key, QString keydel, QString valdel) {
     char line[130];
-    FILE* fp = popen(cmd.toAscii(), "r");
+    FILE* fp = popen(cmd.toUtf8(), "r");
     QStringList results;
     if (fp == NULL) {
         return results;
@@ -105,11 +105,11 @@ QStringList MConfig::getCmdValues(QString cmd, QString key, QString keydel, QStr
     while (fgets(line, sizeof line, fp) != NULL) {
         i = strlen(line);
         line[--i] = '\0';
-        char* keyptr = strstr(line, key.toAscii());
+        char* keyptr = strstr(line, key.toUtf8());
         if (keyptr != NULL) {
             // key found
-            strtok(keyptr, keydel.toAscii());
-            const char* val = strtok(NULL, valdel.toAscii());
+            strtok(keyptr, keydel.toUtf8());
+            const char* val = strtok(NULL, valdel.toUtf8());
             if (val != NULL) {
                 results.append(val);
             }
@@ -122,7 +122,7 @@ QStringList MConfig::getCmdValues(QString cmd, QString key, QString keydel, QStr
 bool MConfig::replaceStringInFile(QString oldtext, QString newtext, QString filepath) {
 
     QString cmd = QString("sed -i 's/%1/%2/g' %3").arg(oldtext).arg(newtext).arg(filepath);
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toUtf8()) != 0) {
         return false;
     }
     return true;
@@ -216,7 +216,7 @@ void MConfig::refreshDesktop() {
             tok = strtok(line, " ");
             if (tok != NULL && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
                 cmd = QString("grep '^%1' /etc/passwd >/dev/null").arg(tok);
-                if (system(cmd.toAscii()) == 0) {
+                if (system(cmd.toUtf8()) == 0) {
                     fromUserComboBox->addItem(tok);
                 }
             }
@@ -365,19 +365,19 @@ void MConfig::applyRestore() {
     if (checkGroups->isChecked() && user.compare("root") != 0) {
         cmd = QString("sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
         cmd = "usermod -G " + getCmdOut(cmd) + " " + user;
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
     }
     // restore Mozilla configs
     if (checkMozilla->isChecked()) {
         cmd = QString("/bin/rm -r %1/.mozilla").arg(home);
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
     }
     // restore Qupzilla configs
     if (checkQupzilla->isChecked()) {
         cmd = QString("/usr/bin/rsync -qa /etc/skel/.config/qupzilla/ %1/.config/qupzilla/ --delete-after").arg(home);
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
         cmd = QString("find /home/%1/.config/qupzilla/profiles/default -type f -exec sed -i 's|home/demo|home/%1|g' '{}' \\;").arg(userComboBox->currentText());
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
     }
     // restore APT configs
     if (checkApt->isChecked()) {
@@ -385,16 +385,16 @@ void MConfig::applyRestore() {
         QString path = getCmdOut("mktemp -d /tmp/mx-sources.XXXXXX");
         // download source files from
         cmd = QString("wget -q https://github.com/MEPIS-Community/MX-14_sources/archive/master.zip -P %1").arg(path);
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
         // extract master.zip to temp folder
         cmd = QString("unzip -q %1/master.zip -d %1/").arg(path);
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
         // move the files from the temporary directory to /etc/apt/sources.list.d/
         cmd = QString("mv -b %1/MX-14_sources-master/* /etc/apt/sources.list.d/").arg(path);
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
         // delete temp folder
         cmd = QString("rm -rf %1").arg(path);
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
         // get system language
         QString lang = getCmdOut("grep 'LANG=' /etc/default/locale | cut -f2 -d= | cut -f1 -d.");
         // get mirror name
@@ -482,7 +482,7 @@ void MConfig::applyAdd() {
     }
     // check that user name is not already used
     QString cmd = QString("grep '^%1' /etc/passwd >/dev/null").arg( userNameEdit->text());
-    if (system(cmd.toAscii()) == 0) {
+    if (system(cmd.toUtf8()) == 0) {
         QMessageBox::critical(0, QString::null,
                               tr("Sorry that name is in use. Please select a different name."));
         return;
@@ -499,17 +499,17 @@ void MConfig::applyAdd() {
     }
 
     cmd = QString("adduser --disabled-login --force-badname --gecos %1 %2").arg( userNameEdit->text()).arg(userNameEdit->text());
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
     cmd = QString("passwd %1").arg(userNameEdit->text());
-    FILE *fp = popen(cmd.toAscii(), "w");
+    FILE *fp = popen(cmd.toUtf8(), "w");
     bool fpok = true;
     cmd = QString("%1\n").arg(userPasswordEdit->text());
     if (fp != NULL) {
         sleep(1);
-        if (fputs(cmd.toAscii(), fp) >= 0) {
+        if (fputs(cmd.toUtf8(), fp) >= 0) {
             fflush(fp);
             sleep(1);
-            if (fputs(cmd.toAscii(), fp) < 0) {
+            if (fputs(cmd.toUtf8(), fp) < 0) {
                 fpok = false;
             }
         } else {
@@ -537,19 +537,19 @@ void MConfig::applyDelete() {
     if (ans == 0) {
         if (deleteHomeCheckBox->isChecked()) {
             cmd = QString("killall -u %1").arg( deleteUserCombo->currentText());
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
             cmd = QString("deluser --force --remove-home %1").arg( deleteUserCombo->currentText());
         } else {
             cmd = QString("deluser %1").arg(deleteUserCombo->currentText());
         }
-        FILE *fp = popen(cmd.toAscii(), "w");
+        FILE *fp = popen(cmd.toUtf8(), "w");
         bool fpok = true;
         if (fp != NULL) {
             sleep(1);
-            if (fputs(cmd.toAscii(), fp) >= 0) {
+            if (fputs(cmd.toUtf8(), fp) >= 0) {
                 fflush(fp);
                 sleep(1);
-                if (fputs(cmd.toAscii(), fp) < 0) {
+                if (fputs(cmd.toUtf8(), fp) < 0) {
                     fpok = false;
                 }
             } else {
@@ -588,14 +588,14 @@ void MConfig::applyGroup() {
         }
         // check that group name is not already used
         QString cmd = QString("grep '^%1' /etc/group >/dev/null").arg( groupNameEdit->text());
-        if (system(cmd.toAscii()) == 0) {
+        if (system(cmd.toUtf8()) == 0) {
             QMessageBox::critical(0, QString::null,
                                   tr("Sorry that group name already exists. Please select a different name."));
             return;
         }
         // run addgroup command
         cmd = QString("addgroup --system %1").arg( groupNameEdit->text());
-        if (system(cmd.toAscii()) == 0) {
+        if (system(cmd.toUtf8()) == 0) {
             QMessageBox::information(0, QString::null,
                                      tr("The system group was added ok."));
         } else {
@@ -608,7 +608,7 @@ void MConfig::applyGroup() {
                                        tr("Yes"), tr("No"));
         if (ans == 0) {
             cmd = QString("delgroup %1").arg(deleteGroupCombo->currentText());
-            if (system(cmd.toAscii()) == 0) {
+            if (system(cmd.toUtf8()) == 0) {
                 QMessageBox::information(0, QString::null,
                                          tr("The group has been deleted."));
             } else {
@@ -635,7 +635,7 @@ void MConfig::applyMembership() {
                                    tr("Yes"), tr("No"));
     if (ans == 0) {
         cmd = QString("usermod -G %1 %2").arg(cmd).arg(userComboMembership->currentText());
-        if (system(cmd.toAscii()) == 0) {
+        if (system(cmd.toUtf8()) == 0) {
             QMessageBox::information(0, QString::null,
                                      tr("The changes have been applied."));
         } else {
@@ -652,10 +652,10 @@ void MConfig::applyClean() {
         system("rm -r /tmp/* 2>/dev/null");
     }
     if (cacheCheckBox->isChecked()) {
-        system("rm -r /home/" + userCleanCB->currentText().toAscii() + "/.cache/* 2>/dev/null");
+        system("rm -r /home/" + userCleanCB->currentText().toUtf8() + "/.cache/* 2>/dev/null");
     }
     if (thumbCheckBox->isChecked()) {
-        system("rm -r /home/" + userCleanCB->currentText().toAscii() + "/.thumbnails/* 2>/dev/null");
+        system("rm -r /home/" + userCleanCB->currentText().toUtf8() + "/.thumbnails/* 2>/dev/null");
     }
     if (autocleanRB->isChecked()) {
         system("apt-get autoclean");
@@ -668,7 +668,7 @@ void MConfig::applyClean() {
         system("find /var/log -type f -exec sh -c \"echo > '{}'\" \\;");  // empty the logs
     }
     if (selectedUserCB->isChecked()) {
-        system("rm -r /home/" + userCleanCB->currentText().toAscii() +"/.local/share/Trash/* 2>/dev/null");
+        system("rm -r /home/" + userCleanCB->currentText().toUtf8() +"/.local/share/Trash/* 2>/dev/null");
     } else {
         system("rm -r /home/*/.local/share/Trash/* 2>/dev/null");
     }
@@ -697,37 +697,37 @@ void MConfig::syncDone(int exitCode, QProcess::ExitStatus exitStatus) {
 
         // fix owner
         QString cmd = QString("chown -R %1:users %2").arg(toUserComboBox->currentText()).arg(toDir);
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
 
         // fix /home/username in some files
         if (entireRadioButton->isChecked() || mozillaRadioButton->isChecked()) {
             // fix mozilla tree
             cmd = QString("find %1/.mozilla -type f -exec sed -i 's|home/%2|home/%3|g' '{}' \\;").arg(toDir).arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
         }
         if (entireRadioButton->isChecked() || qupRadioButton->isChecked()) {
             // fix qupzilla tree
             cmd = QString("find %1/.config/qupzilla/profiles/default -type f -exec sed -i 's|home/%2|home/%3|g' '{}' \\;").arg(toDir).arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
         }
 
 
         if (entireRadioButton->isChecked()) {
             //delete some files
             cmd = QString("rm -f %1/.recently-used").arg(toDir);
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
             cmd = QString("rm -f %1/.openoffice.org/*/.lock").arg(toDir);
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
             cmd = QString("find %1/.openoffice.org -type f -exec sed -i 's|home/%2|home/%3|g' '{}' \\;").arg(toDir).arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
             cmd = QString("find %1/.thunderbird -type f -exec sed -i 's|home/%2|home/%3|g' '{}' \\;").arg(toDir).arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
             cmd = QString("find %1/.adobe -type f -exec sed -i 's|home/%2|home/%3|g' '{}' \\;").arg(toDir).arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
             cmd = QString("find %1/.gimp-2.4 -type f -exec sed -i 's|home/%2|home/%3|g' '{}' \\;").arg(toDir).arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
             cmd = QString("find %1/.xine -type f -exec sed -i 's|home/%2|home/%3|g' '{}' \\;").arg(toDir).arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
-            system(cmd.toAscii());
+            system(cmd.toUtf8());
         }
         if (syncRadioButton->isChecked()) {
             syncStatusEdit->setText(tr("Synchronizing desktop...ok"));
@@ -764,9 +764,9 @@ void MConfig::on_fromUserComboBox_activated() {
             tok = strtok(line, " ");
             if (tok != NULL && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
                 cmd = QString("grep '^%1' /etc/passwd >/dev/null").arg(tok);
-                if (system(cmd.toAscii()) == 0 && fromUserComboBox->currentText().compare(tok) != 0) {
+                if (system(cmd.toUtf8()) == 0 && fromUserComboBox->currentText().compare(tok) != 0) {
                     cmd = QString("who | grep '%1'").arg(tok);
-                    if (system(cmd.toAscii()) != 0) {
+                    if (system(cmd.toUtf8()) != 0) {
                         toUserComboBox->addItem(tok);
                     }
                 }

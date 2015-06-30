@@ -1,4 +1,5 @@
-QTDIR = /usr/share/qt4
+QT       += core gui widgets
+
 TEMPLATE = app
 TARGET = mx-user
 TRANSLATIONS += translations/mx-user_ca.ts \
