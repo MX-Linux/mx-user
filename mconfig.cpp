@@ -1,7 +1,7 @@
 //
 //   Copyright (C) 2003-2010 by Warren Woodford
 //   Copyright (C) 2014 by Timothy E. Harris
-//   for modifications applicable to the MX-14 project.
+//   for modifications applicable to the MX Linux project.
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
 //   you may not use this file except in compliance with the License.
@@ -384,13 +384,13 @@ void MConfig::applyRestore() {
         // create temp folder
         QString path = getCmdOut("mktemp -d /tmp/mx-sources.XXXXXX");
         // download source files from
-        cmd = QString("wget -q https://github.com/MEPIS-Community/MX-14_sources/archive/master.zip -P %1").arg(path);
+        cmd = QString("wget -q https://github.com/mx-linux/MX-15_sources/archive/master.zip -P %1").arg(path);
         system(cmd.toUtf8());
         // extract master.zip to temp folder
         cmd = QString("unzip -q %1/master.zip -d %1/").arg(path);
         system(cmd.toUtf8());
         // move the files from the temporary directory to /etc/apt/sources.list.d/
-        cmd = QString("mv -b %1/MX-14_sources-master/* /etc/apt/sources.list.d/").arg(path);
+        cmd = QString("mv -b %1/MX-15_sources-master/* /etc/apt/sources.list.d/").arg(path);
         system(cmd.toUtf8());
         // delete temp folder
         cmd = QString("rm -rf %1").arg(path);
