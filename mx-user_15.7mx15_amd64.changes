@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 30 Jun 2015 14:21:15 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 15.7mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (15.7mx15) mx; urgency=medium
+ .
+   * update to qt5, updated to mx-15 sources
+Checksums-Sha1:
+ a875548df55d76f762d0fbf77dd1c4193d928b23 603 mx-user_15.7mx15.dsc
+ 25eaf5f89e473de30bf78a408ba3e4ea1979a7c7 167224 mx-user_15.7mx15.tar.xz
+ fad89d0aff18d81655563175a33963e374f96b2d 93352 mx-user_15.7mx15_amd64.deb
+Checksums-Sha256:
+ 2ffb8f3beab46ba791342e70a7f0dd527db87d9f775a5592b386d4e3e3d72a0e 603 mx-user_15.7mx15.dsc
+ 20da246648f97785bc81badddd9efc70a2c73d262066880029489a564cfd99fd 167224 mx-user_15.7mx15.tar.xz
+ 67284115ee430d28bf8bd1af3d4417675d9c518bae0c4d2069c8ae6bf21062c2 93352 mx-user_15.7mx15_amd64.deb
+Files:
+ cb719de39ed02f86cd671e3e5dfa583a 603 system optional mx-user_15.7mx15.dsc
+ 00041f73833e19217d30fd6fa04581a9 167224 system optional mx-user_15.7mx15.tar.xz
+ 112814bdee7246695166c5254cb27fbd 93352 system optional mx-user_15.7mx15_amd64.deb
