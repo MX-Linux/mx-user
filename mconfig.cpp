@@ -199,7 +199,6 @@ void MConfig::refreshRestore() {
     }
     checkGroups->setChecked(false);
     checkMozilla->setChecked(false);
-    checkQupzilla->setChecked(false);
 }
 
 void MConfig::refreshDesktop() {
@@ -372,13 +371,6 @@ void MConfig::applyRestore() {
         cmd = QString("/bin/rm -r %1/.mozilla").arg(home);
         system(cmd.toUtf8());
     }
-    // restore Qupzilla configs
-    if (checkQupzilla->isChecked()) {
-        cmd = QString("/usr/bin/rsync -qa /etc/skel/.config/qupzilla/ %1/.config/qupzilla/ --delete-after").arg(home);
-        system(cmd.toUtf8());
-        cmd = QString("find /home/%1/.config/qupzilla/profiles/default -type f -exec sed -i 's|home/demo|home/%1|g' '{}' \\;").arg(userComboBox->currentText());
-        system(cmd.toUtf8());
-    }
     // restore APT configs
     if (checkApt->isChecked()) {
         // create temp folder
@@ -439,9 +431,6 @@ void MConfig::applyDesktop() {
     } else if (mozillaRadioButton->isChecked()) {
         fromDir.append("/.mozilla");
         toDir.append("/.mozilla");
-    } else if (qupRadioButton->isChecked()) {
-        fromDir.append("/.config/qupzilla");
-        toDir.append("/.config/qupzilla");
     } else if (sharedRadioButton->isChecked()) {
         fromDir.append("/Shared");
         toDir.append("/Shared");
@@ -709,12 +698,6 @@ void MConfig::syncDone(int exitCode, QProcess::ExitStatus exitStatus) {
             cmd = QString("find %1/.mozilla -type f -exec sed -i 's|home/%2|home/%3|g' '{}' \\;").arg(toDir).arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
             system(cmd.toUtf8());
         }
-        if (entireRadioButton->isChecked() || qupRadioButton->isChecked()) {
-            // fix qupzilla tree
-            cmd = QString("find %1/.config/qupzilla/profiles/default -type f -exec sed -i 's|home/%2|home/%3|g' '{}' \\;").arg(toDir).arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
-            system(cmd.toUtf8());
-        }
-
 
         if (entireRadioButton->isChecked()) {
             //delete some files
@@ -1002,7 +985,7 @@ void MConfig::on_buttonAbout_clicked() {
     msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
     msgBox.addButton(tr("License"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::RejectRole)
-        system("mx-viewer http://www.mepiscommunity.org/doc_mx/mx-user-license.html 'MX User License'");
+        system("mx-viewer http://mepiscommunity.org/wiki/licenses/license-mx-user-manager 'MX User License'");
 }
 
 // Help button clicked

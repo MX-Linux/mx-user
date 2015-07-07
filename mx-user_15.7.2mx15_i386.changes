@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 07 Jul 2015 10:48:38 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source i386
+Version: 15.7.2mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-user    - MX User manager
+Changes: 
+ mx-user (15.7.2mx15) mx; urgency=medium
+ .
+   * removed Qupzilla
+Checksums-Sha1: 
+ 8ec891915de475e7eb46651330d5973db2adac50 639 mx-user_15.7.2mx15.dsc
+ e64b438ec9ad8ec30a44187f254697db6970058a 335152 mx-user_15.7.2mx15.tar.gz
+ 0a930376a77a353f0f8aebdd1ed6468637011c1b 92338 mx-user_15.7.2mx15_i386.deb
+Checksums-Sha256: 
+ eedb04918f8d76ce96bdcdc531dab07d0c8eda9e68f884749f34a8bce43d018c 639 mx-user_15.7.2mx15.dsc
+ f9bd41bd7e2636a562cacaf099646443a61c3f1911c7e853bcc091f1c8475379 335152 mx-user_15.7.2mx15.tar.gz
+ 8c6b2c19d62aa302350f855e6942bd1bb902983a4a53d5e5c704ef7aadde7e25 92338 mx-user_15.7.2mx15_i386.deb
+Files: 
+ 3ff2c24ca0fce5d6523ff60a577ebdd4 639 system optional mx-user_15.7.2mx15.dsc
+ 254daf1a08952efeee39f9c3b2ddeaa5 335152 system optional mx-user_15.7.2mx15.tar.gz
+ fdce37c81ed2e8a99c6ef7f5049751c9 92338 system optional mx-user_15.7.2mx15_i386.deb
