@@ -1,3 +1,9 @@
+mx-user (15.7.1mx15) mx; urgency=medium
+
+  * added autologin fix, removed mirror localization for now
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 07 Jul 2015 08:57:41 -0400
+
 mx-user (15.7mx15) mx; urgency=medium
 
   * update to qt5, updated to mx-15 sources

@@ -395,17 +395,21 @@ void MConfig::applyRestore() {
         // delete temp folder
         cmd = QString("rm -rf %1").arg(path);
         system(cmd.toUtf8());
-        // get system language
-        QString lang = getCmdOut("grep 'LANG=' /etc/default/locale | cut -f2 -d= | cut -f1 -d.");
-        // get mirror name
-        cmd = QString("grep 'MIRROR=' /usr/share/antiX/init-lang/%1.lang |cut -f2 -d=").arg(lang);
-        QString mirror = getCmdOut(cmd);
-        // strip quotes
-        mirror.remove('"');
-        if (mirror != "") {
-            // replace .us. in debian.list with the mirror provided in /usr/share/antiX/init-lang
-            replaceStringInFile(".us.", "." + mirror + ".", "/etc/apt/sources.list.d/debian.list");
-        }
+//        // get system language
+//        QString lang = getCmdOut("grep 'LANG=' /etc/default/locale | cut -f2 -d= | cut -f1 -d.");
+//        // get mirror name
+//        cmd = QString("grep 'MIRROR=' /usr/share/antiX/init-lang/%1.lang |cut -f2 -d=").arg(lang);
+//        QString mirror = getCmdOut(cmd);
+//        // strip quotes
+//        mirror.remove('"');
+//        if (mirror != "") {
+//            // replace .us. in debian.list with the mirror provided in /usr/share/antiX/init-lang
+//            replaceStringInFile(".us.", "." + mirror + ".", "/etc/apt/sources.list.d/debian.list");
+//        }
+    }
+    if (checkRemoveAutologin->isChecked()) {
+        cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
+        system(cmd.toUtf8());
     }
 
     setCursor(QCursor(Qt::ArrowCursor));
