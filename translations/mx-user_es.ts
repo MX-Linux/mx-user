@@ -210,12 +210,12 @@ Escoja otro antes de continuar, por favor.</translation>
         <translation>Derechos de Autor (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="986"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="986"/>
+        <location filename="../mconfig.cpp" line="985"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>

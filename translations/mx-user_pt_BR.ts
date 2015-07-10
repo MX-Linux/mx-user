@@ -206,12 +206,12 @@ Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="986"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="986"/>
+        <location filename="../mconfig.cpp" line="985"/>
         <source>License</source>
         <translation>licença</translation>
     </message>

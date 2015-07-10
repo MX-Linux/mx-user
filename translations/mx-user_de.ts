@@ -206,12 +206,12 @@ Please choose another name before proceeding.</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="986"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="986"/>
+        <location filename="../mconfig.cpp" line="985"/>
         <source>License</source>
         <translation>Lizenz</translation>
     </message>

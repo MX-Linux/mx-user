@@ -982,10 +982,10 @@ void MConfig::on_buttonAbout_clicked() {
                        getVersion("mx-user") + "</p><p align=\"center\"><h3>" +
                        tr("Simple user configuration for antiX MX") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) antiX") + "<br /><br /></p>", 0, this);
-    msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
-    msgBox.addButton(tr("License"), QMessageBox::RejectRole);
-    if (msgBox.exec() == QMessageBox::RejectRole)
-        system("mx-viewer http://mepiscommunity.org/wiki/licenses/license-mx-user-manager 'MX User License'");
+    msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
+    msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
+    if (msgBox.exec() == QMessageBox::AcceptRole)
+        system("mx-viewer file:///usr/share/doc/mx-user/license.html 'MX User License'");
 }
 
 // Help button clicked
