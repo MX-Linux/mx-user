@@ -234,6 +234,16 @@ Please choose another name before proceeding.</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
+        <location filename="../mconfig.cpp" line="988"/>
+        <source>MX User Manager License</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="993"/>
+        <source>MX User Manager Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mconfig.cpp" line="985"/>
         <source>License</source>
         <translation>Άδεια</translation>

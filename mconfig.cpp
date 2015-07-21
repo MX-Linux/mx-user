@@ -985,12 +985,12 @@ void MConfig::on_buttonAbout_clicked() {
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::AcceptRole)
-        system("mx-viewer file:///usr/share/doc/mx-user/license.html 'MX User License'");
+        system("mx-viewer file:///usr/share/doc/mx-user/license.html '" + tr("MX User Manager License").toUtf8() + "'");
 }
 
 // Help button clicked
 void MConfig::on_buttonHelp_clicked() {
-    system("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-user-manager");
+    system("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-user-manager '" + tr("MX User Manager Help").toUtf8() + "'");
 }
 
 
