@@ -211,6 +211,8 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="981"/>
+        <location filename="../mconfig.cpp" line="988"/>
+        <location filename="../mconfig.cpp" line="993"/>
         <source>MX User Manager</source>
         <translation>Administrador d&apos;Usuaris MX</translation>
     </message>
@@ -230,17 +232,13 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="988"/>
-        <source>MX User Manager License</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mconfig.cpp" line="993"/>
-        <source>MX User Manager Help</source>
-        <translation type="unfinished"></translation>
+        <source>Help</source>
+        <translation type="unfinished">Ajuda</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="988"/>
         <source>License</source>
         <translation>Llicència</translation>
     </message>
