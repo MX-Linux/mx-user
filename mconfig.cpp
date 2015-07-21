@@ -180,7 +180,7 @@ void MConfig::refreshRestore() {
     int i;
     // locale
     userComboBox->clear();
-    userComboBox->addItem("none");
+    userComboBox->addItem(tr("none"));
     userComboBox->addItem("root");
     fp = popen("ls -1 /home", "r");
     if (fp != NULL) {
@@ -240,7 +240,7 @@ void MConfig::refreshDelete() {
     int i;
     // locale
     deleteUserCombo->clear();
-    deleteUserCombo->addItem("none");
+    deleteUserCombo->addItem(tr("none"));
     deleteUserBox->setEnabled(true);
     fp = popen("ls -1 /home", "r");
     if (fp != NULL) {
@@ -272,7 +272,7 @@ void MConfig::refreshClean() {
     FILE *fp;
     int i;
     userCleanCB->clear();
-    userCleanCB->addItem("none");
+    userCleanCB->addItem(tr("none"));
     fp = popen("ls -1 /home", "r");
     if (fp != NULL) {
         while (fgets(line, sizeof line, fp) != NULL) {
@@ -298,7 +298,7 @@ void MConfig::refreshGroups() {
     groupNameEdit->setText(tr(""));
     addBox->setEnabled(true);
     deleteGroupCombo->clear();
-    deleteGroupCombo->addItem("none");
+    deleteGroupCombo->addItem(tr("none"));
     deleteBox->setEnabled(true);
     fp = popen("cat /etc/group | cut -f 1 -d :", "r");
     if (fp != NULL) {
@@ -320,7 +320,7 @@ void MConfig::refreshMembership() {
     FILE *fp;
     int i;
     userComboMembership->clear();
-    userComboMembership->addItem("none");
+    userComboMembership->addItem(tr("none"));
     listGroups->clear();
     fp = popen("ls -1 /home", "r");
     if (fp != NULL) {
@@ -343,7 +343,7 @@ void MConfig::refreshMembership() {
 // apply but do not close
 void MConfig::applyRestore() {
     QString user = userComboBox->currentText();
-    if (user.compare("none") == 0) {
+    if (user.compare(tr("none")) == 0) {
         // no user selected
         return;
     }
@@ -765,7 +765,7 @@ void MConfig::on_fromUserComboBox_activated() {
 
 void MConfig::on_userComboBox_activated() {
     buttonApply->setEnabled(true);
-    if (userComboBox->currentText() == "none") {
+    if (userComboBox->currentText() == tr("none")) {
         refresh();
     }
 }
@@ -773,7 +773,7 @@ void MConfig::on_userComboBox_activated() {
 void MConfig::on_deleteUserCombo_activated() {
     addUserBox->setEnabled(false);
     buttonApply->setEnabled(true);
-    if (deleteUserCombo->currentText() == "none") {
+    if (deleteUserCombo->currentText() == tr("none")) {
         refresh();
     }
 }
@@ -797,7 +797,7 @@ void MConfig::on_groupNameEdit_textEdited() {
 void MConfig::on_deleteGroupCombo_activated() {
     addBox->setEnabled(false);
     buttonApply->setEnabled(true);
-    if (deleteGroupCombo->currentText() == "none") {
+    if (deleteGroupCombo->currentText() == tr("none")) {
         refresh();
     }
 }
@@ -805,14 +805,14 @@ void MConfig::on_deleteGroupCombo_activated() {
 void MConfig::on_userComboMembership_activated() {
     buildListGroups();
     buttonApply->setEnabled(true);
-    if (userComboMembership->currentText() == "none") {
+    if (userComboMembership->currentText() == tr("none")) {
         refresh();
     }
 }
 
 void MConfig::on_userCleanCB_activated() {
     buttonApply->setEnabled(true);
-    if (userCleanCB->currentText() == "none") {
+    if (userCleanCB->currentText() == tr("none")) {
         refresh();
     }
 }

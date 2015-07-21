@@ -15,14 +15,14 @@ Changes:
  .
    * fixed license
 Checksums-Sha1:
- ff457c83a8ff873b0d456125f026cdce37184a8a 641 mx-user_15.7.3mx15.dsc
- 9e1a76ab1320325da6b8d39a5f75cb5a72713af8 54808 mx-user_15.7.3mx15.tar.xz
- 474e5c2f1e9da14392a29c26bbba75c545d84c84 92690 mx-user_15.7.3mx15_i386.deb
+ 6b3dfd520d5e9866cd58a666db896ea5e98fbfb0 644 mx-user_15.7.3mx15.dsc
+ 81f3b564f204df82bbc23b07c03f9675be32fea2 110768 mx-user_15.7.3mx15.tar.xz
+ 531e77add5890c8792525b330e999df2b55e3a2b 92952 mx-user_15.7.3mx15_i386.deb
 Checksums-Sha256:
- 845130f5eaf307ef2d41339e702c3e48a7b9551f821332c5ae6c28de545aa1ca 641 mx-user_15.7.3mx15.dsc
- 863c196e33b0f0e7dbbf85b8fe790ba9a3aa586db210553b5a061893abb563be 54808 mx-user_15.7.3mx15.tar.xz
- 6437670aa30cc7ebf21e3f727c76cb603ba268faca922ddfb7de79c1baebf879 92690 mx-user_15.7.3mx15_i386.deb
+ 921210e2ed2ea63ea93a181299ddc8de3c395cccd1a72fb6c7c1b85e6fdf03b8 644 mx-user_15.7.3mx15.dsc
+ aa5baf6a259ed2cdb805828a971fc6356f6799b9992700336fa2872a74235c8c 110768 mx-user_15.7.3mx15.tar.xz
+ 4dc312e00ef2ffd81b13cd60fd02a6d9dad83878fc467d31723fe0813e72acba 92952 mx-user_15.7.3mx15_i386.deb
 Files:
- e76902f1ebb5e4550f5ef42730ceefea 641 system optional mx-user_15.7.3mx15.dsc
- c8fe7373895a0014fc3625cff45316db 54808 system optional mx-user_15.7.3mx15.tar.xz
- 4a7f67fcd651a464727d626c36ad95b2 92690 system optional mx-user_15.7.3mx15_i386.deb
+ f1241e739068f04c279dae0aa837a360 644 system optional mx-user_15.7.3mx15.dsc
+ 9bcb37c1630cc97eb65cad91361abc38 110768 system optional mx-user_15.7.3mx15.tar.xz
+ 3bc8d593576f9f1ee41b4741a91a71c5 92952 system optional mx-user_15.7.3mx15_i386.deb

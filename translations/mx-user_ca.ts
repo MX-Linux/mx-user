@@ -4,6 +4,21 @@
 <context>
     <name>MConfig</name>
     <message>
+        <location filename="../mconfig.cpp" line="183"/>
+        <location filename="../mconfig.cpp" line="243"/>
+        <location filename="../mconfig.cpp" line="275"/>
+        <location filename="../mconfig.cpp" line="301"/>
+        <location filename="../mconfig.cpp" line="323"/>
+        <location filename="../mconfig.cpp" line="346"/>
+        <location filename="../mconfig.cpp" line="768"/>
+        <location filename="../mconfig.cpp" line="776"/>
+        <location filename="../mconfig.cpp" line="800"/>
+        <location filename="../mconfig.cpp" line="808"/>
+        <location filename="../mconfig.cpp" line="815"/>
+        <source>none</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mconfig.cpp" line="356"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Es repararà la configuració d&apos;usuari. Si us plau, tanqueu tots els altres programes. En acabar, torneu a entrar o arrencar. Esteu segur que voleu reparar-ho ara?</translation>
