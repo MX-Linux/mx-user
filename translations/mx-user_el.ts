@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -16,7 +14,7 @@
         <location filename="../mconfig.cpp" line="808"/>
         <location filename="../mconfig.cpp" line="815"/>
         <source>none</source>
-        <translation type="unfinished"></translation>
+        <translation>κανένα</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="356"/>
@@ -231,6 +229,12 @@ Please choose another name before proceeding.</source>
         <translation>Copyright (c) antiX </translation>
     </message>
     <message>
+        <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="988"/>
+        <source>License</source>
+        <translation>Άδεια</translation>
+    </message>
+    <message>
         <location filename="../mconfig.cpp" line="986"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
@@ -238,13 +242,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="993"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="985"/>
-        <location filename="../mconfig.cpp" line="988"/>
-        <source>License</source>
-        <translation>Άδεια</translation>
+        <translation>Βοήθεια </translation>
     </message>
 </context>
 <context>
@@ -397,14 +395,6 @@ Please choose another name before proceeding.</source>
         <translation>Alt+X</translation>
     </message>
     <message>
-        <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="obsolete">Επαναφορά διαμορφώσεις QupZilla στις προεπιλογές ΜΧ</translation>
-    </message>
-    <message>
-        <source>Qupzilla configs</source>
-        <translation type="obsolete">Διαμορφώσεις του </translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="447"/>
         <source>Restore group memberships to MX defaults</source>
         <translation>Επαναφορά της ομάδας μέλους σε προεπιλογές MX </translation>
@@ -432,7 +422,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="473"/>
         <source>Remove autologin</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση autologin</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="488"/>

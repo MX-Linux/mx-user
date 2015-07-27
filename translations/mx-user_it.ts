@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -16,7 +14,7 @@
         <location filename="../mconfig.cpp" line="808"/>
         <location filename="../mconfig.cpp" line="815"/>
         <source>none</source>
-        <translation type="unfinished"></translation>
+        <translation>nessuno</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="356"/>
@@ -49,7 +47,7 @@
     <message>
         <location filename="../mconfig.cpp" line="420"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation>Prima della copia, chiudi tutte le altre applicazioni. Assicurati che la destinazione della copia sia abbastanza larga da contenere i file che stai copiando. La copiatura tra  desktops potrebbe sovrascrivere o eliminare i tuoi file o preferenze sul desktop di destinazione. Sei sicuro di voler procedere?</translation>
+        <translation>Prima della copia, chiudi tutte le altre applicazioni. Assicurati che la destinazione della copia abbia abbastanza spazio libero da contenere i file che stai copiando. La copiatura tra  desktops potrebbe sovrascrivere o eliminare i tuoi file o preferenze sul desktop di destinazione. Sei sicuro di voler procedere?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="442"/>
@@ -227,6 +225,12 @@ prego, scegli un altro nome prima di procedere.</translation>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
+        <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="988"/>
+        <source>License</source>
+        <translation>Licenza</translation>
+    </message>
+    <message>
         <location filename="../mconfig.cpp" line="986"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
@@ -234,13 +238,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../mconfig.cpp" line="993"/>
         <source>Help</source>
-        <translation type="unfinished">Aiuto</translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="985"/>
-        <location filename="../mconfig.cpp" line="988"/>
-        <source>License</source>
-        <translation>Licenza</translation>
+        <translation>Aiuto</translation>
     </message>
 </context>
 <context>
@@ -253,7 +251,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="62"/>
         <source>Add/Remove User</source>
-        <translation>Aggiungi/Rimuovi un utente</translation>
+        <translation>Aggiungi/Rimuovi utente</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="65"/>
@@ -316,7 +314,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="240"/>
         <source>Delete User Account</source>
-        <translation>Elimina l&apos;account utente</translation>
+        <translation>Elimina un account utente</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="267"/>
@@ -356,7 +354,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="360"/>
         <source>Repair User Account</source>
-        <translation>Ripara un account utente</translation>
+        <translation>Ripara account utente</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="372"/>
@@ -374,7 +372,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="410"/>
         <source>Restore Defaults</source>
-        <translation>Ripristina predefiniti</translation>
+        <translation>Ripristina impostaz. predefinite</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="431"/>
@@ -392,22 +390,14 @@ prego, scegli un altro nome prima di procedere.</translation>
         <translation>Alt+X</translation>
     </message>
     <message>
-        <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="obsolete">Riporta le configurazioni di Qupzilla a quelle predefinite di MX</translation>
-    </message>
-    <message>
-        <source>Qupzilla configs</source>
-        <translation type="obsolete">Configurazioni di Qupzilla</translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="447"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation>Ripristina le appartenenze al gruppo a quelli predefiniti di MX</translation>
+        <translation>Ripristina i gruppi di appartenenza a quelli predefiniti di MX</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="453"/>
         <source>Group memberships</source>
-        <translation>Appartenenze al gruppo</translation>
+        <translation>Gruppi di appartenenza</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="456"/>
@@ -417,17 +407,17 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="463"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation>Ripristina le sorgenti del software di APT a quelle di default di MX</translation>
+        <translation>Ripristina le sorgenti del software di APT (repository) a quelle predefinite di MX</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="466"/>
         <source>Restore APT sources</source>
-        <translation>Ripristina le sorgenti del software di APT</translation>
+        <translation>Ripristina i repository del software di APT</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="473"/>
         <source>Remove autologin</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="488"/>
@@ -437,7 +427,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="515"/>
         <source>Copy Between Desktops</source>
-        <translation>Copia tra  i Desktops</translation>
+        <translation>Copia tra  Desktops</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="542"/>
@@ -640,7 +630,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1079"/>
         <source>Add/Remove Groups</source>
-        <translation>Aggiungi/Rimuovi dei gruppi</translation>
+        <translation>Aggiungi/Rimuovi gruppi</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1091"/>
@@ -670,7 +660,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1233"/>
         <source>Group Membership</source>
-        <translation>Gruppo di appartenenza</translation>
+        <translation>Gruppi di appartenenza</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1245"/>
@@ -690,7 +680,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1353"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>* Si prega di ricontrollare le tue selezioni prima di applicare, assegnando le appartenenze a gruppi sbagliati si può danneggiare il sistema. Se hai fatto un errore, utilizza la scheda Ripara per ripristinare le appartenenze originali.</translation>
+        <translation>* Si prega di ricontrollare le tue selezioni prima di applicare, assegnando l&apos;appartenenza a gruppi sbagliati si può danneggiare il sistema. Se hai fatto un errore, utilizza la scheda Ripara per ripristinare le appartenenze originali.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1416"/>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -16,7 +14,7 @@
         <location filename="../mconfig.cpp" line="808"/>
         <location filename="../mconfig.cpp" line="815"/>
         <source>none</source>
-        <translation type="unfinished"></translation>
+        <translation>keine</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="356"/>
@@ -44,7 +42,7 @@
     <message>
         <location filename="../mconfig.cpp" line="416"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ein Ziel für das &apos;Kopieren zu&apos; muss angegeben werden.  Es ist nicht möglich, den Desktop auf dem Sie eingelogt sind zu kopieren.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="420"/>
@@ -71,7 +69,9 @@
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Der Benutzername muss klein geschrieben werden und 
+darf keine Sonderzeichen oder Leerzeichen enthalten.
+Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="480"/>
@@ -101,7 +101,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="527"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese Aktion kann nicht widerrufen werden.  Sind Sie sicher, dass Sie den Benutzer %1 löschen wollen?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="557"/>
@@ -123,7 +123,9 @@ Please choose another name before proceeding.</source>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Der Gruppename muss klein geschrieben werden und 
+darf keine Sonderzeichen oder Leerzeichen enthalten.
+Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="586"/>
@@ -143,7 +145,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="599"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese Aktion kann nicht widerrufen werden.  Sind Sie sicher, dass Sie die Gruppe %1 löschen wollen?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="606"/>
@@ -193,12 +195,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="912"/>
         <source>Baobab installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Installation von Baobab</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="913"/>
         <source>Wait while Baobab is installing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Warten, als Baobab installiert wird...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="980"/>
@@ -223,6 +225,12 @@ Please choose another name before proceeding.</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
+        <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="988"/>
+        <source>License</source>
+        <translation>Lizenz</translation>
+    </message>
+    <message>
         <location filename="../mconfig.cpp" line="986"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
@@ -230,13 +238,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="993"/>
         <source>Help</source>
-        <translation type="unfinished">Hilfe</translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="985"/>
-        <location filename="../mconfig.cpp" line="988"/>
-        <source>License</source>
-        <translation>Lizenz</translation>
+        <translation>Hilfe</translation>
     </message>
 </context>
 <context>
@@ -388,14 +390,6 @@ Please choose another name before proceeding.</source>
         <translation>Alt+X</translation>
     </message>
     <message>
-        <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="obsolete">Wiederherstellen der Qupzilla-Konfiguration nach MX-Standard</translation>
-    </message>
-    <message>
-        <source>Qupzilla configs</source>
-        <translation type="obsolete">QupZilla-Voreinstellungen</translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="447"/>
         <source>Restore group memberships to MX defaults</source>
         <translation>Gruppenzugehörigkeiten gemäss MX Voreinstellungen wiederherstellen</translation>
@@ -423,7 +417,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="473"/>
         <source>Remove autologin</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="488"/>
@@ -546,92 +540,92 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="859"/>
         <source>Free Up Space</source>
-        <translation type="unfinished"></translation>
+        <translation>Speicherplatz freigeben</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="865"/>
         <source>Free disk space for user</source>
-        <translation type="unfinished"></translation>
+        <translation>Speicherplatz für den Benutzer freigeben</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="880"/>
         <source>User account:</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzerkonto</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="903"/>
         <source>Folders to clean</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordner zu löschen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="909"/>
         <source>Delete /tmp files</source>
-        <translation type="unfinished"></translation>
+        <translation>/tmp-Dateien löschen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="919"/>
         <source>Delete ~/.thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>~/.thumbnails löschen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="929"/>
         <source>Delete ~/.cache</source>
-        <translation type="unfinished"></translation>
+        <translation>~/.cache löschen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="942"/>
         <source>Clear APT cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Cache leeren</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="948"/>
         <source>autoclean (only removes old cache files that can no longer be downloaded)</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatisch reinigen (nur diejenigen alten Cache-Dateien löschen, die nicht mehr heruntergeladen können)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="958"/>
         <source>clean (delete all cache files)</source>
-        <translation type="unfinished"></translation>
+        <translation>Reinigen (alle Cache-Dateien löschen)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="968"/>
         <source>Delete logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Protokolle löschen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="974"/>
         <source>delete old logs (delete .gz, .old, and .1 log files)</source>
-        <translation type="unfinished"></translation>
+        <translation>Alte Protokolle löschen (.gz, .old, und .1 Protokolle löschen)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="987"/>
         <source>delete all logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Protokolle löschen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1003"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Mülleimer leeren</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1012"/>
         <source>selected user Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Mülleimer für ausgewählten Benutzer</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1022"/>
         <source>empty Trash for all users</source>
-        <translation type="unfinished"></translation>
+        <translation>Mülleimer für alle Benutzer leeren</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1032"/>
         <source>Graphical tool for analysing disk usage</source>
-        <translation type="unfinished"></translation>
+        <translation>Grafisches Festplatten-Analyse-Tool </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1038"/>
         <source>Run Baobab</source>
-        <translation type="unfinished"></translation>
+        <translation>Baobab starten</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1079"/>

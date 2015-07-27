@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -16,7 +14,7 @@
         <location filename="../mconfig.cpp" line="808"/>
         <location filename="../mconfig.cpp" line="815"/>
         <source>none</source>
-        <translation type="unfinished"></translation>
+        <translation>ingen</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="356"/>
@@ -227,6 +225,12 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
+        <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="988"/>
+        <source>License</source>
+        <translation>Licens</translation>
+    </message>
+    <message>
         <location filename="../mconfig.cpp" line="986"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
@@ -234,13 +238,7 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
     <message>
         <location filename="../mconfig.cpp" line="993"/>
         <source>Help</source>
-        <translation type="unfinished">Hjälp</translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="985"/>
-        <location filename="../mconfig.cpp" line="988"/>
-        <source>License</source>
-        <translation>Licens</translation>
+        <translation>Hjälp</translation>
     </message>
 </context>
 <context>
@@ -392,14 +390,6 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Alt+X</translation>
     </message>
     <message>
-        <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="obsolete">Återställ Qupzillas konfiguration till MX standardvärden</translation>
-    </message>
-    <message>
-        <source>Qupzilla configs</source>
-        <translation type="obsolete">Qupzilla konfiguration</translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="447"/>
         <source>Restore group memberships to MX defaults</source>
         <translation>Återställ grupp-medlemskapen till MX standard</translation>
@@ -427,7 +417,7 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
     <message>
         <location filename="../meconfig.ui" line="473"/>
         <source>Remove autologin</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort autologin</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="488"/>

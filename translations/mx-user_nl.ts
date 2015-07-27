@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -16,7 +14,7 @@
         <location filename="../mconfig.cpp" line="808"/>
         <location filename="../mconfig.cpp" line="815"/>
         <source>none</source>
-        <translation type="unfinished"></translation>
+        <translation>geen</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="356"/>
@@ -227,6 +225,12 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
+        <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="988"/>
+        <source>License</source>
+        <translation>Licentie</translation>
+    </message>
+    <message>
         <location filename="../mconfig.cpp" line="986"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
@@ -234,13 +238,7 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../mconfig.cpp" line="993"/>
         <source>Help</source>
-        <translation type="unfinished">Help</translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="985"/>
-        <location filename="../mconfig.cpp" line="988"/>
-        <source>License</source>
-        <translation>Licentie</translation>
+        <translation>Help</translation>
     </message>
 </context>
 <context>
@@ -392,14 +390,6 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>Alt+X</translation>
     </message>
     <message>
-        <source>Restore Qupzilla configs to MX defaults</source>
-        <translation type="obsolete">Herstel Qupzilla configuraties naar MX standaard</translation>
-    </message>
-    <message>
-        <source>Qupzilla configs</source>
-        <translation type="obsolete">Qupzilla configuraties</translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="447"/>
         <source>Restore group memberships to MX defaults</source>
         <translation>Herstel groepslidmaatschappen naar MX standaard</translation>
@@ -427,7 +417,7 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../meconfig.ui" line="473"/>
         <source>Remove autologin</source>
-        <translation type="unfinished"></translation>
+        <translation>Verwijder autologin</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="488"/>
@@ -550,12 +540,12 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../meconfig.ui" line="859"/>
         <source>Free Up Space</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruimte Vrijmaken</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="865"/>
         <source>Free disk space for user</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruimte vrijmaken voor gebruiker</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="880"/>
@@ -620,22 +610,22 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../meconfig.ui" line="1012"/>
         <source>selected user Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>geselecteerde gebruiker Prullenbak</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1022"/>
         <source>empty Trash for all users</source>
-        <translation type="unfinished"></translation>
+        <translation>leeg Prullenbak voor alle gebruikers</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1032"/>
         <source>Graphical tool for analysing disk usage</source>
-        <translation type="unfinished"></translation>
+        <translation>Grafisch gereedschap om schijfgebruik te analyseren</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1038"/>
         <source>Run Baobab</source>
-        <translation type="unfinished"></translation>
+        <translation>Start Baobab</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1079"/>
