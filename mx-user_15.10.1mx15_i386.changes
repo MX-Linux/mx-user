@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 08 Oct 2015 15:52:30 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source i386
+Version: 15.10.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-user    - MX User manager
+Changes: 
+ mx-user (15.10.1mx15) mx; urgency=medium
+ .
+   * restore Xfce defaut settings
+Checksums-Sha1: 
+ 4d242b45e884aa1ec636ce3d3c31359473820e5c 643 mx-user_15.10.1mx15.dsc
+ cf61d7e8f544cc1b209d435c900ab7e22ad26af5 148295 mx-user_15.10.1mx15.tar.gz
+ 663a7c2e34eabc5f9fde708e97e25e8e7f50e83d 96040 mx-user_15.10.1mx15_i386.deb
+Checksums-Sha256: 
+ f7c6bc013d388dab23196135368c501ad49e3268e2d545e5a72f255e91f2a1a9 643 mx-user_15.10.1mx15.dsc
+ b120bf06a85d9f8e6ba19559ed22d646347fa3782a394420e86494d1d6b437de 148295 mx-user_15.10.1mx15.tar.gz
+ 403800e607e2b37ce78d8ac7ea42da406dbe788998dc4903faeb0adc6d6e4b2c 96040 mx-user_15.10.1mx15_i386.deb
+Files: 
+ 4525bb11e28e82f8c7b65be0bfaee19c 643 system optional mx-user_15.10.1mx15.dsc
+ cde90c49cb34f057a42e5f281c51c382 148295 system optional mx-user_15.10.1mx15.tar.gz
+ 214627388676dc362c1a7ca89a220b4d 96040 system optional mx-user_15.10.1mx15_i386.deb

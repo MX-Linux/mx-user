@@ -1,3 +1,9 @@
+mx-user (15.10.1mx15) mx; urgency=medium
+
+  * restore Xfce defaut settings
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 08 Oct 2015 15:52:30 -0400
+
 mx-user (15.10mx15) mx; urgency=medium
 
   * fixed delete user bug
