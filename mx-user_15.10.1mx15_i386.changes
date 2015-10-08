@@ -8,21 +8,21 @@ Distribution: mx
 Urgency: medium
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Changed-By: Adrian <adrian@mxlinux.org>
-Description: 
+Description:
  mx-user    - MX User manager
-Changes: 
+Changes:
  mx-user (15.10.1mx15) mx; urgency=medium
  .
    * restore Xfce defaut settings
-Checksums-Sha1: 
- 4d242b45e884aa1ec636ce3d3c31359473820e5c 643 mx-user_15.10.1mx15.dsc
- cf61d7e8f544cc1b209d435c900ab7e22ad26af5 148295 mx-user_15.10.1mx15.tar.gz
- 663a7c2e34eabc5f9fde708e97e25e8e7f50e83d 96040 mx-user_15.10.1mx15_i386.deb
-Checksums-Sha256: 
- f7c6bc013d388dab23196135368c501ad49e3268e2d545e5a72f255e91f2a1a9 643 mx-user_15.10.1mx15.dsc
- b120bf06a85d9f8e6ba19559ed22d646347fa3782a394420e86494d1d6b437de 148295 mx-user_15.10.1mx15.tar.gz
- 403800e607e2b37ce78d8ac7ea42da406dbe788998dc4903faeb0adc6d6e4b2c 96040 mx-user_15.10.1mx15_i386.deb
-Files: 
- 4525bb11e28e82f8c7b65be0bfaee19c 643 system optional mx-user_15.10.1mx15.dsc
- cde90c49cb34f057a42e5f281c51c382 148295 system optional mx-user_15.10.1mx15.tar.gz
- 214627388676dc362c1a7ca89a220b4d 96040 system optional mx-user_15.10.1mx15_i386.deb
+Checksums-Sha1:
+ 3878df89eaa8a39c1be42187474747e81cd3aa13 648 mx-user_15.10.1mx15.dsc
+ b7564bd87fbb7352909e51ae7a7a5217b152c388 456032 mx-user_15.10.1mx15.tar.xz
+ 8a766e240add4e4b76d4d6ea6dd6e085cf77f229 95312 mx-user_15.10.1mx15_i386.deb
+Checksums-Sha256:
+ 05b7e2a2ad69fb284337d552f21a1549ccf07baf2aaaa996a416f94cc7e958b1 648 mx-user_15.10.1mx15.dsc
+ ec03f77baf70433c60e13ffc79307a8316295adf3de6d0ca7919904d7f832cfb 456032 mx-user_15.10.1mx15.tar.xz
+ 72b29139192eec140d325d2fdc0bfcf411977964117237cd2f003a0e08db2c64 95312 mx-user_15.10.1mx15_i386.deb
+Files:
+ 061248f37fce0b0efa0e1d2302a9727a 648 system optional mx-user_15.10.1mx15.dsc
+ 014844cfc1ce73c9d689a917962b7680 456032 system optional mx-user_15.10.1mx15.tar.xz
+ 4485118f2691cd132fc0023f10f4f04d 95312 system optional mx-user_15.10.1mx15_i386.deb

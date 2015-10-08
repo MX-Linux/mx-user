@@ -404,17 +404,11 @@ void MConfig::applyRestore() {
         system(cmd.toUtf8());
     }
     if (checkXfce->isChecked()) {
-        int ans = QMessageBox::warning(0, QString::null,
-                                       tr("OK to replace your current Xfce settings with the original configuration? Details in <a href=\"http://www.mepiscommunity.org/wiki/help-files/help-mx-user-manager\">the Help file</a>"),
-                                       tr("Yes"), tr("No"));
-        if (ans != 0) {
-            return;
-        }
-        cmd = QString("runuser %1 -c 'mkdir ~/.restore'").arg(user);
+        cmd = QString("runuser %1 -c 'mkdir ~/.restore >/dev/null 2>&1'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'mv ~/.config/xfce4/panel/* ~/.restore'").arg(user);
+        cmd = QString("runuser %1 -c 'mv ~/.config/xfce4/panel/* ~/.restore >/dev/null 2>&1'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'rsync -ab --backup-folder=.restore --no-o /etc/skel/ ~/ --exclude \'.local\' --exclude \'.bash_logout\' --exclude \'.bashrc\' --exclude \'.profile\' --exclude \'.xscreensaver\''");
+        cmd = QString("runuser %1 -c 'rsync -ab --backup-dir=.restore --no-o /etc/skel/ ~/ --exclude \'.local\' --exclude \'.bash_logout\' --exclude \'.bashrc\' --exclude \'.profile\' --exclude \'.xinitrc\' --exclude \'.xscreensaver\''").arg(user);
         system(cmd.toUtf8());
         QMessageBox::information(0, QString::null,
                                  tr(" Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));

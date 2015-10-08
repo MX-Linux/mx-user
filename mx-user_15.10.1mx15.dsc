@@ -7,11 +7,11 @@ Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Homepage: https://github.com/timkb4cq/mx-user
 Standards-Version: 3.9.5
 Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 7.0.50~)
-Package-List: 
- mx-user deb system optional
-Checksums-Sha1: 
- cf61d7e8f544cc1b209d435c900ab7e22ad26af5 148295 mx-user_15.10.1mx15.tar.gz
-Checksums-Sha256: 
- b120bf06a85d9f8e6ba19559ed22d646347fa3782a394420e86494d1d6b437de 148295 mx-user_15.10.1mx15.tar.gz
-Files: 
- cde90c49cb34f057a42e5f281c51c382 148295 mx-user_15.10.1mx15.tar.gz
+Package-List:
+ mx-user deb system optional arch=any
+Checksums-Sha1:
+ b7564bd87fbb7352909e51ae7a7a5217b152c388 456032 mx-user_15.10.1mx15.tar.xz
+Checksums-Sha256:
+ ec03f77baf70433c60e13ffc79307a8316295adf3de6d0ca7919904d7f832cfb 456032 mx-user_15.10.1mx15.tar.xz
+Files:
+ 014844cfc1ce73c9d689a917962b7680 456032 mx-user_15.10.1mx15.tar.xz
