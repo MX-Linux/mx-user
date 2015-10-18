@@ -88,6 +88,7 @@ protected slots:
 
 private slots:
     void on_baobabPushButton_clicked();
+    void on_checkPanelOrientation_clicked(bool checked);
 };
 
 #endif

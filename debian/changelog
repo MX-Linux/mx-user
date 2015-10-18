@@ -1,3 +1,9 @@
+mx-user (15.10.2mx15) mx; urgency=medium
+
+  * added panel layout change
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 18 Oct 2015 16:55:39 -0400
+
 mx-user (15.10.1mx15) mx; urgency=medium
 
   * restore Xfce defaut settings

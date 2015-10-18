@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sun, 18 Oct 2015 16:55:39 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source i386
+Version: 15.10.2mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (15.10.2mx15) mx; urgency=medium
+ .
+   * added panel layout change
+Checksums-Sha1:
+ 1223872840556edc1472f0f28a1ba093898dc890 648 mx-user_15.10.2mx15.dsc
+ 8efc192ed7576a728cca7de95537d83f8495ce84 649964 mx-user_15.10.2mx15.tar.xz
+ 5d96895eacb7c99e6fe6333c452152fe2b3e1ebc 95230 mx-user_15.10.2mx15_i386.deb
+Checksums-Sha256:
+ 230a30516a15d83188590c85ed9619bb3cdfaf3c1b2c36ce78507a33b8a5556b 648 mx-user_15.10.2mx15.dsc
+ 9a03797aa85b2bc55a1008333302bc8cba1928c6bd39a8a3df9ea04f16226731 649964 mx-user_15.10.2mx15.tar.xz
+ a7e8c2c5f3246fcfebbbab6a74ad4dbb01df8957d907d168a1dde397989b097b 95230 mx-user_15.10.2mx15_i386.deb
+Files:
+ fcfcb8027456406c6027c3c05013e347 648 system optional mx-user_15.10.2mx15.dsc
+ 5cb275f7eda1271c4d4547217eb24288 649964 system optional mx-user_15.10.2mx15.tar.xz
+ a0030acfbeb4fb5e7566d864c23befd0 95230 system optional mx-user_15.10.2mx15_i386.deb

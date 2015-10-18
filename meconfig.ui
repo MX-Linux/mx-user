@@ -320,7 +320,7 @@
         <normaloff>../../../../../../../../usr/share/mx-user/icons/package_development.png</normaloff>../../../../../../../../usr/share/mx-user/icons/package_development.png</iconset>
       </attribute>
       <attribute name="title">
-       <string>Repair</string>
+       <string>Options</string>
       </attribute>
       <attribute name="toolTip">
        <string>Repair a user configuration</string>
@@ -355,7 +355,7 @@
         </spacer>
        </item>
        <item row="0" column="0" colspan="3">
-        <widget class="QGroupBox" name="groupBox_3">
+        <widget class="QGroupBox" name="groupUser">
          <property name="title">
           <string>Repair User Account</string>
          </property>
@@ -457,7 +457,7 @@
             </property>
            </widget>
           </item>
-          <item row="7" column="0">
+          <item row="6" column="0">
            <widget class="QCheckBox" name="checkApt">
             <property name="toolTip">
              <string>Restore APT sources to MX defaults</string>
@@ -468,16 +468,35 @@
            </widget>
           </item>
           <item row="5" column="0">
+           <widget class="QCheckBox" name="checkXfce">
+            <property name="text">
+             <string>Restore Xfce defaults</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QGroupBox" name="groupPersonal">
+         <property name="title">
+          <string>Personal Options</string>
+         </property>
+         <layout class="QGridLayout" name="_10">
+          <item row="0" column="0">
            <widget class="QCheckBox" name="checkRemoveAutologin">
             <property name="text">
              <string>Remove autologin</string>
             </property>
            </widget>
           </item>
-          <item row="6" column="0">
-           <widget class="QCheckBox" name="checkXfce">
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="checkPanelOrientation">
             <property name="text">
-             <string>Restore Xfce defaults</string>
+             <string>Change panel orientation</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
             </property>
            </widget>
           </item>

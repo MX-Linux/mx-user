@@ -413,6 +413,9 @@ void MConfig::applyRestore() {
         QMessageBox::information(0, QString::null,
                                  tr(" Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     }
+    if (checkPanelOrientation->isChecked()) {
+       // code to switch the orientation of the panel
+    }
 
     setCursor(QCursor(Qt::ArrowCursor));
 
@@ -917,6 +920,18 @@ void MConfig::on_baobabPushButton_clicked()
     }
 }
 
+
+// disble restore Xfce button when changing panel orientation
+void MConfig::on_checkPanelOrientation_clicked(bool checked)
+{
+    if (checked) {
+        checkXfce->setChecked(false);
+        checkXfce->setDisabled(true);
+    } else {
+        checkXfce->setDisabled(false);
+    }
+}
+
 // after installing baobab
 void MConfig::installDone(int exitCode, QProcess::ExitStatus) {
     setCursor(QCursor(Qt::ArrowCursor));
@@ -985,4 +1000,6 @@ void MConfig::on_buttonAbout_clicked() {
 void MConfig::on_buttonHelp_clicked() {
     system("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-user-manager '" + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8() + "'");
 }
+
+
 
