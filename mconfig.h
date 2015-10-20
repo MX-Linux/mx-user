@@ -88,7 +88,9 @@ protected slots:
 
 private slots:
     void on_baobabPushButton_clicked();
-    void on_checkPanelOrientation_clicked(bool checked);
+    void on_radioHorizontalPanel_clicked();
+    void on_radioVerticalPanel_clicked();
+    void on_checkXfce_clicked(bool checked);
 };
 
 #endif

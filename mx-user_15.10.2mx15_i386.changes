@@ -8,21 +8,21 @@ Distribution: mx
 Urgency: medium
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Changed-By: Adrian <adrian@mxlinux.org>
-Description:
+Description: 
  mx-user    - MX User manager
-Changes:
+Changes: 
  mx-user (15.10.2mx15) mx; urgency=medium
  .
    * added panel layout change
-Checksums-Sha1:
- 1223872840556edc1472f0f28a1ba093898dc890 648 mx-user_15.10.2mx15.dsc
- 8efc192ed7576a728cca7de95537d83f8495ce84 649964 mx-user_15.10.2mx15.tar.xz
- 5d96895eacb7c99e6fe6333c452152fe2b3e1ebc 95230 mx-user_15.10.2mx15_i386.deb
-Checksums-Sha256:
- 230a30516a15d83188590c85ed9619bb3cdfaf3c1b2c36ce78507a33b8a5556b 648 mx-user_15.10.2mx15.dsc
- 9a03797aa85b2bc55a1008333302bc8cba1928c6bd39a8a3df9ea04f16226731 649964 mx-user_15.10.2mx15.tar.xz
- a7e8c2c5f3246fcfebbbab6a74ad4dbb01df8957d907d168a1dde397989b097b 95230 mx-user_15.10.2mx15_i386.deb
-Files:
- fcfcb8027456406c6027c3c05013e347 648 system optional mx-user_15.10.2mx15.dsc
- 5cb275f7eda1271c4d4547217eb24288 649964 system optional mx-user_15.10.2mx15.tar.xz
- a0030acfbeb4fb5e7566d864c23befd0 95230 system optional mx-user_15.10.2mx15_i386.deb
+Checksums-Sha1: 
+ c74e8f898d9b486d2103831c4978509ca6a075aa 646 mx-user_15.10.2mx15.dsc
+ 780e9feaa741e651007651387d4d542736125cc1 1608999 mx-user_15.10.2mx15.tar.gz
+ 9c0b5ede841f9cffd607731bcfa294a8148ee393 97226 mx-user_15.10.2mx15_i386.deb
+Checksums-Sha256: 
+ 92945a23e9eb51122e6c7893e6d3b1047ae2ba3b4d9c5a01f7cf388ab0f9c9d6 646 mx-user_15.10.2mx15.dsc
+ f1af44652433651f6f31282b968ffecd172ed282de276302b28bb02d6bde9803 1608999 mx-user_15.10.2mx15.tar.gz
+ 68c55eeabe7467a79dd10fa0c90c871adc2675eb1f30b76e2d2fe8440c31aa03 97226 mx-user_15.10.2mx15_i386.deb
+Files: 
+ cd065fd8c866c6b7f277b125b477b64f 646 system optional mx-user_15.10.2mx15.dsc
+ 15410be75e3f5d7540523408ab35bce6 1608999 system optional mx-user_15.10.2mx15.tar.gz
+ 629bee966d492a5bfcbf1cf72ac7d8ce 97226 system optional mx-user_15.10.2mx15_i386.deb

@@ -199,6 +199,20 @@ void MConfig::refreshRestore() {
     }
     checkGroups->setChecked(false);
     checkMozilla->setChecked(false);
+    checkApt->setChecked(false);
+    checkXfce->setChecked(false);
+    radioAutologinNo->setAutoExclusive(false);
+    radioAutologinNo->setChecked(false);
+    radioAutologinNo->setAutoExclusive(true);
+    radioAutologinYes->setAutoExclusive(false);
+    radioAutologinYes->setChecked(false);
+    radioAutologinYes->setAutoExclusive(true);
+    radioHorizontalPanel->setAutoExclusive(false);
+    radioHorizontalPanel->setChecked(false);
+    radioHorizontalPanel->setAutoExclusive(true);
+    radioVerticalPanel->setAutoExclusive(false);
+    radioVerticalPanel->setChecked(false);
+    radioVerticalPanel->setAutoExclusive(true);
 }
 
 void MConfig::refreshDesktop() {
@@ -222,6 +236,8 @@ void MConfig::refreshDesktop() {
         }
         pclose(fp);
     }
+    copyRadioButton->setChecked(true);
+    entireRadioButton->setChecked(true);
     on_fromUserComboBox_activated();
 }
 
@@ -352,11 +368,14 @@ void MConfig::applyRestore() {
         home = QString("/home/%1").arg(user);
     }
     QString cmd;
-    int ans = QMessageBox::warning(0, QString::null,
-                                   tr("The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?"),
-                                   tr("Yes"), tr("No"));
-    if (ans != 0) {
-        return;
+
+    if (checkApt->isChecked() || checkGroups->isChecked() || checkMozilla->isChecked()) {
+        int ans = QMessageBox::warning(0, QString::null,
+                                       tr("The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?"),
+                                       tr("Yes"), tr("No"));
+        if (ans != 0) {
+            return;
+        }
     }
     setCursor(QCursor(Qt::WaitCursor));
 
@@ -399,9 +418,22 @@ void MConfig::applyRestore() {
 //            replaceStringInFile(".us.", "." + mirror + ".", "/etc/apt/sources.list.d/debian.list");
 //        }
     }
-    if (checkRemoveAutologin->isChecked()) {
+    if (radioAutologinNo->isChecked()) {
         cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
         system(cmd.toUtf8());
+        QMessageBox::information(0, tr("Autologin options"),
+                                 (tr("Autologin has been disabled for the '%1' account.").arg(user)));
+    } else if (radioAutologinYes->isChecked()) {
+        cmd = QString("grep -qE '^#autologin-user=%1'\\|'^autologin-user=%1' /etc/lightdm/lightdm.conf").arg(user);
+        if (system(cmd.toUtf8()) == 0) {
+            cmd = QString("sed -i -r '/^#autologin-user=%1/ s/^#//' /etc/lightdm/lightdm.conf").arg(user);
+            system(cmd.toUtf8());
+        } else {
+            cmd = QString("echo 'autologin-user=%1' >> /etc/lightdm/lightdm.conf").arg(user);
+            system(cmd.toUtf8());
+        }
+        QMessageBox::information(0, tr("Autologin options"),
+                                 (tr("Autologin has been enabled for the '%1' account.").arg(user)));
     }
     if (checkXfce->isChecked()) {
         cmd = QString("runuser %1 -c 'mkdir ~/.restore >/dev/null 2>&1'").arg(user);
@@ -410,11 +442,18 @@ void MConfig::applyRestore() {
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'rsync -ab --backup-dir=.restore --no-o /etc/skel/ ~/ --exclude \'.local\' --exclude \'.bash_logout\' --exclude \'.bashrc\' --exclude \'.profile\' --exclude \'.xinitrc\' --exclude \'.xscreensaver\''").arg(user);
         system(cmd.toUtf8());
-        QMessageBox::information(0, QString::null,
+        QMessageBox::information(0, tr("Xfce settings"),
                                  tr(" Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     }
-    if (checkPanelOrientation->isChecked()) {
-       // code to switch the orientation of the panel
+    if (radioHorizontalPanel->isChecked()) {
+        // code to switch the orientation of the panel
+        QMessageBox::information(0, tr("Panel settings"),
+                                 tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
+
+    } else if (radioVerticalPanel->isChecked()) {
+        // code to switch the orientation of the panel
+        QMessageBox::information(0, tr("Panel settings"),
+                                 tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     }
 
     setCursor(QCursor(Qt::ArrowCursor));
@@ -764,6 +803,18 @@ void MConfig::on_userComboBox_activated() {
     if (userComboBox->currentText() == tr("none")) {
         refresh();
     }
+    radioAutologinNo->setAutoExclusive(false);
+    radioAutologinNo->setChecked(false);
+    radioAutologinNo->setAutoExclusive(true);
+    radioAutologinYes->setAutoExclusive(false);
+    radioAutologinYes->setChecked(false);
+    radioAutologinYes->setAutoExclusive(true);
+    radioHorizontalPanel->setAutoExclusive(false);
+    radioHorizontalPanel->setChecked(false);
+    radioHorizontalPanel->setAutoExclusive(true);
+    radioVerticalPanel->setAutoExclusive(false);
+    radioVerticalPanel->setChecked(false);
+    radioVerticalPanel->setAutoExclusive(true);
 }
 
 void MConfig::on_deleteUserCombo_activated() {
@@ -920,18 +971,6 @@ void MConfig::on_baobabPushButton_clicked()
     }
 }
 
-
-// disble restore Xfce button when changing panel orientation
-void MConfig::on_checkPanelOrientation_clicked(bool checked)
-{
-    if (checked) {
-        checkXfce->setChecked(false);
-        checkXfce->setDisabled(true);
-    } else {
-        checkXfce->setDisabled(false);
-    }
-}
-
 // after installing baobab
 void MConfig::installDone(int exitCode, QProcess::ExitStatus) {
     setCursor(QCursor(Qt::ArrowCursor));
@@ -1002,4 +1041,27 @@ void MConfig::on_buttonHelp_clicked() {
 }
 
 
+void MConfig::on_radioHorizontalPanel_clicked()
+{
+    checkXfce->setChecked(false);
+}
 
+void MConfig::on_radioVerticalPanel_clicked()
+{
+    checkXfce->setChecked(false);
+}
+
+void MConfig::on_checkXfce_clicked(bool checked)
+{
+    if (checked) {        
+        groupPanel->setDisabled(true);
+        radioHorizontalPanel->setAutoExclusive(false);
+        radioHorizontalPanel->setChecked(false);
+        radioHorizontalPanel->setAutoExclusive(true);
+        radioVerticalPanel->setAutoExclusive(false);
+        radioVerticalPanel->setChecked(false);                
+        radioVerticalPanel->setAutoExclusive(true);
+    } else {
+        groupPanel->setDisabled(false);
+    }
+}

@@ -51,7 +51,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="userTab">
       <attribute name="icon">
@@ -341,7 +341,7 @@
        <property name="spacing">
         <number>6</number>
        </property>
-       <item row="4" column="0" colspan="3">
+       <item row="7" column="0" colspan="3">
         <spacer>
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -357,7 +357,7 @@
        <item row="0" column="0" colspan="3">
         <widget class="QGroupBox" name="groupUser">
          <property name="title">
-          <string>Repair User Account</string>
+          <string>Modify User Account</string>
          </property>
          <layout class="QGridLayout" name="_7">
           <item row="0" column="0">
@@ -372,7 +372,7 @@
              <string>Select user to repair</string>
             </property>
             <property name="text">
-             <string>User account to repair:</string>
+             <string>User to change:</string>
             </property>
            </widget>
           </item>
@@ -477,26 +477,53 @@
          </layout>
         </widget>
        </item>
-       <item row="3" column="0">
-        <widget class="QGroupBox" name="groupPersonal">
+       <item row="4" column="0">
+        <widget class="QGroupBox" name="groupBox">
          <property name="title">
-          <string>Personal Options</string>
+          <string>Change Autologin Settings</string>
          </property>
-         <layout class="QGridLayout" name="_10">
-          <item row="0" column="0">
-           <widget class="QCheckBox" name="checkRemoveAutologin">
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QRadioButton" name="radioAutologinYes">
             <property name="text">
-             <string>Remove autologin</string>
+             <string>Log in automatically</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
-           <widget class="QCheckBox" name="checkPanelOrientation">
+          <item>
+           <widget class="QRadioButton" name="radioAutologinNo">
             <property name="text">
-             <string>Change panel orientation</string>
+             <string>Require password to log in</string>
             </property>
-            <property name="autoExclusive">
-             <bool>true</bool>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QGroupBox" name="groupPanel">
+         <property name="title">
+          <string>Panel Settings</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QLabel" name="labelPanel">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Sets the &lt;span style=&quot; font-weight:600;&quot;&gt;original&lt;/span&gt; panel to either vertical or horizontal orientation&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioHorizontalPanel">
+            <property name="text">
+             <string>Horizontal</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioVerticalPanel">
+            <property name="text">
+             <string>Vertical</string>
             </property>
            </widget>
           </item>
