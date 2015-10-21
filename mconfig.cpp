@@ -449,11 +449,11 @@ void MConfig::applyRestore() {
         // backup panel config
         cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml'").arg(user);
+        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml'").arg(user);
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'cp -R ~/.config/xfce4/panel ~/.restore/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml'").arg(user);
+        cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
         // copy template files
         cmd = QString("cp -R /usr/local/share/appdata/panels/horizontal/panel/ /home/%1/.config/xfce4/panel/").arg(user);
@@ -472,11 +472,11 @@ void MConfig::applyRestore() {
         // backup panel config
         cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml'").arg(user);
+        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml'").arg(user);
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'cp -R ~/.config/xfce4/panel ~/.restore/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml'").arg(user);
+        cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
         // copy template files
         cmd = QString("cp -R /usr/local/share/appdata/panels/vertical/panel/ /home/%1/.config/xfce4/panel/").arg(user);
@@ -493,7 +493,7 @@ void MConfig::applyRestore() {
     } else if (radioRestoreBackup->isChecked()) {
         cmd = QString("runuser %1 -c 'cp -R ~/.restore/.config/xfce4/panel/ ~/.config/xfce4/panel/'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
+        cmd = QString("runuser %1 -c 'cp ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
         // restart panel
         cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
@@ -859,7 +859,7 @@ void MConfig::on_userComboBox_activated() {
     radioVerticalPanel->setAutoExclusive(false);
     radioVerticalPanel->setChecked(false);
     radioVerticalPanel->setAutoExclusive(true);
-    QString cmd = QString("runuser %1 -c 'test -f ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml'").arg(userComboBox->currentText());
+    QString cmd = QString("runuser %1 -c 'test -f ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(userComboBox->currentText());
     if (system(cmd.toUtf8()) == 0) {
         radioRestoreBackup->setEnabled(true);
     } else {
