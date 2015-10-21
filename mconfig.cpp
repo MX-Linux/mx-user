@@ -456,14 +456,14 @@ void MConfig::applyRestore() {
         cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
         // copy template files
-        cmd = QString("cp -R /usr/local/share/appdata/panels/horizontal/panel/ /home/%1/.config/xfce4/panel/'").arg(user);
+        cmd = QString("cp -R /usr/local/share/appdata/panels/horizontal/panel/ /home/%1/.config/xfce4/panel/").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("cp /usr/local/share/appdata/panels/horizontal/xfce4-panel.xml /home/%1/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
+        cmd = QString("cp /usr/local/share/appdata/panels/horizontal/xfce4-panel.xml /home/%1/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml").arg(user);
         system(cmd.toUtf8());
         // change ownership
         cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
         // restart panel
-        cmd = QString("pkill xfconfd; runuser %1 xfce4-panel -r").arg(user);
+        cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
         system(cmd.toUtf8());
         QMessageBox::information(0, tr("Panel settings"),
                                  tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
@@ -481,12 +481,12 @@ void MConfig::applyRestore() {
         // copy template files
         cmd = QString("cp -R /usr/local/share/appdata/panels/vertical/panel/ /home/%1/.config/xfce4/panel/").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("cp /usr/local/share/appdata/panels/vertical/xfce4-panel.xml /home/%1/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
+        cmd = QString("cp /usr/local/share/appdata/panels/vertical/xfce4-panel.xml /home/%1/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml").arg(user);
         system(cmd.toUtf8());
         // change ownership
         cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
         // restart panel
-        cmd = QString("pkill xfconfd; runuser %1 xfce4-panel -r").arg(user);
+        cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
         system(cmd.toUtf8());
         QMessageBox::information(0, tr("Panel settings"),
                                  tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
@@ -496,7 +496,7 @@ void MConfig::applyRestore() {
         cmd = QString("runuser %1 -c 'cp ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
         // restart panel
-        cmd = QString("pkill xfconfd; runuser %1 xfce4-panel -r").arg(user);
+        cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
         system(cmd.toUtf8());
     }
 
