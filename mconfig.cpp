@@ -446,20 +446,35 @@ void MConfig::applyRestore() {
                                  tr(" Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     }
     if (radioHorizontalPanel->isChecked()) {        
-        cmd = QString("runuser %1 -c '/usr/local/share/appdata/panels/horizontal/panel/ ~/.config/xfce4/panel/'").arg(user);
+        // backup panel config
+
+        // copy teplate files
+        cmd = QString("runuser %1 -c 'cp -R /usr/local/share/appdata/panels/horizontal/panel/ ~/.config/xfce4/panel/'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c '/usr/local/share/appdata/panels/horizontal/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
+        cmd = QString("runuser %1 -c 'cp /usr/local/share/appdata/panels/horizontal/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
-        system("pkill xfconfd; xfce4-panel -r");
+        cmd = QString("pkill xfconfd; runuser %1 xfce4-panel -r").arg(user);
+        system(cmd.toUtf8());
         QMessageBox::information(0, tr("Panel settings"),
                                  tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
 
     } else if (radioVerticalPanel->isChecked()) {
-        cmd = QString("runuser %1 -c '/usr/local/share/appdata/panels/vertical/panel/ ~/.config/xfce4/panel/'").arg(user);
+        // backup panel config
+        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c '/usr/local/share/appdata/panels/vertical/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
+        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml'").arg(user);
         system(cmd.toUtf8());
-        system("pkill xfconfd; xfce4-panel -r");
+        cmd = QString("runuser %1 -c 'cp -R ~/.config/xfce4/panel/ ~/.restore/.config/xfce4/panel/'").arg(user);
+        system(cmd.toUtf8());
+        cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml'").arg(user);
+        system(cmd.toUtf8());
+        // copy template files
+        cmd = QString("runuser %1 -c 'cp -R /usr/local/share/appdata/panels/vertical/panel/ ~/.config/xfce4/panel/'").arg(user);
+        system(cmd.toUtf8());
+        cmd = QString("runuser %1 -c 'cp /usr/local/share/appdata/panels/vertical/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
+        system(cmd.toUtf8());
+        cmd = QString("pkill xfconfd; runuser %1 xfce4-panel -r").arg(user);
+        system(cmd.toUtf8());
         QMessageBox::information(0, tr("Panel settings"),
                                  tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     } else if (radioRestoreBackup->isChecked()) {
@@ -467,7 +482,8 @@ void MConfig::applyRestore() {
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'cp ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
-        system("pkill xfconfd; xfce4-panel -r");
+        cmd = QString("pkill xfconfd; runuser %1 xfce4-panel -r").arg(user);
+        system(cmd.toUtf8());
     }
 
     setCursor(QCursor(Qt::ArrowCursor));
