@@ -10,11 +10,11 @@
         <location filename="../mconfig.cpp" line="317"/>
         <location filename="../mconfig.cpp" line="339"/>
         <location filename="../mconfig.cpp" line="362"/>
-        <location filename="../mconfig.cpp" line="833"/>
-        <location filename="../mconfig.cpp" line="859"/>
-        <location filename="../mconfig.cpp" line="883"/>
-        <location filename="../mconfig.cpp" line="891"/>
-        <location filename="../mconfig.cpp" line="898"/>
+        <location filename="../mconfig.cpp" line="847"/>
+        <location filename="../mconfig.cpp" line="873"/>
+        <location filename="../mconfig.cpp" line="897"/>
+        <location filename="../mconfig.cpp" line="905"/>
+        <location filename="../mconfig.cpp" line="912"/>
         <source>none</source>
         <translation>なし</translation>
     </message>
@@ -25,19 +25,19 @@
     </message>
     <message>
         <location filename="../mconfig.cpp" line="375"/>
-        <location filename="../mconfig.cpp" line="503"/>
-        <location filename="../mconfig.cpp" line="611"/>
-        <location filename="../mconfig.cpp" line="666"/>
-        <location filename="../mconfig.cpp" line="693"/>
+        <location filename="../mconfig.cpp" line="517"/>
+        <location filename="../mconfig.cpp" line="625"/>
+        <location filename="../mconfig.cpp" line="680"/>
+        <location filename="../mconfig.cpp" line="707"/>
         <source>Yes</source>
         <translation>はい</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="375"/>
-        <location filename="../mconfig.cpp" line="503"/>
-        <location filename="../mconfig.cpp" line="611"/>
-        <location filename="../mconfig.cpp" line="666"/>
-        <location filename="../mconfig.cpp" line="693"/>
+        <location filename="../mconfig.cpp" line="517"/>
+        <location filename="../mconfig.cpp" line="625"/>
+        <location filename="../mconfig.cpp" line="680"/>
+        <location filename="../mconfig.cpp" line="707"/>
         <source>No</source>
         <translation>いいえ</translation>
     </message>
@@ -68,211 +68,211 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="458"/>
-        <location filename="../mconfig.cpp" line="478"/>
+        <location filename="../mconfig.cpp" line="468"/>
+        <location filename="../mconfig.cpp" line="491"/>
         <source>Panel settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="459"/>
-        <location filename="../mconfig.cpp" line="479"/>
+        <location filename="../mconfig.cpp" line="469"/>
+        <location filename="../mconfig.cpp" line="492"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="498"/>
+        <location filename="../mconfig.cpp" line="512"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="502"/>
+        <location filename="../mconfig.cpp" line="516"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>コピーする前に、全ての他アプリケーションを閉じて下さい。コピー先の容量が十分の大きさである事を確認して下さい。コピー先のデスクトップは削除・上書きされるかもしれません。手続きを進めてもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="524"/>
+        <location filename="../mconfig.cpp" line="538"/>
         <source>Synchronizing desktop...</source>
         <translation>デスクトップ同期中...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="526"/>
+        <location filename="../mconfig.cpp" line="540"/>
         <source>Copying desktop...</source>
         <translation>デスクトップのコピー中...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="549"/>
+        <location filename="../mconfig.cpp" line="563"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>ユーザー名は2文字より長くする必要があります。もっと長い名前にして下さい。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="553"/>
+        <location filename="../mconfig.cpp" line="567"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="562"/>
+        <location filename="../mconfig.cpp" line="576"/>
         <source>Sorry that name is in use. Please select a different name.</source>
         <translation>この名前は使われています。他の名前を選択して下さい。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="567"/>
+        <location filename="../mconfig.cpp" line="581"/>
         <source>The user password entries do not match.  Please try again.</source>
         <translation>ユーザーパスワードが一致していません。再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="572"/>
+        <location filename="../mconfig.cpp" line="586"/>
         <source>The user password needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>ユーザーパスワードは2文字より長くする必要があります。もっと長いパスワードにして下さい。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="600"/>
+        <location filename="../mconfig.cpp" line="614"/>
         <source>The user was added ok.</source>
         <translation>ユーザーの登録を行いました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="604"/>
+        <location filename="../mconfig.cpp" line="618"/>
         <source>Failed to add the user.</source>
         <translation>ユーザーの追加に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="609"/>
+        <location filename="../mconfig.cpp" line="623"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="622"/>
+        <location filename="../mconfig.cpp" line="636"/>
         <source>The user has been deleted.</source>
         <translation>ユーザーは削除されました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="625"/>
+        <location filename="../mconfig.cpp" line="639"/>
         <source>Failed to delete the user.</source>
         <translation>ユーザーの削除に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="638"/>
+        <location filename="../mconfig.cpp" line="652"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>グループ名は2文字より長くする必要があります。もっと長いグループ名にして下さい。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="642"/>
+        <location filename="../mconfig.cpp" line="656"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="651"/>
+        <location filename="../mconfig.cpp" line="665"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
         <translation>このグループ名はすでに存在しています。他のグループ名を選択して下さい。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="658"/>
+        <location filename="../mconfig.cpp" line="672"/>
         <source>The system group was added ok.</source>
         <translation>システムグループを追加しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="661"/>
+        <location filename="../mconfig.cpp" line="675"/>
         <source>Failed to add the system group.</source>
         <translation>システムグループの追加に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="664"/>
+        <location filename="../mconfig.cpp" line="678"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="671"/>
+        <location filename="../mconfig.cpp" line="685"/>
         <source>The group has been deleted.</source>
         <translation>グループを削除しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="674"/>
+        <location filename="../mconfig.cpp" line="688"/>
         <source>Failed to delete the group.</source>
         <translation>グループの削除に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="692"/>
+        <location filename="../mconfig.cpp" line="706"/>
         <source>Are you sure you want to make these changes?</source>
         <translation>変更を反映してもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="698"/>
+        <location filename="../mconfig.cpp" line="712"/>
         <source>The changes have been applied.</source>
         <translation>変更は適用されました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="701"/>
+        <location filename="../mconfig.cpp" line="715"/>
         <source>Failed to apply group changes</source>
         <translation>グループの変更適用に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="785"/>
+        <location filename="../mconfig.cpp" line="799"/>
         <source>Synchronizing desktop...ok</source>
         <translation>デスクトップ同期中...完了</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="787"/>
+        <location filename="../mconfig.cpp" line="801"/>
         <source>Copying desktop...ok</source>
         <translation>デスクトップのコピー中...完了</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="791"/>
+        <location filename="../mconfig.cpp" line="805"/>
         <source>Synchronizing desktop...failed</source>
         <translation>デスクトップ同期中...失敗</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="793"/>
+        <location filename="../mconfig.cpp" line="807"/>
         <source>Copying desktop...failed</source>
         <translation>デスクトップのコピー中...失敗</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="995"/>
+        <location filename="../mconfig.cpp" line="1009"/>
         <source>Baobab installation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="996"/>
+        <location filename="../mconfig.cpp" line="1010"/>
         <source>Wait while Baobab is installing...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1063"/>
+        <location filename="../mconfig.cpp" line="1077"/>
         <source>About MX User Manager</source>
         <translation>MX User Manager について</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1064"/>
-        <location filename="../mconfig.cpp" line="1071"/>
-        <location filename="../mconfig.cpp" line="1076"/>
+        <location filename="../mconfig.cpp" line="1078"/>
+        <location filename="../mconfig.cpp" line="1085"/>
+        <location filename="../mconfig.cpp" line="1090"/>
         <source>MX User Manager</source>
         <translation>MX User Manager</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1066"/>
+        <location filename="../mconfig.cpp" line="1080"/>
         <source>Simple user configuration for antiX MX</source>
         <translation>antiX MX のシンプルなユーザー設定</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1067"/>
+        <location filename="../mconfig.cpp" line="1081"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1068"/>
-        <location filename="../mconfig.cpp" line="1071"/>
+        <location filename="../mconfig.cpp" line="1082"/>
+        <location filename="../mconfig.cpp" line="1085"/>
         <source>License</source>
         <translation>ライセンス</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1069"/>
+        <location filename="../mconfig.cpp" line="1083"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1076"/>
+        <location filename="../mconfig.cpp" line="1090"/>
         <source>Help</source>
         <translation>ヘルプ</translation>
     </message>
