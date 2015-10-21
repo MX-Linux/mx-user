@@ -503,27 +503,30 @@
        <item row="3" column="0">
         <widget class="QGroupBox" name="groupPanel">
          <property name="title">
-          <string>Panel Settings</string>
+          <string>Select Panel Options</string>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_7">
           <item>
-           <widget class="QLabel" name="labelPanel">
-            <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Sets the &lt;span style=&quot; font-weight:600;&quot;&gt;original&lt;/span&gt; panel to either vertical or horizontal orientation&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QRadioButton" name="radioHorizontalPanel">
             <property name="text">
-             <string>Horizontal</string>
+             <string>Display default panel horizontally</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QRadioButton" name="radioVerticalPanel">
             <property name="text">
-             <string>Vertical</string>
+             <string>Restore default configuration</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioRestoreBackup">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Restore backed up configuration</string>
             </property>
            </widget>
           </item>

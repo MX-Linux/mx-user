@@ -15,14 +15,14 @@ Changes:
  .
    * added panel layout change
 Checksums-Sha1: 
- c74e8f898d9b486d2103831c4978509ca6a075aa 646 mx-user_15.10.2mx15.dsc
- 780e9feaa741e651007651387d4d542736125cc1 1608999 mx-user_15.10.2mx15.tar.gz
- 9c0b5ede841f9cffd607731bcfa294a8148ee393 97226 mx-user_15.10.2mx15_i386.deb
+ 0c865a0bfc4fd0374bdc4967bc1e7e11064a290a 643 mx-user_15.10.2mx15.dsc
+ 462becb9087ad2a19aa264dfb436ca57fa6d0ed8 802086 mx-user_15.10.2mx15.tar.gz
+ fc03231117718c43020190a0c2d359fed683c1f9 98280 mx-user_15.10.2mx15_i386.deb
 Checksums-Sha256: 
- 92945a23e9eb51122e6c7893e6d3b1047ae2ba3b4d9c5a01f7cf388ab0f9c9d6 646 mx-user_15.10.2mx15.dsc
- f1af44652433651f6f31282b968ffecd172ed282de276302b28bb02d6bde9803 1608999 mx-user_15.10.2mx15.tar.gz
- 68c55eeabe7467a79dd10fa0c90c871adc2675eb1f30b76e2d2fe8440c31aa03 97226 mx-user_15.10.2mx15_i386.deb
+ 6d2bcd3fa8b4455546bc126417128c77edf885a45312cdb507675587c837e7a1 643 mx-user_15.10.2mx15.dsc
+ 3bbad9603cc67cfd8a389d5dc950433c4098df85bc60d35b3202cdd946def96d 802086 mx-user_15.10.2mx15.tar.gz
+ f403263b73ebd3944b02e61a20c1c44d1f716848ac6cc8e954fbc0fff60782c6 98280 mx-user_15.10.2mx15_i386.deb
 Files: 
- cd065fd8c866c6b7f277b125b477b64f 646 system optional mx-user_15.10.2mx15.dsc
- 15410be75e3f5d7540523408ab35bce6 1608999 system optional mx-user_15.10.2mx15.tar.gz
- 629bee966d492a5bfcbf1cf72ac7d8ce 97226 system optional mx-user_15.10.2mx15_i386.deb
+ 897b9feb122de90e39455af1b44dcb46 643 system optional mx-user_15.10.2mx15.dsc
+ 6bcd22b6aaa62841c9577ae36acb7d99 802086 system optional mx-user_15.10.2mx15.tar.gz
+ ea20dbac81b1feffd6fb9eaad41d252d 98280 system optional mx-user_15.10.2mx15_i386.deb
