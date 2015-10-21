@@ -462,6 +462,7 @@ void MConfig::applyRestore() {
         system(cmd.toUtf8());
         // change ownership
         cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
+        system(cmd.toUtf8());
         // restart panel
         cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
         system(cmd.toUtf8());
@@ -485,6 +486,7 @@ void MConfig::applyRestore() {
         system(cmd.toUtf8());
         // change ownership
         cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
+        system(cmd.toUtf8());
         // restart panel
         cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
         system(cmd.toUtf8());
@@ -859,6 +861,9 @@ void MConfig::on_userComboBox_activated() {
     radioVerticalPanel->setAutoExclusive(false);
     radioVerticalPanel->setChecked(false);
     radioVerticalPanel->setAutoExclusive(true);
+    radioRestoreBackup->setAutoExclusive(false);
+    radioRestoreBackup->setChecked(false);
+    radioRestoreBackup->setAutoExclusive(true);
     QString cmd = QString("runuser %1 -c 'test -f ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(userComboBox->currentText());
     if (system(cmd.toUtf8()) == 0) {
         radioRestoreBackup->setEnabled(true);

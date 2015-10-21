@@ -10,11 +10,11 @@
         <location filename="../mconfig.cpp" line="317"/>
         <location filename="../mconfig.cpp" line="339"/>
         <location filename="../mconfig.cpp" line="362"/>
-        <location filename="../mconfig.cpp" line="847"/>
-        <location filename="../mconfig.cpp" line="873"/>
-        <location filename="../mconfig.cpp" line="897"/>
-        <location filename="../mconfig.cpp" line="905"/>
-        <location filename="../mconfig.cpp" line="912"/>
+        <location filename="../mconfig.cpp" line="849"/>
+        <location filename="../mconfig.cpp" line="878"/>
+        <location filename="../mconfig.cpp" line="902"/>
+        <location filename="../mconfig.cpp" line="910"/>
+        <location filename="../mconfig.cpp" line="917"/>
         <source>none</source>
         <translation>κανένα</translation>
     </message>
@@ -25,19 +25,19 @@
     </message>
     <message>
         <location filename="../mconfig.cpp" line="375"/>
-        <location filename="../mconfig.cpp" line="517"/>
-        <location filename="../mconfig.cpp" line="625"/>
-        <location filename="../mconfig.cpp" line="680"/>
-        <location filename="../mconfig.cpp" line="707"/>
+        <location filename="../mconfig.cpp" line="519"/>
+        <location filename="../mconfig.cpp" line="627"/>
+        <location filename="../mconfig.cpp" line="682"/>
+        <location filename="../mconfig.cpp" line="709"/>
         <source>Yes</source>
         <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="375"/>
-        <location filename="../mconfig.cpp" line="517"/>
-        <location filename="../mconfig.cpp" line="625"/>
-        <location filename="../mconfig.cpp" line="680"/>
-        <location filename="../mconfig.cpp" line="707"/>
+        <location filename="../mconfig.cpp" line="519"/>
+        <location filename="../mconfig.cpp" line="627"/>
+        <location filename="../mconfig.cpp" line="682"/>
+        <location filename="../mconfig.cpp" line="709"/>
         <source>No</source>
         <translation>Όχι</translation>
     </message>
@@ -68,44 +68,44 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="468"/>
-        <location filename="../mconfig.cpp" line="491"/>
+        <location filename="../mconfig.cpp" line="469"/>
+        <location filename="../mconfig.cpp" line="493"/>
         <source>Panel settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="469"/>
-        <location filename="../mconfig.cpp" line="492"/>
+        <location filename="../mconfig.cpp" line="470"/>
+        <location filename="../mconfig.cpp" line="494"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="512"/>
+        <location filename="../mconfig.cpp" line="514"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation>Θα πρέπει να ορίσετε ένα &apos;αντίγραφο&apos; προορισμός. Δεν μπορείτε να αντιγράψετε στην επιφάνεια εργασίας σας είναι συνδεδεμένοι.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="516"/>
+        <location filename="../mconfig.cpp" line="518"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>Πριν από την αντιγραφή, κλείστε όλες τις άλλες εφαρμογές. Να είστε βέβαιος ότι το αντίγραφο προς τον προορισμό είναι αρκετά μεγάλο ώστε να περιέχει τα αρχεία που θέλετε να αντιγράψετε. Αντιγραφή μεταξύ επιτραπέζιους υπολογιστές μπορεί να αντικαταστήσει ή να διαγράψει τα αρχεία ή τις προτιμήσεις σας στην επιφάνεια εργασίας προορισμό. Είστε σίγουροι ότι θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="538"/>
+        <location filename="../mconfig.cpp" line="540"/>
         <source>Synchronizing desktop...</source>
         <translation>Συγχρονισμός επιφάνεια εργασίας ...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="540"/>
+        <location filename="../mconfig.cpp" line="542"/>
         <source>Copying desktop...</source>
         <translation>Αντιγραφή επιφάνεια εργασίας ...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="563"/>
+        <location filename="../mconfig.cpp" line="565"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Το Όνομα Χρήστη πρέπει να έχει μήκος τουλάχιστον 2 χαρακτήρων. Παρακαλώ επιλέξτε ένα μεγαλύτερο όνομα πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="567"/>
+        <location filename="../mconfig.cpp" line="569"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -114,55 +114,55 @@ Please choose another name before proceeding.</source>
 Παρακαλώ επιλέξτε ένα άλλο όνομα πριν προχωρήσετε.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="576"/>
+        <location filename="../mconfig.cpp" line="578"/>
         <source>Sorry that name is in use. Please select a different name.</source>
         <translation>Συγγνώμη, αλλά το όνομα αυτό χρησιμοποιείται. Παρακαλώ επιλέξτε ένα διαφορετικό όνομα.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="581"/>
+        <location filename="../mconfig.cpp" line="583"/>
         <source>The user password entries do not match.  Please try again.</source>
         <translation>Ο Κωδικός Χρήστη που βάλατε 
 δεν ταιριάζει. Παρακαλώ δοκιμάστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="586"/>
+        <location filename="../mconfig.cpp" line="588"/>
         <source>The user password needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Το Όνομα Χρήστη πρέπει να έχει μήκος 
 τουλάχιστον 2 χαρακτήρων. Παρακαλώ επιλέξτε 
 ένα μεγαλύτερο όνομα πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="614"/>
+        <location filename="../mconfig.cpp" line="616"/>
         <source>The user was added ok.</source>
         <translation>Προστέθηκε Νέος Χρήστης.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="618"/>
+        <location filename="../mconfig.cpp" line="620"/>
         <source>Failed to add the user.</source>
         <translation>Αποτυχία να προσθέσετε το χρήστη.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="623"/>
+        <location filename="../mconfig.cpp" line="625"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation>Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Είστε σίγουροι ότι θέλετε να διαγράψετε το χρήστη %1;</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="636"/>
+        <location filename="../mconfig.cpp" line="638"/>
         <source>The user has been deleted.</source>
         <translation>Ο χρήστης έχει διαγραφεί.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="639"/>
+        <location filename="../mconfig.cpp" line="641"/>
         <source>Failed to delete the user.</source>
         <translation>Απέτυχε η διαγραφή του χρήστη.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="652"/>
+        <location filename="../mconfig.cpp" line="654"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Το Όνομα Ομάδας πρέπει να έχει μήκος τουλάχιστον 2 χαρακτήρων. Παρακαλώ επιλέξτε ένα μεγαλύτερο όνομα πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="656"/>
+        <location filename="../mconfig.cpp" line="658"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -171,116 +171,116 @@ Please choose another name before proceeding.</source>
 Παρακαλώ επιλέξτε ένα άλλο όνομα πριν προχωρήσετε.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="665"/>
+        <location filename="../mconfig.cpp" line="667"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
         <translation>Συγγνώμη, αλλά το όνομα αυτό χρησιμοποιείται. 
 Παρακαλώ επιλέξτε ένα διαφορετικό όνομα.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="672"/>
+        <location filename="../mconfig.cpp" line="674"/>
         <source>The system group was added ok.</source>
         <translation>Η ομάδα του συστήματος προστέθηκε.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="675"/>
+        <location filename="../mconfig.cpp" line="677"/>
         <source>Failed to add the system group.</source>
         <translation>Αποτυχία να προσθέσετε την ομάδα του συστήματος.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="678"/>
+        <location filename="../mconfig.cpp" line="680"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation>Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Είστε σίγουροι ότι θέλετε να διαγράψετε την ομάδα %1;</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="685"/>
+        <location filename="../mconfig.cpp" line="687"/>
         <source>The group has been deleted.</source>
         <translation>Η ομάδα έχει διαγραφεί.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="688"/>
+        <location filename="../mconfig.cpp" line="690"/>
         <source>Failed to delete the group.</source>
         <translation>Αποτυχία να διαγράψετε την ομάδα.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="706"/>
+        <location filename="../mconfig.cpp" line="708"/>
         <source>Are you sure you want to make these changes?</source>
         <translation>Είστε σίγουροι ότι θέλετε να κάνετε αυτές τις αλλαγές;</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="712"/>
+        <location filename="../mconfig.cpp" line="714"/>
         <source>The changes have been applied.</source>
         <translation>Οι αλλαγές έχουν εφαρμοστεί.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="715"/>
+        <location filename="../mconfig.cpp" line="717"/>
         <source>Failed to apply group changes</source>
         <translation>Απέτυχε η εφαρμογή των αλλαγών ομάδων</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="799"/>
+        <location filename="../mconfig.cpp" line="801"/>
         <source>Synchronizing desktop...ok</source>
         <translation>Συγχρονισμός επιφάνεια εργασίας ... ok</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="801"/>
+        <location filename="../mconfig.cpp" line="803"/>
         <source>Copying desktop...ok</source>
         <translation>Αντιγραφή επιφάνεια εργασίας ... ok</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="805"/>
+        <location filename="../mconfig.cpp" line="807"/>
         <source>Synchronizing desktop...failed</source>
         <translation>Συγχρονισμός επιφάνειας εργασίας ... απέτυχε</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="807"/>
+        <location filename="../mconfig.cpp" line="809"/>
         <source>Copying desktop...failed</source>
         <translation>Αντιγραφή επιφάνεια εργασίας... απέτυχε</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1009"/>
+        <location filename="../mconfig.cpp" line="1014"/>
         <source>Baobab installation</source>
         <translation>Εγκατάσταση Baobab</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1010"/>
+        <location filename="../mconfig.cpp" line="1015"/>
         <source>Wait while Baobab is installing...</source>
         <translation>Περιμένετε για την εγκατάσταση του Baobab...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1077"/>
+        <location filename="../mconfig.cpp" line="1082"/>
         <source>About MX User Manager</source>
         <translation>Περί MX User Manager</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1078"/>
-        <location filename="../mconfig.cpp" line="1085"/>
+        <location filename="../mconfig.cpp" line="1083"/>
         <location filename="../mconfig.cpp" line="1090"/>
+        <location filename="../mconfig.cpp" line="1095"/>
         <source>MX User Manager</source>
         <translation>MX User Manager</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1080"/>
+        <location filename="../mconfig.cpp" line="1085"/>
         <source>Simple user configuration for antiX MX</source>
         <translation>Απλή διαμόρφωση χρήστη για antiX MX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1081"/>
+        <location filename="../mconfig.cpp" line="1086"/>
         <source>Copyright (c) antiX</source>
         <translation>Copyright (c) antiX </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1082"/>
-        <location filename="../mconfig.cpp" line="1085"/>
+        <location filename="../mconfig.cpp" line="1087"/>
+        <location filename="../mconfig.cpp" line="1090"/>
         <source>License</source>
         <translation>Άδεια</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1083"/>
+        <location filename="../mconfig.cpp" line="1088"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1090"/>
+        <location filename="../mconfig.cpp" line="1095"/>
         <source>Help</source>
         <translation>Βοήθεια </translation>
     </message>
