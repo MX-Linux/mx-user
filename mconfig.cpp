@@ -451,7 +451,7 @@ void MConfig::applyRestore() {
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp -R ~/.config/xfce4/panel/ ~/.restore/.config/xfce4/panel/'").arg(user);
+        cmd = QString("runuser %1 -c 'cp -R ~/.config/xfce4/panel ~/.restore/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
@@ -474,7 +474,7 @@ void MConfig::applyRestore() {
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml'").arg(user);
         system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp -R ~/.config/xfce4/panel/ ~/.restore/.config/xfce4/panel/'").arg(user);
+        cmd = QString("runuser %1 -c 'cp -R ~/.config/xfce4/panel ~/.restore/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
@@ -859,7 +859,7 @@ void MConfig::on_userComboBox_activated() {
     radioVerticalPanel->setAutoExclusive(false);
     radioVerticalPanel->setChecked(false);
     radioVerticalPanel->setAutoExclusive(true);
-    QString cmd = QString("runuser %1 -c 'test -f ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(userComboBox->currentText());
+    QString cmd = QString("runuser %1 -c 'test -f ~/.restore/.config/xfce4/xfconf/xfce-prechannel-xml/xfce4-panel.xml'").arg(userComboBox->currentText());
     if (system(cmd.toUtf8()) == 0) {
         radioRestoreBackup->setEnabled(true);
     } else {
