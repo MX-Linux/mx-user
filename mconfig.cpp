@@ -456,7 +456,7 @@ void MConfig::applyRestore() {
         cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
         // copy template files
-        cmd = QString("cp -R /usr/local/share/appdata/panels/horizontal/panel/ /home/%1/.config/xfce4/panel/").arg(user);
+        cmd = QString("cp -R /usr/local/share/appdata/panels/horizontal/panel /home/%1/.config/xfce4").arg(user);
         system(cmd.toUtf8());
         cmd = QString("cp /usr/local/share/appdata/panels/horizontal/xfce4-panel.xml /home/%1/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml").arg(user);
         system(cmd.toUtf8());
@@ -479,7 +479,7 @@ void MConfig::applyRestore() {
         cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
         // copy template files
-        cmd = QString("cp -R /usr/local/share/appdata/panels/vertical/panel/ /home/%1/.config/xfce4/panel/").arg(user);
+        cmd = QString("cp -R /usr/local/share/appdata/panels/vertical/panel /home/%1/.config/xfce4").arg(user);
         system(cmd.toUtf8());
         cmd = QString("cp /usr/local/share/appdata/panels/vertical/xfce4-panel.xml /home/%1/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml").arg(user);
         system(cmd.toUtf8());
