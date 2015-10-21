@@ -491,7 +491,7 @@ void MConfig::applyRestore() {
         QMessageBox::information(0, tr("Panel settings"),
                                  tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     } else if (radioRestoreBackup->isChecked()) {
-        cmd = QString("runuser %1 -c 'cp -R ~/.restore/.config/xfce4/panel/ ~/.config/xfce4/panel/'").arg(user);
+        cmd = QString("runuser %1 -c 'cp -R ~/.restore/.config/xfce4/panel ~/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'cp ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
