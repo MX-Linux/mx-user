@@ -11,7 +11,7 @@ Homepage: https://github.com/timkb4cq/mx-user
 
 Package: mx-user
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, adduser, rsync, mx-viewer
+Depends: ${misc:Depends}, ${shlibs:Depends}, adduser, rsync, mx-viewer, apt-mx
 Description: MX User manager
  The MX User Manager allows for easy administration of user accounts.
 

@@ -1,3 +1,9 @@
+mx-user (15.10.3mx15) mx; urgency=medium
+
+  * localize repo after restore
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 27 Oct 2015 17:42:09 -0400
+
 mx-user (15.10.2mx15) mx; urgency=medium
 
   * added panel layout change
