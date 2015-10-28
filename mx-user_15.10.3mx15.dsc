@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 7.0.50~
 Package-List:
  mx-user deb system optional arch=any
 Checksums-Sha1:
- 3f4ac32f580450f60f9983920d007d6ada902770 1694736 mx-user_15.10.3mx15.tar.xz
+ bf64b3dd141d24b8fdce93d5034638e18c0b10fc 1809732 mx-user_15.10.3mx15.tar.xz
 Checksums-Sha256:
- 2d9705b659f7515ed9af71846f90b0c9f1ae3063082d08693ee94e01beed4a0b 1694736 mx-user_15.10.3mx15.tar.xz
+ 879a8634e8c08acacd3af8b2d726863f108bb7beefcfce0d2280ee65a133f9a0 1809732 mx-user_15.10.3mx15.tar.xz
 Files:
- 009ea7c227734e0caab162f0454f14d4 1694736 mx-user_15.10.3mx15.tar.xz
+ 33f09884a4a6aec0df0184a5acfd200a 1809732 mx-user_15.10.3mx15.tar.xz

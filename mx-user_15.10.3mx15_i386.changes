@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 27 Oct 2015 17:42:09 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source i386
+Version: 15.10.3mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (15.10.3mx15) mx; urgency=medium
+ .
+   * localize repo after restore
+Checksums-Sha1:
+ ce51c35f50f9f810ed4495929b30630ecbc0079e 651 mx-user_15.10.3mx15.dsc
+ bf64b3dd141d24b8fdce93d5034638e18c0b10fc 1809732 mx-user_15.10.3mx15.tar.xz
+ 3ed03b0c5cda9564ec70e288f4cf3a67a76ea588 98490 mx-user_15.10.3mx15_i386.deb
+Checksums-Sha256:
+ 1b2b83ae11fe7172e362a76f30bf266c00675c72b9f236163fb3c9b3917393dd 651 mx-user_15.10.3mx15.dsc
+ 879a8634e8c08acacd3af8b2d726863f108bb7beefcfce0d2280ee65a133f9a0 1809732 mx-user_15.10.3mx15.tar.xz
+ 3deff20c68ccac0a9862ae196bc9d46f8fffb3c5289d15b5b8faf1ad137ab931 98490 mx-user_15.10.3mx15_i386.deb
+Files:
+ 5f6ac6c4fd2f9ef79d30d18bde92c8e7 651 system optional mx-user_15.10.3mx15.dsc
+ 33f09884a4a6aec0df0184a5acfd200a 1809732 system optional mx-user_15.10.3mx15.tar.xz
+ 4f6d337a357914e2f4243fa65e09e889 98490 system optional mx-user_15.10.3mx15_i386.deb
