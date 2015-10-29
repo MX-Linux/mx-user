@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
 Format: 1.8
 Date: Tue, 27 Oct 2015 17:42:09 -0400
 Source: mx-user
@@ -15,14 +18,26 @@ Changes:
  .
    * localize repo after restore
 Checksums-Sha1:
- db709ee636ae1c1b79367501b116189e3ee1348e 651 mx-user_15.10.3mx15.dsc
- 3f4ac32f580450f60f9983920d007d6ada902770 1694736 mx-user_15.10.3mx15.tar.xz
- e4a080ef06fc82194944b2f2544c69903acda539 97914 mx-user_15.10.3mx15_amd64.deb
+ 0574345fea9806e64499d56fcd49a0ffaadc2aec 1172 mx-user_15.10.3mx15.dsc
+ 2849fad3230c31e818e55e1432e2465b87fd46ac 1924660 mx-user_15.10.3mx15.tar.xz
+ 01f79ab01e56ae4f06a66165ae179bf7feb3df1c 97748 mx-user_15.10.3mx15_amd64.deb
 Checksums-Sha256:
- c26428024f796bf7df0594931d458f61cb66281d5e544d65d74bcae9432ceafd 651 mx-user_15.10.3mx15.dsc
- 2d9705b659f7515ed9af71846f90b0c9f1ae3063082d08693ee94e01beed4a0b 1694736 mx-user_15.10.3mx15.tar.xz
- 60f062c77a96cd8cafc3a859fff1668739782673f875731f580830b04b2ab3db 97914 mx-user_15.10.3mx15_amd64.deb
+ adb1d4912f48f4e7ca4bad8e7c71d12d75ca542b69cb6ef70225f2c2846663c6 1172 mx-user_15.10.3mx15.dsc
+ 41783e106b789c77cbd18446b865d23ef15ea2c56643dd1d77f5baab74e41e6d 1924660 mx-user_15.10.3mx15.tar.xz
+ dfefdc4f5520fff9be27a5fe8de88a5f080bd5d44e0f5055a2c7ca9da9f6e589 97748 mx-user_15.10.3mx15_amd64.deb
 Files:
- d39e69ab44b014329fb0e1439c7acb61 651 system optional mx-user_15.10.3mx15.dsc
- 009ea7c227734e0caab162f0454f14d4 1694736 system optional mx-user_15.10.3mx15.tar.xz
- 43ff6068635cf23842722c2b765facff 97914 system optional mx-user_15.10.3mx15_amd64.deb
+ be97797b2816401ad86792ad732ce383 1172 system optional mx-user_15.10.3mx15.dsc
+ ae0dcc293d6745f01a3619dd8fbe228a 1924660 system optional mx-user_15.10.3mx15.tar.xz
+ 8928c513e455f05d58a7415529b57327 97748 system optional mx-user_15.10.3mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWMXbuAAoJEHCTjHgGee6YEp8H/1/ulZHpRweTpp8Uek08Eu1n
+zQPGfqaOhHPu+65Tiq9R/9uZKxVGUSJEE+KltiD/5rmIOSjBprpASsNMGao68C6j
+AiNLuVXprUyMCPFrEkzNfNCr13y8Kq7gkt+h5ZBQW35edQOa2orAta7gTtfHjE9Q
+X4t0K7NT7ZhBSWFo1kHWdv4sQqkHTRtRDrZ232tiuahFuzNjc/HoxOxd+pOJx44O
+jhP6SDMZLi3XwNb37qDkdCqE6HYfS/Iy0emeoVVai1diLOUCWA66U+1F5jvi3UxW
+zczQ+3mintVvtg0CXHD101eEYy+aai++DYmwhWPALALM1WQZAwTSfkJAwLYpP7o=
+=0BRR
+-----END PGP SIGNATURE-----

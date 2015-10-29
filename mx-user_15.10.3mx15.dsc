@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
 Format: 3.0 (native)
 Source: mx-user
 Binary: mx-user
@@ -10,8 +13,20 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 7.0.50~
 Package-List:
  mx-user deb system optional arch=any
 Checksums-Sha1:
- bf64b3dd141d24b8fdce93d5034638e18c0b10fc 1809732 mx-user_15.10.3mx15.tar.xz
+ 2849fad3230c31e818e55e1432e2465b87fd46ac 1924660 mx-user_15.10.3mx15.tar.xz
 Checksums-Sha256:
- 879a8634e8c08acacd3af8b2d726863f108bb7beefcfce0d2280ee65a133f9a0 1809732 mx-user_15.10.3mx15.tar.xz
+ 41783e106b789c77cbd18446b865d23ef15ea2c56643dd1d77f5baab74e41e6d 1924660 mx-user_15.10.3mx15.tar.xz
 Files:
- 33f09884a4a6aec0df0184a5acfd200a 1809732 mx-user_15.10.3mx15.tar.xz
+ ae0dcc293d6745f01a3619dd8fbe228a 1924660 mx-user_15.10.3mx15.tar.xz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWMXbpAAoJEHCTjHgGee6Y3vwH/0o8Z6m056idLFoq4+N0joxd
+DdQavcSXnCK2GuD0lN/spwOHKkZCyPsaA1L41Nys32bkE6vfsJD8xwYvwerqPF+7
+NrrXUeBu8AlIv51vL5qitu/kkc/UPhDQL1tKDkPXbgbwDGutyB71ay2WFMThw+kG
+5q5C7h/n1CKAE07NToP8T823P9/jQpfIpFKKxyvgx8PyJuADfMG+J5nile2rJFqA
+jpEbs2SonL5CSCEb3jG7GW4FxBgOQ9EowumZ/RHggpQkZlhlzwuu39BugPmm2r2J
+ytslZnTnu1YDByClRc182uyImnuj45Ra4vD5NUHHol2RtiEjGtZ9vJoTxDpseTo=
+=SBS1
+-----END PGP SIGNATURE-----
