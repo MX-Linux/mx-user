@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -45,39 +43,39 @@
         <location filename="../mconfig.cpp" line="416"/>
         <location filename="../mconfig.cpp" line="427"/>
         <source>Autologin options</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin opties</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="417"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin is gedeactiveerd voor het &apos;%1&apos; account.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="428"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin is geactiveerd voor het &apos;%1&apos; account.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="437"/>
         <source>Xfce settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Xfce instellingen</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="438"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Uw huidige Xfce instellingen zijn geback-upt in een verborgen folder genaamd .restore in uw home folder (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="461"/>
         <location filename="../mconfig.cpp" line="485"/>
         <source>Panel settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paneel instellingen</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="462"/>
         <location filename="../mconfig.cpp" line="486"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Uw huidige paneelinstellingen zijn gebackupt in een verborgen folder genaamd .restore in uw home folder (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="506"/>
@@ -382,8 +380,9 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>Gebruiker die u wilt verwijderen:</translation>
     </message>
     <message>
-        <source>Repair</source>
-        <translation type="vanished">Repareren</translation>
+        <location filename="../meconfig.ui" line="323"/>
+        <source>Options</source>
+        <translation>Opties</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="326"/>
@@ -391,8 +390,10 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>Een gebruikersconfiguratie repareren</translation>
     </message>
     <message>
-        <source>Repair User Account</source>
-        <translation type="vanished">Repareer Gebruikersaccount</translation>
+        <location filename="../meconfig.ui" line="360"/>
+        <location filename="../meconfig.ui" line="1301"/>
+        <source>Modify User Account</source>
+        <translation>Gebruikersaccount Aanpassen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="372"/>
@@ -403,8 +404,10 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>Selecteer een gebruiker voor reparatie</translation>
     </message>
     <message>
-        <source>User account to repair:</source>
-        <translation type="vanished">Gebruikersaccount dat gerepareerd moet worden:</translation>
+        <location filename="../meconfig.ui" line="375"/>
+        <location filename="../meconfig.ui" line="1350"/>
+        <source>User to change:</source>
+        <translation>Te wijzigen gebruiker:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="410"/>
@@ -452,38 +455,44 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>Herstel APT bronnen</translation>
     </message>
     <message>
-        <source>Remove autologin</source>
-        <translation type="vanished">Verwijder autologin</translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="473"/>
         <source>Restore Xfce defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Herstel Xfce standaarden</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="323"/>
-        <source>Options</source>
-        <translation type="unfinished"></translation>
+        <location filename="../meconfig.ui" line="483"/>
+        <source>Change Autologin Settings</source>
+        <translation>Verander Autologin Instellingen</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="489"/>
+        <source>Log in automatically</source>
+        <translation>Log automatisch in</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="496"/>
+        <source>Require password to log in</source>
+        <translation>Vereis wachtwoord om in the loggen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="506"/>
         <source>Select Panel Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecteer Paneel Opties</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="512"/>
         <source>Display default panel horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>Laat standaard paneel horizontaal zien</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="519"/>
         <source>Restore default configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Herstel standaard configuratie</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="529"/>
         <source>Restore backed up configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Herstel gebackupte configuratie</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="544"/>
@@ -727,33 +736,6 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <location filename="../meconfig.ui" line="1289"/>
         <source>Group Membership</source>
         <translation>Groepslidmaatschap</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="360"/>
-        <location filename="../meconfig.ui" line="1301"/>
-        <source>Modify User Account</source>
-        <translation>Gebruikersaccount Aanpassen</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="375"/>
-        <location filename="../meconfig.ui" line="1350"/>
-        <source>User to change:</source>
-        <translation>Te wijzigen gebruiker:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="483"/>
-        <source>Change Autologin Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="489"/>
-        <source>Log in automatically</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="496"/>
-        <source>Require password to log in</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1386"/>

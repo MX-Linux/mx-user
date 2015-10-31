@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -45,39 +43,39 @@
         <location filename="../mconfig.cpp" line="416"/>
         <location filename="../mconfig.cpp" line="427"/>
         <source>Autologin options</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin-alternativ</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="417"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin har stängts av för &apos;%1&apos; kontot.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="428"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin har möjliggjorts för &apos;%1&apos; kontot.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="437"/>
         <source>Xfce settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Xfce-inställningar</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="438"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Dina nuvarande Xfce-inställningar har sparats i en dold mapp som heter  .restore i din hem-katalog (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="461"/>
         <location filename="../mconfig.cpp" line="485"/>
         <source>Panel settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Panel-inställningar</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="462"/>
         <location filename="../mconfig.cpp" line="486"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Dina nuvarande panel-inställningar har sparats i en dold mapp som heter .restore i din hem-katalog (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="506"/>
@@ -382,8 +380,9 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Användare att ta bort:</translation>
     </message>
     <message>
-        <source>Repair</source>
-        <translation type="vanished">Reparera</translation>
+        <location filename="../meconfig.ui" line="323"/>
+        <source>Options</source>
+        <translation>Valmöjligheter</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="326"/>
@@ -391,8 +390,10 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Reparera en användar-konfiguration</translation>
     </message>
     <message>
-        <source>Repair User Account</source>
-        <translation type="vanished">Reparera Användarkonto</translation>
+        <location filename="../meconfig.ui" line="360"/>
+        <location filename="../meconfig.ui" line="1301"/>
+        <source>Modify User Account</source>
+        <translation>Modifiera Användarkonto</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="372"/>
@@ -403,8 +404,10 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Välj användare att reparera</translation>
     </message>
     <message>
-        <source>User account to repair:</source>
-        <translation type="vanished">Användarkonto att reparera:</translation>
+        <location filename="../meconfig.ui" line="375"/>
+        <location filename="../meconfig.ui" line="1350"/>
+        <source>User to change:</source>
+        <translation>Användare att ändra:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="410"/>
@@ -452,38 +455,44 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Återställ APT sources</translation>
     </message>
     <message>
-        <source>Remove autologin</source>
-        <translation type="vanished">Ta bort autologin</translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="473"/>
         <source>Restore Xfce defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ Xfce standardinställningar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="323"/>
-        <source>Options</source>
-        <translation type="unfinished"></translation>
+        <location filename="../meconfig.ui" line="483"/>
+        <source>Change Autologin Settings</source>
+        <translation>Ändra Autologin-inställlningar</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="489"/>
+        <source>Log in automatically</source>
+        <translation>Logga in automatiskt</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="496"/>
+        <source>Require password to log in</source>
+        <translation>Kräv lösenord för att logga in</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="506"/>
         <source>Select Panel Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj Panel-alternativ</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="512"/>
         <source>Display default panel horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa standard-panel horisontellt</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="519"/>
         <source>Restore default configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ standard-konfigurering</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="529"/>
         <source>Restore backed up configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ sparad konfigurering</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="544"/>
@@ -727,33 +736,6 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
         <location filename="../meconfig.ui" line="1289"/>
         <source>Group Membership</source>
         <translation>Grupp-medlemskap</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="360"/>
-        <location filename="../meconfig.ui" line="1301"/>
-        <source>Modify User Account</source>
-        <translation>Modifiera Användarkonto</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="375"/>
-        <location filename="../meconfig.ui" line="1350"/>
-        <source>User to change:</source>
-        <translation>Användare att ändra:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="483"/>
-        <source>Change Autologin Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="489"/>
-        <source>Log in automatically</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="496"/>
-        <source>Require password to log in</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1386"/>

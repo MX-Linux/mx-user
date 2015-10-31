@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt_BR" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -14,12 +14,12 @@
         <location filename="../mconfig.cpp" line="902"/>
         <location filename="../mconfig.cpp" line="909"/>
         <source>none</source>
-        <translation>nenhum</translation>
+        <translation>ни один</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="374"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>A configuração do usuário será reparada. Feche as outras aplicações, por favor. Ao término, por favor saia da sessão ou reinicie o sistema. Você tem certeza de que quer repará-la agora?</translation>
+        <translation>Конфигурация пользователя будет восстановлена. Пожалуйста, закройте сейчас все другие приложения. Когда закончите, пожалуйста, сделайте выход из сеанса или перезагрузку. Вы уверены, что хотите восстановить конфигурацию?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="375"/>
@@ -28,7 +28,7 @@
         <location filename="../mconfig.cpp" line="674"/>
         <location filename="../mconfig.cpp" line="701"/>
         <source>Yes</source>
-        <translation>Sim</translation>
+        <translation>Да</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="375"/>
@@ -37,242 +37,246 @@
         <location filename="../mconfig.cpp" line="674"/>
         <location filename="../mconfig.cpp" line="701"/>
         <source>No</source>
-        <translation>Não</translation>
+        <translation>Нет</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="416"/>
         <location filename="../mconfig.cpp" line="427"/>
         <source>Autologin options</source>
-        <translation type="unfinished"/>
+        <translation>Опции автоматического входа</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="417"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"/>
+        <translation>Автовход был отключен для пользователя &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="428"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"/>
+        <translation>Автовход был включен для пользователя &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="437"/>
         <source>Xfce settings</source>
-        <translation type="unfinished"/>
+        <translation>Настройки Xfce</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="438"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"/>
+        <translation> Копия Ваших текущих настроек Xfce была сохранена в скрытой папке  .restore в Вашей домашней папке (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="461"/>
         <location filename="../mconfig.cpp" line="485"/>
         <source>Panel settings</source>
-        <translation type="unfinished"/>
+        <translation>Настройки панели</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="462"/>
         <location filename="../mconfig.cpp" line="486"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"/>
+        <translation> Ваши прежние настройки панели были сохранены в скрытой папке под названием .restore в вашей домашней папке (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="506"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished"/>
+        <translation>Вы должны указать место для копирования &apos;copy to&apos;. Вы не можете копировать на тот же рабочий стол, на который произведен вход.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="510"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation>Antes de copiar, feche as outras aplicações. Verifique se o local de destino tem espaço suficiente para os arquivos que serão copiados. A cópia entre ambientes de trabalho pode sobrescrever ou apagar arquivos ou preferências no ambiente de destino. Você tem certeza de que quer continuar?</translation>
+        <translation>Перед началом копирования закройте все другие приложения. Учтите, что копия будет достаточно большой, чтобы содержать файлы, которые вы копируете. Копирование между рабочими столами может перезаписать или удалить файлы или предпочтения на рабочем столе назначения. Вы уверены, что хотите продолжить?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="532"/>
         <source>Synchronizing desktop...</source>
-        <translation>Sincronizando ambiente...</translation>
+        <translation>Синхронизация рабочего стола...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="534"/>
         <source>Copying desktop...</source>
-        <translation>Copiando ambiente...</translation>
+        <translation>Копирование рабочего стола...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="557"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>O nome do usuário precisa ter ao menos 2 caracteres. Escolha um nome mais comprido, por favor.</translation>
+        <translation>Имя пользователя должно иметь не менее 2 символов. Пожалуйста, выберите более длинное название, прежде чем продолжить.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="561"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>Имя пользователя должно быть в нижнем регистре и оно
+не может содержать специальные символы или пробелы.
+Пожалуйста, выберите другое имя, прежде чем приступить.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="570"/>
         <source>Sorry that name is in use. Please select a different name.</source>
-        <translation>Desculpe, esse nome está em uso. Escolha um nome diferente, por favor.</translation>
+        <translation>Извините, это имя уже используется. Пожалуйста, выберите другое имя.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="575"/>
         <source>The user password entries do not match.  Please try again.</source>
-        <translation>As senhas do usuário não combinam. Tente de novo, por favor.</translation>
+        <translation>Записи пароля пользователя не совпадают. Пожалуйста, попробуйте еще раз.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="580"/>
         <source>The user password needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>A senha do usuário precisa ter ao menos 2 caracteres. Escolha uma senha mais comprida, por favor.</translation>
+        <translation>Имя суперпользователя должно иметь не менее 2 символов. Пожалуйста, выберите более длинное название, прежде чем продолжить.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="608"/>
         <source>The user was added ok.</source>
-        <translation>O usuário foi adicionado corretamente.</translation>
+        <translation>Пользователь был успешно добавлен.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="612"/>
         <source>Failed to add the user.</source>
-        <translation>A adição do usuário falhou.</translation>
+        <translation>Не удалось добавить пользователя.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="617"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"/>
+        <translation>Это действие не может быть отменено. Вы уверены, что хотите удалить пользователя %1?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="630"/>
         <source>The user has been deleted.</source>
-        <translation>O usuário foi excluído.</translation>
+        <translation>Пользователь был удален.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="633"/>
         <source>Failed to delete the user.</source>
-        <translation>A exclusão do usuário falhou.</translation>
+        <translation>Не удалось удалить пользователя.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="646"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>O nome do grupo precisa ter ao menos 2 caracteres. Escolha um nome mais comprido, por favor.</translation>
+        <translation>Имя группы должно иметь не менее 2 символов. Пожалуйста, выберите более длинное название, прежде чем продолжить.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="650"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>Имя группы должно быть в нижнем регистре и оно
+не может содержать специальные символы или пробелы.
+Пожалуйста, выберите другое имя, прежде чем приступить.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="659"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
-        <translation>Desculpe, esse nome do grupo está em uso. Escolha um nome diferente, por favor.</translation>
+        <translation>Извините, это имя группы уже используется. Пожалуйста, выберите другое имя.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="666"/>
         <source>The system group was added ok.</source>
-        <translation>O grupo foi adicionado corretamente.</translation>
+        <translation>Системная группа была успешно добавлена.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="669"/>
         <source>Failed to add the system group.</source>
-        <translation>A adição do  falhou.</translation>
+        <translation>Не удалось добавить системную группу.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="672"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"/>
+        <translation>Это действие не может быть отменено. Вы уверены, что хотите удалить группу %1?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="679"/>
         <source>The group has been deleted.</source>
-        <translation>O grupo foi excluído.</translation>
+        <translation>Группа была удалена.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="682"/>
         <source>Failed to delete the group.</source>
-        <translation>A exclusão de grupo falhou</translation>
+        <translation>Не удалось удалить группу.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="700"/>
         <source>Are you sure you want to make these changes?</source>
-        <translation>Tem certeza de que quer fazer essas mudanças?</translation>
+        <translation>Вы уверены, что хотите сделать эти изменения?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="706"/>
         <source>The changes have been applied.</source>
-        <translation>As mudanças foram aplicadas.</translation>
+        <translation>Изменения были применены.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="709"/>
         <source>Failed to apply group changes</source>
-        <translation>Falha ao aplicar as alterações do grupo</translation>
+        <translation>Не удалось применить изменения групп.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="793"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Sincronizando ambiente...ok</translation>
+        <translation>Синхронизация рабочего стола...ОК</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="795"/>
         <source>Copying desktop...ok</source>
-        <translation>Copiando ambiente...ok</translation>
+        <translation>Копирование рабочего стола...ОК</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="799"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Sincronizando ambiente...falhou</translation>
+        <translation>Синхронизация рабочего стола...НЕ удалась</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="801"/>
         <source>Copying desktop...failed</source>
-        <translation>Copiando ambiente...falhou</translation>
+        <translation>Копирование рабочего стола...НЕ удалось</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1006"/>
         <source>Baobab installation</source>
-        <translation type="unfinished"/>
+        <translation>Установка программы Baobab</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1007"/>
         <source>Wait while Baobab is installing...</source>
-        <translation type="unfinished"/>
+        <translation>Ожидайте, пока Baobab устанавливается...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1074"/>
         <source>About MX User Manager</source>
-        <translation>Sobre de Gerenciador de Usuários </translation>
+        <translation>О программе MX Менеджер пользователей</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1075"/>
         <location filename="../mconfig.cpp" line="1082"/>
         <location filename="../mconfig.cpp" line="1087"/>
         <source>MX User Manager</source>
-        <translation>Gerenciador de Usuários do MX</translation>
+        <translation>MX Менеджер пользователей</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1077"/>
         <source>Simple user configuration for antiX MX</source>
-        <translation type="unfinished"/>
+        <translation>Простая конфигурация пользователей для antiX MX</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1078"/>
         <source>Copyright (c) antiX</source>
-        <translation type="unfinished"/>
+        <translation>Авторское право (c) antiX</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1079"/>
         <location filename="../mconfig.cpp" line="1082"/>
         <source>License</source>
-        <translation>licença</translation>
+        <translation>Лицензия</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1080"/>
         <source>Cancel</source>
-        <translation>Cancelar</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1087"/>
         <source>Help</source>
-        <translation>Ajuda</translation>
+        <translation>Помощь</translation>
     </message>
 </context>
 <context>
@@ -280,85 +284,85 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>Gerenciador de Usuários do MX</translation>
+        <translation>MX Менеджер пользователей</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="62"/>
         <source>Add/Remove User</source>
-        <translation>Adicionar / remover Usuário</translation>
+        <translation>Добавить/Удалить пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="65"/>
         <source>Add a new user</source>
-        <translation>Adicionar um novo usuário</translation>
+        <translation>Добавить нового пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="92"/>
         <source>Add User Account</source>
-        <translation>Adicionar Conta de Usuário</translation>
+        <translation>Добавить учетную запись пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="119"/>
         <location filename="../meconfig.ui" line="154"/>
         <source>Password for new user</source>
-        <translation>Senha para o novo usuário</translation>
+        <translation>Пароль нового пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="122"/>
         <source>Confirm user password:</source>
-        <translation>Confirme a senha do usuário:</translation>
+        <translation>Подтвердите пароль пользователя:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="135"/>
         <source>Enter password for new user</source>
-        <translation>Informe a senha do novo usuário</translation>
+        <translation>Введите пароль нового пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="157"/>
         <source>User password:</source>
-        <translation>Senha do usuário:</translation>
+        <translation>Пароль пользователя:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="170"/>
         <location filename="../meconfig.ui" line="1174"/>
         <source>Enter username of new user</source>
-        <translation>Informe o nome do novo usuário</translation>
+        <translation>Введите имя нового пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="176"/>
         <source>username</source>
-        <translation>nome do usuário</translation>
+        <translation>Имя пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="189"/>
         <location filename="../meconfig.ui" line="1193"/>
         <source>Username of new user</source>
-        <translation>Nome do novo usuário</translation>
+        <translation>Имя нового пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="192"/>
         <source>User login name:</source>
-        <translation>Nome de autenticação do usuário:</translation>
+        <translation>Логин пользователя:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="205"/>
         <source>Reenter password for new user</source>
-        <translation>Reintroduza a senha do novo usuário</translation>
+        <translation>Введите повторно пароль нового пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="240"/>
         <source>Delete User Account</source>
-        <translation>Remover Conta de Usuário</translation>
+        <translation>Удалить профиль пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="267"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation>Também apagar o diretório home do usuário</translation>
+        <translation>Также удалить домашний каталог пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="270"/>
         <source>Delete user home directory</source>
-        <translation>Também apagar o diretório home do usuário</translation>
+        <translation>Удалить домашнюю папку пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="286"/>
@@ -368,28 +372,28 @@ Please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="1328"/>
         <location filename="../meconfig.ui" line="1341"/>
         <source>Select user to delete</source>
-        <translation>Selecione o usuário a remover</translation>
+        <translation>Выберите пользователя для удаления</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="295"/>
         <source>User to delete:</source>
-        <translation>Usuário a remover:</translation>
+        <translation>Пользователь для удаления:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="323"/>
         <source>Options</source>
-        <translation>Opções</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="326"/>
         <source>Repair a user configuration</source>
-        <translation>Reparar uma configuração de usuário</translation>
+        <translation>Восстановление конфигурации пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="360"/>
         <location filename="../meconfig.ui" line="1301"/>
         <source>Modify User Account</source>
-        <translation>Modificar Conta de Usuário</translation>
+        <translation>Изменить учетную запись пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="372"/>
@@ -397,28 +401,28 @@ Please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="933"/>
         <location filename="../meconfig.ui" line="949"/>
         <source>Select user to repair</source>
-        <translation>Selecione o usuário a reparar</translation>
+        <translation>Выберите пользователя для восстановления</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="375"/>
         <location filename="../meconfig.ui" line="1350"/>
         <source>User to change:</source>
-        <translation>Usuário de mudar:</translation>
+        <translation>Пользователь для изменений:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="410"/>
         <source>Restore Defaults</source>
-        <translation>Restaurar o Padrão</translation>
+        <translation>Восстановить по умолчанию</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="431"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation>Restaurar a configuração do navegador ao padrão no MX</translation>
+        <translation>Восстановить конфигурацию браузера MX по умолчанию</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="437"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation type="unfinished"/>
+        <translation>Конфигурация Mozilla (Iceweasel или Firefox)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="440"/>
@@ -428,12 +432,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="447"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation>Restaurar as filiações a grupos ao padrão no MX</translation>
+        <translation>Восстановить членство в группах MX по умолчанию</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="453"/>
         <source>Group memberships</source>
-        <translation>Filiações a grupos</translation>
+        <translation>Членство в группах</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="456"/>
@@ -443,315 +447,315 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="463"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"/>
+        <translation>Восстановить источники APT по умолчанию</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="466"/>
         <source>Restore APT sources</source>
-        <translation type="unfinished"/>
+        <translation>Восстановить источники APT</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="473"/>
         <source>Restore Xfce defaults</source>
-        <translation type="unfinished"/>
+        <translation>Восстановить значения по умолчанию Xfce</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="483"/>
         <source>Change Autologin Settings</source>
-        <translation type="unfinished"/>
+        <translation>Изменить настройки автоматического входа</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="489"/>
         <source>Log in automatically</source>
-        <translation type="unfinished"/>
+        <translation>Входить автоматически</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="496"/>
         <source>Require password to log in</source>
-        <translation type="unfinished"/>
+        <translation>Требовать пароль для входа</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="506"/>
         <source>Select Panel Options</source>
-        <translation type="unfinished"/>
+        <translation>Выбрать опции панели</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="512"/>
         <source>Display default panel horizontally</source>
-        <translation type="unfinished"/>
+        <translation>Показывать горизонтальную панель по умолчанию</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="519"/>
         <source>Restore default configuration</source>
-        <translation type="unfinished"/>
+        <translation>Восстановить конфигурацию по умолчанию</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="529"/>
         <source>Restore backed up configuration</source>
-        <translation type="unfinished"/>
+        <translation>Восстановить прежде сохраненную конфигурацию</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="544"/>
         <source>Copy/Sync</source>
-        <translation>Copiar/Sincr.</translation>
+        <translation>Копирование/Синхронизация</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="571"/>
         <source>Copy Between Desktops</source>
-        <translation>Copiar entre Ambientes de Trabalho</translation>
+        <translation>Копирование между рабочими столами</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="598"/>
         <source>Select to copy and then delete differences</source>
-        <translation>Selecione para copiar e então apagar as diferenças</translation>
+        <translation>Выбор для копирования с последующим удалением различий</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="601"/>
         <source>Sync</source>
-        <translation>Sincr.</translation>
+        <translation>Синхронизация</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="617"/>
         <location filename="../meconfig.ui" line="693"/>
         <source>Select desktop to copy from</source>
-        <translation>Selecione o AT de onde copiar</translation>
+        <translation>Выберите рабочий стол для копирования из него</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="626"/>
         <source>Copy from:</source>
-        <translation>Copiar de:</translation>
+        <translation>Копировать из:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="639"/>
         <location filename="../meconfig.ui" line="661"/>
         <source>Select desktop to copy to</source>
-        <translation>Selecione o AT para onde copiar</translation>
+        <translation>Выберите рабочий стол для копирования на него</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="648"/>
         <source>Copy to:</source>
-        <translation>Copiar para:</translation>
+        <translation>Копировать в:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="674"/>
         <source>Select to only copy files</source>
-        <translation>Selecione para apenas copiar arquivos</translation>
+        <translation>Выбор только копирования файлов</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="677"/>
         <source>Copy only</source>
-        <translation>Apenas copiar</translation>
+        <translation>Только копировать</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="736"/>
         <source>Select to copy/sync Shared</source>
-        <translation>Selecione para copiar/sincr. Shared</translation>
+        <translation>Выбор папки Shared</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="739"/>
         <source>Shared folder</source>
-        <translation>Pasta Shared</translation>
+        <translation>Общая папка</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="752"/>
         <source>Select to copy/sync entire home</source>
-        <translation>Selecione para copiar/sincr. home inteiro</translation>
+        <translation>Выбор всей домашней папки</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="755"/>
         <source>Entire home</source>
-        <translation>Home inteiro</translation>
+        <translation>Домашняя папка</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="771"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"/>
+        <translation>Выбор конфигурации браузера</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="774"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation type="unfinished"/>
+        <translation>Конфигурация Mozilla (Firefox или Iceweasel)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="787"/>
         <source>Select to copy/sync Documents</source>
-        <translation>Selecione para copiar/sincr. Documents</translation>
+        <translation>Выбор папки Документы</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="790"/>
         <source>Documents folder</source>
-        <translation>Pasta Documents</translation>
+        <translation>Папка Документы</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="797"/>
         <source>What to copy/sync:</source>
-        <translation>O que Copiar/Sincr.</translation>
+        <translation>Что копировать/синхронизировать:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="813"/>
         <source>Progress</source>
-        <translation>Progresso</translation>
+        <translation>Прогресс</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="843"/>
         <location filename="../meconfig.ui" line="859"/>
         <source>Status of the changes</source>
-        <translation>Status das mudanças</translation>
+        <translation>Статус изменений</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="862"/>
         <source>Status:</source>
-        <translation>Status:</translation>
+        <translation>Статус:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="878"/>
         <source>Progress of the changes</source>
-        <translation>Progresso das mudanças</translation>
+        <translation>Ход изменений</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="915"/>
         <source>Free Up Space</source>
-        <translation type="unfinished"/>
+        <translation>Освободить место</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="921"/>
         <source>Free disk space for user</source>
-        <translation type="unfinished"/>
+        <translation>Свободное дисковое пространство для пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="936"/>
         <source>User account:</source>
-        <translation type="unfinished"/>
+        <translation>Учетная запись пользователя:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="959"/>
         <source>Folders to clean</source>
-        <translation type="unfinished"/>
+        <translation>Папки для очистки</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="965"/>
         <source>Delete /tmp files</source>
-        <translation type="unfinished"/>
+        <translation>Удалить /tmp файлы</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="975"/>
         <source>Delete ~/.thumbnails</source>
-        <translation type="unfinished"/>
+        <translation>Удалить ~/.thumbnails</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="985"/>
         <source>Delete ~/.cache</source>
-        <translation type="unfinished"/>
+        <translation>Удалить ~/.cache</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="998"/>
         <source>Clear APT cache</source>
-        <translation type="unfinished"/>
+        <translation>Очистить кэш APT</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1004"/>
         <source>autoclean (only removes old cache files that can no longer be downloaded)</source>
-        <translation type="unfinished"/>
+        <translation>автоочистка (только старых файлов кэша, которые больше не могут быть загружены)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1014"/>
         <source>clean (delete all cache files)</source>
-        <translation type="unfinished"/>
+        <translation>очистка (всех файлов кэша)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1024"/>
         <source>Delete logs</source>
-        <translation type="unfinished"/>
+        <translation>Удаление журналов</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1030"/>
         <source>delete old logs (delete .gz, .old, and .1 log files)</source>
-        <translation type="unfinished"/>
+        <translation>старых журналов (удалить файлы .gz, .old, and .1)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1043"/>
         <source>delete all logs</source>
-        <translation type="unfinished"/>
+        <translation>всех журналов</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1059"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"/>
+        <translation>Очистить корзину</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1068"/>
         <source>selected user Trash</source>
-        <translation type="unfinished"/>
+        <translation>выбранного пользователя</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1078"/>
         <source>empty Trash for all users</source>
-        <translation type="unfinished"/>
+        <translation>для всех пользователей</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1088"/>
         <source>Graphical tool for analysing disk usage</source>
-        <translation type="unfinished"/>
+        <translation>Графический анализатор использования дисков</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1094"/>
         <source>Run Baobab</source>
-        <translation type="unfinished"/>
+        <translation>Запустить Baobab</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1135"/>
         <source>Add/Remove Groups</source>
-        <translation>Adicionar / remover grupos</translation>
+        <translation>Добавить/Удалить группы</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1147"/>
         <source>Add Group</source>
-        <translation>Afegeix </translation>
+        <translation>Добавить группу</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1180"/>
         <source>groupname</source>
-        <translation>nomedogrupo</translation>
+        <translation>groupname</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1196"/>
         <source>Group name:</source>
-        <translation>Nome do grupo</translation>
+        <translation>Имя группы:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1212"/>
         <source>Delete Group</source>
-        <translation>Esborra Grup</translation>
+        <translation>Удалить группу</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1248"/>
         <source>Group to delete:</source>
-        <translation>Grupo a remover:</translation>
+        <translation>Группа для удаления:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1289"/>
         <source>Group Membership</source>
-        <translation>Filiações a grupos</translation>
+        <translation>Членство в группах</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1386"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"/>
+        <translation>Пользователь принадлежит к группам (измените, выбрав / сняв соответствующие флажки):</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1409"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"/>
+        <translation>* Пожалуйста, перепроверьте свой выбор перед применением, назначая неправильное членство в группах, можно повредить Вашу систему. Используйте вкладку Восстановление для восстановления исходного членства, если Вы сделали ошибку.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1472"/>
         <source>Apply any changes</source>
-        <translation>Aplicar as mudanças</translation>
+        <translation>Применить все изменения</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1475"/>
         <source>Apply</source>
-        <translation>Aplicar</translation>
+        <translation>Применить</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1482"/>
@@ -761,12 +765,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1489"/>
         <source>Cancel any changes then quit</source>
-        <translation>Cancelar mudanças e encerrar</translation>
+        <translation>Отменить все изменения, затем выйти</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1492"/>
         <source>Close</source>
-        <translation>Encerrar</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1499"/>
@@ -776,12 +780,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1537"/>
         <source>Display help </source>
-        <translation>Exibir ajuda</translation>
+        <translation>Показать справку</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1540"/>
         <source>Help</source>
-        <translation>Ajuda</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1547"/>
@@ -791,12 +795,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1554"/>
         <source>About this application</source>
-        <translation>Sobre esta aplicação</translation>
+        <translation>Об этом приложении</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1557"/>
         <source>About...</source>
-        <translation>Sobre...</translation>
+        <translation>O...</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1564"/>
@@ -809,7 +813,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>Você deve executar esta aplicação como root.</translation>
+        <translation>Вы должны запустить программу от имени суперпользователя.</translation>
     </message>
 </context>
 </TS>

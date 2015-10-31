@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -45,39 +43,39 @@
         <location filename="../mconfig.cpp" line="416"/>
         <location filename="../mconfig.cpp" line="427"/>
         <source>Autologin options</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογές Autologin</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="417"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin έχει απενεργοποιηθεί για το &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="428"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin έχει ενεργοποιηθεί για το &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="437"/>
         <source>Xfce settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις Xfce</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="438"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι τρέχουσες ρυθμίσεις σας του Xfce εχει δημιουργηθει ως αντίγραφα ασφαλείας σε έναν κρυφό φάκελο που ονομάζεται .restore στο φάκελο του home (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="461"/>
         <location filename="../mconfig.cpp" line="485"/>
         <source>Panel settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις του Panel</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="462"/>
         <location filename="../mconfig.cpp" line="486"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι τρέχουσες ρυθμίσεις του Panel  σας δημιουργήσει αντίγραφα ασφαλείας σε έναν κρυφό φάκελο που ονομάζεται .restore στο φάκελο του σπιτιού σας (~/.restore /)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="506"/>
@@ -386,8 +384,9 @@ Please choose another name before proceeding.</source>
         <translation>Χρήστη για διαγραφή:</translation>
     </message>
     <message>
-        <source>Repair</source>
-        <translation type="vanished">Επισκευή</translation>
+        <location filename="../meconfig.ui" line="323"/>
+        <source>Options</source>
+        <translation>Επιλογές</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="326"/>
@@ -395,8 +394,10 @@ Please choose another name before proceeding.</source>
         <translation>Επισκευή μια ρύθμιση παραμέτρων χρήστη</translation>
     </message>
     <message>
-        <source>Repair User Account</source>
-        <translation type="vanished">Επαναφορά Λογαριασμός Χρήστη</translation>
+        <location filename="../meconfig.ui" line="360"/>
+        <location filename="../meconfig.ui" line="1301"/>
+        <source>Modify User Account</source>
+        <translation>Τροποποίηση λογαριασμού χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="372"/>
@@ -408,8 +409,10 @@ Please choose another name before proceeding.</source>
 </translation>
     </message>
     <message>
-        <source>User account to repair:</source>
-        <translation type="vanished">Λογαριασμός χρήστη για επισκευή:</translation>
+        <location filename="../meconfig.ui" line="375"/>
+        <location filename="../meconfig.ui" line="1350"/>
+        <source>User to change:</source>
+        <translation>Χρήστη για αλλαγη:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="410"/>
@@ -457,38 +460,44 @@ Please choose another name before proceeding.</source>
         <translation>Επαναφορά πηγές APT</translation>
     </message>
     <message>
-        <source>Remove autologin</source>
-        <translation type="vanished">Αφαίρεση autologin</translation>
-    </message>
-    <message>
         <location filename="../meconfig.ui" line="473"/>
         <source>Restore Xfce defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά προεπιλεγμένα του Xfce</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="323"/>
-        <source>Options</source>
-        <translation type="unfinished"></translation>
+        <location filename="../meconfig.ui" line="483"/>
+        <source>Change Autologin Settings</source>
+        <translation>Αλλαγή ρυθμίσεων Αυτόματη Σύνδεση</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="489"/>
+        <source>Log in automatically</source>
+        <translation>Συνδεθείτε αυτόματα</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="496"/>
+        <source>Require password to log in</source>
+        <translation>Απαίτηση κωδικού πρόσβασης για συνδεσι</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="506"/>
         <source>Select Panel Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε Επιλογές Panel</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="512"/>
         <source>Display default panel horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>Απεικόνιση οριζοντίως το προεπιλεγμένο Panel </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="519"/>
         <source>Restore default configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά προεπιλεγμένων ρυθμίσεων</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="529"/>
         <source>Restore backed up configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά ρυθμίσεων αντιγράφων ασφαλείας</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="544"/>
@@ -735,33 +744,6 @@ Please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="1289"/>
         <source>Group Membership</source>
         <translation>Μέλη Ομάδας</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="360"/>
-        <location filename="../meconfig.ui" line="1301"/>
-        <source>Modify User Account</source>
-        <translation>Τροποποίηση λογαριασμού χρήστη</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="375"/>
-        <location filename="../meconfig.ui" line="1350"/>
-        <source>User to change:</source>
-        <translation>Χρήστη για αλλαγη:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="483"/>
-        <source>Change Autologin Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="489"/>
-        <source>Log in automatically</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="496"/>
-        <source>Require password to log in</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1386"/>
