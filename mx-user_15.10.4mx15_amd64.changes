@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 31 Oct 2015 19:35:58 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 15.10.4mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (15.10.4mx15) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ 4e6a53a9fd46fa77c28395386ed674f540392ed7 1172 mx-user_15.10.4mx15.dsc
+ c76da71902936cff2281bb43f05bd33d7897079f 2141740 mx-user_15.10.4mx15.tar.xz
+ 3fbce7ec9dabbf71033396035be8e61c197d6253 103564 mx-user_15.10.4mx15_amd64.deb
+Checksums-Sha256:
+ bc68fc9fbd7318aaf48f757dd11a3c6549f8652d9949ef3ce8ef52fda2e94a2c 1172 mx-user_15.10.4mx15.dsc
+ fac771808f4588fd41ecbca3d557de2343817fa5bba41772a662f86d4e232f4a 2141740 mx-user_15.10.4mx15.tar.xz
+ e1034d95b366b139487146af978d63ee590a32c8964a5fc3629682144575f43b 103564 mx-user_15.10.4mx15_amd64.deb
+Files:
+ e83c4c01bf90bd746373f8048091173d 1172 system optional mx-user_15.10.4mx15.dsc
+ 240161281bc42fa88554dae82650ce45 2141740 system optional mx-user_15.10.4mx15.tar.xz
+ 863ff97358578b8fc9b58a9d5203dfdd 103564 system optional mx-user_15.10.4mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWNVCoAAoJEHCTjHgGee6YGbYIAMXWfix+Pz95rs+LzPdJ4/h0
+s/w7+Jub5VJL86CKMSKBxKmx5oXVXDu+WEEWDMd8aaDU1frhaAPfqc0xxGFXKuB8
+Q6nr8KWRMAQcxq44DYk7TWxkEPaMst91hflMom1sdu6JEcD7mrwd2WHy0+dcmdRr
+DA/ireALR6bPpZ+GSn+Xekk8OFqp5xvNq1vjy8/PJBzm6pTaEch5u0SayE/3FsLR
+aRgCSEBcupKP/iilKgxnJIA/gZM0rS4yQ41U7eFWmbeVXRJ7hrqD0MuD8IWyUc4q
+CPn+ovCBUy4lkT+8jQqmKNYDijN4hSFw/FJb+RiJCi4NSyJGiOEWSi75ivHVkq0=
+=qzsZ
+-----END PGP SIGNATURE-----

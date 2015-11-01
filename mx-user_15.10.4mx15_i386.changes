@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 31 Oct 2015 19:35:58 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 15.10.4mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (15.10.4mx15) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ bfee9a40c424a8432ea6576b6b731b17fa988f25 104222 mx-user_15.10.4mx15_i386.deb
+Checksums-Sha256:
+ 051ca4f38ee572009879070c2b16baca86e35e5a23029174c4d33387a4ae66d1 104222 mx-user_15.10.4mx15_i386.deb
+Files:
+ c01378e4625a3eac764b3ebd9e6196a7 104222 system optional mx-user_15.10.4mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWNVluAAoJEHCTjHgGee6YuooH/3fcW36Wewfpa70OV3o3vFQj
+HRmauB9Ce1Dv8hdyys+oqwBqAzFZxZSeUMRFMPQ71m6H4Fje36M+/tX95K8vHnzl
+l5j7itjdSGzNfoLdNr/gyLdFcoJC8hwfKXhSxx3dqKJti/MRUSTP1MR7PN1Zm+HU
+6AwOlQdgSWdQp1BKQNJ9jy5+4ijPtvKFqCfGZyF87UA5Sp0oPHDALwBcFLhyg4c9
+c8ySb7nz9fr51Idnt9JVPWpxSw9wtn3HTE74kZuqC3ttwY751ucXIYAs+nT6ITr/
+YunoHYTN0mORGTcSFYaJ0Y5e0v5g66AQdHyX+mtUO2IJSYMbH3TiGWL4dyk7p2w=
+=W6dU
+-----END PGP SIGNATURE-----
