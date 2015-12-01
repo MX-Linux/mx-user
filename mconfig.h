@@ -33,6 +33,7 @@ public:
     MConfig(QWidget* parent = 0);
     ~MConfig();
     QMessageBox *mbox;
+
     // helpers
     static QString getCmdOut(QString cmd);
     static QStringList getCmdOuts(QString cmd);
@@ -57,7 +58,9 @@ public:
     void applyMembership();
     void applyClean();
     void buildListGroups();
+    void restartPanel(QString user);
     QString getVersion(QString name);
+
 
 public slots:
     void syncStart();

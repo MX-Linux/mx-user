@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 01 Dec 2015 08:26:10 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 15.12mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (15.12mx15) mx; urgency=medium
+ .
+   * fixed restarting xfce4-panel, new translations
+Checksums-Sha1:
+ 63db8613055373cf47b5f540d518e6986c501d35 1164 mx-user_15.12mx15.dsc
+ eb9511979ac5e2a9050b4c3f88b2973a32affadf 2773928 mx-user_15.12mx15.tar.xz
+ 334cd1e096e1797ec773cdec9a83277336e0f7f6 104200 mx-user_15.12mx15_amd64.deb
+Checksums-Sha256:
+ 568ae0e27da8d2aa5f0ede7a84643edc3e8e040b8865f2a1fd9c6c2692002613 1164 mx-user_15.12mx15.dsc
+ d15846bf00a5d87f6a8ece948815b808393a89feaaa847a0e0453fb17dfd1b97 2773928 mx-user_15.12mx15.tar.xz
+ a9f6e96e06f9ebf33db818805aceb6625673985c137f691e1ddb611699ce79d9 104200 mx-user_15.12mx15_amd64.deb
+Files:
+ 5c6dfd85b64c2a8e9bfc4e72ba1e712e 1164 system optional mx-user_15.12mx15.dsc
+ bbd53080ed563228c6a8587f2f75060b 2773928 system optional mx-user_15.12mx15.tar.xz
+ d64cfdeec0c741a599b2d1b569cb64cf 104200 system optional mx-user_15.12mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWXaPhAAoJEHCTjHgGee6YXj4H/jICO+yuP4Y9jixqQtfi7HzU
++1EJTwb18XO1Hs4ZMirWoYsAVCScF2nbDDNP1AvC/NofTjv7tLI61QKGzWmurnjC
+mNYpM+0cBkEw8YoBw0UnUI1io3wkhbObXOGJwSxwC3cm/q2SXVwfuCM01WSCAjWi
+XFYKDGGphHC16tpJx4cVl4aIfsHNGYpirBg99nFXrBiRcagxiEFnY25uQIjL1N0o
+qBG4yhu9FblcgTvt+EzRboR/i9xQefmb5rulZQrvQL8Ync9ZSYUZt8md89/Uxxf0
+tLOenCpyzB3chXtDkqWPw0rKITbp0gpZMrpDlzOsCP0N2iVHJrVWxzNHQBRisgU=
+=ibTF
+-----END PGP SIGNATURE-----
