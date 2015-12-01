@@ -14,9 +14,9 @@
 //   limitations under the License.
 //
 
-#include <qapplication.h>
-#include <qtranslator.h>
-#include <qlocale.h>
+#include <QApplication>
+#include <QTranslator>
+#include <QLocale>
 #include "mconfig.h"
 #include <unistd.h>
 

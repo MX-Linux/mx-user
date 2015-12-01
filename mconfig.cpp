@@ -22,6 +22,7 @@
 
 //#include <QDebug>
 
+
 MConfig::MConfig(QWidget* parent) : QDialog(parent) {
     setupUi(this);
     setWindowIcon(QApplication::windowIcon());
@@ -127,6 +128,7 @@ bool MConfig::replaceStringInFile(QString oldtext, QString newtext, QString file
     }
     return true;
 }
+
 
 /////////////////////////////////////////////////////////////////////////
 // common
@@ -437,7 +439,7 @@ void MConfig::applyRestore() {
         QMessageBox::information(0, tr("Xfce settings"),
                                  tr(" Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     }
-    if (radioHorizontalPanel->isChecked()) {        
+    if (radioHorizontalPanel->isChecked()) {
         // backup panel config
         cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
@@ -455,9 +457,7 @@ void MConfig::applyRestore() {
         // change ownership
         cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
         system(cmd.toUtf8());
-        // restart panel
-        cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
-        system(cmd.toUtf8());
+        restartPanel(user);
         QMessageBox::information(0, tr("Panel settings"),
                                  tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
 
@@ -480,8 +480,7 @@ void MConfig::applyRestore() {
         cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
         system(cmd.toUtf8());
         // restart panel
-        cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
-        system(cmd.toUtf8());
+        restartPanel(user);
         QMessageBox::information(0, tr("Panel settings"),
                                  tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     } else if (radioRestoreBackup->isChecked()) {
@@ -489,9 +488,7 @@ void MConfig::applyRestore() {
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'cp ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
-        // restart panel
-        cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
-        system(cmd.toUtf8());
+        restartPanel(user);
     }
 
     setCursor(QCursor(Qt::ArrowCursor));
@@ -1100,15 +1097,22 @@ void MConfig::on_radioVerticalPanel_clicked()
 
 void MConfig::on_checkXfce_clicked(bool checked)
 {
-    if (checked) {        
+    if (checked) {
         groupPanel->setDisabled(true);
         radioHorizontalPanel->setAutoExclusive(false);
         radioHorizontalPanel->setChecked(false);
         radioHorizontalPanel->setAutoExclusive(true);
         radioVerticalPanel->setAutoExclusive(false);
-        radioVerticalPanel->setChecked(false);                
+        radioVerticalPanel->setChecked(false);
         radioVerticalPanel->setAutoExclusive(true);
     } else {
         groupPanel->setDisabled(false);
     }
 }
+
+void MConfig::restartPanel(QString user)
+{
+    QString cmd = QString("pkill xfconfd; sudo -Eu %1 bash -c 'xfce4-panel -r'").arg(user);
+    system(cmd.toUtf8());
+}
+

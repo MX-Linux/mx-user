@@ -1,3 +1,9 @@
+mx-user (15.11mx15) mx; urgency=medium
+
+  * fixed restarting xfce4-panel
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 08 Nov 2015 13:22:15 -0500
+
 mx-user (15.10.4mx15) mx; urgency=medium
 
   * new translations
