@@ -1,3 +1,9 @@
+mx-user (15.12.1mx15) mx; urgency=medium
+
+  * hide GUI when displaying help/license
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 22 Dec 2015 19:01:39 -0500
+
 mx-user (15.12mx15) mx; urgency=medium
 
   * fixed restarting xfce4-panel, new translations

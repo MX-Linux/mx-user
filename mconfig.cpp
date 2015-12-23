@@ -409,8 +409,7 @@ void MConfig::applyRestore() {
         cmd = QString("rm -rf %1").arg(path);
         system(cmd.toUtf8());
         // localize repos
-        cmd = QString("localize-repo $(cat /etc/timezone)").arg(path);
-        system(cmd.toUtf8());
+        system("localize-repo $(cat /etc/timezone)");
     }
     if (radioAutologinNo->isChecked()) {
         cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
@@ -1067,6 +1066,7 @@ QString MConfig::getVersion(QString name) {
 
 // show about
 void MConfig::on_buttonAbout_clicked() {
+    this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX User Manager"), "<p align=\"center\"><b><h2>" +
                        tr("MX User Manager") + "</h2></b></p><p align=\"center\">" + "Version: " +
@@ -1077,11 +1077,14 @@ void MConfig::on_buttonAbout_clicked() {
     msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::AcceptRole)
         system("mx-viewer file:///usr/share/doc/mx-user/license.html '" + tr("MX User Manager").toUtf8() + " " + tr("License").toUtf8() + "'");
+    this->show();
 }
 
 // Help button clicked
 void MConfig::on_buttonHelp_clicked() {
+    this->hide();
     system("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-user-manager '" + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8() + "'");
+    this->show();
 }
 
 
