@@ -28,5 +28,5 @@ Comment[sv]=Enkel användar-konfiguration
 Exec=su-to-root -X -c mx-user
 Icon=mx-user
 NoDisplay=false
-Categories=System;
+Categories=System;MX-Maintenance;
 Type=Application 
