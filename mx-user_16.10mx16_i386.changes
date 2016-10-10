@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 10 Oct 2016 14:46:48 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 16.10mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (16.10mx16) mx; urgency=medium
+ .
+   * changed URLs
+Checksums-Sha1:
+ 3b2f633effb952fbd89988878636523ce68b34e0 104788 mx-user_16.10mx16_i386.deb
+Checksums-Sha256:
+ d9fcc34e1d6f14ca074365c572ddfdada14f72132b45d8f2a45f60e7b95e236e 104788 mx-user_16.10mx16_i386.deb
+Files:
+ 05c06d5f740c9201d2d5599ee3ada80a 104788 system optional mx-user_16.10mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJX++w8AAoJEHCTjHgGee6YX0sIAJZccwxVpA1av/FReU3wGrQa
+MyKoqazUvzguU9Zzo847PaQMpj8tIjMFBuuSanzJDNjHHCGlC+ZAx2rsshjDG/SJ
+3hphtgFN3dbmnrFt8Bt25HmAFxnVCKlZ7cmJcCpyr4pafV+aeDUkz12Ir/co77+F
+Ws+/Y8vBMIUY6WT7ogBpuo7/+vhbBbJgmZK99S0AX2dyrxvdMJeexPoAWSl35xNu
+iBB3JOocBsCZf+49hnVw1OhJQLALoCeKiC3gq6t6xTeOSRBp20QHL6O9bWQpys0e
+6wyePgp2QNzJkjYV/xwsWE+eb/78qgNVUcQVlFEI0LiubwyhowfCJ2SVvlmXgbU=
+=x1KF
+-----END PGP SIGNATURE-----
