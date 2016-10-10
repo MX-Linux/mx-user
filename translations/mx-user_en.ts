@@ -254,13 +254,13 @@ Please choose another name before proceeding.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1077"/>
-        <source>Simple user configuration for antiX MX</source>
-        <translation>Simple user configuration for antiX MX</translation>
+        <source>Simple user configuration for MX Linux</source>
+        <translation>Simple user configuration for MX Linux</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1078"/>
-        <source>Copyright (c) antiX</source>
-        <translation>Copyright (c) antiX</translation>
+        <source>Copyright (c) MX Linux</source>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1079"/>

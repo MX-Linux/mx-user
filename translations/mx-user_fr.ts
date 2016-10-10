@@ -256,13 +256,13 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1074"/>
-        <source>Simple user configuration for antiX MX</source>
+        <source>Simple user configuration for MX Linux</source>
         <translation>Configuration utilisateur simple </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1075"/>
-        <source>Copyright (c) antiX</source>
-        <translation>Copyright (c) antiX</translation>
+        <source>Copyright (c) MX Linux</source>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1076"/>

@@ -1,3 +1,9 @@
+mx-user (16.10mx16) mx; urgency=medium
+
+  * changed URLs
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 10 Oct 2016 14:46:48 -0400
+
 mx-user (16.5mx15) mx; urgency=medium
 
   * new desktop file
