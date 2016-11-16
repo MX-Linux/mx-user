@@ -11,10 +11,13 @@ TRANSLATIONS += translations/mx-user_ca.ts \
                 translations/mx-user_ja.ts \
                 translations/mx-user_nl.ts \
                 translations/mx-user_pl.ts \
+                translations/mx-user_pt.ts \
                 translations/mx-user_pt_BR.ts \
                 translations/mx-user_ro.ts \
                 translations/mx-user_ru.ts \
-                translations/mx-user_sv.ts
+                translations/mx-user_sv.ts \
+                translations/mx-user_tr.ts
+
 FORMS += meconfig.ui
 HEADERS += mconfig.h
 SOURCES += main.cpp mconfig.cpp

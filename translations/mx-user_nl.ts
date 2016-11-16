@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -257,7 +255,7 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1074"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>Eenvoudige gebruikersconfiguratie voor MX Linux </translation>
+        <translation>Eenvoudige gebruikersconfiguratie voor MX  Linux</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1075"/>
