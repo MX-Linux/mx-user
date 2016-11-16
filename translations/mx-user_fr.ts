@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -65,7 +63,7 @@
     <message>
         <location filename="../mconfig.cpp" line="439"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation>Vos paramètres Xfce actuels ont été sauvegardés dans un dossier caché nommé &quot;.restore&quot; dans votre dossier Maison (~/.restore/)</translation>
+        <translation>Vos paramètres Xfce actuels ont été sauvegardés dans un dossier caché nommé &quot;.restore&quot; dans votre dossier Home (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="460"/>
@@ -77,7 +75,7 @@
         <location filename="../mconfig.cpp" line="461"/>
         <location filename="../mconfig.cpp" line="484"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation>Vos paramètres actuels du panneau ont été sauvegardés dans un dossier caché appelé .restore dans votre dossier de départ (~/.restore/)</translation>
+        <translation>Vos paramètres actuels du panneau ont été sauvegardés dans un dossier caché appelé .restore dans votre dossier Home (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="502"/>
@@ -257,7 +255,7 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1074"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>Configuration utilisateur simple </translation>
+        <translation>Configuration simple des utilisateurs pour MX Linux </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1075"/>
@@ -815,7 +813,7 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="../main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>Vous devez lancer cette application avec les droits root.</translation>
+        <translation>Vous devez lancer cette application avec les droits administrateur.</translation>
     </message>
 </context>
 </TS>

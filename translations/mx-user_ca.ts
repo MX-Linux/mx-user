@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ca">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -257,12 +255,12 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1074"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>Configuració d&apos;usuari senzilla per MX Linux</translation>
+        <translation>Configuració d&apos;Usuari simple per MX Linux</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1075"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1076"/>
