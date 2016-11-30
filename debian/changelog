@@ -1,3 +1,10 @@
+mx-user (16.11mx16+1) mx; urgency=medium
+
+  * fetch MX-16 source lists
+  * new FR translations 
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 30 Nov 2016 09:55:52 -0500
+
 mx-user (16.11mx16) mx; urgency=medium
 
   * new translations
