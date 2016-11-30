@@ -397,13 +397,13 @@ void MConfig::applyRestore() {
         // create temp folder
         QString path = getCmdOut("mktemp -d /tmp/mx-sources.XXXXXX");
         // download source files from
-        cmd = QString("wget -q https://github.com/mx-linux/MX-15_sources/archive/master.zip -P %1").arg(path);
+        cmd = QString("wget -q https://github.com/mx-linux/MX-16_sources/archive/master.zip -P %1").arg(path);
         system(cmd.toUtf8());
         // extract master.zip to temp folder
         cmd = QString("unzip -q %1/master.zip -d %1/").arg(path);
         system(cmd.toUtf8());
         // move the files from the temporary directory to /etc/apt/sources.list.d/
-        cmd = QString("mv -b %1/MX-15_sources-master/* /etc/apt/sources.list.d/").arg(path);
+        cmd = QString("mv -b %1/MX-16_sources-master/* /etc/apt/sources.list.d/").arg(path);
         system(cmd.toUtf8());
         // delete temp folder
         cmd = QString("rm -rf %1").arg(path);
