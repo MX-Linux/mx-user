@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 10 Jan 2017 18:55:23 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 17.1mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (17.1mx16) mx; urgency=medium
+ .
+   * restore APT lists for MX-15 and MX-16
+Checksums-Sha1:
+ d5f94233fb283cf907874e01e3e3ceb4281f1e5e 109272 mx-user_17.1mx16_i386.deb
+Checksums-Sha256:
+ 1090ee8dec383a461519db6b3cf7ea3853f6ae6956233f3653fc0450a75f3f23 109272 mx-user_17.1mx16_i386.deb
+Files:
+ b2f829ee67d21a3d676dc2f8837c0887 109272 system optional mx-user_17.1mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYdXj3AAoJEHCTjHgGee6YgTgIAKFX02rFAamUIZN5rEnbKYr5
+TAoWYNbn37Yx9LBZ8kk5FwplWPXAwOrvENS9uJJG0zfcwOz/fpyCcoskHxJmI8tn
+mQmHIU4sFeZH0fG4CulUSQwGFWC7hnqctiGw1Ialj//diCAMFMnNVPUckksXYRyN
+UDVgo/GFAchjcOAJbXIsZTN1sPHiqP1VHlxS4YgQtZk/RiA0CM2BaqzWquTPqJi2
+8z3HXbj/2tVqttAyphEcVMjlvVBKq9+iwru3Cjhs/KBjtUWOldZTGEcJwxscGhq2
+rUPqrHR8VQysFbh9Muqve7W8uowq63fq7jsBtRxJpuu8eoCwCDAnj4/UtEVxERU=
+=rrim
+-----END PGP SIGNATURE-----

@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 10 Jan 2017 18:55:23 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 17.1mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (17.1mx16) mx; urgency=medium
+ .
+   * restore APT lists for MX-15 and MX-16
+Checksums-Sha1:
+ 218c504b269ab7759f80c4c142f2f9329f37cf32 1154 mx-user_17.1mx16.dsc
+ e37d9663799348acf8264b4bb90e1561b33ade63 66660 mx-user_17.1mx16.tar.xz
+ c2ab5a14c3d066a17fec244f6f8330a3b679136c 108362 mx-user_17.1mx16_amd64.deb
+Checksums-Sha256:
+ 98da88f765812359335df3d7fd36269c8c459be622da270acc9c7073c85fe863 1154 mx-user_17.1mx16.dsc
+ ab4b95e379a79aa8311b14f8d2e7e5d0556ae0484e037650037f9fe7728551f0 66660 mx-user_17.1mx16.tar.xz
+ 4789ad934b525ad7461e9ae7d5a3576708fd868460ad41b9e776db3660d4c1b5 108362 mx-user_17.1mx16_amd64.deb
+Files:
+ b8a1e3c26c6a1cfb0c8c2f5c57015540 1154 system optional mx-user_17.1mx16.dsc
+ 8c8f7309f8fe17635ce404fa7c860ec3 66660 system optional mx-user_17.1mx16.tar.xz
+ 49ed1d947767e39a93697feb107819dd 108362 system optional mx-user_17.1mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYdXTbAAoJEHCTjHgGee6YqD8H/iMtMwrgFYOiDk03Md6A+r6w
+wSo51aT/stjD+aLBsToTYem/XeGJGmOaSufkfAI5poM1ckEaZPRr9zMWdPf/1MxM
+N7VBIBEBIk2XSEMBVs+wnaFVWI5DH0AXoalnTfgZ9RYvuRFMAhnLxM3tRw9qUK0x
+Iu0MshymSrejIDzGed4kanFrk+q7Py1lkfapQgqREGJnZM8364fwQguOIheuvBd6
+ti0yVft0yfKZfSBhDMZNve1DIFXhGihBsVMAlAW3LefsJrnK3vQavz2oyYzH84F3
+jhxk7vv0DbLQLf8wL39mhanqdThXM/1Um9goDg4txI7DfA0ZALHDOvr5gbUXe68=
+=14aR
+-----END PGP SIGNATURE-----

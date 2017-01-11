@@ -1,3 +1,9 @@
+mx-user (17.1mx16) mx; urgency=medium
+
+  * restore APT lists for MX-15 and MX-16
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 10 Jan 2017 18:55:23 -0500
+
 mx-user (16.11mx16+1) mx; urgency=medium
 
   * fetch MX-16 source lists
