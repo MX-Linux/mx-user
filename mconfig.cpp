@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-//#include <QDebug>
+#include <QDebug>
 
 
 MConfig::MConfig(QWidget* parent) : QDialog(parent) {
@@ -427,10 +427,15 @@ void MConfig::applyRestore() {
     }
     // restore APT configs
     if (checkApt->isChecked()) {
+        QString mx_version = getCmdOut("lsb_release -rs");
+        if (mx_version != "15" && mx_version != "16") {
+            qDebug() << "MX version not detected or out of range: " << mx_version;
+            return;
+        }
         // create temp folder
         QString path = getCmdOut("mktemp -d /tmp/mx-sources.XXXXXX");
         // download source files from
-        cmd = QString("wget -q https://github.com/mx-linux/MX-16_sources/archive/master.zip -P %1").arg(path);
+        cmd = QString("wget -q https://github.com/mx-linux/MX-%1_sources/archive/master.zip -P %2").arg(mx_version).arg(path);
         system(cmd.toUtf8());
         // extract master.zip to temp folder
         cmd = QString("unzip -q %1/master.zip -d %1/").arg(path);

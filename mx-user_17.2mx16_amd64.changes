@@ -18,26 +18,26 @@ Changes:
  .
    * added change password feature
 Checksums-Sha1:
- cc25d9bf9199448b967bae06d7f4440706c38e00 1157 mx-user_17.2mx16.dsc
- 85366199bd39b372f3b53de0531cc8b7637ff27f 271692 mx-user_17.2mx16.tar.xz
- b2ef37e5e5ec07655f3ba74bcca95e04613008ea 109040 mx-user_17.2mx16_amd64.deb
+ e12888ffe8610028ddb0d3b3ca19b9fb67b0f25e 1154 mx-user_17.2mx16.dsc
+ 424ac37e3a6e9bec713ffae849a90fbf3dcff18b 31360 mx-user_17.2mx16.tar.xz
+ fd24a3ade9492d8e78a6b35679e2599ac9ade662 71480 mx-user_17.2mx16_amd64.deb
 Checksums-Sha256:
- 2b57b90c20ad036150b1718a1d399e01663110a1ca70f9d7bd5f8150e6549884 1157 mx-user_17.2mx16.dsc
- 73f4da9d3b29f67f5b60c12bb29f6abd4550dd7f5c181f208e105a07eeb82d12 271692 mx-user_17.2mx16.tar.xz
- 1eeed184c5e6e8b454cf566594a619435f740b07bbf7e8d93d175ed2e327251c 109040 mx-user_17.2mx16_amd64.deb
+ 97a7843be17bdf9de44af09bf0785c1da24bb58f36116be2652203aa3c014f4d 1154 mx-user_17.2mx16.dsc
+ fbc065f21b72884aa2e036637c77d942b16091ec13ed7248113b095121c99b46 31360 mx-user_17.2mx16.tar.xz
+ c2024898510bf5ed54d79bbc919bea7bc8c12932d9c3c0815ecbe276d92e4b79 71480 mx-user_17.2mx16_amd64.deb
 Files:
- 888fb63a02d0683ce27ffc73fea68b0a 1157 system optional mx-user_17.2mx16.dsc
- eb89e7b99f814e6c3f864ff4a9206b23 271692 system optional mx-user_17.2mx16.tar.xz
- 1883230d119b395f4418c413b5b4f31e 109040 system optional mx-user_17.2mx16_amd64.deb
+ d237f6b2c04cef494f24ebef56daa3d5 1154 system optional mx-user_17.2mx16.dsc
+ 68fe7a598aa82111b6bfae6fa398b1c3 31360 system optional mx-user_17.2mx16.tar.xz
+ 4f056714420c03f13db34dbf5bf37890 71480 system optional mx-user_17.2mx16_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEbBAEBAgAGBQJYswrVAAoJEHCTjHgGee6Yz7AH9A63x1kcQh4MJDCouaK6cvRS
-i0/u6JKzo/JwYB/UFOhgKvXIYyrTojRauwc2Pt2fcslZkW/KhTh/S0mDdNblqoPG
-Css0CC7ExhckA5RwaZLDFCD5yCvJAnKbE0Jem8OPohrkxByaLFXR4WwdtWO/zyC/
-b8glkZJcLyHe1Ps8D5XLjvVn39xy7MmatThvvx45ktYOnnJWSdrYjSSQnD5IQllc
-1wAXN0b2d2Z1G4VRCZjsM/agVurBFnf85ecLzOxfogwoXOih/YD8dueOuP19ICkB
-ZltbHje2kqwAX11zu1RRfZyakNw+oV+BRSCY38lFfFTrX+1eHyZxqiV9MN0c9A==
-=2HjD
+iQEcBAEBAgAGBQJYsxETAAoJEHCTjHgGee6YWvMIAKut79h8cFnUyrUl8bqVYhCd
+ta/9rkPMqxXABHRWGhHfukabjoPtFw2tPJep+KnV8sJEyXA16yJv2h06B9Q+4EDD
+DmqkXGiacEev/qWTVIN1NP6t23h4ppDGuJRhwf/Fx/29O/QQSTt88FCe9UV7WA8T
+oHMy56NYu+NtrzzYTv0QzjuBpsCAkmLfLpQm+S0N9uIG0ci+DjPM7kms6JoIJCPk
+du3xUxK5oHajLVfVjG29jQYW6uM2qJ1+MeZfXh06Uvp8yUBr/VIZyEdqaBQvAcGC
+2HCD2Zq7z1rh3daIkWRj1YIweytsNwAHobyoAlLM2lMi8fTZTjNOVi5tm7O1d74=
+=vuye
 -----END PGP SIGNATURE-----

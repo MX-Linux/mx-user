@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 7.0.50~
 Package-List:
  mx-user deb system optional arch=any
 Checksums-Sha1:
- 85366199bd39b372f3b53de0531cc8b7637ff27f 271692 mx-user_17.2mx16.tar.xz
+ 424ac37e3a6e9bec713ffae849a90fbf3dcff18b 31360 mx-user_17.2mx16.tar.xz
 Checksums-Sha256:
- 73f4da9d3b29f67f5b60c12bb29f6abd4550dd7f5c181f208e105a07eeb82d12 271692 mx-user_17.2mx16.tar.xz
+ fbc065f21b72884aa2e036637c77d942b16091ec13ed7248113b095121c99b46 31360 mx-user_17.2mx16.tar.xz
 Files:
- eb89e7b99f814e6c3f864ff4a9206b23 271692 mx-user_17.2mx16.tar.xz
+ 68fe7a598aa82111b6bfae6fa398b1c3 31360 mx-user_17.2mx16.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJYswrIAAoJEHCTjHgGee6YqWsIAIQb0AXQmir79bpW7X2kdnqI
-Ib3kk0MEUx1I1znXnKd1gW3S/PvaNwrD/2SDihLqAUhJkZmueJwsYDJCVWue8Bgr
-4v5Kj3kCeoxfc4TzlcZwWlAXaFkr0svQw78F/zL935Hb8wSuxwW/qtsHVYnQH/Ax
-vFjmtmY6ZPOzfFoNCH4fwgYmOv4Cj8FDfp1KSpmYAOvCn6BkV2Hc4jUuNtIZ8SFM
-lvqSIAO/Wyd3AySwdsWKzCCoG0x2xijfUarKUQqrsG4WCtQ0cvUbEjD7jPHeneeV
-xksYsjS1MzMW79TlxPW/90g80AKu64TwrL7hkzkbTzs9jylB9qcC4nZQlz5Xdrs=
-=Sqr1
+iQEcBAEBAgAGBQJYsxEPAAoJEHCTjHgGee6YEYwH/1eExQa8oibNZsiAxZFC4JAA
+syIQU4tQbqbv0gAKKZY52E1Uk/pPFZhgBT0eSEL0B/2zSrVa8rBuWDoghaxU7O7m
+evwKlWuU5xfZ09UFpBTJ4I0/3L4HqtURJhSE1wQjmHTKGkeA+UDVulzfZOQs+gLt
+F14ObrvhORDlgDHESxaC3tfGHpGPql8STt33qv2iBM09iMDM/RHZ1QmxcR59f4g6
+sOXlJl53v4662884x0RBceunNGihTb8nUNzy6EFWH3J84Z5sRd9s3Pu7eZ46ksL9
+tW4N1uN3tLOczS715wWWuqTJ8XILgkoykGxZwRoBIpd4CiZNXsDBjmVnzrUFKFg=
+=/eZQ
 -----END PGP SIGNATURE-----
