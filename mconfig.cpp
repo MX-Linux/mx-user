@@ -166,6 +166,7 @@ void MConfig::refresh() {
     default:
         refreshAdd();
         refreshDelete();
+        refreshChangePass();
         buttonApply->setEnabled(false);
         break;
     }
@@ -270,6 +271,38 @@ void MConfig::refreshDelete() {
                 sprintf(line2, "grep '^%s' /etc/passwd >/dev/null", tok);
                 if (system(line2) == 0) {
                     deleteUserCombo->addItem(tok);
+                }
+            }
+        }
+        pclose(fp);
+    }
+}
+
+void MConfig::refreshChangePass()
+{
+    char line[130];
+    char line2[130];
+    char *tok;
+    FILE *fp;
+    int i;
+
+    comboChangePass->clear();
+    comboChangePass->addItem(tr("none"));
+    userBoxChangePass->setEnabled(true);
+    comboChangePass->addItem("root");
+    lineEditChangePass->setText("");
+    lineEditChangePassConf->setText("");
+
+    fp = popen("ls -1 /home", "r");
+    if (fp != NULL) {
+        while (fgets(line, sizeof line, fp) != NULL) {
+            i = strlen(line);
+            line[--i] = '\0';
+            tok = strtok(line, " ");
+            if (tok != NULL && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
+                sprintf(line2, "grep '^%s' /etc/passwd >/dev/null", tok);
+                if (system(line2) == 0) {
+                    comboChangePass->addItem(tok);
                 }
             }
         }
@@ -568,12 +601,12 @@ void MConfig::applyAdd() {
     }
     if (userPasswordEdit->text().compare(userPassword2Edit->text()) != 0) {
         QMessageBox::critical(0, QString::null,
-                              tr("The user password entries do not match.  Please try again."));
+                              tr("Password entries do not match. Please try again."));
         return;
     }
     if (userPasswordEdit->text().length() < 2) {
         QMessageBox::critical(0, QString::null,
-                              tr("The user password needs to be at least 2 characters long. Please select a longer name before proceeding."));
+                              tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
         return;
     }
 
@@ -606,6 +639,49 @@ void MConfig::applyAdd() {
     } else {
         QMessageBox::critical(0, QString::null,
                               tr("Failed to add the user."));
+    }
+}
+
+// change user password
+void MConfig::applyChangePass()
+{
+    if (lineEditChangePass->text().compare(lineEditChangePassConf->text()) != 0) {
+        QMessageBox::critical(0, QString::null,
+                              tr("Password entries do not match. Please try again."));
+        return;
+    }
+    if (lineEditChangePass->text().length() < 2) {
+        QMessageBox::critical(0, QString::null,
+                              tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
+        return;
+    }
+    QString cmd = QString("passwd %1").arg(comboChangePass->currentText());
+    FILE *fp = popen(cmd.toUtf8(), "w");
+    bool fpok = true;
+    cmd = QString("%1\n").arg(lineEditChangePass->text());
+    if (fp != NULL) {
+        sleep(1);
+        if (fputs(cmd.toUtf8(), fp) >= 0) {
+            fflush(fp);
+            sleep(1);
+            if (fputs(cmd.toUtf8(), fp) < 0) {
+                fpok = false;
+            }
+        } else {
+            fpok = false;
+        }
+        pclose(fp);
+    } else {
+        fpok = false;
+    }
+
+    if (fpok) {
+        QMessageBox::information(0, QString::null,
+                                 tr("Password successfully changed."));
+        refresh();
+    } else {
+        QMessageBox::critical(0, QString::null,
+                              tr("Failed to change password."));
     }
 }
 
@@ -862,6 +938,7 @@ void MConfig::on_userComboBox_activated() {
 
 void MConfig::on_deleteUserCombo_activated() {
     addUserBox->setEnabled(false);
+    userBoxChangePass->setEnabled(false);
     buttonApply->setEnabled(true);
     if (deleteUserCombo->currentText() == tr("none")) {
         refresh();
@@ -870,6 +947,7 @@ void MConfig::on_deleteUserCombo_activated() {
 
 void MConfig::on_userNameEdit_textEdited() {
     deleteUserBox->setEnabled(false);
+    userBoxChangePass->setEnabled(false);
     buttonApply->setEnabled(true);
     if (userNameEdit->text() == "") {
         refresh();
@@ -984,9 +1062,11 @@ void MConfig::on_buttonApply_clicked() {
         setCursor(QCursor(Qt::WaitCursor));
         if (addUserBox->isEnabled()) {
             applyAdd();
-        } else {
+        } else if (deleteUserBox->isEnabled()) {
             applyDelete();
             buttonApply->setEnabled(false);
+        } else if (userBoxChangePass->isEnabled()) {
+            applyChangePass();
         }
         setCursor(QCursor(Qt::ArrowCursor));
         break;
@@ -1119,3 +1199,13 @@ void MConfig::restartPanel(QString user)
     system(cmd.toUtf8());
 }
 
+
+void MConfig::on_comboChangePass_activated()
+{
+    addUserBox->setEnabled(false);
+    deleteUserBox->setEnabled(false);
+    buttonApply->setEnabled(true);
+    if (comboChangePass->currentText() == tr("none")) {
+        refresh();
+    }
+}
