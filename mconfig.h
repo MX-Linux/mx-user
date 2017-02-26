@@ -47,12 +47,14 @@ public:
     void refreshDesktop();
     void refreshAdd();
     void refreshDelete();
-    void refreshClean();
+    void refreshChangePass();
+    void refreshClean();    
     void refreshGroups();
     void refreshMembership();
     void applyRestore();
     void applyDesktop();
     void applyAdd();
+    void applyChangePass();
     void applyDelete();
     void applyGroup();
     void applyMembership();
@@ -94,6 +96,7 @@ private slots:
     void on_radioHorizontalPanel_clicked();
     void on_radioVerticalPanel_clicked();
     void on_checkXfce_clicked(bool checked);
+    void on_comboChangePass_activated();
 };
 
 #endif

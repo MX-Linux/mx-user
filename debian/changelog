@@ -1,3 +1,9 @@
+mx-user (17.2mx16) mx; urgency=medium
+
+  * added change password feature
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 26 Feb 2017 12:02:21 -0500
+
 mx-user (16.11mx16+1) mx; urgency=medium
 
   * fetch MX-16 source lists

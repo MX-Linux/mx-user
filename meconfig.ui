@@ -59,7 +59,7 @@
         <normaloff>../../../../../../../../usr/share/mx-user/icons/mx-user_one.png</normaloff>../../../../../../../../usr/share/mx-user/icons/mx-user_one.png</iconset>
       </attribute>
       <attribute name="title">
-       <string>Add/Remove User</string>
+       <string>Administration</string>
       </attribute>
       <attribute name="toolTip">
        <string>Add a new user</string>
@@ -80,6 +80,19 @@
        <property name="spacing">
         <number>6</number>
        </property>
+       <item row="6" column="0">
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>241</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
        <item row="0" column="0">
         <widget class="QGroupBox" name="addUserBox">
          <property name="sizePolicy">
@@ -107,8 +120,8 @@
           <property name="spacing">
            <number>6</number>
           </property>
-          <item row="2" column="0">
-           <widget class="QLabel" name="userPassword2Label">
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="userPassword2Edit">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
               <horstretch>0</horstretch>
@@ -116,23 +129,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Password for new user</string>
-            </property>
-            <property name="text">
-             <string>Confirm user password:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="userPasswordEdit">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="toolTip">
-             <string>Enter password for new user</string>
+             <string>Reenter password for new user</string>
             </property>
             <property name="text">
              <string/>
@@ -140,21 +137,24 @@
             <property name="echoMode">
              <enum>QLineEdit::Password</enum>
             </property>
+            <property name="placeholderText">
+             <string>confirm password</string>
+            </property>
            </widget>
           </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="userPasswordLabel">
+          <item row="0" column="0">
+           <widget class="QLabel" name="userNameLabel">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Password for new user</string>
+             <string>Username of new user</string>
             </property>
             <property name="text">
-             <string>User password:</string>
+             <string>User login name:</string>
             </property>
            </widget>
           </item>
@@ -177,24 +177,24 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="userNameLabel">
+          <item row="1" column="0">
+           <widget class="QLabel" name="userPasswordLabel">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Username of new user</string>
+             <string>Password for new user</string>
             </property>
             <property name="text">
-             <string>User login name:</string>
+             <string>User password:</string>
             </property>
            </widget>
           </item>
-          <item row="2" column="1">
-           <widget class="QLineEdit" name="userPassword2Edit">
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="userPasswordEdit">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
               <horstretch>0</horstretch>
@@ -202,7 +202,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Reenter password for new user</string>
+             <string>Enter password for new user</string>
             </property>
             <property name="text">
              <string/>
@@ -210,25 +210,131 @@
             <property name="echoMode">
              <enum>QLineEdit::Password</enum>
             </property>
+            <property name="placeholderText">
+             <string>password</string>
+            </property>
            </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="userPassword2Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Password for new user</string>
+            </property>
+            <property name="text">
+             <string>Confirm user password:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
        </item>
-       <item row="2" column="0">
-        <spacer>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>241</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="1" column="0">
+        <widget class="QGroupBox" name="userBoxChangePass">
+         <property name="title">
+          <string>Change user password:</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayoutPasswd">
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboChangePass"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEditChangePass">
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="placeholderText">
+             <string>new password</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelChangePassConf">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Confirm new password:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEditChangePassConf">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="placeholderText">
+             <string>confirm new password</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelChangePassUser">
+            <property name="text">
+             <string>Select user to modify:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelChangePass">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>New user password:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="5" column="0">
         <widget class="QGroupBox" name="deleteUserBox">
          <property name="sizePolicy">
           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
@@ -237,7 +343,7 @@
           </sizepolicy>
          </property>
          <property name="title">
-          <string>Delete User Account</string>
+          <string>Delete user</string>
          </property>
          <layout class="QGridLayout" name="_9">
           <property name="leftMargin">
@@ -255,8 +361,24 @@
           <property name="spacing">
            <number>6</number>
           </property>
-          <item row="1" column="0" colspan="2">
-           <widget class="QCheckBox" name="deleteHomeCheckBox">
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="deleteUserCombo">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
               <horstretch>0</horstretch>
@@ -264,20 +386,17 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Also delete the user's home directory</string>
+             <string>Select user</string>
             </property>
-            <property name="text">
-             <string>Delete user home directory</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
+            <property name="currentText">
+             <string/>
             </property>
            </widget>
           </item>
           <item row="0" column="0">
            <widget class="QLabel" name="deleteUserLabel">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -296,16 +415,22 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="1">
-           <widget class="QComboBox" name="deleteUserCombo">
+          <item row="4" column="0">
+           <widget class="QCheckBox" name="deleteHomeCheckBox">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Select user to delete</string>
+             <string>Also delete the user's home directory</string>
+            </property>
+            <property name="text">
+             <string>Delete user home directory</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
             </property>
            </widget>
           </item>
@@ -363,7 +488,7 @@
           <item row="0" column="0">
            <widget class="QLabel" name="userLabel">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -379,7 +504,7 @@
           <item row="0" column="1">
            <widget class="QComboBox" name="userComboBox">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -389,10 +514,26 @@
             </property>
            </widget>
           </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
          </layout>
         </widget>
        </item>
-       <item row="2" column="0">
+       <item row="2" column="0" colspan="3">
         <widget class="QGroupBox" name="restoreGroupBox">
          <property name="sizePolicy">
           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
@@ -477,30 +618,7 @@
          </layout>
         </widget>
        </item>
-       <item row="4" column="0">
-        <widget class="QGroupBox" name="groupBox">
-         <property name="title">
-          <string>Change Autologin Settings</string>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_6">
-          <item>
-           <widget class="QRadioButton" name="radioAutologinYes">
-            <property name="text">
-             <string>Log in automatically</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QRadioButton" name="radioAutologinNo">
-            <property name="text">
-             <string>Require password to log in</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item row="3" column="0">
+       <item row="3" column="0" colspan="3">
         <widget class="QGroupBox" name="groupPanel">
          <property name="title">
           <string>Select Panel Options</string>
@@ -527,6 +645,29 @@
             </property>
             <property name="text">
              <string>Restore backed up configuration</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="3">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Change Autologin Settings</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QRadioButton" name="radioAutologinYes">
+            <property name="text">
+             <string>Log in automatically</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioAutologinNo">
+            <property name="text">
+             <string>Require password to log in</string>
             </property>
            </widget>
           </item>
@@ -586,27 +727,8 @@
           <property name="spacing">
            <number>6</number>
           </property>
-          <item row="1" column="2">
-           <widget class="QRadioButton" name="syncRadioButton">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="toolTip">
-             <string>Select to copy and then delete differences</string>
-            </property>
-            <property name="text">
-             <string>Sync</string>
-            </property>
-            <property name="checked">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="copyFromLabel">
+          <item row="0" column="1">
+           <widget class="QComboBox" name="fromUserComboBox">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
               <horstretch>0</horstretch>
@@ -616,14 +738,37 @@
             <property name="toolTip">
              <string>Select desktop to copy from</string>
             </property>
-            <property name="frameShape">
-             <enum>QFrame::NoFrame</enum>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="copyRadioButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
-            <property name="frameShadow">
-             <enum>QFrame::Plain</enum>
+            <property name="toolTip">
+             <string>Select to only copy files</string>
             </property>
             <property name="text">
-             <string>Copy from:</string>
+             <string>Copy only</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QComboBox" name="toUserComboBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Select desktop to copy to</string>
             </property>
            </widget>
           </item>
@@ -649,40 +794,8 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="3">
-           <widget class="QComboBox" name="toUserComboBox">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="toolTip">
-             <string>Select desktop to copy to</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QRadioButton" name="copyRadioButton">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="toolTip">
-             <string>Select to only copy files</string>
-            </property>
-            <property name="text">
-             <string>Copy only</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QComboBox" name="fromUserComboBox">
+          <item row="0" column="0">
+           <widget class="QLabel" name="copyFromLabel">
             <property name="sizePolicy">
              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
               <horstretch>0</horstretch>
@@ -691,6 +804,34 @@
             </property>
             <property name="toolTip">
              <string>Select desktop to copy from</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string>Copy from:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QRadioButton" name="syncRadioButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Select to copy and then delete differences</string>
+            </property>
+            <property name="text">
+             <string>Sync</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
             </property>
            </widget>
           </item>
@@ -921,10 +1062,23 @@
           <string>Free disk space for user</string>
          </property>
          <layout class="QGridLayout" name="_8">
+          <item row="0" column="1">
+           <widget class="QComboBox" name="userCleanCB">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Select user to repair</string>
+            </property>
+           </widget>
+          </item>
           <item row="0" column="0">
            <widget class="QLabel" name="userCleanLabel">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -937,18 +1091,21 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="1">
-           <widget class="QComboBox" name="userCleanCB">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
             </property>
-            <property name="toolTip">
-             <string>Select user to repair</string>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
             </property>
-           </widget>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -1162,6 +1319,22 @@
           <property name="spacing">
            <number>6</number>
           </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="groupNameLabel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Username of new user</string>
+            </property>
+            <property name="text">
+             <string>Group name:</string>
+            </property>
+           </widget>
+          </item>
           <item row="0" column="1">
            <widget class="QLineEdit" name="groupNameEdit">
             <property name="sizePolicy">
@@ -1181,21 +1354,18 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="groupNameLabel">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
             </property>
-            <property name="toolTip">
-             <string>Username of new user</string>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
             </property>
-            <property name="text">
-             <string>Group name:</string>
-            </property>
-           </widget>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -1227,6 +1397,32 @@
           <property name="spacing">
            <number>6</number>
           </property>
+          <item row="1" column="0" colspan="2">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="deleteGroupCombo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Select user to delete</string>
+            </property>
+           </widget>
+          </item>
           <item row="0" column="0">
            <widget class="QLabel" name="deleteGroupLabel">
             <property name="sizePolicy">
@@ -1249,28 +1445,15 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="1">
-           <widget class="QComboBox" name="deleteGroupCombo">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="toolTip">
-             <string>Select user to delete</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0" colspan="2">
-           <spacer name="verticalSpacer">
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_7">
             <property name="orientation">
-             <enum>Qt::Vertical</enum>
+             <enum>Qt::Horizontal</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
-              <width>20</width>
-              <height>40</height>
+              <width>40</width>
+              <height>20</height>
              </size>
             </property>
            </spacer>
@@ -1316,18 +1499,53 @@
           <property name="spacing">
            <number>6</number>
           </property>
-          <item row="0" column="1">
-           <widget class="QComboBox" name="userComboMembership">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
+          <item row="1" column="0" colspan="2">
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
             </property>
-            <property name="toolTip">
-             <string>Select user to delete</string>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
             </property>
-           </widget>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>10</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="4" column="0" colspan="2">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>10</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="0" colspan="2">
+           <spacer name="spacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item row="0" column="0">
            <widget class="QLabel" name="userLabel_2">
@@ -1351,23 +1569,27 @@
             </property>
            </widget>
           </item>
-          <item row="6" column="0" colspan="2">
-           <spacer name="spacer">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="userComboMembership">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Expanding</enum>
+            <property name="toolTip">
+             <string>Select user to delete</string>
             </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
+           </widget>
           </item>
-          <item row="3" column="0" colspan="2">
+          <item row="2" column="0" colspan="3">
+           <widget class="QLabel" name="labelGroups">
+            <property name="text">
+             <string>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="3">
            <widget class="QListWidget" name="listGroups">
             <property name="movement">
              <enum>QListView::Static</enum>
@@ -1380,30 +1602,7 @@
             </property>
            </widget>
           </item>
-          <item row="2" column="0" colspan="2">
-           <widget class="QLabel" name="labelGroups">
-            <property name="text">
-             <string>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0" colspan="2">
-           <spacer name="verticalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>10</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="5" column="0" colspan="2">
+          <item row="5" column="0" colspan="3">
            <widget class="QLabel" name="label_3">
             <property name="text">
              <string>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</string>
@@ -1413,18 +1612,15 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="0" colspan="2">
-           <spacer name="verticalSpacer_3">
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_8">
             <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
+             <enum>Qt::Horizontal</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
-              <width>20</width>
-              <height>10</height>
+              <width>40</width>
+              <height>20</height>
              </size>
             </property>
            </spacer>
