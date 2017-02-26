@@ -11,292 +11,284 @@
         <location filename="../mconfig.cpp" line="352"/>
         <location filename="../mconfig.cpp" line="374"/>
         <location filename="../mconfig.cpp" line="397"/>
-        <location filename="../mconfig.cpp" line="913"/>
-        <location filename="../mconfig.cpp" line="943"/>
-        <location filename="../mconfig.cpp" line="968"/>
-        <location filename="../mconfig.cpp" line="976"/>
-        <location filename="../mconfig.cpp" line="983"/>
-        <location filename="../mconfig.cpp" line="1208"/>
+        <location filename="../mconfig.cpp" line="918"/>
+        <location filename="../mconfig.cpp" line="948"/>
+        <location filename="../mconfig.cpp" line="973"/>
+        <location filename="../mconfig.cpp" line="981"/>
+        <location filename="../mconfig.cpp" line="988"/>
+        <location filename="../mconfig.cpp" line="1213"/>
         <source>none</source>
-        <translation>nenhum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="409"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>A configuração do usuário será reparada. Feche as outras aplicações, por favor. Ao término, por favor saia da sessão ou reinicie o sistema. Você tem certeza de que quer repará-la agora?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="410"/>
-        <location filename="../mconfig.cpp" line="540"/>
-        <location filename="../mconfig.cpp" line="691"/>
-        <location filename="../mconfig.cpp" line="746"/>
-        <location filename="../mconfig.cpp" line="773"/>
+        <location filename="../mconfig.cpp" line="545"/>
+        <location filename="../mconfig.cpp" line="696"/>
+        <location filename="../mconfig.cpp" line="751"/>
+        <location filename="../mconfig.cpp" line="778"/>
         <source>Yes</source>
-        <translation>Sim</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="410"/>
-        <location filename="../mconfig.cpp" line="540"/>
-        <location filename="../mconfig.cpp" line="691"/>
-        <location filename="../mconfig.cpp" line="746"/>
-        <location filename="../mconfig.cpp" line="773"/>
+        <location filename="../mconfig.cpp" line="545"/>
+        <location filename="../mconfig.cpp" line="696"/>
+        <location filename="../mconfig.cpp" line="751"/>
+        <location filename="../mconfig.cpp" line="778"/>
         <source>No</source>
-        <translation>Não</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="450"/>
-        <location filename="../mconfig.cpp" line="461"/>
+        <location filename="../mconfig.cpp" line="455"/>
+        <location filename="../mconfig.cpp" line="466"/>
         <source>Autologin options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="451"/>
+        <location filename="../mconfig.cpp" line="456"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="462"/>
+        <location filename="../mconfig.cpp" line="467"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="471"/>
+        <location filename="../mconfig.cpp" line="476"/>
         <source>Xfce settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="472"/>
+        <location filename="../mconfig.cpp" line="477"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="493"/>
-        <location filename="../mconfig.cpp" line="516"/>
+        <location filename="../mconfig.cpp" line="498"/>
+        <location filename="../mconfig.cpp" line="521"/>
         <source>Panel settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="494"/>
-        <location filename="../mconfig.cpp" line="517"/>
+        <location filename="../mconfig.cpp" line="499"/>
+        <location filename="../mconfig.cpp" line="522"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="535"/>
+        <location filename="../mconfig.cpp" line="540"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="539"/>
+        <location filename="../mconfig.cpp" line="544"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation>Antes de copiar, feche as outras aplicações. Verifique se o local de destino tem espaço suficiente para os arquivos que serão copiados. A cópia entre ambientes de trabalho pode sobrescrever ou apagar arquivos ou preferências no ambiente de destino. Você tem certeza de que quer continuar?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="561"/>
+        <location filename="../mconfig.cpp" line="566"/>
         <source>Synchronizing desktop...</source>
-        <translation>Sincronizando ambiente...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="563"/>
+        <location filename="../mconfig.cpp" line="568"/>
         <source>Copying desktop...</source>
-        <translation>Copiando ambiente...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="586"/>
+        <location filename="../mconfig.cpp" line="591"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>O nome do usuário precisa ter ao menos 2 caracteres. Escolha um nome mais comprido, por favor.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="590"/>
+        <location filename="../mconfig.cpp" line="595"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="599"/>
-        <source>Sorry that name is in use. Please select a different name.</source>
-        <translation>Desculpe, esse nome está em uso. Escolha um nome diferente, por favor.</translation>
-    </message>
-    <message>
-        <source>The user password entries do not match.  Please try again.</source>
-        <translation type="vanished">As senhas do usuário não combinam. Tente de novo, por favor.</translation>
-    </message>
-    <message>
-        <source>The user password needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="vanished">A senha do usuário precisa ter ao menos 2 caracteres. Escolha uma senha mais comprida, por favor.</translation>
-    </message>
-    <message>
         <location filename="../mconfig.cpp" line="604"/>
-        <location filename="../mconfig.cpp" line="650"/>
-        <source>Password entries do not match. Please try again.</source>
+        <source>Sorry that name is in use. Please select a different name.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="609"/>
         <location filename="../mconfig.cpp" line="655"/>
+        <source>Password entries do not match. Please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="614"/>
+        <location filename="../mconfig.cpp" line="660"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="637"/>
+        <location filename="../mconfig.cpp" line="642"/>
         <source>The user was added ok.</source>
-        <translation>O usuário foi adicionado corretamente.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="641"/>
+        <location filename="../mconfig.cpp" line="646"/>
         <source>Failed to add the user.</source>
-        <translation>A adição do usuário falhou.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="680"/>
+        <location filename="../mconfig.cpp" line="685"/>
         <source>Password successfully changed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="684"/>
+        <location filename="../mconfig.cpp" line="689"/>
         <source>Failed to change password.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="689"/>
+        <location filename="../mconfig.cpp" line="694"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="702"/>
+        <location filename="../mconfig.cpp" line="707"/>
         <source>The user has been deleted.</source>
-        <translation>O usuário foi excluído.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="705"/>
+        <location filename="../mconfig.cpp" line="710"/>
         <source>Failed to delete the user.</source>
-        <translation>A exclusão do usuário falhou.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="718"/>
+        <location filename="../mconfig.cpp" line="723"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>O nome do grupo precisa ter ao menos 2 caracteres. Escolha um nome mais comprido, por favor.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="722"/>
+        <location filename="../mconfig.cpp" line="727"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="731"/>
+        <location filename="../mconfig.cpp" line="736"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
-        <translation>Desculpe, esse nome do grupo está em uso. Escolha um nome diferente, por favor.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="738"/>
+        <location filename="../mconfig.cpp" line="743"/>
         <source>The system group was added ok.</source>
-        <translation>O grupo foi adicionado corretamente.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="741"/>
+        <location filename="../mconfig.cpp" line="746"/>
         <source>Failed to add the system group.</source>
-        <translation>A adição do  falhou.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="744"/>
+        <location filename="../mconfig.cpp" line="749"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="751"/>
+        <location filename="../mconfig.cpp" line="756"/>
         <source>The group has been deleted.</source>
-        <translation>O grupo foi excluído.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="754"/>
+        <location filename="../mconfig.cpp" line="759"/>
         <source>Failed to delete the group.</source>
-        <translation>A exclusão de grupo falhou</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="772"/>
+        <location filename="../mconfig.cpp" line="777"/>
         <source>Are you sure you want to make these changes?</source>
-        <translation>Tem certeza de que quer fazer essas mudanças?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="778"/>
+        <location filename="../mconfig.cpp" line="783"/>
         <source>The changes have been applied.</source>
-        <translation>As mudanças foram aplicadas.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="781"/>
+        <location filename="../mconfig.cpp" line="786"/>
         <source>Failed to apply group changes</source>
-        <translation>Falha ao aplicar as alterações do grupo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="865"/>
+        <location filename="../mconfig.cpp" line="870"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Sincronizando ambiente...ok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="867"/>
+        <location filename="../mconfig.cpp" line="872"/>
         <source>Copying desktop...ok</source>
-        <translation>Copiando ambiente...ok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="871"/>
+        <location filename="../mconfig.cpp" line="876"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Sincronizando ambiente...falhou</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="873"/>
+        <location filename="../mconfig.cpp" line="878"/>
         <source>Copying desktop...failed</source>
-        <translation>Copiando ambiente...falhou</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1082"/>
+        <location filename="../mconfig.cpp" line="1087"/>
         <source>Baobab installation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1083"/>
+        <location filename="../mconfig.cpp" line="1088"/>
         <source>Wait while Baobab is installing...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1151"/>
+        <location filename="../mconfig.cpp" line="1156"/>
         <source>About MX User Manager</source>
-        <translation>Sobre de Gerenciador de Usuários </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1152"/>
-        <location filename="../mconfig.cpp" line="1159"/>
-        <location filename="../mconfig.cpp" line="1166"/>
+        <location filename="../mconfig.cpp" line="1157"/>
+        <location filename="../mconfig.cpp" line="1164"/>
+        <location filename="../mconfig.cpp" line="1171"/>
         <source>MX User Manager</source>
-        <translation>Gerenciador de Usuários do MX</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1154"/>
+        <location filename="../mconfig.cpp" line="1159"/>
         <source>Simple user configuration for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1155"/>
+        <location filename="../mconfig.cpp" line="1160"/>
         <source>Copyright (c) MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1156"/>
-        <location filename="../mconfig.cpp" line="1159"/>
+        <location filename="../mconfig.cpp" line="1161"/>
+        <location filename="../mconfig.cpp" line="1164"/>
         <source>License</source>
-        <translation>licença</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1157"/>
+        <location filename="../mconfig.cpp" line="1162"/>
         <source>Cancel</source>
-        <translation>Cancelar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1166"/>
+        <location filename="../mconfig.cpp" line="1171"/>
         <source>Help</source>
-        <translation>Ajuda</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -304,263 +296,26 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>Gerenciador de Usuários do MX</translation>
-    </message>
-    <message>
-        <source>Add/Remove User</source>
-        <translation type="vanished">Adicionar / remover Usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="65"/>
-        <source>Add a new user</source>
-        <translation>Adicionar um novo usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="105"/>
-        <source>Add User Account</source>
-        <translation>Adicionar Conta de Usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="189"/>
-        <location filename="../meconfig.ui" line="227"/>
-        <source>Password for new user</source>
-        <translation>Senha para o novo usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="230"/>
-        <source>Confirm user password:</source>
-        <translation>Confirme a senha do usuário:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="205"/>
-        <source>Enter password for new user</source>
-        <translation>Informe a senha do novo usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="192"/>
-        <source>User password:</source>
-        <translation>Senha do usuário:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="170"/>
-        <location filename="../meconfig.ui" line="1347"/>
-        <source>Enter username of new user</source>
-        <translation>Informe o nome do novo usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="176"/>
-        <source>username</source>
-        <translation>nome do usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="154"/>
-        <location filename="../meconfig.ui" line="1331"/>
-        <source>Username of new user</source>
-        <translation>Nome do novo usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="157"/>
-        <source>User login name:</source>
-        <translation>Nome de autenticação do usuário:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="132"/>
-        <source>Reenter password for new user</source>
-        <translation>Reintroduza a senha do novo usuário</translation>
-    </message>
-    <message>
-        <source>Delete User Account</source>
-        <translation type="vanished">Remover Conta de Usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="427"/>
-        <source>Also delete the user&apos;s home directory</source>
-        <translation>Também apagar o diretório home do usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="430"/>
-        <source>Delete user home directory</source>
-        <translation>Também apagar o diretório home do usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="405"/>
-        <location filename="../meconfig.ui" line="1422"/>
-        <location filename="../meconfig.ui" line="1435"/>
-        <location filename="../meconfig.ui" line="1559"/>
-        <location filename="../meconfig.ui" line="1581"/>
-        <source>Select user to delete</source>
-        <translation>Selecione o usuário a remover</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="414"/>
-        <source>User to delete:</source>
-        <translation>Usuário a remover:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="448"/>
-        <source>Options</source>
-        <translation>Opções</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="451"/>
-        <source>Repair a user configuration</source>
-        <translation>Reparar uma configuração de usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="485"/>
-        <location filename="../meconfig.ui" line="1484"/>
-        <source>Modify User Account</source>
-        <translation>Modificar Conta de Usuário</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="497"/>
-        <location filename="../meconfig.ui" line="513"/>
-        <location filename="../meconfig.ui" line="1074"/>
-        <location filename="../meconfig.ui" line="1087"/>
-        <source>Select user to repair</source>
-        <translation>Selecione o usuário a reparar</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="500"/>
-        <location filename="../meconfig.ui" line="1568"/>
-        <source>User to change:</source>
-        <translation>Usuário de mudar:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="551"/>
-        <source>Restore Defaults</source>
-        <translation>Restaurar o Padrão</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="572"/>
-        <source>Restore browser configs to MX defaults</source>
-        <translation>Restaurar a configuração do navegador ao padrão no MX</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="578"/>
-        <source>Mozilla (Iceweasel or Firefox) configs</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="581"/>
-        <source>Alt+X</source>
-        <translation>Alt+X</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="588"/>
-        <source>Restore group memberships to MX defaults</source>
-        <translation>Restaurar as filiações a grupos ao padrão no MX</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="594"/>
-        <source>Group memberships</source>
-        <translation>Filiações a grupos</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="597"/>
-        <source>Alt+G</source>
-        <translation>Alt+G</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="604"/>
-        <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="607"/>
-        <source>Restore APT sources</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="614"/>
-        <source>Restore Xfce defaults</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="657"/>
-        <source>Change Autologin Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="663"/>
-        <source>Log in automatically</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="670"/>
-        <source>Require password to log in</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="624"/>
-        <source>Select Panel Options</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="630"/>
-        <source>Display default panel horizontally</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="637"/>
-        <source>Restore default configuration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="647"/>
-        <source>Restore backed up configuration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="685"/>
-        <source>Copy/Sync</source>
-        <translation>Copiar/Sincr.</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="712"/>
-        <source>Copy Between Desktops</source>
-        <translation>Copiar entre Ambientes de Trabalho</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="828"/>
-        <source>Select to copy and then delete differences</source>
-        <translation>Selecione para copiar e então apagar as diferenças</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="831"/>
-        <source>Sync</source>
-        <translation>Sincr.</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="739"/>
-        <location filename="../meconfig.ui" line="806"/>
-        <source>Select desktop to copy from</source>
-        <translation>Selecione o AT de onde copiar</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="815"/>
-        <source>Copy from:</source>
-        <translation>Copiar de:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="771"/>
-        <location filename="../meconfig.ui" line="784"/>
-        <source>Select desktop to copy to</source>
-        <translation>Selecione o AT para onde copiar</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="793"/>
-        <source>Copy to:</source>
-        <translation>Copiar para:</translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="752"/>
-        <source>Select to only copy files</source>
-        <translation>Selecione para apenas copiar arquivos</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="62"/>
         <source>Administration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="65"/>
+        <source>Add a new user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="105"/>
+        <source>Add User Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="132"/>
+        <source>Reenter password for new user</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -569,8 +324,51 @@ Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../meconfig.ui" line="154"/>
+        <location filename="../meconfig.ui" line="1331"/>
+        <source>Username of new user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="157"/>
+        <source>User login name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="170"/>
+        <location filename="../meconfig.ui" line="1347"/>
+        <source>Enter username of new user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="176"/>
+        <source>username</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="189"/>
+        <location filename="../meconfig.ui" line="227"/>
+        <source>Password for new user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="192"/>
+        <source>User password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="205"/>
+        <source>Enter password for new user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../meconfig.ui" line="214"/>
         <source>password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="230"/>
+        <source>Confirm user password:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -614,29 +412,215 @@ Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../meconfig.ui" line="405"/>
+        <location filename="../meconfig.ui" line="1422"/>
+        <location filename="../meconfig.ui" line="1435"/>
+        <location filename="../meconfig.ui" line="1559"/>
+        <location filename="../meconfig.ui" line="1581"/>
+        <source>Select user to delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="414"/>
+        <source>User to delete:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="427"/>
+        <source>Also delete the user&apos;s home directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="430"/>
+        <source>Delete user home directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="448"/>
+        <source>Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="451"/>
+        <source>Repair a user configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="485"/>
+        <location filename="../meconfig.ui" line="1484"/>
+        <source>Modify User Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="497"/>
+        <location filename="../meconfig.ui" line="513"/>
+        <location filename="../meconfig.ui" line="1074"/>
+        <location filename="../meconfig.ui" line="1087"/>
+        <source>Select user to repair</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="500"/>
+        <location filename="../meconfig.ui" line="1568"/>
+        <source>User to change:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="551"/>
+        <source>Restore Defaults</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="572"/>
+        <source>Restore browser configs to MX defaults</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="578"/>
+        <source>Mozilla (Iceweasel or Firefox) configs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="581"/>
+        <source>Alt+X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="588"/>
+        <source>Restore group memberships to MX defaults</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="594"/>
+        <source>Group memberships</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="597"/>
+        <source>Alt+G</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="604"/>
+        <source>Restore APT sources to MX defaults</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="607"/>
+        <source>Restore APT sources</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="614"/>
+        <source>Restore Xfce defaults</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="624"/>
+        <source>Select Panel Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="630"/>
+        <source>Display default panel horizontally</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="637"/>
+        <source>Restore default configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="647"/>
+        <source>Restore backed up configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="657"/>
+        <source>Change Autologin Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="663"/>
+        <source>Log in automatically</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="670"/>
+        <source>Require password to log in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="685"/>
+        <source>Copy/Sync</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="712"/>
+        <source>Copy Between Desktops</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="739"/>
+        <location filename="../meconfig.ui" line="806"/>
+        <source>Select desktop to copy from</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="752"/>
+        <source>Select to only copy files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../meconfig.ui" line="755"/>
         <source>Copy only</source>
-        <translation>Apenas copiar</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="771"/>
+        <location filename="../meconfig.ui" line="784"/>
+        <source>Select desktop to copy to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="793"/>
+        <source>Copy to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="815"/>
+        <source>Copy from:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="828"/>
+        <source>Select to copy and then delete differences</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="831"/>
+        <source>Sync</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="877"/>
         <source>Select to copy/sync Shared</source>
-        <translation>Selecione para copiar/sincr. Shared</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="880"/>
         <source>Shared folder</source>
-        <translation>Pasta Shared</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="893"/>
         <source>Select to copy/sync entire home</source>
-        <translation>Selecione para copiar/sincr. home inteiro</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="896"/>
         <source>Entire home</source>
-        <translation>Home inteiro</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="912"/>
@@ -651,38 +635,38 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="928"/>
         <source>Select to copy/sync Documents</source>
-        <translation>Selecione para copiar/sincr. Documents</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="931"/>
         <source>Documents folder</source>
-        <translation>Pasta Documents</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="938"/>
         <source>What to copy/sync:</source>
-        <translation>O que Copiar/Sincr.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="954"/>
         <source>Progress</source>
-        <translation>Progresso</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="984"/>
         <location filename="../meconfig.ui" line="1000"/>
         <source>Status of the changes</source>
-        <translation>Status das mudanças</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1003"/>
         <source>Status:</source>
-        <translation>Status:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1019"/>
         <source>Progress of the changes</source>
-        <translation>Progresso das mudanças</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1056"/>
@@ -777,37 +761,37 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1292"/>
         <source>Add/Remove Groups</source>
-        <translation>Adicionar / remover grupos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1304"/>
         <source>Add Group</source>
-        <translation>Afegeix </translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="1353"/>
-        <source>groupname</source>
-        <translation>nomedogrupo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1334"/>
         <source>Group name:</source>
-        <translation>Nome do grupo</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="1353"/>
+        <source>groupname</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1382"/>
         <source>Delete Group</source>
-        <translation>Esborra Grup</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1444"/>
         <source>Group to delete:</source>
-        <translation>Grupo a remover:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1472"/>
         <source>Group Membership</source>
-        <translation>Filiações a grupos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1588"/>
@@ -822,62 +806,62 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1668"/>
         <source>Apply any changes</source>
-        <translation>Aplicar as mudanças</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1671"/>
         <source>Apply</source>
-        <translation>Aplicar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1678"/>
         <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1685"/>
         <source>Cancel any changes then quit</source>
-        <translation>Cancelar mudanças e encerrar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1688"/>
         <source>Close</source>
-        <translation>Encerrar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1695"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1733"/>
         <source>Display help </source>
-        <translation>Exibir ajuda</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1736"/>
         <source>Help</source>
-        <translation>Ajuda</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1743"/>
         <source>Alt+H</source>
-        <translation>Alt+H</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1750"/>
         <source>About this application</source>
-        <translation>Sobre esta aplicação</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1753"/>
         <source>About...</source>
-        <translation>Sobre...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1760"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -885,7 +869,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>Você deve executar esta aplicação como root.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
