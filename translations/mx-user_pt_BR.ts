@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt_BR" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="pt_BR">
 <context>
     <name>MConfig</name>
     <message>
@@ -45,44 +47,44 @@
         <location filename="../mconfig.cpp" line="455"/>
         <location filename="../mconfig.cpp" line="466"/>
         <source>Autologin options</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="456"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="467"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="476"/>
         <source>Xfce settings</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="477"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="498"/>
         <location filename="../mconfig.cpp" line="521"/>
         <source>Panel settings</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="499"/>
         <location filename="../mconfig.cpp" line="522"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="540"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="544"/>
@@ -109,7 +111,7 @@
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="604"/>
@@ -120,13 +122,13 @@ Please choose another name before proceeding.</source>
         <location filename="../mconfig.cpp" line="609"/>
         <location filename="../mconfig.cpp" line="655"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="614"/>
         <location filename="../mconfig.cpp" line="660"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="642"/>
@@ -141,17 +143,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="685"/>
         <source>Password successfully changed.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="689"/>
         <source>Failed to change password.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="694"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="707"/>
@@ -173,7 +175,7 @@ Please choose another name before proceeding.</source>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="736"/>
@@ -193,7 +195,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="749"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="756"/>
@@ -243,12 +245,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="1087"/>
         <source>Baobab installation</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1088"/>
         <source>Wait while Baobab is installing...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1156"/>
@@ -265,12 +267,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="1159"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1160"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1161"/>
@@ -319,7 +321,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="141"/>
         <source>confirm password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="154"/>
@@ -362,7 +364,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="214"/>
         <source>password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="230"/>
@@ -372,32 +374,32 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="256"/>
         <source>Change User Password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="271"/>
         <source>new password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="284"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="294"/>
         <source>confirm new password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="301"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="314"/>
         <source>New user password:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="346"/>
@@ -407,7 +409,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="389"/>
         <source>Select user</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="405"/>
@@ -476,7 +478,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="578"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="581"/>
@@ -501,52 +503,52 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="604"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="607"/>
         <source>Restore APT sources</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="614"/>
         <source>Restore Xfce defaults</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="624"/>
         <source>Select Panel Options</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="630"/>
         <source>Display default panel horizontally</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="637"/>
         <source>Restore default configuration</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="647"/>
         <source>Restore backed up configuration</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="657"/>
         <source>Change Autologin Settings</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="663"/>
         <source>Log in automatically</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="670"/>
         <source>Require password to log in</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="685"/>
@@ -623,12 +625,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="912"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="915"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="928"/>
@@ -669,92 +671,92 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1056"/>
         <source>Free Up Space</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1062"/>
         <source>Free Disk Space for User</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1090"/>
         <source>User account:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1116"/>
         <source>Folders to Clean</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1122"/>
         <source>Delete /tmp files</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1132"/>
         <source>Delete ~/.thumbnails</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1142"/>
         <source>Delete ~/.cache</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1155"/>
         <source>Clear APT Cache</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1161"/>
         <source>autoclean (only removes old cache files that can no longer be downloaded)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1171"/>
         <source>clean (delete all cache files)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1181"/>
         <source>Delete Logs</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1187"/>
         <source>delete old logs (delete .gz, .old, and .1 log files)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1200"/>
         <source>delete all logs</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1216"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1225"/>
         <source>selected user Trash</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1235"/>
         <source>empty Trash for all users</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1245"/>
         <source>Graphical Tool for Analysing Disk Usage</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1251"/>
         <source>Run Baobab</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1292"/>
@@ -794,12 +796,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1588"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1608"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1668"/>

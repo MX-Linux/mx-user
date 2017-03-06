@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 06 Mar 2017 16:08:03 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 17.3mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (17.3mx16) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ 17f6ff1663217af665945863dda5420b4f53317f 1154 mx-user_17.3mx16.dsc
+ b7acdda5bb1af60a68ba5633b7beba1ee625719b 71092 mx-user_17.3mx16.tar.xz
+ 890c7acd710f15bffd9b553e34388acde09c665c 115148 mx-user_17.3mx16_amd64.deb
+Checksums-Sha256:
+ 00ab818fe810654dae697ef8c826d20e5a38530bad84a438f1efd36b9f94619f 1154 mx-user_17.3mx16.dsc
+ a0b1ce1c1422a03af5ba91e70d64e0f14c8e6d0658950fab74bcf1af1c355951 71092 mx-user_17.3mx16.tar.xz
+ a3d87a327cc6e232bf104e5edc272d11d9baa1507b5d7fa3a6d752df50cba8b8 115148 mx-user_17.3mx16_amd64.deb
+Files:
+ c802dde590c7a7a8c58f3f842a951f9c 1154 system optional mx-user_17.3mx16.dsc
+ 5cf3363dcda8396d7ab4460f852de4f2 71092 system optional mx-user_17.3mx16.tar.xz
+ 5207802be11c11e2a1eea568b34510c3 115148 system optional mx-user_17.3mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYvdCYAAoJEHCTjHgGee6YStwH+QGzk09jxU7Bz6szxUyOQJc+
+eqIoCcXkWi2F6Po1xKxTosDfwSptWXxfLNu/K5WZq7qHOVQVGqna0fZ+KHGA1NXc
+0XiE+DWmwKvdLoGIRK8MMhTZonbcNUH/cVq9nzI+NalNAu/30u3FfJZkkhouzAtg
+nbg+7tK0pLRZzigUAIVJNxLKSrRP5bORp0LcXegry+3HsVPPVBcJ3jmbYya/DpB7
+HNsapf8byQn1NPuOB6ZPqbjBCI2KxzUNNmwzL97Rb6gLDBuvri6l/Mjopl0UMjfd
+gv+j4UdGqC+o+NSNwlA5oI5Nptwy9p6VIeg9bjvoHc982WjVoiO5fGoJBnr3mWM=
+=l7Xg
+-----END PGP SIGNATURE-----
