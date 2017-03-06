@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="it">
 <context>
     <name>MConfig</name>
     <message>
@@ -376,32 +378,32 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="256"/>
         <source>Change User Password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="271"/>
         <source>new password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="284"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="294"/>
         <source>confirm new password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="301"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="314"/>
         <source>New user password:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="346"/>
@@ -411,7 +413,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="389"/>
         <source>Select user</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="405"/>
@@ -678,7 +680,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1062"/>
         <source>Free Disk Space for User</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1090"/>
@@ -688,7 +690,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1116"/>
         <source>Folders to Clean</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1122"/>
@@ -708,7 +710,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1155"/>
         <source>Clear APT Cache</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1161"/>
@@ -723,7 +725,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1181"/>
         <source>Delete Logs</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1187"/>
@@ -753,7 +755,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1245"/>
         <source>Graphical Tool for Analysing Disk Usage</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1251"/>

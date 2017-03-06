@@ -1,3 +1,9 @@
+mx-user (17.3mx16) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 06 Mar 2017 16:08:03 -0500
+
 mx-user (17.2mx16) mx; urgency=medium
 
   * added change password feature
