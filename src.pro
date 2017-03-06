@@ -9,6 +9,8 @@ TRANSLATIONS += translations/mx-user_ca.ts \
                 translations/mx-user_fr.ts \
                 translations/mx-user_it.ts \
                 translations/mx-user_ja.ts \
+                translations/mx-user_kk.ts \
+                translations/mx-user_lt.ts \
                 translations/mx-user_nl.ts \
                 translations/mx-user_pl.ts \
                 translations/mx-user_pt.ts \
