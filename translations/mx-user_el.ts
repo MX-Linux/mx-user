@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el_GR">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -18,12 +16,12 @@
         <location filename="../mconfig.cpp" line="988"/>
         <location filename="../mconfig.cpp" line="1213"/>
         <source>none</source>
-        <translation type="unfinished"></translation>
+        <translation>κανένα</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="409"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation type="unfinished"></translation>
+        <translation>Η διαμόρφωση χρήστης θα πρέπει να επισκευαστεί. Κλείστε όλες τις άλλες εφαρμογές τώρα. Όταν τελειώσετε, μπορείτε να αποσυνδεθείτε ή να επανεκκινήσετε. Είστε σίγουροι ότι θέλετε να επιδιορθώσετε και τώρα;</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="410"/>
@@ -32,7 +30,7 @@
         <location filename="../mconfig.cpp" line="751"/>
         <location filename="../mconfig.cpp" line="778"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="410"/>
@@ -41,254 +39,261 @@
         <location filename="../mconfig.cpp" line="751"/>
         <location filename="../mconfig.cpp" line="778"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="455"/>
         <location filename="../mconfig.cpp" line="466"/>
         <source>Autologin options</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογές Autologin</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="456"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin έχει απενεργοποιηθεί για το &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="467"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Autologin έχει ενεργοποιηθεί για το &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="476"/>
         <source>Xfce settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις Xfce</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="477"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι τρέχουσες ρυθμίσεις σας του Xfce εχει δημιουργηθει ως αντίγραφα ασφαλείας σε έναν κρυφό φάκελο που ονομάζεται .restore στο φάκελο του home (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="498"/>
         <location filename="../mconfig.cpp" line="521"/>
         <source>Panel settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις του Panel</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="499"/>
         <location filename="../mconfig.cpp" line="522"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι τρέχουσες ρυθμίσεις του Panel  σας δημιουργήσει αντίγραφα ασφαλείας σε έναν κρυφό φάκελο που ονομάζεται .restore στο φάκελο του σπιτιού σας (~/.restore /)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="540"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished"></translation>
+        <translation>Θα πρέπει να ορίσετε ένα &apos;αντίγραφο&apos; προορισμός. Δεν μπορείτε να αντιγράψετε στην επιφάνεια εργασίας σας είναι συνδεδεμένοι.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="544"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation type="unfinished"></translation>
+        <translation>Πριν από την αντιγραφή, κλείστε όλες τις άλλες εφαρμογές. Να είστε βέβαιος ότι το αντίγραφο προς τον προορισμό είναι αρκετά μεγάλο ώστε να περιέχει τα αρχεία που θέλετε να αντιγράψετε. Αντιγραφή μεταξύ επιτραπέζιους υπολογιστές μπορεί να αντικαταστήσει ή να διαγράψει τα αρχεία ή τις προτιμήσεις σας στην επιφάνεια εργασίας προορισμό. Είστε σίγουροι ότι θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="566"/>
         <source>Synchronizing desktop...</source>
-        <translation type="unfinished"></translation>
+        <translation>Συγχρονισμός επιφάνεια εργασίας ...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="568"/>
         <source>Copying desktop...</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή επιφάνεια εργασίας ...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="591"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το Όνομα Χρήστη πρέπει να έχει μήκος τουλάχιστον 2 χαρακτήρων. Παρακαλώ επιλέξτε ένα μεγαλύτερο όνομα πριν συνεχίσετε.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="595"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα χρήστη πρέπει να είναι πεζά και
+δεν μπορεί να περιέχει ειδικούς χαρακτήρες ή κενά.
+Παρακαλώ επιλέξτε ένα άλλο όνομα πριν προχωρήσετε.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="604"/>
         <source>Sorry that name is in use. Please select a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συγγνώμη, αλλά το όνομα αυτό χρησιμοποιείται. Παρακαλώ επιλέξτε ένα διαφορετικό όνομα.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="609"/>
         <location filename="../mconfig.cpp" line="655"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι Κωδικοί Πρόσβασης δεν ταιριάζουν μεταξύ τους. Παρακαλώ προσπαθήστε ξανά.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="614"/>
         <location filename="../mconfig.cpp" line="660"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι Κωδικόι πρέπει να έχει τουλάχιστον 
+ένα μήκος 2 χαρακτήρων. Παρακαλώ επιλέξτε 
+έναν πιο μεγάλο Κωδικό πριν συνεχίσετε.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="642"/>
         <source>The user was added ok.</source>
-        <translation type="unfinished"></translation>
+        <translation>Προστέθηκε Νέος Χρήστης.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="646"/>
         <source>Failed to add the user.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποτυχία να προσθέσετε το χρήστη.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="685"/>
         <source>Password successfully changed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο Κωδικός πρόσβασης άλλαξε με επιτυχια.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="689"/>
         <source>Failed to change password.</source>
-        <translation type="unfinished"></translation>
+        <translation>Απέτυχε η αλλαγή του κοδικου.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="694"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Είστε σίγουροι ότι θέλετε να διαγράψετε το χρήστη %1;</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="707"/>
         <source>The user has been deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο χρήστης έχει διαγραφεί.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="710"/>
         <source>Failed to delete the user.</source>
-        <translation type="unfinished"></translation>
+        <translation>Απέτυχε η διαγραφή του χρήστη.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="723"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το Όνομα Ομάδας πρέπει να έχει μήκος τουλάχιστον 2 χαρακτήρων. Παρακαλώ επιλέξτε ένα μεγαλύτερο όνομα πριν συνεχίσετε.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="727"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα ομαδας πρέπει να είναι πεζά και 
+δεν μπορεί να περιέχει ειδικούς χαρακτήρες ή κενά.
+Παρακαλώ επιλέξτε ένα άλλο όνομα πριν προχωρήσετε.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="736"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συγγνώμη, αλλά το όνομα αυτό χρησιμοποιείται. 
+Παρακαλώ επιλέξτε ένα διαφορετικό όνομα.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="743"/>
         <source>The system group was added ok.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η ομάδα του συστήματος προστέθηκε.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="746"/>
         <source>Failed to add the system group.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποτυχία να προσθέσετε την ομάδα του συστήματος.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="749"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Είστε σίγουροι ότι θέλετε να διαγράψετε την ομάδα %1;</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="756"/>
         <source>The group has been deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η ομάδα έχει διαγραφεί.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="759"/>
         <source>Failed to delete the group.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποτυχία να διαγράψετε την ομάδα.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="777"/>
         <source>Are you sure you want to make these changes?</source>
-        <translation type="unfinished"></translation>
+        <translation>Είστε σίγουροι ότι θέλετε να κάνετε αυτές τις αλλαγές;</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="783"/>
         <source>The changes have been applied.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι αλλαγές έχουν εφαρμοστεί.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="786"/>
         <source>Failed to apply group changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Απέτυχε η εφαρμογή των αλλαγών ομάδων</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="870"/>
         <source>Synchronizing desktop...ok</source>
-        <translation type="unfinished"></translation>
+        <translation>Συγχρονισμός επιφάνεια εργασίας ... ok</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="872"/>
         <source>Copying desktop...ok</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή επιφάνεια εργασίας ... ok</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="876"/>
         <source>Synchronizing desktop...failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Συγχρονισμός επιφάνειας εργασίας ... απέτυχε</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="878"/>
         <source>Copying desktop...failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή επιφάνεια εργασίας... απέτυχε</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1087"/>
         <source>Baobab installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Εγκατάσταση Baobab</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1088"/>
         <source>Wait while Baobab is installing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιμένετε για την εγκατάσταση του Baobab...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1156"/>
         <source>About MX User Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Περί MX User Manager</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1157"/>
         <location filename="../mconfig.cpp" line="1164"/>
         <location filename="../mconfig.cpp" line="1171"/>
         <source>MX User Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>MX User Manager</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1159"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Απλή διαμόρφωση χρήστη για MX Linux</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1160"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (c)  MX Linux </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1161"/>
         <location filename="../mconfig.cpp" line="1164"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Άδεια</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1162"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Ακύρωση</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1171"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Βοήθεια </translation>
     </message>
 </context>
 <context>
@@ -296,120 +301,120 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>MX User Manager</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="62"/>
         <source>Administration</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαχείριση</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="65"/>
         <source>Add a new user</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθέστε ένα νέο χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="105"/>
         <source>Add User Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη Λογαριασμός Χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="132"/>
         <source>Reenter password for new user</source>
-        <translation type="unfinished"></translation>
+        <translation>Εισάγετε ξανά τον κωδικό πρόσβασης για νέο χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="141"/>
         <source>confirm password</source>
-        <translation type="unfinished"></translation>
+        <translation>επιβεβαίωση Κωδικού</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="154"/>
         <location filename="../meconfig.ui" line="1331"/>
         <source>Username of new user</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα του νέου χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="157"/>
         <source>User login name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα σύνδεσης χρήστη:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="170"/>
         <location filename="../meconfig.ui" line="1347"/>
         <source>Enter username of new user</source>
-        <translation type="unfinished"></translation>
+        <translation>Πληκτρολογήστε το όνομα του νέου χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="176"/>
         <source>username</source>
-        <translation type="unfinished"></translation>
+        <translation>όνομα χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="189"/>
         <location filename="../meconfig.ui" line="227"/>
         <source>Password for new user</source>
-        <translation type="unfinished"></translation>
+        <translation>Κωδικός πρόσβασης για νέο χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="192"/>
         <source>User password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Κωδικός Χρήστη:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="205"/>
         <source>Enter password for new user</source>
-        <translation type="unfinished"></translation>
+        <translation>Εισάγετε τον κωδικό πρόσβασης για νέο χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="214"/>
         <source>password</source>
-        <translation type="unfinished"></translation>
+        <translation>Κωδικός</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="230"/>
         <source>Confirm user password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιβεβαίωση Κωδικού Χρήστη:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="256"/>
-        <source>Change user password:</source>
-        <translation type="unfinished"></translation>
+        <source>Change User Password</source>
+        <translation>Αλλαγή Κωδικού Χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="271"/>
         <source>new password</source>
-        <translation type="unfinished"></translation>
+        <translation>νέος κωδικός</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="284"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιβεβαίωση νέου Κωδικού:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="294"/>
         <source>confirm new password</source>
-        <translation type="unfinished"></translation>
+        <translation>επιβεβαίωση νέου Κωδικού:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="301"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε το χρήστη για τροποποίηση:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="314"/>
         <source>New user password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Νέος Κωδικός Χρήστη:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="346"/>
-        <source>Delete user</source>
-        <translation type="unfinished"></translation>
+        <source>Delete User Account</source>
+        <translation>Διαγραφή Λογαριασμός</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="389"/>
         <source>Select user</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε το χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="405"/>
@@ -418,38 +423,38 @@ Please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="1559"/>
         <location filename="../meconfig.ui" line="1581"/>
         <source>Select user to delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε το χρήστη για διαγραφή </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="414"/>
         <source>User to delete:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρήστη για διαγραφή:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="427"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγράψετε το Φάκελλο Χρήστη (home directory) </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="430"/>
         <source>Delete user home directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή κεντρικό κατάλογο του χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="448"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογές</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="451"/>
         <source>Repair a user configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Επισκευή μια ρύθμιση παραμέτρων χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="485"/>
         <location filename="../meconfig.ui" line="1484"/>
         <source>Modify User Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση λογαριασμού χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="497"/>
@@ -457,411 +462,415 @@ Please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="1074"/>
         <location filename="../meconfig.ui" line="1087"/>
         <source>Select user to repair</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε το χρήστη για επισκευή
+</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="500"/>
         <location filename="../meconfig.ui" line="1568"/>
         <source>User to change:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρήστη για αλλαγη:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="551"/>
         <source>Restore Defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά προεπιλεγμένα</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="572"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά διαμορφώσεις browser στις προεπιλογές ΜΧ</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="578"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation type="unfinished"></translation>
+        <translation> Διαμορφώσεις του Mozilla (Firefox ή Iceweasel)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="581"/>
         <source>Alt+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+X</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="588"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά της ομάδας μέλους σε προεπιλογές MX </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="594"/>
         <source>Group memberships</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέλη Ομάδας</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="597"/>
         <source>Alt+G</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+G </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="604"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά πηγές APT σε προεπιλογές ΜΧ</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="607"/>
         <source>Restore APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά πηγές APT</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="614"/>
         <source>Restore Xfce defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά προεπιλεγμένα του Xfce</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="624"/>
         <source>Select Panel Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε Επιλογές Panel</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="630"/>
         <source>Display default panel horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>Απεικόνιση οριζοντίως το προεπιλεγμένο Panel </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="637"/>
         <source>Restore default configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά προεπιλεγμένων ρυθμίσεων</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="647"/>
         <source>Restore backed up configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά ρυθμίσεων αντιγράφων ασφαλείας</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="657"/>
         <source>Change Autologin Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Αλλαγή ρυθμίσεων Αυτόματη Σύνδεση</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="663"/>
         <source>Log in automatically</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνδεθείτε αυτόματα</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="670"/>
         <source>Require password to log in</source>
-        <translation type="unfinished"></translation>
+        <translation>Απαίτηση κωδικού πρόσβασης για συνδεσι</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="685"/>
         <source>Copy/Sync</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή/Συγχρονισμός</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="712"/>
         <source>Copy Between Desktops</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή μεταξύ των επιτραπέζιων υπολογιστών</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="739"/>
         <location filename="../meconfig.ui" line="806"/>
         <source>Select desktop to copy from</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε την επιφάνεια εργασίας για να αντιγράψετε από</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="752"/>
         <source>Select to only copy files</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε αντιγραφή μόνο αρχείων</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="755"/>
         <source>Copy only</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή μόνο</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="771"/>
         <location filename="../meconfig.ui" line="784"/>
         <source>Select desktop to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε την επιφάνεια εργασίας να αντιγράψετε σε</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="793"/>
         <source>Copy to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή σε:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="815"/>
         <source>Copy from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή από:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="828"/>
         <source>Select to copy and then delete differences</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε για να αντιγράψετε και, στη συνέχεια, διαγράψτε τις διαφορές</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="831"/>
         <source>Sync</source>
-        <translation type="unfinished"></translation>
+        <translation>Συγχρονισμός</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="877"/>
         <source>Select to copy/sync Shared</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε Αντιγραφή/Συγχρονισμός Shared</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="880"/>
         <source>Shared folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Κοινόχρηστο φάκελο</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="893"/>
         <source>Select to copy/sync entire home</source>
-        <translation type="unfinished"></translation>
+        <translation>
+Επιλέξτε Αντιγραφή/Συγχρονισμός όλο το home</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="896"/>
         <source>Entire home</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλο το home</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="912"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>
+Επιλέξτε Αντιγραφή/Συγχρονισμός διαμόρφωσης του προγράμματος περιήγησης</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="915"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαμορφώσεις του Mozilla (Firefox ή Iceweasel)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="928"/>
         <source>Select to copy/sync Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>
+Επιλέξτε Αντιγραφή/Συγχρονισμός το Documents</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="931"/>
         <source>Documents folder</source>
-        <translation type="unfinished"></translation>
+        <translation>φάκελο έγγραφα</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="938"/>
         <source>What to copy/sync:</source>
-        <translation type="unfinished"></translation>
+        <translation>Τι να αντιγράψετε/συγχρονισμού:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="954"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>πρόοδος</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="984"/>
         <location filename="../meconfig.ui" line="1000"/>
         <source>Status of the changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατάσταση των αλλαγών</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1003"/>
         <source>Status:</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατάσταση:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1019"/>
         <source>Progress of the changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Η πρόοδος των αλλαγών</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1056"/>
         <source>Free Up Space</source>
-        <translation type="unfinished"></translation>
+        <translation>Κάντε χώρο</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1062"/>
-        <source>Free disk space for user</source>
-        <translation type="unfinished"></translation>
+        <source>Free Disk Space for User</source>
+        <translation>Ελεύτερο χώρο για το χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1090"/>
         <source>User account:</source>
-        <translation type="unfinished"></translation>
+        <translation>Λογαριασμός χρήστη:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1116"/>
-        <source>Folders to clean</source>
-        <translation type="unfinished"></translation>
+        <source>Folders to Clean</source>
+        <translation>Φάκελοι για καθαρισμό</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1122"/>
         <source>Delete /tmp files</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή αρχείων /tmp</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1132"/>
         <source>Delete ~/.thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή ~/.thumbnails</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1142"/>
         <source>Delete ~/.cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1155"/>
-        <source>Clear APT cache</source>
-        <translation type="unfinished"></translation>
+        <source>Clear APT Cache</source>
+        <translation>Εκκαθάριση του apt cache</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1161"/>
         <source>autoclean (only removes old cache files that can no longer be downloaded)</source>
-        <translation type="unfinished"></translation>
+        <translation>autoclean (αφαιρεί μόνο τα παλιά αρχεία της μνήμης cache που δεν μπορούν πλέον να το κατεβάσετε)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1171"/>
         <source>clean (delete all cache files)</source>
-        <translation type="unfinished"></translation>
+        <translation>καθαρό (διαγράψτε όλα τα αρχεία προσωρινής αποθήκευσης)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1181"/>
-        <source>Delete logs</source>
-        <translation type="unfinished"></translation>
+        <source>Delete Logs</source>
+        <translation>Διαγραφή αρχείων καταγραφής</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1187"/>
         <source>delete old logs (delete .gz, .old, and .1 log files)</source>
-        <translation type="unfinished"></translation>
+        <translation>διαγράψετε τα παλιά αρχεία καταγραφής (διαγραφή .gz, .old, και 0.1 αρχεία καταγραφής)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1200"/>
         <source>delete all logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή όλων των αρχείων καταγραφής</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1216"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Άδειασμα κάδου απορριμμάτων</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1225"/>
         <source>selected user Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Trash του χρήστη</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1235"/>
         <source>empty Trash for all users</source>
-        <translation type="unfinished"></translation>
+        <translation>Άδειασμα του κάδου για όλους τους χρήστες</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1245"/>
-        <source>Graphical tool for analysing disk usage</source>
-        <translation type="unfinished"></translation>
+        <source>Graphical Tool for Analysing Disk Usage</source>
+        <translation>Γραφικό εργαλείο για την ανάλυση της χρήσης του δίσκου</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1251"/>
         <source>Run Baobab</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκτέλεση Baobab</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1292"/>
         <source>Add/Remove Groups</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη/Αφαιρεση Ομάδες</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1304"/>
         <source>Add Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη ομάδας</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1334"/>
         <source>Group name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα Ομάδας</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1353"/>
         <source>groupname</source>
-        <translation type="unfinished"></translation>
+        <translation>groupname</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1382"/>
         <source>Delete Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή ομάδας</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1444"/>
         <source>Group to delete:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ομάδα για διαγραφή:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1472"/>
         <source>Group Membership</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέλη Ομάδας</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1588"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"></translation>
+        <translation>Ομάδες χρήστη ανήκει (αλλάξτε τις ομάδες από την επιλογή/απενεργοποιώντας τα κατάλληλα κουτάκια):</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1608"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"></translation>
+        <translation>* Παρακαλούμε ελέγξτε τις επιλογές σας πριν από την εφαρμογή, στην ανάθεση της λανθασμένης μέλους ομάδας μπορεί να σπάσει το σύστημά σας. Χρησιμοποιήστε την καρτέλα Repair για να επαναφέρετε τις αρχικές συμμετοχές αν κάνει κάποιο λάθος.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1668"/>
         <source>Apply any changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Εφαρμόστε τις αλλαγές </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1671"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Εφαρμογή</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1678"/>
         <source>Alt+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1685"/>
         <source>Cancel any changes then quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ακύρωση τις αλλαγές και μετά κλείστε</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1688"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1695"/>
         <source>Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1733"/>
         <source>Display help </source>
-        <translation type="unfinished"></translation>
+        <translation>Δείτε Βοήθεια</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1736"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1743"/>
         <source>Alt+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+H </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1750"/>
         <source>About this application</source>
-        <translation type="unfinished"></translation>
+        <translation>Περί εφαρμογής.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1753"/>
         <source>About...</source>
-        <translation type="unfinished"></translation>
+        <translation>Περί</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1760"/>
         <source>Alt+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+B</translation>
     </message>
 </context>
 <context>
@@ -869,7 +878,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρέπει να τρέξετε αυτή την εφασρμογή ως Root. </translation>
     </message>
 </context>
 </TS>
