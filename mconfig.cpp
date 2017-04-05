@@ -19,6 +19,7 @@
 #include "mconfig.h"
 #include <stdio.h>
 #include <unistd.h>
+#include <QFileDialog>
 
 #include <QDebug>
 
@@ -135,6 +136,7 @@ bool MConfig::replaceStringInFile(QString oldtext, QString newtext, QString file
 
 void MConfig::refresh() {
     setCursor(QCursor(Qt::ArrowCursor));
+    syncProgressBar->setValue(0);
     int i = tabWidget->currentIndex();
     switch (i) {
 
@@ -549,6 +551,9 @@ void MConfig::applyDesktop() {
 
     QString fromDir = QString("/home/%1").arg(fromUserComboBox->currentText());
     QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
+    if (toUserComboBox->currentText().contains("/")) {  // if a directory rather than a user name
+        toDir = toUserComboBox->currentText();
+    }
     if (docsRadioButton->isChecked()) {
         fromDir.append("/Documents");
         toDir.append("/Documents");
@@ -838,6 +843,19 @@ void MConfig::syncDone(int exitCode, QProcess::ExitStatus exitStatus) {
         QString fromDir = QString("/home/%1").arg(fromUserComboBox->currentText());
         QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
 
+        // if a directory rather than a user name
+        if (toUserComboBox->currentText().contains("/")) {
+            if (syncRadioButton->isChecked()) {
+                syncStatusEdit->setText(tr("Synchronizing desktop...ok"));
+            } else {
+                syncStatusEdit->setText(tr("Copying desktop...ok"));
+            }
+            timer->stop();
+            syncProgressBar->setValue(100);
+            setCursor(QCursor(Qt::ArrowCursor));
+            return;
+        }
+
         // fix owner
         QString cmd = QString("chown -R %1:users %2").arg(toUserComboBox->currentText()).arg(toDir);
         system(cmd.toUtf8());
@@ -879,7 +897,7 @@ void MConfig::syncDone(int exitCode, QProcess::ExitStatus exitStatus) {
         }
     }
     timer->stop();
-    syncProgressBar->setValue(0);
+    syncProgressBar->setValue(100);
     setCursor(QCursor(Qt::ArrowCursor));
 }
 
@@ -890,6 +908,8 @@ void MConfig::on_fromUserComboBox_activated() {
     char line[130];
     QString cmd;
 
+    buttonApply->setEnabled(true);
+    syncProgressBar->setValue(0);
     toUserComboBox->clear();
     FILE *fp = popen("ls -1 /home", "r");
     int i;
@@ -911,6 +931,7 @@ void MConfig::on_fromUserComboBox_activated() {
         }
         pclose(fp);
     }
+    toUserComboBox->addItem(tr("browse..."));
 }
 
 void MConfig::on_userComboBox_activated() {
@@ -1214,3 +1235,67 @@ void MConfig::on_comboChangePass_activated()
         refresh();
     }
 }
+
+
+void MConfig::on_toUserComboBox_activated()
+{
+    buttonApply->setEnabled(true);
+    syncProgressBar->setValue(0);
+}
+
+void MConfig::on_copyRadioButton_clicked()
+{
+    buttonApply->setEnabled(true);
+    syncProgressBar->setValue(0);
+}
+
+void MConfig::on_syncRadioButton_clicked()
+{
+    buttonApply->setEnabled(true);
+    syncProgressBar->setValue(0);
+}
+
+void MConfig::on_entireRadioButton_clicked()
+{
+    buttonApply->setEnabled(true);
+    syncProgressBar->setValue(0);
+}
+
+void MConfig::on_docsRadioButton_clicked()
+{
+    buttonApply->setEnabled(true);
+    syncProgressBar->setValue(0);
+}
+
+void MConfig::on_mozillaRadioButton_clicked()
+{
+    buttonApply->setEnabled(true);
+    syncProgressBar->setValue(0);
+}
+
+void MConfig::on_sharedRadioButton_clicked()
+{
+    buttonApply->setEnabled(true);
+    syncProgressBar->setValue(0);
+}
+
+
+
+void MConfig::on_toUserComboBox_currentIndexChanged(const QString &arg1)
+{
+    if (arg1 == tr("browse...")) {
+        QString dir = QFileDialog::getExistingDirectory(this, tr("Select folder to copy to"), "/",QFileDialog::ShowDirsOnly
+                                                     | QFileDialog::DontResolveSymlinks);
+        if (dir != "") {
+            toUserComboBox->removeItem(toUserComboBox->currentIndex());
+            toUserComboBox->addItem(dir);
+            int idx = toUserComboBox->findText(dir, Qt::MatchExactly | Qt::MatchCaseSensitive);
+            toUserComboBox->setCurrentIndex(idx);
+            toUserComboBox->addItem(tr("browse..."));
+        } else {
+            toUserComboBox->setCurrentIndex(toUserComboBox->currentIndex() - 1);
+        }
+    }
+}
+
+

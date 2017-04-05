@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 05 Apr 2017 11:27:24 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 17.4mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (17.4mx16) mx; urgency=medium
+ .
+   * added option to copy home content to a folder
+Checksums-Sha1:
+ b698c4c11e07eb2d655dab42c09e7f3528911d04 1157 mx-user_17.4mx16.dsc
+ 598df5de6a740bb2c334a0c2ce28116507651017 200320 mx-user_17.4mx16.tar.xz
+ 56de089e08f9d3803265f7dcf47719578fc972b4 116414 mx-user_17.4mx16_amd64.deb
+Checksums-Sha256:
+ ce7f48f838aa6ef9534ee1c719d5edfaa309bcae2729243de90d8bf80ddec450 1157 mx-user_17.4mx16.dsc
+ 08f0433af2c29fd9148451e8ab2b04cee4c4983b6c5260a5c9404600a65bbd2c 200320 mx-user_17.4mx16.tar.xz
+ 2bcab6477fc619e7b6dbc02f3b390cebc70c26d9fb362955040da1c32fe8cc95 116414 mx-user_17.4mx16_amd64.deb
+Files:
+ 296f59491e8e2fa5f94bb66ffc63f92c 1157 system optional mx-user_17.4mx16.dsc
+ 3f77bcfe37a3c95b84ba9c22b3797cdb 200320 system optional mx-user_17.4mx16.tar.xz
+ e4802070c5f038a7a5857cb4913538ef 116414 system optional mx-user_17.4mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJY5RGVAAoJEHCTjHgGee6YzpcIANH+Q6Fdk0GT8EDjZ3HZ8Ed0
+NAv/jyLWXg5/aAVRy9XqJCyPtzQlf8jL8rBDA0aaHNor2CZIAsaK40JnN8ZZVDC8
+mwdBZHwzeGyMK3fEyQXw34uaZzNoMjHgz/3I+rkdlgc7kagXtraLQydE/Y03rApK
+KyHDNaSRReKwB2IPNCfr+6Iznh7Wa/WdJ+B2WZWnHfp9dX0ru6SWkq73zjtI7nHQ
+QTQ0kGZurmy0+eFLxOTCjapPp1o8VVj0z2mQo1UoI2Z9pHHyRr4Y+A/X9N+GuzJy
+ZmEVeYYqKL3Tcc86chYtbwSF6SRyo1yQQEYYHhgyUD0B6rFOD31clq2dlvWq1Pg=
+=BJXc
+-----END PGP SIGNATURE-----

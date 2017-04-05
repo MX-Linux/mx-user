@@ -48,7 +48,7 @@ public:
     void refreshAdd();
     void refreshDelete();
     void refreshChangePass();
-    void refreshClean();    
+    void refreshClean();
     void refreshGroups();
     void refreshMembership();
     void applyRestore();
@@ -97,6 +97,14 @@ private slots:
     void on_radioVerticalPanel_clicked();
     void on_checkXfce_clicked(bool checked);
     void on_comboChangePass_activated();
+    void on_toUserComboBox_activated();
+    void on_copyRadioButton_clicked();
+    void on_syncRadioButton_clicked();
+    void on_entireRadioButton_clicked();
+    void on_docsRadioButton_clicked();
+    void on_mozillaRadioButton_clicked();
+    void on_sharedRadioButton_clicked();
+    void on_toUserComboBox_currentIndexChanged(const QString &arg1);
 };
 
 #endif
