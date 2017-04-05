@@ -1,3 +1,9 @@
+mx-user (17.4mx16) mx; urgency=medium
+
+  * added option to copy home content to a folder
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 05 Apr 2017 11:27:24 -0400
+
 mx-user (17.3mx16) mx; urgency=medium
 
   * new translations
