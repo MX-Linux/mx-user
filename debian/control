@@ -1,7 +1,7 @@
 Source: mx-user
 Section: system
 Priority: optional
-Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Maintainer: adrian <adrian@mxlinux.org>
 Build-Depends: qt5-qmake,
 	qt5-default,
 	qttools5-dev-tools,
