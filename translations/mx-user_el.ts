@@ -16,7 +16,7 @@
         <location filename="../mconfig.cpp" line="994"/>
         <location filename="../mconfig.cpp" line="1002"/>
         <location filename="../mconfig.cpp" line="1009"/>
-        <location filename="../mconfig.cpp" line="1234"/>
+        <location filename="../mconfig.cpp" line="1235"/>
         <source>none</source>
         <translation>κανένα</translation>
     </message>
@@ -253,8 +253,8 @@ Please choose another name before proceeding.</source>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="934"/>
-        <location filename="../mconfig.cpp" line="1286"/>
-        <location filename="../mconfig.cpp" line="1294"/>
+        <location filename="../mconfig.cpp" line="1287"/>
+        <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -276,7 +276,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="1178"/>
         <location filename="../mconfig.cpp" line="1185"/>
-        <location filename="../mconfig.cpp" line="1192"/>
+        <location filename="../mconfig.cpp" line="1193"/>
         <source>MX User Manager</source>
         <translation>MX User Manager</translation>
     </message>
@@ -302,12 +302,12 @@ Please choose another name before proceeding.</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1192"/>
+        <location filename="../mconfig.cpp" line="1193"/>
         <source>Help</source>
         <translation>Βοήθεια </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1287"/>
+        <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
         <translation type="unfinished"></translation>
     </message>
@@ -839,52 +839,52 @@ Please choose another name before proceeding.</source>
         <translation>Εφαρμογή</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1678"/>
+        <location filename="../meconfig.ui" line="1677"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1685"/>
+        <location filename="../meconfig.ui" line="1684"/>
         <source>Cancel any changes then quit</source>
         <translation>Ακύρωση τις αλλαγές και μετά κλείστε</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1688"/>
+        <location filename="../meconfig.ui" line="1687"/>
         <source>Close</source>
         <translation>Κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1695"/>
+        <location filename="../meconfig.ui" line="1693"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1733"/>
+        <location filename="../meconfig.ui" line="1731"/>
         <source>Display help </source>
         <translation>Δείτε Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1736"/>
+        <location filename="../meconfig.ui" line="1734"/>
         <source>Help</source>
         <translation>Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1743"/>
+        <location filename="../meconfig.ui" line="1740"/>
         <source>Alt+H</source>
         <translation>Alt+H </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1750"/>
+        <location filename="../meconfig.ui" line="1747"/>
         <source>About this application</source>
         <translation>Περί εφαρμογής.</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1753"/>
+        <location filename="../meconfig.ui" line="1750"/>
         <source>About...</source>
         <translation>Περί</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1760"/>
+        <location filename="../meconfig.ui" line="1756"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
