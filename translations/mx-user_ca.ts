@@ -16,7 +16,7 @@
         <location filename="../mconfig.cpp" line="994"/>
         <location filename="../mconfig.cpp" line="1002"/>
         <location filename="../mconfig.cpp" line="1009"/>
-        <location filename="../mconfig.cpp" line="1234"/>
+        <location filename="../mconfig.cpp" line="1235"/>
         <source>none</source>
         <translation>cap</translation>
     </message>
@@ -250,8 +250,8 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="934"/>
-        <location filename="../mconfig.cpp" line="1286"/>
-        <location filename="../mconfig.cpp" line="1294"/>
+        <location filename="../mconfig.cpp" line="1287"/>
+        <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -273,7 +273,7 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1178"/>
         <location filename="../mconfig.cpp" line="1185"/>
-        <location filename="../mconfig.cpp" line="1192"/>
+        <location filename="../mconfig.cpp" line="1193"/>
         <source>MX User Manager</source>
         <translation>MX User Manager </translation>
     </message>
@@ -299,12 +299,12 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1192"/>
+        <location filename="../mconfig.cpp" line="1193"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1287"/>
+        <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
         <translation type="unfinished"></translation>
     </message>
@@ -832,52 +832,52 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
         <translation>Aplica</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1678"/>
+        <location filename="../meconfig.ui" line="1677"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1685"/>
+        <location filename="../meconfig.ui" line="1684"/>
         <source>Cancel any changes then quit</source>
         <translation>Cancel·la els canvis i surt</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1688"/>
+        <location filename="../meconfig.ui" line="1687"/>
         <source>Close</source>
         <translation>Tanca</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1695"/>
+        <location filename="../meconfig.ui" line="1693"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1733"/>
+        <location filename="../meconfig.ui" line="1731"/>
         <source>Display help </source>
         <translation>Mostra l&apos;ajuda</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1736"/>
+        <location filename="../meconfig.ui" line="1734"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1743"/>
+        <location filename="../meconfig.ui" line="1740"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1750"/>
+        <location filename="../meconfig.ui" line="1747"/>
         <source>About this application</source>
         <translation>Quant al programa</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1753"/>
+        <location filename="../meconfig.ui" line="1750"/>
         <source>About...</source>
         <translation>Quant a...</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1760"/>
+        <location filename="../meconfig.ui" line="1756"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>

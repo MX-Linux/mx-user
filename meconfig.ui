@@ -51,12 +51,12 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>2</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="userTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-user/icons/mx-user_one.png</normaloff>../../../../../../../../usr/share/mx-user/icons/mx-user_one.png</iconset>
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/mx-user_one.png</normaloff>:/icons/mx-user_one.png</iconset>
       </attribute>
       <attribute name="title">
        <string>Administration</string>
@@ -441,8 +441,8 @@
      </widget>
      <widget class="QWidget" name="repairTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-user/icons/package_development.png</normaloff>../../../../../../../../usr/share/mx-user/icons/package_development.png</iconset>
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/package_development.png</normaloff>:/icons/package_development.png</iconset>
       </attribute>
       <attribute name="title">
        <string>Options</string>
@@ -678,8 +678,8 @@
      </widget>
      <widget class="QWidget" name="copyTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-user/icons/edit-copy.png</normaloff>../../../../../../../../usr/share/mx-user/icons/edit-copy.png</iconset>
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/edit-copy.png</normaloff>:/icons/edit-copy.png</iconset>
       </attribute>
       <attribute name="title">
        <string>Copy/Sync</string>
@@ -1049,8 +1049,8 @@
      </widget>
      <widget class="QWidget" name="freeSpaceTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-user/icons/edit-clear.png</normaloff>../../../../../../../../usr/share/mx-user/icons/edit-clear.png</iconset>
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/edit-clear.png</normaloff>:/icons/edit-clear.png</iconset>
       </attribute>
       <attribute name="title">
        <string>Free Up Space</string>
@@ -1285,8 +1285,8 @@
      </widget>
      <widget class="QWidget" name="groupTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-user/icons/mx-user.png</normaloff>../../../../../../../../usr/share/mx-user/icons/mx-user.png</iconset>
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/mx-user.png</normaloff>:/icons/mx-user.png</iconset>
       </attribute>
       <attribute name="title">
        <string>Add/Remove Groups</string>
@@ -1465,8 +1465,8 @@
      </widget>
      <widget class="QWidget" name="membershipTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-user/icons/contact-new.png</normaloff>../../../../../../../../usr/share/mx-user/icons/contact-new.png</iconset>
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/contact-new.png</normaloff>:/icons/contact-new.png</iconset>
       </attribute>
       <attribute name="title">
        <string>Group Membership</string>
@@ -1671,8 +1671,7 @@
         <string>Apply</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-user/icons/dialog-ok.png</normaloff>../../../../../../../../usr/share/mx-user/icons/dialog-ok.png</iconset>
+        <iconset theme="dialog-ok"/>
        </property>
        <property name="shortcut">
         <string>Alt+A</string>
@@ -1688,8 +1687,7 @@
         <string>Close</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-user/icons/gtk-cancel.png</normaloff>../../../../../../../../usr/share/mx-user/icons/gtk-cancel.png</iconset>
+        <iconset theme="window-close"/>
        </property>
        <property name="shortcut">
         <string>Alt+N</string>
@@ -1736,8 +1734,7 @@
         <string>Help</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-user/icons/gnome-help.png</normaloff>../../../../../../../../usr/share/mx-user/icons/gnome-help.png</iconset>
+        <iconset theme="help-contents"/>
        </property>
        <property name="shortcut">
         <string>Alt+H</string>
@@ -1753,8 +1750,7 @@
         <string>About...</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-user/icons/accessories-text-editor.png</normaloff>../../../../../../../../usr/share/mx-user/icons/accessories-text-editor.png</iconset>
+        <iconset theme="help-about"/>
        </property>
        <property name="shortcut">
         <string>Alt+B</string>
@@ -1803,6 +1799,8 @@
   <tabstop>userPasswordEdit</tabstop>
   <tabstop>userPassword2Edit</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
 </ui>

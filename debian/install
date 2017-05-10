@@ -2,5 +2,4 @@ mx-user 		usr/sbin
 mx-user.desktop		usr/share/applications
 mx-user.png             usr/share/pixmaps
 translations/*.qm 	usr/share/mx-user/locale
-icons/*                 usr/share/mx-user/icons
 license.html		usr/share/doc/mx-user
