@@ -429,7 +429,7 @@ void MConfig::applyRestore() {
     }
     // restore APT configs
     if (checkApt->isChecked()) {
-        QString mx_version = getCmdOut("lsb_release -rs");
+        QString mx_version = getCmdOut("lsb_release -rs").left(2);
         if (mx_version != "15" && mx_version != "16") {
             qDebug() << "MX version not detected or out of range: " << mx_version;
             return;
