@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -253,7 +251,7 @@ prego, scegli un altro nome prima di procedere.</translation>
         <location filename="../mconfig.cpp" line="1287"/>
         <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>navigazione...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1108"/>
@@ -306,7 +304,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona cartella su cui copiare</translation>
     </message>
 </context>
 <context>
@@ -392,32 +390,32 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="256"/>
         <source>Change User Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia la Password Utente</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="271"/>
         <source>new password</source>
-        <translation type="unfinished"></translation>
+        <translation>nuova password</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="284"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Conferma la nuova password:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="294"/>
         <source>confirm new password</source>
-        <translation type="unfinished"></translation>
+        <translation>conferma la nuova password</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="301"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona utente da modificare:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="314"/>
         <source>New user password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuova password utente:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="346"/>
@@ -427,7 +425,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="389"/>
         <source>Select user</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona utente</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="405"/>
@@ -566,7 +564,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="670"/>
         <source>Require password to log in</source>
-        <translation>Si richiede la password per il login</translation>
+        <translation>Richiesta della password al login</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="685"/>
@@ -603,7 +601,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="793"/>
         <source>Copy to:</source>
-        <translation>Copia a:</translation>
+        <translation>Copia su:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="815"/>
@@ -648,7 +646,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="915"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation>Configurazioni di Mozilla (Firefox o Iceweasel)</translation>
+        <translation>Configurazione di Mozilla (Firefox o Iceweasel)</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="928"/>
@@ -694,7 +692,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1062"/>
         <source>Free Disk Space for User</source>
-        <translation type="unfinished"></translation>
+        <translation>Spazio Libero, per l&apos;Utente, sul Disco</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1090"/>
@@ -704,7 +702,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1116"/>
         <source>Folders to Clean</source>
-        <translation type="unfinished"></translation>
+        <translation>Cartelle da pulire</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1122"/>
@@ -724,7 +722,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1155"/>
         <source>Clear APT Cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Pulisci la Cache di APT</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1161"/>
@@ -739,7 +737,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1181"/>
         <source>Delete Logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina i Logs</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1187"/>
@@ -769,7 +767,7 @@ prego, scegli un altro nome prima di procedere.</translation>
     <message>
         <location filename="../meconfig.ui" line="1245"/>
         <source>Graphical Tool for Analysing Disk Usage</source>
-        <translation type="unfinished"></translation>
+        <translation>Strumento Grafico di Analisi dell&apos;Uso del Disco</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1251"/>

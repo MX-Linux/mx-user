@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -124,13 +122,13 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
         <location filename="../mconfig.cpp" line="614"/>
         <location filename="../mconfig.cpp" line="660"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die eingetragenen Passwörter gleichen sich nicht.  Versuchen Sie es bitte noch einmal.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="619"/>
         <location filename="../mconfig.cpp" line="665"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Das Benutzer-Passwort muss mindestens 2 Zeichen lang sein. Bitte wählen Sie ein längeres Passwort, bevor Sie weitermachen.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="647"/>
@@ -145,12 +143,12 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../mconfig.cpp" line="690"/>
         <source>Password successfully changed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Passwort erfolgreich geändert.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="694"/>
         <source>Failed to change password.</source>
-        <translation type="unfinished"></translation>
+        <translation>Änderung des Passworts fehlgeschlagen.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="699"/>
@@ -253,7 +251,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
         <location filename="../mconfig.cpp" line="1287"/>
         <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1108"/>
@@ -306,7 +304,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -339,7 +337,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../meconfig.ui" line="141"/>
         <source>confirm password</source>
-        <translation type="unfinished"></translation>
+        <translation>Passwort bestätigen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="154"/>
@@ -392,32 +390,32 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../meconfig.ui" line="256"/>
         <source>Change User Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzerpasswort ändern</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="271"/>
         <source>new password</source>
-        <translation type="unfinished"></translation>
+        <translation>Neues Passwort</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="284"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Neues Passwort bestätigen:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="294"/>
         <source>confirm new password</source>
-        <translation type="unfinished"></translation>
+        <translation>Neues Passwort bestätigen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="301"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzer auswählen, der geändert werden soll:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="314"/>
         <source>New user password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Neues Benutzerpasswort:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="346"/>
@@ -427,7 +425,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../meconfig.ui" line="389"/>
         <source>Select user</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzer wählen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="405"/>
@@ -694,7 +692,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../meconfig.ui" line="1062"/>
         <source>Free Disk Space for User</source>
-        <translation type="unfinished"></translation>
+        <translation>Freier Festplattenspeicher für den Benutzer</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1090"/>
@@ -704,7 +702,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../meconfig.ui" line="1116"/>
         <source>Folders to Clean</source>
-        <translation type="unfinished"></translation>
+        <translation>Zu leerende Ordner</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1122"/>
@@ -724,7 +722,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../meconfig.ui" line="1155"/>
         <source>Clear APT Cache</source>
-        <translation type="unfinished"></translation>
+        <translation>APT Cache leeren</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1161"/>
@@ -739,7 +737,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../meconfig.ui" line="1181"/>
         <source>Delete Logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Logs löschen</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1187"/>
@@ -769,7 +767,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     <message>
         <location filename="../meconfig.ui" line="1245"/>
         <source>Graphical Tool for Analysing Disk Usage</source>
-        <translation type="unfinished"></translation>
+        <translation>Graphisches Werzeug zur Analyse der Festplattennutzung</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1251"/>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -253,7 +251,7 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
         <location filename="../mconfig.cpp" line="1287"/>
         <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>bläddra...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1108"/>
@@ -306,7 +304,7 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj katalog att kopiera till</translation>
     </message>
 </context>
 <context>

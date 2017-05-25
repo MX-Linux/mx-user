@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -140,7 +138,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../mconfig.cpp" line="651"/>
         <source>Failed to add the user.</source>
-        <translation>A addição do utilizador falhou.</translation>
+        <translation>A adição do utilizador falhou.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="690"/>
@@ -155,7 +153,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../mconfig.cpp" line="699"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation>Esta accção não pode ser revertida. Tem a certeza de que pretende eliminar o utilizador %1?</translation>
+        <translation>Esta acção não pode ser revertida. Tem a certeza de que pretende eliminar o utilizador %1?</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="712"/>
@@ -178,7 +176,7 @@ Escolha outro nome de utilizador.</translation>
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation>O nome de grupo tem que estar em minúsculas
-e não pode conter caracteres especiais ou espaços.
+e não pode conter carácteres especiais ou espaços.
 Escolha outro nome de utilizador.</translation>
     </message>
     <message>
@@ -230,13 +228,13 @@ Escolha outro nome de utilizador.</translation>
         <location filename="../mconfig.cpp" line="849"/>
         <location filename="../mconfig.cpp" line="888"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>A sincronizar ambiente de trabalho... feito</translation>
+        <translation>A sincronizar ambiente de trabalho... concluído.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="851"/>
         <location filename="../mconfig.cpp" line="890"/>
         <source>Copying desktop...ok</source>
-        <translation>A copiar ambiente de trabalho... feito</translation>
+        <translation>A copiar ambiente de trabalho... concluído.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="894"/>
@@ -253,7 +251,7 @@ Escolha outro nome de utilizador.</translation>
         <location filename="../mconfig.cpp" line="1287"/>
         <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>percorrer...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1108"/>
@@ -306,7 +304,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionar pasta para onde copiar</translation>
     </message>
 </context>
 <context>
@@ -446,7 +444,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="427"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation>Eliminar também a directoria &apos;home&apos; do utilizador</translation>
+        <translation>Eliminar também o directório &apos;home&apos; do utilizador</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="430"/>
@@ -481,7 +479,7 @@ Escolha outro nome de utilizador.</translation>
         <location filename="../meconfig.ui" line="500"/>
         <location filename="../meconfig.ui" line="1568"/>
         <source>User to change:</source>
-        <translation>Utilizador a mudar:</translation>
+        <translation>Utilizador a alterar:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="551"/>
@@ -491,7 +489,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="572"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation>Restablecer as configurações do navegador para as predefinições do MX</translation>
+        <translation>Restablecer as configurações do navegador para as pré-definições do MX</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="578"/>
@@ -506,7 +504,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="588"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation>Restabelecer a pertença a grupos para as predefinições do MX</translation>
+        <translation>Restabelecer a pertença a grupos para as pré-definições do MX</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="594"/>
@@ -521,7 +519,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="604"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation>Restabelecer as funcionalidades APT para as predefinições do MX </translation>
+        <translation>Restabelecer as funcionalidades APT para as pré-definições do MX </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="607"/>
@@ -531,12 +529,12 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="614"/>
         <source>Restore Xfce defaults</source>
-        <translation>Restablecer as predefinições do Xfce</translation>
+        <translation>Restablecer as pré-definições do Xfce</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="624"/>
         <source>Select Panel Options</source>
-        <translation>Selecione Configurações do Painel</translation>
+        <translation>Seleccione Configurações do Painel</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="630"/>
@@ -546,7 +544,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="637"/>
         <source>Restore default configuration</source>
-        <translation>Restaurar a configuração predefinida</translation>
+        <translation>Restaurar a configuração pré-definida</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="647"/>
@@ -582,23 +580,23 @@ Escolha outro nome de utilizador.</translation>
         <location filename="../meconfig.ui" line="739"/>
         <location filename="../meconfig.ui" line="806"/>
         <source>Select desktop to copy from</source>
-        <translation>Selecionar o ambiente de trabalho de onde copiar</translation>
+        <translation>Seleccionar o ambiente de trabalho de onde copiar</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="752"/>
         <source>Select to only copy files</source>
-        <translation>Selecionar para apenas copiar ficheiros</translation>
+        <translation>Selecionar apenas para copiar ficheiros</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="755"/>
         <source>Copy only</source>
-        <translation>Copiar apenas</translation>
+        <translation>Apenas copiar</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="771"/>
         <location filename="../meconfig.ui" line="784"/>
         <source>Select desktop to copy to</source>
-        <translation>Selecionar o ambiente de trabalho para onde copiar</translation>
+        <translation>Seleccionar o ambiente de trabalho para onde copiar</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="793"/>
@@ -613,7 +611,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="828"/>
         <source>Select to copy and then delete differences</source>
-        <translation>Selecionar para copiar e de seguida eliminar diferenças</translation>
+        <translation>Seleccionar para copiar e de seguida eliminar diferenças</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="831"/>
@@ -623,7 +621,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="877"/>
         <source>Select to copy/sync Shared</source>
-        <translation>Selecionar para copiar/sincronizar Partilhado</translation>
+        <translation>Seleccionar para copiar/sincronizar Partilhado</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="880"/>
@@ -633,7 +631,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="893"/>
         <source>Select to copy/sync entire home</source>
-        <translation>Selecionar para copiar/sincronizar toda a pasta home</translation>
+        <translation>Seleccionar para copiar/sincronizar toda a pasta home</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="896"/>
@@ -643,7 +641,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="912"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation>Selecionar para copiar/sincronizar a configuração do navegador</translation>
+        <translation>Seleccionar para copiar/sincronizar a configuração do navegador</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="915"/>
@@ -653,7 +651,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="928"/>
         <source>Select to copy/sync Documents</source>
-        <translation>Selecionar para copiar/sincronizar a pasta Documentos</translation>
+        <translation>Seleccionar para copiar/sincronizar a pasta Documentos</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="931"/>
@@ -759,7 +757,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="1225"/>
         <source>selected user Trash</source>
-        <translation>selecionado o Lixo do utilizador</translation>
+        <translation>Lixo do utilizador seleccionado</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1235"/>
@@ -854,7 +852,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../meconfig.ui" line="1731"/>
         <source>Display help </source>
-        <translation>Mostrar a ajuda</translation>
+        <translation>Exibir a ajuda</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1734"/>
@@ -887,7 +885,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>Tem que executar este programa como root</translation>
+        <translation>Tem que executar este programa como administrador (root).</translation>
     </message>
 </context>
 </TS>

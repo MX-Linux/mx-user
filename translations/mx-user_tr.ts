@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="tr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -67,7 +65,7 @@
     <message>
         <location filename="../mconfig.cpp" line="479"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="500"/>
@@ -79,17 +77,17 @@
         <location filename="../mconfig.cpp" line="501"/>
         <location filename="../mconfig.cpp" line="524"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="542"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="546"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="571"/>
@@ -104,14 +102,14 @@
     <message>
         <location filename="../mconfig.cpp" line="596"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="600"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="609"/>
@@ -128,12 +126,12 @@ Please choose another name before proceeding.</source>
         <location filename="../mconfig.cpp" line="619"/>
         <location filename="../mconfig.cpp" line="665"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="647"/>
         <source>The user was added ok.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="651"/>
@@ -143,7 +141,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="690"/>
         <source>Password successfully changed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="694"/>
@@ -153,7 +151,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="699"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="712"/>
@@ -168,14 +166,14 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="728"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="732"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="741"/>
@@ -185,17 +183,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="748"/>
         <source>The system group was added ok.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="751"/>
         <source>Failed to add the system group.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="754"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="761"/>
@@ -220,7 +218,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="791"/>
         <source>Failed to apply group changes</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="849"/>
@@ -249,7 +247,7 @@ Please choose another name before proceeding.</source>
         <location filename="../mconfig.cpp" line="1287"/>
         <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1108"/>
@@ -259,7 +257,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="1109"/>
         <source>Wait while Baobab is installing...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1177"/>
@@ -302,7 +300,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -457,7 +455,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="451"/>
         <source>Repair a user configuration</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="485"/>
@@ -471,7 +469,7 @@ Please choose another name before proceeding.</source>
         <location filename="../meconfig.ui" line="1074"/>
         <location filename="../meconfig.ui" line="1087"/>
         <source>Select user to repair</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="500"/>
@@ -487,7 +485,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="572"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="578"/>
@@ -502,7 +500,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="588"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="594"/>
@@ -517,7 +515,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="604"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="607"/>
@@ -527,7 +525,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="614"/>
         <source>Restore Xfce defaults</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="624"/>
@@ -537,7 +535,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="630"/>
         <source>Display default panel horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="637"/>
@@ -567,34 +565,34 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="685"/>
         <source>Copy/Sync</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="712"/>
         <source>Copy Between Desktops</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="739"/>
         <location filename="../meconfig.ui" line="806"/>
         <source>Select desktop to copy from</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="752"/>
         <source>Select to only copy files</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="755"/>
         <source>Copy only</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="771"/>
         <location filename="../meconfig.ui" line="784"/>
         <source>Select desktop to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="793"/>
@@ -609,7 +607,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="828"/>
         <source>Select to copy and then delete differences</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="831"/>
@@ -619,7 +617,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="877"/>
         <source>Select to copy/sync Shared</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="880"/>
@@ -629,17 +627,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="893"/>
         <source>Select to copy/sync entire home</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="896"/>
         <source>Entire home</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="912"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="915"/>
@@ -649,7 +647,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="928"/>
         <source>Select to copy/sync Documents</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="931"/>
@@ -659,7 +657,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="938"/>
         <source>What to copy/sync:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="954"/>
@@ -680,7 +678,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1019"/>
         <source>Progress of the changes</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1056"/>
@@ -700,22 +698,22 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1116"/>
         <source>Folders to Clean</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1122"/>
         <source>Delete /tmp files</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1132"/>
         <source>Delete ~/.thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1142"/>
         <source>Delete ~/.cache</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1155"/>
@@ -725,7 +723,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1161"/>
         <source>autoclean (only removes old cache files that can no longer be downloaded)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1171"/>
@@ -755,12 +753,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1225"/>
         <source>selected user Trash</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1235"/>
         <source>empty Trash for all users</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1245"/>
@@ -810,12 +808,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1588"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1608"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1668"/>
