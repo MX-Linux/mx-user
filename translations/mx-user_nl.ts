@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -253,7 +251,7 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <location filename="../mconfig.cpp" line="1287"/>
         <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>navigeer...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1108"/>
@@ -306,7 +304,7 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation>Kies map om naar toe te kopiëren</translation>
     </message>
 </context>
 <context>

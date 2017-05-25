@@ -3,6 +3,7 @@ QT       += core gui widgets
 TEMPLATE = app
 TARGET = mx-user
 TRANSLATIONS += translations/mx-user_ca.ts \
+                translations/mx-user_cs.ts \
                 translations/mx-user_de.ts \
                 translations/mx-user_el.ts \
                 translations/mx-user_es.ts \
@@ -17,6 +18,7 @@ TRANSLATIONS += translations/mx-user_ca.ts \
                 translations/mx-user_pt_BR.ts \
                 translations/mx-user_ro.ts \
                 translations/mx-user_ru.ts \
+                translations/mx-user_sk.ts \
                 translations/mx-user_sv.ts \
                 translations/mx-user_tr.ts
 

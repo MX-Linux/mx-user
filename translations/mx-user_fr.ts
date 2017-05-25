@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -73,13 +71,13 @@
         <location filename="../mconfig.cpp" line="500"/>
         <location filename="../mconfig.cpp" line="523"/>
         <source>Panel settings</source>
-        <translation>Paramètres du panneau</translation>
+        <translation>Paramètres du tableau de bord</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="501"/>
         <location filename="../mconfig.cpp" line="524"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation>Vos paramètres actuels du panneau ont été sauvegardés dans un dossier caché appelé .restore dans votre dossier Home (~/.restore/)</translation>
+        <translation>Vos paramètres actuels du tableau de bord ont été sauvegardés dans un dossier caché appelé .restore dans votre dossier Home (~/.restore/)</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="542"/>
@@ -253,7 +251,7 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
         <location filename="../mconfig.cpp" line="1287"/>
         <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>Navigation...</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1108"/>
@@ -306,7 +304,7 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionner le répertoire de destination</translation>
     </message>
 </context>
 <context>
@@ -536,12 +534,12 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="../meconfig.ui" line="624"/>
         <source>Select Panel Options</source>
-        <translation>Sélectionner les options du panneau</translation>
+        <translation>Sélectionner les options du tableau de bord</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="630"/>
         <source>Display default panel horizontally</source>
-        <translation>Afficher horizontalement le panneau par défaut </translation>
+        <translation>Par défaut afficher horizontalement le tableau de bord </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="637"/>
@@ -819,7 +817,7 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="../meconfig.ui" line="1608"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>* Veuillez vérifier attentivement vos sélections avant d&apos;appliquer, car en attribuant de mauvaises adhésions de groupe vous pouvez casser votre système. Utilisez l&apos;onglet de réparation pour restaurer les appartenances d&apos;origine si vous avez fait une erreur.</translation>
+        <translation>* Veuillez vérifier attentivement vos sélections avant d&apos;appliquer, car attribuer des adhésions de groupe de manière incorrecte peut casser votre système. En cas d&apos;erreur, utilisez l&apos;onglet de réparation pour restaurer les appartenances d&apos;origine .</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1668"/>
