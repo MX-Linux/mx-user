@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ja">
 <context>
     <name>MConfig</name>
     <message>
@@ -122,13 +124,13 @@ Please choose another name before proceeding.</source>
         <location filename="../mconfig.cpp" line="614"/>
         <location filename="../mconfig.cpp" line="660"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="619"/>
         <location filename="../mconfig.cpp" line="665"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="647"/>
@@ -143,12 +145,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="690"/>
         <source>Password successfully changed.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="694"/>
         <source>Failed to change password.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="699"/>
@@ -251,7 +253,7 @@ Please choose another name before proceeding.</source>
         <location filename="../mconfig.cpp" line="1287"/>
         <location filename="../mconfig.cpp" line="1295"/>
         <source>browse...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1108"/>
@@ -304,7 +306,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="1288"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -337,7 +339,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="141"/>
         <source>confirm password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="154"/>
@@ -390,32 +392,32 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="256"/>
         <source>Change User Password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="271"/>
         <source>new password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="284"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="294"/>
         <source>confirm new password</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="301"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="314"/>
         <source>New user password:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="346"/>
@@ -425,7 +427,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="389"/>
         <source>Select user</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="405"/>
@@ -692,7 +694,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1062"/>
         <source>Free Disk Space for User</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1090"/>
@@ -702,7 +704,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1116"/>
         <source>Folders to Clean</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1122"/>
@@ -722,7 +724,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1155"/>
         <source>Clear APT Cache</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1161"/>
@@ -737,7 +739,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1181"/>
         <source>Delete Logs</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1187"/>
@@ -767,7 +769,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../meconfig.ui" line="1245"/>
         <source>Graphical Tool for Analysing Disk Usage</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="1251"/>
