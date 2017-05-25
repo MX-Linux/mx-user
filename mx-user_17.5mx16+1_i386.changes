@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 25 May 2017 11:24:20 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 17.5mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (17.5mx16+1) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ 802b41766862999482076a2f1931f8ac698c010d 122436 mx-user_17.5mx16+1_i386.deb
+Checksums-Sha256:
+ edc903b7562cc4ac848bc5df1591704213922e0efb225c5bbc2b6fff3d4af9b3 122436 mx-user_17.5mx16+1_i386.deb
+Files:
+ 10ae938407d9aca0f268cda3e36fa4b8 122436 system optional mx-user_17.5mx16+1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZJvedAAoJEHCTjHgGee6YiN4IALXek1ltm+32lWIn56/kg35d
+nnW62Qx1S9NeZdJ9MjrvSZ0oygMHZ6gzxOT6XmnFQDoz5rZbv7aM5CMZu/fpFUnn
+li8DPdUNL4ZXEd2VWFDAOD86ffHTxogidLWgR6N3ZetzAsEQmMlTWwb40qr7xXMY
+59qydkF2KN7cl2ZSD26qJWoyutrzQcIurBXU213DQoyetkbRWhKJ3tnncjR6KuwK
+U/2Hm28CAGnQy09c1nBQHCxN7sIy8ffzhdcCr4e6M2CFNbWTvnNgHNU680Y+nmsr
+6aYRfHYOE8YoBwm4o/NIvj3sbQwWbt3XEX7Oo1lohSyx/CORQsdhgMiArb4NiUQ=
+=Xrf3
+-----END PGP SIGNATURE-----
