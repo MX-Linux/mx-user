@@ -93,9 +93,6 @@ protected slots:
 
 private slots:
     void on_baobabPushButton_clicked();
-    void on_radioHorizontalPanel_clicked();
-    void on_radioVerticalPanel_clicked();
-    void on_checkXfce_clicked(bool checked);
     void on_comboChangePass_activated();
     void on_toUserComboBox_activated();
     void on_copyRadioButton_clicked();
