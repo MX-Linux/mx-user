@@ -5,109 +5,103 @@
     <name>MConfig</name>
     <message>
         <location filename="../mconfig.cpp" line="188"/>
-        <location filename="../mconfig.cpp" line="264"/>
-        <location filename="../mconfig.cpp" line="292"/>
-        <location filename="../mconfig.cpp" line="328"/>
-        <location filename="../mconfig.cpp" line="354"/>
-        <location filename="../mconfig.cpp" line="376"/>
-        <location filename="../mconfig.cpp" line="399"/>
-        <location filename="../mconfig.cpp" line="939"/>
-        <location filename="../mconfig.cpp" line="969"/>
-        <location filename="../mconfig.cpp" line="994"/>
-        <location filename="../mconfig.cpp" line="1002"/>
-        <location filename="../mconfig.cpp" line="1009"/>
-        <location filename="../mconfig.cpp" line="1235"/>
+        <location filename="../mconfig.cpp" line="257"/>
+        <location filename="../mconfig.cpp" line="285"/>
+        <location filename="../mconfig.cpp" line="321"/>
+        <location filename="../mconfig.cpp" line="347"/>
+        <location filename="../mconfig.cpp" line="369"/>
+        <location filename="../mconfig.cpp" line="392"/>
+        <location filename="../mconfig.cpp" line="870"/>
+        <location filename="../mconfig.cpp" line="885"/>
+        <location filename="../mconfig.cpp" line="910"/>
+        <location filename="../mconfig.cpp" line="918"/>
+        <location filename="../mconfig.cpp" line="925"/>
+        <location filename="../mconfig.cpp" line="1126"/>
         <source>none</source>
         <translation>ingen</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="411"/>
+        <location filename="../mconfig.cpp" line="404"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Användar-konfigurationen kommer att repareras. Var vänlig stäng alla andra program nu. När det är klart, logga ut eller starta om. Är du säker på att du vill reparera nu?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="412"/>
-        <location filename="../mconfig.cpp" line="547"/>
-        <location filename="../mconfig.cpp" line="701"/>
-        <location filename="../mconfig.cpp" line="756"/>
-        <location filename="../mconfig.cpp" line="783"/>
+        <location filename="../mconfig.cpp" line="405"/>
+        <location filename="../mconfig.cpp" line="478"/>
+        <location filename="../mconfig.cpp" line="632"/>
+        <location filename="../mconfig.cpp" line="687"/>
+        <location filename="../mconfig.cpp" line="714"/>
         <source>Yes</source>
         <translation>Ja</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="412"/>
-        <location filename="../mconfig.cpp" line="547"/>
-        <location filename="../mconfig.cpp" line="701"/>
-        <location filename="../mconfig.cpp" line="756"/>
-        <location filename="../mconfig.cpp" line="783"/>
+        <location filename="../mconfig.cpp" line="405"/>
+        <location filename="../mconfig.cpp" line="478"/>
+        <location filename="../mconfig.cpp" line="632"/>
+        <location filename="../mconfig.cpp" line="687"/>
+        <location filename="../mconfig.cpp" line="714"/>
         <source>No</source>
         <translation>Nej</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="457"/>
-        <location filename="../mconfig.cpp" line="468"/>
+        <location filename="../mconfig.cpp" line="450"/>
+        <location filename="../mconfig.cpp" line="461"/>
         <source>Autologin options</source>
         <translation>Autologin-alternativ</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="458"/>
+        <location filename="../mconfig.cpp" line="451"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
         <translation>Autologin har stängts av för &apos;%1&apos; kontot.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="469"/>
+        <location filename="../mconfig.cpp" line="462"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation>Autologin har möjliggjorts för &apos;%1&apos; kontot.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="478"/>
         <source>Xfce settings</source>
-        <translation>Xfce-inställningar</translation>
+        <translation type="vanished">Xfce-inställningar</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="479"/>
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation>Dina nuvarande Xfce-inställningar har sparats i en dold mapp som heter  .restore i din hem-katalog (~/.restore/)</translation>
+        <translation type="vanished">Dina nuvarande Xfce-inställningar har sparats i en dold mapp som heter  .restore i din hem-katalog (~/.restore/)</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="500"/>
-        <location filename="../mconfig.cpp" line="523"/>
         <source>Panel settings</source>
-        <translation>Panel-inställningar</translation>
+        <translation type="vanished">Panel-inställningar</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="501"/>
-        <location filename="../mconfig.cpp" line="524"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
-        <translation>Dina nuvarande panel-inställningar har sparats i en dold mapp som heter .restore i din hem-katalog (~/.restore/)</translation>
+        <translation type="vanished">Dina nuvarande panel-inställningar har sparats i en dold mapp som heter .restore i din hem-katalog (~/.restore/)</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="542"/>
+        <location filename="../mconfig.cpp" line="473"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation>Du måste ange en plats att &quot;kopiera till&quot;. Du kan inte kopiera till skrivbordet du är inloggad till.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="546"/>
+        <location filename="../mconfig.cpp" line="477"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>Innan kopiering, stäng alla andra program. Var säker på att platsen du kopierar till är stor nog att rymma filerna du kopierar. Att kopiera mellan skrivbord kan skriva över eller ta bort filer eller preferenser på mål-skrivbordet. Är du säker på att du vill fortsätta?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="571"/>
+        <location filename="../mconfig.cpp" line="502"/>
         <source>Synchronizing desktop...</source>
         <translation>Synkroniserar skrivbord...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="573"/>
+        <location filename="../mconfig.cpp" line="504"/>
         <source>Copying desktop...</source>
         <translation>Kopierar skrivbord...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="596"/>
+        <location filename="../mconfig.cpp" line="527"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Användarnamnet måste vara åtminstone 2 bokstäver långt. Var vänlig välj ett längre namn innan du går vidare.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="600"/>
+        <location filename="../mconfig.cpp" line="531"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -116,64 +110,64 @@ Please choose another name before proceeding.</source>
  Var vänlig välj ett annat namn innan du fortsätter.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="609"/>
+        <location filename="../mconfig.cpp" line="540"/>
         <source>Sorry that name is in use. Please select a different name.</source>
         <translation>Ledsen, det namnet är upptaget. Var vänlig välj ett annat namn.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="614"/>
-        <location filename="../mconfig.cpp" line="660"/>
+        <location filename="../mconfig.cpp" line="545"/>
+        <location filename="../mconfig.cpp" line="591"/>
         <source>Password entries do not match. Please try again.</source>
         <translation>Lösenorden stämmer inte överens. Var vänlig försök igen.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="619"/>
-        <location filename="../mconfig.cpp" line="665"/>
+        <location filename="../mconfig.cpp" line="550"/>
+        <location filename="../mconfig.cpp" line="596"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
         <translation>Lösenordet måste vara åtminstone 2 bokstäver långt. Var vänlig välj ett längre lösenord innan du fortsätter.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="647"/>
+        <location filename="../mconfig.cpp" line="578"/>
         <source>The user was added ok.</source>
         <translation>Det gick bra att lägga till användaren.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="651"/>
+        <location filename="../mconfig.cpp" line="582"/>
         <source>Failed to add the user.</source>
         <translation>Misslyckades med att lägga till användaren.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="690"/>
+        <location filename="../mconfig.cpp" line="621"/>
         <source>Password successfully changed.</source>
         <translation>Lyckades byta lösenord.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="694"/>
+        <location filename="../mconfig.cpp" line="625"/>
         <source>Failed to change password.</source>
         <translation>Misslyckades med att byta lösenord</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="699"/>
+        <location filename="../mconfig.cpp" line="630"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation>Denna åtgärd kan inte göras ogjord. Är du säker på att du vill ta bort användare %1?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="712"/>
+        <location filename="../mconfig.cpp" line="643"/>
         <source>The user has been deleted.</source>
         <translation>Användaren har tagits bort.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="715"/>
+        <location filename="../mconfig.cpp" line="646"/>
         <source>Failed to delete the user.</source>
         <translation>Misslyckades med att ta bort användaren.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="728"/>
+        <location filename="../mconfig.cpp" line="659"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Grupp-namnet måste vara åtminstone 2 bokstäver långt. Var vänlig välj ett längre namn innan du fortsätter.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="732"/>
+        <location filename="../mconfig.cpp" line="663"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -182,129 +176,129 @@ kan inte innehålla specialtecken eller mellanslag.
 Var vänlig välj ett annat namn innan du fortsätter.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="741"/>
+        <location filename="../mconfig.cpp" line="672"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
         <translation>Ledsen, grupp-namnet finns redan. Var vänlig välj ett annat namn.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="748"/>
+        <location filename="../mconfig.cpp" line="679"/>
         <source>The system group was added ok.</source>
         <translation>Det gick bra att lägga till system-gruppen.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="751"/>
+        <location filename="../mconfig.cpp" line="682"/>
         <source>Failed to add the system group.</source>
         <translation>Misslyckades med att lägga till system-gruppen.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="754"/>
+        <location filename="../mconfig.cpp" line="685"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation>Denna åtgärd kan inte göras ogjord. Är du säker på att du vill ta bort grupp %1?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="761"/>
+        <location filename="../mconfig.cpp" line="692"/>
         <source>The group has been deleted.</source>
         <translation>Gruppen har tagits bort.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="764"/>
+        <location filename="../mconfig.cpp" line="695"/>
         <source>Failed to delete the group.</source>
         <translation>Misslyckades med att ta bort gruppen.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="782"/>
+        <location filename="../mconfig.cpp" line="713"/>
         <source>Are you sure you want to make these changes?</source>
         <translation>Är du säker på att du vill göra ändringarna?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="788"/>
+        <location filename="../mconfig.cpp" line="719"/>
         <source>The changes have been applied.</source>
         <translation>Ändringarna har gjorts.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="791"/>
+        <location filename="../mconfig.cpp" line="722"/>
         <source>Failed to apply group changes</source>
         <translation>Misslyckades med att göra grupp-ändringarna.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="849"/>
-        <location filename="../mconfig.cpp" line="888"/>
+        <location filename="../mconfig.cpp" line="780"/>
+        <location filename="../mconfig.cpp" line="819"/>
         <source>Synchronizing desktop...ok</source>
         <translation>Synkroniserar skrivbord...O.K.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="851"/>
-        <location filename="../mconfig.cpp" line="890"/>
+        <location filename="../mconfig.cpp" line="782"/>
+        <location filename="../mconfig.cpp" line="821"/>
         <source>Copying desktop...ok</source>
         <translation>Kopierar skrivbord...O.K.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="894"/>
+        <location filename="../mconfig.cpp" line="825"/>
         <source>Synchronizing desktop...failed</source>
         <translation>Synkroniserar skrivbord...misslyckades</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="896"/>
+        <location filename="../mconfig.cpp" line="827"/>
         <source>Copying desktop...failed</source>
         <translation>Kopierar skrivbord...misslyckades</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="934"/>
-        <location filename="../mconfig.cpp" line="1287"/>
-        <location filename="../mconfig.cpp" line="1295"/>
+        <location filename="../mconfig.cpp" line="865"/>
+        <location filename="../mconfig.cpp" line="1178"/>
+        <location filename="../mconfig.cpp" line="1186"/>
         <source>browse...</source>
         <translation>bläddra...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1108"/>
+        <location filename="../mconfig.cpp" line="1024"/>
         <source>Baobab installation</source>
         <translation>Baobab installering</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1109"/>
+        <location filename="../mconfig.cpp" line="1025"/>
         <source>Wait while Baobab is installing...</source>
         <translation>Vänta medan Baobab installeras...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1177"/>
+        <location filename="../mconfig.cpp" line="1093"/>
         <source>About MX User Manager</source>
         <translation>Om MX Användarhanterare</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1178"/>
-        <location filename="../mconfig.cpp" line="1185"/>
-        <location filename="../mconfig.cpp" line="1193"/>
+        <location filename="../mconfig.cpp" line="1094"/>
+        <location filename="../mconfig.cpp" line="1101"/>
+        <location filename="../mconfig.cpp" line="1109"/>
         <source>MX User Manager</source>
         <translation>MX Användarhanterare</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1180"/>
+        <location filename="../mconfig.cpp" line="1096"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>Enkel användar-konfiguration för MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1181"/>
+        <location filename="../mconfig.cpp" line="1097"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1182"/>
-        <location filename="../mconfig.cpp" line="1185"/>
+        <location filename="../mconfig.cpp" line="1098"/>
+        <location filename="../mconfig.cpp" line="1101"/>
         <source>License</source>
         <translation>Licens</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1183"/>
+        <location filename="../mconfig.cpp" line="1099"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1193"/>
+        <location filename="../mconfig.cpp" line="1109"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1288"/>
+        <location filename="../mconfig.cpp" line="1179"/>
         <source>Select folder to copy to</source>
         <translation>Välj katalog att kopiera till</translation>
     </message>
@@ -343,7 +337,7 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="154"/>
-        <location filename="../meconfig.ui" line="1331"/>
+        <location filename="../meconfig.ui" line="1291"/>
         <source>Username of new user</source>
         <translation>Ny användares användar-namn</translation>
     </message>
@@ -354,7 +348,7 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="170"/>
-        <location filename="../meconfig.ui" line="1347"/>
+        <location filename="../meconfig.ui" line="1307"/>
         <source>Enter username of new user</source>
         <translation>Skriv in den nya användarens användar-namn</translation>
     </message>
@@ -431,10 +425,10 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="405"/>
-        <location filename="../meconfig.ui" line="1422"/>
-        <location filename="../meconfig.ui" line="1435"/>
-        <location filename="../meconfig.ui" line="1559"/>
-        <location filename="../meconfig.ui" line="1581"/>
+        <location filename="../meconfig.ui" line="1382"/>
+        <location filename="../meconfig.ui" line="1395"/>
+        <location filename="../meconfig.ui" line="1519"/>
+        <location filename="../meconfig.ui" line="1541"/>
         <source>Select user to delete</source>
         <translation>Välj vilken användare som ska tas bort</translation>
     </message>
@@ -465,21 +459,21 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="485"/>
-        <location filename="../meconfig.ui" line="1484"/>
+        <location filename="../meconfig.ui" line="1444"/>
         <source>Modify User Account</source>
         <translation>Modifiera Användarkonto</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="497"/>
         <location filename="../meconfig.ui" line="513"/>
-        <location filename="../meconfig.ui" line="1074"/>
-        <location filename="../meconfig.ui" line="1087"/>
+        <location filename="../meconfig.ui" line="1034"/>
+        <location filename="../meconfig.ui" line="1047"/>
         <source>Select user to repair</source>
         <translation>Välj användare att reparera</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="500"/>
-        <location filename="../meconfig.ui" line="1568"/>
+        <location filename="../meconfig.ui" line="1528"/>
         <source>User to change:</source>
         <translation>Användare att ändra:</translation>
     </message>
@@ -529,355 +523,350 @@ Var vänlig välj ett annat namn innan du fortsätter.</translation>
         <translation>Återställ APT sources</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="614"/>
         <source>Restore Xfce defaults</source>
-        <translation>Återställ Xfce standardinställningar</translation>
+        <translation type="vanished">Återställ Xfce standardinställningar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="624"/>
         <source>Select Panel Options</source>
-        <translation>Välj Panel-alternativ</translation>
+        <translation type="vanished">Välj Panel-alternativ</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="630"/>
         <source>Display default panel horizontally</source>
-        <translation>Visa standard-panel horisontellt</translation>
+        <translation type="vanished">Visa standard-panel horisontellt</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="637"/>
         <source>Restore default configuration</source>
-        <translation>Återställ standard-konfigurering</translation>
+        <translation type="vanished">Återställ standard-konfigurering</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="647"/>
         <source>Restore backed up configuration</source>
-        <translation>Återställ sparad konfigurering</translation>
+        <translation type="vanished">Återställ sparad konfigurering</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="657"/>
+        <location filename="../meconfig.ui" line="617"/>
         <source>Change Autologin Settings</source>
         <translation>Ändra Autologin-inställlningar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="663"/>
+        <location filename="../meconfig.ui" line="623"/>
         <source>Log in automatically</source>
         <translation>Logga in automatiskt</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="670"/>
+        <location filename="../meconfig.ui" line="630"/>
         <source>Require password to log in</source>
         <translation>Kräv lösenord för att logga in</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="685"/>
+        <location filename="../meconfig.ui" line="645"/>
         <source>Copy/Sync</source>
         <translation>Kopiera/Synkronisera</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="712"/>
+        <location filename="../meconfig.ui" line="672"/>
         <source>Copy Between Desktops</source>
         <translation>Kopiera mellan Skrivbord</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="739"/>
-        <location filename="../meconfig.ui" line="806"/>
+        <location filename="../meconfig.ui" line="699"/>
+        <location filename="../meconfig.ui" line="766"/>
         <source>Select desktop to copy from</source>
         <translation>Välj skrivbord att kopiera från</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="752"/>
+        <location filename="../meconfig.ui" line="712"/>
         <source>Select to only copy files</source>
         <translation>Välj att endast kopiera filer</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="755"/>
+        <location filename="../meconfig.ui" line="715"/>
         <source>Copy only</source>
         <translation>Endast kopiera</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="771"/>
-        <location filename="../meconfig.ui" line="784"/>
+        <location filename="../meconfig.ui" line="731"/>
+        <location filename="../meconfig.ui" line="744"/>
         <source>Select desktop to copy to</source>
         <translation>Välj skrivbord att kopiera till</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="793"/>
+        <location filename="../meconfig.ui" line="753"/>
         <source>Copy to:</source>
         <translation>Kopiera till:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="815"/>
+        <location filename="../meconfig.ui" line="775"/>
         <source>Copy from:</source>
         <translation>Kopiera från:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="828"/>
+        <location filename="../meconfig.ui" line="788"/>
         <source>Select to copy and then delete differences</source>
         <translation>Välj att kopiera och sedan ta bort skillnader</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="831"/>
+        <location filename="../meconfig.ui" line="791"/>
         <source>Sync</source>
         <translation>Synkronisera</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="877"/>
+        <location filename="../meconfig.ui" line="837"/>
         <source>Select to copy/sync Shared</source>
         <translation>Välj att kopiera/synkronisera Shared</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="880"/>
+        <location filename="../meconfig.ui" line="840"/>
         <source>Shared folder</source>
         <translation>Delad katalog</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="893"/>
+        <location filename="../meconfig.ui" line="853"/>
         <source>Select to copy/sync entire home</source>
         <translation>Välj att kopiera/synkronisera hela home</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="896"/>
+        <location filename="../meconfig.ui" line="856"/>
         <source>Entire home</source>
         <translation>Hela home</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="912"/>
+        <location filename="../meconfig.ui" line="872"/>
         <source>Select to copy/sync the browser configuration</source>
         <translation>Välj att kopiera/synkronisera webbläsarkonfigurationen</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="915"/>
+        <location filename="../meconfig.ui" line="875"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
         <translation>Mozilla (Firefox eller Iceweasel) konfiguration</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="928"/>
+        <location filename="../meconfig.ui" line="888"/>
         <source>Select to copy/sync Documents</source>
         <translation>Välj att kopiera/synkronisera Documents</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="931"/>
+        <location filename="../meconfig.ui" line="891"/>
         <source>Documents folder</source>
         <translation>Documents-katalog</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="938"/>
+        <location filename="../meconfig.ui" line="898"/>
         <source>What to copy/sync:</source>
         <translation>Vad att kopiera/synkronisera</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="954"/>
+        <location filename="../meconfig.ui" line="914"/>
         <source>Progress</source>
         <translation>Framsteg</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="984"/>
-        <location filename="../meconfig.ui" line="1000"/>
+        <location filename="../meconfig.ui" line="944"/>
+        <location filename="../meconfig.ui" line="960"/>
         <source>Status of the changes</source>
         <translation>Ändringarnas status</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1003"/>
+        <location filename="../meconfig.ui" line="963"/>
         <source>Status:</source>
         <translation>Status:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1019"/>
+        <location filename="../meconfig.ui" line="979"/>
         <source>Progress of the changes</source>
         <translation>Ändringarnas framsteg</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1056"/>
+        <location filename="../meconfig.ui" line="1016"/>
         <source>Free Up Space</source>
         <translation>Frigöra Utrymme</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1062"/>
+        <location filename="../meconfig.ui" line="1022"/>
         <source>Free Disk Space for User</source>
         <translation>Ledigt hårddiskutrymme för användare</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1090"/>
+        <location filename="../meconfig.ui" line="1050"/>
         <source>User account:</source>
         <translation>Användarkonto:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1116"/>
+        <location filename="../meconfig.ui" line="1076"/>
         <source>Folders to Clean</source>
         <translation>Kataloger att rensa</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1122"/>
+        <location filename="../meconfig.ui" line="1082"/>
         <source>Delete /tmp files</source>
         <translation>Ta bort /tmp filer</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1132"/>
+        <location filename="../meconfig.ui" line="1092"/>
         <source>Delete ~/.thumbnails</source>
         <translation>Ta bort ~/.thumbnails</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1142"/>
+        <location filename="../meconfig.ui" line="1102"/>
         <source>Delete ~/.cache</source>
         <translation>Ta bort ~/.cache</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1155"/>
+        <location filename="../meconfig.ui" line="1115"/>
         <source>Clear APT Cache</source>
         <translation>Töm APT cache</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1161"/>
+        <location filename="../meconfig.ui" line="1121"/>
         <source>autoclean (only removes old cache files that can no longer be downloaded)</source>
         <translation>autoclean (tar bara bort gamla cache-filer som inte längre kan laddas ner)</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1171"/>
+        <location filename="../meconfig.ui" line="1131"/>
         <source>clean (delete all cache files)</source>
         <translation>rensa (ta bort alla cache-filer)</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1181"/>
+        <location filename="../meconfig.ui" line="1141"/>
         <source>Delete Logs</source>
         <translation>Ta bort loggar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1187"/>
+        <location filename="../meconfig.ui" line="1147"/>
         <source>delete old logs (delete .gz, .old, and .1 log files)</source>
         <translation>ta bort gamla loggar (ta bort .gz, .old, och .1 loggfiler)</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1200"/>
+        <location filename="../meconfig.ui" line="1160"/>
         <source>delete all logs</source>
         <translation>ta bort alla loggar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1216"/>
+        <location filename="../meconfig.ui" line="1176"/>
         <source>Empty Trash</source>
         <translation>Töm Trash</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1225"/>
+        <location filename="../meconfig.ui" line="1185"/>
         <source>selected user Trash</source>
         <translation>vald användares Trash</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1235"/>
+        <location filename="../meconfig.ui" line="1195"/>
         <source>empty Trash for all users</source>
         <translation>töm Trash för alla användare</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1245"/>
+        <location filename="../meconfig.ui" line="1205"/>
         <source>Graphical Tool for Analysing Disk Usage</source>
         <translation>Grafiskt verktyg för att analysera diskanvändning</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1251"/>
+        <location filename="../meconfig.ui" line="1211"/>
         <source>Run Baobab</source>
         <translation>Kör Baobab</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1292"/>
+        <location filename="../meconfig.ui" line="1252"/>
         <source>Add/Remove Groups</source>
         <translation>Lägg till/Ta bort Grupper</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1304"/>
+        <location filename="../meconfig.ui" line="1264"/>
         <source>Add Group</source>
         <translation>Lägg till Grupp</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1334"/>
+        <location filename="../meconfig.ui" line="1294"/>
         <source>Group name:</source>
         <translation>Grupp namn</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1353"/>
+        <location filename="../meconfig.ui" line="1313"/>
         <source>groupname</source>
         <translation>Gruppnamn</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1382"/>
+        <location filename="../meconfig.ui" line="1342"/>
         <source>Delete Group</source>
         <translation>Ta bort Grupp</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1444"/>
+        <location filename="../meconfig.ui" line="1404"/>
         <source>Group to delete:</source>
         <translation>Grupp att ta bort:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1472"/>
+        <location filename="../meconfig.ui" line="1432"/>
         <source>Group Membership</source>
         <translation>Grupp-medlemskap</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1588"/>
+        <location filename="../meconfig.ui" line="1548"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
         <translation>Grupper användaren tillhör (ändra grupperna genom att markera/avmarkera respektive rutor):</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1608"/>
+        <location filename="../meconfig.ui" line="1568"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
         <translation>*Var vänlig dubbelkolla dina val innan genomförandet, att dela ut fel grupp-medlemskap kan förstöra ditt system. Använd reparera-fliken för att återställa orginal-medlemskapen om du gjort ett misstag.</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1668"/>
+        <location filename="../meconfig.ui" line="1628"/>
         <source>Apply any changes</source>
         <translation>Genomför ändringar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1671"/>
+        <location filename="../meconfig.ui" line="1631"/>
         <source>Apply</source>
         <translation>Genomför</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1677"/>
+        <location filename="../meconfig.ui" line="1639"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1684"/>
+        <location filename="../meconfig.ui" line="1646"/>
         <source>Cancel any changes then quit</source>
         <translation>Avbryt ändringarna och sedan sluta</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1687"/>
+        <location filename="../meconfig.ui" line="1649"/>
         <source>Close</source>
         <translation>Stäng</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1693"/>
+        <location filename="../meconfig.ui" line="1657"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1731"/>
+        <location filename="../meconfig.ui" line="1695"/>
         <source>Display help </source>
         <translation>Visa hjälp</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1734"/>
+        <location filename="../meconfig.ui" line="1698"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1740"/>
+        <location filename="../meconfig.ui" line="1706"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1747"/>
+        <location filename="../meconfig.ui" line="1713"/>
         <source>About this application</source>
         <translation>Om detta program</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1750"/>
+        <location filename="../meconfig.ui" line="1716"/>
         <source>About...</source>
         <translation>Om...</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1756"/>
+        <location filename="../meconfig.ui" line="1724"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>

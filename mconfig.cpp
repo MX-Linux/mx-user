@@ -205,19 +205,12 @@ void MConfig::refreshRestore() {
     checkGroups->setChecked(false);
     checkMozilla->setChecked(false);
     checkApt->setChecked(false);
-    checkXfce->setChecked(false);
     radioAutologinNo->setAutoExclusive(false);
     radioAutologinNo->setChecked(false);
     radioAutologinNo->setAutoExclusive(true);
     radioAutologinYes->setAutoExclusive(false);
     radioAutologinYes->setChecked(false);
     radioAutologinYes->setAutoExclusive(true);
-    radioHorizontalPanel->setAutoExclusive(false);
-    radioHorizontalPanel->setChecked(false);
-    radioHorizontalPanel->setAutoExclusive(true);
-    radioVerticalPanel->setAutoExclusive(false);
-    radioVerticalPanel->setChecked(false);
-    radioVerticalPanel->setAutoExclusive(true);
 }
 
 void MConfig::refreshDesktop() {
@@ -468,68 +461,6 @@ void MConfig::applyRestore() {
         QMessageBox::information(0, tr("Autologin options"),
                                  (tr("Autologin has been enabled for the '%1' account.").arg(user)));
     }
-    if (checkXfce->isChecked()) {
-        cmd = QString("runuser %1 -c 'mkdir ~/.restore >/dev/null 2>&1'").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'mv ~/.config/xfce4/panel/* ~/.restore >/dev/null 2>&1'").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'rsync -ab --backup-dir=.restore --no-o /etc/skel/ ~/ --exclude \'.local\' --exclude \'.bash_logout\' --exclude \'.bashrc\' --exclude \'.profile\' --exclude \'.xinitrc\' --exclude \'.xscreensaver\''").arg(user);
-        system(cmd.toUtf8());
-        QMessageBox::information(0, tr("Xfce settings"),
-                                 tr(" Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
-    }
-    if (radioHorizontalPanel->isChecked()) {
-        // backup panel config
-        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4'").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml'").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp -R ~/.config/xfce4/panel ~/.restore/.config/xfce4'").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
-        system(cmd.toUtf8());
-        // copy template files
-        cmd = QString("cp -R /usr/local/share/appdata/panels/horizontal/panel /home/%1/.config/xfce4").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("cp /usr/local/share/appdata/panels/horizontal/xfce4-panel.xml /home/%1/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml").arg(user);
-        system(cmd.toUtf8());
-        // change ownership
-        cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
-        system(cmd.toUtf8());
-        restartPanel(user);
-        QMessageBox::information(0, tr("Panel settings"),
-                                 tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
-
-    } else if (radioVerticalPanel->isChecked()) {
-        // backup panel config
-        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4'").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml'").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp -R ~/.config/xfce4/panel ~/.restore/.config/xfce4'").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
-        system(cmd.toUtf8());
-        // copy template files
-        cmd = QString("cp -R /usr/local/share/appdata/panels/vertical/panel /home/%1/.config/xfce4").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("cp /usr/local/share/appdata/panels/vertical/xfce4-panel.xml /home/%1/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml").arg(user);
-        system(cmd.toUtf8());
-        // change ownership
-        cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
-        system(cmd.toUtf8());
-        // restart panel
-        restartPanel(user);
-        QMessageBox::information(0, tr("Panel settings"),
-                                 tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
-    } else if (radioRestoreBackup->isChecked()) {
-        cmd = QString("runuser %1 -c 'cp -R ~/.restore/.config/xfce4/panel ~/.config/xfce4'").arg(user);
-        system(cmd.toUtf8());
-        cmd = QString("runuser %1 -c 'cp ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
-        system(cmd.toUtf8());
-        restartPanel(user);
-    }
-
     setCursor(QCursor(Qt::ArrowCursor));
 
     refresh();
@@ -945,21 +876,6 @@ void MConfig::on_userComboBox_activated() {
     radioAutologinYes->setAutoExclusive(false);
     radioAutologinYes->setChecked(false);
     radioAutologinYes->setAutoExclusive(true);
-    radioHorizontalPanel->setAutoExclusive(false);
-    radioHorizontalPanel->setChecked(false);
-    radioHorizontalPanel->setAutoExclusive(true);
-    radioVerticalPanel->setAutoExclusive(false);
-    radioVerticalPanel->setChecked(false);
-    radioVerticalPanel->setAutoExclusive(true);
-    radioRestoreBackup->setAutoExclusive(false);
-    radioRestoreBackup->setChecked(false);
-    radioRestoreBackup->setAutoExclusive(true);
-    QString cmd = QString("runuser %1 -c 'test -f ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(userComboBox->currentText());
-    if (system(cmd.toUtf8()) == 0) {
-        radioRestoreBackup->setEnabled(true);
-    } else {
-        radioRestoreBackup->setEnabled(false);
-    }
 }
 
 void MConfig::on_deleteUserCombo_activated() {
@@ -1194,31 +1110,6 @@ void MConfig::on_buttonHelp_clicked() {
     this->show();
 }
 
-
-void MConfig::on_radioHorizontalPanel_clicked()
-{
-    checkXfce->setChecked(false);
-}
-
-void MConfig::on_radioVerticalPanel_clicked()
-{
-    checkXfce->setChecked(false);
-}
-
-void MConfig::on_checkXfce_clicked(bool checked)
-{
-    if (checked) {
-        groupPanel->setDisabled(true);
-        radioHorizontalPanel->setAutoExclusive(false);
-        radioHorizontalPanel->setChecked(false);
-        radioHorizontalPanel->setAutoExclusive(true);
-        radioVerticalPanel->setAutoExclusive(false);
-        radioVerticalPanel->setChecked(false);
-        radioVerticalPanel->setAutoExclusive(true);
-    } else {
-        groupPanel->setDisabled(false);
-    }
-}
 
 void MConfig::restartPanel(QString user)
 {

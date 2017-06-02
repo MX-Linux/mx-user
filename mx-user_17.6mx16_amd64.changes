@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 02 Jun 2017 16:42:28 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 17.6mx16
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (17.6mx16) mx; urgency=medium
+ .
+   * new translations
+   * removed panel orientation code
+Checksums-Sha1:
+ 134b20e4e988a2367d867f90f54db2cf44c6408a 1128 mx-user_17.6mx16.dsc
+ cfd64cd30c0598497756b49eaf4024b42aa479f5 75932 mx-user_17.6mx16.tar.xz
+ 44d3cab1cf1003ac279a9f2fb8aeebd1e90d6af2 115872 mx-user_17.6mx16_amd64.deb
+Checksums-Sha256:
+ 78aaf0c748cd4984e343ead730260dd49013a58070a6dda081fe414bc5634361 1128 mx-user_17.6mx16.dsc
+ d7a3f5d48c40fe49f2dadf65d238aba3cc1c41dead6e3081428e48591b53b553 75932 mx-user_17.6mx16.tar.xz
+ afc2a2db0a852b2c03d222227f91e85f2010c804acf87df3c3923285f7cfcc2a 115872 mx-user_17.6mx16_amd64.deb
+Files:
+ 7802e8ad97b55a28f09e9da76bd35b61 1128 system optional mx-user_17.6mx16.dsc
+ e5f175cf81fdacf9ad6a9a9b5d4bb687 75932 system optional mx-user_17.6mx16.tar.xz
+ 9ac9f7b790c365af44902511855b4ecd 115872 system optional mx-user_17.6mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZMc+YAAoJEHCTjHgGee6Y9O4H/2uR/hJKkJ+ISrf8U/SOfZc1
+/tBozANS6lEF6Bb8Wfr+cjGDkJDgX2StCuIf5pSsf4LekFf9+5/LizLrv183DnLv
+UosjHczu3tl69S7TASzBf+FKVu0fKjTLuXeSSo9xMhL4xJXrx1WhBAlnWM+bAKHx
+y/mG4ukDDzEebkZiB+cDW4UqPbUV/oaV3GFm7a4A+OctRm4Ogajp3Aeo0LFysyph
+pdz4D+YQlxmeiLpbCvIGWw0HfQXjKZPPBqzVL2XsHYrepbIQoCRDPTKaTnxr6eao
+dfJ2OQzKMiWopRSoZSedli7t3/LUytWGomjM5gknoe1kWjTqRZ3+R9WdwIlH6oU=
+=0s2Y
+-----END PGP SIGNATURE-----
