@@ -1,3 +1,9 @@
+mx-user (17.7) mx; urgency=medium
+
+  * small fixes for MX17
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 31 Jul 2017 15:47:02 -0400
+
 mx-user (17.6mx16) mx; urgency=medium
 
   * new translations
