@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 31 Jul 2017 15:47:02 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 17.7
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (17.7) mx; urgency=medium
+ .
+   * small fixes for MX17
+Checksums-Sha1:
+ b7e78ce77cbfad8d0c8334ad76fbc20d684bf62a 116810 mx-user_17.7_i386.deb
+Checksums-Sha256:
+ 4a86a4337d392f9d3eaaa6ffc06ffe0274c5f742e41e6987134539e7ae3efa0f 116810 mx-user_17.7_i386.deb
+Files:
+ 36a23a1b0af56b940484dc01b60a059a 116810 system optional mx-user_17.7_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZf4raAAoJEHCTjHgGee6YE/gIAJaVnpMNLsPSRTMvUDfyb+k+
+00Y1TB+Jb6NnXA5zFfEOcLQoO7JGsKLbdlnneV0GTzSBo10cPJw6xWUHZ5fVk7U+
+cR1+qnzdrKMmjgXMY88GhQDD5wAx1d2j5uzug5yG2DvXCntiu3qVz9B22qNAgxHL
+xYOFUcJK17xQ3ffz9Ay3AUCuB8TX0iMAPcU3ro1xLBhGexP5YhVgoVHcteYaSt/m
+ISk/VNozsma4NAtRUvorPrwM6KP4b5PfPeIA+kEYA/ja04DUWMVx5UiyMNCEJF2c
+HzsNTvyCDRk7J3fa9rziuCR5YIOD1RSqnEl748DD67RR0DNiLrIM130zu+J6zlU=
+=wmF9
+-----END PGP SIGNATURE-----

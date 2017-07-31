@@ -423,7 +423,7 @@ void MConfig::applyRestore() {
     // restore APT configs
     if (checkApt->isChecked()) {
         QString mx_version = getCmdOut("lsb_release -rs").left(2);
-        if (mx_version != "15" && mx_version != "16") {
+        if (mx_version.toInt() < 15) {
             qDebug() << "MX version not detected or out of range: " << mx_version;
             return;
         }
@@ -436,7 +436,7 @@ void MConfig::applyRestore() {
         cmd = QString("unzip -q %1/master.zip -d %1/").arg(path);
         system(cmd.toUtf8());
         // move the files from the temporary directory to /etc/apt/sources.list.d/
-        cmd = QString("mv -b %1/MX-16_sources-master/* /etc/apt/sources.list.d/").arg(path);
+        cmd = QString("mv -b %1/MX-*_sources-master/* /etc/apt/sources.list.d/").arg(path);
         system(cmd.toUtf8());
         // delete temp folder
         cmd = QString("rm -rf %1").arg(path);
