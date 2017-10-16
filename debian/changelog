@@ -1,3 +1,9 @@
+mx-user (17.10) mx; urgency=medium
+
+  * fix logo
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 16 Oct 2017 09:47:39 -0400
+
 mx-user (17.7) mx; urgency=medium
 
   * small fixes for MX17
