@@ -16,7 +16,7 @@
         <location filename="../mconfig.cpp" line="910"/>
         <location filename="../mconfig.cpp" line="918"/>
         <location filename="../mconfig.cpp" line="925"/>
-        <location filename="../mconfig.cpp" line="1126"/>
+        <location filename="../mconfig.cpp" line="1136"/>
         <source>none</source>
         <translation>nenhuma</translation>
     </message>
@@ -244,8 +244,8 @@ Escolha outro nome de utilizador.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="865"/>
-        <location filename="../mconfig.cpp" line="1178"/>
-        <location filename="../mconfig.cpp" line="1186"/>
+        <location filename="../mconfig.cpp" line="1188"/>
+        <location filename="../mconfig.cpp" line="1196"/>
         <source>browse...</source>
         <translation>percorrer...</translation>
     </message>
@@ -267,7 +267,7 @@ Escolha outro nome de utilizador.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1094"/>
         <location filename="../mconfig.cpp" line="1101"/>
-        <location filename="../mconfig.cpp" line="1109"/>
+        <location filename="../mconfig.cpp" line="1118"/>
         <source>MX User Manager</source>
         <translation>MX_Gestor de utilizadores</translation>
     </message>
@@ -293,12 +293,12 @@ Escolha outro nome de utilizador.</translation>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1109"/>
+        <location filename="../mconfig.cpp" line="1118"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1179"/>
+        <location filename="../mconfig.cpp" line="1189"/>
         <source>Select folder to copy to</source>
         <translation>Seleccionar pasta para onde copiar</translation>
     </message>

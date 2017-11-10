@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 10 Nov 2017 09:45:37 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 17.11
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (17.11) mx; urgency=medium
+ .
+   * added FR help
+Checksums-Sha1:
+ 1c5b1ff63128f43bbe6f2d58fe040331ca60c24c 1116 mx-user_17.11.dsc
+ 784fe54e4f14d8e68ac2467d88d9fa0d01591a7d 76052 mx-user_17.11.tar.xz
+ b99719d86c3a822ece6f2429a07c30fd01dbeab3 116066 mx-user_17.11_amd64.deb
+Checksums-Sha256:
+ e5ba9596d82a9b5b6e5aa1c9136b7901bc286636c0faaba9ee8fcc4aed022d08 1116 mx-user_17.11.dsc
+ 602c4db04e5239c2a4ede7f26b297c459a305bc56f82768a6b204218df95d073 76052 mx-user_17.11.tar.xz
+ a3441da46771c1fc9206042a2b69077527846bea22253929bd0d56c7aecfbdd2 116066 mx-user_17.11_amd64.deb
+Files:
+ f9ca00eb1d5c3e3ccd0dca3d70bd16df 1116 system optional mx-user_17.11.dsc
+ 0d91d270ecd2190bdebda9e24ff0f700 76052 system optional mx-user_17.11.tar.xz
+ 1301a90ccf04671b474b41f1c890a4c8 116066 system optional mx-user_17.11_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJaBcA/AAoJEHCTjHgGee6YZEcIAJglE9nzRpGgs/FN4IytLNdA
++YRRLpRngYNpIP+envUdKm146/Xz1atbAKujVCv7o4stqxIFxyJxf1fue/jTDEKg
+fBl2U/GAEEtWXsIdDyZfKmJtAtHYqN00jV3pqHZ12GC1GQPG4Si2c8Q14I4tFgF8
+kLj2lm6MMGeAo1KX+hKb3THjG/t2xGVpVIsBWWD9OZrLjTmQ6RkQxCydL9vhSapW
+1Uf9CJrmodN+CJ5NyYJlRFOFTwmPwl9EalX4hC5aNB6lbwO2taTRqhdS4yZtTOd+
+6S4C+zWv7CGUcNztFqPIMqChVZG1P+rrzA4r3H0mo9/ibfyuuv8pZFKmB5CbjUg=
+=oG3l
+-----END PGP SIGNATURE-----
