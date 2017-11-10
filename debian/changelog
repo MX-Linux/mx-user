@@ -1,3 +1,9 @@
+mx-user (17.11) mx; urgency=medium
+
+  * added FR help
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 10 Nov 2017 09:45:37 -0500
+
 mx-user (17.10) mx; urgency=medium
 
   * fix logo

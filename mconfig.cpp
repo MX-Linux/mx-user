@@ -1106,7 +1106,17 @@ void MConfig::on_buttonAbout_clicked() {
 // Help button clicked
 void MConfig::on_buttonHelp_clicked() {
     this->hide();
-    system("mx-viewer https://mxlinux.org/wiki/help-files/help-mx-user-manager '" + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8() + "'");
+
+    QLocale locale;
+    QString lang = locale.bcp47Name();
+
+    QString url = "https://mxlinux.org/wiki/help-files/help-mx-user-manager";
+
+    if (lang == "fr") {
+        url = "https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs";
+    }
+    system("mx-viewer " + url.toUtf8() + " " + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8());
+
     this->show();
 }
 

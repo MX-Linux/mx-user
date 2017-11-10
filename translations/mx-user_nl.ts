@@ -16,7 +16,7 @@
         <location filename="../mconfig.cpp" line="910"/>
         <location filename="../mconfig.cpp" line="918"/>
         <location filename="../mconfig.cpp" line="925"/>
-        <location filename="../mconfig.cpp" line="1126"/>
+        <location filename="../mconfig.cpp" line="1136"/>
         <source>none</source>
         <translation>geen</translation>
     </message>
@@ -244,8 +244,8 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="865"/>
-        <location filename="../mconfig.cpp" line="1178"/>
-        <location filename="../mconfig.cpp" line="1186"/>
+        <location filename="../mconfig.cpp" line="1188"/>
+        <location filename="../mconfig.cpp" line="1196"/>
         <source>browse...</source>
         <translation>navigeer...</translation>
     </message>
@@ -267,7 +267,7 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../mconfig.cpp" line="1094"/>
         <location filename="../mconfig.cpp" line="1101"/>
-        <location filename="../mconfig.cpp" line="1109"/>
+        <location filename="../mconfig.cpp" line="1118"/>
         <source>MX User Manager</source>
         <translation>MX Gebruikersbeheer</translation>
     </message>
@@ -293,12 +293,12 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
         <translation>Cancel</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1109"/>
+        <location filename="../mconfig.cpp" line="1118"/>
         <source>Help</source>
         <translation>Help</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1179"/>
+        <location filename="../mconfig.cpp" line="1189"/>
         <source>Select folder to copy to</source>
         <translation>Kies map om naar toe te kopiëren</translation>
     </message>

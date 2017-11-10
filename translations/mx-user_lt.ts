@@ -16,7 +16,7 @@
         <location filename="../mconfig.cpp" line="910"/>
         <location filename="../mconfig.cpp" line="918"/>
         <location filename="../mconfig.cpp" line="925"/>
-        <location filename="../mconfig.cpp" line="1126"/>
+        <location filename="../mconfig.cpp" line="1136"/>
         <source>none</source>
         <translation>nėra</translation>
     </message>
@@ -240,8 +240,8 @@ Please choose another name before proceeding.</source>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="865"/>
-        <location filename="../mconfig.cpp" line="1178"/>
-        <location filename="../mconfig.cpp" line="1186"/>
+        <location filename="../mconfig.cpp" line="1188"/>
+        <location filename="../mconfig.cpp" line="1196"/>
         <source>browse...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -263,7 +263,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mconfig.cpp" line="1094"/>
         <location filename="../mconfig.cpp" line="1101"/>
-        <location filename="../mconfig.cpp" line="1109"/>
+        <location filename="../mconfig.cpp" line="1118"/>
         <source>MX User Manager</source>
         <translation>MX Naudotojų tvarkytuvė</translation>
     </message>
@@ -289,12 +289,12 @@ Please choose another name before proceeding.</source>
         <translation>Atsisakyti</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1109"/>
+        <location filename="../mconfig.cpp" line="1118"/>
         <source>Help</source>
         <translation>Žinynas</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1179"/>
+        <location filename="../mconfig.cpp" line="1189"/>
         <source>Select folder to copy to</source>
         <translation type="unfinished"></translation>
     </message>
