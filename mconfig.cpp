@@ -1115,7 +1115,7 @@ void MConfig::on_buttonHelp_clicked() {
     if (lang == "fr") {
         url = "https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs";
     }
-    system("mx-viewer " + url.toUtf8() + " " + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8());
+    system("mx-viewer " + url.toUtf8() + " '" + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8() + "'");
 
     this->show();
 }
