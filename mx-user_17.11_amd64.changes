@@ -18,26 +18,26 @@ Changes:
  .
    * added FR help
 Checksums-Sha1:
- 1c5b1ff63128f43bbe6f2d58fe040331ca60c24c 1116 mx-user_17.11.dsc
- 784fe54e4f14d8e68ac2467d88d9fa0d01591a7d 76052 mx-user_17.11.tar.xz
- b99719d86c3a822ece6f2429a07c30fd01dbeab3 116066 mx-user_17.11_amd64.deb
+ c19871c8f28b95757108776a39e8034e8467e756 1116 mx-user_17.11.dsc
+ 7c8f2fa1aa456b790f9e827309ec4456bd709b35 76032 mx-user_17.11.tar.xz
+ 7b98fd68084f70e656498ddab5a90095fa91aba1 116198 mx-user_17.11_amd64.deb
 Checksums-Sha256:
- e5ba9596d82a9b5b6e5aa1c9136b7901bc286636c0faaba9ee8fcc4aed022d08 1116 mx-user_17.11.dsc
- 602c4db04e5239c2a4ede7f26b297c459a305bc56f82768a6b204218df95d073 76052 mx-user_17.11.tar.xz
- a3441da46771c1fc9206042a2b69077527846bea22253929bd0d56c7aecfbdd2 116066 mx-user_17.11_amd64.deb
+ b1782384cfedc4b772b815b742a1fff48e3f6cccce510e17f530f613a969c466 1116 mx-user_17.11.dsc
+ 20eb067304546e0a245da44e8d0ad583844cac7adfdb468237c950282ba88208 76032 mx-user_17.11.tar.xz
+ e7a09086354060f04a47cd932dd05d530069f6d23a8bc1dfb145d77597bd92d1 116198 mx-user_17.11_amd64.deb
 Files:
- f9ca00eb1d5c3e3ccd0dca3d70bd16df 1116 system optional mx-user_17.11.dsc
- 0d91d270ecd2190bdebda9e24ff0f700 76052 system optional mx-user_17.11.tar.xz
- 1301a90ccf04671b474b41f1c890a4c8 116066 system optional mx-user_17.11_amd64.deb
+ d0aa5b0a4d713861490a4e26ac4aa9d6 1116 system optional mx-user_17.11.dsc
+ 70a6edaadc8d3845b1309b20e77c4cc4 76032 system optional mx-user_17.11.tar.xz
+ 2145abfc7b3f2118dbdd2646b06f6321 116198 system optional mx-user_17.11_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJaBcA/AAoJEHCTjHgGee6YZEcIAJglE9nzRpGgs/FN4IytLNdA
-+YRRLpRngYNpIP+envUdKm146/Xz1atbAKujVCv7o4stqxIFxyJxf1fue/jTDEKg
-fBl2U/GAEEtWXsIdDyZfKmJtAtHYqN00jV3pqHZ12GC1GQPG4Si2c8Q14I4tFgF8
-kLj2lm6MMGeAo1KX+hKb3THjG/t2xGVpVIsBWWD9OZrLjTmQ6RkQxCydL9vhSapW
-1Uf9CJrmodN+CJ5NyYJlRFOFTwmPwl9EalX4hC5aNB6lbwO2taTRqhdS4yZtTOd+
-6S4C+zWv7CGUcNztFqPIMqChVZG1P+rrzA4r3H0mo9/ibfyuuv8pZFKmB5CbjUg=
-=oG3l
+iQEcBAEBAgAGBQJaBdTuAAoJEHCTjHgGee6YDl4IAImODuozSHN1rVkIN1lxfbN/
+uzlMCq97VYRt1NKQpksD0Bhebou9BPy4kdWpVlfN+duWH5E3rY+oT7FYDPIO6a/L
+ojUBtifWwSkb1fyYGPTuAJO5ISqF4Suhn7ehJCgOl1R37l+C6u/LrinUYamUbl93
+KA4IBPn0iDqPXTIWN3PA/3lmRI3Ps2zejLATbJleB1yF2FoNt4CuzEIC2AslSD/T
+ErwKN7grMuX/Ibta9QMFKlMhBxEwY6cQ9Ca5ngkJ3+GZPUGDB56KGeJ+n+ClpiQ2
+DDfCVR5SBj+5ADzJMXebnKZYp3FIM7zFWMYsZkRJy3KZQbAY4PgJzetBjRCRXF4=
+=wokr
 -----END PGP SIGNATURE-----
