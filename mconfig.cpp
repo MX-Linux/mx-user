@@ -1112,7 +1112,7 @@ void MConfig::on_buttonHelp_clicked() {
 
     QString url = "https://mxlinux.org/wiki/help-files/help-mx-user-manager";
 
-    if (lang == "fr") {
+    if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs";
     }
     system("mx-viewer " + url.toUtf8() + " '" + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8() + "'");
