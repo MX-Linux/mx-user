@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 04 Dec 2017 15:18:03 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 17.12
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (17.12) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ 4e320ed83013161bfd6345b5c9aa4d95f8375899 1116 mx-user_17.12.dsc
+ de02d70177191c4296d73f2a27dad9432691b1bb 73428 mx-user_17.12.tar.xz
+ 9a05ec34b89c93f50995da2ce7063a45d2e99839 116392 mx-user_17.12_amd64.deb
+Checksums-Sha256:
+ b5ae5370f9480403473f203109550441b41ef78cd1bae94c457b7b734bb98758 1116 mx-user_17.12.dsc
+ 9deacb7269d600e961bac281cf99fa8430ead1296a3cbd7f2475981a930abcb6 73428 mx-user_17.12.tar.xz
+ 0726dbf0e4746635212e5efb18f9b17b243781b4793dfbdaf4b9c8da2f53c6ac 116392 mx-user_17.12_amd64.deb
+Files:
+ 38e5d052407de3b397c8c7bb74308b57 1116 system optional mx-user_17.12.dsc
+ cce255ce8cfc15622d58532cfd1f570b 73428 system optional mx-user_17.12.tar.xz
+ 057c99cd4ca315aa37fd6a36bcfa5057 116392 system optional mx-user_17.12_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJaJa3BAAoJEHCTjHgGee6YksIH/2e/k8vBZw8DTf9+1ogllPG7
+gm/OAqr+yp5DXTj/ov+b8lYkclGxMRMOZ4fHHBfjwzr5b/8JC/+8OQ9soQg6wgnF
+GGUceURjZtcLOeMGJAGu8HSmLRiZLM8dasMQzbYOJOdcxKcqS7+1AfHcO3EFfUL5
+Pi0Q9UI6XI0pTiBjjjLqwkSyvsoXRycNKu0Jta6ZmajTSIqDIb4fVV5Ip0EMKYIx
+U9H3jVX4HK3T5Q4OXZ63iSK5jTXPL9e3ELAXVGtKuHLp6iqIC16JTYnwU+HNQYHI
+Bwx/EF02XaCXS0Sj9nOvaTF5ZSsF7uveYWOYmSfYjVbNe/aYQjTlRnzYhnzPnXI=
+=oQVn
+-----END PGP SIGNATURE-----
