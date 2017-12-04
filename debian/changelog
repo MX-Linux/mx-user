@@ -1,3 +1,9 @@
+mx-user (17.12) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 04 Dec 2017 15:18:03 -0500
+
 mx-user (17.11+1) mx; urgency=medium
 
   * fix LANG detection
