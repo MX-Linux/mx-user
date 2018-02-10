@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 10 Feb 2018 02:34:41 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 18.2
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (18.2) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ c389d1cee4b98383ec0b95a8374daee6b3c62a1b 118974 mx-user_18.2_i386.deb
+Checksums-Sha256:
+ 9f80cd732af9a5e1407192a8676391b224b43cb3ad7bd1de91249150d1cb54bd 118974 mx-user_18.2_i386.deb
+Files:
+ e69b2533a3488d324fa79ce1172e22fb 118974 system optional mx-user_18.2_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJafqDcAAoJEHCTjHgGee6YmIkH/12Cf4Rp9aeVIazvE+psT4Yp
+C9dSTIHYSdQd8O8b2TC61ggman8EAqvqVTda/5nOlZ3VBWbL8M8VX3wTxPxRjsVF
+/M64nvtQLGjoAwGAkpCThR0Avx3dOx9+D22gz97TkGUOa8BlThHlr+IAzKkjvuEy
+Bfvd5261R37DJjm/Eq2yt1IDJYf4m4cqhq6N6BMzRlcFz16Tzs4WRw0i97iav2D/
+4H8FYFkRKFs4yjtgTOD1ut/+xEW30guHsqqRvG99N6+JabKzOdIdXzAvT31iW0uw
+H6fi4t+FioqY7X7MjrDKzfViQyBlWNx+r8xq4Q6W+FrYutH/Zx6BTQAGIHbW498=
+=yxdd
+-----END PGP SIGNATURE-----
