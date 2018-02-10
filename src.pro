@@ -3,28 +3,28 @@ QT       += core gui widgets
 TEMPLATE = app
 TARGET = mx-user
 
-TRANSLATIONS += translations/mx-bootrepair_am.ts \
-                translations/mx-bootrepair_ca.ts \
-                translations/mx-bootrepair_cs.ts \
-                translations/mx-bootrepair_de.ts \
-                translations/mx-bootrepair_el.ts \
-                translations/mx-bootrepair_es.ts \
-                translations/mx-bootrepair_fr.ts \
-                translations/mx-bootrepair_hu.ts \
-                translations/mx-bootrepair_it.ts \
-                translations/mx-bootrepair_ja.ts \
-                translations/mx-bootrepair_kk.ts \
-                translations/mx-bootrepair_lt.ts \
-                translations/mx-bootrepair_nl.ts \
-                translations/mx-bootrepair_pl.ts \
-                translations/mx-bootrepair_pt.ts \
-                translations/mx-bootrepair_pt_BR.ts \
-                translations/mx-bootrepair_ro.ts \
-                translations/mx-bootrepair_ru.ts \
-                translations/mx-bootrepair_sk.ts \
-                translations/mx-bootrepair_sv.ts \
-                translations/mx-bootrepair_tr.ts \
-                translations/mx-bootrepair_uk.ts
+TRANSLATIONS += translations/mx-user_am.ts \
+                translations/mx-user_ca.ts \
+                translations/mx-user_cs.ts \
+                translations/mx-user_de.ts \
+                translations/mx-user_el.ts \
+                translations/mx-user_es.ts \
+                translations/mx-user_fr.ts \
+                translations/mx-user_hu.ts \
+                translations/mx-user_it.ts \
+                translations/mx-user_ja.ts \
+                translations/mx-user_kk.ts \
+                translations/mx-user_lt.ts \
+                translations/mx-user_nl.ts \
+                translations/mx-user_pl.ts \
+                translations/mx-user_pt.ts \
+                translations/mx-user_pt_BR.ts \
+                translations/mx-user_ro.ts \
+                translations/mx-user_ru.ts \
+                translations/mx-user_sk.ts \
+                translations/mx-user_sv.ts \
+                translations/mx-user_tr.ts \
+                translations/mx-user_uk.ts
 
 FORMS += meconfig.ui
 HEADERS += mconfig.h
