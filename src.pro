@@ -24,7 +24,8 @@ TRANSLATIONS += translations/mx-user_am.ts \
                 translations/mx-user_sk.ts \
                 translations/mx-user_sv.ts \
                 translations/mx-user_tr.ts \
-                translations/mx-user_uk.ts
+                translations/mx-user_uk.ts \
+                translations/mx-user_zh_TW.ts
 
 FORMS += meconfig.ui
 HEADERS += mconfig.h
