@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 02 Mar 2018 12:05:42 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 18.3
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (18.3) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ bc8e42f369e3f8e3c81553c4adea0de51b80c4d4 1106 mx-user_18.3.dsc
+ 1a2cdf44acecf2db26e7b65188a39e1366cb39f5 77448 mx-user_18.3.tar.xz
+ 2421f9eaa67339bf9158050e17d6a33e0272d0cc 120708 mx-user_18.3_amd64.deb
+Checksums-Sha256:
+ 17b49eca5583277a2242bb869f1a8976c0ccf3735b8532691ed4f7224b2d9512 1106 mx-user_18.3.dsc
+ 472046a489930edb7a3cceb1e105a7a0e72efdd5c964ba2eb2a78c9af2c4a115 77448 mx-user_18.3.tar.xz
+ e7e151ed5b07396dcc8db32774b1cf25c55d7d52902e004f85c8c294265e86b0 120708 mx-user_18.3_amd64.deb
+Files:
+ 7c53e5341ca08c62b456a5126375680b 1106 system optional mx-user_18.3.dsc
+ dd65ec7e42ff5097ffc83b5ac0a01f09 77448 system optional mx-user_18.3.tar.xz
+ 172bc91806315cd251bf00b2490c57df 120708 system optional mx-user_18.3_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJamYVzAAoJEHCTjHgGee6Y1WoH/j5uTWcrmXSMdwIS1fuWr0g+
+J1QrLjsbidXmwEOruxb3q3Ic8G+HoDlQQh05YOKjgimr3dNIM4gfpb59YmSiK8v5
+def2x156kJZqoZFUY+oouGRLnGikQkRpbTQvwAuCWG/yE/hyHJ3PrnkZ83s1/pWJ
+K/uYFq44JLHTrrz1A2QQOXSCjnTWTeewsK6UljNT4Gc2WdMlkG2OpRZKUSlWw44g
+/xoNyNX0i8P3sKCiMyGBjXuEzeZJQ/uRxc+PzVOzwPMhOoX++RtTc8J/CFAPLyAP
+pvR/pCAHLuMh1zHP25mMbzysWNhzVtNfMQIJBQkfGCHNpPhrwNgXY+V0mvZm49w=
+=CI4+
+-----END PGP SIGNATURE-----
