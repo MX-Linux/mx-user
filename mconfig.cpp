@@ -960,6 +960,17 @@ void MConfig::buildListGroups(){
     }
 }
 
+void MConfig::displayDoc(QString url)
+{
+    QString exec = "xdg-open";
+    QString user = getCmdOut("logname");
+    if (system("command -v mx-viewer") == 0) { // use mx-viewer if available
+        exec = "mx-viewer";
+    }
+    QString cmd = "su " + user + " -c \"" + exec + " " + url + "\"&";
+    system(cmd.toUtf8());
+}
+
 // apply but do not close
 void MConfig::on_buttonApply_clicked() {
     if (!buttonApply->isEnabled()) {
@@ -1098,15 +1109,13 @@ void MConfig::on_buttonAbout_clicked() {
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
     if (msgBox.exec() == QMessageBox::AcceptRole) {
-        system("mx-viewer file:///usr/share/doc/mx-user/license.html '" + tr("MX User Manager").toUtf8() + " " + tr("License").toUtf8() + "'");
+        displayDoc("file:///usr/share/doc/mx-user/license.html");
     }
     this->show();
 }
 
 // Help button clicked
 void MConfig::on_buttonHelp_clicked() {
-    this->hide();
-
     QLocale locale;
     QString lang = locale.bcp47Name();
 
@@ -1115,9 +1124,7 @@ void MConfig::on_buttonHelp_clicked() {
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs";
     }
-    system("mx-viewer " + url.toUtf8() + " '" + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8() + "'");
-
-    this->show();
+    displayDoc(url);
 }
 
 

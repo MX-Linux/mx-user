@@ -60,6 +60,7 @@ public:
     void applyMembership();
     void applyClean();
     void buildListGroups();
+    void displayDoc(QString url);
     void restartPanel(QString user);
     QString getVersion(QString name);
 

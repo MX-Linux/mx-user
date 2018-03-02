@@ -16,7 +16,7 @@
         <location filename="../mconfig.cpp" line="910"/>
         <location filename="../mconfig.cpp" line="918"/>
         <location filename="../mconfig.cpp" line="925"/>
-        <location filename="../mconfig.cpp" line="1136"/>
+        <location filename="../mconfig.cpp" line="1143"/>
         <source>none</source>
         <translation>keine</translation>
     </message>
@@ -228,61 +228,57 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="865"/>
-        <location filename="../mconfig.cpp" line="1188"/>
-        <location filename="../mconfig.cpp" line="1196"/>
+        <location filename="../mconfig.cpp" line="1195"/>
+        <location filename="../mconfig.cpp" line="1203"/>
         <source>browse...</source>
         <translation>Durchsuchen...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1024"/>
+        <location filename="../mconfig.cpp" line="1035"/>
         <source>Baobab installation</source>
         <translation>Installation von Baobab</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1025"/>
+        <location filename="../mconfig.cpp" line="1036"/>
         <source>Wait while Baobab is installing...</source>
         <translation>Warten, als Baobab installiert wird...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1093"/>
+        <location filename="../mconfig.cpp" line="1104"/>
         <source>About MX User Manager</source>
         <translation>Infos zum MX Benutzer-Manager</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1094"/>
-        <location filename="../mconfig.cpp" line="1101"/>
-        <location filename="../mconfig.cpp" line="1118"/>
+        <location filename="../mconfig.cpp" line="1105"/>
         <source>MX User Manager</source>
         <translation>MX Benutzer-Manager</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1096"/>
+        <location filename="../mconfig.cpp" line="1107"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>Einfache Benutzer-Konfiguration für MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1097"/>
+        <location filename="../mconfig.cpp" line="1108"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1098"/>
-        <location filename="../mconfig.cpp" line="1101"/>
+        <location filename="../mconfig.cpp" line="1109"/>
         <source>License</source>
         <translation>Lizenz</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1099"/>
+        <location filename="../mconfig.cpp" line="1110"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1118"/>
         <source>Help</source>
-        <translation>Hilfe</translation>
+        <translation type="vanished">Hilfe</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1189"/>
+        <location filename="../mconfig.cpp" line="1196"/>
         <source>Select folder to copy to</source>
         <translation>Zielordner für Kopie auswählen</translation>
     </message>
