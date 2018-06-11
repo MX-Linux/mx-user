@@ -151,16 +151,11 @@ void MConfig::refresh() {
         break;
 
     case 3:
-        refreshClean();
-        buttonApply->setEnabled(false);
-        break;
-
-    case 4:
         refreshGroups();
         buttonApply->setEnabled(false);
         break;
 
-    case 5:
+    case 4:
         refreshMembership();
         buttonApply->setEnabled(false);
         break;
@@ -298,37 +293,6 @@ void MConfig::refreshChangePass()
                 sprintf(line2, "grep '^%s' /etc/passwd >/dev/null", tok);
                 if (system(line2) == 0) {
                     comboChangePass->addItem(tok);
-                }
-            }
-        }
-        pclose(fp);
-    }
-}
-
-void MConfig::refreshClean() {
-    tmpCheckBox->setChecked(true);
-    cacheCheckBox->setChecked(true);
-    thumbCheckBox->setChecked(true);
-    autocleanRB->setChecked(true);
-    oldLogsRB->setChecked(true);
-    selectedUserCB->setChecked(true);
-    char line[130];
-    char line2[130];
-    char *tok;
-    FILE *fp;
-    int i;
-    userCleanCB->clear();
-    userCleanCB->addItem(tr("none"));
-    fp = popen("ls -1 /home", "r");
-    if (fp != NULL) {
-        while (fgets(line, sizeof line, fp) != NULL) {
-            i = strlen(line);
-            line[--i] = '\0';
-            tok = strtok(line, " ");
-            if (tok != NULL && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
-                sprintf(line2, "grep '^%s' /etc/passwd >/dev/null", tok);
-                if (system(line2) == 0) {
-                    userCleanCB->addItem(tok);
                 }
             }
         }
@@ -724,51 +688,6 @@ void MConfig::applyMembership() {
     }
 }
 
-// run clean (free disk) commands
-void MConfig::applyClean() {
-    setCursor(QCursor(Qt::BusyCursor));
-    if (tmpCheckBox->isChecked()) {
-        system("rm -r /tmp/* 2>/dev/null");
-    }
-    if (cacheCheckBox->isChecked()) {
-        system("rm -r /home/" + userCleanCB->currentText().toUtf8() + "/.cache/* 2>/dev/null");
-    }
-    if (thumbCheckBox->isChecked()) {
-        system("rm -r /home/" + userCleanCB->currentText().toUtf8() + "/.thumbnails/* 2>/dev/null");
-    }
-    if (autocleanRB->isChecked()) {
-        system("apt-get autoclean");
-    } else {
-        system("apt-get clean");
-    }
-    if (oldLogsRB->isChecked()) {
-        system("find /var/log -name \"*.gz\" -o -name \"*.old\" -o -name \"*.1\" -type f -delete 2>/dev/null");
-    } else {
-        system("find /var/log -type f -exec sh -c \"echo > '{}'\" \\;");  // empty the logs
-    }
-    if (selectedUserCB->isChecked()) {
-        system("rm -r /home/" + userCleanCB->currentText().toUtf8() +"/.local/share/Trash/* 2>/dev/null");
-    } else {
-        system("rm -r /home/*/.local/share/Trash/* 2>/dev/null");
-    }
-    refresh();
-}
-
-/////////////////////////////////////////////////////////////////////////
-// sync process events
-
-void MConfig::syncStart() {
-    timer->start(100);
-}
-
-void MConfig::syncTime() {
-    int i = syncProgressBar->value() + 1;
-    if (i > 100) {
-        i = 0;
-    }
-    syncProgressBar->setValue(i);
-}
-
 void MConfig::syncDone(int exitCode, QProcess::ExitStatus exitStatus) {
     if (exitStatus == QProcess::NormalExit) {
         QString fromDir = QString("/home/%1").arg(fromUserComboBox->currentText());
@@ -920,12 +839,6 @@ void MConfig::on_userComboMembership_activated() {
     }
 }
 
-void MConfig::on_userCleanCB_activated() {
-    buttonApply->setEnabled(true);
-    if (userCleanCB->currentText() == tr("none")) {
-        refresh();
-    }
-}
 
 void MConfig::buildListGroups(){
     char line[130];
@@ -994,18 +907,13 @@ void MConfig::on_buttonApply_clicked() {
         break;
 
     case 3:
-        applyClean();
-        buttonApply->setEnabled(false);
-        break;
-
-    case 4:
         setCursor(QCursor(Qt::WaitCursor));
         applyGroup();
         setCursor(QCursor(Qt::ArrowCursor));
         buttonApply->setEnabled(false);
         break;
 
-    case 5:
+    case 4:
         setCursor(QCursor(Qt::WaitCursor));
         applyMembership();
         setCursor(QCursor(Qt::ArrowCursor));

@@ -48,7 +48,6 @@ public:
     void refreshAdd();
     void refreshDelete();
     void refreshChangePass();
-    void refreshClean();
     void refreshGroups();
     void refreshMembership();
     void applyRestore();
@@ -58,7 +57,6 @@ public:
     void applyDelete();
     void applyGroup();
     void applyMembership();
-    void applyClean();
     void buildListGroups();
     void displayDoc(QString url);
     void restartPanel(QString user);
@@ -66,8 +64,6 @@ public:
 
 
 public slots:
-    void syncStart();
-    void syncTime();
     void syncDone(int exitCode, QProcess::ExitStatus exitStatus);
     void installDone(int exitCode, QProcess::ExitStatus exitStatus);
 
@@ -78,7 +74,6 @@ public slots:
     virtual void on_userNameEdit_textEdited();
     virtual void on_groupNameEdit_textEdited();
     virtual void on_deleteGroupCombo_activated();
-    virtual void on_userCleanCB_activated();
     virtual void on_tabWidget_currentChanged();
     virtual void on_buttonApply_clicked();
     virtual void on_buttonCancel_clicked();

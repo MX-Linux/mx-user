@@ -1,3 +1,9 @@
+mx-user (18.6) mx; urgency=medium
+
+  * remove cleanup tab 
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 11 Jun 2018 15:31:56 -0400
+
 mx-user (18.3) mx; urgency=medium
 
   * new translations
