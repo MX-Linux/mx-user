@@ -9,7 +9,10 @@ TRANSLATIONS += translations/mx-user_am.ts \
                 translations/mx-user_de.ts \
                 translations/mx-user_el.ts \
                 translations/mx-user_es.ts \
+                translations/mx-user_fi.ts \
                 translations/mx-user_fr.ts \
+                translations/mx-user_hi.ts \
+                translations/mx-user_hr.ts \
                 translations/mx-user_hu.ts \
                 translations/mx-user_it.ts \
                 translations/mx-user_ja.ts \
