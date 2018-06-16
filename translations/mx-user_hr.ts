@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="hr" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -14,12 +14,12 @@
         <location filename="mconfig.cpp" line="837"/>
         <location filename="mconfig.cpp" line="1051"/>
         <source>none</source>
-        <translation>aucun</translation>
+        <translation>nijedan</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="368"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>La configuration de l&apos;utilisateur va être modifiée. Veuillez fermer toutes les applications ouvertes. Après exécution, veuillez fermer votre session ou redémarrer votre machine. Êtes-vous sûr(e) de vouloir modifier cette configuration maintenant?</translation>
+        <translation>Konfiguracija korisnika biti će popravljena, Molim zatvorite sve aplikacije. Kada bude završeno, molim odjavite se ili ponovno podignite sustav. Jeste li sigurni da želite popravljati sada?</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="369"/>
@@ -28,7 +28,7 @@
         <location filename="mconfig.cpp" line="651"/>
         <location filename="mconfig.cpp" line="678"/>
         <source>Yes</source>
-        <translation>Oui</translation>
+        <translation>Da</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="369"/>
@@ -37,242 +37,242 @@
         <location filename="mconfig.cpp" line="651"/>
         <location filename="mconfig.cpp" line="678"/>
         <source>No</source>
-        <translation>Non</translation>
+        <translation>Ne</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="414"/>
         <location filename="mconfig.cpp" line="425"/>
         <source>Autologin options</source>
-        <translation>Options de connexion automatique</translation>
+        <translation>Opcije samoprijave</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="415"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation>La connexion automatique a été désactivée pour le compte &apos;%1&apos;.</translation>
+        <translation>Automatska prijava je onemogućena za &apos;%1&apos; račun.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="426"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation>La connexion automatique a été activée pour le compte &apos;%1&apos;.</translation>
+        <translation>Automatska prijava je omogućena za &apos;%1&apos; račun.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="437"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation>Vous devez spécifier une destination pour &quot;copier vers&quot;. Vous ne pouvez pas copier vers le bureau auquel vous êtes connecté.</translation>
+        <translation>Morate odrediti &apos;kopiraj u&apos; odredište. Ne možete kopirati u radno okruženje u koje ste prijavljeni.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="441"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation>Avant de débuter la copie, veuillez fermer toutes les applications ouvertes. Assurez-vous que le répertoire de destination a une taille suffisante pour contenir les fichiers que vous désirez copier. Le processus peut effacer ou écraser vos fichiers ou configurations du bureau de destination. Êtes-vous certain(e) de vouloir continuer?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="466"/>
         <source>Synchronizing desktop...</source>
-        <translation>Synchronisation des bureaux...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="468"/>
         <source>Copying desktop...</source>
-        <translation>Copie des bureaux...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="491"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>Le nom d&apos;utilisateur doit comporter au moins 2 caractères. Veuillez choisir un nom d&apos;utilisateur plus long avant de continuer.</translation>
+        <translation>Korisničko ime mora biti barem 2 znaka dugo. Molim izaberite duže ime prije nego nastavite.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="495"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Le nom d&apos;utilisateur doit être en minuscules et il
-ne peut contenir ni caractères spéciaux ni espaces.
-Veuillez choisir un autre nom avant de poursuivre.</translation>
+        <translation>Korisničko ime mora se sastojati od malih slova i ne
+smije sadržavati posebne znakove ili razmake.
+Molim odaberite drugo ime prije nastavka..</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="504"/>
         <source>Sorry that name is in use. Please select a different name.</source>
-        <translation>Désolé, ce nom d&apos;utilisateur est déjà attribué. Veuillez choisir un autre nom d&apos;utilisateur.</translation>
+        <translation>Oprostite, ime je već u uporabi. Molim odaberite drugo ime.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="509"/>
         <location filename="mconfig.cpp" line="555"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation>Les mots de passe entrés ne correspondent pas. Veuillez réessayer.</translation>
+        <translation>Unosi lozinke se ne podudaraju. Molim pokušajte ponovno.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="514"/>
         <location filename="mconfig.cpp" line="560"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation>Le mot de passe doit contenir au moins 2 caractères. Veuillez entrer un mot de passe plus long avant de poursuivre.</translation>
+        <translation>Lozinka mora biti barem 2 znaka duga. Molim izaberite dužu lozinku prije nego nastavite.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="542"/>
         <source>The user was added ok.</source>
-        <translation>L&apos;utilisateur a été ajouté avec succès.</translation>
+        <translation>Korisnik je uspješno dodan.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="546"/>
         <source>Failed to add the user.</source>
-        <translation>Ajout de l&apos;utilisateur impossible.</translation>
+        <translation>Neuspjelo dodavanje korisnika.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="585"/>
         <source>Password successfully changed.</source>
-        <translation>Mot de passe modifié avec succès</translation>
+        <translation>Lozinka je uspješno promijenjena.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="589"/>
         <source>Failed to change password.</source>
-        <translation>La modification du mot de passe a échoué</translation>
+        <translation>Neuspjela promjena lozinke.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="594"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation>Cette action est irréversible. Êtes-vous sûr(e) de vouloir supprimer l&apos;utilisateur %1?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="607"/>
         <source>The user has been deleted.</source>
-        <translation>L&apos;utilisateur a été supprimé.</translation>
+        <translation>Korisnik je izbrisan.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="610"/>
         <source>Failed to delete the user.</source>
-        <translation>Impossible de supprimer l&apos;utilisateur.</translation>
+        <translation>Neuspjelo brisanje korisnika.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="623"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>Le nom du groupe doit être d&apos;au moins 2 caractères. Veuillez sélectionner un nom plus long avant de poursuivre.</translation>
+        <translation>Ima grupe mora biti barem 2 znaka dugo. Molim izaberite duže ime prije nego nastavite.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="627"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Le nom du groupe doit être en minuscules et il
-ne peut contenir ni caractères spéciaux ni espaces.
-Veuillez choisir un autre nom avant de poursuivre.</translation>
+        <translation>Ime grupe mora se sastojati od malih slova i ne
+smije sadržavati posebne znakove ili razmake.
+Molim odaberite drugo ime prije nastavka..</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="636"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
-        <translation>Désolé, ce nom est déjà utilisé. Veuillez choisir un autre nom.</translation>
+        <translation>Oprostite, ime grupe je već u uporabi. Molim odaberite drugo ime.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="643"/>
         <source>The system group was added ok.</source>
-        <translation>Le groupe du système a bien été ajouté.</translation>
+        <translation>Grupa sustava je uspješno dodana.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="646"/>
         <source>Failed to add the system group.</source>
-        <translation>Impossible d&apos;ajouter le groupe du système.</translation>
+        <translation>Neuspjelo dodavanje grupe sustava.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="649"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation>Cette action est irréversible. Êtes-vous sûr(e) de vouloir supprimer le groupe %1?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="656"/>
         <source>The group has been deleted.</source>
-        <translation>Le groupe a été supprimé.</translation>
+        <translation>Grupa je izbrisana.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="659"/>
         <source>Failed to delete the group.</source>
-        <translation>Impossible de supprimer le groupe.</translation>
+        <translation>Neuspjelo brisanje grupe.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="677"/>
         <source>Are you sure you want to make these changes?</source>
-        <translation>Etes-vous sûr de vouloir faire ces changements?</translation>
+        <translation>Jeste li sigurni da želite napraviti ove promjene?</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="683"/>
         <source>The changes have been applied.</source>
-        <translation>Les modifications ont été appliquées.</translation>
+        <translation>Promjene su primijenjene.</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="686"/>
         <source>Failed to apply group changes</source>
-        <translation>Impossible d&apos;appliquer les changements au groupe</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="699"/>
         <location filename="mconfig.cpp" line="738"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Synchronisation des bureaux...réussie</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="701"/>
         <location filename="mconfig.cpp" line="740"/>
         <source>Copying desktop...ok</source>
-        <translation>Copie des bureaux...réussie</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="744"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Synchronisation des bureaux...échec</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="746"/>
         <source>Copying desktop...failed</source>
-        <translation>Copie des bureaux...échec</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="784"/>
         <location filename="mconfig.cpp" line="1103"/>
         <location filename="mconfig.cpp" line="1111"/>
         <source>browse...</source>
-        <translation>Navigation...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="943"/>
         <source>Baobab installation</source>
-        <translation>Installation de Baobab</translation>
+        <translation>Baobab instalacija</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="944"/>
         <source>Wait while Baobab is installing...</source>
-        <translation>Patientez pendant l&apos;installation de Baobab...</translation>
+        <translation>Pričekajte dok se Baobab instalira...</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1012"/>
         <source>About MX User Manager</source>
-        <translation>À propos de MX Gestionnaire des utilisateurs</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1013"/>
         <source>MX User Manager</source>
-        <translation>MX Gestionnaire des utilisateurs</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1015"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>Configuration simple des utilisateurs pour MX Linux </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1016"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Autorska prava (c) MX Linux</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1017"/>
         <source>License</source>
-        <translation>Licence</translation>
+        <translation>Licenca</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1018"/>
         <source>Cancel</source>
-        <translation>Annuler</translation>
+        <translation>Otkaži</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1104"/>
         <source>Select folder to copy to</source>
-        <translation>Sélectionner le répertoire de destination</translation>
+        <translation>Odaberite mapu u koju ćete kopirati</translation>
     </message>
 </context>
 <context>
@@ -280,120 +280,120 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="meconfig.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>MX Gestionnaire des utilisateurs</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="62"/>
         <source>Administration</source>
-        <translation>Administration</translation>
+        <translation>Administracija</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="65"/>
         <source>Add a new user</source>
-        <translation>Ajouter un nouvel utilisateur</translation>
+        <translation>Dodaj novog korisnika</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="105"/>
         <source>Add User Account</source>
-        <translation>Ajouter un Compte Utilisateur</translation>
+        <translation>Dodaj korisnički račun</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="132"/>
         <source>Reenter password for new user</source>
-        <translation>Re saisissez le mot de passe du nouvel utilisateur</translation>
+        <translation>Ponovno unesi lozinku za novog korisnika</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="141"/>
         <source>confirm password</source>
-        <translation>confirmer le mot de passe</translation>
+        <translation>potvrdi lozinku</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="154"/>
         <location filename="meconfig.ui" line="1055"/>
         <source>Username of new user</source>
-        <translation>Nom du compte du nouvel utilisateur</translation>
+        <translation>Korisničko ime novog korisnika</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="157"/>
         <source>User login name:</source>
-        <translation>Identifiant du nouvel utilisateur:</translation>
+        <translation>Korisnikovo ime prijave:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="170"/>
         <location filename="meconfig.ui" line="1071"/>
         <source>Enter username of new user</source>
-        <translation>Entrez le nom du compte du nouvel utilisateur</translation>
+        <translation>Unesite korisničko ime novog korisnika</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="176"/>
         <source>username</source>
-        <translation>nom d&apos;utilisateur</translation>
+        <translation>korisničko ime</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="189"/>
         <location filename="meconfig.ui" line="227"/>
         <source>Password for new user</source>
-        <translation>Mot de passe du nouvel utilisateur</translation>
+        <translation>Lozinka za novog korisnika</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="192"/>
         <source>User password:</source>
-        <translation>Mot de passe utilisateur:</translation>
+        <translation>Korisnička lozinka:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="205"/>
         <source>Enter password for new user</source>
-        <translation>Entrez le mot de passe du nouvel utilisateur</translation>
+        <translation>Unesite lozinku za novog korisnika</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="214"/>
         <source>password</source>
-        <translation>mot de passe</translation>
+        <translation>lozinka</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="230"/>
         <source>Confirm user password:</source>
-        <translation>Confirmer le mot de passe utilisateur :</translation>
+        <translation>Potvrdi korisničku lozinku:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="256"/>
         <source>Change User Password</source>
-        <translation>Changer le mot de passe utilisateur</translation>
+        <translation>Promijeni korisničku lozinku</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="271"/>
         <source>new password</source>
-        <translation>Nouveau mot de passe</translation>
+        <translation>nova lozinka</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="284"/>
         <source>Confirm new password:</source>
-        <translation>Confirmer le nouveau mot de passe:</translation>
+        <translation>Potvrdi novu lozinku:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="294"/>
         <source>confirm new password</source>
-        <translation>confirmer le nouveau mot de passe</translation>
+        <translation>potvrdi novu lozinku</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="301"/>
         <source>Select user to modify:</source>
-        <translation>Sélectionner l&apos;utilisateur à modifier:</translation>
+        <translation>Odaberite korisnika kojeg ćete izmijeniti:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="314"/>
         <source>New user password:</source>
-        <translation>Nouveau mot de passe utilisateur:</translation>
+        <translation>Lozinka novog korisnika:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="346"/>
         <source>Delete User Account</source>
-        <translation>Effacer un compte utilisateur</translation>
+        <translation>Obriši korisnički račun</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="389"/>
         <source>Select user</source>
-        <translation>Choisir l&apos;utilisateur</translation>
+        <translation>Odaberi korisnika</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="405"/>
@@ -402,65 +402,65 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
         <location filename="meconfig.ui" line="1283"/>
         <location filename="meconfig.ui" line="1305"/>
         <source>Select user to delete</source>
-        <translation>Sélectionner l&apos;utilisateur à supprimer</translation>
+        <translation>Odaberi korisnika za brisanje</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="414"/>
         <source>User to delete:</source>
-        <translation>Utilisateur à supprimer:</translation>
+        <translation>Korisnik za brisanje:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="427"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation>Supprimer également le dossier personnel de l&apos;utilisateur</translation>
+        <translation>Također izbrišite korisnikov osobni direktorij</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="430"/>
         <source>Delete user home directory</source>
-        <translation>Supprimer le répertoire home de l&apos;utilisateur</translation>
+        <translation>Izbrišite korisnički osobni direktorij</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="448"/>
         <source>Options</source>
-        <translation>Options</translation>
+        <translation>Opcije</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="451"/>
         <source>Repair a user configuration</source>
-        <translation>Réparer une configuration utilisateur</translation>
+        <translation>Obnovite konfiguraciju korisnika</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="485"/>
         <location filename="meconfig.ui" line="1208"/>
         <source>Modify User Account</source>
-        <translation>Modifier le Compte Utilisateur</translation>
+        <translation>Izmijenite korisnički račun</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="497"/>
         <location filename="meconfig.ui" line="513"/>
         <source>Select user to repair</source>
-        <translation>Sélectionner l&apos;utilisateur devant être modifié</translation>
+        <translation>Odaberite korisnika za obnovu</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="500"/>
         <location filename="meconfig.ui" line="1292"/>
         <source>User to change:</source>
-        <translation>Utilisateur devant être modifié:</translation>
+        <translation>Korisnik kojeg ćete promijeniti:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="551"/>
         <source>Restore Defaults</source>
-        <translation>Rétablir la configuration d&apos;origine</translation>
+        <translation>Obnovite zadano</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="572"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation>Rétablir la configuration des navigateurs par défaut</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="578"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation>Configuration de Mozilla (Iceweasel ou Firefox) </translation>
+        <translation>Mozilla (Iceweasel ili Firefox) konfiguracije</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="581"/>
@@ -470,12 +470,12 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="meconfig.ui" line="588"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation>Rétablir les appartenances à un groupe par défaut</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="594"/>
         <source>Group memberships</source>
-        <translation>Groupes d&apos;utilisateurs</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="597"/>
@@ -485,200 +485,200 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="meconfig.ui" line="604"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation>Rétablir la configuration par défaut des sources pour APT </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="607"/>
         <source>Restore APT sources</source>
-        <translation>Rétablir la configuration des sources pour APT </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="617"/>
         <source>Change Autologin Settings</source>
-        <translation>Modifier les paramètres de la connexion automatique</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="623"/>
         <source>Log in automatically</source>
-        <translation>Se connecter automatiquement</translation>
+        <translation>Automatska prijava</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="630"/>
         <source>Require password to log in</source>
-        <translation>Mot de passe requis pour se connecter</translation>
+        <translation>Potrebna je lozinka za prijavu</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="645"/>
         <source>Copy/Sync</source>
-        <translation>Copie/Synchronisation</translation>
+        <translation>Kopiraj/Sinkroniziraj</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="672"/>
         <source>Copy Between Desktops</source>
-        <translation>Copie Entre Bureaux</translation>
+        <translation>Kopiraj između radnih okruženja</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="699"/>
         <location filename="meconfig.ui" line="766"/>
         <source>Select desktop to copy from</source>
-        <translation>Sélectionner le bureau à copier</translation>
+        <translation>Odaberite radno okruženje sa kojeg ćete kopirati</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="712"/>
         <source>Select to only copy files</source>
-        <translation>Sélectionner pour uniquement copier les fichiers</translation>
+        <translation>Odaberite da kopirate samo datoteke</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="715"/>
         <source>Copy only</source>
-        <translation>Copie seule</translation>
+        <translation>Kopiraj samo</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="731"/>
         <location filename="meconfig.ui" line="744"/>
         <source>Select desktop to copy to</source>
-        <translation>Sélectionner le bureau de destination</translation>
+        <translation>Odaberite radno okruženje na koje ćete kopirati</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="753"/>
         <source>Copy to:</source>
-        <translation>Copier vers:</translation>
+        <translation>Kopiraj u:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="775"/>
         <source>Copy from:</source>
-        <translation>Copier:</translation>
+        <translation>Kopiraj sa:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="788"/>
         <source>Select to copy and then delete differences</source>
-        <translation>Sélectionner pour copier puis supprimer les différences</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="791"/>
         <source>Sync</source>
-        <translation>Synchroniser</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="837"/>
         <source>Select to copy/sync Shared</source>
-        <translation>Sélectionner pour copier/synchroniser le Répertoire Partagé</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="840"/>
         <source>Shared folder</source>
-        <translation>Répertoire Partagé</translation>
+        <translation>Dijeljena mapa</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="853"/>
         <source>Select to copy/sync entire home</source>
-        <translation>Sélectionner pour copier/synchroniser le répertoire home en entier</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="856"/>
         <source>Entire home</source>
-        <translation>Home en entier</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="872"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation>Sélectionner pour copier/synchroniser la configuration du navigateur</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="875"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation>Configuration de Mozilla (Firefox ou Iceweasel) </translation>
+        <translation>Mozilla (Firefox ili Iceweasel) konfiguracije</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="888"/>
         <source>Select to copy/sync Documents</source>
-        <translation>Sélectionner pour copier/synchroniser le répertoire Documents</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="891"/>
         <source>Documents folder</source>
-        <translation>Répertoire Documents</translation>
+        <translation>Mapa dokumenata</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="898"/>
         <source>What to copy/sync:</source>
-        <translation>Que faut-il copier/synchoniser:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="914"/>
         <source>Progress</source>
-        <translation>Avancement</translation>
+        <translation>Napredak</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="944"/>
         <location filename="meconfig.ui" line="960"/>
         <source>Status of the changes</source>
-        <translation>État des modifications</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="963"/>
         <source>Status:</source>
-        <translation>État:</translation>
+        <translation>Status:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="979"/>
         <source>Progress of the changes</source>
-        <translation>Niveau d&apos;avancement des modifications</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1016"/>
         <source>Add/Remove Groups</source>
-        <translation>Ajouter/Supprimer Groupes</translation>
+        <translation>Dodaj/ukloni grupe</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1028"/>
         <source>Add Group</source>
-        <translation>Ajouter un Groupe</translation>
+        <translation>Dodaj grupu</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1058"/>
         <source>Group name:</source>
-        <translation>Nom du Groupe:</translation>
+        <translation>Ime grupe:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1077"/>
         <source>groupname</source>
-        <translation>nomdugroupe</translation>
+        <translation>ime grupe</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1106"/>
         <source>Delete Group</source>
-        <translation>Supprimer un Groupe</translation>
+        <translation>Izbrišite grupu</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1168"/>
         <source>Group to delete:</source>
-        <translation>Groupe à supprimer:</translation>
+        <translation>Grupa za brisanje:</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1196"/>
         <source>Group Membership</source>
-        <translation>Appartenance à un Groupe</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1312"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation>Groupes auxquels l&apos;utilisateur appartient (changer les groupes en cochant/décochant les cases appropriées):</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1332"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>* Veuillez vérifier attentivement vos sélections avant d&apos;appliquer, car attribuer des adhésions de groupe de manière incorrecte peut casser votre système. En cas d&apos;erreur, utilisez l&apos;onglet de réparation pour restaurer les appartenances d&apos;origine .</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1392"/>
         <source>Apply any changes</source>
-        <translation>Appliquer les changements</translation>
+        <translation>Primjeni izmjene</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1395"/>
         <source>Apply</source>
-        <translation>Appliquer</translation>
+        <translation>Primjeni</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1402"/>
@@ -688,12 +688,12 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="meconfig.ui" line="1409"/>
         <source>Cancel any changes then quit</source>
-        <translation>Annuler toutes les modifications puis sortir</translation>
+        <translation>Otkaži promjene i izađi</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1412"/>
         <source>Close</source>
-        <translation>Fermer</translation>
+        <translation>Zatvori</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1419"/>
@@ -703,12 +703,12 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="meconfig.ui" line="1460"/>
         <source>Display help </source>
-        <translation>Afficher l&apos;aide</translation>
+        <translation>Prikaži pomoć</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1463"/>
         <source>Help</source>
-        <translation>Aide</translation>
+        <translation>Pomoć</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1470"/>
@@ -718,12 +718,12 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="meconfig.ui" line="1477"/>
         <source>About this application</source>
-        <translation>À propos de cette application</translation>
+        <translation>O ovoj aplikaciji</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1480"/>
         <source>About...</source>
-        <translation>À propos...</translation>
+        <translation>O programu...</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1487"/>
@@ -736,7 +736,7 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
     <message>
         <location filename="main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>Vous devez lancer cette application avec les droits administrateur.</translation>
+        <translation>Morate pokrenuti ovaj program kao root.</translation>
     </message>
 </context>
 </TS>
