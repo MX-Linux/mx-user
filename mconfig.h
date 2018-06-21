@@ -22,6 +22,8 @@
 #include <QProcess>
 #include <QTimer>
 
+#include "cmd.h"
+
 class MConfig : public QDialog, public Ui::MEConfig {
     Q_OBJECT
 protected:
@@ -35,7 +37,6 @@ public:
     QMessageBox *mbox;
 
     // helpers
-    static QString getCmdOut(QString cmd);
     static QStringList getCmdOuts(QString cmd);
     static QString getCmdValue(QString cmd, QString key, QString keydel, QString valdel);
     static QStringList getCmdValues(QString cmd, QString key, QString keydel, QString valdel);
@@ -64,7 +65,7 @@ public:
 
 
 public slots:
-    void syncDone(int exitCode, QProcess::ExitStatus exitStatus);
+    void syncDone(int, QProcess::ExitStatus exitStatus);
     void installDone(int exitCode, QProcess::ExitStatus exitStatus);
 
     virtual void on_fromUserComboBox_activated();
@@ -82,8 +83,6 @@ public slots:
 
 protected:
 
-private:
-    static bool hasInternetConnection();
 protected slots:
     /*$PROTECTED_SLOTS$*/
 
@@ -98,6 +97,11 @@ private slots:
     void on_mozillaRadioButton_clicked();
     void on_sharedRadioButton_clicked();
     void on_toUserComboBox_currentIndexChanged(const QString &arg1);
+
+private:
+    static bool hasInternetConnection();
+    Cmd shell;
+
 };
 
 #endif
