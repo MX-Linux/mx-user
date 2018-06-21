@@ -41,23 +41,6 @@ MConfig::~MConfig(){
 /////////////////////////////////////////////////////////////////////////
 // util functions
 
-QString MConfig::getCmdOut(QString cmd) {
-    char line[260];
-    const char* ret = "";
-    FILE* fp = popen(cmd.toUtf8(), "r");
-    if (fp == NULL) {
-        return QString (ret);
-    }
-    int i;
-    if (fgets(line, sizeof line, fp) != NULL) {
-        i = strlen(line);
-        line[--i] = '\0';
-        ret = line;
-    }
-    pclose(fp);
-    return QString (ret);
-}
-
 QStringList MConfig::getCmdOuts(QString cmd) {
     char line[260];
     FILE* fp = popen(cmd.toUtf8(), "r");
@@ -376,7 +359,7 @@ void MConfig::applyRestore() {
     // restore groups
     if (checkGroups->isChecked() && user.compare("root") != 0) {
         cmd = QString("sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
-        cmd = "usermod -G " + getCmdOut(cmd) + " " + user;
+        cmd = "usermod -G " + shell.getOutput(cmd) + " " + user;
         system(cmd.toUtf8());
     }
     // restore Mozilla configs
@@ -386,13 +369,13 @@ void MConfig::applyRestore() {
     }
     // restore APT configs
     if (checkApt->isChecked()) {
-        QString mx_version = getCmdOut("lsb_release -rs").left(2);
+        QString mx_version = shell.getOutput("lsb_release -rs").left(2);
         if (mx_version.toInt() < 15) {
             qDebug() << "MX version not detected or out of range: " << mx_version;
             return;
         }
         // create temp folder
-        QString path = getCmdOut("mktemp -d /tmp/mx-sources.XXXXXX");
+        QString path = shell.getOutput("mktemp -d /tmp/mx-sources.XXXXXX");
         // download source files from
         cmd = QString("wget -q https://github.com/mx-linux/MX-%1_sources/archive/master.zip -P %2").arg(mx_version).arg(path);
         system(cmd.toUtf8());
@@ -674,21 +657,17 @@ void MConfig::applyMembership() {
         }
     }
     cmd.chop(1);
-    int ans = QMessageBox::warning(this, QString::null, tr("Are you sure you want to make these changes?"),
-                                   tr("Yes"), tr("No"));
-    if (ans == 0) {
-        cmd = QString("usermod -G %1 %2").arg(cmd).arg(userComboMembership->currentText());
-        if (system(cmd.toUtf8()) == 0) {
-            QMessageBox::information(0, QString::null,
-                                     tr("The changes have been applied."));
-        } else {
-            QMessageBox::critical(0, QString::null,
-                                  tr("Failed to apply group changes"));
-        }
+    cmd = QString("usermod -G %1 %2").arg(cmd).arg(userComboMembership->currentText());
+    if (shell.run(cmd) == 0) {
+        QMessageBox::information(0, QString::null,
+                                 tr("The changes have been applied."));
+    } else {
+        QMessageBox::critical(0, QString::null,
+                              tr("Failed to apply group changes"));
     }
 }
 
-void MConfig::syncDone(int exitCode, QProcess::ExitStatus exitStatus) {
+void MConfig::syncDone(int, QProcess::ExitStatus exitStatus) {
     if (exitStatus == QProcess::NormalExit) {
         QString fromDir = QString("/home/%1").arg(fromUserComboBox->currentText());
         QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
@@ -862,7 +841,7 @@ void MConfig::buildListGroups(){
     }
     //check the boxes for the groups that the current user belongs to
     QString cmd = QString("id -nG %1").arg(userComboMembership->currentText());
-    QString out = getCmdOut(cmd);
+    QString out = shell.getOutput(cmd);
     QStringList out_tok = out.split(" ");
     while (!out_tok.isEmpty()) {
         QString text = out_tok.takeFirst();
@@ -876,7 +855,7 @@ void MConfig::buildListGroups(){
 void MConfig::displayDoc(QString url)
 {
     QString exec = "xdg-open";
-    QString user = getCmdOut("logname");
+    QString user = shell.getOutput("logname");
     if (system("command -v mx-viewer") == 0) { // use mx-viewer if available
         exec = "mx-viewer";
     }
@@ -1001,8 +980,7 @@ bool MConfig::hasInternetConnection()
 
 // Get version of the program
 QString MConfig::getVersion(QString name) {
-    QString cmd = QString("dpkg -l %1 | awk 'NR==6 {print $3}'").arg(name);
-    return getCmdOut(cmd);
+    return shell.getOutput("dpkg-query -f '${Version}' -W " + name);
 }
 
 // show about

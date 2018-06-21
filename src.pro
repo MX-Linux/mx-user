@@ -38,3 +38,5 @@ CONFIG += release warn_on thread qt
 
 RESOURCES += \
     images.qrc
+
+unix:!macx: LIBS += -lcmd
