@@ -17,12 +17,13 @@
 //
 
 #include "mconfig.h"
-#include <stdio.h>
-#include <unistd.h>
-#include <QFileDialog>
 
+#include <QFileDialog>
+#include <QTextEdit>
 #include <QDebug>
 
+#include <stdio.h>
+#include <unistd.h>
 
 MConfig::MConfig(QWidget* parent) : QDialog(parent) {
     setupUi(this);
@@ -347,7 +348,7 @@ void MConfig::applyRestore() {
     QString cmd;
 
     if (checkApt->isChecked() || checkGroups->isChecked() || checkMozilla->isChecked()) {
-        int ans = QMessageBox::warning(0, QString::null,
+        int ans = QMessageBox::warning(this, QString::null,
                                        tr("The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?"),
                                        tr("Yes"), tr("No"));
         if (ans != 0) {
@@ -394,7 +395,7 @@ void MConfig::applyRestore() {
     if (radioAutologinNo->isChecked()) {
         cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
         system(cmd.toUtf8());
-        QMessageBox::information(0, tr("Autologin options"),
+        QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
         cmd = QString("grep -qE '^#autologin-user=%1'\\|'^autologin-user=%1' /etc/lightdm/lightdm.conf").arg(user);
@@ -405,7 +406,7 @@ void MConfig::applyRestore() {
             cmd = QString("echo 'autologin-user=%1' >> /etc/lightdm/lightdm.conf").arg(user);
             system(cmd.toUtf8());
         }
-        QMessageBox::information(0, tr("Autologin options"),
+        QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been enabled for the '%1' account.").arg(user)));
     }
     setCursor(QCursor(Qt::ArrowCursor));
@@ -416,12 +417,12 @@ void MConfig::applyRestore() {
 void MConfig::applyDesktop() {
 
     if (toUserComboBox->currentText().isEmpty()) {
-        QMessageBox::information(0, QString::null,
+        QMessageBox::information(this, QString::null,
                                  tr("You must specify a 'copy to' destination. You cannot copy to the desktop you are logged in to."));
         return;
     }
     // verify
-    int ans = QMessageBox::critical(0, QString::null, tr("Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?"),
+    int ans = QMessageBox::critical(this, QString::null, tr("Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?"),
                                     tr("Yes"), tr("No"));
     if (ans != 0) {
         return;
@@ -470,11 +471,11 @@ void MConfig::applyAdd() {
     //validate data before proceeding
     // see if username is reasonable length
     if (userNameEdit->text().length() < 2) {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
         return;
     } else if (!userNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("The user name needs to be lower case and it\n"
                                  "cannot contain special characters or spaces.\n"
                                  "Please choose another name before proceeding."));
@@ -483,17 +484,17 @@ void MConfig::applyAdd() {
     // check that user name is not already used
     QString cmd = QString("grep '^%1' /etc/passwd >/dev/null").arg( userNameEdit->text());
     if (system(cmd.toUtf8()) == 0) {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("Sorry that name is in use. Please select a different name."));
         return;
     }
     if (userPasswordEdit->text().compare(userPassword2Edit->text()) != 0) {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("Password entries do not match. Please try again."));
         return;
     }
     if (userPasswordEdit->text().length() < 2) {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
         return;
     }
@@ -521,11 +522,11 @@ void MConfig::applyAdd() {
     }
 
     if (fpok) {
-        QMessageBox::information(0, QString::null,
+        QMessageBox::information(this, QString::null,
                                  tr("The user was added ok."));
         refresh();
     } else {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("Failed to add the user."));
     }
 }
@@ -534,12 +535,12 @@ void MConfig::applyAdd() {
 void MConfig::applyChangePass()
 {
     if (lineEditChangePass->text().compare(lineEditChangePassConf->text()) != 0) {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("Password entries do not match. Please try again."));
         return;
     }
     if (lineEditChangePass->text().length() < 2) {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
         return;
     }
@@ -564,11 +565,11 @@ void MConfig::applyChangePass()
     }
 
     if (fpok) {
-        QMessageBox::information(0, QString::null,
+        QMessageBox::information(this, QString::null,
                                  tr("Password successfully changed."));
         refresh();
     } else {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("Failed to change password."));
     }
 }
@@ -586,10 +587,10 @@ void MConfig::applyDelete() {
             cmd = QString("deluser %1").arg(deleteUserCombo->currentText());
         }
         if (system(cmd.toUtf8()) == 0) {
-            QMessageBox::information(0, QString::null,
+            QMessageBox::information(this, QString::null,
                                      tr("The user has been deleted."));
         } else {
-            QMessageBox::critical(0, QString::null,
+            QMessageBox::critical(this, QString::null,
                                   tr("Failed to delete the user."));
         }
         refresh();
@@ -602,11 +603,11 @@ void MConfig::applyGroup() {
         //validate data before proceeding
         // see if groupname is reasonable length
         if (groupNameEdit->text().length() < 2) {
-            QMessageBox::critical(0, QString::null,
+            QMessageBox::critical(this, QString::null,
                                   tr("The group name needs to be at least 2 characters long. Please select a longer name before proceeding."));
             return;
         } else if (!groupNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
-            QMessageBox::critical(0, QString::null,
+            QMessageBox::critical(this, QString::null,
                                   tr("The group name needs to be lower case and it \n"
                                      "cannot contain special characters or spaces.\n"
                                      "Please choose another name before proceeding."));
@@ -615,17 +616,17 @@ void MConfig::applyGroup() {
         // check that group name is not already used
         QString cmd = QString("grep '^%1' /etc/group >/dev/null").arg( groupNameEdit->text());
         if (system(cmd.toUtf8()) == 0) {
-            QMessageBox::critical(0, QString::null,
+            QMessageBox::critical(this, QString::null,
                                   tr("Sorry that group name already exists. Please select a different name."));
             return;
         }
         // run addgroup command
         cmd = QString("addgroup --system %1").arg( groupNameEdit->text());
         if (system(cmd.toUtf8()) == 0) {
-            QMessageBox::information(0, QString::null,
+            QMessageBox::information(this, QString::null,
                                      tr("The system group was added ok."));
         } else {
-            QMessageBox::critical(0, QString::null,
+            QMessageBox::critical(this, QString::null,
                                   tr("Failed to add the system group."));
         }
     }  else { //deleting group if addBox disabled
@@ -635,10 +636,10 @@ void MConfig::applyGroup() {
         if (ans == 0) {
             cmd = QString("delgroup %1").arg(deleteGroupCombo->currentText());
             if (system(cmd.toUtf8()) == 0) {
-                QMessageBox::information(0, QString::null,
+                QMessageBox::information(this, QString::null,
                                          tr("The group has been deleted."));
             } else {
-                QMessageBox::critical(0, QString::null,
+                QMessageBox::critical(this, QString::null,
                                       tr("Failed to delete the group."));
             }
         }
@@ -659,10 +660,10 @@ void MConfig::applyMembership() {
     cmd.chop(1);
     cmd = QString("usermod -G %1 %2").arg(cmd).arg(userComboMembership->currentText());
     if (shell.run(cmd) == 0) {
-        QMessageBox::information(0, QString::null,
+        QMessageBox::information(this, QString::null,
                                  tr("The changes have been applied."));
     } else {
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(this, QString::null,
                               tr("Failed to apply group changes"));
     }
 }
@@ -992,10 +993,33 @@ void MConfig::on_buttonAbout_clicked() {
                        getVersion("mx-user") + "</p><p align=\"center\"><h3>" +
                        tr("Simple user configuration for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
-    msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
-    msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
-    if (msgBox.exec() == QMessageBox::AcceptRole) {
+    QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
+    QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
+    QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
+    btnCancel->setIcon(QIcon::fromTheme("window-close"));
+
+    msgBox.exec();
+
+    if (msgBox.clickedButton() == btnLicense) {
         displayDoc("file:///usr/share/doc/mx-user/license.html");
+    } else if (msgBox.clickedButton() == btnChangelog) {
+        QDialog *changelog = new QDialog(this);
+        changelog->resize(600, 500);
+
+        QTextEdit *text = new QTextEdit;
+        text->setReadOnly(true);
+        Cmd cmd;
+        text->setText(cmd.getOutput("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
+
+        QPushButton *btnClose = new QPushButton(tr("&Close"));
+        btnClose->setIcon(QIcon::fromTheme("window-close"));
+        connect(btnClose, &QPushButton::clicked, changelog, &QDialog::close);
+
+        QVBoxLayout *layout = new QVBoxLayout;
+        layout->addWidget(text);
+        layout->addWidget(btnClose);
+        changelog->setLayout(layout);
+        changelog->exec();
     }
     this->show();
 }
