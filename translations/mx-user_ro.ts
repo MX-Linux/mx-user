@@ -4,273 +4,280 @@
 <context>
     <name>MConfig</name>
     <message>
-        <location filename="../mconfig.cpp" line="183"/>
-        <location filename="../mconfig.cpp" line="252"/>
-        <location filename="../mconfig.cpp" line="280"/>
-        <location filename="../mconfig.cpp" line="311"/>
-        <location filename="../mconfig.cpp" line="333"/>
-        <location filename="../mconfig.cpp" line="356"/>
-        <location filename="../mconfig.cpp" line="789"/>
-        <location filename="../mconfig.cpp" line="804"/>
-        <location filename="../mconfig.cpp" line="829"/>
-        <location filename="../mconfig.cpp" line="837"/>
-        <location filename="../mconfig.cpp" line="1051"/>
+        <location filename="../mconfig.cpp" line="167"/>
+        <location filename="../mconfig.cpp" line="236"/>
+        <location filename="../mconfig.cpp" line="264"/>
+        <location filename="../mconfig.cpp" line="295"/>
+        <location filename="../mconfig.cpp" line="317"/>
+        <location filename="../mconfig.cpp" line="340"/>
+        <location filename="../mconfig.cpp" line="769"/>
+        <location filename="../mconfig.cpp" line="784"/>
+        <location filename="../mconfig.cpp" line="809"/>
+        <location filename="../mconfig.cpp" line="817"/>
+        <location filename="../mconfig.cpp" line="1053"/>
         <source>none</source>
         <translation>niciunul</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="368"/>
+        <location filename="../mconfig.cpp" line="352"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Configurația utilizatorului va fi reparată. Închideți acum toate celalalte aplicații. La terminare, logout si reporniți computerul. Sigur doriți să reparați contul acum?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="369"/>
-        <location filename="../mconfig.cpp" line="442"/>
-        <location filename="../mconfig.cpp" line="596"/>
-        <location filename="../mconfig.cpp" line="651"/>
-        <location filename="../mconfig.cpp" line="678"/>
+        <location filename="../mconfig.cpp" line="353"/>
+        <location filename="../mconfig.cpp" line="426"/>
+        <location filename="../mconfig.cpp" line="580"/>
+        <location filename="../mconfig.cpp" line="635"/>
         <source>Yes</source>
         <translation>Da</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="369"/>
-        <location filename="../mconfig.cpp" line="442"/>
-        <location filename="../mconfig.cpp" line="596"/>
-        <location filename="../mconfig.cpp" line="651"/>
-        <location filename="../mconfig.cpp" line="678"/>
+        <location filename="../mconfig.cpp" line="353"/>
+        <location filename="../mconfig.cpp" line="426"/>
+        <location filename="../mconfig.cpp" line="580"/>
+        <location filename="../mconfig.cpp" line="635"/>
         <source>No</source>
         <translation>Nu</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="414"/>
-        <location filename="../mconfig.cpp" line="425"/>
+        <location filename="../mconfig.cpp" line="398"/>
+        <location filename="../mconfig.cpp" line="409"/>
         <source>Autologin options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="415"/>
+        <location filename="../mconfig.cpp" line="399"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="426"/>
+        <location filename="../mconfig.cpp" line="410"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="437"/>
+        <location filename="../mconfig.cpp" line="421"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="441"/>
+        <location filename="../mconfig.cpp" line="425"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>Înainte de copiere, închideți toate celelalte aplicații. Asigurați-vă că spațiul pe destinație este suficient de mare pentru fișierele pe care le copiați. Copierea între desktopuri poate suprascrie sau șterge fișiere sau preferințele pe desktopul destinație. Sigur doriți să continuați?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="466"/>
+        <location filename="../mconfig.cpp" line="450"/>
         <source>Synchronizing desktop...</source>
         <translation>Sincronizare desktop...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="468"/>
+        <location filename="../mconfig.cpp" line="452"/>
         <source>Copying desktop...</source>
         <translation>Configurare desktop... </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="491"/>
+        <location filename="../mconfig.cpp" line="475"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Numele utilizatorului trebuie să aibă
 cel puțin 2 caractere. Alegeți alt nume
 înainte de a continua.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="495"/>
+        <location filename="../mconfig.cpp" line="479"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="504"/>
+        <location filename="../mconfig.cpp" line="488"/>
         <source>Sorry that name is in use. Please select a different name.</source>
         <translation>Numele de cont e deja folosit. Alegeți un nume diferit.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="509"/>
-        <location filename="../mconfig.cpp" line="555"/>
+        <location filename="../mconfig.cpp" line="493"/>
+        <location filename="../mconfig.cpp" line="539"/>
         <source>Password entries do not match. Please try again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="514"/>
-        <location filename="../mconfig.cpp" line="560"/>
+        <location filename="../mconfig.cpp" line="498"/>
+        <location filename="../mconfig.cpp" line="544"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="542"/>
+        <location filename="../mconfig.cpp" line="526"/>
         <source>The user was added ok.</source>
         <translation>Contul a fost adăugat cu succes.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="546"/>
+        <location filename="../mconfig.cpp" line="530"/>
         <source>Failed to add the user.</source>
         <translation>Nu s-a reușit adăugarea cont utilizator.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="585"/>
+        <location filename="../mconfig.cpp" line="569"/>
         <source>Password successfully changed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="589"/>
+        <location filename="../mconfig.cpp" line="573"/>
         <source>Failed to change password.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="594"/>
+        <location filename="../mconfig.cpp" line="578"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="607"/>
+        <location filename="../mconfig.cpp" line="591"/>
         <source>The user has been deleted.</source>
         <translation>Cont utilizator a fost șters.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="610"/>
+        <location filename="../mconfig.cpp" line="594"/>
         <source>Failed to delete the user.</source>
         <translation>Nu s-a putut șterge cont utilizator.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="623"/>
+        <location filename="../mconfig.cpp" line="607"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Numele grupului de lucru trebuie să aibă cel puțin 2 caractere. Alegeți alt nume înainte de a continua.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="627"/>
+        <location filename="../mconfig.cpp" line="611"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="636"/>
+        <location filename="../mconfig.cpp" line="620"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
         <translation>Numele de grup e deja folosit. Alegeți un nume diferit.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="643"/>
+        <location filename="../mconfig.cpp" line="627"/>
         <source>The system group was added ok.</source>
         <translation>Grupul de sistem a fost adăugat cu succes.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="646"/>
+        <location filename="../mconfig.cpp" line="630"/>
         <source>Failed to add the system group.</source>
         <translation>Nu s-a putut adăuga grupul de sistem.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="649"/>
+        <location filename="../mconfig.cpp" line="633"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="656"/>
+        <location filename="../mconfig.cpp" line="640"/>
         <source>The group has been deleted.</source>
         <translation>Grupul a fost șters.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="659"/>
+        <location filename="../mconfig.cpp" line="643"/>
         <source>Failed to delete the group.</source>
         <translation>Nu s-a putut șterge grupul.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="677"/>
         <source>Are you sure you want to make these changes?</source>
-        <translation>Sigur doriți să faceți aceste schimbări?</translation>
+        <translation type="vanished">Sigur doriți să faceți aceste schimbări?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="683"/>
+        <location filename="../mconfig.cpp" line="664"/>
         <source>The changes have been applied.</source>
         <translation>Schimbările au fost implementate.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="686"/>
+        <location filename="../mconfig.cpp" line="667"/>
         <source>Failed to apply group changes</source>
         <translation>Nu s-au putut implemeta schimbările de grup.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="699"/>
-        <location filename="../mconfig.cpp" line="738"/>
+        <location filename="../mconfig.cpp" line="679"/>
+        <location filename="../mconfig.cpp" line="718"/>
         <source>Synchronizing desktop...ok</source>
         <translation>Sincronizare desktop...OK</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="701"/>
-        <location filename="../mconfig.cpp" line="740"/>
+        <location filename="../mconfig.cpp" line="681"/>
+        <location filename="../mconfig.cpp" line="720"/>
         <source>Copying desktop...ok</source>
         <translation>Copiere desktop...OK</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="744"/>
+        <location filename="../mconfig.cpp" line="724"/>
         <source>Synchronizing desktop...failed</source>
         <translation>Sincronizare desktop...nereușită</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="746"/>
+        <location filename="../mconfig.cpp" line="726"/>
         <source>Copying desktop...failed</source>
         <translation>Copiere desktop...nereușită</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="784"/>
-        <location filename="../mconfig.cpp" line="1103"/>
-        <location filename="../mconfig.cpp" line="1111"/>
+        <location filename="../mconfig.cpp" line="764"/>
+        <location filename="../mconfig.cpp" line="1105"/>
+        <location filename="../mconfig.cpp" line="1113"/>
         <source>browse...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="943"/>
+        <location filename="../mconfig.cpp" line="923"/>
         <source>Baobab installation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="944"/>
+        <location filename="../mconfig.cpp" line="924"/>
         <source>Wait while Baobab is installing...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1012"/>
+        <location filename="../mconfig.cpp" line="991"/>
         <source>About MX User Manager</source>
         <translation>Info despre MX Manager Utilizator</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1013"/>
+        <location filename="../mconfig.cpp" line="992"/>
         <source>MX User Manager</source>
         <translation>MX Manager Utilizator</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1015"/>
+        <location filename="../mconfig.cpp" line="994"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>Simplu configurator de conturi utilizator pentru MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1016"/>
+        <location filename="../mconfig.cpp" line="995"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1017"/>
+        <location filename="../mconfig.cpp" line="996"/>
         <source>License</source>
         <translation>Licență</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1018"/>
+        <location filename="../mconfig.cpp" line="997"/>
+        <source>Changelog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="998"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1104"/>
+        <location filename="../mconfig.cpp" line="1014"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1106"/>
         <source>Select folder to copy to</source>
         <translation type="unfinished"></translation>
     </message>

@@ -1,3 +1,10 @@
+mx-user (18.6.2) mx; urgency=medium
+
+  * add changelog button
+  * fix: message boxes showing alwas on top of window
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 28 Jun 2018 17:51:33 -0400
+
 mx-user (18.6.1) mx; urgency=medium
 
   * new translations
