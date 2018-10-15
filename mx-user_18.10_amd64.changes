@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 14 Oct 2018 20:35:12 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 18.10
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (18.10) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 95b9742cc6e082517a7b2e3999f2fcf62c232d30 1159 mx-user_18.10.dsc
+ eb8d47ce5d95b7222ca9e462ef06f8376b07ade0 75912 mx-user_18.10.tar.xz
+ a3fb1c55bd41d5696dfd9308ac1da71032282c59 119304 mx-user_18.10_amd64.deb
+Checksums-Sha256:
+ ee868664437134be6080cf40cbd6e14a4d79a64f59b9d4062b2862c65c686806 1159 mx-user_18.10.dsc
+ a2e5dddb62ee47ef196ef59cb7160bca2f8af6a57e2018679cbaf2058fc69d8f 75912 mx-user_18.10.tar.xz
+ d3f7378586fc88d75828f8d5f2174fbc2d67d473fa11aa6840ca91d39a3dd34a 119304 mx-user_18.10_amd64.deb
+Files:
+ 2bfb73cb226038ff964b294debc0fb49 1159 system optional mx-user_18.10.dsc
+ b4fd687bd82d8b6d9a29f56331ecac11 75912 system optional mx-user_18.10.tar.xz
+ 8c48a19e2e8dc0202471f3478ee4dc0f 119304 system optional mx-user_18.10_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlvD4c8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumF9zCACnKILfPVdRHL8lyQ2DLfdFtdbTH4NJ
+Xp9bgUA3EedYaKrcZHAhJXVOLR9WEOjZUPB4LdF520BGB3WoR05WST+kCvmR8e2W
+Aka+bBct/lxFQUz6d9EuIxhz952TGZqcvnuOF+j5o3PpEMlMPW3rvwIC+DHX1hiG
+A/rf2lqZrxg3/3hLBxZaeaZZPTOzyR7abcwoLy2rPm/3UIQo4b3JIsnKM1RF0mBm
+zxKZBNXRxIoRi85fnmtLKWhj2bS7ZPd8lAphZSybEmtLKH1RuezSE2bVbzrABKjx
+zei4gIPSVcfEpjROG2d0jmK1fEKf7pEmtjemtuK7uyd4JTi+DZ3+9ZyJ
+=kHGD
+-----END PGP SIGNATURE-----
