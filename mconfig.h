@@ -97,6 +97,10 @@ private slots:
     void on_mozillaRadioButton_clicked();
     void on_sharedRadioButton_clicked();
     void on_toUserComboBox_currentIndexChanged(const QString &arg1);
+    void on_userPassword2Edit_textChanged(const QString &arg1);
+    void on_lineEditChangePassConf_textChanged(const QString &arg1);
+    void on_userPasswordEdit_textChanged();
+    void on_lineEditChangePass_textChanged();
 
 private:
     static bool hasInternetConnection();

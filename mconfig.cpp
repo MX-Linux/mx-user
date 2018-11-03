@@ -1118,3 +1118,41 @@ void MConfig::on_toUserComboBox_currentIndexChanged(const QString &arg1)
 }
 
 
+void MConfig::on_userPassword2Edit_textChanged(const QString &arg1)
+{
+    QPalette pal = userPassword2Edit->palette();
+    if (arg1 != userPasswordEdit->text()) {
+        pal.setColor(QPalette::Base, QColor(255, 0, 0, 20));
+    } else {
+        pal.setColor(QPalette::Base, QColor(0, 255, 0, 10));
+    }
+    userPasswordEdit->setPalette(pal);
+    userPassword2Edit->setPalette(pal);
+}
+
+void MConfig::on_lineEditChangePassConf_textChanged(const QString &arg1)
+{
+    QPalette pal = lineEditChangePassConf->palette();
+    if (arg1 != lineEditChangePass->text()) {
+        pal.setColor(QPalette::Base, QColor(255, 0, 0, 20));
+    } else {
+        pal.setColor(QPalette::Base, QColor(0, 255, 0, 10));
+    }
+    lineEditChangePassConf->setPalette(pal);
+    lineEditChangePass->setPalette(pal);
+}
+
+void MConfig::on_userPasswordEdit_textChanged()
+{
+    userPassword2Edit->clear();
+    userPasswordEdit->setPalette(QApplication::palette());
+    userPassword2Edit->setPalette(QApplication::palette());
+}
+
+void MConfig::on_lineEditChangePass_textChanged()
+{
+    lineEditChangePassConf->clear();
+    lineEditChangePass->setPalette(QApplication::palette());
+    lineEditChangePassConf->setPalette(QApplication::palette());
+}
+
