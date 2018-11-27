@@ -6,6 +6,7 @@ TARGET = mx-user
 TRANSLATIONS += translations/mx-user_am.ts \
                 translations/mx-user_ca.ts \
                 translations/mx-user_cs.ts \
+                translations/mx-user_da.ts \
                 translations/mx-user_de.ts \
                 translations/mx-user_el.ts \
                 translations/mx-user_es.ts \
@@ -14,6 +15,7 @@ TRANSLATIONS += translations/mx-user_am.ts \
                 translations/mx-user_hi.ts \
                 translations/mx-user_hr.ts \
                 translations/mx-user_hu.ts \
+                translations/mx-user_is.ts \
                 translations/mx-user_it.ts \
                 translations/mx-user_ja.ts \
                 translations/mx-user_kk.ts \
@@ -25,6 +27,7 @@ TRANSLATIONS += translations/mx-user_am.ts \
                 translations/mx-user_ro.ts \
                 translations/mx-user_ru.ts \
                 translations/mx-user_sk.ts \
+                translations/mx-user_sq.ts \
                 translations/mx-user_sv.ts \
                 translations/mx-user_tr.ts \
                 translations/mx-user_uk.ts \

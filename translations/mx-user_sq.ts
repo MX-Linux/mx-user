@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="lt" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sq" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -14,12 +14,12 @@
         <location filename="mconfig.cpp" line="817"/>
         <location filename="mconfig.cpp" line="1053"/>
         <source>none</source>
-        <translation>nėra</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="352"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>Naudotojo konfigūracija bus pataisyta. Dabar, prašome užverti visas kitas programas. Užbaigus, prašome atsijungti arba paleisti kompiuterį iš naujo. Ar tikrai norite pataisyti dabar?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="353"/>
@@ -27,7 +27,7 @@
         <location filename="mconfig.cpp" line="580"/>
         <location filename="mconfig.cpp" line="635"/>
         <source>Yes</source>
-        <translation>Taip</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="353"/>
@@ -35,48 +35,48 @@
         <location filename="mconfig.cpp" line="580"/>
         <location filename="mconfig.cpp" line="635"/>
         <source>No</source>
-        <translation>Ne</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="398"/>
         <location filename="mconfig.cpp" line="409"/>
         <source>Autologin options</source>
-        <translation>Automatinio prisijungimo parametrai</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="399"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation>Automatinis prisijungimas paskyrai &quot;%1&quot; išjungtas.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="410"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation>Automatinis prisijungimas paskyrai &quot;%1&quot; įjungtas.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="421"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation>Privalote nurodyti &quot;Kopijuoti į&quot; paskirties vietą. Negalite kopijuoti į darbalaukį, prie kurio esate prisijungę.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="425"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation>Prieš kopijuojant, užverkite visas kitas programas. Įsitikinkite, kad kopijavimo paskirties vieta yra pakankamai didelė, kad joje tilptų kopijuojami failai. Kopijavimas tarp darbalaukių gali perrašyti ar ištrinti jūsų failus ar nuostatas paskirties darbalaukyje. Ar tikrai norite tęsti?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="450"/>
         <source>Synchronizing desktop...</source>
-        <translation>Sinchronizuojamas darbalaukis...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="452"/>
         <source>Copying desktop...</source>
-        <translation>Kopijuojamas darbalaukis...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="475"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>Naudotojo vardas privalo būti bent 2 simbolių ilgio. Prašome prieš tęsiant, pasirinkti ilgesnį vardą.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="479"/>
@@ -88,13 +88,13 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mconfig.cpp" line="488"/>
         <source>Sorry that name is in use. Please select a different name.</source>
-        <translation>Atleiskite, tas vardas jau yra naudojamas. Prašome pasirinkti kitą vardą.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="493"/>
         <location filename="mconfig.cpp" line="539"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation>Slaptažodžio įrašai nesutampa. Prašome bandyti dar kartą.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="498"/>
@@ -110,32 +110,32 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mconfig.cpp" line="530"/>
         <source>Failed to add the user.</source>
-        <translation>Nepavyko pridėti naudotojo.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="569"/>
         <source>Password successfully changed.</source>
-        <translation>Slaptažodis sėkmingai pakeistas.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="573"/>
         <source>Failed to change password.</source>
-        <translation>Nepavyko pakeisti slaptažodžio.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="578"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation>Šio veiksmo negalima bus atšaukti. Ar tikrai norite ištrinti naudotoją %1?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="591"/>
         <source>The user has been deleted.</source>
-        <translation>Naudotojas buvo ištrintas.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="594"/>
         <source>Failed to delete the user.</source>
-        <translation>Nepavyko ištrinti naudotojo.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="607"/>
@@ -167,33 +167,33 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mconfig.cpp" line="633"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation>Šio veiksmo neįmanoma bus atšaukti. Ar tikrai norite ištrinti grupę %1?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="640"/>
         <source>The group has been deleted.</source>
-        <translation>Grupė buvo ištrinta.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="643"/>
         <source>Failed to delete the group.</source>
-        <translation>Nepavyko ištrinti grupės.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="664"/>
         <source>The changes have been applied.</source>
-        <translation>Pakeitimai buvo pritaikyti.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="667"/>
         <source>Failed to apply group changes</source>
-        <translation>Nepavyko pritaikyti grupės pakeitimų</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="679"/>
         <location filename="mconfig.cpp" line="718"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Sinchronizuojamas darbalaukis...gerai</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="681"/>
@@ -204,19 +204,19 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mconfig.cpp" line="724"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Sinchronizuojamas darbalaukis...nepavyko</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="726"/>
         <source>Copying desktop...failed</source>
-        <translation>Kopijuojamas darbalaukis...nepavyko</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="764"/>
         <location filename="mconfig.cpp" line="1105"/>
         <location filename="mconfig.cpp" line="1113"/>
         <source>browse...</source>
-        <translation>naršyti...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="923"/>
@@ -231,42 +231,42 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mconfig.cpp" line="991"/>
         <source>About MX User Manager</source>
-        <translation>Apie MX naudotojų tvarkytuvė</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="992"/>
         <source>MX User Manager</source>
-        <translation>MX naudotojų tvarkytuvė</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="994"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>Paprastas naudotojų konfigūravimas, skirtas MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="995"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Autorių teisės (c) MX Linux</translation>
+        <translation>Të drejtat e rezervuara (c) MX Linux</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="996"/>
         <source>License</source>
-        <translation>Licencija</translation>
+        <translation>Liçensa</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="997"/>
         <source>Changelog</source>
-        <translation>Keitinių žurnalas</translation>
+        <translation>Ndryshimet</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="998"/>
         <source>Cancel</source>
-        <translation>Atsisakyti</translation>
+        <translation>Anullo</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1014"/>
         <source>&amp;Close</source>
-        <translation>&amp;Užverti</translation>
+        <translation>&amp;Mbyll</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1106"/>
@@ -279,115 +279,115 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>MX naudotojų tvarkytuvė</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="62"/>
         <source>Administration</source>
-        <translation>Administravimas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="65"/>
         <source>Add a new user</source>
-        <translation>Pridėti naują naudotoją</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="105"/>
         <source>Add User Account</source>
-        <translation>Pridėti naudotojo paskyrą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="132"/>
         <source>Reenter password for new user</source>
-        <translation>Iš naujo įveskite naujo naudotojo slaptažodį</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="141"/>
         <source>confirm password</source>
-        <translation>patvirtinkite slaptažodį</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="154"/>
         <location filename="meconfig.ui" line="1055"/>
         <source>Username of new user</source>
-        <translation>Naujo naudotojo naudotojo vardas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="157"/>
         <source>User login name:</source>
-        <translation>Naudotojo prisijungimo vardas:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="170"/>
         <location filename="meconfig.ui" line="1071"/>
         <source>Enter username of new user</source>
-        <translation>Įveskite naudotojo vardą naujam naudotojui</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="176"/>
         <source>username</source>
-        <translation>naudotojo_vardas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="189"/>
         <location filename="meconfig.ui" line="227"/>
         <source>Password for new user</source>
-        <translation>Naujo naudotojo slaptažodis</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="192"/>
         <source>User password:</source>
-        <translation>Naudotojo slaptažodis:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="205"/>
         <source>Enter password for new user</source>
-        <translation>Įveskite naujo naudotojo slaptažodį</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="214"/>
         <source>password</source>
-        <translation>slaptažodis</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="230"/>
         <source>Confirm user password:</source>
-        <translation>Patvirtinkite naudotojo slaptažodį:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="256"/>
         <source>Change User Password</source>
-        <translation>Pakeisti naudotojo slaptažodį</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="271"/>
         <source>new password</source>
-        <translation>naujas slaptažodis</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="284"/>
         <source>Confirm new password:</source>
-        <translation>Patvirtinkite naują slaptažodį:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="294"/>
         <source>confirm new password</source>
-        <translation>patvirtinkite naują slaptažodį</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="301"/>
         <source>Select user to modify:</source>
-        <translation>Pasirinkite naudotoją, kurį keisti:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="314"/>
         <source>New user password:</source>
-        <translation>Naujas naudotojo slaptažodis:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="346"/>
         <source>Delete User Account</source>
-        <translation>Ištrinti naudotojo paskyrą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="389"/>
@@ -401,70 +401,70 @@ Please choose another name before proceeding.</source>
         <location filename="meconfig.ui" line="1283"/>
         <location filename="meconfig.ui" line="1305"/>
         <source>Select user to delete</source>
-        <translation>Pasirinkite naudotoją, kurį ištrinti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="414"/>
         <source>User to delete:</source>
-        <translation>Naudotojas, kurį ištrinti:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="427"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation>Taip pat ištrinti naudotojo namų katalogą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="430"/>
         <source>Delete user home directory</source>
-        <translation>Ištrinti naudotojo namų katalogą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="448"/>
         <source>Options</source>
-        <translation>Parametrai</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="451"/>
         <source>Repair a user configuration</source>
-        <translation>Pataisyti naudotojo konfigūraciją</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="485"/>
         <location filename="meconfig.ui" line="1208"/>
         <source>Modify User Account</source>
-        <translation>Modifikuoti naudotojo paskyrą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="497"/>
         <location filename="meconfig.ui" line="513"/>
         <source>Select user to repair</source>
-        <translation>Pasirinkite naudotoją, kurį pataisyti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="500"/>
         <location filename="meconfig.ui" line="1292"/>
         <source>User to change:</source>
-        <translation>Naudotojas, kurį keisti:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="551"/>
         <source>Restore Defaults</source>
-        <translation>Atkurti numatytąsias reikšmes</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="572"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation>Atkurti naršyklės konfigūracijas į MX numatytąsias</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="578"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation>Mozilla (Iceweasel ar Firefox) konfigūracijos</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="581"/>
         <source>Alt+X</source>
-        <translation>Alt+X</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="588"/>
@@ -479,180 +479,180 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="597"/>
         <source>Alt+G</source>
-        <translation>Alt+G</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="604"/>
         <source>Restore APT sources to MX defaults</source>
-        <translation>Atkurti APT šaltinius į MX numatytuosius</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="607"/>
         <source>Restore APT sources</source>
-        <translation>Atkurti APT šaltinius</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="617"/>
         <source>Change Autologin Settings</source>
-        <translation>Pakeisti automatinio prisijungimo nustatymus</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="623"/>
         <source>Log in automatically</source>
-        <translation>Prisijungti automatiškai</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="630"/>
         <source>Require password to log in</source>
-        <translation>Norint prisijungti, reikalauti slaptažodžio</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="645"/>
         <source>Copy/Sync</source>
-        <translation>Kopijavimas/Sinchronizavimas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="672"/>
         <source>Copy Between Desktops</source>
-        <translation>Kopijuoti tarp darbalaukių</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="699"/>
         <location filename="meconfig.ui" line="766"/>
         <source>Select desktop to copy from</source>
-        <translation>Pasirinkite darbalaukį iš kurio kopijuoti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="712"/>
         <source>Select to only copy files</source>
-        <translation>Pasirinkite, norėdami, kad failai būtų tik nukopijuoti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="715"/>
         <source>Copy only</source>
-        <translation>Tik kopijuoti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="731"/>
         <location filename="meconfig.ui" line="744"/>
         <source>Select desktop to copy to</source>
-        <translation>Pasirinkite darbalaukį į kurį kopijuoti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="753"/>
         <source>Copy to:</source>
-        <translation>Kopijuoti į:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="775"/>
         <source>Copy from:</source>
-        <translation>Kopijuoti iš:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="788"/>
         <source>Select to copy and then delete differences</source>
-        <translation>Pasirinkite, norėdami nukopijuoti, o tuomet ištrinti skirtumus</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="791"/>
         <source>Sync</source>
-        <translation>Sinchronizuoti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="837"/>
         <source>Select to copy/sync Shared</source>
-        <translation>Pasirinkite, norėdami kopijuoti/sinchronizuoti Bendrą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="840"/>
         <source>Shared folder</source>
-        <translation>Bendrą aplanką</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="853"/>
         <source>Select to copy/sync entire home</source>
-        <translation>Pasirinkite, norėdami kopijuoti/sinchronizuoti visą namų katalogą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="856"/>
         <source>Entire home</source>
-        <translation>Visą namų katalogą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="872"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation>Pasirinkite, norėdami kopijuoti/sinchronizuoti naršyklės konfigūraciją</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="875"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation>Mozilla (Firefox ar Iceweasel) konfigūracijas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="888"/>
         <source>Select to copy/sync Documents</source>
-        <translation>Pasirinkite, norėdami kopijuoti/sinchronizuoti Dokumentus</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="891"/>
         <source>Documents folder</source>
-        <translation>Dokumentų aplanką</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="898"/>
         <source>What to copy/sync:</source>
-        <translation>Ką kopijuoti/sinchronizuoti:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="914"/>
         <source>Progress</source>
-        <translation>Eiga</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="944"/>
         <location filename="meconfig.ui" line="960"/>
         <source>Status of the changes</source>
-        <translation>Pakeitimų būsena</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="963"/>
         <source>Status:</source>
-        <translation>Būsena:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="979"/>
         <source>Progress of the changes</source>
-        <translation>Pakeitimų eiga</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1016"/>
         <source>Add/Remove Groups</source>
-        <translation>Pridėti/Šalinti grupes</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1028"/>
         <source>Add Group</source>
-        <translation>Pridėti grupę</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1058"/>
         <source>Group name:</source>
-        <translation>Grupės pavadinimas:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1077"/>
         <source>groupname</source>
-        <translation>grupės_pavadinimas</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1106"/>
         <source>Delete Group</source>
-        <translation>Ištrinti grupę</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1168"/>
         <source>Group to delete:</source>
-        <translation>Grupė, kurią ištrinti:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1196"/>
@@ -672,27 +672,27 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="1392"/>
         <source>Apply any changes</source>
-        <translation>Taikyti bet kokius pakeitimus</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1395"/>
         <source>Apply</source>
-        <translation>Taikyti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1402"/>
         <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1409"/>
         <source>Cancel any changes then quit</source>
-        <translation>Atsisakyti bet kokių pakeitimų, o tuomet išeiti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1412"/>
         <source>Close</source>
-        <translation>Užverti</translation>
+        <translation>Mbyll</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1419"/>
@@ -702,27 +702,27 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="1460"/>
         <source>Display help </source>
-        <translation>Rodyti žinyną</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1463"/>
         <source>Help</source>
-        <translation>Žinynas</translation>
+        <translation>Ndihmë</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1470"/>
         <source>Alt+H</source>
-        <translation>Alt+H</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meconfig.ui" line="1477"/>
         <source>About this application</source>
-        <translation>Apie šią programą</translation>
+        <translation>Rreth këtij aplikacioni</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1480"/>
         <source>About...</source>
-        <translation>Apie...</translation>
+        <translation>Rreth...</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1487"/>
@@ -735,7 +735,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>Privalote paleisti šią programą kaip pagrindinis (root) naudotojas.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
