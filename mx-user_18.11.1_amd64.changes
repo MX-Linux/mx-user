@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 30 Nov 2018 15:06:52 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 18.11.1
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (18.11.1) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 1f87d08756b14c6c188c987bf487e6b67e90c61b 1167 mx-user_18.11.1.dsc
+ 93955c53ccde39851e4a33e1753ff64ee0b4bf84 77452 mx-user_18.11.1.tar.xz
+ e5f4df9df4ceb4f302ae85989f65589f77ff1ff1 11183 mx-user_18.11.1_amd64.buildinfo
+ fa4802666657c62fe7765e9f36d1035920ec127f 121066 mx-user_18.11.1_amd64.deb
+Checksums-Sha256:
+ 694992058e8631f07791170556735e5b592308d4502b83e5720fcfebe972288a 1167 mx-user_18.11.1.dsc
+ 86b4355f6c7839f7596bc2cbb8288c57c796681ca9acda82c7c5183e6ed6cc1c 77452 mx-user_18.11.1.tar.xz
+ 846aff9b781b82dcd14e52b129e643b550640f68e16950eb7203ac1ac69142df 11183 mx-user_18.11.1_amd64.buildinfo
+ 12612b10403a5d09260a40392757ef013aa6d649eebe2aa39cbcdcd5a92c709a 121066 mx-user_18.11.1_amd64.deb
+Files:
+ 8e5d4307f81a038ce6f51901b0837213 1167 system optional mx-user_18.11.1.dsc
+ 3ddeea4c3c9049367b11a4ba0cccba39 77452 system optional mx-user_18.11.1.tar.xz
+ 159434f25fa7dab5536780a96d1928a1 11183 system optional mx-user_18.11.1_amd64.buildinfo
+ e2d10d7500271247b2613418f939029f 121066 system optional mx-user_18.11.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwBmRUTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumAoQCACdzU+f9vKjVeW30mAzd6OOLk0BhswK
+hatBy2obq/HeIY8XCOuIBqconS7UtwyL/IyzrGHsCB7MPmgJmLmAzYFKlDf/zjvs
+LGRtHvWdij5FigGt2KP3n8eNhy23JCJcVaLnaTt95AK5CKvFn4R5c74uBGAtbtxu
+Zgcyo974g/4QGIrP2EMeWnm3OHnSxrUzKPzteGIzSrs/cKpSaXfrI628sTrNwqjH
+tycsN9qLRN6XrbVyIZjOw4jsL2KiViuF9VnNfKDybkMquH2UZoComPX+0tz/wzSR
+UOcQPBJ3jLSh36hzUy+gfmxU6MJ2U6S9lLkZRyGgCoDbVrcs5GrRdrtJ
+=iROK
+-----END PGP SIGNATURE-----
