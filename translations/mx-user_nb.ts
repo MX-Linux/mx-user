@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="hi" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nb" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -14,12 +14,13 @@
         <location filename="mconfig.cpp" line="817"/>
         <location filename="mconfig.cpp" line="1053"/>
         <source>none</source>
-        <translation>कोई नहीं</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="352"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation type="unfinished"/>
+        <translation>Brukerens oppsett vil bli reparert. venlight lukk alle andre programmer nå. Når 
+ferdig, venligst logg ut, eller restart. Er du sikker på at du vil reparere nå?</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="353"/>
@@ -27,7 +28,7 @@
         <location filename="mconfig.cpp" line="580"/>
         <location filename="mconfig.cpp" line="635"/>
         <source>Yes</source>
-        <translation>हाँ</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mconfig.cpp" line="353"/>
@@ -35,7 +36,7 @@
         <location filename="mconfig.cpp" line="580"/>
         <location filename="mconfig.cpp" line="635"/>
         <source>No</source>
-        <translation>नहीं</translation>
+        <translation>Nei</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="398"/>
@@ -246,27 +247,27 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mconfig.cpp" line="995"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>प्रतिलिप्याधिकार (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="996"/>
         <source>License</source>
-        <translation>लाइसेंस</translation>
+        <translation>Lisens</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="997"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="998"/>
         <source>Cancel</source>
-        <translation>रद्द</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1014"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Lukk</translation>
     </message>
     <message>
         <location filename="mconfig.cpp" line="1106"/>
@@ -347,7 +348,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="214"/>
         <source>password</source>
-        <translation>कूटशब्द</translation>
+        <translation>passord</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="230"/>
@@ -421,7 +422,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="448"/>
         <source>Options</source>
-        <translation>विकल्प</translation>
+        <translation>Alternativer</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="451"/>
@@ -632,7 +633,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="1028"/>
         <source>Add Group</source>
-        <translation type="unfinished"/>
+        <translation>Legg til gruppe</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1058"/>
@@ -647,7 +648,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="1106"/>
         <source>Delete Group</source>
-        <translation type="unfinished"/>
+        <translation>Slett gruppe</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1168"/>
@@ -677,7 +678,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="1395"/>
         <source>Apply</source>
-        <translation>लागू करें</translation>
+        <translation>Bruk</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1402"/>
@@ -687,12 +688,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="1409"/>
         <source>Cancel any changes then quit</source>
-        <translation>बदलाव रद्द कर बंद करें</translation>
+        <translation>Forkast alle endringer og avslutt</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1412"/>
         <source>Close</source>
-        <translation>बंद करें</translation>
+        <translation>Lukk</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1419"/>
@@ -702,12 +703,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="1460"/>
         <source>Display help </source>
-        <translation>मदद देखें</translation>
+        <translation>Vis hjelp</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1463"/>
         <source>Help</source>
-        <translation>सहायता</translation>
+        <translation>Hjelp</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1470"/>
@@ -717,12 +718,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="meconfig.ui" line="1477"/>
         <source>About this application</source>
-        <translation>इस अनुप्रयोग के बारे में</translation>
+        <translation>Om applikasjonen</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1480"/>
         <source>About...</source>
-        <translation>बारे में...</translation>
+        <translation>Om...</translation>
     </message>
     <message>
         <location filename="meconfig.ui" line="1487"/>
@@ -735,7 +736,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>इस प्रोग्राम को चलाने हेतु आपका रुट होना आवश्यक है।</translation>
+        <translation>Du må kjøre dette programmet som root.</translation>
     </message>
 </context>
 </TS>
