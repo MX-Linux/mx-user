@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 23 Jan 2019 16:48:16 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 19.1
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (19.1) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 9469df73c3376c9a853f3331ed17b51cce062bfc 1155 mx-user_19.1.dsc
+ 015100914dea7c5da39f531c2a2a24f5e7569bde 80784 mx-user_19.1.tar.xz
+ 7ffe00b36f14e337a13b05e84a6da2701f4d6e69 470522 mx-user-dbgsym_19.1_amd64.deb
+ ea07d9e5cf9c3574f9b3a4f5b1d44f98fde8d803 11562 mx-user_19.1_amd64.buildinfo
+ e565dae3d7a7c613b4a28c1bf8c4ca93b82008f7 124498 mx-user_19.1_amd64.deb
+Checksums-Sha256:
+ ef7af1326c8e65804a46f8a6b7ecc3e7938abf6dc3a81db6de76b2e9399e2630 1155 mx-user_19.1.dsc
+ 0ff5e48efac578042bf3a2c4ce78b3b355cf6f9f282244b197419a1dfa3dc9e0 80784 mx-user_19.1.tar.xz
+ 6175cc28164b404a7f5d1ffd663fbdce5300e9416de7d1f1905071af75884ba2 470522 mx-user-dbgsym_19.1_amd64.deb
+ 65e0192d433ee608aee5201fd233781a94d69ae9375a029fa7a5e3de5abef6b1 11562 mx-user_19.1_amd64.buildinfo
+ a15c7b3c4fe1934c565888e71772d9466b99d4e0707becbe2a02092e1f5bdd25 124498 mx-user_19.1_amd64.deb
+Files:
+ 852dabac616424111eb60d6f7ce966a8 1155 system optional mx-user_19.1.dsc
+ d35ffacc67b33f4d2e6975f08a45f30b 80784 system optional mx-user_19.1.tar.xz
+ 2e1af80f6f20ba34f4bd27aebbdeb6ab 470522 debug optional mx-user-dbgsym_19.1_amd64.deb
+ 662fc42db2e0ea83386c8a565bc8a8e1 11562 system optional mx-user_19.1_amd64.buildinfo
+ e2fcf02ffc194ca2ec1bc4cf5682f3c4 124498 system optional mx-user_19.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlxI4cQTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOdoB/4lC2fR2Cg5OYjG1evilzn3zWLeG9FR
+A26TLEzpQKerh6mFSUwXOE/GPjCleJzE+9CdotqvaFaDYnpQpz5AP5pqjSsSpVhu
+cEX+07U9j1kyQezBI7ZwdR8B8LEZ+wu4wWBqD9NCGb3wZ4/2CrxqIJH1I8XKKFgV
+rPLrTwV59tfK/HnDXFF1ol3MoWya2unANd95quBNgGIS1xwF2wlGub1g3OXKDasb
+dWHTuLpFRyeGFZJTpMvzaUADV5xw/tWG1ayYVwa9VmMyDvqp26NcbthhU3kNnoao
+7m8q+0qkgsHz4ekESefccbZFMgqaIHpllf8iqHjUoUMhmVkPYLc4Sr/v
+=bZhk
+-----END PGP SIGNATURE-----
