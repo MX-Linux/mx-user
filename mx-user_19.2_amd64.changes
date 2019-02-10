@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 10 Feb 2019 10:02:12 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 19.2
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (19.2) mx; urgency=medium
+ .
+   * removed restore APT sources checkbox, function moved to mx-repo-manager
+Checksums-Sha1:
+ 12994ff63d8f7c8c1afa02a84b0ee6d823b73ad9 1155 mx-user_19.2.dsc
+ e4c35634be43eef45ba6e9cc567c9e86648f974a 80632 mx-user_19.2.tar.xz
+ 232fba1f4202fa10183004e59093538e86ade22b 122690 mx-user_19.2_amd64.deb
+Checksums-Sha256:
+ 33f1e39c62512c970b58142f339fc05c23617a073a11861d3093619d8d35e8b3 1155 mx-user_19.2.dsc
+ 77eb43a818b58cdb4a0431d83e8c6d9df95384575518ca5dfda1f3e100b9587c 80632 mx-user_19.2.tar.xz
+ 10657355db32fab669c4e73611f238dca0d1bea11ff57e641984eeab9a33e951 122690 mx-user_19.2_amd64.deb
+Files:
+ dfadfa3c68113f6f94db1498923cecdd 1155 system optional mx-user_19.2.dsc
+ b8e845cb6ea1087aa02e82d96be7b18b 80632 system optional mx-user_19.2.tar.xz
+ f5932524ed7f6e32e5c8cd91c82be324 122690 system optional mx-user_19.2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlxgPh0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOydB/sEenNcuMH3F/k+VwGLs7vjfd1MpxJx
+qDKJxlDWc159SLDKnUYHWhDDucJqTH3rAFYf64U38d3unB5WN3gES7HU8YdCI9SW
+bg2VFo6rU0gZvEQj5YzSfIoX7LYcFUa8fQr/Ri596vAoFptyM3OGNMfAfjRWBzSA
+xnQO1KbqZcrR59RfrQFCS9h9lR3UFqsxCzIKCjq0QuLnNh0yGpjf+dQQi6GxZ3bL
+WJtIxqhehkLp0q5ovyiOdzsCGGHr0HxfhyHC/M4GmQIKvxGqs59CIyM2ElgmMaq9
+jg3HcqPs6370QxeQbnXxRc+JLsXwpVPVLWjae/mh8DMHkKAJyDRyUu2u
+=y0Ht
+-----END PGP SIGNATURE-----

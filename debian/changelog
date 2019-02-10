@@ -1,3 +1,9 @@
+mx-user (19.2) mx; urgency=medium
+
+  * removed restore APT sources checkbox, function moved to mx-repo-manager
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 10 Feb 2019 10:02:12 -0500
+
 mx-user (19.1) mx; urgency=medium
 
   * updated translations
