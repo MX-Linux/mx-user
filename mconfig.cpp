@@ -183,7 +183,6 @@ void MConfig::refreshRestore() {
     }
     checkGroups->setChecked(false);
     checkMozilla->setChecked(false);
-    checkApt->setChecked(false);
     radioAutologinNo->setAutoExclusive(false);
     radioAutologinNo->setChecked(false);
     radioAutologinNo->setAutoExclusive(true);
@@ -347,7 +346,7 @@ void MConfig::applyRestore() {
     }
     QString cmd;
 
-    if (checkApt->isChecked() || checkGroups->isChecked() || checkMozilla->isChecked()) {
+    if (checkGroups->isChecked() || checkMozilla->isChecked()) {
         int ans = QMessageBox::warning(this, QString::null,
                                        tr("The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?"),
                                        tr("Yes"), tr("No"));
@@ -367,30 +366,6 @@ void MConfig::applyRestore() {
     if (checkMozilla->isChecked()) {
         cmd = QString("/bin/rm -r %1/.mozilla").arg(home);
         system(cmd.toUtf8());
-    }
-    // restore APT configs
-    if (checkApt->isChecked()) {
-        QString mx_version = shell.getOutput("lsb_release -rs").left(2);
-        if (mx_version.toInt() < 15) {
-            qDebug() << "MX version not detected or out of range: " << mx_version;
-            return;
-        }
-        // create temp folder
-        QString path = shell.getOutput("mktemp -d /tmp/mx-sources.XXXXXX");
-        // download source files from
-        cmd = QString("wget -q https://github.com/mx-linux/MX-%1_sources/archive/master.zip -P %2").arg(mx_version).arg(path);
-        system(cmd.toUtf8());
-        // extract master.zip to temp folder
-        cmd = QString("unzip -q %1/master.zip -d %1/").arg(path);
-        system(cmd.toUtf8());
-        // move the files from the temporary directory to /etc/apt/sources.list.d/
-        cmd = QString("mv -b %1/MX-*_sources-master/* /etc/apt/sources.list.d/").arg(path);
-        system(cmd.toUtf8());
-        // delete temp folder
-        cmd = QString("rm -rf %1").arg(path);
-        system(cmd.toUtf8());
-        // localize repos
-        system("localize-repo $(cat /etc/timezone)");
     }
     if (radioAutologinNo->isChecked()) {
         cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);

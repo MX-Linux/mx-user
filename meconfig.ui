@@ -474,7 +474,7 @@
          <property name="sizeHint" stdset="0">
           <size>
            <width>241</width>
-           <height>51</height>
+           <height>50</height>
           </size>
          </property>
         </spacer>
@@ -536,16 +536,10 @@
        <item row="2" column="0" colspan="2">
         <widget class="QGroupBox" name="restoreGroupBox">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>500</width>
-           <height>130</height>
-          </size>
          </property>
          <property name="title">
           <string>Restore Defaults</string>
@@ -595,16 +589,6 @@
             </property>
             <property name="shortcut">
              <string>Alt+G</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0">
-           <widget class="QCheckBox" name="checkApt">
-            <property name="toolTip">
-             <string>Restore APT sources to MX defaults</string>
-            </property>
-            <property name="text">
-             <string>Restore APT sources</string>
             </property>
            </widget>
           </item>
