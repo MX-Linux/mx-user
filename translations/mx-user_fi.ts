@@ -5,83 +5,83 @@
     <name>MConfig</name>
     <message>
         <location filename="../mconfig.cpp" line="167"/>
-        <location filename="../mconfig.cpp" line="236"/>
-        <location filename="../mconfig.cpp" line="264"/>
-        <location filename="../mconfig.cpp" line="295"/>
-        <location filename="../mconfig.cpp" line="317"/>
-        <location filename="../mconfig.cpp" line="340"/>
-        <location filename="../mconfig.cpp" line="769"/>
+        <location filename="../mconfig.cpp" line="235"/>
+        <location filename="../mconfig.cpp" line="263"/>
+        <location filename="../mconfig.cpp" line="294"/>
+        <location filename="../mconfig.cpp" line="316"/>
+        <location filename="../mconfig.cpp" line="339"/>
+        <location filename="../mconfig.cpp" line="744"/>
+        <location filename="../mconfig.cpp" line="759"/>
         <location filename="../mconfig.cpp" line="784"/>
-        <location filename="../mconfig.cpp" line="809"/>
-        <location filename="../mconfig.cpp" line="817"/>
-        <location filename="../mconfig.cpp" line="1053"/>
+        <location filename="../mconfig.cpp" line="792"/>
+        <location filename="../mconfig.cpp" line="1028"/>
         <source>none</source>
         <translation>ei mitään</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="352"/>
+        <location filename="../mconfig.cpp" line="351"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Käyttäjän konfiguraatio korjataan. Ole hyvä ja sulje kaikki muut sovellukset nyt. Korjauksen valmistuttua ole hyvä ja kirjaudu ulos, tai käynnistä kone uudelleen.Haluatko varmasti korjata nyt?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="353"/>
-        <location filename="../mconfig.cpp" line="426"/>
-        <location filename="../mconfig.cpp" line="580"/>
-        <location filename="../mconfig.cpp" line="635"/>
+        <location filename="../mconfig.cpp" line="352"/>
+        <location filename="../mconfig.cpp" line="401"/>
+        <location filename="../mconfig.cpp" line="555"/>
+        <location filename="../mconfig.cpp" line="610"/>
         <source>Yes</source>
         <translation>Kyllä</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="353"/>
-        <location filename="../mconfig.cpp" line="426"/>
-        <location filename="../mconfig.cpp" line="580"/>
-        <location filename="../mconfig.cpp" line="635"/>
+        <location filename="../mconfig.cpp" line="352"/>
+        <location filename="../mconfig.cpp" line="401"/>
+        <location filename="../mconfig.cpp" line="555"/>
+        <location filename="../mconfig.cpp" line="610"/>
         <source>No</source>
         <translation>Ei</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="398"/>
-        <location filename="../mconfig.cpp" line="409"/>
+        <location filename="../mconfig.cpp" line="373"/>
+        <location filename="../mconfig.cpp" line="384"/>
         <source>Autologin options</source>
         <translation>Automaattikirjautumisen asetukset</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="399"/>
+        <location filename="../mconfig.cpp" line="374"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
         <translation>Automaattikirjautuminen on poistettu käytöstä käyttäjältililtä &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="410"/>
+        <location filename="../mconfig.cpp" line="385"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation>Automaattikirjautuminen on otettu käyttöön käyttäjältilille &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="421"/>
+        <location filename="../mconfig.cpp" line="396"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation>Sinun täytyy määrittää kohde kopioinnille. Et voi kopioida työpöydälle jolle olet kirjautunut.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="425"/>
+        <location filename="../mconfig.cpp" line="400"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>Sulje muut sovellukset ennen kopiointia. Varmista, että kohteessa kopioitaville tiedostoille on tarpeeksi vapaata tilaa. Työpöytien välinen kopiointi saattaa muokata tai tuhota tiedostojasi tai asetuksiasi kohdetyöpöydällä. Haluatko varmasti jatkaa?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="450"/>
+        <location filename="../mconfig.cpp" line="425"/>
         <source>Synchronizing desktop...</source>
         <translation>Synkronoidaan työpöytää...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="452"/>
+        <location filename="../mconfig.cpp" line="427"/>
         <source>Copying desktop...</source>
         <translation>Kopioidaan työpöytää...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="475"/>
+        <location filename="../mconfig.cpp" line="450"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Käyttäjänimen on oltava ainakin 2 merkkiä pitkä. Ole hyvä, ja valitse pidempi nimi ennen jatkamista.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="479"/>
+        <location filename="../mconfig.cpp" line="454"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -90,190 +90,190 @@ ei voi sisältää erikoismerkkejä tai vililyöntejä.
 Ole hyvä ja valitse toinen ennen kuin jatkat.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="488"/>
+        <location filename="../mconfig.cpp" line="463"/>
         <source>Sorry that name is in use. Please select a different name.</source>
         <translation>Tämä nimi on valitettavasti käytössä. Ole hyvä ja valitse toinen nimi.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="493"/>
-        <location filename="../mconfig.cpp" line="539"/>
+        <location filename="../mconfig.cpp" line="468"/>
+        <location filename="../mconfig.cpp" line="514"/>
         <source>Password entries do not match. Please try again.</source>
         <translation>Salasanat eivät täsmää. Yritä uudelleen, ole hyvä.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="498"/>
-        <location filename="../mconfig.cpp" line="544"/>
+        <location filename="../mconfig.cpp" line="473"/>
+        <location filename="../mconfig.cpp" line="519"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
         <translation>Salasanan täytyy olla ainakin kaksi merkkiä pitkä. Syötä pidempi salasana ennen jatkamista.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="526"/>
+        <location filename="../mconfig.cpp" line="501"/>
         <source>The user was added ok.</source>
         <translation>Käyttäjän lisääminen onnistui.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="530"/>
+        <location filename="../mconfig.cpp" line="505"/>
         <source>Failed to add the user.</source>
         <translation>Käyttäjän lisääminen epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="569"/>
+        <location filename="../mconfig.cpp" line="544"/>
         <source>Password successfully changed.</source>
         <translation>Salasanan vaihtaminen onnistui.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="573"/>
+        <location filename="../mconfig.cpp" line="548"/>
         <source>Failed to change password.</source>
         <translation>Salasanan vaihtaminen epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="578"/>
+        <location filename="../mconfig.cpp" line="553"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation>Tätä toimintoa ei voi perua. Haluatko varmasti poistaa käyttäjän %1?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="591"/>
+        <location filename="../mconfig.cpp" line="566"/>
         <source>The user has been deleted.</source>
         <translation>Käyttäjä on poistettu.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="594"/>
+        <location filename="../mconfig.cpp" line="569"/>
         <source>Failed to delete the user.</source>
         <translation>Käyttäjän poistaminen epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="607"/>
+        <location filename="../mconfig.cpp" line="582"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="611"/>
+        <location filename="../mconfig.cpp" line="586"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="620"/>
+        <location filename="../mconfig.cpp" line="595"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="627"/>
+        <location filename="../mconfig.cpp" line="602"/>
         <source>The system group was added ok.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="630"/>
+        <location filename="../mconfig.cpp" line="605"/>
         <source>Failed to add the system group.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="633"/>
+        <location filename="../mconfig.cpp" line="608"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="640"/>
+        <location filename="../mconfig.cpp" line="615"/>
         <source>The group has been deleted.</source>
         <translation>Ryhmä on poistettu.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="643"/>
+        <location filename="../mconfig.cpp" line="618"/>
         <source>Failed to delete the group.</source>
         <translation>Ryhmän poistaminen epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="664"/>
+        <location filename="../mconfig.cpp" line="639"/>
         <source>The changes have been applied.</source>
         <translation>Muutokset ovat otettu käyttöön.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="667"/>
+        <location filename="../mconfig.cpp" line="642"/>
         <source>Failed to apply group changes</source>
         <translation>Ryhmän muutoksia ei voitu ottaa käyttöön</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="679"/>
-        <location filename="../mconfig.cpp" line="718"/>
+        <location filename="../mconfig.cpp" line="654"/>
+        <location filename="../mconfig.cpp" line="693"/>
         <source>Synchronizing desktop...ok</source>
         <translation>Synkronoidaan työpöytää...ok</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="681"/>
-        <location filename="../mconfig.cpp" line="720"/>
+        <location filename="../mconfig.cpp" line="656"/>
+        <location filename="../mconfig.cpp" line="695"/>
         <source>Copying desktop...ok</source>
         <translation>Kopioidaat työpöytää...ok</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="724"/>
+        <location filename="../mconfig.cpp" line="699"/>
         <source>Synchronizing desktop...failed</source>
         <translation>Synkronoidaan työpöytää...epäonnistui</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="726"/>
+        <location filename="../mconfig.cpp" line="701"/>
         <source>Copying desktop...failed</source>
         <translation>Kopioidaan työpöytää...epäonnistui</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="764"/>
-        <location filename="../mconfig.cpp" line="1105"/>
-        <location filename="../mconfig.cpp" line="1113"/>
+        <location filename="../mconfig.cpp" line="739"/>
+        <location filename="../mconfig.cpp" line="1080"/>
+        <location filename="../mconfig.cpp" line="1088"/>
         <source>browse...</source>
         <translation>selaa...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="923"/>
+        <location filename="../mconfig.cpp" line="898"/>
         <source>Baobab installation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="924"/>
+        <location filename="../mconfig.cpp" line="899"/>
         <source>Wait while Baobab is installing...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="991"/>
+        <location filename="../mconfig.cpp" line="966"/>
         <source>About MX User Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="992"/>
+        <location filename="../mconfig.cpp" line="967"/>
         <source>MX User Manager</source>
         <translation>MX Käyttäjänhallinta</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="994"/>
+        <location filename="../mconfig.cpp" line="969"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>Helppo käyttäjien konfiguraatio MX Linuxille</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="995"/>
+        <location filename="../mconfig.cpp" line="970"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="996"/>
+        <location filename="../mconfig.cpp" line="971"/>
         <source>License</source>
         <translation>Lisenssi</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="997"/>
+        <location filename="../mconfig.cpp" line="972"/>
         <source>Changelog</source>
         <translation>Muutosloki</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="998"/>
+        <location filename="../mconfig.cpp" line="973"/>
         <source>Cancel</source>
         <translation>Peruuta</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1014"/>
+        <location filename="../mconfig.cpp" line="989"/>
         <source>&amp;Close</source>
         <translation>&amp;Sulje</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1106"/>
+        <location filename="../mconfig.cpp" line="1081"/>
         <source>Select folder to copy to</source>
         <translation>Valitse kansio johon kopioidaan</translation>
     </message>
@@ -312,7 +312,7 @@ Please choose another name before proceeding.</source>
     </message>
     <message>
         <location filename="../meconfig.ui" line="154"/>
-        <location filename="../meconfig.ui" line="1055"/>
+        <location filename="../meconfig.ui" line="1039"/>
         <source>Username of new user</source>
         <translation>Uuden käyttäjän käyttäjänimi</translation>
     </message>
@@ -323,7 +323,7 @@ Please choose another name before proceeding.</source>
     </message>
     <message>
         <location filename="../meconfig.ui" line="170"/>
-        <location filename="../meconfig.ui" line="1071"/>
+        <location filename="../meconfig.ui" line="1055"/>
         <source>Enter username of new user</source>
         <translation type="unfinished"></translation>
     </message>
@@ -400,10 +400,10 @@ Please choose another name before proceeding.</source>
     </message>
     <message>
         <location filename="../meconfig.ui" line="405"/>
-        <location filename="../meconfig.ui" line="1146"/>
-        <location filename="../meconfig.ui" line="1159"/>
-        <location filename="../meconfig.ui" line="1283"/>
-        <location filename="../meconfig.ui" line="1305"/>
+        <location filename="../meconfig.ui" line="1130"/>
+        <location filename="../meconfig.ui" line="1143"/>
+        <location filename="../meconfig.ui" line="1267"/>
+        <location filename="../meconfig.ui" line="1289"/>
         <source>Select user to delete</source>
         <translation>Valitse poistettava käyttäjä</translation>
     </message>
@@ -434,7 +434,7 @@ Please choose another name before proceeding.</source>
     </message>
     <message>
         <location filename="../meconfig.ui" line="485"/>
-        <location filename="../meconfig.ui" line="1208"/>
+        <location filename="../meconfig.ui" line="1192"/>
         <source>Modify User Account</source>
         <translation>Muokkaa käyttäjätiliä</translation>
     </message>
@@ -446,290 +446,280 @@ Please choose another name before proceeding.</source>
     </message>
     <message>
         <location filename="../meconfig.ui" line="500"/>
-        <location filename="../meconfig.ui" line="1292"/>
+        <location filename="../meconfig.ui" line="1276"/>
         <source>User to change:</source>
         <translation>Muokattava käyttäjä:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="551"/>
+        <location filename="../meconfig.ui" line="545"/>
         <source>Restore Defaults</source>
         <translation>Palauta oletukset</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="572"/>
+        <location filename="../meconfig.ui" line="566"/>
         <source>Restore browser configs to MX defaults</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="578"/>
+        <location filename="../meconfig.ui" line="572"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="581"/>
+        <location filename="../meconfig.ui" line="575"/>
         <source>Alt+X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="588"/>
+        <location filename="../meconfig.ui" line="582"/>
         <source>Restore group memberships to MX defaults</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="594"/>
+        <location filename="../meconfig.ui" line="588"/>
         <source>Group memberships</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="597"/>
+        <location filename="../meconfig.ui" line="591"/>
         <source>Alt+G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="604"/>
-        <source>Restore APT sources to MX defaults</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="607"/>
-        <source>Restore APT sources</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="617"/>
+        <location filename="../meconfig.ui" line="601"/>
         <source>Change Autologin Settings</source>
         <translation>Muuta automaattikirjautumisen asetuksia</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="623"/>
+        <location filename="../meconfig.ui" line="607"/>
         <source>Log in automatically</source>
         <translation>Kirjaudu sisään automaattisesti</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="630"/>
+        <location filename="../meconfig.ui" line="614"/>
         <source>Require password to log in</source>
         <translation>Vaadi salasanaa kirjautumiseen</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="645"/>
+        <location filename="../meconfig.ui" line="629"/>
         <source>Copy/Sync</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="672"/>
+        <location filename="../meconfig.ui" line="656"/>
         <source>Copy Between Desktops</source>
         <translation>Kopioi työpöytien välillä</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="699"/>
-        <location filename="../meconfig.ui" line="766"/>
+        <location filename="../meconfig.ui" line="683"/>
+        <location filename="../meconfig.ui" line="750"/>
         <source>Select desktop to copy from</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="712"/>
+        <location filename="../meconfig.ui" line="696"/>
         <source>Select to only copy files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="715"/>
+        <location filename="../meconfig.ui" line="699"/>
         <source>Copy only</source>
         <translation>Kopioi ainoastaan</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="731"/>
-        <location filename="../meconfig.ui" line="744"/>
+        <location filename="../meconfig.ui" line="715"/>
+        <location filename="../meconfig.ui" line="728"/>
         <source>Select desktop to copy to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="753"/>
+        <location filename="../meconfig.ui" line="737"/>
         <source>Copy to:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="775"/>
+        <location filename="../meconfig.ui" line="759"/>
         <source>Copy from:</source>
         <translation>Kopioi sijainnista:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="788"/>
+        <location filename="../meconfig.ui" line="772"/>
         <source>Select to copy and then delete differences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="791"/>
+        <location filename="../meconfig.ui" line="775"/>
         <source>Sync</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="837"/>
+        <location filename="../meconfig.ui" line="821"/>
         <source>Select to copy/sync Shared</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="840"/>
+        <location filename="../meconfig.ui" line="824"/>
         <source>Shared folder</source>
         <translation>Jaettu kansio</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="853"/>
+        <location filename="../meconfig.ui" line="837"/>
         <source>Select to copy/sync entire home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="856"/>
+        <location filename="../meconfig.ui" line="840"/>
         <source>Entire home</source>
         <translation>Koko koti</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="872"/>
+        <location filename="../meconfig.ui" line="856"/>
         <source>Select to copy/sync the browser configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="875"/>
+        <location filename="../meconfig.ui" line="859"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="888"/>
+        <location filename="../meconfig.ui" line="872"/>
         <source>Select to copy/sync Documents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="891"/>
+        <location filename="../meconfig.ui" line="875"/>
         <source>Documents folder</source>
         <translation>Tiedostot-kansio</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="898"/>
+        <location filename="../meconfig.ui" line="882"/>
         <source>What to copy/sync:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="914"/>
+        <location filename="../meconfig.ui" line="898"/>
         <source>Progress</source>
         <translation>Edistyminen</translation>
     </message>
     <message>
+        <location filename="../meconfig.ui" line="928"/>
         <location filename="../meconfig.ui" line="944"/>
-        <location filename="../meconfig.ui" line="960"/>
         <source>Status of the changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="963"/>
+        <location filename="../meconfig.ui" line="947"/>
         <source>Status:</source>
         <translation>Tila:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="979"/>
+        <location filename="../meconfig.ui" line="963"/>
         <source>Progress of the changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1016"/>
+        <location filename="../meconfig.ui" line="1000"/>
         <source>Add/Remove Groups</source>
         <translation>Lisää/poista ryhmiä</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1028"/>
+        <location filename="../meconfig.ui" line="1012"/>
         <source>Add Group</source>
         <translation>Lisää ryhmä</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1058"/>
+        <location filename="../meconfig.ui" line="1042"/>
         <source>Group name:</source>
         <translation>Ryhmän nimi:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1077"/>
+        <location filename="../meconfig.ui" line="1061"/>
         <source>groupname</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1106"/>
+        <location filename="../meconfig.ui" line="1090"/>
         <source>Delete Group</source>
         <translation>Poista ryhmä</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1168"/>
+        <location filename="../meconfig.ui" line="1152"/>
         <source>Group to delete:</source>
         <translation>Poistettava ryhmä:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1196"/>
+        <location filename="../meconfig.ui" line="1180"/>
         <source>Group Membership</source>
         <translation>Ryhmän jäsenyys</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1312"/>
+        <location filename="../meconfig.ui" line="1296"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1332"/>
+        <location filename="../meconfig.ui" line="1316"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
         <translation>*Ole hyvä ja tarkista vielä kerran valintasi ennen jatkamista, virheelliset ryhmän jäsenten määritykset voivat rikkoa järjestelmän.  Käytä korjaus-välilehteä palauttaaksesi alkuperäiset määritykset jos teit virheen.</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1392"/>
+        <location filename="../meconfig.ui" line="1376"/>
         <source>Apply any changes</source>
         <translation>Hyväksy kaikki muutokset</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1395"/>
+        <location filename="../meconfig.ui" line="1379"/>
         <source>Apply</source>
         <translation>Hyväksy</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1402"/>
+        <location filename="../meconfig.ui" line="1386"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1409"/>
+        <location filename="../meconfig.ui" line="1393"/>
         <source>Cancel any changes then quit</source>
         <translation>Kumoa kaikki muokkaukset ja lopeta</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1412"/>
+        <location filename="../meconfig.ui" line="1396"/>
         <source>Close</source>
         <translation>Sulje</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1419"/>
+        <location filename="../meconfig.ui" line="1403"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1460"/>
+        <location filename="../meconfig.ui" line="1444"/>
         <source>Display help </source>
         <translation>Näytä ohje</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1463"/>
+        <location filename="../meconfig.ui" line="1447"/>
         <source>Help</source>
         <translation>Ohje</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1470"/>
+        <location filename="../meconfig.ui" line="1454"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1477"/>
+        <location filename="../meconfig.ui" line="1461"/>
         <source>About this application</source>
         <translation>Tietoja tästä sovelluksesta</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1480"/>
+        <location filename="../meconfig.ui" line="1464"/>
         <source>About...</source>
         <translation>Tietoja...</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1487"/>
+        <location filename="../meconfig.ui" line="1471"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
