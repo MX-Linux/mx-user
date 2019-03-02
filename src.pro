@@ -47,9 +47,12 @@ TRANSLATIONS += translations/mx-user_am.ts \
                 translations/mx-user_zh_CN.ts \
                 translations/mx-user_zh_TW.ts
 
-FORMS += meconfig.ui
-HEADERS += mconfig.h
-SOURCES += main.cpp mconfig.cpp
+FORMS += \
+    mainwindow.ui
+HEADERS += \
+    mainwindow.h
+SOURCES += main.cpp \
+    mainwindow.cpp
 LIBS += -lcrypt
 CONFIG += release warn_on thread qt
 

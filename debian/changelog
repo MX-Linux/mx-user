@@ -1,3 +1,10 @@
+mx-user (19.3) mx; urgency=medium
+
+  * rename user feature
+  * bug fix: search for full word when checking for existent user/group
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 01 Mar 2019 15:15:12 -0500
+
 mx-user (19.2) mx; urgency=medium
 
   * removed restore APT sources checkbox, function moved to mx-repo-manager
