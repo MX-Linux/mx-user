@@ -19,26 +19,26 @@ Changes:
    * rename user feature
    * bug fix: search for full word when checking for existent user/group
 Checksums-Sha1:
- da129def6f9f1b359e73e5dcc5502be0c385f5ee 1155 mx-user_19.3.dsc
- b536fbcc4f0a1f9122ab1954bf6071f13ba518b0 88772 mx-user_19.3.tar.xz
- 095159e0fd4e6e2a9df90eb80e5bb683bc900acf 122034 mx-user_19.3_amd64.deb
+ 2c17070a9e7f1707ebc18c2464639120257628c1 1155 mx-user_19.3.dsc
+ fc7bb2854e00575c9165f0fdbcbb68d25bb64cd4 88796 mx-user_19.3.tar.xz
+ 0f4b48bf88ba159851f40cd8d10eb3eac5d8a9ee 121822 mx-user_19.3_amd64.deb
 Checksums-Sha256:
- d2ad4ff386d82c73c87c0cd85feab95d5b22f67891d229f7da6148cce9685cb5 1155 mx-user_19.3.dsc
- 712c4e3420d2e46f0deba3dcfbabc106ad563430b94228867076ccc8652d7377 88772 mx-user_19.3.tar.xz
- d1672c4010b733c5490bff91ce64cc0e8f4f0d0cefc31cf04c8eb285585ca85c 122034 mx-user_19.3_amd64.deb
+ 69af3796d4f9acf9e4b2b0c3e81d628e5d39763c8ca98ca8b50b30411ba6d481 1155 mx-user_19.3.dsc
+ 186d80cc7c8da8b9b93e105a5c69dcc8bbdd0eb79a07e90dd561d9207e759df8 88796 mx-user_19.3.tar.xz
+ b390766368626f984518223c5427ba24e3984af3fd02e7a4ca33f8f8472ab976 121822 mx-user_19.3_amd64.deb
 Files:
- 36052d989645c9c6c87aa8fa594c22c2 1155 system optional mx-user_19.3.dsc
- 606e289f19ae0f9a77aa80f901aaffb1 88772 system optional mx-user_19.3.tar.xz
- 0a7d4d04d0a04c18253730ed96db289d 122034 system optional mx-user_19.3_amd64.deb
+ c77bd614a0a6ff99b99ace354461412b 1155 system optional mx-user_19.3.dsc
+ 767625f68af7c3c9f64872e1c9202b7a 88796 system optional mx-user_19.3.tar.xz
+ 999b73c543748956748dcabe19cb2aaa 121822 system optional mx-user_19.3_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlx52VATHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJHZB/9RaxT3Q2KkrpOvCo1HkDyIE1uzt8sF
-0rBqlCMye9AqCpKqkv98MTnNatgN26OKGvPdLMjPYOWwf1HsI81gRTMd1g30Uh23
-V5zXWgM+s3DKl6vsDcLhRLlKB3IN7cH+VP/kIo0QMY0tYzyVV40N0DTkmoelsh+c
-WdP8+SSUPRu55afNINAe7JfrbMtdkph3YmUhWLQVVDidSTfhsxlJZQmUpyCt0W3+
-WS+KNLYV/RWEQ3U/Ki/apxEGefkrfjw99udLN8aSShrz9PK4h7nqNF7NYt3apYuq
-VGgBPThYgdCtEsP7ATilTAaIrR5IX2Ae4MDjNtIpUeBzRMZs6WyyiXfs
-=PLyq
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlx521ITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumN8zCAC6KQx9lFjOnURl54Pa6WpRBaLdZWSH
+Xif221vDRVfc0nzLKnqAI9cotZ54OOnfN4shKu0fdfsSiWZC/ZK6QgDxPop+1Fyb
+vARPUMcvhtYW5XA+qBxm6w2EUAwJAqwqqas/JwN1MJAP3/cTtDfV1b6I5qQn8H3F
+8nC4sj/Us1A0L2vnv7hxVw0NZEOwSihzhwFkavT71Ppvgq2GJRazhPFl8fupzqQ6
++3FoteFzHrANVFv5UbmneaLG1R3MioplUkQGKUhytl+Xpbg7cPmoVxehbsu6zkb/
+bg5klqOKRrjj2JnEO3O8N1g3H/hst5zru8Z7p1W7mjSWPbt/A9z4Ylyn
+=v9RI
 -----END PGP SIGNATURE-----
