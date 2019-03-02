@@ -4,486 +4,427 @@
 <context>
     <name>MConfig</name>
     <message>
-        <location filename="../mconfig.cpp" line="167"/>
-        <location filename="../mconfig.cpp" line="235"/>
-        <location filename="../mconfig.cpp" line="263"/>
-        <location filename="../mconfig.cpp" line="294"/>
-        <location filename="../mconfig.cpp" line="316"/>
-        <location filename="../mconfig.cpp" line="339"/>
-        <location filename="../mconfig.cpp" line="744"/>
-        <location filename="../mconfig.cpp" line="759"/>
-        <location filename="../mconfig.cpp" line="784"/>
-        <location filename="../mconfig.cpp" line="792"/>
-        <location filename="../mconfig.cpp" line="1028"/>
         <source>none</source>
-        <translation>cap</translation>
+        <translation type="vanished">cap</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="351"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>Es repararà la configuració d&apos;usuari. Si us plau, tanqueu tots els altres programes. En acabar, torneu a entrar o arrencar. Esteu segur que voleu reparar-ho ara?</translation>
+        <translation type="vanished">Es repararà la configuració d&apos;usuari. Si us plau, tanqueu tots els altres programes. En acabar, torneu a entrar o arrencar. Esteu segur que voleu reparar-ho ara?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="352"/>
-        <location filename="../mconfig.cpp" line="401"/>
-        <location filename="../mconfig.cpp" line="555"/>
-        <location filename="../mconfig.cpp" line="610"/>
         <source>Yes</source>
-        <translation>Sí</translation>
+        <translation type="vanished">Sí</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="352"/>
-        <location filename="../mconfig.cpp" line="401"/>
-        <location filename="../mconfig.cpp" line="555"/>
-        <location filename="../mconfig.cpp" line="610"/>
         <source>No</source>
-        <translation>No</translation>
+        <translation type="vanished">No</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="373"/>
-        <location filename="../mconfig.cpp" line="384"/>
         <source>Autologin options</source>
-        <translation>Opcions d&apos;entrada automàtica </translation>
+        <translation type="vanished">Opcions d&apos;entrada automàtica </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="374"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation>S&apos;ha desactivat l&apos;entrada automàtica per al compte &apos;%1&apos;</translation>
+        <translation type="vanished">S&apos;ha desactivat l&apos;entrada automàtica per al compte &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="385"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation>S&apos;ha activat l&apos;entrada automàtica per al compte &apos;%1&apos; </translation>
+        <translation type="vanished">S&apos;ha activat l&apos;entrada automàtica per al compte &apos;%1&apos; </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="396"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation>Cal que especifiqueu un lloc de destinació. No podeu copiar-ho a l&apos;escriptori on esteu registrat.</translation>
+        <translation type="vanished">Cal que especifiqueu un lloc de destinació. No podeu copiar-ho a l&apos;escriptori on esteu registrat.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="400"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation>Abans de copiar, cal tancar tots els altres programes. Assegureu-vos que la destinació te prou lloc per encabir tots els fitxers que copiareu. Copiar entre escriptoris pot sobreescriure o esborrar fitxers o preferències a l&apos;escriptori destinació. Esteu segur que voleu continuar?</translation>
+        <translation type="vanished">Abans de copiar, cal tancar tots els altres programes. Assegureu-vos que la destinació te prou lloc per encabir tots els fitxers que copiareu. Copiar entre escriptoris pot sobreescriure o esborrar fitxers o preferències a l&apos;escriptori destinació. Esteu segur que voleu continuar?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="425"/>
         <source>Synchronizing desktop...</source>
-        <translation>Sincronitzant l&apos;escriptori...</translation>
+        <translation type="vanished">Sincronitzant l&apos;escriptori...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="427"/>
         <source>Copying desktop...</source>
-        <translation>Copiant l&apos;escriptori...</translation>
+        <translation type="vanished">Copiant l&apos;escriptori...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="450"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>El nom d&apos;usuari ha de tenir com a mínim 2 caràcters. Si us plau, trieu un nom més llarg abans de continuar.</translation>
+        <translation type="vanished">El nom d&apos;usuari ha de tenir com a mínim 2 caràcters. Si us plau, trieu un nom més llarg abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="454"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>El nom d&apos;usuari ha d&apos;estar en minúscules i no
+        <translation type="vanished">El nom d&apos;usuari ha d&apos;estar en minúscules i no
 pot contenir espais ni caràcters especials.
 Si us plau, trieu un altre nom abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="463"/>
         <source>Sorry that name is in use. Please select a different name.</source>
-        <translation>Ho sento, aquest nom ja està en ús. Si us plau, trieu-ne un altre.</translation>
+        <translation type="vanished">Ho sento, aquest nom ja està en ús. Si us plau, trieu-ne un altre.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="468"/>
-        <location filename="../mconfig.cpp" line="514"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation>Les contrasenyes no coincideixen. Si us plau, torneu-ho a provar.</translation>
+        <translation type="vanished">Les contrasenyes no coincideixen. Si us plau, torneu-ho a provar.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="473"/>
-        <location filename="../mconfig.cpp" line="519"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation>La contrasenya ha de tenir 2 caràcters com a mínim. Si us plau, entreu una contrasenya més llarga abans de continuar.</translation>
+        <translation type="vanished">La contrasenya ha de tenir 2 caràcters com a mínim. Si us plau, entreu una contrasenya més llarga abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="501"/>
         <source>The user was added ok.</source>
-        <translation>Usuari afegit correctament.</translation>
+        <translation type="vanished">Usuari afegit correctament.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="505"/>
         <source>Failed to add the user.</source>
-        <translation>Ha fallat en afegir l&apos;usuari.</translation>
+        <translation type="vanished">Ha fallat en afegir l&apos;usuari.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="544"/>
         <source>Password successfully changed.</source>
-        <translation>La contrasenya s&apos;ha canviat amb èxit.</translation>
+        <translation type="vanished">La contrasenya s&apos;ha canviat amb èxit.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="548"/>
         <source>Failed to change password.</source>
-        <translation>Ha fallat el canvi de contrasenya.</translation>
+        <translation type="vanished">Ha fallat el canvi de contrasenya.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="553"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation>Aquesta acció no es pot desfer. Esteu segur de voler eliminar l&apos;usuari %1? </translation>
+        <translation type="vanished">Aquesta acció no es pot desfer. Esteu segur de voler eliminar l&apos;usuari %1? </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="566"/>
         <source>The user has been deleted.</source>
-        <translation>S&apos;ha eliminat l&apos;usuari.</translation>
+        <translation type="vanished">S&apos;ha eliminat l&apos;usuari.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="569"/>
         <source>Failed to delete the user.</source>
-        <translation>No s&apos;ha pogut eliminar l&apos;usuari.</translation>
+        <translation type="vanished">No s&apos;ha pogut eliminar l&apos;usuari.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="582"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>El nom de grup ha de tenir com a mínim 2 caràcters. Si us plau, trieu un nom més llarg abans de continuar.</translation>
+        <translation type="vanished">El nom de grup ha de tenir com a mínim 2 caràcters. Si us plau, trieu un nom més llarg abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="586"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>El nom de grup ha d&apos;estar en minúscules i no
+        <translation type="vanished">El nom de grup ha d&apos;estar en minúscules i no
 pot contenir espais ni caràcters especials.
 Si us plau, trieu un altre nom abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="595"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
-        <translation>Ho sento, aquest nom de grup ja està en ús. Si us plau, trieu-ne un altre.</translation>
+        <translation type="vanished">Ho sento, aquest nom de grup ja està en ús. Si us plau, trieu-ne un altre.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="602"/>
         <source>The system group was added ok.</source>
-        <translation>S&apos;ha afegit el grup de sistema correctament.</translation>
+        <translation type="vanished">S&apos;ha afegit el grup de sistema correctament.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="605"/>
         <source>Failed to add the system group.</source>
-        <translation>Ha fallat en afegir el grup. </translation>
+        <translation type="vanished">Ha fallat en afegir el grup. </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="608"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation>Aquesta acció no es pot desfer. Esteu segur de voler eliminar el grup %1? </translation>
+        <translation type="vanished">Aquesta acció no es pot desfer. Esteu segur de voler eliminar el grup %1? </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="615"/>
         <source>The group has been deleted.</source>
-        <translation>S&apos;ha eliminat el grup.</translation>
+        <translation type="vanished">S&apos;ha eliminat el grup.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="618"/>
         <source>Failed to delete the group.</source>
-        <translation>Error en eliminar el grup.</translation>
+        <translation type="vanished">Error en eliminar el grup.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="639"/>
         <source>The changes have been applied.</source>
-        <translation>S&apos;han aplicat els canvis.</translation>
+        <translation type="vanished">S&apos;han aplicat els canvis.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="642"/>
         <source>Failed to apply group changes</source>
-        <translation>Error en aplicar canvis de grup</translation>
+        <translation type="vanished">Error en aplicar canvis de grup</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="654"/>
-        <location filename="../mconfig.cpp" line="693"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Sincronitzant escriptori... Bé</translation>
+        <translation type="vanished">Sincronitzant escriptori... Bé</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="656"/>
-        <location filename="../mconfig.cpp" line="695"/>
         <source>Copying desktop...ok</source>
-        <translation>Copiant escriptori... Bé</translation>
+        <translation type="vanished">Copiant escriptori... Bé</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="699"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Sincronitzant escriptori... fallat</translation>
+        <translation type="vanished">Sincronitzant escriptori... fallat</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="701"/>
         <source>Copying desktop...failed</source>
-        <translation>Copiant escriptori... fallat</translation>
+        <translation type="vanished">Copiant escriptori... fallat</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="739"/>
-        <location filename="../mconfig.cpp" line="1080"/>
-        <location filename="../mconfig.cpp" line="1088"/>
         <source>browse...</source>
-        <translation>navega...</translation>
+        <translation type="vanished">navega...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="898"/>
         <source>Baobab installation</source>
-        <translation>Instal·lació de Baobab </translation>
+        <translation type="vanished">Instal·lació de Baobab </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="899"/>
         <source>Wait while Baobab is installing...</source>
-        <translation>Espereu mentre s&apos;instal·la Baobab. </translation>
+        <translation type="vanished">Espereu mentre s&apos;instal·la Baobab. </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="966"/>
         <source>About MX User Manager</source>
-        <translation>Quant a l&apos;Administrador d&apos;Usuaris de MX</translation>
+        <translation type="vanished">Quant a l&apos;Administrador d&apos;Usuaris de MX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="967"/>
         <source>MX User Manager</source>
-        <translation>MX User Manager </translation>
+        <translation type="vanished">MX User Manager </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="969"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>Configuració d&apos;Usuari simple per MX Linux</translation>
+        <translation type="vanished">Configuració d&apos;Usuari simple per MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="970"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux </translation>
+        <translation type="vanished">Copyright (c) MX Linux </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="971"/>
         <source>License</source>
-        <translation>Llicència</translation>
+        <translation type="vanished">Llicència</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="972"/>
         <source>Changelog</source>
-        <translation>Registre de canvis</translation>
+        <translation type="vanished">Registre de canvis</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="973"/>
         <source>Cancel</source>
-        <translation>Cancel·la</translation>
+        <translation type="vanished">Cancel·la</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="989"/>
         <source>&amp;Close</source>
-        <translation>Tan&amp;ca </translation>
+        <translation type="vanished">Tan&amp;ca </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1081"/>
         <source>Select folder to copy to</source>
-        <translation>Trieu el directori a on copiar</translation>
+        <translation type="vanished">Trieu el directori a on copiar</translation>
     </message>
 </context>
 <context>
     <name>MEConfig</name>
     <message>
-        <location filename="../meconfig.ui" line="26"/>
+        <location filename="../mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
         <translation>MX User Manager </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="62"/>
+        <location filename="../mainwindow.ui" line="62"/>
         <source>Administration</source>
         <translation>Administració </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="65"/>
+        <location filename="../mainwindow.ui" line="65"/>
         <source>Add a new user</source>
         <translation>Afegeix nou usuari</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="105"/>
+        <location filename="../mainwindow.ui" line="105"/>
         <source>Add User Account</source>
         <translation>Afegeix compte d&apos;usuari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="132"/>
+        <location filename="../mainwindow.ui" line="132"/>
         <source>Reenter password for new user</source>
         <translation>Torneu a entrar la contrasenya pel nou usuari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="141"/>
+        <location filename="../mainwindow.ui" line="141"/>
         <source>confirm password</source>
         <translation>confirmeu la contrasenya</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="154"/>
-        <location filename="../meconfig.ui" line="1039"/>
+        <location filename="../mainwindow.ui" line="154"/>
+        <location filename="../mainwindow.ui" line="1118"/>
         <source>Username of new user</source>
         <translation>Nom del nou usuari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="157"/>
+        <location filename="../mainwindow.ui" line="157"/>
         <source>User login name:</source>
         <translation>Nom d&apos;entrada de l&apos;usuari: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="170"/>
-        <location filename="../meconfig.ui" line="1055"/>
+        <location filename="../mainwindow.ui" line="170"/>
+        <location filename="../mainwindow.ui" line="416"/>
+        <location filename="../mainwindow.ui" line="1134"/>
         <source>Enter username of new user</source>
         <translation>Entreu el nom del nou usuari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="176"/>
+        <location filename="../mainwindow.ui" line="176"/>
+        <location filename="../mainwindow.ui" line="422"/>
         <source>username</source>
         <translation>nomdusuari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="189"/>
-        <location filename="../meconfig.ui" line="227"/>
+        <location filename="../mainwindow.ui" line="189"/>
+        <location filename="../mainwindow.ui" line="227"/>
         <source>Password for new user</source>
         <translation>Contrasenya pel nou usuari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="192"/>
+        <location filename="../mainwindow.ui" line="192"/>
         <source>User password:</source>
         <translation>Contrasenya d&apos;usuari: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="205"/>
+        <location filename="../mainwindow.ui" line="205"/>
         <source>Enter password for new user</source>
         <translation>Introduïu la contrasenya pel nou usuari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="214"/>
+        <location filename="../mainwindow.ui" line="214"/>
         <source>password</source>
         <translation>contrasenya </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="230"/>
+        <location filename="../mainwindow.ui" line="230"/>
         <source>Confirm user password:</source>
         <translation>Confirmeu la contrasenya d&apos;usuari: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="256"/>
+        <location filename="../mainwindow.ui" line="359"/>
+        <source>Rename User Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="403"/>
+        <source>New user name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="432"/>
         <source>Change User Password</source>
         <translation>Canvia la contrasenya d&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="271"/>
+        <location filename="../mainwindow.ui" line="447"/>
         <source>new password</source>
         <translation>nova contrasenya</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="284"/>
+        <location filename="../mainwindow.ui" line="460"/>
         <source>Confirm new password:</source>
         <translation>Confirmeu la nova contrasenya:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="294"/>
+        <location filename="../mainwindow.ui" line="470"/>
         <source>confirm new password</source>
         <translation>confirmeu la nova contrasenya</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="301"/>
+        <location filename="../mainwindow.ui" line="371"/>
+        <location filename="../mainwindow.ui" line="483"/>
         <source>Select user to modify:</source>
         <translation>Trieu l&apos;usuari a modificar:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="314"/>
+        <location filename="../mainwindow.ui" line="496"/>
         <source>New user password:</source>
         <translation>Nova contrasenya d&apos;usuari: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="346"/>
+        <location filename="../mainwindow.ui" line="262"/>
         <source>Delete User Account</source>
         <translation>Elimina un compte d&apos;usuari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="389"/>
+        <location filename="../mainwindow.ui" line="305"/>
         <source>Select user</source>
         <translation>Trieu l&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="405"/>
-        <location filename="../meconfig.ui" line="1130"/>
-        <location filename="../meconfig.ui" line="1143"/>
-        <location filename="../meconfig.ui" line="1267"/>
-        <location filename="../meconfig.ui" line="1289"/>
+        <location filename="../mainwindow.ui" line="321"/>
+        <location filename="../mainwindow.ui" line="1209"/>
+        <location filename="../mainwindow.ui" line="1222"/>
+        <location filename="../mainwindow.ui" line="1346"/>
+        <location filename="../mainwindow.ui" line="1368"/>
         <source>Select user to delete</source>
         <translation>Trieu l&apos;usuari a eliminar </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="414"/>
+        <location filename="../mainwindow.ui" line="330"/>
         <source>User to delete:</source>
         <translation>Usuari a eliminar:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="427"/>
+        <location filename="../mainwindow.ui" line="343"/>
         <source>Also delete the user&apos;s home directory</source>
         <translation>Elimina també el directori personal </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="430"/>
+        <location filename="../mainwindow.ui" line="346"/>
         <source>Delete user home directory</source>
         <translation>Elimina el directori d&apos;inici de l&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="448"/>
+        <location filename="../mainwindow.ui" line="527"/>
         <source>Options</source>
         <translation>Opcions </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="451"/>
+        <location filename="../mainwindow.ui" line="530"/>
         <source>Repair a user configuration</source>
         <translation>Repara una configuració d&apos;usuari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="485"/>
-        <location filename="../meconfig.ui" line="1192"/>
+        <location filename="../mainwindow.ui" line="564"/>
+        <location filename="../mainwindow.ui" line="1271"/>
         <source>Modify User Account</source>
         <translation>Modifica compte d&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="497"/>
-        <location filename="../meconfig.ui" line="513"/>
+        <location filename="../mainwindow.ui" line="576"/>
+        <location filename="../mainwindow.ui" line="592"/>
         <source>Select user to repair</source>
         <translation>Trieu l&apos;usuari a reparar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="500"/>
-        <location filename="../meconfig.ui" line="1276"/>
+        <location filename="../mainwindow.ui" line="579"/>
+        <location filename="../mainwindow.ui" line="1355"/>
         <source>User to change:</source>
         <translation>Usuari a canviar:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="545"/>
+        <location filename="../mainwindow.ui" line="624"/>
         <source>Restore Defaults</source>
         <translation>Restaura Predeterminats </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="566"/>
+        <location filename="../mainwindow.ui" line="645"/>
         <source>Restore browser configs to MX defaults</source>
         <translation>Restaura paràmetres del navegador a predeterminats de MX</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="572"/>
+        <location filename="../mainwindow.ui" line="651"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
         <translation>Paràmetres de Mozilla (Iceweasel o Firefox)</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="575"/>
+        <location filename="../mainwindow.ui" line="654"/>
         <source>Alt+X</source>
         <translation>Alt+X</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="582"/>
+        <location filename="../mainwindow.ui" line="661"/>
         <source>Restore group memberships to MX defaults</source>
         <translation>Restaura la pertinença a grups als predeterminats MX</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="588"/>
+        <location filename="../mainwindow.ui" line="667"/>
         <source>Group memberships</source>
         <translation>Pertinença a Grups </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="591"/>
+        <location filename="../mainwindow.ui" line="670"/>
         <source>Alt+G</source>
         <translation>Alt+G</translation>
     </message>
@@ -496,242 +437,548 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
         <translation type="vanished">Restaura les fonts d&apos;APT</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="601"/>
+        <location filename="../mainwindow.ui" line="680"/>
         <source>Change Autologin Settings</source>
         <translation>Canvia els paràmetres d&apos;Entrada Automàtica </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="607"/>
+        <location filename="../mainwindow.ui" line="686"/>
         <source>Log in automatically</source>
         <translation>Entra automàticament </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="614"/>
+        <location filename="../mainwindow.ui" line="693"/>
         <source>Require password to log in</source>
         <translation>Cal contrasenya per entrar </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="629"/>
+        <location filename="../mainwindow.ui" line="708"/>
         <source>Copy/Sync</source>
         <translation>Còpia/Sinc</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="656"/>
+        <location filename="../mainwindow.ui" line="735"/>
         <source>Copy Between Desktops</source>
         <translation>Copia entre escriptoris </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="683"/>
-        <location filename="../meconfig.ui" line="750"/>
+        <location filename="../mainwindow.ui" line="762"/>
+        <location filename="../mainwindow.ui" line="829"/>
         <source>Select desktop to copy from</source>
         <translation>Trieu l&apos;escriptori des d&apos;on copiar </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="696"/>
+        <location filename="../mainwindow.ui" line="775"/>
         <source>Select to only copy files</source>
         <translation>Marqueu per copiar només fitxers </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="699"/>
+        <location filename="../mainwindow.ui" line="778"/>
         <source>Copy only</source>
         <translation>Només copiar </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="715"/>
-        <location filename="../meconfig.ui" line="728"/>
+        <location filename="../mainwindow.ui" line="794"/>
+        <location filename="../mainwindow.ui" line="807"/>
         <source>Select desktop to copy to</source>
         <translation>Trieu l&apos;escriptori a on copiar </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="737"/>
+        <location filename="../mainwindow.ui" line="816"/>
         <source>Copy to:</source>
         <translation>Copia a: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="759"/>
+        <location filename="../mainwindow.ui" line="838"/>
         <source>Copy from:</source>
         <translation>Copia de: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="772"/>
+        <location filename="../mainwindow.ui" line="851"/>
         <source>Select to copy and then delete differences</source>
         <translation>Marqueu per copiar i després esborrar diferències</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="775"/>
+        <location filename="../mainwindow.ui" line="854"/>
         <source>Sync</source>
         <translation>Sinc</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="821"/>
+        <location filename="../mainwindow.ui" line="900"/>
         <source>Select to copy/sync Shared</source>
         <translation>Marqueu per copiar/sincronitzar Shared </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="824"/>
+        <location filename="../mainwindow.ui" line="903"/>
         <source>Shared folder</source>
         <translation>Directori Shared </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="837"/>
+        <location filename="../mainwindow.ui" line="916"/>
         <source>Select to copy/sync entire home</source>
         <translation>Marqueu per copiar/sinc. tot el directori d&apos;inici </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="840"/>
+        <location filename="../mainwindow.ui" line="919"/>
         <source>Entire home</source>
         <translation>Tot el directori d&apos;Inici </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="856"/>
+        <location filename="../mainwindow.ui" line="935"/>
         <source>Select to copy/sync the browser configuration</source>
         <translation>Marqueu per copiar/sinc els paràmetres del navegador </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="859"/>
+        <location filename="../mainwindow.ui" line="938"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
         <translation>Configuració de Mozilla (Firefox o Iceweasel)</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="872"/>
+        <location filename="../mainwindow.ui" line="951"/>
         <source>Select to copy/sync Documents</source>
         <translation>Marqueu per copiar/sinc. Documents</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="875"/>
+        <location filename="../mainwindow.ui" line="954"/>
         <source>Documents folder</source>
         <translation>Directori de Documents</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="882"/>
+        <location filename="../mainwindow.ui" line="961"/>
         <source>What to copy/sync:</source>
         <translation>Què Copiar/Sincronitzar: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="898"/>
+        <location filename="../mainwindow.ui" line="977"/>
         <source>Progress</source>
         <translation>Progrés </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="928"/>
-        <location filename="../meconfig.ui" line="944"/>
+        <location filename="../mainwindow.ui" line="1007"/>
+        <location filename="../mainwindow.ui" line="1023"/>
         <source>Status of the changes</source>
         <translation>Estat dels canvis </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="947"/>
+        <location filename="../mainwindow.ui" line="1026"/>
         <source>Status:</source>
         <translation>Estat: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="963"/>
+        <location filename="../mainwindow.ui" line="1042"/>
         <source>Progress of the changes</source>
         <translation>Progrés dels canvis </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1000"/>
+        <location filename="../mainwindow.ui" line="1079"/>
         <source>Add/Remove Groups</source>
         <translation>Afegeix/treu Grups</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1012"/>
+        <location filename="../mainwindow.ui" line="1091"/>
         <source>Add Group</source>
         <translation>Afegeix Grup</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1042"/>
+        <location filename="../mainwindow.ui" line="1121"/>
         <source>Group name:</source>
         <translation>Nom del grup: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1061"/>
+        <location filename="../mainwindow.ui" line="1140"/>
         <source>groupname</source>
         <translation>nomdegrup</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1090"/>
+        <location filename="../mainwindow.ui" line="1169"/>
         <source>Delete Group</source>
         <translation>Elimina Grup</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1152"/>
+        <location filename="../mainwindow.ui" line="1231"/>
         <source>Group to delete:</source>
         <translation>Grup a eliminar:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1180"/>
+        <location filename="../mainwindow.ui" line="1259"/>
         <source>Group Membership</source>
         <translation>Pertinença a grups</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1296"/>
+        <location filename="../mainwindow.ui" line="1375"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
         <translation>Grups on pertany l&apos;usuari (canvieu els grups seleccionant/deseleccionant les caselles corresponents):</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1316"/>
+        <location filename="../mainwindow.ui" line="1395"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
         <translation>* Si us plau reviseu novament les seleccions abans d&apos;aplicar-ho, l&apos;assignació de pertinença a grups erronis pot trencar el sistema. Useu l&apos;opció Reparar per restaurar les afiliacions originals si feu un error.</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1376"/>
+        <location filename="../mainwindow.ui" line="1455"/>
         <source>Apply any changes</source>
         <translation>Aplica els canvis</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1379"/>
+        <location filename="../mainwindow.ui" line="1458"/>
         <source>Apply</source>
         <translation>Aplica</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1386"/>
+        <location filename="../mainwindow.ui" line="1465"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1393"/>
+        <location filename="../mainwindow.ui" line="1472"/>
         <source>Cancel any changes then quit</source>
         <translation>Cancel·la els canvis i surt</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1396"/>
+        <location filename="../mainwindow.ui" line="1475"/>
         <source>Close</source>
         <translation>Tanca</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1403"/>
+        <location filename="../mainwindow.ui" line="1482"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1444"/>
+        <location filename="../mainwindow.ui" line="1523"/>
         <source>Display help </source>
         <translation>Mostra l&apos;ajuda</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1447"/>
+        <location filename="../mainwindow.ui" line="1526"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1454"/>
+        <location filename="../mainwindow.ui" line="1533"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1461"/>
+        <location filename="../mainwindow.ui" line="1540"/>
         <source>About this application</source>
         <translation>Quant al programa</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1464"/>
+        <location filename="../mainwindow.ui" line="1543"/>
         <source>About...</source>
         <translation>Quant a...</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1471"/>
+        <location filename="../mainwindow.ui" line="1550"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
+    </message>
+</context>
+<context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../mainwindow.cpp" line="112"/>
+        <location filename="../mainwindow.cpp" line="174"/>
+        <location filename="../mainwindow.cpp" line="182"/>
+        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="219"/>
+        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="250"/>
+        <location filename="../mainwindow.cpp" line="674"/>
+        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="718"/>
+        <location filename="../mainwindow.cpp" line="726"/>
+        <location filename="../mainwindow.cpp" line="916"/>
+        <location filename="../mainwindow.cpp" line="1029"/>
+        <source>none</source>
+        <translation type="unfinished">cap</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="262"/>
+        <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
+        <translation type="unfinished">Es repararà la configuració d&apos;usuari. Si us plau, tanqueu tots els altres programes. En acabar, torneu a entrar o arrencar. Esteu segur que voleu reparar-ho ara?</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="439"/>
+        <location filename="../mainwindow.cpp" line="494"/>
+        <source>Yes</source>
+        <translation type="unfinished">Sí</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="439"/>
+        <location filename="../mainwindow.cpp" line="494"/>
+        <source>No</source>
+        <translation type="unfinished">No</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="295"/>
+        <source>Autologin options</source>
+        <translation type="unfinished">Opcions d&apos;entrada automàtica </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="285"/>
+        <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
+        <translation type="unfinished">S&apos;ha desactivat l&apos;entrada automàtica per al compte &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="296"/>
+        <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
+        <translation type="unfinished">S&apos;ha activat l&apos;entrada automàtica per al compte &apos;%1&apos; </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="307"/>
+        <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
+        <translation type="unfinished">Cal que especifiqueu un lloc de destinació. No podeu copiar-ho a l&apos;escriptori on esteu registrat.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="311"/>
+        <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
+        <translation type="unfinished">Abans de copiar, cal tancar tots els altres programes. Assegureu-vos que la destinació te prou lloc per encabir tots els fitxers que copiareu. Copiar entre escriptoris pot sobreescriure o esborrar fitxers o preferències a l&apos;escriptori destinació. Esteu segur que voleu continuar?</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="336"/>
+        <source>Synchronizing desktop...</source>
+        <translation type="unfinished">Sincronitzant l&apos;escriptori...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="338"/>
+        <source>Copying desktop...</source>
+        <translation type="unfinished">Copiant l&apos;escriptori...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="356"/>
+        <location filename="../mainwindow.cpp" line="548"/>
+        <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
+        <translation type="unfinished">El nom d&apos;usuari ha de tenir com a mínim 2 caràcters. Si us plau, trieu un nom més llarg abans de continuar.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="360"/>
+        <location filename="../mainwindow.cpp" line="552"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished">El nom d&apos;usuari ha d&apos;estar en minúscules i no
+pot contenir espais ni caràcters especials.
+Si us plau, trieu un altre nom abans de continuar.</translation>
+    </message>
+    <message>
+        <source>Sorry that name is in use. Please select a different name.</source>
+        <translation type="obsolete">Ho sento, aquest nom ja està en ús. Si us plau, trieu-ne un altre.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="374"/>
+        <location filename="../mainwindow.cpp" line="409"/>
+        <source>Password entries do not match. Please try again.</source>
+        <translation type="unfinished">Les contrasenyes no coincideixen. Si us plau, torneu-ho a provar.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="414"/>
+        <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
+        <translation type="unfinished">La contrasenya ha de tenir 2 caràcters com a mínim. Si us plau, entreu una contrasenya més llarga abans de continuar.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="396"/>
+        <source>The user was added ok.</source>
+        <translation type="unfinished">Usuari afegit correctament.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="400"/>
+        <source>Failed to add the user.</source>
+        <translation type="unfinished">Ha fallat en afegir l&apos;usuari.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="428"/>
+        <source>Password successfully changed.</source>
+        <translation type="unfinished">La contrasenya s&apos;ha canviat amb èxit.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="432"/>
+        <source>Failed to change password.</source>
+        <translation type="unfinished">Ha fallat el canvi de contrasenya.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="437"/>
+        <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
+        <translation type="unfinished">Aquesta acció no es pot desfer. Esteu segur de voler eliminar l&apos;usuari %1? </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="450"/>
+        <source>The user has been deleted.</source>
+        <translation type="unfinished">S&apos;ha eliminat l&apos;usuari.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="453"/>
+        <source>Failed to delete the user.</source>
+        <translation type="unfinished">No s&apos;ha pogut eliminar l&apos;usuari.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="466"/>
+        <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
+        <translation type="unfinished">El nom de grup ha de tenir com a mínim 2 caràcters. Si us plau, trieu un nom més llarg abans de continuar.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="470"/>
+        <source>The group name needs to be lower case and it 
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished">El nom de grup ha d&apos;estar en minúscules i no
+pot contenir espais ni caràcters especials.
+Si us plau, trieu un altre nom abans de continuar.</translation>
+    </message>
+    <message>
+        <source>Sorry that group name already exists. Please select a different name.</source>
+        <translation type="obsolete">Ho sento, aquest nom de grup ja està en ús. Si us plau, trieu-ne un altre.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="486"/>
+        <source>The system group was added ok.</source>
+        <translation type="unfinished">S&apos;ha afegit el grup de sistema correctament.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="489"/>
+        <source>Failed to add the system group.</source>
+        <translation type="unfinished">Ha fallat en afegir el grup. </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="492"/>
+        <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
+        <translation type="unfinished">Aquesta acció no es pot desfer. Esteu segur de voler eliminar el grup %1? </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The group has been deleted.</source>
+        <translation type="unfinished">S&apos;ha eliminat el grup.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="502"/>
+        <source>Failed to delete the group.</source>
+        <translation type="unfinished">Error en eliminar el grup.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="523"/>
+        <source>The changes have been applied.</source>
+        <translation type="unfinished">S&apos;han aplicat els canvis.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="526"/>
+        <source>Failed to apply group changes</source>
+        <translation type="unfinished">Error en aplicar canvis de grup</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="539"/>
+        <source>The selected user name is currently in use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="540"/>
+        <source>To rename this user, please log out and log back in using another user account.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="369"/>
+        <source>Sorry, this name is in use. Please enter a different name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="479"/>
+        <source>Sorry, that group name already exists. Please enter a different name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="561"/>
+        <source>Sorry, this name already exists on your system. Please enter a different name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="569"/>
+        <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="583"/>
+        <source>The user was renamed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="595"/>
+        <location filename="../mainwindow.cpp" line="624"/>
+        <source>Synchronizing desktop...ok</source>
+        <translation type="unfinished">Sincronitzant escriptori... Bé</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="597"/>
+        <location filename="../mainwindow.cpp" line="626"/>
+        <source>Copying desktop...ok</source>
+        <translation type="unfinished">Copiant escriptori... Bé</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="630"/>
+        <source>Synchronizing desktop...failed</source>
+        <translation type="unfinished">Sincronitzant escriptori... fallat</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="632"/>
+        <source>Copying desktop...failed</source>
+        <translation type="unfinished">Copiant escriptori... fallat</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="669"/>
+        <location filename="../mainwindow.cpp" line="968"/>
+        <location filename="../mainwindow.cpp" line="976"/>
+        <source>browse...</source>
+        <translation type="unfinished">navega...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="853"/>
+        <source>About MX User Manager</source>
+        <translation type="unfinished">Quant a l&apos;Administrador d&apos;Usuaris de MX</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="854"/>
+        <source>MX User Manager</source>
+        <translation type="unfinished">MX User Manager </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="856"/>
+        <source>Simple user configuration for MX Linux</source>
+        <translation type="unfinished">Configuració d&apos;Usuari simple per MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="857"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Copyright (c) MX Linux </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="858"/>
+        <source>License</source>
+        <translation type="unfinished">Llicència</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="859"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Registre de canvis</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="860"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Cancel·la</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="876"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">Tan&amp;ca </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="969"/>
+        <source>Select folder to copy to</source>
+        <translation type="unfinished">Trieu el directori a on copiar</translation>
     </message>
 </context>
 <context>

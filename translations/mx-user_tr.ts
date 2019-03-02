@@ -4,486 +4,423 @@
 <context>
     <name>MConfig</name>
     <message>
-        <location filename="../mconfig.cpp" line="167"/>
-        <location filename="../mconfig.cpp" line="235"/>
-        <location filename="../mconfig.cpp" line="263"/>
-        <location filename="../mconfig.cpp" line="294"/>
-        <location filename="../mconfig.cpp" line="316"/>
-        <location filename="../mconfig.cpp" line="339"/>
-        <location filename="../mconfig.cpp" line="744"/>
-        <location filename="../mconfig.cpp" line="759"/>
-        <location filename="../mconfig.cpp" line="784"/>
-        <location filename="../mconfig.cpp" line="792"/>
-        <location filename="../mconfig.cpp" line="1028"/>
         <source>none</source>
-        <translation>hiçbiri</translation>
+        <translation type="vanished">hiçbiri</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="351"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>Kullanıcı yapılandırması onarılacak.Lütfen şimdi bütün diğer  uygulamaları kapatın. Bittiğinde çıkış yapın veya yeniden başlatın.Şimdi onarmak istediğinizden emin misiniz?</translation>
+        <translation type="vanished">Kullanıcı yapılandırması onarılacak.Lütfen şimdi bütün diğer  uygulamaları kapatın. Bittiğinde çıkış yapın veya yeniden başlatın.Şimdi onarmak istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="352"/>
-        <location filename="../mconfig.cpp" line="401"/>
-        <location filename="../mconfig.cpp" line="555"/>
-        <location filename="../mconfig.cpp" line="610"/>
         <source>Yes</source>
-        <translation>Evet</translation>
+        <translation type="vanished">Evet</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="352"/>
-        <location filename="../mconfig.cpp" line="401"/>
-        <location filename="../mconfig.cpp" line="555"/>
-        <location filename="../mconfig.cpp" line="610"/>
         <source>No</source>
-        <translation>Hayır</translation>
+        <translation type="vanished">Hayır</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="373"/>
-        <location filename="../mconfig.cpp" line="384"/>
         <source>Autologin options</source>
-        <translation>Otomatik giriş seçenekleri</translation>
+        <translation type="vanished">Otomatik giriş seçenekleri</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="374"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation>&apos;%1&apos; hesabı için otomatik giriş devre dışı bırakıldı.</translation>
+        <translation type="vanished">&apos;%1&apos; hesabı için otomatik giriş devre dışı bırakıldı.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="385"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation>&apos;%1&apos; hesabı için otomatik giriş etkinleştirildi.</translation>
+        <translation type="vanished">&apos;%1&apos; hesabı için otomatik giriş etkinleştirildi.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="396"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation>Kopyalanacak yeri belirtmelisiniz. Giriş yaptığınız için masaüstüne kopyalayamazsınız.</translation>
+        <translation type="vanished">Kopyalanacak yeri belirtmelisiniz. Giriş yaptığınız için masaüstüne kopyalayamazsınız.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="400"/>
-        <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="425"/>
         <source>Synchronizing desktop...</source>
-        <translation>Masaüstü eşitleniyor...</translation>
+        <translation type="vanished">Masaüstü eşitleniyor...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="427"/>
         <source>Copying desktop...</source>
-        <translation>Masaüstü kopyalanıyor...</translation>
+        <translation type="vanished">Masaüstü kopyalanıyor...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="450"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>Kullanıcı adı en az 2 karakter uzunluğunda olmalıdır. Devam etmeden önce lütfen daha uzun bir ad seçin.</translation>
+        <translation type="vanished">Kullanıcı adı en az 2 karakter uzunluğunda olmalıdır. Devam etmeden önce lütfen daha uzun bir ad seçin.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="454"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Kullanıcı adı küçük harf olmalı ve
+        <translation type="vanished">Kullanıcı adı küçük harf olmalı ve
 özel karakterler ve boşluklar içermemelidir.
 Devam etmeden önce lütfen başka bir ad seçin.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="463"/>
         <source>Sorry that name is in use. Please select a different name.</source>
-        <translation>Üzgünüm bu ad kullanılıyor.Farklı bir ad seçin.</translation>
+        <translation type="vanished">Üzgünüm bu ad kullanılıyor.Farklı bir ad seçin.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="468"/>
-        <location filename="../mconfig.cpp" line="514"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation>Parola girdileri uyuşmuyor. Lütfen tekrar deneyin.</translation>
+        <translation type="vanished">Parola girdileri uyuşmuyor. Lütfen tekrar deneyin.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="473"/>
-        <location filename="../mconfig.cpp" line="519"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation>Parola adı en az 2 karakter uzunluğunda olmalıdır.Devam etmeden önce daha uzun bir parola girin.</translation>
+        <translation type="vanished">Parola adı en az 2 karakter uzunluğunda olmalıdır.Devam etmeden önce daha uzun bir parola girin.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="501"/>
         <source>The user was added ok.</source>
-        <translation>Kullanıcı eklendi.</translation>
+        <translation type="vanished">Kullanıcı eklendi.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="505"/>
         <source>Failed to add the user.</source>
-        <translation>Kullanıcı ekleme başarısız oldu.</translation>
+        <translation type="vanished">Kullanıcı ekleme başarısız oldu.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="544"/>
         <source>Password successfully changed.</source>
-        <translation>Parola başarıyla değiştirildi.</translation>
+        <translation type="vanished">Parola başarıyla değiştirildi.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="548"/>
         <source>Failed to change password.</source>
-        <translation>Parola değiştirme başarısız oldu.</translation>
+        <translation type="vanished">Parola değiştirme başarısız oldu.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="553"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation>Bu işlem geri alınamaz. % 1 kullanıcısını silmek istediğinizden emin misiniz?</translation>
+        <translation type="vanished">Bu işlem geri alınamaz. % 1 kullanıcısını silmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="566"/>
         <source>The user has been deleted.</source>
-        <translation>Kullanıcı silindi.</translation>
+        <translation type="vanished">Kullanıcı silindi.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="569"/>
         <source>Failed to delete the user.</source>
-        <translation>Kullanıcı silme başarısız oldu.</translation>
+        <translation type="vanished">Kullanıcı silme başarısız oldu.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="582"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>Grup adı en az 2 karakter uzunluğunda olmalıdır.  Devam etmeden önce lütfen daha uzun bir ad seçin. </translation>
+        <translation type="vanished">Grup adı en az 2 karakter uzunluğunda olmalıdır.  Devam etmeden önce lütfen daha uzun bir ad seçin. </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="586"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Grup adı küçük harf olmalı ve
+        <translation type="vanished">Grup adı küçük harf olmalı ve
 özel karakterler ve boşluklar içermemelidir.
 Devam etmeden önce lütfen başka bir ad seçin.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="595"/>
         <source>Sorry that group name already exists. Please select a different name.</source>
-        <translation>Üzgünüm bu grup adı zaten var. Lütfen farklı bir ad seçin.</translation>
+        <translation type="vanished">Üzgünüm bu grup adı zaten var. Lütfen farklı bir ad seçin.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="602"/>
         <source>The system group was added ok.</source>
-        <translation>Sistem grubu eklendi.</translation>
+        <translation type="vanished">Sistem grubu eklendi.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="605"/>
         <source>Failed to add the system group.</source>
-        <translation>Sistem grubu ekleme başarısız oldu.</translation>
+        <translation type="vanished">Sistem grubu ekleme başarısız oldu.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="608"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation>Bu işlem geri alınamaz. % 1 kullanıcısını silmek istediğinizden emin misiniz?</translation>
+        <translation type="vanished">Bu işlem geri alınamaz. % 1 kullanıcısını silmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="615"/>
         <source>The group has been deleted.</source>
-        <translation>Grup silindi.</translation>
+        <translation type="vanished">Grup silindi.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="618"/>
         <source>Failed to delete the group.</source>
-        <translation>Grup silme başarısız oldu.</translation>
+        <translation type="vanished">Grup silme başarısız oldu.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="639"/>
         <source>The changes have been applied.</source>
-        <translation>Dwğişiklikler uygulandı.</translation>
+        <translation type="vanished">Dwğişiklikler uygulandı.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="642"/>
         <source>Failed to apply group changes</source>
-        <translation>Grup değişiklikleri uygulanamadı</translation>
+        <translation type="vanished">Grup değişiklikleri uygulanamadı</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="654"/>
-        <location filename="../mconfig.cpp" line="693"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Masaüstü eşitleniyor...tamam</translation>
+        <translation type="vanished">Masaüstü eşitleniyor...tamam</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="656"/>
-        <location filename="../mconfig.cpp" line="695"/>
         <source>Copying desktop...ok</source>
-        <translation>Masaüstü kopyalanıyor...tamam</translation>
+        <translation type="vanished">Masaüstü kopyalanıyor...tamam</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="699"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Masaüstü eşitleniyor...başarısız oldu</translation>
+        <translation type="vanished">Masaüstü eşitleniyor...başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="701"/>
         <source>Copying desktop...failed</source>
-        <translation>Masaüstü kopyalanıyor...başarısız oldu</translation>
+        <translation type="vanished">Masaüstü kopyalanıyor...başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="739"/>
-        <location filename="../mconfig.cpp" line="1080"/>
-        <location filename="../mconfig.cpp" line="1088"/>
         <source>browse...</source>
-        <translation>gözat...</translation>
+        <translation type="vanished">gözat...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="898"/>
         <source>Baobab installation</source>
-        <translation>Baobab kurulumu</translation>
+        <translation type="vanished">Baobab kurulumu</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="899"/>
         <source>Wait while Baobab is installing...</source>
-        <translation>Baobab kuruluyor bekleyin...</translation>
+        <translation type="vanished">Baobab kuruluyor bekleyin...</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="966"/>
         <source>About MX User Manager</source>
-        <translation>MX Kullanıcı Yöneticisi hakkında</translation>
+        <translation type="vanished">MX Kullanıcı Yöneticisi hakkında</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="967"/>
         <source>MX User Manager</source>
-        <translation>MX Kullanıcı Yöneticisi</translation>
+        <translation type="vanished">MX Kullanıcı Yöneticisi</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="969"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>MX Linux için basit kullanıcı yapılandırması</translation>
+        <translation type="vanished">MX Linux için basit kullanıcı yapılandırması</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="970"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="vanished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="971"/>
         <source>License</source>
-        <translation>Ruhsat</translation>
+        <translation type="vanished">Ruhsat</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="972"/>
         <source>Changelog</source>
-        <translation>Değişim günlüğü</translation>
+        <translation type="vanished">Değişim günlüğü</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="973"/>
         <source>Cancel</source>
-        <translation>İptal</translation>
+        <translation type="vanished">İptal</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="989"/>
         <source>&amp;Close</source>
-        <translation>&amp;Kapat</translation>
+        <translation type="vanished">&amp;Kapat</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1081"/>
         <source>Select folder to copy to</source>
-        <translation>Kopyalanacak klasörü seçin</translation>
+        <translation type="vanished">Kopyalanacak klasörü seçin</translation>
     </message>
 </context>
 <context>
     <name>MEConfig</name>
     <message>
-        <location filename="../meconfig.ui" line="26"/>
+        <location filename="../mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
         <translation>MX Kullanıcı Yöneticisi</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="62"/>
+        <location filename="../mainwindow.ui" line="62"/>
         <source>Administration</source>
         <translation>Yönetim</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="65"/>
+        <location filename="../mainwindow.ui" line="65"/>
         <source>Add a new user</source>
         <translation>Yeni bir kullanıcı ekle</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="105"/>
+        <location filename="../mainwindow.ui" line="105"/>
         <source>Add User Account</source>
         <translation>Kullanıcı Hesabı Ekle</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="132"/>
+        <location filename="../mainwindow.ui" line="132"/>
         <source>Reenter password for new user</source>
         <translation>Yeni kullanıcı için parolayı tekrar girin</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="141"/>
+        <location filename="../mainwindow.ui" line="141"/>
         <source>confirm password</source>
         <translation>parolayı onayla</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="154"/>
-        <location filename="../meconfig.ui" line="1039"/>
+        <location filename="../mainwindow.ui" line="154"/>
+        <location filename="../mainwindow.ui" line="1118"/>
         <source>Username of new user</source>
         <translation>Yeni kullanıcının kullanıcı adı</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="157"/>
+        <location filename="../mainwindow.ui" line="157"/>
         <source>User login name:</source>
         <translation>Kullanıcı giriş adı:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="170"/>
-        <location filename="../meconfig.ui" line="1055"/>
+        <location filename="../mainwindow.ui" line="170"/>
+        <location filename="../mainwindow.ui" line="416"/>
+        <location filename="../mainwindow.ui" line="1134"/>
         <source>Enter username of new user</source>
         <translation>Yeni kullanıcının kullanıcı adını girin</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="176"/>
+        <location filename="../mainwindow.ui" line="176"/>
+        <location filename="../mainwindow.ui" line="422"/>
         <source>username</source>
         <translation>kullanıcı adı</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="189"/>
-        <location filename="../meconfig.ui" line="227"/>
+        <location filename="../mainwindow.ui" line="189"/>
+        <location filename="../mainwindow.ui" line="227"/>
         <source>Password for new user</source>
         <translation>Yeni kullanıcı için parola </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="192"/>
+        <location filename="../mainwindow.ui" line="192"/>
         <source>User password:</source>
         <translation>Kullanıcı parolası:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="205"/>
+        <location filename="../mainwindow.ui" line="205"/>
         <source>Enter password for new user</source>
         <translation>Yeni kullanıcı için parola girişi</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="214"/>
+        <location filename="../mainwindow.ui" line="214"/>
         <source>password</source>
         <translation>parola</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="230"/>
+        <location filename="../mainwindow.ui" line="230"/>
         <source>Confirm user password:</source>
         <translation>Kullanıcı parolasını onayla:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="256"/>
+        <location filename="../mainwindow.ui" line="359"/>
+        <source>Rename User Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="403"/>
+        <source>New user name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="432"/>
         <source>Change User Password</source>
         <translation>Kullananıcı parolasını değiştir</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="271"/>
+        <location filename="../mainwindow.ui" line="447"/>
         <source>new password</source>
         <translation>yeni parola</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="284"/>
+        <location filename="../mainwindow.ui" line="460"/>
         <source>Confirm new password:</source>
         <translation>Yeni parolayı onayla:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="294"/>
+        <location filename="../mainwindow.ui" line="470"/>
         <source>confirm new password</source>
         <translation>Yeni parolayı onayla</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="301"/>
+        <location filename="../mainwindow.ui" line="371"/>
+        <location filename="../mainwindow.ui" line="483"/>
         <source>Select user to modify:</source>
         <translation>Değiştirilecek kullanıcıyı seç:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="314"/>
+        <location filename="../mainwindow.ui" line="496"/>
         <source>New user password:</source>
         <translation>Yeni kullanıcı parolası:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="346"/>
+        <location filename="../mainwindow.ui" line="262"/>
         <source>Delete User Account</source>
         <translation>Kullanıcı Hesabı Silme</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="389"/>
+        <location filename="../mainwindow.ui" line="305"/>
         <source>Select user</source>
         <translation>Kullanıcı seç</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="405"/>
-        <location filename="../meconfig.ui" line="1130"/>
-        <location filename="../meconfig.ui" line="1143"/>
-        <location filename="../meconfig.ui" line="1267"/>
-        <location filename="../meconfig.ui" line="1289"/>
+        <location filename="../mainwindow.ui" line="321"/>
+        <location filename="../mainwindow.ui" line="1209"/>
+        <location filename="../mainwindow.ui" line="1222"/>
+        <location filename="../mainwindow.ui" line="1346"/>
+        <location filename="../mainwindow.ui" line="1368"/>
         <source>Select user to delete</source>
         <translation>Silinecek kullanıcı seç</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="414"/>
+        <location filename="../mainwindow.ui" line="330"/>
         <source>User to delete:</source>
         <translation>Silinecek kullanıcı:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="427"/>
+        <location filename="../mainwindow.ui" line="343"/>
         <source>Also delete the user&apos;s home directory</source>
         <translation>Ayrıca kullanıcının ev dizinini sil</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="430"/>
+        <location filename="../mainwindow.ui" line="346"/>
         <source>Delete user home directory</source>
         <translation>Kullanıcı ev dizinini sil</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="448"/>
+        <location filename="../mainwindow.ui" line="527"/>
         <source>Options</source>
         <translation>Seçenekler</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="451"/>
+        <location filename="../mainwindow.ui" line="530"/>
         <source>Repair a user configuration</source>
         <translation>kullanıcı yapılandırmasını onar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="485"/>
-        <location filename="../meconfig.ui" line="1192"/>
+        <location filename="../mainwindow.ui" line="564"/>
+        <location filename="../mainwindow.ui" line="1271"/>
         <source>Modify User Account</source>
         <translation>Kullanıcı Hesabını Değiştir</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="497"/>
-        <location filename="../meconfig.ui" line="513"/>
+        <location filename="../mainwindow.ui" line="576"/>
+        <location filename="../mainwindow.ui" line="592"/>
         <source>Select user to repair</source>
         <translation>Onarılacak kullanıcıyı seçin</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="500"/>
-        <location filename="../meconfig.ui" line="1276"/>
+        <location filename="../mainwindow.ui" line="579"/>
+        <location filename="../mainwindow.ui" line="1355"/>
         <source>User to change:</source>
         <translation>Değişecek kullanıcı:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="545"/>
+        <location filename="../mainwindow.ui" line="624"/>
         <source>Restore Defaults</source>
         <translation>Öntanımlılara Geri Dön</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="566"/>
+        <location filename="../mainwindow.ui" line="645"/>
         <source>Restore browser configs to MX defaults</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="572"/>
+        <location filename="../mainwindow.ui" line="651"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
         <translation>Mozilla (Firefox veya İceweasel) yapılandırma</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="575"/>
+        <location filename="../mainwindow.ui" line="654"/>
         <source>Alt+X</source>
         <translation>Alt+X</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="582"/>
+        <location filename="../mainwindow.ui" line="661"/>
         <source>Restore group memberships to MX defaults</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="588"/>
+        <location filename="../mainwindow.ui" line="667"/>
         <source>Group memberships</source>
         <translation>Grup üyeleri</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="591"/>
+        <location filename="../mainwindow.ui" line="670"/>
         <source>Alt+G</source>
         <translation>Alt+G</translation>
     </message>
@@ -492,242 +429,548 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
         <translation type="vanished">APT Kaynaklarını Geri Yükle</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="601"/>
+        <location filename="../mainwindow.ui" line="680"/>
         <source>Change Autologin Settings</source>
         <translation>Otomatik Giriş Ayarlarını Değiştir</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="607"/>
+        <location filename="../mainwindow.ui" line="686"/>
         <source>Log in automatically</source>
         <translation>Otomatik olarak giriş</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="614"/>
+        <location filename="../mainwindow.ui" line="693"/>
         <source>Require password to log in</source>
         <translation>Giriş için parola gerekli</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="629"/>
+        <location filename="../mainwindow.ui" line="708"/>
         <source>Copy/Sync</source>
         <translation>Kopyala/Eşzamanla</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="656"/>
+        <location filename="../mainwindow.ui" line="735"/>
         <source>Copy Between Desktops</source>
         <translation>Masaüstleri Arasında Kopyalama</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="683"/>
-        <location filename="../meconfig.ui" line="750"/>
+        <location filename="../mainwindow.ui" line="762"/>
+        <location filename="../mainwindow.ui" line="829"/>
         <source>Select desktop to copy from</source>
         <translation>Kopyalanacak masaüstünü seçin</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="696"/>
+        <location filename="../mainwindow.ui" line="775"/>
         <source>Select to only copy files</source>
         <translation>Sadece kopyalanacak dosyaları seçin</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="699"/>
+        <location filename="../mainwindow.ui" line="778"/>
         <source>Copy only</source>
         <translation>Sadece kopyala</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="715"/>
-        <location filename="../meconfig.ui" line="728"/>
+        <location filename="../mainwindow.ui" line="794"/>
+        <location filename="../mainwindow.ui" line="807"/>
         <source>Select desktop to copy to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="737"/>
+        <location filename="../mainwindow.ui" line="816"/>
         <source>Copy to:</source>
         <translation>Şuraya kopyala:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="759"/>
+        <location filename="../mainwindow.ui" line="838"/>
         <source>Copy from:</source>
         <translation>Şuradan kopyala:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="772"/>
+        <location filename="../mainwindow.ui" line="851"/>
         <source>Select to copy and then delete differences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="775"/>
+        <location filename="../mainwindow.ui" line="854"/>
         <source>Sync</source>
         <translation>Eşzamanlama</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="821"/>
+        <location filename="../mainwindow.ui" line="900"/>
         <source>Select to copy/sync Shared</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="824"/>
+        <location filename="../mainwindow.ui" line="903"/>
         <source>Shared folder</source>
         <translation>Paylaşılan klasörler</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="837"/>
+        <location filename="../mainwindow.ui" line="916"/>
         <source>Select to copy/sync entire home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="840"/>
+        <location filename="../mainwindow.ui" line="919"/>
         <source>Entire home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="856"/>
+        <location filename="../mainwindow.ui" line="935"/>
         <source>Select to copy/sync the browser configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="859"/>
+        <location filename="../mainwindow.ui" line="938"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
         <translation>Mozilla (Firefox veya İceweasel) yapılandırma</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="872"/>
+        <location filename="../mainwindow.ui" line="951"/>
         <source>Select to copy/sync Documents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="875"/>
+        <location filename="../mainwindow.ui" line="954"/>
         <source>Documents folder</source>
         <translation>Belgeler klasörü</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="882"/>
+        <location filename="../mainwindow.ui" line="961"/>
         <source>What to copy/sync:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="898"/>
+        <location filename="../mainwindow.ui" line="977"/>
         <source>Progress</source>
         <translation>Süreç</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="928"/>
-        <location filename="../meconfig.ui" line="944"/>
+        <location filename="../mainwindow.ui" line="1007"/>
+        <location filename="../mainwindow.ui" line="1023"/>
         <source>Status of the changes</source>
         <translation>Değişikliklerin durumu</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="947"/>
+        <location filename="../mainwindow.ui" line="1026"/>
         <source>Status:</source>
         <translation>Durum:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="963"/>
+        <location filename="../mainwindow.ui" line="1042"/>
         <source>Progress of the changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1000"/>
+        <location filename="../mainwindow.ui" line="1079"/>
         <source>Add/Remove Groups</source>
         <translation>Gruplar Ekle/Kaldır</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1012"/>
+        <location filename="../mainwindow.ui" line="1091"/>
         <source>Add Group</source>
         <translation>Grup Ekle</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1042"/>
+        <location filename="../mainwindow.ui" line="1121"/>
         <source>Group name:</source>
         <translation>Grup adı:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1061"/>
+        <location filename="../mainwindow.ui" line="1140"/>
         <source>groupname</source>
         <translation>grup adı </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1090"/>
+        <location filename="../mainwindow.ui" line="1169"/>
         <source>Delete Group</source>
         <translation>Grup Sil</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1152"/>
+        <location filename="../mainwindow.ui" line="1231"/>
         <source>Group to delete:</source>
         <translation>Silinecek grup:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1180"/>
+        <location filename="../mainwindow.ui" line="1259"/>
         <source>Group Membership</source>
         <translation>Grup Üyeleri</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1296"/>
+        <location filename="../mainwindow.ui" line="1375"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1316"/>
+        <location filename="../mainwindow.ui" line="1395"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1376"/>
+        <location filename="../mainwindow.ui" line="1455"/>
         <source>Apply any changes</source>
         <translation>Değişiklikleri uygula</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1379"/>
+        <location filename="../mainwindow.ui" line="1458"/>
         <source>Apply</source>
         <translation>Uygula</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1386"/>
+        <location filename="../mainwindow.ui" line="1465"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1393"/>
+        <location filename="../mainwindow.ui" line="1472"/>
         <source>Cancel any changes then quit</source>
         <translation>Değişiklikleri iptal et ve çık</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1396"/>
+        <location filename="../mainwindow.ui" line="1475"/>
         <source>Close</source>
         <translation>Kapat</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1403"/>
+        <location filename="../mainwindow.ui" line="1482"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1444"/>
+        <location filename="../mainwindow.ui" line="1523"/>
         <source>Display help </source>
         <translation>Yardımı görüntüle</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1447"/>
+        <location filename="../mainwindow.ui" line="1526"/>
         <source>Help</source>
         <translation>Yardım</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1454"/>
+        <location filename="../mainwindow.ui" line="1533"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1461"/>
+        <location filename="../mainwindow.ui" line="1540"/>
         <source>About this application</source>
         <translation>Uygulama hakkında</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1464"/>
+        <location filename="../mainwindow.ui" line="1543"/>
         <source>About...</source>
         <translation>Hakkında...</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="1471"/>
+        <location filename="../mainwindow.ui" line="1550"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
+    </message>
+</context>
+<context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../mainwindow.cpp" line="112"/>
+        <location filename="../mainwindow.cpp" line="174"/>
+        <location filename="../mainwindow.cpp" line="182"/>
+        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="219"/>
+        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="250"/>
+        <location filename="../mainwindow.cpp" line="674"/>
+        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="718"/>
+        <location filename="../mainwindow.cpp" line="726"/>
+        <location filename="../mainwindow.cpp" line="916"/>
+        <location filename="../mainwindow.cpp" line="1029"/>
+        <source>none</source>
+        <translation type="unfinished">hiçbiri</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="262"/>
+        <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
+        <translation type="unfinished">Kullanıcı yapılandırması onarılacak.Lütfen şimdi bütün diğer  uygulamaları kapatın. Bittiğinde çıkış yapın veya yeniden başlatın.Şimdi onarmak istediğinizden emin misiniz?</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="439"/>
+        <location filename="../mainwindow.cpp" line="494"/>
+        <source>Yes</source>
+        <translation type="unfinished">Evet</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="439"/>
+        <location filename="../mainwindow.cpp" line="494"/>
+        <source>No</source>
+        <translation type="unfinished">Hayır</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="295"/>
+        <source>Autologin options</source>
+        <translation type="unfinished">Otomatik giriş seçenekleri</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="285"/>
+        <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
+        <translation type="unfinished">&apos;%1&apos; hesabı için otomatik giriş devre dışı bırakıldı.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="296"/>
+        <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
+        <translation type="unfinished">&apos;%1&apos; hesabı için otomatik giriş etkinleştirildi.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="307"/>
+        <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
+        <translation type="unfinished">Kopyalanacak yeri belirtmelisiniz. Giriş yaptığınız için masaüstüne kopyalayamazsınız.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="311"/>
+        <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="336"/>
+        <source>Synchronizing desktop...</source>
+        <translation type="unfinished">Masaüstü eşitleniyor...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="338"/>
+        <source>Copying desktop...</source>
+        <translation type="unfinished">Masaüstü kopyalanıyor...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="356"/>
+        <location filename="../mainwindow.cpp" line="548"/>
+        <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
+        <translation type="unfinished">Kullanıcı adı en az 2 karakter uzunluğunda olmalıdır. Devam etmeden önce lütfen daha uzun bir ad seçin.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="360"/>
+        <location filename="../mainwindow.cpp" line="552"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished">Kullanıcı adı küçük harf olmalı ve
+özel karakterler ve boşluklar içermemelidir.
+Devam etmeden önce lütfen başka bir ad seçin.</translation>
+    </message>
+    <message>
+        <source>Sorry that name is in use. Please select a different name.</source>
+        <translation type="obsolete">Üzgünüm bu ad kullanılıyor.Farklı bir ad seçin.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="374"/>
+        <location filename="../mainwindow.cpp" line="409"/>
+        <source>Password entries do not match. Please try again.</source>
+        <translation type="unfinished">Parola girdileri uyuşmuyor. Lütfen tekrar deneyin.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="414"/>
+        <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
+        <translation type="unfinished">Parola adı en az 2 karakter uzunluğunda olmalıdır.Devam etmeden önce daha uzun bir parola girin.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="396"/>
+        <source>The user was added ok.</source>
+        <translation type="unfinished">Kullanıcı eklendi.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="400"/>
+        <source>Failed to add the user.</source>
+        <translation type="unfinished">Kullanıcı ekleme başarısız oldu.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="428"/>
+        <source>Password successfully changed.</source>
+        <translation type="unfinished">Parola başarıyla değiştirildi.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="432"/>
+        <source>Failed to change password.</source>
+        <translation type="unfinished">Parola değiştirme başarısız oldu.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="437"/>
+        <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
+        <translation type="unfinished">Bu işlem geri alınamaz. % 1 kullanıcısını silmek istediğinizden emin misiniz?</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="450"/>
+        <source>The user has been deleted.</source>
+        <translation type="unfinished">Kullanıcı silindi.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="453"/>
+        <source>Failed to delete the user.</source>
+        <translation type="unfinished">Kullanıcı silme başarısız oldu.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="466"/>
+        <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
+        <translation type="unfinished">Grup adı en az 2 karakter uzunluğunda olmalıdır.  Devam etmeden önce lütfen daha uzun bir ad seçin. </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="470"/>
+        <source>The group name needs to be lower case and it 
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished">Grup adı küçük harf olmalı ve
+özel karakterler ve boşluklar içermemelidir.
+Devam etmeden önce lütfen başka bir ad seçin.</translation>
+    </message>
+    <message>
+        <source>Sorry that group name already exists. Please select a different name.</source>
+        <translation type="obsolete">Üzgünüm bu grup adı zaten var. Lütfen farklı bir ad seçin.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="486"/>
+        <source>The system group was added ok.</source>
+        <translation type="unfinished">Sistem grubu eklendi.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="489"/>
+        <source>Failed to add the system group.</source>
+        <translation type="unfinished">Sistem grubu ekleme başarısız oldu.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="492"/>
+        <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
+        <translation type="unfinished">Bu işlem geri alınamaz. % 1 kullanıcısını silmek istediğinizden emin misiniz?</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The group has been deleted.</source>
+        <translation type="unfinished">Grup silindi.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="502"/>
+        <source>Failed to delete the group.</source>
+        <translation type="unfinished">Grup silme başarısız oldu.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="523"/>
+        <source>The changes have been applied.</source>
+        <translation type="unfinished">Dwğişiklikler uygulandı.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="526"/>
+        <source>Failed to apply group changes</source>
+        <translation type="unfinished">Grup değişiklikleri uygulanamadı</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="539"/>
+        <source>The selected user name is currently in use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="540"/>
+        <source>To rename this user, please log out and log back in using another user account.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="369"/>
+        <source>Sorry, this name is in use. Please enter a different name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="479"/>
+        <source>Sorry, that group name already exists. Please enter a different name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="561"/>
+        <source>Sorry, this name already exists on your system. Please enter a different name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="569"/>
+        <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="583"/>
+        <source>The user was renamed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="595"/>
+        <location filename="../mainwindow.cpp" line="624"/>
+        <source>Synchronizing desktop...ok</source>
+        <translation type="unfinished">Masaüstü eşitleniyor...tamam</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="597"/>
+        <location filename="../mainwindow.cpp" line="626"/>
+        <source>Copying desktop...ok</source>
+        <translation type="unfinished">Masaüstü kopyalanıyor...tamam</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="630"/>
+        <source>Synchronizing desktop...failed</source>
+        <translation type="unfinished">Masaüstü eşitleniyor...başarısız oldu</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="632"/>
+        <source>Copying desktop...failed</source>
+        <translation type="unfinished">Masaüstü kopyalanıyor...başarısız oldu</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="669"/>
+        <location filename="../mainwindow.cpp" line="968"/>
+        <location filename="../mainwindow.cpp" line="976"/>
+        <source>browse...</source>
+        <translation type="unfinished">gözat...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="853"/>
+        <source>About MX User Manager</source>
+        <translation type="unfinished">MX Kullanıcı Yöneticisi hakkında</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="854"/>
+        <source>MX User Manager</source>
+        <translation type="unfinished">MX Kullanıcı Yöneticisi</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="856"/>
+        <source>Simple user configuration for MX Linux</source>
+        <translation type="unfinished">MX Linux için basit kullanıcı yapılandırması</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="857"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Copyright (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="858"/>
+        <source>License</source>
+        <translation type="unfinished">Ruhsat</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="859"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Değişim günlüğü</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="860"/>
+        <source>Cancel</source>
+        <translation type="unfinished">İptal</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="876"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">&amp;Kapat</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="969"/>
+        <source>Select folder to copy to</source>
+        <translation type="unfinished">Kopyalanacak klasörü seçin</translation>
     </message>
 </context>
 <context>

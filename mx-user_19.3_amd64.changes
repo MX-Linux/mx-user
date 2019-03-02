@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 01 Mar 2019 15:15:12 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 19.3
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (19.3) mx; urgency=medium
+ .
+   * rename user feature
+   * bug fix: search for full word when checking for existent user/group
+Checksums-Sha1:
+ da129def6f9f1b359e73e5dcc5502be0c385f5ee 1155 mx-user_19.3.dsc
+ b536fbcc4f0a1f9122ab1954bf6071f13ba518b0 88772 mx-user_19.3.tar.xz
+ 095159e0fd4e6e2a9df90eb80e5bb683bc900acf 122034 mx-user_19.3_amd64.deb
+Checksums-Sha256:
+ d2ad4ff386d82c73c87c0cd85feab95d5b22f67891d229f7da6148cce9685cb5 1155 mx-user_19.3.dsc
+ 712c4e3420d2e46f0deba3dcfbabc106ad563430b94228867076ccc8652d7377 88772 mx-user_19.3.tar.xz
+ d1672c4010b733c5490bff91ce64cc0e8f4f0d0cefc31cf04c8eb285585ca85c 122034 mx-user_19.3_amd64.deb
+Files:
+ 36052d989645c9c6c87aa8fa594c22c2 1155 system optional mx-user_19.3.dsc
+ 606e289f19ae0f9a77aa80f901aaffb1 88772 system optional mx-user_19.3.tar.xz
+ 0a7d4d04d0a04c18253730ed96db289d 122034 system optional mx-user_19.3_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlx52VATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJHZB/9RaxT3Q2KkrpOvCo1HkDyIE1uzt8sF
+0rBqlCMye9AqCpKqkv98MTnNatgN26OKGvPdLMjPYOWwf1HsI81gRTMd1g30Uh23
+V5zXWgM+s3DKl6vsDcLhRLlKB3IN7cH+VP/kIo0QMY0tYzyVV40N0DTkmoelsh+c
+WdP8+SSUPRu55afNINAe7JfrbMtdkph3YmUhWLQVVDidSTfhsxlJZQmUpyCt0W3+
+WS+KNLYV/RWEQ3U/Ki/apxEGefkrfjw99udLN8aSShrz9PK4h7nqNF7NYt3apYuq
+VGgBPThYgdCtEsP7ATilTAaIrR5IX2Ae4MDjNtIpUeBzRMZs6WyyiXfs
+=PLyq
+-----END PGP SIGNATURE-----
