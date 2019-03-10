@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 10 Mar 2019 13:34:52 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 19.3.1
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (19.3.1) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ 7b637f43d5d87a7a23c4eb5075d2e2ab44e2b97e 1163 mx-user_19.3.1.dsc
+ 33605d2c2daa671ce51f807e4af45f138c3481a7 80884 mx-user_19.3.1.tar.xz
+ 95e1ffcd97be36933b1ffabde86faa8af3a4769d 120122 mx-user_19.3.1_amd64.deb
+Checksums-Sha256:
+ 08328c3eeab20da6d4c9333df94562c0bcfde731fa64238dfd08faa8da2f0017 1163 mx-user_19.3.1.dsc
+ 8c34df24cfd4989522942292d958622fa3c482cb73b3d9ed541d7331b8695e54 80884 mx-user_19.3.1.tar.xz
+ 3b558feeac1f73d066dcc41b9b6aeff396ad24296cb098e8dd0af35cc3bbfd6f 120122 mx-user_19.3.1_amd64.deb
+Files:
+ 581aba54959bc384c53abff079448258 1163 system optional mx-user_19.3.1.dsc
+ 83c270455dfd02b8f0099f76cfafff6c 80884 system optional mx-user_19.3.1.tar.xz
+ 7bebcf8a21db7ed23bbb874b820b7f42 120122 system optional mx-user_19.3.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlyFS7kTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumLrSCACX9X860hSmXycO+9Ha6OkvRVzVgDyJ
+SJFxjRcr9jOpWd4xSSsei5DQb7ntlIgN7WzmrDMjcKXf6I1kC6gqAM2jm0z7e75A
+hZLSRmgBYxJoAPOFxXX0dvD8QbgSwei/HdMLI18vdXX8b7Xoa/Su5N2r4ddI9JRJ
+eRFTXI8cfhFDexs8haue2zRHimm5RWhK8pNow8pFcIMM9AhZvVrBBgKCTOYCNuy8
+4De1efO16a3TQnJ6TBMht3aqNlXV1t7xLG3X8ooVeO2elHaNMUSlNOTfHtyAa44v
+w3kxGTj5QHsoc+8CrQSbaIrXEVBTystkbizC3Qg5q+036lMb/xo9sIcg
+=G2Za
+-----END PGP SIGNATURE-----

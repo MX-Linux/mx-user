@@ -1,3 +1,9 @@
+mx-user (19.3.1) mx; urgency=medium
+
+  * update translations
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 10 Mar 2019 13:34:52 -0400
+
 mx-user (19.3) mx; urgency=medium
 
   * rename user feature
