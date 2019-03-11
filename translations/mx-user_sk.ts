@@ -1,676 +1,459 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sk">
-<context>
-    <name>MConfig</name>
-    <message>
-        <source>none</source>
-        <translation type="vanished">nič</translation>
-    </message>
-    <message>
-        <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation type="vanished">Konfigurácia užívateľa bude opravená. Prosím zavrite všetky bežiace aplikácie. Po skončení operácie sa prosím odhláste alebo reštartujte PC. Skutočne si prajete spustiť opravu?  </translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation type="vanished">Ano</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="vanished">Nie</translation>
-    </message>
-    <message>
-        <source>Autologin options</source>
-        <translation type="vanished">Možnosti automatického prihlasovania</translation>
-    </message>
-    <message>
-        <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation type="vanished">Automatické prihlásenie pre užívateľské konto &apos;%1&apos; bolo vypnuté. </translation>
-    </message>
-    <message>
-        <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation type="vanished">Automatické prihlásenie pre užívateľské konto &apos;%1&apos; bolo zapnuté. </translation>
-    </message>
-    <message>
-        <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="vanished">Musíte zadať umiestnenie &apos;kopírovať do&apos;. Nedá sa kopírovať plocha pod ktorou ste prihlásení.</translation>
-    </message>
-    <message>
-        <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation type="vanished">Pred kopírovaním ukončite všetky bežiace aplikácie. Uistite sa, že zvolené umiestnenie pre kopírovanie má dostatočnú kapacitu pre skopírovanie zvolených súborov. Kopírovanie medzi kontami môže prepísať alebo zmazať súbory alebo nastavenia v cieľovej ploche. Prajete si pokračovať?</translation>
-    </message>
-    <message>
-        <source>Synchronizing desktop...</source>
-        <translation type="vanished">Synchronizuje sa plocha...</translation>
-    </message>
-    <message>
-        <source>Copying desktop...</source>
-        <translation type="vanished">Kopíruje sa plocha...</translation>
-    </message>
-    <message>
-        <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="vanished">Meno užívateľa musí mať dĺžku aspoň 2 znaky. Prosím vyberte dlhšie meno a pokračujte. </translation>
-    </message>
-    <message>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="vanished">Meno užívateľa musí pozostávať iba z malých písmen 
-a mesmie obsahovať špeciálne znaky a medzery.
-Prosím vyberte iné meno a pokračujte. </translation>
-    </message>
-    <message>
-        <source>Sorry that name is in use. Please select a different name.</source>
-        <translation type="vanished">Bohužiaľ toto meno už bolo použité. Prosím vyberte iné meno.</translation>
-    </message>
-    <message>
-        <source>Password entries do not match. Please try again.</source>
-        <translation type="vanished">Heslá sa nezhodujú. Prosím skúste to znovu.</translation>
-    </message>
-    <message>
-        <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="vanished">Heslo musí mať dĺžku aspoň 2 znaky. Prosím vyberte dlhšie heslo a pokračujte. </translation>
-    </message>
-    <message>
-        <source>The user was added ok.</source>
-        <translation type="vanished">Užívateľ bol v poriadku vytvorený.</translation>
-    </message>
-    <message>
-        <source>Failed to add the user.</source>
-        <translation type="vanished">Uźívateľa sa nepodarilo vytvoriť.</translation>
-    </message>
-    <message>
-        <source>Password successfully changed.</source>
-        <translation type="vanished">Heslo bolo úspešne zmenené.</translation>
-    </message>
-    <message>
-        <source>Failed to change password.</source>
-        <translation type="vanished">Heslo nebolo zmenené.</translation>
-    </message>
-    <message>
-        <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="vanished">Táto akcia sa nedá zvrátiť. Skutočne si prajete zmazať konto užívateľa %1?</translation>
-    </message>
-    <message>
-        <source>The user has been deleted.</source>
-        <translation type="vanished">Užívateľ bol odstránený.</translation>
-    </message>
-    <message>
-        <source>Failed to delete the user.</source>
-        <translation type="vanished">Užívateľ nebol odstránený.</translation>
-    </message>
-    <message>
-        <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="vanished">Názov skupiny musí mať dĺžku aspoň 2 znaky. Prosím vyberte dlhší názov a pokračujte. </translation>
-    </message>
-    <message>
-        <source>The group name needs to be lower case and it 
-cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="vanished">Názov skupiny musí pozostávať iba z malých písmen 
-a mesmie obsahovať špeciálne znaky a medzery.
-Prosím vyberte iný názov a pokračujte. </translation>
-    </message>
-    <message>
-        <source>Sorry that group name already exists. Please select a different name.</source>
-        <translation type="vanished">Bohužiaľ názov skupiny už existuje. Prosím vyberte iný názov.</translation>
-    </message>
-    <message>
-        <source>The system group was added ok.</source>
-        <translation type="vanished">Skupina bola v poriadku vytvorená.</translation>
-    </message>
-    <message>
-        <source>Failed to add the system group.</source>
-        <translation type="vanished">Skupina nebola vytvorená.</translation>
-    </message>
-    <message>
-        <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="vanished">Táto akcia sa nedá zvrátiť. Skutočne si prajete zmazať skupinu %1?</translation>
-    </message>
-    <message>
-        <source>The group has been deleted.</source>
-        <translation type="vanished">Skupina bola odstránená.</translation>
-    </message>
-    <message>
-        <source>Failed to delete the group.</source>
-        <translation type="vanished">Skupina nebola odstránená.</translation>
-    </message>
-    <message>
-        <source>The changes have been applied.</source>
-        <translation type="vanished">Zmeny boli prevedené.</translation>
-    </message>
-    <message>
-        <source>Failed to apply group changes</source>
-        <translation type="vanished">Zmeny neboli prevedené.</translation>
-    </message>
-    <message>
-        <source>Synchronizing desktop...ok</source>
-        <translation type="vanished">Synchronizuje sa plocha...ok</translation>
-    </message>
-    <message>
-        <source>Copying desktop...ok</source>
-        <translation type="vanished">Kopíruje sa plocha...ok</translation>
-    </message>
-    <message>
-        <source>Synchronizing desktop...failed</source>
-        <translation type="vanished">Synchronizuje sa plocha...zlyhalo</translation>
-    </message>
-    <message>
-        <source>Copying desktop...failed</source>
-        <translation type="vanished">Kopíruje sa plocha...zlyhalo</translation>
-    </message>
-    <message>
-        <source>browse...</source>
-        <translation type="vanished">prehľadať...</translation>
-    </message>
-    <message>
-        <source>Baobab installation</source>
-        <translation type="vanished">Inštalácia Baobab</translation>
-    </message>
-    <message>
-        <source>Wait while Baobab is installing...</source>
-        <translation type="vanished">Vydržte kým sa Baobab nainštaluje...</translation>
-    </message>
-    <message>
-        <source>About MX User Manager</source>
-        <translation type="vanished">O programe MX Správca Užívateľov</translation>
-    </message>
-    <message>
-        <source>MX User Manager</source>
-        <translation type="vanished">MX Správca Užívateľov</translation>
-    </message>
-    <message>
-        <source>Simple user configuration for MX Linux</source>
-        <translation type="vanished">Jednoduchá správa užívateľov pre MX Linux</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Licencia</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">História zmien</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Zrušiť</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Zatvoriť</translation>
-    </message>
-    <message>
-        <source>Select folder to copy to</source>
-        <translation type="vanished">Vyberte zložku do ktorej sa bude kopírovať</translation>
-    </message>
-</context>
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sk" version="2.1">
 <context>
     <name>MEConfig</name>
     <message>
-        <location filename="../mainwindow.ui" line="26"/>
+        <location filename="mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
         <translation>MX Správca Užívateľov</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="62"/>
+        <location filename="mainwindow.ui" line="62"/>
         <source>Administration</source>
         <translation>Správa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="65"/>
+        <location filename="mainwindow.ui" line="65"/>
         <source>Add a new user</source>
         <translation>Pridať nového užívateľa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="105"/>
+        <location filename="mainwindow.ui" line="105"/>
         <source>Add User Account</source>
         <translation>Pridať užívateľské konto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="132"/>
+        <location filename="mainwindow.ui" line="132"/>
         <source>Reenter password for new user</source>
         <translation>Znovu zadať heslo nového užívateľa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="141"/>
+        <location filename="mainwindow.ui" line="141"/>
         <source>confirm password</source>
         <translation>potvrdiť heslo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="154"/>
-        <location filename="../mainwindow.ui" line="1118"/>
+        <location filename="mainwindow.ui" line="154"/>
+        <location filename="mainwindow.ui" line="1118"/>
         <source>Username of new user</source>
         <translation>Uživateľské meno</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="157"/>
+        <location filename="mainwindow.ui" line="157"/>
         <source>User login name:</source>
         <translation>Prihlasovacie meno:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="170"/>
-        <location filename="../mainwindow.ui" line="416"/>
-        <location filename="../mainwindow.ui" line="1134"/>
+        <location filename="mainwindow.ui" line="170"/>
+        <location filename="mainwindow.ui" line="416"/>
+        <location filename="mainwindow.ui" line="1134"/>
         <source>Enter username of new user</source>
         <translation>Zadajte uživateľské meno</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="176"/>
-        <location filename="../mainwindow.ui" line="422"/>
+        <location filename="mainwindow.ui" line="176"/>
+        <location filename="mainwindow.ui" line="422"/>
         <source>username</source>
         <translation>uživateľské meno</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="189"/>
-        <location filename="../mainwindow.ui" line="227"/>
+        <location filename="mainwindow.ui" line="189"/>
+        <location filename="mainwindow.ui" line="227"/>
         <source>Password for new user</source>
         <translation>Heslo nového užívateľa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="192"/>
+        <location filename="mainwindow.ui" line="192"/>
         <source>User password:</source>
         <translation>Užívateľské heslo:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="205"/>
+        <location filename="mainwindow.ui" line="205"/>
         <source>Enter password for new user</source>
         <translation>Zadajte heslo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="214"/>
+        <location filename="mainwindow.ui" line="214"/>
         <source>password</source>
         <translation>heslo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="230"/>
+        <location filename="mainwindow.ui" line="230"/>
         <source>Confirm user password:</source>
         <translation>potvrdiť heslo:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="359"/>
-        <source>Rename User Account</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="403"/>
-        <source>New user name:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="432"/>
-        <source>Change User Password</source>
-        <translation>Zmeniť užívateľské heslo</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="447"/>
-        <source>new password</source>
-        <translation>nové heslo</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="460"/>
-        <source>Confirm new password:</source>
-        <translation>potvrdiť nové heslo:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="470"/>
-        <source>confirm new password</source>
-        <translation>potvrdiť nové heslo</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="371"/>
-        <location filename="../mainwindow.ui" line="483"/>
-        <source>Select user to modify:</source>
-        <translation>Zvoľte užívateľa k zmene:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="496"/>
-        <source>New user password:</source>
-        <translation>Nové užívateľské heslo:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="262"/>
+        <location filename="mainwindow.ui" line="262"/>
         <source>Delete User Account</source>
         <translation>Zmazať užívateľské konto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="305"/>
+        <location filename="mainwindow.ui" line="305"/>
         <source>Select user</source>
         <translation>Vyberte užívateľa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="321"/>
-        <location filename="../mainwindow.ui" line="1209"/>
-        <location filename="../mainwindow.ui" line="1222"/>
-        <location filename="../mainwindow.ui" line="1346"/>
-        <location filename="../mainwindow.ui" line="1368"/>
+        <location filename="mainwindow.ui" line="321"/>
+        <location filename="mainwindow.ui" line="1209"/>
+        <location filename="mainwindow.ui" line="1222"/>
+        <location filename="mainwindow.ui" line="1346"/>
+        <location filename="mainwindow.ui" line="1368"/>
         <source>Select user to delete</source>
         <translation>Zvoľte užívateľa k zmazaniu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="330"/>
+        <location filename="mainwindow.ui" line="330"/>
         <source>User to delete:</source>
         <translation>Užívateľ k zmazaniu:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="343"/>
+        <location filename="mainwindow.ui" line="343"/>
         <source>Also delete the user&apos;s home directory</source>
         <translation>Zároveň zmazať home zložku užívateľa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="346"/>
+        <location filename="mainwindow.ui" line="346"/>
         <source>Delete user home directory</source>
         <translation>Zmazať home zložku užívateľa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="527"/>
+        <location filename="mainwindow.ui" line="359"/>
+        <source>Rename User Account</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="371"/>
+        <location filename="mainwindow.ui" line="483"/>
+        <source>Select user to modify:</source>
+        <translation>Zvoľte užívateľa k zmene:</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="403"/>
+        <source>New user name:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="432"/>
+        <source>Change User Password</source>
+        <translation>Zmeniť užívateľské heslo</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="447"/>
+        <source>new password</source>
+        <translation>nové heslo</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="460"/>
+        <source>Confirm new password:</source>
+        <translation>potvrdiť nové heslo:</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="470"/>
+        <source>confirm new password</source>
+        <translation>potvrdiť nové heslo</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="496"/>
+        <source>New user password:</source>
+        <translation>Nové užívateľské heslo:</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="527"/>
         <source>Options</source>
         <translation>Nastavenia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="530"/>
+        <location filename="mainwindow.ui" line="530"/>
         <source>Repair a user configuration</source>
         <translation>Opraviť konfiguráciu užívateľa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="564"/>
-        <location filename="../mainwindow.ui" line="1271"/>
+        <location filename="mainwindow.ui" line="564"/>
+        <location filename="mainwindow.ui" line="1271"/>
         <source>Modify User Account</source>
         <translation>Zmeniť užívateľské konto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="576"/>
-        <location filename="../mainwindow.ui" line="592"/>
+        <location filename="mainwindow.ui" line="576"/>
+        <location filename="mainwindow.ui" line="592"/>
         <source>Select user to repair</source>
         <translation>Zvoľte užívateľa k oprave</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="579"/>
-        <location filename="../mainwindow.ui" line="1355"/>
+        <location filename="mainwindow.ui" line="579"/>
+        <location filename="mainwindow.ui" line="1355"/>
         <source>User to change:</source>
         <translation>Užívateľ k zmene:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="624"/>
+        <location filename="mainwindow.ui" line="624"/>
         <source>Restore Defaults</source>
         <translation>Obnoviť predvolené</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="645"/>
+        <location filename="mainwindow.ui" line="645"/>
         <source>Restore browser configs to MX defaults</source>
         <translation>Obnoviť nastavenia prehliadača na MX predvolené </translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="651"/>
+        <location filename="mainwindow.ui" line="651"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
         <translation>Konfigurácía Mozilla (Iceweasel alebo Firefox)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="654"/>
+        <location filename="mainwindow.ui" line="654"/>
         <source>Alt+X</source>
         <translation>Alt+X</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="661"/>
+        <location filename="mainwindow.ui" line="661"/>
         <source>Restore group memberships to MX defaults</source>
         <translation>Obnoviť členstvo skupiny na MX predvolené </translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="667"/>
+        <location filename="mainwindow.ui" line="667"/>
         <source>Group memberships</source>
         <translation>Členstvo skupiny</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="670"/>
+        <location filename="mainwindow.ui" line="670"/>
         <source>Alt+G</source>
         <translation>Alt+G</translation>
     </message>
     <message>
-        <source>Restore APT sources to MX defaults</source>
-        <translation type="vanished">Obnoviť zdroje APT na MX predvolené </translation>
-    </message>
-    <message>
-        <source>Restore APT sources</source>
-        <translation type="vanished">Obnoviť zdroje APT</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="680"/>
+        <location filename="mainwindow.ui" line="680"/>
         <source>Change Autologin Settings</source>
         <translation>Zmeniť nastavenia automatického prihlasovania</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="686"/>
+        <location filename="mainwindow.ui" line="686"/>
         <source>Log in automatically</source>
         <translation>Prihlasovať automaticky</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="693"/>
+        <location filename="mainwindow.ui" line="693"/>
         <source>Require password to log in</source>
         <translation>Pri prihlásení požadovať heslo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="708"/>
+        <location filename="mainwindow.ui" line="708"/>
         <source>Copy/Sync</source>
         <translation>Kopírovať/Synchronizovať</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="735"/>
+        <location filename="mainwindow.ui" line="735"/>
         <source>Copy Between Desktops</source>
         <translation>Kopírovať plochy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="762"/>
-        <location filename="../mainwindow.ui" line="829"/>
+        <location filename="mainwindow.ui" line="762"/>
+        <location filename="mainwindow.ui" line="829"/>
         <source>Select desktop to copy from</source>
         <translation>Vyberte plochu z ktorej sa bude kopírovať</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="775"/>
+        <location filename="mainwindow.ui" line="775"/>
         <source>Select to only copy files</source>
         <translation>Vyberte iba skoírovať súbory</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="778"/>
+        <location filename="mainwindow.ui" line="778"/>
         <source>Copy only</source>
         <translation>Iba skopírovať</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="794"/>
-        <location filename="../mainwindow.ui" line="807"/>
+        <location filename="mainwindow.ui" line="794"/>
+        <location filename="mainwindow.ui" line="807"/>
         <source>Select desktop to copy to</source>
         <translation>Vyberte plochu do ktorej sa bude kopírovať</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="816"/>
+        <location filename="mainwindow.ui" line="816"/>
         <source>Copy to:</source>
         <translation>Kopírovať do:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="838"/>
+        <location filename="mainwindow.ui" line="838"/>
         <source>Copy from:</source>
         <translation>Kopírovať z:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="851"/>
+        <location filename="mainwindow.ui" line="851"/>
         <source>Select to copy and then delete differences</source>
         <translation>Zvoľte kopírovať a potom zmazať rozdiely</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="854"/>
+        <location filename="mainwindow.ui" line="854"/>
         <source>Sync</source>
         <translation>Synchronizovať</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="900"/>
+        <location filename="mainwindow.ui" line="900"/>
         <source>Select to copy/sync Shared</source>
         <translation>Zvoľte kopírovať/synchronizovať Zdieľané</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="903"/>
+        <location filename="mainwindow.ui" line="903"/>
         <source>Shared folder</source>
         <translation>Zdieľaná zložka</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="916"/>
+        <location filename="mainwindow.ui" line="916"/>
         <source>Select to copy/sync entire home</source>
         <translation>Zvoľte kopírovať/synchronizovať kompletnú home zložku</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="919"/>
+        <location filename="mainwindow.ui" line="919"/>
         <source>Entire home</source>
         <translation>Kopletná home zložka</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="935"/>
+        <location filename="mainwindow.ui" line="935"/>
         <source>Select to copy/sync the browser configuration</source>
         <translation>Zvoľte kopírovať/synchronizovať konfiguráciu prehliadača</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="938"/>
+        <location filename="mainwindow.ui" line="938"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
         <translation>Konfigurácía Mozilla (Iceweasel alebo Firefox)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="951"/>
+        <location filename="mainwindow.ui" line="951"/>
         <source>Select to copy/sync Documents</source>
         <translation>Zvoľte kopírovať/synchronizovať zložku Dokumenty</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="954"/>
+        <location filename="mainwindow.ui" line="954"/>
         <source>Documents folder</source>
         <translation>Zložka Dokumenty</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="961"/>
+        <location filename="mainwindow.ui" line="961"/>
         <source>What to copy/sync:</source>
         <translation>Čo sa bude kopírovať/synchronizovať:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="977"/>
+        <location filename="mainwindow.ui" line="977"/>
         <source>Progress</source>
         <translation>Progres</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1007"/>
-        <location filename="../mainwindow.ui" line="1023"/>
+        <location filename="mainwindow.ui" line="1007"/>
+        <location filename="mainwindow.ui" line="1023"/>
         <source>Status of the changes</source>
         <translation>Stav zmien</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1026"/>
+        <location filename="mainwindow.ui" line="1026"/>
         <source>Status:</source>
         <translation>Stav:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1042"/>
+        <location filename="mainwindow.ui" line="1042"/>
         <source>Progress of the changes</source>
         <translation>Progres zmien</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1079"/>
+        <location filename="mainwindow.ui" line="1079"/>
         <source>Add/Remove Groups</source>
         <translation>Vytvoriť/Odstrániť Skupiny</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1091"/>
+        <location filename="mainwindow.ui" line="1091"/>
         <source>Add Group</source>
         <translation>Vytvoriť Skupinu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1121"/>
+        <location filename="mainwindow.ui" line="1121"/>
         <source>Group name:</source>
         <translation>Názov skupiny:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1140"/>
+        <location filename="mainwindow.ui" line="1140"/>
         <source>groupname</source>
         <translation>groupname</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1169"/>
+        <location filename="mainwindow.ui" line="1169"/>
         <source>Delete Group</source>
         <translation>Odstrániť Skupinu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1231"/>
+        <location filename="mainwindow.ui" line="1231"/>
         <source>Group to delete:</source>
         <translation>Skupina k zmazaniu:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1259"/>
+        <location filename="mainwindow.ui" line="1259"/>
         <source>Group Membership</source>
         <translation>Členstvo v skupine</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1375"/>
+        <location filename="mainwindow.ui" line="1375"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
         <translation>Skupiny ku ktorým je užívateľ priradený (skupiny zmeníte vybratím/odvybratím odpovedajúcich políčok):</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1395"/>
+        <location filename="mainwindow.ui" line="1395"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
         <translation>*Pred zavedením zmien prosím skontrolujte svoje voľby, priradením užívateľa k nesprávnej skupine môžete poškodiť Váš systém. Ak ste už spravili chybu, použite záložku Opraviť pre obnovenie pôvodného členstva.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1455"/>
+        <location filename="mainwindow.ui" line="1455"/>
         <source>Apply any changes</source>
         <translation>Použiť všetky zmeny</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1458"/>
+        <location filename="mainwindow.ui" line="1458"/>
         <source>Apply</source>
         <translation>Použiť</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1465"/>
+        <location filename="mainwindow.ui" line="1465"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1472"/>
+        <location filename="mainwindow.ui" line="1472"/>
         <source>Cancel any changes then quit</source>
         <translation>Zrušit všetky zmeny a ukončiť</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1475"/>
+        <location filename="mainwindow.ui" line="1475"/>
         <source>Close</source>
         <translation>Zatvoriť</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1482"/>
+        <location filename="mainwindow.ui" line="1482"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1523"/>
+        <location filename="mainwindow.ui" line="1523"/>
         <source>Display help </source>
         <translation>Zobraziť nápovedu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1526"/>
+        <location filename="mainwindow.ui" line="1526"/>
         <source>Help</source>
         <translation>Pomocník</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1533"/>
+        <location filename="mainwindow.ui" line="1533"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1540"/>
+        <location filename="mainwindow.ui" line="1540"/>
         <source>About this application</source>
         <translation>O tejto aplikácii</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1543"/>
+        <location filename="mainwindow.ui" line="1543"/>
         <source>About...</source>
         <translation>O Programe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1550"/>
+        <location filename="mainwindow.ui" line="1550"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
@@ -678,313 +461,305 @@ Prosím vyberte iný názov a pokračujte. </translation>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="112"/>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="182"/>
-        <location filename="../mainwindow.cpp" line="197"/>
-        <location filename="../mainwindow.cpp" line="219"/>
-        <location filename="../mainwindow.cpp" line="242"/>
-        <location filename="../mainwindow.cpp" line="250"/>
-        <location filename="../mainwindow.cpp" line="674"/>
-        <location filename="../mainwindow.cpp" line="690"/>
-        <location filename="../mainwindow.cpp" line="718"/>
-        <location filename="../mainwindow.cpp" line="726"/>
-        <location filename="../mainwindow.cpp" line="916"/>
-        <location filename="../mainwindow.cpp" line="1029"/>
+        <location filename="mainwindow.cpp" line="112"/>
+        <location filename="mainwindow.cpp" line="174"/>
+        <location filename="mainwindow.cpp" line="182"/>
+        <location filename="mainwindow.cpp" line="197"/>
+        <location filename="mainwindow.cpp" line="219"/>
+        <location filename="mainwindow.cpp" line="242"/>
+        <location filename="mainwindow.cpp" line="250"/>
+        <location filename="mainwindow.cpp" line="674"/>
+        <location filename="mainwindow.cpp" line="690"/>
+        <location filename="mainwindow.cpp" line="718"/>
+        <location filename="mainwindow.cpp" line="726"/>
+        <location filename="mainwindow.cpp" line="916"/>
+        <location filename="mainwindow.cpp" line="1029"/>
         <source>none</source>
-        <translation type="unfinished">nič</translation>
+        <translation>nič</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="mainwindow.cpp" line="262"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation type="unfinished">Konfigurácia užívateľa bude opravená. Prosím zavrite všetky bežiace aplikácie. Po skončení operácie sa prosím odhláste alebo reštartujte PC. Skutočne si prajete spustiť opravu?  </translation>
+        <translation>Konfigurácia užívateľa bude opravená. Prosím zavrite všetky bežiace aplikácie. Po skončení operácie sa prosím odhláste alebo reštartujte PC. Skutočne si prajete spustiť opravu?  </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="263"/>
-        <location filename="../mainwindow.cpp" line="312"/>
-        <location filename="../mainwindow.cpp" line="439"/>
-        <location filename="../mainwindow.cpp" line="494"/>
+        <location filename="mainwindow.cpp" line="263"/>
+        <location filename="mainwindow.cpp" line="312"/>
+        <location filename="mainwindow.cpp" line="439"/>
+        <location filename="mainwindow.cpp" line="494"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="263"/>
-        <location filename="../mainwindow.cpp" line="312"/>
-        <location filename="../mainwindow.cpp" line="439"/>
-        <location filename="../mainwindow.cpp" line="494"/>
+        <location filename="mainwindow.cpp" line="263"/>
+        <location filename="mainwindow.cpp" line="312"/>
+        <location filename="mainwindow.cpp" line="439"/>
+        <location filename="mainwindow.cpp" line="494"/>
         <source>No</source>
-        <translation type="unfinished">Nie</translation>
+        <translation>Nie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="284"/>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="mainwindow.cpp" line="284"/>
+        <location filename="mainwindow.cpp" line="295"/>
         <source>Autologin options</source>
-        <translation type="unfinished">Možnosti automatického prihlasovania</translation>
+        <translation>Možnosti automatického prihlasovania</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="mainwindow.cpp" line="285"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished">Automatické prihlásenie pre užívateľské konto &apos;%1&apos; bolo vypnuté. </translation>
+        <translation>Automatické prihlásenie pre užívateľské konto &apos;%1&apos; bolo vypnuté. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="296"/>
+        <location filename="mainwindow.cpp" line="296"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished">Automatické prihlásenie pre užívateľské konto &apos;%1&apos; bolo zapnuté. </translation>
+        <translation>Automatické prihlásenie pre užívateľské konto &apos;%1&apos; bolo zapnuté. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="307"/>
+        <location filename="mainwindow.cpp" line="307"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished">Musíte zadať umiestnenie &apos;kopírovať do&apos;. Nedá sa kopírovať plocha pod ktorou ste prihlásení.</translation>
+        <translation>Musíte zadať umiestnenie &apos;kopírovať do&apos;. Nedá sa kopírovať plocha pod ktorou ste prihlásení.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="311"/>
+        <location filename="mainwindow.cpp" line="311"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation type="unfinished">Pred kopírovaním ukončite všetky bežiace aplikácie. Uistite sa, že zvolené umiestnenie pre kopírovanie má dostatočnú kapacitu pre skopírovanie zvolených súborov. Kopírovanie medzi kontami môže prepísať alebo zmazať súbory alebo nastavenia v cieľovej ploche. Prajete si pokračovať?</translation>
+        <translation>Pred kopírovaním ukončite všetky bežiace aplikácie. Uistite sa, že zvolené umiestnenie pre kopírovanie má dostatočnú kapacitu pre skopírovanie zvolených súborov. Kopírovanie medzi kontami môže prepísať alebo zmazať súbory alebo nastavenia v cieľovej ploche. Prajete si pokračovať?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="mainwindow.cpp" line="336"/>
         <source>Synchronizing desktop...</source>
-        <translation type="unfinished">Synchronizuje sa plocha...</translation>
+        <translation>Synchronizuje sa plocha...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="338"/>
+        <location filename="mainwindow.cpp" line="338"/>
         <source>Copying desktop...</source>
-        <translation type="unfinished">Kopíruje sa plocha...</translation>
+        <translation>Kopíruje sa plocha...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="356"/>
-        <location filename="../mainwindow.cpp" line="548"/>
+        <location filename="mainwindow.cpp" line="356"/>
+        <location filename="mainwindow.cpp" line="548"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished">Meno užívateľa musí mať dĺžku aspoň 2 znaky. Prosím vyberte dlhšie meno a pokračujte. </translation>
+        <translation>Meno užívateľa musí mať dĺžku aspoň 2 znaky. Prosím vyberte dlhšie meno a pokračujte. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="360"/>
-        <location filename="../mainwindow.cpp" line="552"/>
+        <location filename="mainwindow.cpp" line="360"/>
+        <location filename="mainwindow.cpp" line="552"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished">Meno užívateľa musí pozostávať iba z malých písmen 
+        <translation>Meno užívateľa musí pozostávať iba z malých písmen 
 a mesmie obsahovať špeciálne znaky a medzery.
 Prosím vyberte iné meno a pokračujte. </translation>
     </message>
     <message>
-        <source>Sorry that name is in use. Please select a different name.</source>
-        <translation type="obsolete">Bohužiaľ toto meno už bolo použité. Prosím vyberte iné meno.</translation>
+        <location filename="mainwindow.cpp" line="369"/>
+        <source>Sorry, this name is in use. Please enter a different name.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="374"/>
-        <location filename="../mainwindow.cpp" line="409"/>
+        <location filename="mainwindow.cpp" line="374"/>
+        <location filename="mainwindow.cpp" line="409"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation type="unfinished">Heslá sa nezhodujú. Prosím skúste to znovu.</translation>
+        <translation>Heslá sa nezhodujú. Prosím skúste to znovu.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="mainwindow.cpp" line="379"/>
+        <location filename="mainwindow.cpp" line="414"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="unfinished">Heslo musí mať dĺžku aspoň 2 znaky. Prosím vyberte dlhšie heslo a pokračujte. </translation>
+        <translation>Heslo musí mať dĺžku aspoň 2 znaky. Prosím vyberte dlhšie heslo a pokračujte. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="mainwindow.cpp" line="396"/>
         <source>The user was added ok.</source>
-        <translation type="unfinished">Užívateľ bol v poriadku vytvorený.</translation>
+        <translation>Užívateľ bol v poriadku vytvorený.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="400"/>
+        <location filename="mainwindow.cpp" line="400"/>
         <source>Failed to add the user.</source>
-        <translation type="unfinished">Uźívateľa sa nepodarilo vytvoriť.</translation>
+        <translation>Uźívateľa sa nepodarilo vytvoriť.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="mainwindow.cpp" line="428"/>
         <source>Password successfully changed.</source>
-        <translation type="unfinished">Heslo bolo úspešne zmenené.</translation>
+        <translation>Heslo bolo úspešne zmenené.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="432"/>
+        <location filename="mainwindow.cpp" line="432"/>
         <source>Failed to change password.</source>
-        <translation type="unfinished">Heslo nebolo zmenené.</translation>
+        <translation>Heslo nebolo zmenené.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="mainwindow.cpp" line="437"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished">Táto akcia sa nedá zvrátiť. Skutočne si prajete zmazať konto užívateľa %1?</translation>
+        <translation>Táto akcia sa nedá zvrátiť. Skutočne si prajete zmazať konto užívateľa %1?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="450"/>
+        <location filename="mainwindow.cpp" line="450"/>
         <source>The user has been deleted.</source>
-        <translation type="unfinished">Užívateľ bol odstránený.</translation>
+        <translation>Užívateľ bol odstránený.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="mainwindow.cpp" line="453"/>
         <source>Failed to delete the user.</source>
-        <translation type="unfinished">Užívateľ nebol odstránený.</translation>
+        <translation>Užívateľ nebol odstránený.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="466"/>
+        <location filename="mainwindow.cpp" line="466"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished">Názov skupiny musí mať dĺžku aspoň 2 znaky. Prosím vyberte dlhší názov a pokračujte. </translation>
+        <translation>Názov skupiny musí mať dĺžku aspoň 2 znaky. Prosím vyberte dlhší názov a pokračujte. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="470"/>
+        <location filename="mainwindow.cpp" line="470"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished">Názov skupiny musí pozostávať iba z malých písmen 
+        <translation>Názov skupiny musí pozostávať iba z malých písmen 
 a mesmie obsahovať špeciálne znaky a medzery.
 Prosím vyberte iný názov a pokračujte. </translation>
     </message>
     <message>
-        <source>Sorry that group name already exists. Please select a different name.</source>
-        <translation type="obsolete">Bohužiaľ názov skupiny už existuje. Prosím vyberte iný názov.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="486"/>
-        <source>The system group was added ok.</source>
-        <translation type="unfinished">Skupina bola v poriadku vytvorená.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="489"/>
-        <source>Failed to add the system group.</source>
-        <translation type="unfinished">Skupina nebola vytvorená.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="492"/>
-        <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished">Táto akcia sa nedá zvrátiť. Skutočne si prajete zmazať skupinu %1?</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="499"/>
-        <source>The group has been deleted.</source>
-        <translation type="unfinished">Skupina bola odstránená.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="502"/>
-        <source>Failed to delete the group.</source>
-        <translation type="unfinished">Skupina nebola odstránená.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="523"/>
-        <source>The changes have been applied.</source>
-        <translation type="unfinished">Zmeny boli prevedené.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="526"/>
-        <source>Failed to apply group changes</source>
-        <translation type="unfinished">Zmeny neboli prevedené.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="539"/>
-        <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="540"/>
-        <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="369"/>
-        <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="479"/>
+        <location filename="mainwindow.cpp" line="479"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="561"/>
+        <location filename="mainwindow.cpp" line="486"/>
+        <source>The system group was added ok.</source>
+        <translation>Skupina bola v poriadku vytvorená.</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="489"/>
+        <source>Failed to add the system group.</source>
+        <translation>Skupina nebola vytvorená.</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="492"/>
+        <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
+        <translation>Táto akcia sa nedá zvrátiť. Skutočne si prajete zmazať skupinu %1?</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="499"/>
+        <source>The group has been deleted.</source>
+        <translation>Skupina bola odstránená.</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="502"/>
+        <source>Failed to delete the group.</source>
+        <translation>Skupina nebola odstránená.</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="523"/>
+        <source>The changes have been applied.</source>
+        <translation>Zmeny boli prevedené.</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="526"/>
+        <source>Failed to apply group changes</source>
+        <translation>Zmeny neboli prevedené.</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="539"/>
+        <source>The selected user name is currently in use.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="540"/>
+        <source>To rename this user, please log out and log back in using another user account.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="561"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="569"/>
+        <location filename="mainwindow.cpp" line="569"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="583"/>
+        <location filename="mainwindow.cpp" line="583"/>
         <source>The user was renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="595"/>
-        <location filename="../mainwindow.cpp" line="624"/>
+        <location filename="mainwindow.cpp" line="595"/>
+        <location filename="mainwindow.cpp" line="624"/>
         <source>Synchronizing desktop...ok</source>
-        <translation type="unfinished">Synchronizuje sa plocha...ok</translation>
+        <translation>Synchronizuje sa plocha...ok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="597"/>
-        <location filename="../mainwindow.cpp" line="626"/>
+        <location filename="mainwindow.cpp" line="597"/>
+        <location filename="mainwindow.cpp" line="626"/>
         <source>Copying desktop...ok</source>
-        <translation type="unfinished">Kopíruje sa plocha...ok</translation>
+        <translation>Kopíruje sa plocha...ok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="630"/>
+        <location filename="mainwindow.cpp" line="630"/>
         <source>Synchronizing desktop...failed</source>
-        <translation type="unfinished">Synchronizuje sa plocha...zlyhalo</translation>
+        <translation>Synchronizuje sa plocha...zlyhalo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="632"/>
+        <location filename="mainwindow.cpp" line="632"/>
         <source>Copying desktop...failed</source>
-        <translation type="unfinished">Kopíruje sa plocha...zlyhalo</translation>
+        <translation>Kopíruje sa plocha...zlyhalo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="669"/>
-        <location filename="../mainwindow.cpp" line="968"/>
-        <location filename="../mainwindow.cpp" line="976"/>
+        <location filename="mainwindow.cpp" line="669"/>
+        <location filename="mainwindow.cpp" line="968"/>
+        <location filename="mainwindow.cpp" line="976"/>
         <source>browse...</source>
-        <translation type="unfinished">prehľadať...</translation>
+        <translation>prehľadať...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="853"/>
+        <location filename="mainwindow.cpp" line="853"/>
         <source>About MX User Manager</source>
-        <translation type="unfinished">O programe MX Správca Užívateľov</translation>
+        <translation>O programe MX Správca Užívateľov</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="854"/>
+        <location filename="mainwindow.cpp" line="854"/>
         <source>MX User Manager</source>
-        <translation type="unfinished">MX Správca Užívateľov</translation>
+        <translation>MX Správca Užívateľov</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="856"/>
+        <location filename="mainwindow.cpp" line="856"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation type="unfinished">Jednoduchá správa užívateľov pre MX Linux</translation>
+        <translation>Jednoduchá správa užívateľov pre MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="857"/>
+        <location filename="mainwindow.cpp" line="857"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="858"/>
+        <location filename="mainwindow.cpp" line="858"/>
         <source>License</source>
-        <translation type="unfinished">Licencia</translation>
+        <translation>Licencia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="859"/>
+        <location filename="mainwindow.cpp" line="859"/>
         <source>Changelog</source>
-        <translation type="unfinished">História zmien</translation>
+        <translation>História zmien</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="860"/>
+        <location filename="mainwindow.cpp" line="860"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="876"/>
+        <location filename="mainwindow.cpp" line="876"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Zatvoriť</translation>
+        <translation>&amp;Zatvoriť</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="969"/>
+        <location filename="mainwindow.cpp" line="969"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished">Vyberte zložku do ktorej sa bude kopírovať</translation>
+        <translation>Vyberte zložku do ktorej sa bude kopírovať</translation>
     </message>
 </context>
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="41"/>
+        <location filename="main.cpp" line="41"/>
         <source>You must run this program as root.</source>
         <translation>Tento program musíte spustiť ako root užívateľ.</translation>
     </message>
