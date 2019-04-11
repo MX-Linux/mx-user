@@ -83,7 +83,7 @@ void MainWindow::refresh() {
         refreshDelete();
         refreshChangePass();
         refreshRename();
-        QStringList home_folders = shell->getOutput("ls -1 /home").split("\n");
+        const QStringList home_folders = shell->getOutput("ls -1 /home").split("\n");
         for (const QString &folder : home_folders) {
             if (folder.length() > 1 && folder != "ftp") {
                 if (shell->run("grep -w '^" + folder + "' /etc/passwd >/dev/null") == 0) {
