@@ -258,10 +258,10 @@ void MainWindow::applyRestore() {
     QString cmd;
 
     if (checkGroups->isChecked() || checkMozilla->isChecked()) {
-        int ans = QMessageBox::warning(this, QString::null,
+        int ans = QMessageBox::warning(this, windowTitle(),
                                        tr("The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?"),
-                                       tr("Yes"), tr("No"));
-        if (ans != 0) {
+                                       QMessageBox::Yes, QMessageBox::No);
+        if (ans != QMessageBox::Yes) {
             return;
         }
     }
@@ -303,14 +303,14 @@ void MainWindow::applyRestore() {
 void MainWindow::applyDesktop() {
 
     if (toUserComboBox->currentText().isEmpty()) {
-        QMessageBox::information(this, QString::null,
+        QMessageBox::information(this, windowTitle(),
                                  tr("You must specify a 'copy to' destination. You cannot copy to the desktop you are logged in to."));
         return;
     }
     // verify
-    int ans = QMessageBox::critical(this, QString::null, tr("Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?"),
-                                    tr("Yes"), tr("No"));
-    if (ans != 0) {
+    int ans = QMessageBox::critical(this, windowTitle(), tr("Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?"),
+                                    QMessageBox::Yes, QMessageBox::No);
+    if (ans != QMessageBox::Yes) {
         return;
     }
 
@@ -352,11 +352,11 @@ void MainWindow::applyAdd() {
     //validate data before proceeding
     // see if username is reasonable length
     if (userNameEdit->text().length() < 2) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
         return;
     } else if (!userNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be lower case and it\n"
                                  "cannot contain special characters or spaces.\n"
                                  "Please choose another name before proceeding."));
@@ -365,17 +365,17 @@ void MainWindow::applyAdd() {
     // check that user name is not already used
     QString cmd = QString("grep -w '^%1' /etc/passwd >/dev/null").arg(userNameEdit->text());
     if (system(cmd.toUtf8()) == 0) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Sorry, this name is in use. Please enter a different name."));
         return;
     }
     if (userPasswordEdit->text().compare(userPassword2Edit->text()) != 0) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Password entries do not match. Please try again."));
         return;
     }
     if (userPasswordEdit->text().length() < 2) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
         return;
     }
@@ -392,11 +392,11 @@ void MainWindow::applyAdd() {
     proc.waitForFinished();
 
     if (proc.exitCode() == 0) {
-        QMessageBox::information(this, QString::null,
+        QMessageBox::information(this, windowTitle(),
                                  tr("The user was added ok."));
         refresh();
     } else {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Failed to add the user."));
     }
 }
@@ -405,12 +405,12 @@ void MainWindow::applyAdd() {
 void MainWindow::applyChangePass()
 {
     if (lineEditChangePass->text().compare(lineEditChangePassConf->text()) != 0) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Password entries do not match. Please try again."));
         return;
     }
     if (lineEditChangePass->text().length() < 2) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
         return;
     }
@@ -424,20 +424,20 @@ void MainWindow::applyChangePass()
     proc.waitForFinished();
 
     if (proc.exitCode() == 0) {
-        QMessageBox::information(this, QString::null,
+        QMessageBox::information(this, windowTitle(),
                                  tr("Password successfully changed."));
         refresh();
     } else {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Failed to change password."));
     }
 }
 
 void MainWindow::applyDelete() {
     QString cmd = QString(tr("This action cannot be undone. Are you sure you want to delete user %1?")).arg(comboDeleteUser->currentText());
-    int ans = QMessageBox::warning(this, QString::null, cmd,
-                                   tr("Yes"), tr("No"));
-    if (ans == 0) {
+    int ans = QMessageBox::warning(this, windowTitle(), cmd,
+                                   QMessageBox::Yes, QMessageBox::No);
+    if (ans == QMessageBox::Yes) {
         if (deleteHomeCheckBox->isChecked()) {
             cmd = QString("killall -u %1").arg( comboDeleteUser->currentText());
             system(cmd.toUtf8());
@@ -446,10 +446,10 @@ void MainWindow::applyDelete() {
             cmd = QString("deluser %1").arg(comboDeleteUser->currentText());
         }
         if (system(cmd.toUtf8()) == 0) {
-            QMessageBox::information(this, QString::null,
+            QMessageBox::information(this, windowTitle(),
                                      tr("The user has been deleted."));
         } else {
-            QMessageBox::critical(this, QString::null,
+            QMessageBox::critical(this, windowTitle(),
                                   tr("Failed to delete the user."));
         }
         refresh();
@@ -462,11 +462,11 @@ void MainWindow::applyGroup() {
         //validate data before proceeding
         // see if groupname is reasonable length
         if (groupNameEdit->text().length() < 2) {
-            QMessageBox::critical(this, QString::null,
+            QMessageBox::critical(this, windowTitle(),
                                   tr("The group name needs to be at least 2 characters long. Please select a longer name before proceeding."));
             return;
         } else if (!groupNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
-            QMessageBox::critical(this, QString::null,
+            QMessageBox::critical(this, windowTitle(),
                                   tr("The group name needs to be lower case and it \n"
                                      "cannot contain special characters or spaces.\n"
                                      "Please choose another name before proceeding."));
@@ -475,30 +475,30 @@ void MainWindow::applyGroup() {
         // check that group name is not already used
         QString cmd = QString("grep -w '^%1' /etc/group >/dev/null").arg(groupNameEdit->text());
         if (system(cmd.toUtf8()) == 0) {
-            QMessageBox::critical(this, QString::null,
+            QMessageBox::critical(this, windowTitle(),
                                   tr("Sorry, that group name already exists. Please enter a different name."));
             return;
         }
         // run addgroup command
         cmd = QString("addgroup --system %1").arg( groupNameEdit->text());
         if (system(cmd.toUtf8()) == 0) {
-            QMessageBox::information(this, QString::null,
+            QMessageBox::information(this, windowTitle(),
                                      tr("The system group was added ok."));
         } else {
-            QMessageBox::critical(this, QString::null,
+            QMessageBox::critical(this, windowTitle(),
                                   tr("Failed to add the system group."));
         }
     }  else { //deleting group if addBox disabled
         QString cmd = QString(tr("This action cannot be undone. Are you sure you want to delete group %1?")).arg(deleteGroupCombo->currentText());
-        int ans = QMessageBox::warning(this, QString::null, cmd,
-                                       tr("Yes"), tr("No"));
-        if (ans == 0) {
+        int ans = QMessageBox::warning(this, windowTitle(), cmd,
+                                       QMessageBox::Yes, QMessageBox::No);
+        if (ans == QMessageBox::Yes) {
             cmd = QString("delgroup %1").arg(deleteGroupCombo->currentText());
             if (system(cmd.toUtf8()) == 0) {
-                QMessageBox::information(this, QString::null,
+                QMessageBox::information(this, windowTitle(),
                                          tr("The group has been deleted."));
             } else {
-                QMessageBox::critical(this, QString::null,
+                QMessageBox::critical(this, windowTitle(),
                                       tr("Failed to delete the group."));
             }
         }
@@ -519,10 +519,10 @@ void MainWindow::applyMembership() {
     cmd.chop(1);
     cmd = QString("usermod -G %1 %2").arg(cmd).arg(userComboMembership->currentText());
     if (shell->run(cmd) == 0) {
-        QMessageBox::information(this, QString::null,
+        QMessageBox::information(this, windowTitle(),
                                  tr("The changes have been applied."));
     } else {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Failed to apply group changes"));
     }
 }
@@ -535,7 +535,7 @@ void MainWindow::applyRename()
     //validate data before proceeding
     // check if selected user is in use
     if (shell->getOutput("logname") == old_name) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("The selected user name is currently in use.") + "\n\n" +
                               tr("To rename this user, please log out and log back in using another user account."));
         refresh();
@@ -544,11 +544,11 @@ void MainWindow::applyRename()
 
     // see if username is reasonable length
     if (new_name.length() < 2) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
         return;
     } else if (!new_name.contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be lower case and it\n"
                                  "cannot contain special characters or spaces.\n"
                                  "Please choose another name before proceeding."));
@@ -557,7 +557,7 @@ void MainWindow::applyRename()
     // check that user name is not already used
     QString cmd = QString("grep -w '^%1' /etc/passwd >/dev/null").arg(new_name);
     if (system(cmd.toUtf8()) == 0) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Sorry, this name already exists on your system. Please enter a different name."));
         return;
     }
@@ -565,7 +565,7 @@ void MainWindow::applyRename()
     // rename user
     shell->run("usermod --login " + new_name + " --move-home --home /home/" + new_name + " " + old_name);
     if (shell->getExitCode(true) != 0) {
-        QMessageBox::critical(this, QString::null,
+        QMessageBox::critical(this, windowTitle(),
                               tr("Failed to rename the user. Please make sure that the user is not logged in, you might need to restart"));
         return;
     }
@@ -580,7 +580,7 @@ void MainWindow::applyRename()
     cmd = QString("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'").arg(old_name).arg(new_name);
     shell->run(cmd);
 
-    QMessageBox::information(this, QString::null, tr("The user was renamed."));
+    QMessageBox::information(this, windowTitle(), tr("The user was renamed."));
     refresh();
 }
 
