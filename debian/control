@@ -2,17 +2,22 @@ Source: mx-user
 Section: system
 Priority: optional
 Maintainer: adrian <adrian@mxlinux.org>
-Build-Depends: qt5-qmake,
-	qt5-default,
-	qttools5-dev-tools,
-	debhelper (>= 9),
-	libcmd
+Build-Depends: debhelper (>= 9),
+               libcmd,
+               qt5-default,
+               qt5-qmake,
+               qttools5-dev-tools
 Standards-Version: 3.9.8
 Homepage: https://github.com/timkb4cq/mx-user
 
 Package: mx-user
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, adduser, rsync, mx-viewer|xdg-utils, apt-mx, menu
+Depends: adduser,
+         apt-mx,
+         menu,
+         mx-viewer | xdg-utils,
+         rsync,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: MX User manager
  The MX User Manager allows for easy administration of user accounts.
-
