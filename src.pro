@@ -52,7 +52,8 @@ TRANSLATIONS += translations/mx-user_am.ts \
 FORMS += \
     mainwindow.ui
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    version.h
 SOURCES += main.cpp \
     mainwindow.cpp
 LIBS += -lcrypt

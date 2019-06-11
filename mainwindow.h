@@ -53,8 +53,6 @@ public:
     void buildListGroups();
     void displayDoc(QString url);
     void restartPanel(QString user);
-    QString getVersion(QString name);
-
 
 public slots:
     void progress(int counter, int duration); // updates progressBar when tick signal is emited
@@ -90,7 +88,6 @@ private slots:
 
 private:
     Cmd *shell;
-    QString version;
 
 };
 
