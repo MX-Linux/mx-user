@@ -19,17 +19,18 @@
 //
 
 #include "mainwindow.h"
+#include "version.h"
 
 #include <QFileDialog>
 #include <QTextEdit>
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget* parent) : QDialog(parent) {
+    qDebug() << "Program Version:" << VERSION;
     setupUi(this);
     setWindowIcon(QApplication::windowIcon());
 
     shell = new Cmd(this);
-    version = getVersion("mx-user");
     tabWidget->setCurrentIndex(0);
     refresh();
 }
@@ -112,12 +113,12 @@ void MainWindow::refreshRestore() {
     userComboBox->addItem(tr("none"));
     userComboBox->addItem("root");
     fp = popen("ls -1 /home", "r");
-    if (fp != NULL) {
-        while (fgets(line, sizeof line, fp) != NULL) {
+    if (fp != nullptr) {
+        while (fgets(line, sizeof line, fp) != nullptr) {
             i = strlen(line);
             line[--i] = '\0';
             tok = strtok(line, " ");
-            if (tok != NULL && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
+            if (tok != nullptr && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
                 sprintf(line2, "grep -w '^%s' /etc/passwd >/dev/null", tok);
                 if (system(line2) == 0) {
                     userComboBox->addItem(tok);
@@ -143,12 +144,12 @@ void MainWindow::refreshDesktop() {
     FILE *fp = popen("ls -1 /home", "r");
     int i;
     char *tok;
-    if (fp != NULL) {
-        while (fgets(line, sizeof line, fp) != NULL) {
+    if (fp != nullptr) {
+        while (fgets(line, sizeof line, fp) != nullptr) {
             i = strlen(line);
             line[--i] = '\0';
             tok = strtok(line, " ");
-            if (tok != NULL && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
+            if (tok != nullptr && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
                 cmd = QString("grep -w '^%1' /etc/passwd >/dev/null").arg(tok);
                 if (system(cmd.toUtf8()) == 0) {
                     fromUserComboBox->addItem(tok);
@@ -197,11 +198,11 @@ void MainWindow::refreshGroups() {
     deleteGroupCombo->addItem(tr("none"));
     deleteBox->setEnabled(true);
     fp = popen("cat /etc/group | cut -f 1 -d :", "r");
-    if (fp != NULL) {
-        while (fgets(line, sizeof line, fp) != NULL) {
+    if (fp != nullptr) {
+        while (fgets(line, sizeof line, fp) != nullptr) {
             i = strlen(line);
             line[--i] = '\0';
-            if (line != NULL && strlen(line) > 1 && strcmp(line, "root") != 0 ) {
+            if (line != nullptr && strlen(line) > 1 && strcmp(line, "root") != 0 ) {
                 deleteGroupCombo->addItem(line);
             }
         }
@@ -219,12 +220,12 @@ void MainWindow::refreshMembership() {
     userComboMembership->addItem(tr("none"));
     listGroups->clear();
     fp = popen("ls -1 /home", "r");
-    if (fp != NULL) {
-        while (fgets(line, sizeof line, fp) != NULL) {
+    if (fp != nullptr) {
+        while (fgets(line, sizeof line, fp) != nullptr) {
             i = strlen(line);
             line[--i] = '\0';
             tok = strtok(line, " ");
-            if (tok != NULL && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
+            if (tok != nullptr && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
                 sprintf(line2, "grep -w '^%s' /etc/passwd >/dev/null", tok);
                 if (system(line2) == 0) {
                     userComboMembership->addItem(tok);
@@ -649,12 +650,12 @@ void MainWindow::on_fromUserComboBox_activated(QString) {
     FILE *fp = popen("ls -1 /home", "r");
     int i;
     char *tok;
-    if (fp != NULL) {
-        while (fgets(line, sizeof line, fp) != NULL) {
+    if (fp != nullptr) {
+        while (fgets(line, sizeof line, fp) != nullptr) {
             i = strlen(line);
             line[--i] = '\0';
             tok = strtok(line, " ");
-            if (tok != NULL && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
+            if (tok != nullptr && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
                 cmd = QString("grep -w '^%1' /etc/passwd >/dev/null").arg(tok);
                 if (system(cmd.toUtf8()) == 0 && fromUserComboBox->currentText().compare(tok) != 0) {
                     cmd = QString("who | grep -w '%1'").arg(tok);
@@ -736,11 +737,11 @@ void MainWindow::buildListGroups(){
     listGroups->clear();
     //read /etc/group and add all the groups in the listGroups
     fp = popen("cat /etc/group | cut -f 1 -d :", "r");
-    if (fp != NULL) {
-        while (fgets(line, sizeof line, fp) != NULL) {
+    if (fp != nullptr) {
+        while (fgets(line, sizeof line, fp) != nullptr) {
             i = strlen(line);
             line[--i] = '\0';
-            if (line != NULL && strlen(line) > 1) {
+            if (line != nullptr && strlen(line) > 1) {
                 QListWidgetItem *item = new QListWidgetItem;
                 item->setText(line);
                 item->setCheckState(Qt::Unchecked);
@@ -835,11 +836,6 @@ void MainWindow::on_buttonCancel_clicked() {
     close();
 }
 
-// Get version of the program
-QString MainWindow::getVersion(QString name) {
-    return shell->getOutput("dpkg-query -f '${Version}' -W " + name);
-}
-
 void MainWindow::progress(int counter, int duration)
 {
     syncProgressBar->setMaximum(duration);
@@ -852,7 +848,7 @@ void MainWindow::on_buttonAbout_clicked() {
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX User Manager"), "<p align=\"center\"><b><h2>" +
                        tr("MX User Manager") + "</h2></b></p><p align=\"center\">" + "Version: " +
-                       version + "</p><p align=\"center\"><h3>" +
+                       VERSION + "</p><p align=\"center\"><h3>" +
                        tr("Simple user configuration for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
     QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
