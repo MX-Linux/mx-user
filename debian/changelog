@@ -1,3 +1,9 @@
+mx-user (19.7) mx; urgency=medium
+
+  * fix windows buttons for Buster
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 07 Jul 2019 14:23:55 -0400
+
 mx-user (19.4) mx; urgency=medium
 
   * updated translations
