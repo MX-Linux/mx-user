@@ -1,3 +1,9 @@
+mx-user (19.7.1) mx; urgency=medium
+
+  * new icon
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 08 Jul 2019 14:44:29 -0400
+
 mx-user (19.7) mx; urgency=medium
 
   * fix windows buttons for Buster
