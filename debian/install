@@ -1,6 +1,5 @@
 license.html		usr/share/doc/mx-user
 mx-user			usr/sbin
 mx-user.desktop		usr/share/applications
-mx-user.png             usr/share/icons/32x32/apps
-mx-user.png             usr/share/pixmaps
+icons/mx-user.png	usr/share/icons/hicolor/256x256/apps
 translations/*.qm	usr/share/mx-user/locale
