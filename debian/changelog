@@ -1,3 +1,9 @@
+mx-user (19.8) mx; urgency=medium
+
+  * added offline help file
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 21 Aug 2019 16:34:10 -0400
+
 mx-user (19.7.1) mx; urgency=medium
 
   * new icon

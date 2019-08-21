@@ -1,3 +1,4 @@
+help			usr/share/doc/mx-user
 license.html		usr/share/doc/mx-user
 mx-user			usr/sbin
 mx-user.desktop		usr/share/applications
