@@ -4,92 +4,92 @@
     <message>
         <location filename="mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation type="unfinished"/>
+        <translation>MX upravljanje uporabnikov</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="62"/>
         <source>Administration</source>
-        <translation type="unfinished"/>
+        <translation>administracija</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="65"/>
         <source>Add a new user</source>
-        <translation type="unfinished"/>
+        <translation>Dodaj novega uporabnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="105"/>
         <source>Add User Account</source>
-        <translation type="unfinished"/>
+        <translation>Dodaj uporabniški račun</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="132"/>
         <source>Reenter password for new user</source>
-        <translation type="unfinished"/>
+        <translation>Ponovno vnesi geslo za novega uporabnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="141"/>
         <source>confirm password</source>
-        <translation type="unfinished"/>
+        <translation>potrdi geslo</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="154"/>
         <location filename="mainwindow.ui" line="1118"/>
         <source>Username of new user</source>
-        <translation type="unfinished"/>
+        <translation>Uporabniško ime novega uporabnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="157"/>
         <source>User login name:</source>
-        <translation type="unfinished"/>
+        <translation>Uporabniško ime za prijavo:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="170"/>
         <location filename="mainwindow.ui" line="416"/>
         <location filename="mainwindow.ui" line="1134"/>
         <source>Enter username of new user</source>
-        <translation type="unfinished"/>
+        <translation>Vnesite uporabniško ime novega uporabnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="176"/>
         <location filename="mainwindow.ui" line="422"/>
         <source>username</source>
-        <translation type="unfinished"/>
+        <translation>uporabniško ime</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="189"/>
         <location filename="mainwindow.ui" line="227"/>
         <source>Password for new user</source>
-        <translation type="unfinished"/>
+        <translation>Geslo novega uporabnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="192"/>
         <source>User password:</source>
-        <translation type="unfinished"/>
+        <translation>Geslo uporabnika:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="205"/>
         <source>Enter password for new user</source>
-        <translation type="unfinished"/>
+        <translation>Vnesite geslo za novega uporabnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="214"/>
         <source>password</source>
-        <translation type="unfinished"/>
+        <translation>geslo</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="230"/>
         <source>Confirm user password:</source>
-        <translation type="unfinished"/>
+        <translation>Potrdi geslo uporabnika:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="262"/>
         <source>Delete User Account</source>
-        <translation type="unfinished"/>
+        <translation>Izbriši uporabniški računa</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="305"/>
         <source>Select user</source>
-        <translation type="unfinished"/>
+        <translation>Izberi uporabnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="321"/>
@@ -98,63 +98,63 @@
         <location filename="mainwindow.ui" line="1346"/>
         <location filename="mainwindow.ui" line="1368"/>
         <source>Select user to delete</source>
-        <translation type="unfinished"/>
+        <translation>Izberi uporabnika, ki ga želite izbrisati</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="330"/>
         <source>User to delete:</source>
-        <translation type="unfinished"/>
+        <translation>Uporabnik za izbris</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="343"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation type="unfinished"/>
+        <translation>Izbriši tudi domačo mapo uporabnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="346"/>
         <source>Delete user home directory</source>
-        <translation type="unfinished"/>
+        <translation>Izbriši domačo mapo uporabnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="359"/>
         <source>Rename User Account</source>
-        <translation type="unfinished"/>
+        <translation>Premimenuje uporabniški račun</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="371"/>
         <location filename="mainwindow.ui" line="483"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"/>
+        <translation>Izberite uporabnika za spreminjanje:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="403"/>
         <source>New user name:</source>
-        <translation type="unfinished"/>
+        <translation>Novo uporabniško ime:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="432"/>
         <source>Change User Password</source>
-        <translation type="unfinished"/>
+        <translation>Spremeni geslo uproabnika:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="447"/>
         <source>new password</source>
-        <translation type="unfinished"/>
+        <translation>novo geslo</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="460"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"/>
+        <translation>Potrdi novo geslo:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="470"/>
         <source>confirm new password</source>
-        <translation type="unfinished"/>
+        <translation>potrdi novo geslo</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="496"/>
         <source>New user password:</source>
-        <translation type="unfinished"/>
+        <translation>Novo geslo uporabnika:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="527"/>
@@ -164,13 +164,13 @@
     <message>
         <location filename="mainwindow.ui" line="530"/>
         <source>Repair a user configuration</source>
-        <translation type="unfinished"/>
+        <translation>Popravi uporabnikovo konfiguracijo</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="564"/>
         <location filename="mainwindow.ui" line="1271"/>
         <source>Modify User Account</source>
-        <translation type="unfinished"/>
+        <translation>Spremeni uporabniški račun</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="576"/>
@@ -182,109 +182,109 @@
         <location filename="mainwindow.ui" line="579"/>
         <location filename="mainwindow.ui" line="1355"/>
         <source>User to change:</source>
-        <translation type="unfinished"/>
+        <translation>Uporabnik, katerega se spreminja:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="624"/>
         <source>Restore Defaults</source>
-        <translation type="unfinished"/>
+        <translation>Obnovi privzete nastavitve</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="645"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation type="unfinished"/>
+        <translation>Obnovi konfiguracijo brskalnika na privzete nastavitve za MX</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="651"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation type="unfinished"/>
+        <translation>Mozilla (Iceweasel ali Firefox) konfiguracije</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="654"/>
         <source>Alt+X</source>
-        <translation type="unfinished"/>
+        <translation>Alt+X</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="661"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation type="unfinished"/>
+        <translation>Obnovi članstvo v skupinah na privzete nastavitve za MX</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="667"/>
         <source>Group memberships</source>
-        <translation type="unfinished"/>
+        <translation>Članstvo v skupinah</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="670"/>
         <source>Alt+G</source>
-        <translation type="unfinished"/>
+        <translation>Alt+G</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="680"/>
         <source>Change Autologin Settings</source>
-        <translation type="unfinished"/>
+        <translation>Spremeni nastavitve za samodejno prijavo</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="686"/>
         <source>Log in automatically</source>
-        <translation type="unfinished"/>
+        <translation>Samodejna prijava</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="693"/>
         <source>Require password to log in</source>
-        <translation type="unfinished"/>
+        <translation>Zahtevaj geslo za prijavo</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="708"/>
         <source>Copy/Sync</source>
-        <translation type="unfinished"/>
+        <translation>Kopiranje/sinhronizacija</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="735"/>
         <source>Copy Between Desktops</source>
-        <translation type="unfinished"/>
+        <translation>Kopiranje med namizij</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="762"/>
         <location filename="mainwindow.ui" line="829"/>
         <source>Select desktop to copy from</source>
-        <translation type="unfinished"/>
+        <translation>Izberi namizje s katerega naj se kopira</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="775"/>
         <source>Select to only copy files</source>
-        <translation type="unfinished"/>
+        <translation>Zgolj kopiranje datotek</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="778"/>
         <source>Copy only</source>
-        <translation type="unfinished"/>
+        <translation>Zgolj kopiranje</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="794"/>
         <location filename="mainwindow.ui" line="807"/>
         <source>Select desktop to copy to</source>
-        <translation type="unfinished"/>
+        <translation>Izberi namizje na katerega naj se kopira</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="816"/>
         <source>Copy to:</source>
-        <translation type="unfinished"/>
+        <translation>Kopiraj na:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="838"/>
         <source>Copy from:</source>
-        <translation type="unfinished"/>
+        <translation>Kopiraj iz:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="851"/>
         <source>Select to copy and then delete differences</source>
-        <translation type="unfinished"/>
+        <translation>Izberi za kopiranje in potem izbriši razlike </translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="854"/>
         <source>Sync</source>
-        <translation type="unfinished"/>
+        <translation>Sinhronizacija</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="900"/>
@@ -299,98 +299,98 @@
     <message>
         <location filename="mainwindow.ui" line="916"/>
         <source>Select to copy/sync entire home</source>
-        <translation type="unfinished"/>
+        <translation>Izberi za kopiranje ali sinhornizacijo celotne domače mape</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="919"/>
         <source>Entire home</source>
-        <translation type="unfinished"/>
+        <translation>Celotna domača mapa</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="935"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"/>
+        <translation>Izberi za kopiranje ali sinhronizacijo konfiguracije brskalnika</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="938"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation type="unfinished"/>
+        <translation>Mozilla (Iceweasel ali Firefox) konfiguracije</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="951"/>
         <source>Select to copy/sync Documents</source>
-        <translation type="unfinished"/>
+        <translation>Izberi za kopiranje ali sinhronizacijo dokumentov</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="954"/>
         <source>Documents folder</source>
-        <translation type="unfinished"/>
+        <translation>Mapa z dokumenti</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="961"/>
         <source>What to copy/sync:</source>
-        <translation type="unfinished"/>
+        <translation>Kaj naj se kopira ali sinhronizira:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="977"/>
         <source>Progress</source>
-        <translation type="unfinished"/>
+        <translation>Napredek</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1007"/>
         <location filename="mainwindow.ui" line="1023"/>
         <source>Status of the changes</source>
-        <translation type="unfinished"/>
+        <translation>Status sprememb</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1026"/>
         <source>Status:</source>
-        <translation type="unfinished"/>
+        <translation>Status:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1042"/>
         <source>Progress of the changes</source>
-        <translation type="unfinished"/>
+        <translation>Napredek sprememb</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1079"/>
         <source>Add/Remove Groups</source>
-        <translation type="unfinished"/>
+        <translation>Dodaj/odstrani skupine</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1091"/>
         <source>Add Group</source>
-        <translation type="unfinished"/>
+        <translation>Dodaj skupino</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1121"/>
         <source>Group name:</source>
-        <translation type="unfinished"/>
+        <translation>Ime skupine:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1140"/>
         <source>groupname</source>
-        <translation type="unfinished"/>
+        <translation>groupname</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1169"/>
         <source>Delete Group</source>
-        <translation type="unfinished"/>
+        <translation>Izbriši skupino</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1231"/>
         <source>Group to delete:</source>
-        <translation type="unfinished"/>
+        <translation>Skupina za izbris:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1259"/>
         <source>Group Membership</source>
-        <translation type="unfinished"/>
+        <translation>Članstvo v skupini</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1375"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"/>
+        <translation>Člani skupine pripadajo (spreminjajte skupine z izbiranjem ustreznih polj):</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1395"/>
@@ -410,7 +410,7 @@
     <message>
         <location filename="mainwindow.ui" line="1465"/>
         <source>Alt+A</source>
-        <translation type="unfinished"/>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1472"/>
@@ -475,54 +475,54 @@
         <location filename="mainwindow.cpp" line="913"/>
         <location filename="mainwindow.cpp" line="1026"/>
         <source>none</source>
-        <translation type="unfinished"/>
+        <translation>brez</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="264"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation type="unfinished"/>
+        <translation>Uporabniška konfiguracija bo popravljena. Prosimo, zaprite vse aplikacije. Po zaključku se odjavite ali ponovno zaženite sistem. Ste prepričani, da želite pričeti s popravilom?</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="286"/>
         <location filename="mainwindow.cpp" line="297"/>
         <source>Autologin options</source>
-        <translation type="unfinished"/>
+        <translation>Nastavitve za samodejno prijavo</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="287"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"/>
+        <translation>Samodejna prijava je izključena za račun &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="298"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation type="unfinished"/>
+        <translation>Samodejna prijava je vključena za račun &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="309"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished"/>
+        <translation>Določiti morate cilj za &apos;kopiranje v&apos;. Ne morete kopirati na namizje na katerega ste prijavljeni.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="313"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation type="unfinished"/>
+        <translation>Pred kopiranjem zaprite vse ostale aplikacije. Preverite, da je cilj kopiranja dovolj velik za datoteke, ki jih kopirate. Kopiranje med namizji lahko prepiše ali izbiriše datoteke na viljnem namizju. Ste prepričani, da želite nadaljevati?</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="338"/>
         <source>Synchronizing desktop...</source>
-        <translation type="unfinished"/>
+        <translation>Sinhronizacija namizij ...</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="340"/>
         <source>Copying desktop...</source>
-        <translation type="unfinished"/>
+        <translation>Kopiranje namizij ...</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="358"/>
         <location filename="mainwindow.cpp" line="550"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>Uporabniško imeti dolžino vsaj dveh znakov. Izberite daljše ime za nadaljevanje.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="362"/>
@@ -530,106 +530,110 @@
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>Uporabniško ime mora vsebovati le majhne znake in
+mora biti brez posebnih znakov ali presledkov.
+Izberite drugo ime.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="371"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation>Oprostite, to ime je že v rabi. Izberite drugo ime.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="376"/>
         <location filename="mainwindow.cpp" line="411"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation type="unfinished"/>
+        <translation>Gesli se ne ujemata. Poskusite znova.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="381"/>
         <location filename="mainwindow.cpp" line="416"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>Gesli morata imeti dolžino vsaj dveh znakov. Vnesite daljše geslo.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="398"/>
         <source>The user was added ok.</source>
-        <translation type="unfinished"/>
+        <translation>Uporabnik je bil uspešno dodan.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="402"/>
         <source>Failed to add the user.</source>
-        <translation type="unfinished"/>
+        <translation>Uporabnik ni bil uspešno dodan.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="430"/>
         <source>Password successfully changed.</source>
-        <translation type="unfinished"/>
+        <translation>Geslo je bilo uspešno spremenjeno.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="434"/>
         <source>Failed to change password.</source>
-        <translation type="unfinished"/>
+        <translation>Neuspel poskus spremembe gesla.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="439"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"/>
+        <translation>Te akcije ni mogoče razaveljaviti. Ali ste prepričani, da želite izbrisati uporabnika %1?</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="452"/>
         <source>The user has been deleted.</source>
-        <translation type="unfinished"/>
+        <translation>Uporabnik je bil izbrisan.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="455"/>
         <source>Failed to delete the user.</source>
-        <translation type="unfinished"/>
+        <translation>Uporabnika ni bilo mogoče izbrisati.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="468"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>Ime skupine mora imeti dolžino vsaj dveh znakov. Izberite daljše ime za nadaljevanje.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="472"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>Ime skupine mora vsebovati le majhne znake in
+mora biti brez posebnih znakov ali presledkov.
+Izberite drugo ime.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="481"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation>Oprostite, to ime skupine  je že v rabi. Prosimo, izberite drugo ime.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="488"/>
         <source>The system group was added ok.</source>
-        <translation type="unfinished"/>
+        <translation>Skupina je bila uspešno dodana.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="491"/>
         <source>Failed to add the system group.</source>
-        <translation type="unfinished"/>
+        <translation>Neuspešno dodajanje skupine.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="494"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"/>
+        <translation>Tega ni mogoče razveljaviti. Ali ste prepričani, da želite izbrisati skupino %1?</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="501"/>
         <source>The group has been deleted.</source>
-        <translation type="unfinished"/>
+        <translation>Skupina je bila izbrisana.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="504"/>
         <source>Failed to delete the group.</source>
-        <translation type="unfinished"/>
+        <translation>Skupine ni bilo mogoče izbrisati.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="525"/>
         <source>The changes have been applied.</source>
-        <translation type="unfinished"/>
+        <translation>Spremembe so bile uspešno izvedene.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="528"/>
@@ -639,71 +643,71 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mainwindow.cpp" line="541"/>
         <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"/>
+        <translation>Izbrano uporabniško ime je trenutno v rabi.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="542"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"/>
+        <translation>Za preimenovanje tega uporabnika se odjavite in ponovno prijavite z drugim uporabniškim računom.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="563"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation>Oprostite, to ime je na vašem sistemu že v rabi. Izberite drugo ime.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="571"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"/>
+        <translation>Neuspešno preimenovanje uporabnika. Prepričajte se, da uporabnik ni prijavljen. Morda bo potreben ponoven zagon.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="585"/>
         <source>The user was renamed.</source>
-        <translation type="unfinished"/>
+        <translation>Uporabnik je bil preimenovan.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="597"/>
         <location filename="mainwindow.cpp" line="626"/>
         <source>Synchronizing desktop...ok</source>
-        <translation type="unfinished"/>
+        <translation>Sinhronizacija namizja... uspela!</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="599"/>
         <location filename="mainwindow.cpp" line="628"/>
         <source>Copying desktop...ok</source>
-        <translation type="unfinished"/>
+        <translation>Kopiranje namizja... uspelo!</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="632"/>
         <source>Synchronizing desktop...failed</source>
-        <translation type="unfinished"/>
+        <translation>Sinhronizacija namizja... neuspešno!</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="634"/>
         <source>Copying desktop...failed</source>
-        <translation type="unfinished"/>
+        <translation>Kopiranje namizia... neuspešno!</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="671"/>
         <location filename="mainwindow.cpp" line="965"/>
         <location filename="mainwindow.cpp" line="973"/>
         <source>browse...</source>
-        <translation type="unfinished"/>
+        <translation>brskanje...</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="850"/>
         <source>About MX User Manager</source>
-        <translation type="unfinished"/>
+        <translation>O MX upravljanju uporabnikov </translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="851"/>
         <source>MX User Manager</source>
-        <translation type="unfinished"/>
+        <translation>MX Upravljanje uporabnikov</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="853"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>Preprosto konfiguriranje uporabnikov za MX Linux</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="854"/>
@@ -733,7 +737,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mainwindow.cpp" line="966"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"/>
+        <translation>Izberite ciljno mapo za kopiranje</translation>
     </message>
 </context>
 <context>
