@@ -29,7 +29,7 @@
     <message>
         <location filename="mainwindow.ui" line="141"/>
         <source>confirm password</source>
-        <translation>confirmar clave </translation>
+        <translation>confirmar contraseña</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="154"/>
@@ -47,7 +47,7 @@
         <location filename="mainwindow.ui" line="416"/>
         <location filename="mainwindow.ui" line="1134"/>
         <source>Enter username of new user</source>
-        <translation>Ingrese el nombre del usuario nuevo</translation>
+        <translation>Ingrese el nombre del nuevo usuario</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="176"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="mainwindow.ui" line="205"/>
         <source>Enter password for new user</source>
-        <translation>Ingrese la contraseña para el usuario nuevo</translation>
+        <translation>Ingrese la contraseña para el nuevo usuario</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="214"/>
@@ -89,7 +89,7 @@
     <message>
         <location filename="mainwindow.ui" line="305"/>
         <source>Select user</source>
-        <translation>Escoger usuario</translation>
+        <translation>Elegir usuario</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="321"/>
@@ -98,12 +98,12 @@
         <location filename="mainwindow.ui" line="1346"/>
         <location filename="mainwindow.ui" line="1368"/>
         <source>Select user to delete</source>
-        <translation>Seleccione el usuario a borrar</translation>
+        <translation>Seleccionar usuario para eliminar</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="330"/>
         <source>User to delete:</source>
-        <translation>Usuario a borrar:</translation>
+        <translation>Usuario a eliminar:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="343"/>
@@ -134,27 +134,27 @@
     <message>
         <location filename="mainwindow.ui" line="432"/>
         <source>Change User Password</source>
-        <translation>Cambiar Clave de Usuario</translation>
+        <translation>Cambiar Contraseña de Usuario</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="447"/>
         <source>new password</source>
-        <translation>nuevo clave </translation>
+        <translation>nueva contraseña</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="460"/>
         <source>Confirm new password:</source>
-        <translation>Confirmar nuevo clave:</translation>
+        <translation>Confirmar nueva contraseña:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="470"/>
         <source>confirm new password</source>
-        <translation>Confirmar nuevo clave</translation>
+        <translation>Confirmar nueva contraseña</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="496"/>
         <source>New user password:</source>
-        <translation>Nuevo clave de usuario:</translation>
+        <translation>Nueva contraseña de usuario:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="527"/>
@@ -543,13 +543,13 @@ Escoja otro antes de continuar, por favor.</translation>
         <location filename="mainwindow.cpp" line="376"/>
         <location filename="mainwindow.cpp" line="411"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation>Claves introducidos no concuerdan. Favor intenta de nuevo.</translation>
+        <translation>Claves introducidas no concuerdan. Favor intente de nuevo.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="381"/>
         <location filename="mainwindow.cpp" line="416"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation>Claves tiene que tener al menos 2 caracteres. Favor entrar uno más largo antes de proceder. </translation>
+        <translation>Contraseña debe que tener mínimo 2 caracteres. Favor coloque una más larga antes de proceder. </translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="398"/>
@@ -608,12 +608,12 @@ Escoja otro antes de continuar, por favor.</translation>
     <message>
         <location filename="mainwindow.cpp" line="488"/>
         <source>The system group was added ok.</source>
-        <translation>El grupo de sistema se agregó con éxito.</translation>
+        <translation>El grupo se agregó con éxito al sistema.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="491"/>
         <source>Failed to add the system group.</source>
-        <translation>No se pudo agregar el grupo de sistema.</translation>
+        <translation>No se pudo agregar el grupo al sistema.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="494"/>
@@ -658,7 +658,7 @@ Escoja otro antes de continuar, por favor.</translation>
     <message>
         <location filename="mainwindow.cpp" line="571"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation>Error al renombrar el usuario. Asegúrese de que el usuario no haya iniciado sesión, es posible que deba reiniciar</translation>
+        <translation>Error al renombrar el usuario. Asegúrese que el usuario no haya iniciado sesión, es posible que deba reiniciar</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="585"/>

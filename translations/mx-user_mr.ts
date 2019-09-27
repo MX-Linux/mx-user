@@ -1,95 +1,95 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="mr" version="2.1">
 <context>
     <name>MEConfig</name>
     <message>
         <location filename="mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>MX Kullanıcı Yöneticisi</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="62"/>
         <source>Administration</source>
-        <translation>Yönetim</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="65"/>
         <source>Add a new user</source>
-        <translation>Yeni bir kullanıcı ekle</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="105"/>
         <source>Add User Account</source>
-        <translation>Kullanıcı Hesabı Ekle</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="132"/>
         <source>Reenter password for new user</source>
-        <translation>Yeni kullanıcı için parolayı tekrar girin</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="141"/>
         <source>confirm password</source>
-        <translation>parolayı onayla</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="154"/>
         <location filename="mainwindow.ui" line="1118"/>
         <source>Username of new user</source>
-        <translation>Yeni kullanıcının kullanıcı adı</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="157"/>
         <source>User login name:</source>
-        <translation>Kullanıcı giriş adı:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="170"/>
         <location filename="mainwindow.ui" line="416"/>
         <location filename="mainwindow.ui" line="1134"/>
         <source>Enter username of new user</source>
-        <translation>Yeni kullanıcının kullanıcı adını girin</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="176"/>
         <location filename="mainwindow.ui" line="422"/>
         <source>username</source>
-        <translation>kullanıcı adı</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="189"/>
         <location filename="mainwindow.ui" line="227"/>
         <source>Password for new user</source>
-        <translation>Yeni kullanıcı için parola </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="192"/>
         <source>User password:</source>
-        <translation>Kullanıcı parolası:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="205"/>
         <source>Enter password for new user</source>
-        <translation>Yeni kullanıcı için parola girişi</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="214"/>
         <source>password</source>
-        <translation>parola</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="230"/>
         <source>Confirm user password:</source>
-        <translation>Kullanıcı parolasını onayla:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="262"/>
         <source>Delete User Account</source>
-        <translation>Kullanıcı Hesabı Silme</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="305"/>
         <source>Select user</source>
-        <translation>Kullanıcı seç</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="321"/>
@@ -98,22 +98,22 @@
         <location filename="mainwindow.ui" line="1346"/>
         <location filename="mainwindow.ui" line="1368"/>
         <source>Select user to delete</source>
-        <translation>Silinecek kullanıcı seç</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="330"/>
         <source>User to delete:</source>
-        <translation>Silinecek kullanıcı:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="343"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation>Ayrıca kullanıcının ev dizinini sil</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="346"/>
         <source>Delete user home directory</source>
-        <translation>Kullanıcı ev dizinini sil</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="359"/>
@@ -124,7 +124,7 @@
         <location filename="mainwindow.ui" line="371"/>
         <location filename="mainwindow.ui" line="483"/>
         <source>Select user to modify:</source>
-        <translation>Değiştirilecek kullanıcıyı seç:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="403"/>
@@ -134,60 +134,60 @@
     <message>
         <location filename="mainwindow.ui" line="432"/>
         <source>Change User Password</source>
-        <translation>Kullananıcı parolasını değiştir</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="447"/>
         <source>new password</source>
-        <translation>yeni parola</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="460"/>
         <source>Confirm new password:</source>
-        <translation>Yeni parolayı onayla:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="470"/>
         <source>confirm new password</source>
-        <translation>Yeni parolayı onayla</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="496"/>
         <source>New user password:</source>
-        <translation>Yeni kullanıcı parolası:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="527"/>
         <source>Options</source>
-        <translation>Seçenekler</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="530"/>
         <source>Repair a user configuration</source>
-        <translation>kullanıcı yapılandırmasını onar</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="564"/>
         <location filename="mainwindow.ui" line="1271"/>
         <source>Modify User Account</source>
-        <translation>Kullanıcı Hesabını Değiştir</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="576"/>
         <location filename="mainwindow.ui" line="592"/>
         <source>Select user to repair</source>
-        <translation>Onarılacak kullanıcıyı seçin</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="579"/>
         <location filename="mainwindow.ui" line="1355"/>
         <source>User to change:</source>
-        <translation>Değişecek kullanıcı:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="624"/>
         <source>Restore Defaults</source>
-        <translation>Öntanımlılara Geri Dön</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="645"/>
@@ -197,12 +197,12 @@
     <message>
         <location filename="mainwindow.ui" line="651"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation>Mozilla (Firefox veya İceweasel) yapılandırma</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="654"/>
         <source>Alt+X</source>
-        <translation>Alt+X</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="661"/>
@@ -212,79 +212,79 @@
     <message>
         <location filename="mainwindow.ui" line="667"/>
         <source>Group memberships</source>
-        <translation>Grup üyeleri</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="670"/>
         <source>Alt+G</source>
-        <translation>Alt+G</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="680"/>
         <source>Change Autologin Settings</source>
-        <translation>Otomatik Giriş Ayarlarını Değiştir</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="686"/>
         <source>Log in automatically</source>
-        <translation>Otomatik olarak giriş</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="693"/>
         <source>Require password to log in</source>
-        <translation>Giriş için parola gerekli</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="708"/>
         <source>Copy/Sync</source>
-        <translation>Kopyala/Eşzamanla</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="735"/>
         <source>Copy Between Desktops</source>
-        <translation>Masaüstleri Arasında Kopyalama</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="762"/>
         <location filename="mainwindow.ui" line="829"/>
         <source>Select desktop to copy from</source>
-        <translation>Kopyalanacak masaüstünü seçin</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="775"/>
         <source>Select to only copy files</source>
-        <translation>Sadece kopyalanacak dosyaları seçin</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="778"/>
         <source>Copy only</source>
-        <translation>Sadece kopyala</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="794"/>
         <location filename="mainwindow.ui" line="807"/>
         <source>Select desktop to copy to</source>
-        <translation>Kopyalanacak masaüstünü seçin</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="816"/>
         <source>Copy to:</source>
-        <translation>Şuraya kopyala:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="838"/>
         <source>Copy from:</source>
-        <translation>Şuradan kopyala:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="851"/>
         <source>Select to copy and then delete differences</source>
-        <translation>Kopyayı seç ve farklı olanları sil</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="854"/>
         <source>Sync</source>
-        <translation>Eşzamanlama</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="900"/>
@@ -294,7 +294,7 @@
     <message>
         <location filename="mainwindow.ui" line="903"/>
         <source>Shared folder</source>
-        <translation>Paylaşılan klasörler</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="916"/>
@@ -304,7 +304,7 @@
     <message>
         <location filename="mainwindow.ui" line="919"/>
         <source>Entire home</source>
-        <translation>Tüm home klasörü</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="935"/>
@@ -314,7 +314,7 @@
     <message>
         <location filename="mainwindow.ui" line="938"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation>Mozilla (Firefox veya İceweasel) yapılandırma</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="951"/>
@@ -324,7 +324,7 @@
     <message>
         <location filename="mainwindow.ui" line="954"/>
         <source>Documents folder</source>
-        <translation>Belgeler klasörü</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="961"/>
@@ -334,58 +334,58 @@
     <message>
         <location filename="mainwindow.ui" line="977"/>
         <source>Progress</source>
-        <translation>Süreç</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1007"/>
         <location filename="mainwindow.ui" line="1023"/>
         <source>Status of the changes</source>
-        <translation>Değişikliklerin durumu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1026"/>
         <source>Status:</source>
-        <translation>Durum:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1042"/>
         <source>Progress of the changes</source>
-        <translation>Değişikliklerin durumu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1079"/>
         <source>Add/Remove Groups</source>
-        <translation>Gruplar Ekle/Kaldır</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1091"/>
         <source>Add Group</source>
-        <translation>Grup Ekle</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1121"/>
         <source>Group name:</source>
-        <translation>Grup adı:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1140"/>
         <source>groupname</source>
-        <translation>grup adı </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1169"/>
         <source>Delete Group</source>
-        <translation>Grup Sil</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1231"/>
         <source>Group to delete:</source>
-        <translation>Silinecek grup:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1259"/>
         <source>Group Membership</source>
-        <translation>Grup Üyeleri</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1375"/>
@@ -400,27 +400,27 @@
     <message>
         <location filename="mainwindow.ui" line="1455"/>
         <source>Apply any changes</source>
-        <translation>Değişiklikleri uygula</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1458"/>
         <source>Apply</source>
-        <translation>Uygula</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1465"/>
         <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1472"/>
         <source>Cancel any changes then quit</source>
-        <translation>Değişiklikleri iptal et ve çık</translation>
+        <translation>सर्व बदल रद्द करा आणि बंद करा</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1475"/>
         <source>Close</source>
-        <translation>Kapat</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1482"/>
@@ -430,12 +430,12 @@
     <message>
         <location filename="mainwindow.ui" line="1523"/>
         <source>Display help </source>
-        <translation>Yardımı görüntüle</translation>
+        <translation>मदत दाखवा</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1526"/>
         <source>Help</source>
-        <translation>Yardım</translation>
+        <translation>मदत</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1533"/>
@@ -445,12 +445,12 @@
     <message>
         <location filename="mainwindow.ui" line="1540"/>
         <source>About this application</source>
-        <translation>Uygulama hakkında</translation>
+        <translation>या अनुप्रयोगाबद्दल</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1543"/>
         <source>About...</source>
-        <translation>Hakkında...</translation>
+        <translation>विषयी</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1550"/>
@@ -475,33 +475,33 @@
         <location filename="mainwindow.cpp" line="913"/>
         <location filename="mainwindow.cpp" line="1026"/>
         <source>none</source>
-        <translation>hiçbiri</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="264"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>Kullanıcı yapılandırması onarılacak.Lütfen şimdi bütün diğer  uygulamaları kapatın. Bittiğinde çıkış yapın veya yeniden başlatın.Şimdi onarmak istediğinizden emin misiniz?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="286"/>
         <location filename="mainwindow.cpp" line="297"/>
         <source>Autologin options</source>
-        <translation>Otomatik giriş seçenekleri</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="287"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation>&apos;%1&apos; hesabı için otomatik giriş devre dışı bırakıldı.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="298"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation>&apos;%1&apos; hesabı için otomatik giriş etkinleştirildi.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="309"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation>Kopyalanacak yeri belirtmelisiniz. Giriş yaptığınız için masaüstüne kopyalayamazsınız.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="313"/>
@@ -511,18 +511,18 @@
     <message>
         <location filename="mainwindow.cpp" line="338"/>
         <source>Synchronizing desktop...</source>
-        <translation>Masaüstü eşitleniyor...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="340"/>
         <source>Copying desktop...</source>
-        <translation>Masaüstü kopyalanıyor...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="358"/>
         <location filename="mainwindow.cpp" line="550"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>Kullanıcı adı en az 2 karakter uzunluğunda olmalıdır. Devam etmeden önce lütfen daha uzun bir ad seçin.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="362"/>
@@ -530,9 +530,7 @@
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Kullanıcı adı küçük harf olmalı ve
-özel karakterler ve boşluklar içermemelidir.
-Devam etmeden önce lütfen başka bir ad seçin.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="371"/>
@@ -543,62 +541,60 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
         <location filename="mainwindow.cpp" line="376"/>
         <location filename="mainwindow.cpp" line="411"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation>Parola girdileri uyuşmuyor. Lütfen tekrar deneyin.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="381"/>
         <location filename="mainwindow.cpp" line="416"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation>Parola en az 2 karakter uzunluğunda olmalıdır.Devam etmeden önce daha uzun bir parola girin.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="398"/>
         <source>The user was added ok.</source>
-        <translation>Kullanıcı eklendi.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="402"/>
         <source>Failed to add the user.</source>
-        <translation>Kullanıcı ekleme başarısız oldu.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="430"/>
         <source>Password successfully changed.</source>
-        <translation>Parola başarıyla değiştirildi.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="434"/>
         <source>Failed to change password.</source>
-        <translation>Parola değiştirme başarısız oldu.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="439"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation>Bu işlem geri alınamaz. % 1 kullanıcısını silmek istediğinizden emin misiniz?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="452"/>
         <source>The user has been deleted.</source>
-        <translation>Kullanıcı silindi.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="455"/>
         <source>Failed to delete the user.</source>
-        <translation>Kullanıcı silme başarısız oldu.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="468"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>Grup adı en az 2 karakter uzunluğunda olmalıdır.  Devam etmeden önce lütfen daha uzun bir ad seçin. </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="472"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Grup adı küçük harf olmalı ve
-özel karakterler ve boşluklar içermemelidir.
-Devam etmeden önce lütfen başka bir ad seçin.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="481"/>
@@ -608,37 +604,37 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="mainwindow.cpp" line="488"/>
         <source>The system group was added ok.</source>
-        <translation>Sistem grubu eklendi.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="491"/>
         <source>Failed to add the system group.</source>
-        <translation>Sistem grubu ekleme başarısız oldu.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="494"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation>Bu işlem geri alınamaz. % 1 kullanıcısını silmek istediğinizden emin misiniz?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="501"/>
         <source>The group has been deleted.</source>
-        <translation>Grup silindi.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="504"/>
         <source>Failed to delete the group.</source>
-        <translation>Grup silme başarısız oldu.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="525"/>
         <source>The changes have been applied.</source>
-        <translation>Dwğişiklikler uygulandı.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="528"/>
         <source>Failed to apply group changes</source>
-        <translation>Grup değişiklikleri uygulanamadı</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="541"/>
@@ -669,75 +665,75 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
         <location filename="mainwindow.cpp" line="597"/>
         <location filename="mainwindow.cpp" line="626"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Masaüstü eşitleniyor...tamam</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="599"/>
         <location filename="mainwindow.cpp" line="628"/>
         <source>Copying desktop...ok</source>
-        <translation>Masaüstü kopyalanıyor...tamam</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="632"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Masaüstü eşitleniyor...başarısız oldu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="634"/>
         <source>Copying desktop...failed</source>
-        <translation>Masaüstü kopyalanıyor...başarısız oldu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="671"/>
         <location filename="mainwindow.cpp" line="965"/>
         <location filename="mainwindow.cpp" line="973"/>
         <source>browse...</source>
-        <translation>gözat...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="850"/>
         <source>About MX User Manager</source>
-        <translation>MX Kullanıcı Yöneticisi hakkında</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="851"/>
         <source>MX User Manager</source>
-        <translation>MX Kullanıcı Yöneticisi</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="853"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>MX Linux için basit kullanıcı yapılandırması</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="854"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>कॉपीराइट (c) एमएक्स लिनक्स</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="855"/>
         <source>License</source>
-        <translation>Ruhsat</translation>
+        <translation>परवाना</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="856"/>
         <source>Changelog</source>
-        <translation>Değişim günlüğü</translation>
+        <translation>बदल सूची</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="857"/>
         <source>Cancel</source>
-        <translation>İptal</translation>
+        <translation>रद्द करा</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="873"/>
         <source>&amp;Close</source>
-        <translation>&amp;Kapat</translation>
+        <translation>बंद</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="966"/>
         <source>Select folder to copy to</source>
-        <translation>Kopyalanacak klasörü seçin</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -745,7 +741,7 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>Bu programı root olarak çalıştırmalısınız.</translation>
+        <translation>आपण हा प्रोग्राम रूट म्हणूनच चालवावा.</translation>
     </message>
 </context>
 </TS>

@@ -32,6 +32,7 @@ TRANSLATIONS += translations/mx-user_am.ts \
                 translations/mx-user_ko.ts \
                 translations/mx-user_lt.ts \
                 translations/mx-user_mk.ts \
+                translations/mx-user_mr.ts \
                 translations/mx-user_nb.ts \
                 translations/mx-user_nl.ts \
                 translations/mx-user_pl.ts \

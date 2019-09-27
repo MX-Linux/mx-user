@@ -74,7 +74,7 @@
     <message>
         <location filename="mainwindow.ui" line="214"/>
         <source>password</source>
-        <translation type="unfinished"/>
+        <translation>Kata Kunci</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="230"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="mainwindow.ui" line="527"/>
         <source>Options</source>
-        <translation type="unfinished"/>
+        <translation>Pilihan</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="530"/>
@@ -405,7 +405,7 @@
     <message>
         <location filename="mainwindow.ui" line="1458"/>
         <source>Apply</source>
-        <translation type="unfinished"/>
+        <translation>Terapkan</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1465"/>
@@ -420,7 +420,7 @@
     <message>
         <location filename="mainwindow.ui" line="1475"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Tutup</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1482"/>
@@ -440,7 +440,7 @@
     <message>
         <location filename="mainwindow.ui" line="1533"/>
         <source>Alt+H</source>
-        <translation type="unfinished"/>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1540"/>
@@ -708,17 +708,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mainwindow.cpp" line="854"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="855"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>Lisensi</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="856"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="857"/>
@@ -728,7 +728,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="mainwindow.cpp" line="873"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Tutup</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="966"/>
