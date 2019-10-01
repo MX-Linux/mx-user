@@ -1,3 +1,12 @@
+mx-user (19.10) mx; urgency=medium
+
+  * sorted groups
+  * removed libcmd dependency
+  * fix: resetting group membership
+  * added confirmation message for resetting group/Mozilla settings
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 01 Oct 2019 17:06:08 -0400
+
 mx-user (19.8) mx; urgency=medium
 
   * added offline help file

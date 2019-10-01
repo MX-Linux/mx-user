@@ -1,6 +1,6 @@
 help			usr/share/doc/mx-user
+icons/mx-user.png	usr/share/icons/hicolor/256x256/apps
 license.html		usr/share/doc/mx-user
 mx-user			usr/sbin
 mx-user.desktop		usr/share/applications
-icons/mx-user.png	usr/share/icons/hicolor/256x256/apps
 translations/*.qm	usr/share/mx-user/locale
