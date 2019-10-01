@@ -109,7 +109,10 @@ void MainWindow::refreshRestore()
 {
     userComboBox->clear();
     userComboBox->addItem(tr("none"));
-    userComboBox->addItems(shell->getCmdOut("lslogins --noheadings -u -o user").split("\n"));
+    QStringList users = shell->getCmdOut("lslogins --noheadings -u -o user").split("\n");
+    users.removeAll("root");
+    users.sort();
+    userComboBox->addItems(users);
     checkGroups->setChecked(false);
     checkMozilla->setChecked(false);
     radioAutologinNo->setAutoExclusive(false);
