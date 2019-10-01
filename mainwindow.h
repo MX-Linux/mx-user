@@ -51,12 +51,11 @@ public:
     void applyMembership();
     void applyRename();
     void buildListGroups();
-    void displayDoc(QString url);
     void restartPanel(QString user);
 
 public slots:
-    void progress(int counter, int duration); // updates progressBar when tick signal is emited
-    void syncDone(int errorCode);
+    void progress();
+    void syncDone(bool success);
 
 private slots:
     void on_buttonAbout_clicked();

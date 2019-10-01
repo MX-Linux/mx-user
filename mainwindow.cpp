@@ -18,15 +18,19 @@
 //   limitations under the License.
 //
 
+#include "about.h"
 #include "mainwindow.h"
 #include "version.h"
 
+#include <QDebug>
 #include <QFileDialog>
 #include <QTextEdit>
-#include <QDebug>
+#include <QTimer>
 
-MainWindow::MainWindow(QWidget* parent) : QDialog(parent) {
-    qDebug() << "Program Version:" << VERSION;
+
+MainWindow::MainWindow(QWidget* parent) : QDialog(parent)
+{
+    qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     setWindowIcon(QApplication::windowIcon());
@@ -41,7 +45,8 @@ MainWindow::~MainWindow(){
 
 /////////////////////////////////////////////////////////////////////////
 // util functions
-bool MainWindow::replaceStringInFile(QString oldtext, QString newtext, QString filepath) {
+bool MainWindow::replaceStringInFile(QString oldtext, QString newtext, QString filepath)
+{
 
     QString cmd = QString("sed -i 's/%1/%2/g' %3").arg(oldtext).arg(newtext).arg(filepath);
     if (system(cmd.toUtf8()) != 0) {
@@ -54,10 +59,13 @@ bool MainWindow::replaceStringInFile(QString oldtext, QString newtext, QString f
 /////////////////////////////////////////////////////////////////////////
 // common
 
-void MainWindow::refresh() {
+void MainWindow::refresh()
+{
     setCursor(QCursor(Qt::ArrowCursor));
     syncProgressBar->setValue(0);
     int i = tabWidget->currentIndex();
+    buildListGroups();
+
     switch (i) {
 
     case 1:
@@ -85,16 +93,10 @@ void MainWindow::refresh() {
         refreshDelete();
         refreshChangePass();
         refreshRename();
-        const QStringList home_folders = shell->getOutput("ls -1 /home").split("\n");
-        for (const QString &folder : home_folders) {
-            if (folder.length() > 1 && folder != "ftp") {
-                if (shell->run("grep -w '^" + folder + "' /etc/passwd >/dev/null") == 0) {
-                    comboRenameUser->addItem(folder);
-                    comboChangePass->addItem(folder);
-                    comboDeleteUser->addItem(folder);
-                }
-            }
-        }
+        const QStringList users = shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n");
+        comboRenameUser->addItems(users);
+        comboChangePass->addItems(users);
+        comboDeleteUser->addItems(users);
         buttonApply->setEnabled(false);
         break;
     }
@@ -103,31 +105,11 @@ void MainWindow::refresh() {
 /////////////////////////////////////////////////////////////////////////
 // special
 
-void MainWindow::refreshRestore() {
-    char line[130];
-    char line2[130];
-    char *tok;
-    FILE *fp;
-    int i;
-    // locale
+void MainWindow::refreshRestore()
+{
     userComboBox->clear();
     userComboBox->addItem(tr("none"));
-    userComboBox->addItem("root");
-    fp = popen("ls -1 /home", "r");
-    if (fp != nullptr) {
-        while (fgets(line, sizeof line, fp) != nullptr) {
-            i = strlen(line);
-            line[--i] = '\0';
-            tok = strtok(line, " ");
-            if (tok != nullptr && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
-                sprintf(line2, "grep -w '^%s' /etc/passwd >/dev/null", tok);
-                if (system(line2) == 0) {
-                    userComboBox->addItem(tok);
-                }
-            }
-        }
-        pclose(fp);
-    }
+    userComboBox->addItems(shell->getCmdOut("lslogins --noheadings -u -o user").split("\n"));
     checkGroups->setChecked(false);
     checkMozilla->setChecked(false);
     radioAutologinNo->setAutoExclusive(false);
@@ -138,40 +120,25 @@ void MainWindow::refreshRestore() {
     radioAutologinYes->setAutoExclusive(true);
 }
 
-void MainWindow::refreshDesktop() {
-    char line[130];
-    QString cmd;
+void MainWindow::refreshDesktop()
+{
     fromUserComboBox->clear();
-    FILE *fp = popen("ls -1 /home", "r");
-    int i;
-    char *tok;
-    if (fp != nullptr) {
-        while (fgets(line, sizeof line, fp) != nullptr) {
-            i = strlen(line);
-            line[--i] = '\0';
-            tok = strtok(line, " ");
-            if (tok != nullptr && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
-                cmd = QString("grep -w '^%1' /etc/passwd >/dev/null").arg(tok);
-                if (system(cmd.toUtf8()) == 0) {
-                    fromUserComboBox->addItem(tok);
-                }
-            }
-        }
-        pclose(fp);
-    }
+    fromUserComboBox->addItems(shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n"));
     copyRadioButton->setChecked(true);
     entireRadioButton->setChecked(true);
     on_fromUserComboBox_activated("");
 }
 
-void MainWindow::refreshAdd() {
+void MainWindow::refreshAdd()
+{
     userNameEdit->clear();
     userPasswordEdit->clear();
     userPassword2Edit->clear();
     addUserBox->setEnabled(true);
 }
 
-void MainWindow::refreshDelete() {
+void MainWindow::refreshDelete()
+{
     comboDeleteUser->clear();
     comboDeleteUser->addItem(tr("none"));
     deleteHomeCheckBox->setChecked(false);
@@ -189,52 +156,25 @@ void MainWindow::refreshChangePass()
 }
 
 
-void MainWindow::refreshGroups() {
-    char line[130];
-    FILE *fp;
-    int i;
+void MainWindow::refreshGroups()
+{
     groupNameEdit->clear();
     addBox->setEnabled(true);
     deleteGroupCombo->clear();
     deleteGroupCombo->addItem(tr("none"));
     deleteBox->setEnabled(true);
-    fp = popen("cat /etc/group | cut -f 1 -d :", "r");
-    if (fp != nullptr) {
-        while (fgets(line, sizeof line, fp) != nullptr) {
-            i = strlen(line);
-            line[--i] = '\0';
-            if (line != nullptr && strlen(line) > 1 && strcmp(line, "root") != 0 ) {
-                deleteGroupCombo->addItem(line);
-            }
-        }
-        pclose(fp);
-    }
+    QStringList groups = shell->getCmdOut("cat /etc/group | cut -f 1 -d :").split("\n");
+    groups.removeAll("root");
+    groups.sort();
+    deleteGroupCombo->addItems(groups);
 }
 
-void MainWindow::refreshMembership() {
-    char line[130];
-    char line2[130];
-    char *tok;
-    FILE *fp;
-    int i;
+void MainWindow::refreshMembership()
+{
     userComboMembership->clear();
     userComboMembership->addItem(tr("none"));
     listGroups->clear();
-    fp = popen("ls -1 /home", "r");
-    if (fp != nullptr) {
-        while (fgets(line, sizeof line, fp) != nullptr) {
-            i = strlen(line);
-            line[--i] = '\0';
-            tok = strtok(line, " ");
-            if (tok != nullptr && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
-                sprintf(line2, "grep -w '^%s' /etc/passwd >/dev/null", tok);
-                if (system(line2) == 0) {
-                    userComboMembership->addItem(tok);
-                }
-            }
-        }
-        pclose(fp);
-    }
+    userComboMembership->addItems(shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n"));
 }
 
 void MainWindow::refreshRename()
@@ -247,7 +187,8 @@ void MainWindow::refreshRename()
 
 
 // apply but do not close
-void MainWindow::applyRestore() {
+void MainWindow::applyRestore()
+{
     QString user = userComboBox->currentText();
     if (user.compare(tr("none")) == 0) {
         // no user selected
@@ -272,13 +213,24 @@ void MainWindow::applyRestore() {
     // restore groups
     if (checkGroups->isChecked() && user.compare("root") != 0) {
         cmd = QString("sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
-        cmd = "usermod -G " + shell->getOutput(cmd) + " " + user;
+        QStringList extra_groups_list = shell->getCmdOut(cmd).split(",");
+        QStringList new_group_list;
+        for (const QString group : extra_groups_list) {
+            if (!listGroups->findItems(group, Qt::MatchExactly).isEmpty()) {
+                new_group_list << group;
+            }
+        }
+        cmd = "usermod -G '' " + user + "; usermod -G " + new_group_list.join(",") + " " + user; // reset group and add extra from /etc/adduser.conf
         system(cmd.toUtf8());
+        QMessageBox::information(this, windowTitle(),
+                                 tr("User group membership was restored."));
     }
     // restore Mozilla configs
     if (checkMozilla->isChecked()) {
         cmd = QString("/bin/rm -r %1/.mozilla").arg(home);
         system(cmd.toUtf8());
+        QMessageBox::information(this, windowTitle(),
+                                 tr("Mozilla settings were reset."));
     }
     if (radioAutologinNo->isChecked()) {
         cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
@@ -302,7 +254,8 @@ void MainWindow::applyRestore() {
     refresh();
 }
 
-void MainWindow::applyDesktop() {
+void MainWindow::applyDesktop()
+{
 
     if (toUserComboBox->currentText().isEmpty()) {
         QMessageBox::information(this, windowTitle(),
@@ -346,11 +299,14 @@ void MainWindow::applyDesktop() {
     cmd.append(fromDir);
     cmd.append(" ");
     cmd.append(toDir);
-    connect(shell, &Cmd::runTime, this, &MainWindow::progress);
-    syncDone(shell->run(cmd, QStringList() << "slowtick"));
+    QTimer timer;
+    timer.start(100);
+    connect(&timer, &QTimer::timeout, this, &MainWindow::progress);
+    syncDone(shell->run(cmd));
 }
 
-void MainWindow::applyAdd() {
+void MainWindow::applyAdd()
+{
     //validate data before proceeding
     // see if username is reasonable length
     if (userNameEdit->text().length() < 2) {
@@ -435,7 +391,8 @@ void MainWindow::applyChangePass()
     }
 }
 
-void MainWindow::applyDelete() {
+void MainWindow::applyDelete()
+{
     QString cmd = QString(tr("This action cannot be undone. Are you sure you want to delete user %1?")).arg(comboDeleteUser->currentText());
     int ans = QMessageBox::warning(this, windowTitle(), cmd,
                                    QMessageBox::Yes, QMessageBox::No);
@@ -458,7 +415,8 @@ void MainWindow::applyDelete() {
     }
 }
 
-void MainWindow::applyGroup() {
+void MainWindow::applyGroup()
+{
     //checks if adding or removing groups
     if (addBox->isEnabled()) {
         //validate data before proceeding
@@ -508,7 +466,8 @@ void MainWindow::applyGroup() {
     refresh();
 }
 
-void MainWindow::applyMembership() {
+void MainWindow::applyMembership()
+{
     QString cmd;
     //Add all WidgetItems from listGroups
     QList<QListWidgetItem *> items = listGroups->findItems(QString("*"), Qt::MatchWrap | Qt::MatchWildcard);
@@ -520,7 +479,7 @@ void MainWindow::applyMembership() {
     }
     cmd.chop(1);
     cmd = QString("usermod -G %1 %2").arg(cmd).arg(userComboMembership->currentText());
-    if (shell->run(cmd) == 0) {
+    if (shell->run(cmd)) {
         QMessageBox::information(this, windowTitle(),
                                  tr("The changes have been applied."));
     } else {
@@ -536,7 +495,7 @@ void MainWindow::applyRename()
 
     //validate data before proceeding
     // check if selected user is in use
-    if (shell->getOutput("logname") == old_name) {
+    if (shell->getCmdOut("logname") == old_name) {
         QMessageBox::critical(this, windowTitle(),
                               tr("The selected user name is currently in use.") + "\n\n" +
                               tr("To rename this user, please log out and log back in using another user account."));
@@ -565,8 +524,8 @@ void MainWindow::applyRename()
     }
 
     // rename user
-    shell->run("usermod --login " + new_name + " --move-home --home /home/" + new_name + " " + old_name);
-    if (shell->getExitCode(true) != 0) {
+    bool success = shell->run("usermod --login " + new_name + " --move-home --home /home/" + new_name + " " + old_name);
+    if (!success) {
         QMessageBox::critical(this, windowTitle(),
                               tr("Failed to rename the user. Please make sure that the user is not logged in, you might need to restart"));
         return;
@@ -586,8 +545,9 @@ void MainWindow::applyRename()
     refresh();
 }
 
-void MainWindow::syncDone(int errorCode) {
-    if (errorCode == 0) {
+void MainWindow::syncDone(bool success)
+{
+    if (success) {
         QString fromDir = QString("/home/%1").arg(fromUserComboBox->currentText());
         QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
 
@@ -613,7 +573,7 @@ void MainWindow::syncDone(int errorCode) {
         } else if (mozillaRadioButton->isChecked()) {
             cmd = QString("grep -rl \"home/%1\" /home/%2/.mozilla | xargs sed -i 's|home/%1|home/%2|g'").arg(fromUserComboBox->currentText()).arg(toUserComboBox->currentText());
         }
-        shell->run(cmd, QStringList() << "slowtick");
+        shell->run(cmd);
 
         if (entireRadioButton->isChecked()) {
             //delete some files
@@ -638,40 +598,21 @@ void MainWindow::syncDone(int errorCode) {
     setCursor(QCursor(Qt::ArrowCursor));
 }
 
-/////////////////////////////////////////////////////////////////////////
-// slots
 
-void MainWindow::on_fromUserComboBox_activated(QString) {
-    char line[130];
-    QString cmd;
-
+void MainWindow::on_fromUserComboBox_activated(QString)
+{
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
     toUserComboBox->clear();
-    FILE *fp = popen("ls -1 /home", "r");
-    int i;
-    char *tok;
-    if (fp != nullptr) {
-        while (fgets(line, sizeof line, fp) != nullptr) {
-            i = strlen(line);
-            line[--i] = '\0';
-            tok = strtok(line, " ");
-            if (tok != nullptr && strlen(tok) > 1 && strncmp(tok, "ftp", 3) != 0) {
-                cmd = QString("grep -w '^%1' /etc/passwd >/dev/null").arg(tok);
-                if (system(cmd.toUtf8()) == 0 && fromUserComboBox->currentText().compare(tok) != 0) {
-                    cmd = QString("who | grep -w '%1'").arg(tok);
-                    if (system(cmd.toUtf8()) != 0) {
-                        toUserComboBox->addItem(tok);
-                    }
-                }
-            }
-        }
-        pclose(fp);
-    }
+    QStringList items = shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n");
+    items.removeAll(shell->getCmdOut("logname"));
+    items.sort();
+    toUserComboBox->addItems(items);
     toUserComboBox->addItem(tr("browse..."));
 }
 
-void MainWindow::on_userComboBox_activated(QString) {
+void MainWindow::on_userComboBox_activated(QString)
+{
     buttonApply->setEnabled(true);
     if (userComboBox->currentText() == tr("none")) {
         refresh();
@@ -684,7 +625,8 @@ void MainWindow::on_userComboBox_activated(QString) {
     radioAutologinYes->setAutoExclusive(true);
 }
 
-void MainWindow::on_comboDeleteUser_activated(QString) {
+void MainWindow::on_comboDeleteUser_activated(QString)
+{
     addUserBox->setEnabled(false);
     changePasswordBox->setEnabled(false);
     renameUserBox->setEnabled(false);
@@ -694,7 +636,8 @@ void MainWindow::on_comboDeleteUser_activated(QString) {
     }
 }
 
-void MainWindow::on_userNameEdit_textEdited() {
+void MainWindow::on_userNameEdit_textEdited()
+{
     deleteUserBox->setEnabled(false);
     changePasswordBox->setEnabled(false);
     renameUserBox->setEnabled(false);
@@ -704,7 +647,8 @@ void MainWindow::on_userNameEdit_textEdited() {
     }
 }
 
-void MainWindow::on_groupNameEdit_textEdited() {
+void MainWindow::on_groupNameEdit_textEdited()
+{
     deleteBox->setEnabled(false);
     renameUserBox->setEnabled(false);
     buttonApply->setEnabled(true);
@@ -713,7 +657,8 @@ void MainWindow::on_groupNameEdit_textEdited() {
     }
 }
 
-void MainWindow::on_deleteGroupCombo_activated(QString) {
+void MainWindow::on_deleteGroupCombo_activated(QString)
+{
     addBox->setEnabled(false);
     renameUserBox->setEnabled(false);
     buttonApply->setEnabled(true);
@@ -722,7 +667,8 @@ void MainWindow::on_deleteGroupCombo_activated(QString) {
     }
 }
 
-void MainWindow::on_userComboMembership_activated(QString) {
+void MainWindow::on_userComboMembership_activated(QString)
+{
     buildListGroups();
     buttonApply->setEnabled(true);
     if (userComboMembership->currentText() == tr("none")) {
@@ -731,29 +677,21 @@ void MainWindow::on_userComboMembership_activated(QString) {
 }
 
 
-void MainWindow::buildListGroups(){
-    char line[130];
-    FILE *fp;
-    int i;
+void MainWindow::buildListGroups()
+{
     listGroups->clear();
     //read /etc/group and add all the groups in the listGroups
-    fp = popen("cat /etc/group | cut -f 1 -d :", "r");
-    if (fp != nullptr) {
-        while (fgets(line, sizeof line, fp) != nullptr) {
-            i = strlen(line);
-            line[--i] = '\0';
-            if (line != nullptr && strlen(line) > 1) {
-                QListWidgetItem *item = new QListWidgetItem;
-                item->setText(line);
-                item->setCheckState(Qt::Unchecked);
-                listGroups->addItem(item);
-            }
-        }
-        pclose(fp);
+    QStringList groups = shell->getCmdOut("cat /etc/group | cut -f 1 -d :").split("\n");
+    groups.sort();
+    for (const auto group : groups) {
+        QListWidgetItem *item = new QListWidgetItem;
+        item->setText(group);
+        item->setCheckState(Qt::Unchecked);
+        listGroups->addItem(item);
     }
     //check the boxes for the groups that the current user belongs to
     QString cmd = QString("id -nG %1").arg(userComboMembership->currentText());
-    QString out = shell->getOutput(cmd);
+    QString out = shell->getCmdOut(cmd);
     QStringList out_tok = out.split(" ");
     while (!out_tok.isEmpty()) {
         QString text = out_tok.takeFirst();
@@ -764,19 +702,9 @@ void MainWindow::buildListGroups(){
     }
 }
 
-void MainWindow::displayDoc(QString url)
-{
-    QString exec = "xdg-open";
-    QString user = shell->getOutput("logname");
-    if (system("command -v mx-viewer") == 0) { // use mx-viewer if available
-        exec = "mx-viewer";
-    }
-    QString cmd = "su " + user + " -c \"" + exec + " " + url + "\"&";
-    system(cmd.toUtf8());
-}
-
 // apply but do not close
-void MainWindow::on_buttonApply_clicked() {
+void MainWindow::on_buttonApply_clicked()
+{
     if (!buttonApply->isEnabled()) {
         return;
     }
@@ -827,64 +755,42 @@ void MainWindow::on_buttonApply_clicked() {
     }
 }
 
-void MainWindow::on_tabWidget_currentChanged() {
+void MainWindow::on_tabWidget_currentChanged()
+{
     refresh();
 }
 
 
 // close but do not apply
-void MainWindow::on_buttonCancel_clicked() {
+void MainWindow::on_buttonCancel_clicked()
+{
     close();
 }
 
-void MainWindow::progress(int counter, int duration)
+void MainWindow::progress()
 {
-    syncProgressBar->setMaximum(duration);
-    syncProgressBar->setValue(counter % (duration + 1));
+    if (syncProgressBar->value() == 100) {
+        syncProgressBar->reset();
+    }
+    syncProgressBar->setValue(syncProgressBar->value() + 1);
 }
 
 // show about
-void MainWindow::on_buttonAbout_clicked() {
+void MainWindow::on_buttonAbout_clicked()
+{
     this->hide();
-    QMessageBox msgBox(QMessageBox::NoIcon,
-                       tr("About MX User Manager"), "<p align=\"center\"><b><h2>" +
-                       tr("MX User Manager") + "</h2></b></p><p align=\"center\">" + "Version: " +
-                       VERSION + "</p><p align=\"center\"><h3>" +
-                       tr("Simple user configuration for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
-    QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
-    QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
-    QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
-    btnCancel->setIcon(QIcon::fromTheme("window-close"));
-
-    msgBox.exec();
-
-    if (msgBox.clickedButton() == btnLicense) {
-        displayDoc("file:///usr/share/doc/mx-user/license.html");
-    } else if (msgBox.clickedButton() == btnChangelog) {
-        QDialog *changelog = new QDialog(this);
-        changelog->resize(600, 500);
-
-        QTextEdit *text = new QTextEdit;
-        text->setReadOnly(true);
-        Cmd cmd;
-        text->setText(cmd.getOutput("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
-
-        QPushButton *btnClose = new QPushButton(tr("&Close"));
-        btnClose->setIcon(QIcon::fromTheme("window-close"));
-        connect(btnClose, &QPushButton::clicked, changelog, &QDialog::close);
-
-        QVBoxLayout *layout = new QVBoxLayout;
-        layout->addWidget(text);
-        layout->addWidget(btnClose);
-        changelog->setLayout(layout);
-        changelog->exec();
-    }
+    displayAboutMsgBox(tr("About %1").arg(this->windowTitle()), "<p align=\"center\"><b><h2>" + this->windowTitle() +"</h2></b></p><p align=\"center\">" +
+                       tr("Version: ") + VERSION + "</p><p align=\"center\"><h3>" +
+                        tr("Simple user configuration for MX Linux") +
+                       "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>",
+                       "/usr/share/doc/mx-user/license.html", tr("%1 License").arg(this->windowTitle()), true);
     this->show();
 }
 
 // Help button clicked
-void MainWindow::on_buttonHelp_clicked() {
+void MainWindow::on_buttonHelp_clicked()
+{
     QLocale locale;
     QString lang = locale.bcp47Name();
 
@@ -893,7 +799,7 @@ void MainWindow::on_buttonHelp_clicked() {
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs";
     }
-    displayDoc(url);
+    displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
 }
 
 
