@@ -87,6 +87,7 @@ private slots:
 
 private:
     Cmd *shell;
+    QStringList users;
 
 };
 
