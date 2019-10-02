@@ -36,7 +36,9 @@ MainWindow::MainWindow(QWidget* parent) : QDialog(parent)
     setWindowIcon(QApplication::windowIcon());
 
     shell = new Cmd(this);
+    tabWidget->blockSignals(true);
     tabWidget->setCurrentIndex(0);
+    tabWidget->blockSignals(false);
     refresh();
 }
 
@@ -64,10 +66,8 @@ void MainWindow::refresh()
     setCursor(QCursor(Qt::ArrowCursor));
     syncProgressBar->setValue(0);
     int i = tabWidget->currentIndex();
-    buildListGroups();
 
     switch (i) {
-
     case 1:
         refreshRestore();
         buttonApply->setEnabled(false);
@@ -93,7 +93,8 @@ void MainWindow::refresh()
         refreshDelete();
         refreshChangePass();
         refreshRename();
-        const QStringList users = shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n");
+        users = shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n");
+        users.sort();
         comboRenameUser->addItems(users);
         comboChangePass->addItems(users);
         comboDeleteUser->addItems(users);
@@ -102,16 +103,10 @@ void MainWindow::refresh()
     }
 }
 
-/////////////////////////////////////////////////////////////////////////
-// special
-
 void MainWindow::refreshRestore()
 {
     userComboBox->clear();
     userComboBox->addItem(tr("none"));
-    QStringList users = shell->getCmdOut("lslogins --noheadings -u -o user").split("\n");
-    users.removeAll("root");
-    users.sort();
     userComboBox->addItems(users);
     checkGroups->setChecked(false);
     checkMozilla->setChecked(false);
@@ -126,7 +121,7 @@ void MainWindow::refreshRestore()
 void MainWindow::refreshDesktop()
 {
     fromUserComboBox->clear();
-    fromUserComboBox->addItems(shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n"));
+    fromUserComboBox->addItems(users);
     copyRadioButton->setChecked(true);
     entireRadioButton->setChecked(true);
     on_fromUserComboBox_activated("");
@@ -177,7 +172,7 @@ void MainWindow::refreshMembership()
     userComboMembership->clear();
     userComboMembership->addItem(tr("none"));
     listGroups->clear();
-    userComboMembership->addItems(shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n"));
+    userComboMembership->addItems(users);
 }
 
 void MainWindow::refreshRename()
@@ -215,6 +210,7 @@ void MainWindow::applyRestore()
 
     // restore groups
     if (checkGroups->isChecked() && user.compare("root") != 0) {
+        buildListGroups();
         cmd = QString("sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
         QStringList extra_groups_list = shell->getCmdOut(cmd).split(",");
         QStringList new_group_list;
@@ -498,7 +494,7 @@ void MainWindow::applyRename()
 
     //validate data before proceeding
     // check if selected user is in use
-    if (shell->getCmdOut("logname") == old_name) {
+    if (shell->getCmdOut("logname", true) == old_name) {
         QMessageBox::critical(this, windowTitle(),
                               tr("The selected user name is currently in use.") + "\n\n" +
                               tr("To rename this user, please log out and log back in using another user account."));
@@ -607,8 +603,9 @@ void MainWindow::on_fromUserComboBox_activated(QString)
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
     toUserComboBox->clear();
-    QStringList items = shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n");
-    items.removeAll(shell->getCmdOut("logname"));
+    QStringList items = users;
+    items.removeAll(shell->getCmdOut("logname", true));
+    items.removeAll(fromUserComboBox->currentText());
     items.sort();
     toUserComboBox->addItems(items);
     toUserComboBox->addItem(tr("browse..."));
