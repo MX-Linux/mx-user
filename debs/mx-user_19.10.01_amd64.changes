@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Thu, 10 Oct 2019 00:32:01 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 19.10.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (19.10.01) mx; urgency=medium
+ .
+   * translation updates
+Checksums-Sha1:
+ f74f7137a8ff69184caa7f1b4ffddd7ff10a6e89 1155 mx-user_19.10.01.dsc
+ 8b5fa304da3b7265267161bac636b2e60f8b41f4 152072 mx-user_19.10.01.tar.xz
+ 3525034c9378cc4ee006663b6dcffc773417bde5 768502 mx-user-dbgsym_19.10.01_amd64.deb
+ 07676063779fae794f1119c5bb2f26d3152db674 11262 mx-user_19.10.01_amd64.buildinfo
+ e3edd069e18178a0af257dea7a01c74fbe3d6ddd 189590 mx-user_19.10.01_amd64.deb
+Checksums-Sha256:
+ 8f103236a1f25fdd9c32a67538b212626a7d7fc39163e4519d951fa938edac44 1155 mx-user_19.10.01.dsc
+ 9604ecf2916fe9ef9a230411c9eaaa4eea0175e8b1f45d421499ba01c4b1ec7f 152072 mx-user_19.10.01.tar.xz
+ 8f018e29e97c6670385b3c8372113a62ceec2eef68092c5d47887a0e3c255f07 768502 mx-user-dbgsym_19.10.01_amd64.deb
+ a6dd12ca06e699df1bf3fa758fe4897ba6ae75c2e91e502abb79b8bf4be5b971 11262 mx-user_19.10.01_amd64.buildinfo
+ 9591ca2406d469c1c755cca1ddea8d2859afd73ad62d7aedcdcff2dc71b62e47 189590 mx-user_19.10.01_amd64.deb
+Files:
+ 73a5021fabb3bcc20f380d5863abcb39 1155 system optional mx-user_19.10.01.dsc
+ 78897885517c814e64f33f7ece0f527f 152072 system optional mx-user_19.10.01.tar.xz
+ 2f55d740183e6b4a79b630a224748172 768502 debug optional mx-user-dbgsym_19.10.01_amd64.deb
+ 9111f1947bbd102fdf99f6b3afe762ec 11262 system optional mx-user_19.10.01_amd64.buildinfo
+ 18526a3513dcad74b3324e76fbc034f4 189590 system optional mx-user_19.10.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl2etPoTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBu6B/0QPst72cEJzBqYkQ2P6de4Ox2o7CpF
+zTyWydtoCvDj77+smRF1VLX/TExz4RnKPoRaj2qb7Exy3Su71VWs3fLLrbOvIHY0
+AQo+B1PRcm6fmf0xiC1RZpZYc+x8kyxyFOWUN+yCgfW3WGjA56d8pJrO4i1XKEvJ
+NHHT2Lh/VEB+8tPcnwIXEvYA/AE603uiMx/27l7ih/dQIYq1g6b0HaN9g+soeI8w
+uXu43OZVhcEZniWAKluhp80S6bsr7G3H6QgR3MOij1Nl+cYdkS2dTiOx86d9Jkv9
+Wgnq6LAnLZ4GRNrcmVocFqHDr7OnEBi55S5HTSqXAcIwiYi1r6prPUwq
+=SdtX
+-----END PGP SIGNATURE-----
