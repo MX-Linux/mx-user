@@ -214,7 +214,7 @@ void MainWindow::applyRestore()
         cmd = QString("sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
         QStringList extra_groups_list = shell->getCmdOut(cmd).split(",");
         QStringList new_group_list;
-        for (const QString group : extra_groups_list) {
+        for (const QString &group : extra_groups_list) {
             if (!listGroups->findItems(group, Qt::MatchExactly).isEmpty()) {
                 new_group_list << group;
             }
@@ -232,21 +232,25 @@ void MainWindow::applyRestore()
                                  tr("Mozilla settings were reset."));
     }
     if (radioAutologinNo->isChecked()) {
-        cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
-        system(cmd.toUtf8());
+        if (QFile::exists("/etc/lightdm/lightdm.conf")) {
+            cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
+            system(cmd.toUtf8());
+        }
         if (QFile::exists("/etc/sddm.conf")) {
-            system(QString("sed -i 's/^User=.*/User=/' /etc/sddm.conf").arg(user).toUtf8());
+            system("sed -i 's/^User=.*/User=/' /etc/sddm.conf");
         }
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
-        cmd = QString("grep -qE '^#autologin-user=%1'\\|'^autologin-user=%1' /etc/lightdm/lightdm.conf").arg(user);
-        if (system(cmd.toUtf8()) == 0) {
-            cmd = QString("sed -i -r '/^#autologin-user=%1/ s/^#//' /etc/lightdm/lightdm.conf").arg(user);
-            system(cmd.toUtf8());
-        } else {
-            cmd = QString("echo 'autologin-user=%1' >> /etc/lightdm/lightdm.conf").arg(user);
-            system(cmd.toUtf8());
+        if (QFile::exists("/etc/lightdm/lightdm.conf")) {
+            cmd = QString("grep -qE '^#autologin-user=%1'\\|'^autologin-user=%1' /etc/lightdm/lightdm.conf").arg(user);
+            if (system(cmd.toUtf8()) == 0) {
+                cmd = QString("sed -i -r '/^#autologin-user=%1/ s/^#//' /etc/lightdm/lightdm.conf").arg(user);
+                system(cmd.toUtf8());
+            } else {
+                cmd = QString("echo 'autologin-user=%1' >> /etc/lightdm/lightdm.conf").arg(user);
+                system(cmd.toUtf8());
+            }
         }
         if (QFile::exists("/etc/sddm.conf")) {
             system(QString("sed -i 's/^User=.*/User=%1/' /etc/sddm.conf").arg(user).toUtf8());
@@ -689,7 +693,7 @@ void MainWindow::buildListGroups()
     //read /etc/group and add all the groups in the listGroups
     QStringList groups = shell->getCmdOut("cat /etc/group | cut -f 1 -d :").split("\n");
     groups.sort();
-    for (const auto group : groups) {
+    for (const QString &group : groups) {
         QListWidgetItem *item = new QListWidgetItem;
         item->setText(group);
         item->setCheckState(Qt::Unchecked);

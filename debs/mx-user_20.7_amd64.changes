@@ -18,32 +18,32 @@ Changes:
  .
    * add autologin option for KDE
 Checksums-Sha1:
- b14cd6c91fbd28e52c6063041db9fce5e4c39561 1139 mx-user_20.7.dsc
- 9cc6f34c2f324ec510e479a7cdc893eec5f18e01 151936 mx-user_20.7.tar.xz
- 75e350233732bc5906d722e8230b461d470cda28 769094 mx-user-dbgsym_20.7_amd64.deb
- d5ea21e74db9c7e2d590a0478e72e585f051abed 10637 mx-user_20.7_amd64.buildinfo
- b7676b129b13f63f6f047f21191c0bd3c4220561 189914 mx-user_20.7_amd64.deb
+ 252a686e20dae8a23a6ca63e20d963d9317d5475 1139 mx-user_20.7.dsc
+ 1af8d2e1a27f0c6bf672bf7f02c9f9467a4bb9a6 151980 mx-user_20.7.tar.xz
+ 886f55cc74a23d1861f88b82da9460e7722fd82a 768550 mx-user-dbgsym_20.7_amd64.deb
+ 250b302fa6fb3b1947747e8d177780c688f0522f 10637 mx-user_20.7_amd64.buildinfo
+ 421eaa3537aa719bcbdee6357bfce61a287fb4dd 189790 mx-user_20.7_amd64.deb
 Checksums-Sha256:
- e57e54024753c128834d3526bcc15140c0c16b42cfd6d708a9a48231c1f63979 1139 mx-user_20.7.dsc
- 8414e0115d27f21604483396be64e83893d751f9fe5ae0b90b32cb0fd2d7f6b8 151936 mx-user_20.7.tar.xz
- 28bb8076fabc3a81ed74292f79c93a8cf57540b91df5c7f1560abc2c2f646301 769094 mx-user-dbgsym_20.7_amd64.deb
- 2cfa00c4474b21de8e1a579244c50437948e509b16139dd595d26c774bce4878 10637 mx-user_20.7_amd64.buildinfo
- ea11404442a1e4a6a07bcda1fed03976fb87394065ee35b4cfa7de3dece35db2 189914 mx-user_20.7_amd64.deb
+ 5418cc7d70c33bd77fa890627ba22343efb06171ea11f1eb7aaba810bfe1b266 1139 mx-user_20.7.dsc
+ 7bc13caafb4d65ac4c23594f1eafc87e52b59a56f2d39b18fdf723388e05e22b 151980 mx-user_20.7.tar.xz
+ 39bce893868ac87ff4e5250a378db85932640a77cb932ab364e5b7f7562b67bb 768550 mx-user-dbgsym_20.7_amd64.deb
+ 3744d29f545e7f5c2350a4e9b360dd98c7528ee4a29055c9c1ead199f120c87d 10637 mx-user_20.7_amd64.buildinfo
+ 8cc93213381ac418b28cdffd489e83a0c7dfcecdd60bf92e43d6b1ed3ee66f8b 189790 mx-user_20.7_amd64.deb
 Files:
- 45a8863a2d822256bb11eb9d6aa883df 1139 system optional mx-user_20.7.dsc
- 13950bf74c392886170e4ac13da983c7 151936 system optional mx-user_20.7.tar.xz
- 1184f9e225b4d43be4a747451f826f98 769094 debug extra mx-user-dbgsym_20.7_amd64.deb
- e784dac342cfe1587bab348d8bf0fab2 10637 system optional mx-user_20.7_amd64.buildinfo
- 66d6b101491ea9c2b96bcf8eb8fab24d 189914 system optional mx-user_20.7_amd64.deb
+ d937f355d4b1ab31a02c0a1a123e5e80 1139 system optional mx-user_20.7.dsc
+ ab9f5d75b43f301913e02bbc5faa0a5b 151980 system optional mx-user_20.7.tar.xz
+ 53fcadaf0f7e134cc646743bd29441f1 768550 debug extra mx-user-dbgsym_20.7_amd64.deb
+ 7d1963f3ed625dfde9a44d8f2fa16a1e 10637 system optional mx-user_20.7_amd64.buildinfo
+ 9db9876147b4abe88bafe4ce53f888c9 189790 system optional mx-user_20.7_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl8Y9k8THGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBEHB/9nR9pIQssBIW39gDiJyblncWylBjkj
-+j0+arvbT6O2h+Bld7YuoBg3V8cJqnrnuc+T11jboKCafRiFwSCvxaP0otMxxqdQ
-XhOGuCLM8TtFolpBo7K42DLnFVEzIAhQdWa7zYijiV5pJm5wbLe20PGIGBKEhk0w
-YDemD7zxs0zjXa3ky7to0imbW40qWNhkDW6SmaG3USkdHEhzZvOSHr8cPz9SU4bp
-mAf/sDZO8eTU9WreDbJ/1NSes8A93mO1r+FAozPUBN4Gza0jM9RUvxmUa7E5vHuL
-pARDwKftFamRTm6GH8PssLlS33a1xGfjMZKE1+yBY2GgakzN5ppZxxUs
-=pOyk
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl8Y+xATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumICTCADQ/1Cdho5QuyaQmNwhPDg3ztRoPozy
+bwIpk8qZdUd9xxybHSZ5WwSSexWd869WAkQl+OhfZx4iGFUqtBlLb2dfoXM+VAke
+qwNTsbb/R+FpfQaLSM/5lXNKJ1OP2CY7tJVDpQa33e47vHs4tAsYwz0TQN48aaOS
+oUaEPV5PnluMjlhH3iJwwbvcPlhQ5l8IzH1hgzoTJ+hFbwYW07ST20AeuD9Y/5ye
+TA7WafAggs/cS+TO4pSHCK6JFDQslNgN8Eta8bI7DC0rzbDhKN6gkk4hKITPZdiq
+mgpXzw3NnNIWrattTv7i/YowRr4rF5PkUSQU6Z56XD4TUO5Bijz1gl0B
+=msj7
 -----END PGP SIGNATURE-----
