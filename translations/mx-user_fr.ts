@@ -470,12 +470,12 @@
         <location filename="../mainwindow.cpp" line="173"/>
         <location filename="../mainwindow.cpp" line="182"/>
         <location filename="../mainwindow.cpp" line="191"/>
-        <location filename="../mainwindow.cpp" line="623"/>
-        <location filename="../mainwindow.cpp" line="640"/>
-        <location filename="../mainwindow.cpp" line="671"/>
-        <location filename="../mainwindow.cpp" line="680"/>
-        <location filename="../mainwindow.cpp" line="825"/>
-        <location filename="../mainwindow.cpp" line="938"/>
+        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="644"/>
+        <location filename="../mainwindow.cpp" line="675"/>
+        <location filename="../mainwindow.cpp" line="684"/>
+        <location filename="../mainwindow.cpp" line="829"/>
+        <location filename="../mainwindow.cpp" line="942"/>
         <source>none</source>
         <translation>aucune</translation>
     </message>
@@ -495,50 +495,50 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="240"/>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="258"/>
         <source>Autologin options</source>
         <translation>Options de connexion automatique</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="241"/>
+        <location filename="../mainwindow.cpp" line="243"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
         <translation>La connexion automatique a été désactivée pour le compte &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="259"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation>La connexion automatique a été activée pour le compte &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="267"/>
+        <location filename="../mainwindow.cpp" line="271"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation>Vous devez spécifier une destination pour &quot;copier vers&quot;. Vous ne pouvez pas copier vers le bureau auquel vous êtes connecté.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="271"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>Avant de débuter la copie, veuillez fermer toutes les applications ouvertes. Assurez-vous que le répertoire de destination a une taille suffisante pour contenir les fichiers que vous désirez copier. Le processus peut effacer ou écraser vos fichiers ou configurations du bureau de destination. Êtes-vous certain(e) de vouloir continuer?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="296"/>
+        <location filename="../mainwindow.cpp" line="300"/>
         <source>Synchronizing desktop...</source>
         <translation>Synchronisation des bureaux...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="298"/>
+        <location filename="../mainwindow.cpp" line="302"/>
         <source>Copying desktop...</source>
         <translation>Copie des bureaux...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="319"/>
-        <location filename="../mainwindow.cpp" line="514"/>
+        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="518"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Le nom d&apos;utilisateur doit comporter au moins 2 caractères. Veuillez choisir un nom d&apos;utilisateur plus long avant de continuer.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
-        <location filename="../mainwindow.cpp" line="518"/>
+        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="522"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -547,64 +547,64 @@ ne peut contenir ni caractères spéciaux ni espaces.
 Veuillez choisir un autre nom avant de poursuivre.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="332"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
         <translation>Désolé, ce nom est déjà attribué. Veuillez choisir un nom différent.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="337"/>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="341"/>
+        <location filename="../mainwindow.cpp" line="376"/>
         <source>Password entries do not match. Please try again.</source>
         <translation>Les mots de passe entrés ne correspondent pas. Veuillez réessayer.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="342"/>
-        <location filename="../mainwindow.cpp" line="377"/>
+        <location filename="../mainwindow.cpp" line="346"/>
+        <location filename="../mainwindow.cpp" line="381"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
         <translation>Le mot de passe doit contenir au moins 2 caractères. Veuillez entrer un mot de passe plus long avant de poursuivre.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="359"/>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>The user was added ok.</source>
         <translation>L&apos;utilisateur a été ajouté avec succès.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="367"/>
         <source>Failed to add the user.</source>
         <translation>Ajout de l&apos;utilisateur impossible.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="391"/>
+        <location filename="../mainwindow.cpp" line="395"/>
         <source>Password successfully changed.</source>
         <translation>Mot de passe modifié avec succès</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
+        <location filename="../mainwindow.cpp" line="399"/>
         <source>Failed to change password.</source>
         <translation>La modification du mot de passe a échoué</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation>Cette action est irréversible. Êtes-vous sûr(e) de vouloir supprimer l&apos;utilisateur %1?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="418"/>
         <source>The user has been deleted.</source>
         <translation>L&apos;utilisateur a été supprimé.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>Failed to delete the user.</source>
         <translation>Impossible de supprimer l&apos;utilisateur.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="431"/>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Le nom du groupe doit être d&apos;au moins 2 caractères. Veuillez sélectionner un nom plus long avant de poursuivre.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
+        <location filename="../mainwindow.cpp" line="439"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -613,131 +613,131 @@ ne peut contenir ni caractères spéciaux ni espaces.
 Veuillez choisir un autre nom avant de poursuivre.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="444"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
         <translation>Désolé, ce nom de Groupe est déjà utilisé. Veuillez choisir un nom différent.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="451"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>The system group was added ok.</source>
         <translation>Le groupe du système a bien été ajouté.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="458"/>
         <source>Failed to add the system group.</source>
         <translation>Impossible d&apos;ajouter le groupe du système.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="461"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation>Cette action est irréversible. Êtes-vous sûr(e) de vouloir supprimer le groupe %1?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="464"/>
+        <location filename="../mainwindow.cpp" line="468"/>
         <source>The group has been deleted.</source>
         <translation>Le groupe a été supprimé.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="467"/>
+        <location filename="../mainwindow.cpp" line="471"/>
         <source>Failed to delete the group.</source>
         <translation>Impossible de supprimer le groupe.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="489"/>
+        <location filename="../mainwindow.cpp" line="493"/>
         <source>The changes have been applied.</source>
         <translation>Les modifications ont été appliquées.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="492"/>
+        <location filename="../mainwindow.cpp" line="496"/>
         <source>Failed to apply group changes</source>
         <translation>Impossible d&apos;appliquer les changements au groupe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>The selected user name is currently in use.</source>
         <translation>Le nom d&apos;utilisateur choisi est déjà attribué.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="506"/>
+        <location filename="../mainwindow.cpp" line="510"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
         <translation>Pour modifier le nom de cet utilisateur, déconnectez- vous puis reconnectez-vous sous un autre compte.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="527"/>
+        <location filename="../mainwindow.cpp" line="531"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>Désolé, ce nom est déjà attribué sur votre système. Veuillez choisir un nom différent.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="535"/>
+        <location filename="../mainwindow.cpp" line="539"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
         <translation>Échec lors du renommage. Assurez-vous que l&apos;utilisateur ne soit pas connecté. Vous devrez peut-être redémarrer.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="549"/>
+        <location filename="../mainwindow.cpp" line="553"/>
         <source>The user was renamed.</source>
         <translation>Le nom de l&apos;utilisateur a été changé.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="562"/>
-        <location filename="../mainwindow.cpp" line="591"/>
+        <location filename="../mainwindow.cpp" line="566"/>
+        <location filename="../mainwindow.cpp" line="595"/>
         <source>Synchronizing desktop...ok</source>
         <translation>Synchronisation des bureaux...réussie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="564"/>
-        <location filename="../mainwindow.cpp" line="593"/>
+        <location filename="../mainwindow.cpp" line="568"/>
+        <location filename="../mainwindow.cpp" line="597"/>
         <source>Copying desktop...ok</source>
         <translation>Copie des bureaux...réussie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="597"/>
+        <location filename="../mainwindow.cpp" line="601"/>
         <source>Synchronizing desktop...failed</source>
         <translation>Synchronisation des bureaux...échec</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="599"/>
+        <location filename="../mainwindow.cpp" line="603"/>
         <source>Copying desktop...failed</source>
         <translation>Copie des bureaux...échec</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="617"/>
-        <location filename="../mainwindow.cpp" line="877"/>
-        <location filename="../mainwindow.cpp" line="885"/>
+        <location filename="../mainwindow.cpp" line="621"/>
+        <location filename="../mainwindow.cpp" line="881"/>
+        <location filename="../mainwindow.cpp" line="889"/>
         <source>browse...</source>
         <translation>Navigation...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="788"/>
+        <location filename="../mainwindow.cpp" line="792"/>
         <source>About %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="789"/>
+        <location filename="../mainwindow.cpp" line="793"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="790"/>
+        <location filename="../mainwindow.cpp" line="794"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>Configuration simple des utilisateurs pour MX Linux </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="792"/>
+        <location filename="../mainwindow.cpp" line="796"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="793"/>
+        <location filename="../mainwindow.cpp" line="797"/>
         <source>%1 License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="808"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>%1 Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="878"/>
+        <location filename="../mainwindow.cpp" line="882"/>
         <source>Select folder to copy to</source>
         <translation>Sélectionner le répertoire de destination</translation>
     </message>

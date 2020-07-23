@@ -13,20 +13,20 @@ Build-Depends: debhelper (>= 9), qtbase5-dev, qttools5-dev-tools
 Package-List:
  mx-user deb system optional arch=any
 Checksums-Sha1:
- 9cc6f34c2f324ec510e479a7cdc893eec5f18e01 151936 mx-user_20.7.tar.xz
+ 1af8d2e1a27f0c6bf672bf7f02c9f9467a4bb9a6 151980 mx-user_20.7.tar.xz
 Checksums-Sha256:
- 8414e0115d27f21604483396be64e83893d751f9fe5ae0b90b32cb0fd2d7f6b8 151936 mx-user_20.7.tar.xz
+ 7bc13caafb4d65ac4c23594f1eafc87e52b59a56f2d39b18fdf723388e05e22b 151980 mx-user_20.7.tar.xz
 Files:
- 13950bf74c392886170e4ac13da983c7 151936 mx-user_20.7.tar.xz
+ ab9f5d75b43f301913e02bbc5faa0a5b 151980 mx-user_20.7.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl8Y9k8THGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumMF9CADHxxyXhhD9DQX/SXhRFDCVXO39WDHe
-86bQ0K2XADlyL+pOdixjV7UKMbP6LGyTdzBNbSV/JJ1Mxy+FcSi7az8ig/ft6Olu
-j0XupwZZZ4HePJTCUb1bBv6zuSqHpYZE7bYcGV+5yK4O402UO1cK7XREHQ6eZhrI
-+lVs6ZM6vBrVZEc6KXDz8IsmCBZ0qTlXXKAp7SmekvUCFUuOHzdX7Nes48iI6CvJ
-du57agrfk3270A0gcICm0X8rWx48t+et90ZXjf88+eVo7Et/k9c3woI2MisW/BDA
-2ebXjucNZZ9rkr+3x7bEJpok9iczGiAnDfbvbGA1PJlctH/21c/CA8sC
-=CLCd
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl8Y+w8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumEaGB/0T9QM1LXZu6ahZsJsgNUNJlM8DeQn6
+trfbpS2WKbjOh59JKWNtKClHQML4dt2As6UMaECwBduyMARGgTuEJc6wsj7WkwjR
+hOc0cLyeqCXtjxHVomYvmGodP+HOsm3N2bAkH2pEbkCvU1TTiuULun1bRHHOACy1
+HVGZ3T9ti/08jFdp+lXjmiZhrc49HDr5ET6MhvXbI34u7cP3X3IsNINEQfI3SSCL
+3U/N5KCA8yl7j/XMtQXS4xOcIyLGSQaFl3t8f4yIVoY2lo8nIhfcW8esrepEmSJ8
+ZutT3llzZ+D33DfeM35hSr9oYs8wDwL12jYHA8pMdOiz0TKgQaU8APQH
+=qHll
 -----END PGP SIGNATURE-----
