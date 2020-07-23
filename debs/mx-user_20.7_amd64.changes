@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 22 Jul 2020 22:27:23 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 20.7
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (20.7) mx; urgency=medium
+ .
+   * add autologin option for KDE
+Checksums-Sha1:
+ b14cd6c91fbd28e52c6063041db9fce5e4c39561 1139 mx-user_20.7.dsc
+ 9cc6f34c2f324ec510e479a7cdc893eec5f18e01 151936 mx-user_20.7.tar.xz
+ 75e350233732bc5906d722e8230b461d470cda28 769094 mx-user-dbgsym_20.7_amd64.deb
+ d5ea21e74db9c7e2d590a0478e72e585f051abed 10637 mx-user_20.7_amd64.buildinfo
+ b7676b129b13f63f6f047f21191c0bd3c4220561 189914 mx-user_20.7_amd64.deb
+Checksums-Sha256:
+ e57e54024753c128834d3526bcc15140c0c16b42cfd6d708a9a48231c1f63979 1139 mx-user_20.7.dsc
+ 8414e0115d27f21604483396be64e83893d751f9fe5ae0b90b32cb0fd2d7f6b8 151936 mx-user_20.7.tar.xz
+ 28bb8076fabc3a81ed74292f79c93a8cf57540b91df5c7f1560abc2c2f646301 769094 mx-user-dbgsym_20.7_amd64.deb
+ 2cfa00c4474b21de8e1a579244c50437948e509b16139dd595d26c774bce4878 10637 mx-user_20.7_amd64.buildinfo
+ ea11404442a1e4a6a07bcda1fed03976fb87394065ee35b4cfa7de3dece35db2 189914 mx-user_20.7_amd64.deb
+Files:
+ 45a8863a2d822256bb11eb9d6aa883df 1139 system optional mx-user_20.7.dsc
+ 13950bf74c392886170e4ac13da983c7 151936 system optional mx-user_20.7.tar.xz
+ 1184f9e225b4d43be4a747451f826f98 769094 debug extra mx-user-dbgsym_20.7_amd64.deb
+ e784dac342cfe1587bab348d8bf0fab2 10637 system optional mx-user_20.7_amd64.buildinfo
+ 66d6b101491ea9c2b96bcf8eb8fab24d 189914 system optional mx-user_20.7_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl8Y9k8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBEHB/9nR9pIQssBIW39gDiJyblncWylBjkj
++j0+arvbT6O2h+Bld7YuoBg3V8cJqnrnuc+T11jboKCafRiFwSCvxaP0otMxxqdQ
+XhOGuCLM8TtFolpBo7K42DLnFVEzIAhQdWa7zYijiV5pJm5wbLe20PGIGBKEhk0w
+YDemD7zxs0zjXa3ky7to0imbW40qWNhkDW6SmaG3USkdHEhzZvOSHr8cPz9SU4bp
+mAf/sDZO8eTU9WreDbJ/1NSes8A93mO1r+FAozPUBN4Gza0jM9RUvxmUa7E5vHuL
+pARDwKftFamRTm6GH8PssLlS33a1xGfjMZKE1+yBY2GgakzN5ppZxxUs
+=pOyk
+-----END PGP SIGNATURE-----
