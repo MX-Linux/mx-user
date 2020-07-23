@@ -234,6 +234,9 @@ void MainWindow::applyRestore()
     if (radioAutologinNo->isChecked()) {
         cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
         system(cmd.toUtf8());
+        if (QFile::exists("/etc/sddm.conf")) {
+            system(QString("sed -i 's/^User=.*/User=/' /etc/sddm.conf").arg(user).toUtf8());
+        }
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
@@ -244,6 +247,9 @@ void MainWindow::applyRestore()
         } else {
             cmd = QString("echo 'autologin-user=%1' >> /etc/lightdm/lightdm.conf").arg(user);
             system(cmd.toUtf8());
+        }
+        if (QFile::exists("/etc/sddm.conf")) {
+            system(QString("sed -i 's/^User=.*/User=%1/' /etc/sddm.conf").arg(user).toUtf8());
         }
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been enabled for the '%1' account.").arg(user)));
