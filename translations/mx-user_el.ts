@@ -474,12 +474,12 @@
         <location filename="../mainwindow.cpp" line="173"/>
         <location filename="../mainwindow.cpp" line="182"/>
         <location filename="../mainwindow.cpp" line="191"/>
-        <location filename="../mainwindow.cpp" line="627"/>
-        <location filename="../mainwindow.cpp" line="644"/>
-        <location filename="../mainwindow.cpp" line="675"/>
-        <location filename="../mainwindow.cpp" line="684"/>
-        <location filename="../mainwindow.cpp" line="829"/>
-        <location filename="../mainwindow.cpp" line="942"/>
+        <location filename="../mainwindow.cpp" line="634"/>
+        <location filename="../mainwindow.cpp" line="651"/>
+        <location filename="../mainwindow.cpp" line="682"/>
+        <location filename="../mainwindow.cpp" line="691"/>
+        <location filename="../mainwindow.cpp" line="836"/>
+        <location filename="../mainwindow.cpp" line="949"/>
         <source>none</source>
         <translation>κανένα</translation>
     </message>
@@ -679,71 +679,71 @@ Please choose another name before proceeding.</source>
         <translation>Δεν ήταν δυνατή η μετονομασία του χρήστη. Βεβαιωθείτε ότι ο χρήστης δεν είναι συνδεδεμένος, ίσως χρειάζεται επανεκκίνηση</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="553"/>
+        <location filename="../mainwindow.cpp" line="560"/>
         <source>The user was renamed.</source>
         <translation>Ο χρήστης μετονομάστηκε.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="566"/>
-        <location filename="../mainwindow.cpp" line="595"/>
+        <location filename="../mainwindow.cpp" line="573"/>
+        <location filename="../mainwindow.cpp" line="602"/>
         <source>Synchronizing desktop...ok</source>
         <translation>Συγχρονισμός επιφάνεια εργασίας ... ok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="568"/>
-        <location filename="../mainwindow.cpp" line="597"/>
+        <location filename="../mainwindow.cpp" line="575"/>
+        <location filename="../mainwindow.cpp" line="604"/>
         <source>Copying desktop...ok</source>
         <translation>Αντιγραφή επιφάνεια εργασίας ... ok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="601"/>
+        <location filename="../mainwindow.cpp" line="608"/>
         <source>Synchronizing desktop...failed</source>
         <translation>Συγχρονισμός επιφάνειας εργασίας ... απέτυχε</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="603"/>
+        <location filename="../mainwindow.cpp" line="610"/>
         <source>Copying desktop...failed</source>
         <translation>Αντιγραφή επιφάνεια εργασίας... απέτυχε</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="621"/>
-        <location filename="../mainwindow.cpp" line="881"/>
-        <location filename="../mainwindow.cpp" line="889"/>
+        <location filename="../mainwindow.cpp" line="628"/>
+        <location filename="../mainwindow.cpp" line="888"/>
+        <location filename="../mainwindow.cpp" line="896"/>
         <source>browse...</source>
         <translation>περιηγηθείτε ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="792"/>
+        <location filename="../mainwindow.cpp" line="799"/>
         <source>About %1</source>
         <translation>Περί %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="793"/>
+        <location filename="../mainwindow.cpp" line="800"/>
         <source>Version: </source>
         <translation>Έκδοση:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="794"/>
+        <location filename="../mainwindow.cpp" line="801"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>Απλή διαμόρφωση χρήστη για MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="796"/>
+        <location filename="../mainwindow.cpp" line="803"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c)  MX Linux </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="797"/>
+        <location filename="../mainwindow.cpp" line="804"/>
         <source>%1 License</source>
         <translation>%1 Άδεια</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="812"/>
+        <location filename="../mainwindow.cpp" line="819"/>
         <source>%1 Help</source>
         <translation>%1 Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="889"/>
         <source>Select folder to copy to</source>
         <translation>Επιλέξτε φάκελο </translation>
     </message>
@@ -772,9 +772,8 @@ Please choose another name before proceeding.</source>
         <translation>&amp;Κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="41"/>
         <source>You must run this program as root.</source>
-        <translation>Πρέπει να τρέξετε αυτή την εφασρμογή ως Root. </translation>
+        <translation type="vanished">Πρέπει να τρέξετε αυτή την εφασρμογή ως Root. </translation>
     </message>
 </context>
 </TS>

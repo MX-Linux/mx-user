@@ -1,3 +1,9 @@
+mx-user (20.12) mx; urgency=medium
+
+  * change autologin name when renaming user
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 06 Dec 2020 13:35:44 -0500
+
 mx-user (20.7) mx; urgency=medium
 
   * add autologin option for KDE
