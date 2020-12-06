@@ -502,7 +502,7 @@ void MainWindow::applyRename()
     QString old_name = comboRenameUser->currentText();
     QString new_name = renameUserNameEdit->text();
 
-    //validate data before proceeding
+    // validate data before proceeding
     // check if selected user is in use
     if (shell->getCmdOut("logname", true) == old_name) {
         QMessageBox::critical(this, windowTitle(),
@@ -540,15 +540,22 @@ void MainWindow::applyRename()
         return;
     }
 
-    // rename other instances of the old name, like "Finger" name iyf present
+    // rename other instances of the old name, like "Finger" name if present
     shell->run("sed -i 's/\\b" + old_name + "\\b/" + new_name + "/g' /etc/passwd");
 
     // change group
     shell->run("groupmod --new-name " + new_name + " " + old_name);
 
     // fix "home/old_user" string in all ~/ files
-    cmd = QString("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'").arg(old_name).arg(new_name);
-    shell->run(cmd);
+    shell->run(QString("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'").arg(old_name).arg(new_name));
+
+    // change autologin name (Xfce and KDE)
+    if (QFile::exists("/etc/lightdm/lightdm.conf")) {
+        shell->run(QString("sed -i 's/autologin-user=%1/autologin-user=%2/g' /etc/lightdm/lightdm.conf").arg(old_name).arg(new_name));
+    }
+    if (QFile::exists("/etc/sddm.conf")) {
+        shell->run(QString("sed -i 's/User=%1/User=%2/g' /etc/sddm.conf").arg(old_name).arg(new_name));
+    }
 
     QMessageBox::information(this, windowTitle(), tr("The user was renamed."));
     refresh();
