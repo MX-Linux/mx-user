@@ -322,7 +322,7 @@ void MainWindow::applyAdd()
         QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
         return;
-    } else if (!userNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
+    } else if (!userNameEdit->text().contains(QRegularExpression("^[a-z_][a-z0-9_-]*[$]?$"))) {
         QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be lower case and it\n"
                                  "cannot contain special characters or spaces.\n"
@@ -434,7 +434,7 @@ void MainWindow::applyGroup()
             QMessageBox::critical(this, windowTitle(),
                                   tr("The group name needs to be at least 2 characters long. Please select a longer name before proceeding."));
             return;
-        } else if (!groupNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
+        } else if (!groupNameEdit->text().contains(QRegularExpression("^[a-z_][a-z0-9_-]*[$]?$"))) {
             QMessageBox::critical(this, windowTitle(),
                                   tr("The group name needs to be lower case and it \n"
                                      "cannot contain special characters or spaces.\n"
@@ -517,7 +517,7 @@ void MainWindow::applyRename()
         QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
         return;
-    } else if (!new_name.contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
+    } else if (!new_name.contains(QRegularExpression("^[a-z_][a-z0-9_-]*[$]?$"))) {
         QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be lower case and it\n"
                                  "cannot contain special characters or spaces.\n"
