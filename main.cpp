@@ -15,8 +15,10 @@
 //
 
 #include <QApplication>
-#include <QTranslator>
+#include <QLibraryInfo>
 #include <QLocale>
+#include <QTranslator>
+
 #include "mainwindow.h"
 #include <unistd.h>
 
@@ -25,11 +27,16 @@ int main( int argc, char ** argv ) {
     app.setWindowIcon(QIcon::fromTheme("mx-user"));
 
     QTranslator qtTran;
-    qtTran.load(QString("qt_") + QLocale::system().name());
-    app.installTranslator(&qtTran);
+    if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
+        app.installTranslator(&qtTran);
+
+    QTranslator qtBaseTran;
+    if (qtBaseTran.load("qtbase_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
+        app.installTranslator(&qtBaseTran);
+
     QTranslator appTran;
-    appTran.load(QString("mx-user_") + QLocale::system().name(), "/usr/share/mx-user/locale");
-    app.installTranslator(&appTran);
+    if (appTran.load(app.applicationName() + "_" + QLocale::system().name(), "/usr/share/" + app.applicationName() + "/locale"))
+        app.installTranslator(&appTran);
 
     if (getuid() == 0) {
         MainWindow mw;
@@ -37,10 +44,6 @@ int main( int argc, char ** argv ) {
         return app.exec();
     } else {
         system("su-to-root -X -c " + QCoreApplication::applicationFilePath().toUtf8() + "&");
-//        QApplication::beep();
-//        QMessageBox::critical(nullptr, QString::null,
-//                              QApplication::tr("You must run this program as root."));
-//        return EXIT_FAILURE;
     }
 }
 
