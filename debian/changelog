@@ -1,3 +1,9 @@
+mx-user (20.12.01) mx; urgency=medium
+
+  * adjust autologin user handling for lightdm
+
+ -- fehlix <fehlix@mxlinux.org>  Sun, 20 Dec 2020 20:05:02 -0400
+
 mx-user (20.12) mx; urgency=medium
 
   * change autologin name when renaming user
