@@ -474,12 +474,12 @@
         <location filename="../mainwindow.cpp" line="173"/>
         <location filename="../mainwindow.cpp" line="182"/>
         <location filename="../mainwindow.cpp" line="191"/>
-        <location filename="../mainwindow.cpp" line="634"/>
-        <location filename="../mainwindow.cpp" line="651"/>
-        <location filename="../mainwindow.cpp" line="682"/>
-        <location filename="../mainwindow.cpp" line="691"/>
-        <location filename="../mainwindow.cpp" line="836"/>
-        <location filename="../mainwindow.cpp" line="949"/>
+        <location filename="../mainwindow.cpp" line="628"/>
+        <location filename="../mainwindow.cpp" line="645"/>
+        <location filename="../mainwindow.cpp" line="676"/>
+        <location filename="../mainwindow.cpp" line="685"/>
+        <location filename="../mainwindow.cpp" line="830"/>
+        <location filename="../mainwindow.cpp" line="943"/>
         <source>none</source>
         <translation>κανένα</translation>
     </message>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
-        <location filename="../mainwindow.cpp" line="258"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Autologin options</source>
         <translation>Επιλογές Autologin</translation>
     </message>
@@ -510,39 +510,39 @@
         <translation>Autologin έχει απενεργοποιηθεί για το &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="259"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation>Autologin έχει ενεργοποιηθεί για το &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="271"/>
+        <location filename="../mainwindow.cpp" line="265"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation>Θα πρέπει να ορίσετε ένα &apos;αντίγραφο&apos; προορισμός. Δεν μπορείτε να αντιγράψετε στην επιφάνεια εργασίας σας είναι συνδεδεμένοι.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>Πριν από την αντιγραφή, κλείστε όλες τις άλλες εφαρμογές. Να είστε βέβαιος ότι το αντίγραφο προς τον προορισμό είναι αρκετά μεγάλο ώστε να περιέχει τα αρχεία που θέλετε να αντιγράψετε. Αντιγραφή μεταξύ επιτραπέζιους υπολογιστές μπορεί να αντικαταστήσει ή να διαγράψει τα αρχεία ή τις προτιμήσεις σας στην επιφάνεια εργασίας προορισμό. Είστε σίγουροι ότι θέλετε να συνεχίσετε;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="300"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Synchronizing desktop...</source>
         <translation>Συγχρονισμός επιφάνεια εργασίας ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="302"/>
+        <location filename="../mainwindow.cpp" line="296"/>
         <source>Copying desktop...</source>
         <translation>Αντιγραφή επιφάνεια εργασίας ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
-        <location filename="../mainwindow.cpp" line="518"/>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <location filename="../mainwindow.cpp" line="512"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Το Όνομα Χρήστη πρέπει να έχει μήκος τουλάχιστον 2 χαρακτήρων. Παρακαλώ επιλέξτε ένα μεγαλύτερο όνομα πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="327"/>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.cpp" line="321"/>
+        <location filename="../mainwindow.cpp" line="516"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -551,66 +551,66 @@ Please choose another name before proceeding.</source>
 Παρακαλώ επιλέξτε ένα άλλο όνομα πριν προχωρήσετε.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
         <translation>Λυπούμαστε, αυτό το όνομα χρησιμοποιείται. Εισαγάγετε ένα διαφορετικό όνομα.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="341"/>
-        <location filename="../mainwindow.cpp" line="376"/>
+        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>Password entries do not match. Please try again.</source>
         <translation>Οι Κωδικοί Πρόσβασης δεν ταιριάζουν μεταξύ τους. Παρακαλώ προσπαθήστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="346"/>
-        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="375"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
         <translation>Οι Κωδικόι πρέπει να έχει τουλάχιστον 
 ένα μήκος 2 χαρακτήρων. Παρακαλώ επιλέξτε 
 έναν πιο μεγάλο Κωδικό πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="357"/>
         <source>The user was added ok.</source>
         <translation>Προστέθηκε Νέος Χρήστης.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>Failed to add the user.</source>
         <translation>Αποτυχία να προσθέσετε το χρήστη.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
+        <location filename="../mainwindow.cpp" line="389"/>
         <source>Password successfully changed.</source>
         <translation>Ο Κωδικός πρόσβασης άλλαξε με επιτυχια.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="399"/>
+        <location filename="../mainwindow.cpp" line="393"/>
         <source>Failed to change password.</source>
         <translation>Απέτυχε η αλλαγή του κοδικου.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="405"/>
+        <location filename="../mainwindow.cpp" line="399"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation>Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Είστε σίγουροι ότι θέλετε να διαγράψετε το χρήστη %1;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="412"/>
         <source>The user has been deleted.</source>
         <translation>Ο χρήστης έχει διαγραφεί.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="415"/>
         <source>Failed to delete the user.</source>
         <translation>Απέτυχε η διαγραφή του χρήστη.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
+        <location filename="../mainwindow.cpp" line="429"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Το Όνομα Ομάδας πρέπει να έχει μήκος τουλάχιστον 2 χαρακτήρων. Παρακαλώ επιλέξτε ένα μεγαλύτερο όνομα πριν συνεχίσετε.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="439"/>
+        <location filename="../mainwindow.cpp" line="433"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -619,131 +619,131 @@ Please choose another name before proceeding.</source>
 Παρακαλώ επιλέξτε ένα άλλο όνομα πριν προχωρήσετε.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="448"/>
+        <location filename="../mainwindow.cpp" line="442"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
         <translation>Λυπούμαστε, το όνομα της ομάδας υπάρχει ήδη. Εισαγάγετε ένα διαφορετικό όνομα.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="449"/>
         <source>The system group was added ok.</source>
         <translation>Η ομάδα του συστήματος προστέθηκε.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="458"/>
+        <location filename="../mainwindow.cpp" line="452"/>
         <source>Failed to add the system group.</source>
         <translation>Αποτυχία να προσθέσετε την ομάδα του συστήματος.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="461"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation>Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Είστε σίγουροι ότι θέλετε να διαγράψετε την ομάδα %1;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="468"/>
+        <location filename="../mainwindow.cpp" line="462"/>
         <source>The group has been deleted.</source>
         <translation>Η ομάδα έχει διαγραφεί.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="471"/>
+        <location filename="../mainwindow.cpp" line="465"/>
         <source>Failed to delete the group.</source>
         <translation>Αποτυχία να διαγράψετε την ομάδα.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="493"/>
+        <location filename="../mainwindow.cpp" line="487"/>
         <source>The changes have been applied.</source>
         <translation>Οι αλλαγές έχουν εφαρμοστεί.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="490"/>
         <source>Failed to apply group changes</source>
         <translation>Απέτυχε η εφαρμογή των αλλαγών ομάδων</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="509"/>
+        <location filename="../mainwindow.cpp" line="503"/>
         <source>The selected user name is currently in use.</source>
         <translation>Το επιλεγμένο όνομα χρήστη χρησιμοποιείται ήδη.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="510"/>
+        <location filename="../mainwindow.cpp" line="504"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
         <translation>Για να μετονομάσετε αυτόν τον χρήστη, αποσυνδεθείτε και συνδεθείτε ξανά χρησιμοποιώντας άλλο λογαριασμό χρήστη.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="531"/>
+        <location filename="../mainwindow.cpp" line="525"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>Λυπούμαστε, αυτό το όνομα υπάρχει ήδη στο σύστημά σας. Εισαγάγετε ένα διαφορετικό όνομα.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="539"/>
+        <location filename="../mainwindow.cpp" line="533"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
         <translation>Δεν ήταν δυνατή η μετονομασία του χρήστη. Βεβαιωθείτε ότι ο χρήστης δεν είναι συνδεδεμένος, ίσως χρειάζεται επανεκκίνηση</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="560"/>
+        <location filename="../mainwindow.cpp" line="554"/>
         <source>The user was renamed.</source>
         <translation>Ο χρήστης μετονομάστηκε.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="573"/>
-        <location filename="../mainwindow.cpp" line="602"/>
+        <location filename="../mainwindow.cpp" line="567"/>
+        <location filename="../mainwindow.cpp" line="596"/>
         <source>Synchronizing desktop...ok</source>
         <translation>Συγχρονισμός επιφάνεια εργασίας ... ok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="575"/>
-        <location filename="../mainwindow.cpp" line="604"/>
+        <location filename="../mainwindow.cpp" line="569"/>
+        <location filename="../mainwindow.cpp" line="598"/>
         <source>Copying desktop...ok</source>
         <translation>Αντιγραφή επιφάνεια εργασίας ... ok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="608"/>
+        <location filename="../mainwindow.cpp" line="602"/>
         <source>Synchronizing desktop...failed</source>
         <translation>Συγχρονισμός επιφάνειας εργασίας ... απέτυχε</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="610"/>
+        <location filename="../mainwindow.cpp" line="604"/>
         <source>Copying desktop...failed</source>
         <translation>Αντιγραφή επιφάνεια εργασίας... απέτυχε</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="628"/>
-        <location filename="../mainwindow.cpp" line="888"/>
-        <location filename="../mainwindow.cpp" line="896"/>
+        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="882"/>
+        <location filename="../mainwindow.cpp" line="890"/>
         <source>browse...</source>
         <translation>περιηγηθείτε ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="799"/>
+        <location filename="../mainwindow.cpp" line="793"/>
         <source>About %1</source>
         <translation>Περί %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="800"/>
+        <location filename="../mainwindow.cpp" line="794"/>
         <source>Version: </source>
         <translation>Έκδοση:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="801"/>
+        <location filename="../mainwindow.cpp" line="795"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>Απλή διαμόρφωση χρήστη για MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="803"/>
+        <location filename="../mainwindow.cpp" line="797"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c)  MX Linux </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="804"/>
+        <location filename="../mainwindow.cpp" line="798"/>
         <source>%1 License</source>
         <translation>%1 Άδεια</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="819"/>
+        <location filename="../mainwindow.cpp" line="813"/>
         <source>%1 Help</source>
         <translation>%1 Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="889"/>
+        <location filename="../mainwindow.cpp" line="883"/>
         <source>Select folder to copy to</source>
         <translation>Επιλέξτε φάκελο </translation>
     </message>
