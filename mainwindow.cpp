@@ -233,7 +233,7 @@ void MainWindow::applyRestore()
     }
     if (radioAutologinNo->isChecked()) {
         if (QFile::exists("/etc/lightdm/lightdm.conf")) {
-            cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
+            cmd = QString("sed -i -r '/^autologin-user=/d' /etc/lightdm/lightdm.conf").arg(user);
             system(cmd.toUtf8());
         }
         if (QFile::exists("/etc/sddm.conf")) {
@@ -243,14 +243,8 @@ void MainWindow::applyRestore()
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
         if (QFile::exists("/etc/lightdm/lightdm.conf")) {
-            cmd = QString("grep -qE '^#autologin-user=%1'\\|'^autologin-user=%1' /etc/lightdm/lightdm.conf").arg(user);
-            if (system(cmd.toUtf8()) == 0) {
-                cmd = QString("sed -i -r '/^#autologin-user=%1/ s/^#//' /etc/lightdm/lightdm.conf").arg(user);
-                system(cmd.toUtf8());
-            } else {
-                cmd = QString("echo 'autologin-user=%1' >> /etc/lightdm/lightdm.conf").arg(user);
-                system(cmd.toUtf8());
-            }
+            cmd = QString("sed -i -r '/^autologin-user=/d; /^[[]SeatDefaults[]]/aautologin-user=%1' /etc/lightdm/lightdm.conf").arg(user);
+            system(cmd.toUtf8());
         }
         if (QFile::exists("/etc/sddm.conf")) {
             system(QString("sed -i 's/^User=.*/User=%1/' /etc/sddm.conf").arg(user).toUtf8());
