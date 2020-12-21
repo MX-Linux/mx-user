@@ -43,7 +43,7 @@ int main( int argc, char ** argv ) {
         mw.show();
         return app.exec();
     } else {
-        system("su-to-root -X -c " + QCoreApplication::applicationFilePath().toUtf8() + "&");
+        system("su-to-root -X -c " + QApplication::applicationFilePath().toUtf8() + "&");
     }
 }
 
