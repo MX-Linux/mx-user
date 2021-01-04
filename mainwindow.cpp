@@ -805,7 +805,7 @@ void MainWindow::on_buttonHelp_clicked()
     QLocale locale;
     QString lang = locale.bcp47Name();
 
-    QString url = "/usr/share/doc/mx-user/help/mx-user.html";
+    QString url = "/usr/share/doc/mx-user/mx-user.html";
 
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs";
