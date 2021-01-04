@@ -1,4 +1,4 @@
-help			usr/share/doc/mx-user
+help/*			usr/share/doc/mx-user
 icons/mx-user.png	usr/share/icons/hicolor/256x256/apps
 mx-user			usr/sbin
 mx-user.desktop		usr/share/applications
