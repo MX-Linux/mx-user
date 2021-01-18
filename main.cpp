@@ -26,14 +26,6 @@ int main( int argc, char ** argv ) {
     QApplication app(argc, argv);
     app.setWindowIcon(QIcon::fromTheme("mx-user"));
 
-    // root guard
-    if (system("logname |grep -q ^root$") == 0) {
-        QMessageBox::critical(nullptr, QObject::tr("Error"),
-                              QObject::tr("You seem to be logged in as root, please log out and log in as normal user to use this program."));
-        exit(EXIT_FAILURE);
-    }
-
-
     QTranslator qtTran;
     if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         app.installTranslator(&qtTran);
@@ -45,6 +37,13 @@ int main( int argc, char ** argv ) {
     QTranslator appTran;
     if (appTran.load(app.applicationName() + "_" + QLocale::system().name(), "/usr/share/" + app.applicationName() + "/locale"))
         app.installTranslator(&appTran);
+
+    // root guard
+    if (system("logname |grep -q ^root$") == 0) {
+        QMessageBox::critical(nullptr, QObject::tr("Error"),
+                              QObject::tr("You seem to be logged in as root, please log out and log in as normal user to use this program."));
+        exit(EXIT_FAILURE);
+    }
 
     if (getuid() == 0) {
         MainWindow mw;
