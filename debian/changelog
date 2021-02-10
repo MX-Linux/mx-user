@@ -1,3 +1,9 @@
+mx-user (21.2) mx; urgency=medium
+
+  * remove apt-mx dependency
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 10 Feb 2021 16:37:44 -0500
+
 mx-user (20.12.01) mx; urgency=medium
 
   * adjust autologin user handling for lightdm
