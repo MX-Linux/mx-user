@@ -182,10 +182,10 @@ void MainWindow::refreshRename()
 void MainWindow::applyRestore()
 {
     QString user = userComboBox->currentText();
-    if (user.compare(tr("none")) == 0) // no user selected
+    if (user == (tr("none"))) // no user selected
         return;
     QString home = user;
-    if (user.compare("root") != 0)
+    if (user != "root")
         home = QString("/home/%1").arg(user);
     QString cmd;
 
@@ -199,7 +199,7 @@ void MainWindow::applyRestore()
     setCursor(QCursor(Qt::WaitCursor));
 
     // restore groups
-    if (checkGroups->isChecked() && user.compare("root") != 0) {
+    if (checkGroups->isChecked() && user != "root") {
         buildListGroups();
         cmd = QString("sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
         QStringList extra_groups_list = shell->getCmdOut(cmd).split(",");
@@ -312,7 +312,7 @@ void MainWindow::applyAdd()
                               tr("Sorry, this name is in use. Please enter a different name."));
         return;
     }
-    if (userPasswordEdit->text().compare(userPassword2Edit->text()) != 0) {
+    if (userPasswordEdit->text() != userPassword2Edit->text()) {
         QMessageBox::critical(this, windowTitle(),
                               tr("Password entries do not match. Please try again."));
         return;
@@ -347,7 +347,7 @@ void MainWindow::applyAdd()
 // change user password
 void MainWindow::applyChangePass()
 {
-    if (lineEditChangePass->text().compare(lineEditChangePassConf->text()) != 0) {
+    if (lineEditChangePass->text() != lineEditChangePassConf->text()) {
         QMessageBox::critical(this, windowTitle(),
                               tr("Password entries do not match. Please try again."));
         return;
