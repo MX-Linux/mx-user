@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Thu, 11 Feb 2021 09:35:16 -0500
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 21.2.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (21.2.01) mx; urgency=medium
+ .
+   * rebuild for Stretch
+Checksums-Sha1:
+ 5b2b7f89a02170042c87e0e02bb6ef3cc04944fb 589 mx-user_21.2.01.dsc
+ 18dbc2442cab7c504b86e8519a3444bcdf498acb 152692 mx-user_21.2.01.tar.xz
+ 12398cfdfb00816ab2e7d4696aea7266f9bf71ab 776812 mx-user-dbgsym_21.2.01_amd64.deb
+ bc6c9c8bbc61a9c059af45617aef7e6881619b1a 10105 mx-user_21.2.01_amd64.buildinfo
+ 1a9eddfe499a7ade3f3721a6b81215dfb9d4e092 189406 mx-user_21.2.01_amd64.deb
+Checksums-Sha256:
+ 8870fe751f87cb4a3a54edff7890b1531f917f393ddfa0d0f357c5c62adacaf6 589 mx-user_21.2.01.dsc
+ 0cc9ed70e2246b8660e87fb07837cdede2d600ed433dff201cae0267da6ca350 152692 mx-user_21.2.01.tar.xz
+ a117f328956bce0e7fada5d91af31b3cd290a4d6827c860d0235ccc5c0a6c14a 776812 mx-user-dbgsym_21.2.01_amd64.deb
+ 163b0bf25c9a7f96c0c752c051ef9f82db1ca4765f7349a0b8522676a799f38e 10105 mx-user_21.2.01_amd64.buildinfo
+ e90ef5bae750ced2d951b68444a7378b6771b65316d29e5261eea66c49d5f234 189406 mx-user_21.2.01_amd64.deb
+Files:
+ 071b6feca2f1260284943176830a419f 589 system optional mx-user_21.2.01.dsc
+ cc1b1691ec83f1b27b0888d5ff2d2d47 152692 system optional mx-user_21.2.01.tar.xz
+ c7e251e8ecb9d975c2898d8405de55a2 776812 debug extra mx-user-dbgsym_21.2.01_amd64.deb
+ 5640f25cb11f6c51c532c7160d620e08 10105 system optional mx-user_21.2.01_amd64.buildinfo
+ faa50badad4a94d5e9dd43ed12e11c6b 189406 system optional mx-user_21.2.01_amd64.deb

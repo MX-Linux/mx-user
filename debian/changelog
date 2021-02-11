@@ -1,3 +1,9 @@
+mx-user (21.2.01) mx; urgency=medium
+
+  * rebuild for Stretch
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 11 Feb 2021 09:35:16 -0500
+
 mx-user (21.2) mx; urgency=medium
 
   * remove apt-mx dependency
