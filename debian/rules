@@ -18,12 +18,7 @@ override_dh_auto_install:
 override_dh_shlibdeps:
 	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
 
-# Use lzma to compress debs, not yet approved by Debian.
-# For Debian, use bzip2 or leave blank to use gzip.
-override_dh_builddeb:
-	dh_builddeb -- -Z xz
-
 override_dh_usrlocal:
 
 %:
-	dh $@ --parallel 
+	dh $@ --no-automatic-dbgsym --parallel 
