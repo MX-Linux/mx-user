@@ -298,11 +298,10 @@ void MainWindow::applyAdd()
         QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
         return;
-    } else if (!userNameEdit->text().contains(QRegularExpression("^[a-z_][a-z0-9_-]*[$]?$"))) {
+    } else if (!userNameEdit->text().contains(QRegularExpression("^[A-Za-z_][A-Za-z0-9_-]*[$]?$"))) {
         QMessageBox::critical(this, windowTitle(),
-                              tr("The user name needs to be lower case and it\n"
-                                 "cannot contain special characters or spaces.\n"
-                                 "Please choose another name before proceeding."));
+            tr("The user name cannot contain special characters or spaces.\n"
+                "Please choose another name before proceeding."));
         return;
     }
     // check that user name is not already used
