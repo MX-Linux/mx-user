@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 28 May 2021 09:19:27 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 21.5
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (21.5) mx; urgency=medium
+ .
+   * Relax unnecessary upper-case ban on user names.
+Checksums-Sha1:
+ 80368e235a0c7fe0289460c51f9231711a72c09a 10102 mx-user_21.5_i386.buildinfo
+ 9e3889bd571ef8fdc870e8e0b8e528630c981434 192722 mx-user_21.5_i386.deb
+Checksums-Sha256:
+ 4c2754cac7f61a4b079c44fabf9022278f289ae50ba323d6848fb598b3640c06 10102 mx-user_21.5_i386.buildinfo
+ e7ab9fefc3aeec85c4ce7a13898744605331c06de78212195c165e526f22d795 192722 mx-user_21.5_i386.deb
+Files:
+ f63bb1915c32e5b820ea965253c9d56b 10102 system optional mx-user_21.5_i386.buildinfo
+ 5d73739fd3c53bd49fe02d843762fa4c 192722 system optional mx-user_21.5_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmCw77QTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumI+iCADMKjSqDTWC8+Hun1Ao49+oa+BZwJc/
+DWoJgC3TOqedAF6DQLKzkRgSFToDOEFGJmTTqmFnM4B1u5vJW1P50s3nHdRi3O0L
+hX/te1GiGrcdI1wPKWYYHe7vjKBWniRe8kYJ7dbLvWpmVyRVnSswtIMGxNWD9tP6
+7WJW6ojJHgwObprJMS3ygcv2eJbD0fJtXIQD/JgbLK4r/VLm3m3PceKsA/uA9ECK
+YJWj5PHZyKFX+UARqA2A8TxMgwcIZ5aubC7uUJy3CcBkRXu3UFRYbuY2pde7PY1E
+7ExKmnfuaZ9ZLuaxITCHG/NaQLRyKVvKitsQ+m5QtqtWo44uAXZT2hqK
+=X7U0
+-----END PGP SIGNATURE-----

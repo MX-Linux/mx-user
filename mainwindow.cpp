@@ -835,12 +835,12 @@ void MainWindow::on_sharedRadioButton_clicked()
 void MainWindow::on_toUserComboBox_currentIndexChanged(const QString &arg1)
 {
     if (arg1 == tr("browse...")) {
-        QString dir = QFileDialog::getExistingDirectory(this, tr("Select folder to copy to"), "/",QFileDialog::ShowDirsOnly
-                                                     | QFileDialog::DontResolveSymlinks);
+        QString dir = QFileDialog::getExistingDirectory(this, tr("Select folder to copy to"), "/",
+                                                        QFileDialog::ShowDirsOnly|QFileDialog::DontResolveSymlinks);
         if (!dir.isEmpty()) {
             toUserComboBox->removeItem(toUserComboBox->currentIndex());
             toUserComboBox->addItem(dir);
-            int idx = toUserComboBox->findText(dir, Qt::MatchExactly | Qt::MatchCaseSensitive);
+            int idx = toUserComboBox->findText(dir, Qt::MatchExactly|Qt::MatchCaseSensitive);
             toUserComboBox->setCurrentIndex(idx);
             toUserComboBox->addItem(tr("browse..."));
         } else {
@@ -853,11 +853,10 @@ void MainWindow::on_toUserComboBox_currentIndexChanged(const QString &arg1)
 void MainWindow::on_userPassword2Edit_textChanged(const QString &arg1)
 {
     QPalette pal = userPassword2Edit->palette();
-    if (arg1 != userPasswordEdit->text()) {
+    if (arg1 != userPasswordEdit->text())
         pal.setColor(QPalette::Base, QColor(255, 0, 0, 20));
-    } else {
+    else
         pal.setColor(QPalette::Base, QColor(0, 255, 0, 10));
-    }
     userPasswordEdit->setPalette(pal);
     userPassword2Edit->setPalette(pal);
 }
