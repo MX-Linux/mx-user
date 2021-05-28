@@ -1,5 +1,6 @@
 //
 //   Copyright (C) 2003-2008 by Warren Woodford
+//   Heavily modified by Adrian adrian@mxlinux.org
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
 //   you may not use this file except in compliance with the License.

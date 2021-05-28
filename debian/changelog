@@ -1,3 +1,9 @@
+mx-user (21.5) mx; urgency=medium
+
+  * Relax unnecessary upper-case ban on user names.
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 28 May 2021 09:19:27 -0400
+
 mx-user (21.2.01) mx; urgency=medium
 
   * rebuild for Stretch

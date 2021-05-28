@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 28 May 2021 09:19:27 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 21.5
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (21.5) mx; urgency=medium
+ .
+   * Relax unnecessary upper-case ban on user names.
+Checksums-Sha1:
+ fb00cbc46f363bd11f229d4ae22ffe6558fa362b 1140 mx-user_21.5.dsc
+ 58b84689b2384891ba062728fa3c0a58ab2bbd1f 152888 mx-user_21.5.tar.xz
+ bc9e8142a91232677b3961c577da1e63d1fb4b3d 10384 mx-user_21.5_amd64.buildinfo
+ 3c8e26fa24e9e6eab4c3de6b543873dc4f64c099 189314 mx-user_21.5_amd64.deb
+Checksums-Sha256:
+ 4f6c0ab7f6b58ec5874e7634b757cc763eb4c1124e60284c25b4cd40a4b90124 1140 mx-user_21.5.dsc
+ d94289aa493f6f18539c353ecd588a2ed750fc5d3c7cd1f71908a49f7aea026e 152888 mx-user_21.5.tar.xz
+ 10a2aad45241775185f3b2a8d6487a5678f6a534539d7b8b640e875f4566fb63 10384 mx-user_21.5_amd64.buildinfo
+ 0f65bcefd7479708ccfaa71ea350ffd4f98191c6a674d6de3b13860dde430b6e 189314 mx-user_21.5_amd64.deb
+Files:
+ 13d4f0cc52d4fc75d77b06388392f5ce 1140 system optional mx-user_21.5.dsc
+ 03aaab40057c98d340d6bf63610aa33c 152888 system optional mx-user_21.5.tar.xz
+ 7af602a23531b1cfbbb56373f5f6890a 10384 system optional mx-user_21.5_amd64.buildinfo
+ df940c3db5c1daca6a027537552eaa11 189314 system optional mx-user_21.5_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmCw77QTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumODJCADTvNvl5XfOlSGHeYIZ77q0+tcebTfV
+uAiPgfViWbOd7OHnE/+BffSMRWpAhuQJhNxfHZ+X/0iyVL1W1nNKNvOdpPcTU2Y/
+f3gZNo8NdGymPKp55cq8p0ujAPSUMEeK7KkV19E1P/3tlDUQonG25YY0+DGnhHB2
+A9w8POWQe++O5nDo4b5yKX8nYNaWjL+Wi4V5FIymjNR9Or/ss66sYUhvO/WDeGEf
+u/+5o1z1droQgUPofKw8HuLuBGtPjT0EI+YEaJkJ8gHDFMjhE/FKT5a/cqVC9JYw
+MJhKj/nwS++Vc7IAhcpm0XoqVo9nMlcWxJsQTIUkJKUZPZ064v6znLhE
+=Goa8
+-----END PGP SIGNATURE-----
