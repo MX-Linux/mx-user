@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 28 Dec 2021 01:14:50 -0500
+Source: mx-user
+Architecture: source
+Version: 21.12
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (21.12) mx; urgency=medium
+ .
+   * Disable tab switching while copying
+   * Prompt for exit confirmation while copying
+   * Restore/save window geometry at start/exit
+   * Minor GUI fixes
+Checksums-Sha1:
+ b6712982ee3fed2dfaadad1d3f6ee9ed7fa42b5c 582 mx-user_21.12.dsc
+ 0a47ba1f5b0f4a41e8818f2b55b9ae0b68c507e3 153732 mx-user_21.12.tar.xz
+ 99cee7a871e9b6371c194304a16cc15170ed8039 9974 mx-user_21.12_i386.buildinfo
+Checksums-Sha256:
+ 76b3de2857f1c28842d6bf28a4cd93f64a6b6539f7551f5782a7ce91998a3421 582 mx-user_21.12.dsc
+ e3b178dc9719fcc19d3bf93417f5e2cad0b4002679fdb95c5e0a8e02e9754c42 153732 mx-user_21.12.tar.xz
+ 00d6c47d83b2e177463d8b5d1c0dc11400761b90898b7104c35a8a9cafdffe4c 9974 mx-user_21.12_i386.buildinfo
+Files:
+ ecf017b8150916255576680f2788739d 582 system optional mx-user_21.12.dsc
+ e62cc6b2170bb021866c6b0ba0322651 153732 system optional mx-user_21.12.tar.xz
+ fe52ad9700b7dbc6e4eb17b99cbdf009 9974 system optional mx-user_21.12_i386.buildinfo

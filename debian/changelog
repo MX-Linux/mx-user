@@ -1,3 +1,12 @@
+mx-user (21.12) mx; urgency=medium
+
+  * Disable tab switching while copying
+  * Prompt for exit confirmation while copying 
+  * Restore/save window geometry at start/exit
+  * Minor GUI fixes
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 28 Dec 2021 01:14:50 -0500
+
 mx-user (21.5) mx; urgency=medium
 
   * Relax unnecessary upper-case ban on user names.
