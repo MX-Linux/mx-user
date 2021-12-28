@@ -23,6 +23,7 @@
 
 #include "ui_mainwindow.h"
 #include <QMessageBox>
+#include <QSettings>
 
 #include "cmd.h"
 
@@ -91,6 +92,7 @@ private slots:
 
 private:
     Cmd *shell;
+    QSettings settings;
     QStringList users;
 
 };

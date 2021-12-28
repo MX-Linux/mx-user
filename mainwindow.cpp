@@ -20,6 +20,7 @@
 
 #include <QDebug>
 #include <QFileDialog>
+#include <QScreen>
 #include <QTextEdit>
 #include <QTimer>
 
@@ -40,10 +41,21 @@ MainWindow::MainWindow(QWidget* parent) : QDialog(parent)
     tabWidget->blockSignals(true);
     tabWidget->setCurrentIndex(0);
     tabWidget->blockSignals(false);
+    QSize size = this->size();
+    restoreGeometry(settings.value("geometry").toByteArray());
+    if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
+        this->resize(size);
+        QRect screenGeometry = qApp->screens().first()->geometry();
+        int x = (screenGeometry.width() - this->width()) / 2;
+        int y = (screenGeometry.height() - this->height()) / 2;
+        this->move(x, y);
+    }
     refresh();
 }
 
-MainWindow::~MainWindow(){
+MainWindow::~MainWindow()
+{
+    settings.setValue("geometry", saveGeometry());
 }
 
 bool MainWindow::replaceStringInFile(QString oldtext, QString newtext, QString filepath)
