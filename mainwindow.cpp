@@ -120,13 +120,23 @@ void MainWindow::refreshRestore()
     radioAutologinYes->setAutoExclusive(true);
 }
 
-void MainWindow::refreshDesktop()
+void MainWindow::refreshCopy()
 {
     fromUserComboBox->clear();
     fromUserComboBox->addItems(users);
+    const QString logname = shell->getCmdOut("logname", true);
+    fromUserComboBox->setCurrentIndex(fromUserComboBox->findText(logname));
     copyRadioButton->setChecked(true);
     entireRadioButton->setChecked(true);
-    on_fromUserComboBox_activated("");
+    QStringList items = users;
+    items.removeAll(logname);
+    items.removeAll(fromUserComboBox->currentText());
+    items.sort();
+    toUserComboBox->clear();
+    toUserComboBox->addItems(items);
+    if (items.isEmpty())
+        toUserComboBox->addItem(QString());
+    toUserComboBox->addItem(tr("browse..."));
 }
 
 void MainWindow::refreshAdd()
@@ -604,12 +614,14 @@ void MainWindow::on_fromUserComboBox_activated(QString)
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
-    toUserComboBox->clear();
     QStringList items = users;
     items.removeAll(shell->getCmdOut("logname", true));
     items.removeAll(fromUserComboBox->currentText());
     items.sort();
+    toUserComboBox->clear();
     toUserComboBox->addItems(items);
+    if (items.isEmpty())
+        toUserComboBox->addItem(QString());
     toUserComboBox->addItem(tr("browse..."));
 }
 
@@ -804,8 +816,21 @@ void MainWindow::on_comboChangePass_activated(QString)
 }
 
 
-void MainWindow::on_toUserComboBox_activated(QString)
+void MainWindow::on_toUserComboBox_activated(const QString &arg1)
 {
+    if (arg1 == tr("browse...")) {
+        QString dir = QFileDialog::getExistingDirectory(this, tr("Select folder to copy to"), "/",
+                                                        QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
+        if (!dir.isEmpty()) {
+            toUserComboBox->removeItem(toUserComboBox->currentIndex());
+            if (toUserComboBox->findText(dir, Qt::MatchExactly | Qt::MatchCaseSensitive) == -1)
+                toUserComboBox->addItem(dir);
+            toUserComboBox->setCurrentIndex(toUserComboBox->findText(dir, Qt::MatchExactly | Qt::MatchCaseSensitive));
+            toUserComboBox->addItem(tr("browse..."));
+        } else {
+            toUserComboBox->setCurrentIndex(toUserComboBox->currentIndex() - 1);
+        }
+    }
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
 }
@@ -844,25 +869,6 @@ void MainWindow::on_sharedRadioButton_clicked()
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
-}
-
-
-
-void MainWindow::on_toUserComboBox_currentIndexChanged(const QString &arg1)
-{
-    if (arg1 == tr("browse...")) {
-        QString dir = QFileDialog::getExistingDirectory(this, tr("Select folder to copy to"), "/",
-                                                        QFileDialog::ShowDirsOnly|QFileDialog::DontResolveSymlinks);
-        if (!dir.isEmpty()) {
-            toUserComboBox->removeItem(toUserComboBox->currentIndex());
-            toUserComboBox->addItem(dir);
-            int idx = toUserComboBox->findText(dir, Qt::MatchExactly|Qt::MatchCaseSensitive);
-            toUserComboBox->setCurrentIndex(idx);
-            toUserComboBox->addItem(tr("browse..."));
-        } else {
-            toUserComboBox->setCurrentIndex(toUserComboBox->currentIndex() - 1);
-        }
-    }
 }
 
 

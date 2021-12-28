@@ -40,23 +40,23 @@ public:
     // common
     void refresh();
     // special
-    void refreshRestore();
-    void refreshDesktop();
-    void refreshAdd();
-    void refreshDelete();
-    void refreshChangePass();
-    void refreshGroups();
-    void refreshMembership();
-    void refreshRename();
-    void applyRestore();
-    void applyDesktop();
     void applyAdd();
     void applyChangePass();
     void applyDelete();
+    void applyDesktop();
     void applyGroup();
     void applyMembership();
     void applyRename();
+    void applyRestore();
     void buildListGroups();
+    void refreshAdd();
+    void refreshChangePass();
+    void refreshCopy();
+    void refreshDelete();
+    void refreshGroups();
+    void refreshMembership();
+    void refreshRename();
+    void refreshRestore();
     void restartPanel(QString user);
 
 public slots:
@@ -87,8 +87,7 @@ private slots:
     void on_sharedRadioButton_clicked();
     void on_syncRadioButton_clicked();
     void on_tabWidget_currentChanged();
-    void on_toUserComboBox_activated(QString);
-    void on_toUserComboBox_currentIndexChanged(const QString &arg1);
+    void on_toUserComboBox_activated(const QString &arg1);
     void on_userComboBox_activated(QString);
     void on_userComboMembership_activated(QString);
     void on_userNameEdit_textEdited();
