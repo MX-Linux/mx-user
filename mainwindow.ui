@@ -159,6 +159,9 @@
             <property name="text">
              <string>User login name:</string>
             </property>
+            <property name="buddy">
+             <cstring>userNameEdit</cstring>
+            </property>
            </widget>
           </item>
           <item row="0" column="1">
@@ -196,6 +199,9 @@
             </property>
             <property name="text">
              <string>User password:</string>
+            </property>
+            <property name="buddy">
+             <cstring>userPasswordEdit</cstring>
             </property>
            </widget>
           </item>
@@ -237,6 +243,9 @@
             </property>
             <property name="text">
              <string>Confirm user password:</string>
+            </property>
+            <property name="buddy">
+             <cstring>userPassword2Edit</cstring>
             </property>
            </widget>
           </item>
@@ -338,6 +347,9 @@
             <property name="text">
              <string>User to delete:</string>
             </property>
+            <property name="buddy">
+             <cstring>comboDeleteUser</cstring>
+            </property>
            </widget>
           </item>
           <item row="4" column="0" colspan="2">
@@ -379,6 +391,9 @@
             <property name="text">
              <string>Select user to modify:</string>
             </property>
+            <property name="buddy">
+             <cstring>comboRenameUser</cstring>
+            </property>
            </widget>
           </item>
           <item row="0" column="1">
@@ -410,6 +425,9 @@
             </property>
             <property name="text">
              <string>New user name:</string>
+            </property>
+            <property name="buddy">
+             <cstring>renameUserNameEdit</cstring>
             </property>
            </widget>
           </item>
@@ -474,6 +492,9 @@
             <property name="text">
              <string>Confirm new password:</string>
             </property>
+            <property name="buddy">
+             <cstring>lineEditChangePassConf</cstring>
+            </property>
            </widget>
           </item>
           <item row="2" column="1">
@@ -500,6 +521,9 @@
             <property name="text">
              <string>Select user to modify:</string>
             </property>
+            <property name="buddy">
+             <cstring>comboChangePass</cstring>
+            </property>
            </widget>
           </item>
           <item row="1" column="0">
@@ -512,6 +536,9 @@
             </property>
             <property name="text">
              <string>New user password:</string>
+            </property>
+            <property name="buddy">
+             <cstring>lineEditChangePass</cstring>
             </property>
            </widget>
           </item>
@@ -1138,6 +1165,9 @@
             <property name="text">
              <string>Group name:</string>
             </property>
+            <property name="buddy">
+             <cstring>groupNameEdit</cstring>
+            </property>
            </widget>
           </item>
           <item row="0" column="1">
@@ -1250,6 +1280,9 @@
             </property>
             <property name="text">
              <string>Group to delete:</string>
+            </property>
+            <property name="buddy">
+             <cstring>deleteGroupCombo</cstring>
             </property>
            </widget>
           </item>
@@ -1374,6 +1407,9 @@
             </property>
             <property name="text">
              <string>User to change:</string>
+            </property>
+            <property name="buddy">
+             <cstring>userComboMembership</cstring>
             </property>
            </widget>
           </item>
@@ -1608,11 +1644,38 @@
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
   <tabstop>tabWidget</tabstop>
-  <tabstop>buttonApply</tabstop>
-  <tabstop>buttonCancel</tabstop>
   <tabstop>userNameEdit</tabstop>
   <tabstop>userPasswordEdit</tabstop>
   <tabstop>userPassword2Edit</tabstop>
+  <tabstop>comboChangePass</tabstop>
+  <tabstop>lineEditChangePass</tabstop>
+  <tabstop>lineEditChangePassConf</tabstop>
+  <tabstop>comboDeleteUser</tabstop>
+  <tabstop>deleteHomeCheckBox</tabstop>
+  <tabstop>comboRenameUser</tabstop>
+  <tabstop>renameUserNameEdit</tabstop>
+  <tabstop>buttonAbout</tabstop>
+  <tabstop>buttonHelp</tabstop>
+  <tabstop>buttonApply</tabstop>
+  <tabstop>buttonCancel</tabstop>
+  <tabstop>userComboBox</tabstop>
+  <tabstop>checkGroups</tabstop>
+  <tabstop>checkMozilla</tabstop>
+  <tabstop>radioAutologinYes</tabstop>
+  <tabstop>radioAutologinNo</tabstop>
+  <tabstop>fromUserComboBox</tabstop>
+  <tabstop>toUserComboBox</tabstop>
+  <tabstop>copyRadioButton</tabstop>
+  <tabstop>syncRadioButton</tabstop>
+  <tabstop>entireRadioButton</tabstop>
+  <tabstop>docsRadioButton</tabstop>
+  <tabstop>mozillaRadioButton</tabstop>
+  <tabstop>sharedRadioButton</tabstop>
+  <tabstop>syncStatusEdit</tabstop>
+  <tabstop>groupNameEdit</tabstop>
+  <tabstop>deleteGroupCombo</tabstop>
+  <tabstop>userComboMembership</tabstop>
+  <tabstop>listGroups</tabstop>
  </tabstops>
  <resources>
   <include location="images.qrc"/>
