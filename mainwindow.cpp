@@ -579,6 +579,26 @@ void MainWindow::syncDone(bool success)
     setCursor(QCursor(Qt::ArrowCursor));
 }
 
+void MainWindow::keyPressEvent(QKeyEvent *event)
+{
+    if (event->key() == Qt::Key_Escape)
+        closeApp();
+}
+
+void MainWindow::closeApp()
+{
+    if (shell->state() != QProcess::NotRunning) {
+        setCursor(QCursor(Qt::ArrowCursor));
+        if (QMessageBox::Yes != QMessageBox::question(this, tr("Confirmation"),
+                                                      tr("Process not done. Are you sure you want to quit the application?"),
+                                                      QMessageBox::Yes | QMessageBox::No)) {
+            setCursor(QCursor(Qt::WaitCursor));
+            return;
+        }
+    }
+    close();
+}
+
 
 void MainWindow::on_fromUserComboBox_activated(QString)
 {
@@ -731,7 +751,7 @@ void MainWindow::on_tabWidget_currentChanged()
 // close but do not apply
 void MainWindow::on_buttonCancel_clicked()
 {
-    close();
+    closeApp();
 }
 
 void MainWindow::progress()
