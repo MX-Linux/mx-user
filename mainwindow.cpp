@@ -178,7 +178,7 @@ void MainWindow::refreshRename()
 }
 
 
-// apply but do not close
+// Apply but do not close
 void MainWindow::applyRestore()
 {
     QString user = userComboBox->currentText();
@@ -216,8 +216,7 @@ void MainWindow::applyRestore()
     if (checkMozilla->isChecked()) {
         cmd = QString("/bin/rm -r %1/.mozilla").arg(home);
         system(cmd.toUtf8());
-        QMessageBox::information(this, windowTitle(),
-                                 tr("Mozilla settings were reset."));
+        QMessageBox::information(this, windowTitle(), tr("Mozilla settings were reset."));
     }
     if (radioAutologinNo->isChecked()) {
         if (QFile::exists("/etc/lightdm/lightdm.conf")) {
@@ -292,7 +291,7 @@ void MainWindow::applyDesktop()
 
 void MainWindow::applyAdd()
 {
-    //validate data before proceeding
+    // validate data before proceeding
     // see if username is reasonable length
     if (userNameEdit->text().length() < 2) {
         QMessageBox::critical(this, windowTitle(),
@@ -312,8 +311,7 @@ void MainWindow::applyAdd()
         return;
     }
     if (userPasswordEdit->text() != userPassword2Edit->text()) {
-        QMessageBox::critical(this, windowTitle(),
-                              tr("Password entries do not match. Please try again."));
+        QMessageBox::critical(this, windowTitle(), tr("Password entries do not match. Please try again."));
         return;
     }
     if (userPasswordEdit->text().length() < 2) {
@@ -334,12 +332,10 @@ void MainWindow::applyAdd()
     proc.waitForFinished();
 
     if (proc.exitCode() == 0) {
-        QMessageBox::information(this, windowTitle(),
-                                 tr("The user was added ok."));
+        QMessageBox::information(this, windowTitle(), tr("The user was added ok."));
         refresh();
     } else {
-        QMessageBox::critical(this, windowTitle(),
-                              tr("Failed to add the user."));
+        QMessageBox::critical(this, windowTitle(), tr("Failed to add the user."));
     }
 }
 
@@ -347,8 +343,7 @@ void MainWindow::applyAdd()
 void MainWindow::applyChangePass()
 {
     if (lineEditChangePass->text() != lineEditChangePassConf->text()) {
-        QMessageBox::critical(this, windowTitle(),
-                              tr("Password entries do not match. Please try again."));
+        QMessageBox::critical(this, windowTitle(), tr("Password entries do not match. Please try again."));
         return;
     }
     if (lineEditChangePass->text().length() < 2) {
@@ -366,12 +361,10 @@ void MainWindow::applyChangePass()
     proc.waitForFinished();
 
     if (proc.exitCode() == 0) {
-        QMessageBox::information(this, windowTitle(),
-                                 tr("Password successfully changed."));
+        QMessageBox::information(this, windowTitle(), tr("Password successfully changed."));
         refresh();
     } else {
-        QMessageBox::critical(this, windowTitle(),
-                              tr("Failed to change password."));
+        QMessageBox::critical(this, windowTitle(), tr("Failed to change password."));
     }
 }
 
@@ -388,13 +381,10 @@ void MainWindow::applyDelete()
         } else {
             cmd = QString("deluser %1").arg(comboDeleteUser->currentText());
         }
-        if (system(cmd.toUtf8()) == 0) {
-            QMessageBox::information(this, windowTitle(),
-                                     tr("The user has been deleted."));
-        } else {
-            QMessageBox::critical(this, windowTitle(),
-                                  tr("Failed to delete the user."));
-        }
+        if (system(cmd.toUtf8()) == 0)
+            QMessageBox::information(this, windowTitle(), tr("The user has been deleted."));
+        else
+            QMessageBox::critical(this, windowTitle(), tr("Failed to delete the user."));
         refresh();
     }
 }
@@ -425,26 +415,20 @@ void MainWindow::applyGroup()
         }
         // run addgroup command
         cmd = QString("addgroup --system %1").arg( groupNameEdit->text());
-        if (system(cmd.toUtf8()) == 0) {
-            QMessageBox::information(this, windowTitle(),
-                                     tr("The system group was added ok."));
-        } else {
-            QMessageBox::critical(this, windowTitle(),
-                                  tr("Failed to add the system group."));
-        }
+        if (system(cmd.toUtf8()) == 0)
+            QMessageBox::information(this, windowTitle(), tr("The system group was added ok."));
+        else
+            QMessageBox::critical(this, windowTitle(), tr("Failed to add the system group."));
     }  else { //deleting group if addBox disabled
         QString cmd = QString(tr("This action cannot be undone. Are you sure you want to delete group %1?")).arg(deleteGroupCombo->currentText());
         int ans = QMessageBox::warning(this, windowTitle(), cmd,
                                        QMessageBox::Yes, QMessageBox::No);
         if (ans == QMessageBox::Yes) {
             cmd = QString("delgroup %1").arg(deleteGroupCombo->currentText());
-            if (system(cmd.toUtf8()) == 0) {
-                QMessageBox::information(this, windowTitle(),
-                                         tr("The group has been deleted."));
-            } else {
-                QMessageBox::critical(this, windowTitle(),
-                                      tr("Failed to delete the group."));
-            }
+            if (system(cmd.toUtf8()) == 0)
+                QMessageBox::information(this, windowTitle(), tr("The group has been deleted."));
+            else
+                QMessageBox::critical(this, windowTitle(), tr("Failed to delete the group."));
         }
     }
     refresh();
@@ -463,11 +447,9 @@ void MainWindow::applyMembership()
     cmd.chop(1);
     cmd = QString("usermod -G %1 %2").arg(cmd).arg(userComboMembership->currentText());
     if (shell->run(cmd))
-        QMessageBox::information(this, windowTitle(),
-                                 tr("The changes have been applied."));
+        QMessageBox::information(this, windowTitle(), tr("The changes have been applied."));
     else
-        QMessageBox::critical(this, windowTitle(),
-                              tr("Failed to apply group changes"));
+        QMessageBox::critical(this, windowTitle(), tr("Failed to apply group changes"));
 }
 
 void MainWindow::applyRename()
