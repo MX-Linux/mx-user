@@ -51,7 +51,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="userTab">
       <attribute name="icon">
@@ -140,6 +140,9 @@
             <property name="placeholderText">
              <string>confirm password</string>
             </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
           <item row="0" column="0">
@@ -174,6 +177,9 @@
             </property>
             <property name="placeholderText">
              <string>username</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -212,6 +218,9 @@
             </property>
             <property name="placeholderText">
              <string>password</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -421,6 +430,9 @@
             <property name="placeholderText">
              <string>username</string>
             </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
          </layout>
@@ -446,6 +458,9 @@
             <property name="placeholderText">
              <string>new password</string>
             </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
           <item row="2" column="0">
@@ -468,6 +483,9 @@
             </property>
             <property name="placeholderText">
              <string>confirm new password</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -1138,6 +1156,9 @@
             </property>
             <property name="placeholderText">
              <string>groupname</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
