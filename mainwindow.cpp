@@ -286,7 +286,15 @@ void MainWindow::applyDesktop()
     QTimer timer;
     timer.start(100);
     connect(&timer, &QTimer::timeout, this, &MainWindow::progress);
+
+    for (int tab = 0; tab < 5; ++tab) {
+        if (tab == 2)
+            continue;
+        tabWidget->setTabEnabled(tab, false);
+    }
     syncDone(shell->run(cmd));
+    for (int tab = 0; tab < 5; ++tab)
+        tabWidget->setTabEnabled(tab, true);
 }
 
 void MainWindow::applyAdd()
