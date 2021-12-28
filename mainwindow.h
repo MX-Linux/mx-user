@@ -22,6 +22,7 @@
 #define MAINWINDOW_H
 
 #include "ui_mainwindow.h"
+#include <QKeyEvent>
 #include <QMessageBox>
 #include <QSettings>
 
@@ -62,7 +63,11 @@ public slots:
     void progress();
     void syncDone(bool success);
 
+protected:
+    void keyPressEvent(QKeyEvent* event);
+
 private slots:
+    void closeApp();
     void on_buttonAbout_clicked();
     void on_buttonApply_clicked();
     void on_buttonCancel_clicked();
