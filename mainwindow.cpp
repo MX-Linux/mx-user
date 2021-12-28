@@ -29,6 +29,7 @@
 #include "mainwindow.h"
 #include "version.h"
 
+enum Tab {Administration, Options, Copy, AddRemoveGroup, GroupMembership};
 
 MainWindow::MainWindow(QWidget* parent) : QDialog(parent)
 {
@@ -39,7 +40,7 @@ MainWindow::MainWindow(QWidget* parent) : QDialog(parent)
 
     shell = new Cmd(this);
     tabWidget->blockSignals(true);
-    tabWidget->setCurrentIndex(0);
+    tabWidget->setCurrentIndex(Tab::Administration);
     tabWidget->blockSignals(false);
     QSize size = this->size();
     restoreGeometry(settings.value("geometry").toByteArray());
@@ -71,29 +72,24 @@ void MainWindow::refresh()
 {
     setCursor(QCursor(Qt::ArrowCursor));
     syncProgressBar->setValue(0);
-    int i = tabWidget->currentIndex();
 
-    switch (i) {
-    case 1:
+    switch (tabWidget->currentIndex()) {
+    case Tab::Options:
         refreshRestore();
         buttonApply->setEnabled(false);
         break;
-
-    case 2:
-        refreshDesktop();
+    case Tab::Copy:
+        refreshCopy();
         buttonApply->setEnabled(true);
         break;
-
-    case 3:
+    case Tab::AddRemoveGroup:
         refreshGroups();
         buttonApply->setEnabled(false);
         break;
-
-    case 4:
+    case Tab::GroupMembership:
         refreshMembership();
         buttonApply->setEnabled(false);
         break;
-
     default:
         refreshAdd();
         refreshDelete();
@@ -300,7 +296,7 @@ void MainWindow::applyDesktop()
     connect(&timer, &QTimer::timeout, this, &MainWindow::progress);
 
     for (int tab = 0; tab < 5; ++tab) {
-        if (tab == 2)
+        if (tab == Tab::Copy)
             continue;
         tabWidget->setTabEnabled(tab, false);
     }
@@ -687,26 +683,24 @@ void MainWindow::on_buttonApply_clicked()
     if (!buttonApply->isEnabled())
         return;
 
-    int i = tabWidget->currentIndex();
-
-    switch (i) {
-    case 1:
+    switch (tabWidget->currentIndex()) {
+    case Tab::Options:
         setCursor(QCursor(Qt::WaitCursor));
         applyRestore();
         setCursor(QCursor(Qt::ArrowCursor));
         buttonApply->setEnabled(false);
         break;
-    case 2:
+    case Tab::Copy:
         applyDesktop();
         buttonApply->setEnabled(false);
         break;
-    case 3:
+    case Tab::AddRemoveGroup:
         setCursor(QCursor(Qt::WaitCursor));
         applyGroup();
         setCursor(QCursor(Qt::ArrowCursor));
         buttonApply->setEnabled(false);
         break;
-    case 4:
+    case Tab::GroupMembership:
         setCursor(QCursor(Qt::WaitCursor));
         applyMembership();
         setCursor(QCursor(Qt::ArrowCursor));
