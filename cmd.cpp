@@ -34,7 +34,7 @@ QString Cmd::getCmdOut(const QString &cmd, bool quiet)
 
 bool Cmd::run(const QString &cmd, QByteArray &output, bool quiet)
 {
-    connect(this, static_cast<void (QProcess::*)(int)>(&QProcess::finished), this, &Cmd::finished, Qt::UniqueConnection);
+    connect(this, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, &Cmd::finished, Qt::UniqueConnection);
     if (this->state() != QProcess::NotRunning) {
         qDebug() << "Process already running:" << this->program() << this->arguments();
         return false;
