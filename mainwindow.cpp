@@ -240,11 +240,11 @@ void MainWindow::applyOptions()
     }
     if (radioAutologinNo->isChecked()) {
         if (QFile::exists("/etc/lightdm/lightdm.conf")) {
-            cmd = QString("sed -i -r '/^autologin-user=/d' /etc/lightdm/lightdm.conf").arg(user);
+            cmd = QString("sed -i -r '/^autologin-user=%1/d' /etc/lightdm/lightdm.conf").arg(user);
             system(cmd.toUtf8());
         }
         if (QFile::exists("/etc/sddm.conf"))
-            system("sed -i 's/^User=.*/User=/' /etc/sddm.conf");
+            system(QString("sed -i 's/^User=%1/User=/' /etc/sddm.conf").arg(user).toUtf8());
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
@@ -633,6 +633,23 @@ void MainWindow::on_userComboBox_activated(QString)
     radioAutologinYes->setAutoExclusive(false);
     radioAutologinYes->setChecked(false);
     radioAutologinYes->setAutoExclusive(true);
+    QString user = userComboBox->currentText();
+    if (user == (tr("none")))
+        return;
+    if (system("pgrep lightdm") == 0) {
+        QString cmd = QString("grep -qw ^autologin-user=%1 /etc/lightdm/lightdm.conf").arg(user);
+        if(system(cmd.toUtf8()) == 0)
+            radioAutologinYes->setChecked(true);
+         else
+            radioAutologinNo->setChecked(true);
+    } else if (system("pgrep sddm") == 0) {
+        QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
+        qDebug() << "TEST" << sddm_settings.value("Autologin/User").toString();
+        if (sddm_settings.value("Autologin/User").toString() == user)
+            radioAutologinYes->setChecked(true);
+        else
+            radioAutologinNo->setChecked(true);
+    }
 }
 
 void MainWindow::on_comboDeleteUser_activated(QString)
