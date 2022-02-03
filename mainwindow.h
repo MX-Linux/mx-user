@@ -46,8 +46,8 @@ public:
     void applyDesktop();
     void applyGroup();
     void applyMembership();
+    void applyOptions();
     void applyRename();
-    void applyRestore();
     void buildListGroups();
     void refreshAdd();
     void refreshChangePass();
@@ -55,8 +55,8 @@ public:
     void refreshDelete();
     void refreshGroups();
     void refreshMembership();
+    void refreshOptions();
     void refreshRename();
-    void refreshRestore();
     void restartPanel(QString user);
 
 public slots:

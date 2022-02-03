@@ -51,7 +51,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="userTab">
       <attribute name="icon">
@@ -563,7 +563,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="repairTab">
+     <widget class="QWidget" name="optionsTab">
       <attribute name="icon">
        <iconset resource="images.qrc">
         <normaloff>:/icons/package_development.png</normaloff>:/icons/package_development.png</iconset>
