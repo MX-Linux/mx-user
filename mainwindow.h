@@ -72,6 +72,8 @@ private slots:
     void on_buttonApply_clicked();
     void on_buttonCancel_clicked();
     void on_buttonHelp_clicked();
+    void on_checkGroups_stateChanged(int);
+    void on_checkMozilla_stateChanged(int);
     void on_comboChangePass_activated(QString);
     void on_comboDeleteUser_activated(QString);
     void on_comboRenameUser_activated(QString);
@@ -84,6 +86,8 @@ private slots:
     void on_lineEditChangePassConf_textChanged(const QString &arg1);
     void on_lineEditChangePass_textChanged();
     void on_mozillaRadioButton_clicked();
+    void on_radioAutologinNo_clicked();
+    void on_radioAutologinYes_clicked();
     void on_sharedRadioButton_clicked();
     void on_syncRadioButton_clicked();
     void on_tabWidget_currentChanged();

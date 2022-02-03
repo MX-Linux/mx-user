@@ -256,8 +256,7 @@ void MainWindow::applyOptions()
                                  (tr("Autologin has been enabled for the '%1' account.").arg(user)));
     }
     setCursor(QCursor(Qt::ArrowCursor));
-
-    refresh();
+    buttonApply->setEnabled(false);
 }
 
 void MainWindow::applyDesktop()
@@ -625,9 +624,7 @@ void MainWindow::on_fromUserComboBox_activated(QString)
 
 void MainWindow::on_userComboBox_activated(QString)
 {
-    buttonApply->setEnabled(true);
-    if (userComboBox->currentText() == tr("none"))
-        refresh();
+    buttonApply->setDisabled(true);
     radioAutologinNo->setAutoExclusive(false);
     radioAutologinNo->setChecked(false);
     radioAutologinNo->setAutoExclusive(true);
@@ -915,4 +912,24 @@ void MainWindow::on_comboRenameUser_activated(QString)
     buttonApply->setEnabled(true);
     if (comboRenameUser->currentText() == tr("none"))
         refresh();
+}
+
+void MainWindow::on_checkGroups_stateChanged(int)
+{
+    buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
+}
+
+void MainWindow::on_checkMozilla_stateChanged(int)
+{
+    buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
+}
+
+void MainWindow::on_radioAutologinYes_clicked()
+{
+    buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
+}
+
+void MainWindow::on_radioAutologinNo_clicked()
+{
+    buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
 }
