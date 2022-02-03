@@ -1,3 +1,12 @@
+mx-user (22.2) mx; urgency=medium
+
+  * GUI improvement: in Options tab make it more obvious that the option has been applied
+  * Display autologin status for the selected user
+  * Hide autologin group if cannot detect destkop manager
+  * Minor GUI fix: size of boxes
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 03 Feb 2022 11:02:17 -0500
+
 mx-user (21.12) mx; urgency=medium
 
   * Disable tab switching while copying

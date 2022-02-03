@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 03 Feb 2022 11:02:17 -0500
+Source: mx-user
+Architecture: source
+Version: 22.2
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (22.2) mx; urgency=medium
+ .
+   * GUI improvement: in Options tab make it more obvious that the option has been applied
+   * Display autologin status for the selected user
+   * Hide autologin group if cannot detect destkop manager
+   * Minor GUI fix: size of boxes
+Checksums-Sha1:
+ 3373d6a8f87a58ebd4fdbed08a3f35af05e1c220 578 mx-user_22.2.dsc
+ 213db9a8c3a6ee3060230515c02731994725c0f4 154084 mx-user_22.2.tar.xz
+ 89a57d655ee2ec88b486a3cc02b8d82fc61f2fb0 9969 mx-user_22.2_i386.buildinfo
+Checksums-Sha256:
+ 7ae37ee4febb516deb448f4485346afd29a34ff039e8eecf33d6cfb4735f68d3 578 mx-user_22.2.dsc
+ 0303ca79beb9f71d6632b727edea21df46dc0e91def56f41e09e99813d755d98 154084 mx-user_22.2.tar.xz
+ 7a7cb27132e7983375441c761a3734117420f89e3326dd87f339351468405b93 9969 mx-user_22.2_i386.buildinfo
+Files:
+ 9130b2c8e3545587f708db69d02f9610 578 system optional mx-user_22.2.dsc
+ ff34e9bfaecdf4ed8cd0a3aa875c161f 154084 system optional mx-user_22.2.tar.xz
+ 2dfa06b03d1ff5b68fb7798ab3846a82 9969 system optional mx-user_22.2_i386.buildinfo
