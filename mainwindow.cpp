@@ -234,7 +234,7 @@ void MainWindow::applyOptions()
     }
     // restore Mozilla configs
     if (checkMozilla->isChecked()) {
-        cmd = QString("/bin/rm -r %1/.mozilla").arg(home);
+        cmd = QString("rm -r %1/.mozilla").arg(home);
         system(cmd.toUtf8());
         QMessageBox::information(this, windowTitle(), tr("Mozilla settings were reset."));
     }
