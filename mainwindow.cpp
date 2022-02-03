@@ -118,6 +118,8 @@ void MainWindow::refreshOptions()
     radioAutologinYes->setAutoExclusive(false);
     radioAutologinYes->setChecked(false);
     radioAutologinYes->setAutoExclusive(true);
+    if (system("pgrep lightdm\\|sddm") != 0) // if unknown desktop manager
+        groupBox->setVisible(false);
 }
 
 void MainWindow::refreshCopy()
