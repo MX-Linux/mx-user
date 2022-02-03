@@ -75,7 +75,7 @@ void MainWindow::refresh()
 
     switch (tabWidget->currentIndex()) {
     case Tab::Options:
-        refreshRestore();
+        refreshOptions();
         buttonApply->setEnabled(false);
         break;
     case Tab::Copy:
@@ -105,7 +105,7 @@ void MainWindow::refresh()
     }
 }
 
-void MainWindow::refreshRestore()
+void MainWindow::refreshOptions()
 {
     userComboBox->clear();
     userComboBox->addItem(tr("none"));
@@ -197,7 +197,7 @@ void MainWindow::refreshRename()
 
 
 // Apply but do not close
-void MainWindow::applyRestore()
+void MainWindow::applyOptions()
 {
     QString user = userComboBox->currentText();
     if (user == (tr("none"))) // no user selected
@@ -718,7 +718,7 @@ void MainWindow::on_buttonApply_clicked()
     switch (tabWidget->currentIndex()) {
     case Tab::Options:
         setCursor(QCursor(Qt::WaitCursor));
-        applyRestore();
+        applyOptions();
         setCursor(QCursor(Qt::ArrowCursor));
         buttonApply->setEnabled(false);
         break;
