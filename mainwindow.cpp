@@ -348,10 +348,9 @@ void MainWindow::applyAdd()
 
     cmd = QString("adduser --disabled-login --force-badname --gecos %1 %1").arg(userNameEdit->text());
     system(cmd.toUtf8());
-    cmd = QString("passwd %1").arg(userNameEdit->text());
 
     QProcess proc;
-    proc.start(cmd);
+    proc.start("passwd", QStringList{userNameEdit->text()}, QIODevice::ReadWrite);
     proc.waitForStarted();
     proc.write(userPasswordEdit->text().toUtf8() + "\n");
     proc.write(userPasswordEdit->text().toUtf8() + "\n");
@@ -377,10 +376,9 @@ void MainWindow::applyChangePass()
                               tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
         return;
     }
-    QString cmd = QString("passwd %1").arg(comboChangePass->currentText());
 
     QProcess proc;
-    proc.start(cmd);
+    proc.start("passwd", QStringList{comboChangePass->currentText()}, QIODevice::ReadWrite);
     proc.waitForStarted();
     proc.write(lineEditChangePass->text().toUtf8() + "\n");
     proc.write(lineEditChangePass->text().toUtf8() + "\n");
