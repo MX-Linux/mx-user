@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>830</width>
-    <height>632</height>
+    <height>662</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -51,7 +51,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="userTab">
       <attribute name="icon">
@@ -123,7 +123,7 @@
           <item row="2" column="1">
            <widget class="QLineEdit" name="userPassword2Edit">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -167,7 +167,7 @@
           <item row="0" column="1">
            <widget class="QLineEdit" name="userNameEdit">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -208,7 +208,7 @@
           <item row="1" column="1">
            <widget class="QLineEdit" name="userPasswordEdit">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -314,7 +314,7 @@
           <item row="0" column="1">
            <widget class="QComboBox" name="comboDeleteUser">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -376,6 +376,12 @@
        </item>
        <item row="6" column="0">
         <widget class="QGroupBox" name="renameUserBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="title">
           <string>Rename User Account</string>
          </property>
@@ -397,7 +403,14 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QComboBox" name="comboRenameUser"/>
+           <widget class="QComboBox" name="comboRenameUser">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
           </item>
           <item row="0" column="2">
            <spacer name="horizontalSpacer_10">
@@ -434,7 +447,7 @@
           <item row="1" column="1">
            <widget class="QLineEdit" name="renameUserNameEdit">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -458,15 +471,34 @@
        </item>
        <item row="1" column="0">
         <widget class="QGroupBox" name="changePasswordBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="title">
           <string>Change User Password</string>
          </property>
          <layout class="QGridLayout" name="gridLayoutPasswd">
           <item row="0" column="1">
-           <widget class="QComboBox" name="comboChangePass"/>
+           <widget class="QComboBox" name="comboChangePass">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
           </item>
           <item row="1" column="1">
            <widget class="QLineEdit" name="lineEditChangePass">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="inputMask">
              <string/>
             </property>
@@ -499,6 +531,12 @@
           </item>
           <item row="2" column="1">
            <widget class="QLineEdit" name="lineEditChangePassConf">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="echoMode">
              <enum>QLineEdit::Password</enum>
             </property>
