@@ -29,7 +29,7 @@
 #include "mainwindow.h"
 #include "version.h"
 
-enum Tab {Administration, Options, Copy, AddRemoveGroup, GroupMembership};
+enum Tab {Administration, Options, Copy, AddRemoveGroup, GroupMembership, MAX};
 
 MainWindow::MainWindow(QWidget* parent) : QDialog(parent)
 {
@@ -306,13 +306,13 @@ void MainWindow::applyDesktop()
     timer.start(100);
     connect(&timer, &QTimer::timeout, this, &MainWindow::progress);
 
-    for (int tab = 0; tab < 5; ++tab) {
+    for (int tab = 0; tab < Tab::MAX; ++tab) {
         if (tab == Tab::Copy)
             continue;
         tabWidget->setTabEnabled(tab, false);
     }
     syncDone(shell->run(cmd));
-    for (int tab = 0; tab < 5; ++tab)
+    for (int tab = 0; tab < Tab::MAX; ++tab)
         tabWidget->setTabEnabled(tab, true);
 }
 
