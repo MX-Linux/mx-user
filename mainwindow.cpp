@@ -462,10 +462,10 @@ void MainWindow::applyGroup()
 void MainWindow::applyMembership()
 {
     QString cmd;
-    //Add all WidgetItems from listGroups
-    QList<QListWidgetItem *> items = listGroups->findItems(QString("*"), Qt::MatchWrap | Qt::MatchWildcard);
+    // Add all WidgetItems from listGroups
+    auto items = listGroups->findItems(QString("*"), Qt::MatchWrap | Qt::MatchWildcard);
     while (!items.isEmpty()) {
-        QListWidgetItem *item = items.takeFirst();
+        auto item = items.takeFirst();
         if (item->checkState() == 2)
             cmd += item->text() + ",";
     }
@@ -717,7 +717,7 @@ void MainWindow::buildListGroups()
     QStringList out_tok = out.split(" ");
     while (!out_tok.isEmpty()) {
         QString text = out_tok.takeFirst();
-        QList<QListWidgetItem*> list = listGroups->findItems(text, Qt::MatchExactly);
+        auto list = listGroups->findItems(text, Qt::MatchExactly);
         while (!list.isEmpty())
             list.takeFirst()->setCheckState(Qt::Checked);
     }
