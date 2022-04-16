@@ -9,20 +9,17 @@
 #include "cmd.h"
 #include "version.h"
 
+
 // display doc as nomal user when run as root
 void displayDoc(QString url, QString title, bool runned_as_root)
 {
     if (system("command -v mx-viewer >/dev/null") == 0) {
         system("mx-viewer " + url.toUtf8() + " \"" + title.toUtf8() + "\"&");
     } else {
-        if (!runned_as_root) {
+        if (!runned_as_root)
             system("xdg-open " + url.toUtf8());
-        } else {
-            Cmd cmd;
-            QString user = cmd.getCmdOut("logname", true);
-            system("runuser -l " + user.toUtf8() + " -c \"env XDG_RUNTIME_DIR=/run/user/$(id -u " +
-                   user.toUtf8() + ") xdg-open " + url.toUtf8() + "\"&");
-        }
+        else
+            system("runuser $(logname) -c \"env XDG_RUNTIME_DIR=/run/user/$(id -u $(logname)) xdg-open " + url.toUtf8() + "\"&");
     }
 }
 
@@ -46,7 +43,8 @@ void displayAboutMsgBox(QString title, QString message, QString licence_url, QSt
         QTextEdit *text = new QTextEdit;
         text->setReadOnly(true);
         Cmd cmd;
-        text->setText(cmd.getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
+        text->setText(cmd.getCmdOut("zless /usr/share/doc/" +
+                                    QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
 
         QPushButton *btnClose = new QPushButton(QApplication::tr("&Close"));
         btnClose->setIcon(QIcon::fromTheme("window-close"));
