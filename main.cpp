@@ -23,7 +23,7 @@
 #include "mainwindow.h"
 #include <unistd.h>
 
-int main( int argc, char ** argv ) {
+int main( int argc, char *argv[] ) {
     QApplication app(argc, argv);
     app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
     app.setOrganizationName("MX-Linux");
