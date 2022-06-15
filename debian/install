@@ -3,3 +3,6 @@ icons/mx-user.png	usr/share/icons/hicolor/256x256/apps
 mx-user			usr/sbin
 mx-user.desktop		usr/share/applications
 translations/*.qm	usr/share/mx-user/locale
+scripts/mx-user-launcher	usr/bin
+scripts/org.mxlinux.pkexec.mx-user-launcher.policy	usr/share/polkit-1/actions
+
