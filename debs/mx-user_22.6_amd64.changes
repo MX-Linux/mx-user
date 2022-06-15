@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Format: 1.8
 Date: Wed, 15 Jun 2022 17:04:58 -0400
 Source: mx-user
@@ -16,17 +19,29 @@ Changes:
    * Preserve user theme when launching program as root
    * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
 Checksums-Sha1:
- df37f4faad4052972c2334798d9607e40f408966 578 mx-user_22.6.dsc
+ e63527b203211fd803178cb30de66d5be11c1c26 1140 mx-user_22.6.dsc
  602abd70762c6fbe9b5f03cac43bdfed0e629663 155796 mx-user_22.6.tar.xz
- 2294cfce121c48386cb033874f86c55fc359a3d0 10130 mx-user_22.6_amd64.buildinfo
+ b3a3565240dfe6e691aa1a303b02ed76e9f08236 10695 mx-user_22.6_amd64.buildinfo
  88d64a16f59189814aff2b61efba35151281523e 195140 mx-user_22.6_amd64.deb
 Checksums-Sha256:
- e52aeb8af05f7de86becf2a1c0edc86ab99bbc083935f28a52b606221dcb6e2c 578 mx-user_22.6.dsc
+ 1f581059624c4d6487c5f93984c9a4169ef147b4a04fc4754bc15c301a9d8daa 1140 mx-user_22.6.dsc
  5605cbc563efa9bab74a3d23c6d6829424d8f1ad824feeec013de54efefeba61 155796 mx-user_22.6.tar.xz
- 8a14f5e829bac3bf6aae5485c59496b84fb51ddcb9943c940cfbf62158b3c42b 10130 mx-user_22.6_amd64.buildinfo
+ bfbf9d9204f3233e07a66ac49c29c2861636b67636e7b9fc624067fec5ff52fe 10695 mx-user_22.6_amd64.buildinfo
  f6db9e69bb4d2261595ea02ab57488531dcfb91a607468b526748af4b5cc9776 195140 mx-user_22.6_amd64.deb
 Files:
- 301d20bbf080c60946e345e104d8d2df 578 system optional mx-user_22.6.dsc
+ 4a0899d09aba4cb1f405b079f99210a0 1140 system optional mx-user_22.6.dsc
  c5fdf3c86677a82c809511a4f8c08bf0 155796 system optional mx-user_22.6.tar.xz
- 8686d586e6845fcd9358d4a371d9ccbe 10130 system optional mx-user_22.6_amd64.buildinfo
+ eb6fb5b9a22d9bbe1464bfbb4b79bf3c 10695 system optional mx-user_22.6_amd64.buildinfo
  9ba763c4ceeb17ffcc09352f4a003b66 195140 system optional mx-user_22.6_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmKqSx0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumKQvB/4rhqDt90I/ccMeU7TJhrWtQ08WMuC8
+LdyDDvj1OMaP3LnPJFNTjkMAwuntXCu6blADOjTzg5Vq6qhuzkghhax/ZZSU+acf
+jUcLAFQp/bBDIroQRtec5L23fS3N4Ox1iXKR/hdGo1kCSYuIs+tx4b8OyC1vCdC/
+9yiecMyNHSK6ZoZ95Af1uEWw1NX8fge1fBRas2IaddbEWWeCWcNdW8QKYCrS4dw+
+W71KR9/M2Why2kwNVW8iRgChIFCXXIotx6Wyip3aOElizv2OcebnyF8NDXqZyFtX
+SsG+a0+yh9Z23jqtBZElx3YMB1zzt3PoGA2J0GL9prp1qrjdYUezC9HU
+=xrFn
+-----END PGP SIGNATURE-----
