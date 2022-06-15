@@ -36,7 +36,7 @@ public:
     ~MainWindow();
 
     // helpers
-    static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
+    static bool replaceStringInFile(const QString& oldtext, const QString& newtext, const QString& filepath);
     // common
     void refresh();
     // special
@@ -57,7 +57,7 @@ public:
     void refreshMembership();
     void refreshOptions();
     void refreshRename();
-    void restartPanel(QString user);
+    static void restartPanel(const QString &user);
 
 public slots:
     void progress();
@@ -74,14 +74,14 @@ private slots:
     void on_buttonHelp_clicked();
     void on_checkGroups_stateChanged(int);
     void on_checkMozilla_stateChanged(int);
-    void on_comboChangePass_activated(QString);
-    void on_comboDeleteUser_activated(QString);
-    void on_comboRenameUser_activated(QString);
+    void on_comboChangePass_activated(const QString&);
+    void on_comboDeleteUser_activated(const QString&);
+    void on_comboRenameUser_activated(const QString&);
     void on_copyRadioButton_clicked();
-    void on_deleteGroupCombo_activated(QString);
+    void on_deleteGroupCombo_activated(const QString&);
     void on_docsRadioButton_clicked();
     void on_entireRadioButton_clicked();
-    void on_fromUserComboBox_activated(QString);
+    void on_fromUserComboBox_activated(const QString&);
     void on_groupNameEdit_textEdited();
     void on_lineEditChangePassConf_textChanged(const QString &arg1);
     void on_lineEditChangePass_textChanged();
@@ -92,8 +92,8 @@ private slots:
     void on_syncRadioButton_clicked();
     void on_tabWidget_currentChanged();
     void on_toUserComboBox_activated(const QString &arg1);
-    void on_userComboBox_activated(QString);
-    void on_userComboMembership_activated(QString);
+    void on_userComboBox_activated(const QString&);
+    void on_userComboMembership_activated(const QString&);
     void on_userNameEdit_textEdited();
     void on_userPassword2Edit_textChanged(const QString &arg1);
     void on_userPasswordEdit_textChanged();
