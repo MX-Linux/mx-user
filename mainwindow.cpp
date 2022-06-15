@@ -24,10 +24,12 @@
 #include <QTextEdit>
 #include <QTimer>
 
-
 #include "about.h"
 #include "mainwindow.h"
 #include "version.h"
+#include <chrono>
+
+using namespace std::chrono_literals;
 
 enum Tab {Administration, Options, Copy, AddRemoveGroup, GroupMembership, MAX};
 
@@ -43,10 +45,10 @@ MainWindow::MainWindow(QWidget *parent) : QDialog(parent)
     tabWidget->setCurrentIndex(Tab::Administration);
     tabWidget->blockSignals(false);
     QSize size = this->size();
-    restoreGeometry(settings.value("geometry").toByteArray());
+    restoreGeometry(settings.value(QStringLiteral("geometry")).toByteArray());
     if (this->isMaximized()) {  // if started maximized give option to resize to normal window size
         this->resize(size);
-        QRect screenGeometry = qApp->primaryScreen()->geometry();
+        QRect screenGeometry = QApplication::primaryScreen()->geometry();
         int x = (screenGeometry.width() - this->width()) / 2;
         int y = (screenGeometry.height() - this->height()) / 2;
         this->move(x, y);
@@ -56,16 +58,14 @@ MainWindow::MainWindow(QWidget *parent) : QDialog(parent)
 
 MainWindow::~MainWindow()
 {
-    settings.setValue("geometry", saveGeometry());
+    settings.setValue(QStringLiteral("geometry"), saveGeometry());
 }
 
-bool MainWindow::replaceStringInFile(QString oldtext, QString newtext, QString filepath)
+bool MainWindow::replaceStringInFile(const QString& oldtext, const QString& newtext, const QString& filepath)
 {
 
-    QString cmd = QString("sed -i 's/%1/%2/g' %3").arg(oldtext, newtext, filepath);
-    if (system(cmd.toUtf8()) != 0)
-        return false;
-    return true;
+    QString cmd = QStringLiteral("sed -i 's/%1/%2/g' %3").arg(oldtext, newtext, filepath);
+    return system(cmd.toUtf8()) == 0;
 }
 
 void MainWindow::refresh()
@@ -95,7 +95,7 @@ void MainWindow::refresh()
         refreshDelete();
         refreshChangePass();
         refreshRename();
-        users = shell->getCmdOut("lslogins --noheadings -u -o user |  grep -vw root").split("\n");
+        users = shell->getCmdOut(QStringLiteral("lslogins --noheadings -u -o user |  grep -vw root")).split(QStringLiteral("\n"));
         users.sort();
         comboRenameUser->addItems(users);
         comboChangePass->addItems(users);
@@ -126,7 +126,7 @@ void MainWindow::refreshCopy()
 {
     fromUserComboBox->clear();
     fromUserComboBox->addItems(users);
-    const QString logname = shell->getCmdOut("logname", true);
+    const QString logname = shell->getCmdOut(QStringLiteral("logname"), true);
     fromUserComboBox->setCurrentIndex(fromUserComboBox->findText(logname));
     copyRadioButton->setChecked(true);
     entireRadioButton->setChecked(true);
@@ -162,7 +162,7 @@ void MainWindow::refreshChangePass()
     comboChangePass->clear();
     comboChangePass->addItem(tr("none"));
     changePasswordBox->setEnabled(true);
-    comboChangePass->addItem("root");
+    comboChangePass->addItem(QStringLiteral("root"));
     lineEditChangePass->clear();
     lineEditChangePassConf->clear();
 }
@@ -175,8 +175,8 @@ void MainWindow::refreshGroups()
     deleteGroupCombo->clear();
     deleteGroupCombo->addItem(tr("none"));
     deleteBox->setEnabled(true);
-    QStringList groups = shell->getCmdOut("cat /etc/group | cut -f 1 -d :").split("\n");
-    groups.removeAll("root");
+    QStringList groups = shell->getCmdOut(QStringLiteral("cat /etc/group | cut -f 1 -d :")).split(QStringLiteral("\n"));
+    groups.removeAll(QStringLiteral("root"));
     groups.sort();
     deleteGroupCombo->addItems(groups);
 }
@@ -205,8 +205,8 @@ void MainWindow::applyOptions()
     if (user == (tr("none"))) // no user selected
         return;
     QString home = user;
-    if (user != "root")
-        home = QString("/home/%1").arg(user);
+    if (user != QLatin1String("root"))
+        home = QStringLiteral("/home/%1").arg(user);
 
     if (checkGroups->isChecked() || checkMozilla->isChecked()) {
         int ans = QMessageBox::warning(this, windowTitle(),
@@ -219,41 +219,41 @@ void MainWindow::applyOptions()
 
     QString cmd;
     // restore groups
-    if (checkGroups->isChecked() && user != "root") {
+    if (checkGroups->isChecked() && user != QLatin1String("root")) {
         buildListGroups();
-        cmd = QString("sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
-        QStringList extra_groups_list = shell->getCmdOut(cmd).split(",");
+        cmd = QStringLiteral("sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
+        QStringList extra_groups_list = shell->getCmdOut(cmd).split(QStringLiteral(","));
         QStringList new_group_list;
         for (const QString &group : extra_groups_list)
             if (!listGroups->findItems(group, Qt::MatchExactly).isEmpty())
                 new_group_list << group;
-        cmd = "usermod -G '' " + user + "; usermod -G " + new_group_list.join(",") + " " + user; // reset group and add extra from /etc/adduser.conf
+        cmd = "usermod -G '' " + user + "; usermod -G " + new_group_list.join(QStringLiteral(",")) + " " + user; // reset group and add extra from /etc/adduser.conf
         system(cmd.toUtf8());
         QMessageBox::information(this, windowTitle(),
                                  tr("User group membership was restored."));
     }
     // restore Mozilla configs
     if (checkMozilla->isChecked()) {
-        cmd = QString("rm -r %1/.mozilla").arg(home);
+        cmd = QStringLiteral("rm -r %1/.mozilla").arg(home);
         system(cmd.toUtf8());
         QMessageBox::information(this, windowTitle(), tr("Mozilla settings were reset."));
     }
     if (radioAutologinNo->isChecked()) {
-        if (QFile::exists("/etc/lightdm/lightdm.conf")) {
-            cmd = QString("sed -i -r '/^autologin-user=%1/d' /etc/lightdm/lightdm.conf").arg(user);
+        if (QFile::exists(QStringLiteral("/etc/lightdm/lightdm.conf"))) {
+            cmd = QStringLiteral("sed -i -r '/^autologin-user=%1/d' /etc/lightdm/lightdm.conf").arg(user);
             system(cmd.toUtf8());
         }
-        if (QFile::exists("/etc/sddm.conf"))
-            system(QString("sed -i 's/^User=%1/User=/' /etc/sddm.conf").arg(user).toUtf8());
+        if (QFile::exists(QStringLiteral("/etc/sddm.conf")))
+            system(QStringLiteral("sed -i 's/^User=%1/User=/' /etc/sddm.conf").arg(user).toUtf8());
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
-        if (QFile::exists("/etc/lightdm/lightdm.conf")) {
-            cmd = QString("sed -i -r '/^autologin-user=/d; /^[[]SeatDefaults[]]/aautologin-user=%1' /etc/lightdm/lightdm.conf").arg(user);
+        if (QFile::exists(QStringLiteral("/etc/lightdm/lightdm.conf"))) {
+            cmd = QStringLiteral("sed -i -r '/^autologin-user=/d; /^[[]SeatDefaults[]]/aautologin-user=%1' /etc/lightdm/lightdm.conf").arg(user);
             system(cmd.toUtf8());
         }
-        if (QFile::exists("/etc/sddm.conf"))
-            system(QString("sed -i 's/^User=.*/User=%1/' /etc/sddm.conf").arg(user).toUtf8());
+        if (QFile::exists(QStringLiteral("/etc/sddm.conf")))
+            system(QStringLiteral("sed -i 's/^User=.*/User=%1/' /etc/sddm.conf").arg(user).toUtf8());
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been enabled for the '%1' account.").arg(user)));
     }
@@ -274,9 +274,9 @@ void MainWindow::applyDesktop()
                                     QMessageBox::Yes, QMessageBox::No))
         return;
 
-    QString fromDir = QString("/home/%1").arg(fromUserComboBox->currentText());
-    QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
-    if (toUserComboBox->currentText().contains("/"))  // if a directory rather than a user name
+    QString fromDir = QStringLiteral("/home/%1").arg(fromUserComboBox->currentText());
+    QString toDir = QStringLiteral("/home/%1").arg(toUserComboBox->currentText());
+    if (toUserComboBox->currentText().contains(QLatin1String("/")))  // if a directory rather than a user name
         toDir = toUserComboBox->currentText();
     if (docsRadioButton->isChecked()) {
         fromDir.append("/Documents");
@@ -295,14 +295,14 @@ void MainWindow::applyDesktop()
         syncStatusEdit->setText(tr("Synchronizing desktop..."));
     else
         syncStatusEdit->setText(tr("Copying desktop..."));
-    QString cmd = QString("rsync -qa ");
+    QString cmd = QStringLiteral("rsync -qa ");
     if (syncRadioButton->isChecked())
         cmd.append("--delete-after ");
     cmd.append(fromDir);
     cmd.append(" ");
     cmd.append(toDir);
     QTimer timer;
-    timer.start(100);
+    timer.start(100ms);
     connect(&timer, &QTimer::timeout, this, &MainWindow::progress);
 
     for (int tab = 0; tab < Tab::MAX; ++tab) {
@@ -323,14 +323,14 @@ void MainWindow::applyAdd()
         QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
         return;
-    } else if (!userNameEdit->text().contains(QRegularExpression("^[A-Za-z_][A-Za-z0-9_-]*[$]?$"))) {
+    } else if (!userNameEdit->text().contains(QRegularExpression(QStringLiteral("^[A-Za-z_][A-Za-z0-9_-]*[$]?$")))) {
         QMessageBox::critical(this, windowTitle(),
             tr("The user name cannot contain special characters or spaces.\n"
                 "Please choose another name before proceeding."));
         return;
     }
     // check that user name is not already used
-    QString cmd = QString("grep -w '^%1' /etc/passwd >/dev/null").arg(userNameEdit->text());
+    QString cmd = QStringLiteral("grep -w '^%1' /etc/passwd >/dev/null").arg(userNameEdit->text());
     if (system(cmd.toUtf8()) == 0) {
         QMessageBox::critical(this, windowTitle(),
                               tr("Sorry, this name is in use. Please enter a different name."));
@@ -346,11 +346,11 @@ void MainWindow::applyAdd()
         return;
     }
 
-    cmd = QString("adduser --disabled-login --force-badname --gecos %1 %1").arg(userNameEdit->text());
+    cmd = QStringLiteral("adduser --disabled-login --force-badname --gecos %1 %1").arg(userNameEdit->text());
     system(cmd.toUtf8());
 
     QProcess proc;
-    proc.start("passwd", QStringList{userNameEdit->text()}, QIODevice::ReadWrite);
+    proc.start(QStringLiteral("passwd"), QStringList{userNameEdit->text()}, QIODevice::ReadWrite);
     proc.waitForStarted();
     proc.write(userPasswordEdit->text().toUtf8() + "\n");
     proc.write(userPasswordEdit->text().toUtf8() + "\n");
@@ -378,7 +378,7 @@ void MainWindow::applyChangePass()
     }
 
     QProcess proc;
-    proc.start("passwd", QStringList{comboChangePass->currentText()}, QIODevice::ReadWrite);
+    proc.start(QStringLiteral("passwd"), QStringList{comboChangePass->currentText()}, QIODevice::ReadWrite);
     proc.waitForStarted();
     proc.write(lineEditChangePass->text().toUtf8() + "\n");
     proc.write(lineEditChangePass->text().toUtf8() + "\n");
@@ -397,11 +397,11 @@ void MainWindow::applyDelete()
     QString cmd = QString(tr("This action cannot be undone. Are you sure you want to delete user %1?")).arg(comboDeleteUser->currentText());
     if (QMessageBox::Yes == QMessageBox::warning(this, windowTitle(), cmd, QMessageBox::Yes, QMessageBox::No)) {
         if (deleteHomeCheckBox->isChecked()) {
-            cmd = QString("killall -u %1").arg( comboDeleteUser->currentText());
+            cmd = QStringLiteral("killall -u %1").arg( comboDeleteUser->currentText());
             system(cmd.toUtf8());
-            cmd = QString("deluser --force --remove-home %1").arg( comboDeleteUser->currentText());
+            cmd = QStringLiteral("deluser --force --remove-home %1").arg( comboDeleteUser->currentText());
         } else {
-            cmd = QString("deluser %1").arg(comboDeleteUser->currentText());
+            cmd = QStringLiteral("deluser %1").arg(comboDeleteUser->currentText());
         }
         if (system(cmd.toUtf8()) == 0)
             QMessageBox::information(this, windowTitle(), tr("The user has been deleted."));
@@ -421,7 +421,7 @@ void MainWindow::applyGroup()
             QMessageBox::critical(this, windowTitle(),
                                   tr("The group name needs to be at least 2 characters long. Please select a longer name before proceeding."));
             return;
-        } else if (!groupNameEdit->text().contains(QRegularExpression("^[a-z_][a-z0-9_-]*[$]?$"))) {
+        } else if (!groupNameEdit->text().contains(QRegularExpression(QStringLiteral("^[a-z_][a-z0-9_-]*[$]?$")))) {
             QMessageBox::critical(this, windowTitle(),
                                   tr("The group name needs to be lower case and it \n"
                                      "cannot contain special characters or spaces.\n"
@@ -429,14 +429,14 @@ void MainWindow::applyGroup()
             return;
         }
         // check that group name is not already used
-        QString cmd = QString("grep -w '^%1' /etc/group >/dev/null").arg(groupNameEdit->text());
+        QString cmd = QStringLiteral("grep -w '^%1' /etc/group >/dev/null").arg(groupNameEdit->text());
         if (system(cmd.toUtf8()) == 0) {
             QMessageBox::critical(this, windowTitle(),
                                   tr("Sorry, that group name already exists. Please enter a different name."));
             return;
         }
         // run addgroup command
-        cmd = QString("addgroup --system %1").arg( groupNameEdit->text());
+        cmd = QStringLiteral("addgroup --system %1").arg( groupNameEdit->text());
         if (system(cmd.toUtf8()) == 0)
             QMessageBox::information(this, windowTitle(), tr("The system group was added ok."));
         else
@@ -446,7 +446,7 @@ void MainWindow::applyGroup()
         int ans = QMessageBox::warning(this, windowTitle(), cmd,
                                        QMessageBox::Yes, QMessageBox::No);
         if (ans == QMessageBox::Yes) {
-            cmd = QString("delgroup %1").arg(deleteGroupCombo->currentText());
+            cmd = QStringLiteral("delgroup %1").arg(deleteGroupCombo->currentText());
             if (system(cmd.toUtf8()) == 0)
                 QMessageBox::information(this, windowTitle(), tr("The group has been deleted."));
             else
@@ -460,14 +460,14 @@ void MainWindow::applyMembership()
 {
     QString cmd;
     // Add all WidgetItems from listGroups
-    auto items = listGroups->findItems(QString("*"), Qt::MatchWrap | Qt::MatchWildcard);
+    auto items = listGroups->findItems(QStringLiteral("*"), Qt::MatchWrap | Qt::MatchWildcard);
     while (!items.isEmpty()) {
-        auto item = items.takeFirst();
+        auto *item = items.takeFirst();
         if (item->checkState() == 2)
             cmd += item->text() + ",";
     }
     cmd.chop(1);
-    cmd = QString("usermod -G %1 %2").arg(cmd, userComboMembership->currentText());
+    cmd = QStringLiteral("usermod -G %1 %2").arg(cmd, userComboMembership->currentText());
     if (shell->run(cmd))
         QMessageBox::information(this, windowTitle(), tr("The changes have been applied."));
     else
@@ -481,7 +481,7 @@ void MainWindow::applyRename()
 
     // validate data before proceeding
     // check if selected user is in use
-    if (shell->getCmdOut("logname", true) == old_name) {
+    if (shell->getCmdOut(QStringLiteral("logname"), true) == old_name) {
         QMessageBox::critical(this, windowTitle(),
                               tr("The selected user name is currently in use.") + "\n\n" +
                               tr("To rename this user, please log out and log back in using another user account."));
@@ -494,7 +494,7 @@ void MainWindow::applyRename()
         QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
         return;
-    } else if (!new_name.contains(QRegularExpression("^[a-z_][a-z0-9_-]*[$]?$"))) {
+    } else if (!new_name.contains(QRegularExpression(QStringLiteral("^[a-z_][a-z0-9_-]*[$]?$")))) {
         QMessageBox::critical(this, windowTitle(),
                               tr("The user name needs to be lower case and it\n"
                                  "cannot contain special characters or spaces.\n"
@@ -502,7 +502,7 @@ void MainWindow::applyRename()
         return;
     }
     // check that user name is not already used
-    QString cmd = QString("grep -w '^%1' /etc/passwd >/dev/null").arg(new_name);
+    QString cmd = QStringLiteral("grep -w '^%1' /etc/passwd >/dev/null").arg(new_name);
     if (system(cmd.toUtf8()) == 0) {
         QMessageBox::critical(this, windowTitle(),
                               tr("Sorry, this name already exists on your system. Please enter a different name."));
@@ -524,13 +524,13 @@ void MainWindow::applyRename()
     shell->run("groupmod --new-name " + new_name + " " + old_name);
 
     // fix "home/old_user" string in all ~/ files
-    shell->run(QString("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'").arg(old_name, new_name));
+    shell->run(QStringLiteral("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'").arg(old_name, new_name));
 
     // change autologin name (Xfce and KDE)
-    if (QFile::exists("/etc/lightdm/lightdm.conf"))
-        shell->run(QString("sed -i 's/autologin-user=%1/autologin-user=%2/g' /etc/lightdm/lightdm.conf").arg(old_name, new_name));
-    if (QFile::exists("/etc/sddm.conf"))
-        shell->run(QString("sed -i 's/User=%1/User=%2/g' /etc/sddm.conf").arg(old_name, new_name));
+    if (QFile::exists(QStringLiteral("/etc/lightdm/lightdm.conf")))
+        shell->run(QStringLiteral("sed -i 's/autologin-user=%1/autologin-user=%2/g' /etc/lightdm/lightdm.conf").arg(old_name, new_name));
+    if (QFile::exists(QStringLiteral("/etc/sddm.conf")))
+        shell->run(QStringLiteral("sed -i 's/User=%1/User=%2/g' /etc/sddm.conf").arg(old_name, new_name));
 
     QMessageBox::information(this, windowTitle(), tr("The user was renamed."));
     refresh();
@@ -539,10 +539,10 @@ void MainWindow::applyRename()
 void MainWindow::syncDone(bool success)
 {
     if (success) {
-        QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
+        QString toDir = QStringLiteral("/home/%1").arg(toUserComboBox->currentText());
 
         // if a directory rather than a user name
-        if (toUserComboBox->currentText().contains("/")) {
+        if (toUserComboBox->currentText().contains(QLatin1String("/"))) {
             if (syncRadioButton->isChecked())
                 syncStatusEdit->setText(tr("Synchronizing desktop...ok"));
             else
@@ -553,23 +553,23 @@ void MainWindow::syncDone(bool success)
         }
 
         // fix owner
-        QString cmd = QString("chown -R %1:%1 %2").arg(toUserComboBox->currentText(), toDir);
+        QString cmd = QStringLiteral("chown -R %1:%1 %2").arg(toUserComboBox->currentText(), toDir);
         system(cmd.toUtf8());
 
         // fix "home/old_user" string in all ~/ or ~/.mozilla files
         if (entireRadioButton->isChecked())
-            cmd = QString("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'")
+            cmd = QStringLiteral("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'")
                     .arg(fromUserComboBox->currentText(), toUserComboBox->currentText());
         else if (mozillaRadioButton->isChecked())
-            cmd = QString("grep -rl \"home/%1\" /home/%2/.mozilla | xargs sed -i 's|home/%1|home/%2|g'")
+            cmd = QStringLiteral("grep -rl \"home/%1\" /home/%2/.mozilla | xargs sed -i 's|home/%1|home/%2|g'")
                     .arg(fromUserComboBox->currentText(), toUserComboBox->currentText());
         shell->run(cmd);
 
         if (entireRadioButton->isChecked()) {
             //delete some files
-            cmd = QString("rm -f %1/.recently-used >/dev/null").arg(toDir);
+            cmd = QStringLiteral("rm -f %1/.recently-used >/dev/null").arg(toDir);
             system(cmd.toUtf8());
-            cmd = QString("rm -f %1/.openoffice.org/*/.lock >/dev/null").arg(toDir);
+            cmd = QStringLiteral("rm -f %1/.openoffice.org/*/.lock >/dev/null").arg(toDir);
             system(cmd.toUtf8());
         }
         if (syncRadioButton->isChecked())
@@ -607,12 +607,12 @@ void MainWindow::closeApp()
 }
 
 
-void MainWindow::on_fromUserComboBox_activated(QString)
+void MainWindow::on_fromUserComboBox_activated(const QString& /*unused*/)
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
     QStringList items = users;
-    items.removeAll(shell->getCmdOut("logname", true));
+    items.removeAll(shell->getCmdOut(QStringLiteral("logname"), true));
     items.removeAll(fromUserComboBox->currentText());
     items.sort();
     toUserComboBox->clear();
@@ -622,7 +622,7 @@ void MainWindow::on_fromUserComboBox_activated(QString)
     toUserComboBox->addItem(tr("browse..."));
 }
 
-void MainWindow::on_userComboBox_activated(QString)
+void MainWindow::on_userComboBox_activated(const QString& /*unused*/)
 {
     buttonApply->setDisabled(true);
     radioAutologinNo->setAutoExclusive(false);
@@ -635,22 +635,22 @@ void MainWindow::on_userComboBox_activated(QString)
     if (user == (tr("none")))
         return;
     if (system("pgrep lightdm") == 0) {
-        const QString cmd = QString("grep -qw ^autologin-user=%1 /etc/lightdm/lightdm.conf").arg(user);
+        const QString cmd = QStringLiteral("grep -qw ^autologin-user=%1 /etc/lightdm/lightdm.conf").arg(user);
         if(system(cmd.toUtf8()) == 0)
             radioAutologinYes->setChecked(true);
-         else
+        else
             radioAutologinNo->setChecked(true);
     } else if (system("pgrep sddm") == 0) {
-        QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
-        qDebug() << "TEST" << sddm_settings.value("Autologin/User").toString();
-        if (sddm_settings.value("Autologin/User").toString() == user)
+        QSettings sddm_settings(QStringLiteral("/etc/sddm.conf"), QSettings::NativeFormat);
+        qDebug() << "TEST" << sddm_settings.value(QStringLiteral("Autologin/User")).toString();
+        if (sddm_settings.value(QStringLiteral("Autologin/User")).toString() == user)
             radioAutologinYes->setChecked(true);
         else
             radioAutologinNo->setChecked(true);
     }
 }
 
-void MainWindow::on_comboDeleteUser_activated(QString)
+void MainWindow::on_comboDeleteUser_activated(const QString& /*unused*/)
 {
     addUserBox->setEnabled(false);
     changePasswordBox->setEnabled(false);
@@ -679,7 +679,7 @@ void MainWindow::on_groupNameEdit_textEdited()
         refresh();
 }
 
-void MainWindow::on_deleteGroupCombo_activated(QString)
+void MainWindow::on_deleteGroupCombo_activated(const QString& /*unused*/)
 {
     addBox->setEnabled(false);
     renameUserBox->setEnabled(false);
@@ -688,7 +688,7 @@ void MainWindow::on_deleteGroupCombo_activated(QString)
         refresh();
 }
 
-void MainWindow::on_userComboMembership_activated(QString)
+void MainWindow::on_userComboMembership_activated(const QString& /*unused*/)
 {
     buildListGroups();
     buttonApply->setEnabled(true);
@@ -701,18 +701,18 @@ void MainWindow::buildListGroups()
 {
     listGroups->clear();
     //read /etc/group and add all the groups in the listGroups
-    QStringList groups = shell->getCmdOut("cat /etc/group | cut -f 1 -d :").split("\n");
+    QStringList groups = shell->getCmdOut(QStringLiteral("cat /etc/group | cut -f 1 -d :")).split(QStringLiteral("\n"));
     groups.sort();
     for (const QString &group : groups) {
-        auto item = new QListWidgetItem;
+        auto *item = new QListWidgetItem;
         item->setText(group);
         item->setCheckState(Qt::Unchecked);
         listGroups->addItem(item);
     }
     //check the boxes for the groups that the current user belongs to
-    const QString cmd = QString("id -nG %1").arg(userComboMembership->currentText());
+    const QString cmd = QStringLiteral("id -nG %1").arg(userComboMembership->currentText());
     const QString out = shell->getCmdOut(cmd);
-    QStringList out_tok = out.split(" ");
+    QStringList out_tok = out.split(QStringLiteral(" "));
     while (!out_tok.isEmpty()) {
         QString text = out_tok.takeFirst();
         auto list = listGroups->findItems(text, Qt::MatchExactly);
@@ -780,7 +780,7 @@ void MainWindow::on_buttonCancel_clicked()
 
 void MainWindow::progress()
 {
-    syncProgressBar->setValue((syncProgressBar->value() + 1) % 100);
+    syncProgressBar->setValue((syncProgressBar->value() + 1) % syncProgressBar->maximum());
 }
 
 // show about
@@ -790,9 +790,9 @@ void MainWindow::on_buttonAbout_clicked()
     displayAboutMsgBox(tr("About %1").arg(this->windowTitle()), "<p align=\"center\"><b><h2>" + this->windowTitle() +"</h2></b></p><p align=\"center\">" +
                        tr("Version: ") + VERSION + "</p><p align=\"center\"><h3>" +
                         tr("Simple user configuration for MX Linux") +
-                       "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
+                       R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-                       "/usr/share/doc/mx-user/license.html", tr("%1 License").arg(this->windowTitle()), true);
+                       QStringLiteral("/usr/share/doc/mx-user/license.html"), tr("%1 License").arg(this->windowTitle()), true);
     this->show();
 }
 
@@ -802,22 +802,22 @@ void MainWindow::on_buttonHelp_clicked()
     QLocale locale;
     const QString lang = locale.bcp47Name();
 
-    QString url = "/usr/share/doc/mx-user/mx-user.html";
+    QString url = QStringLiteral("/usr/share/doc/mx-user/mx-user.html");
 
-    if (lang.startsWith("fr"))
-        url = "https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs";
+    if (lang.startsWith(QLatin1String("fr")))
+        url = QStringLiteral("https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs");
     displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
 }
 
 
-void MainWindow::restartPanel(QString user)
+void MainWindow::restartPanel(const QString &user)
 {
-    const QString cmd = QString("pkill xfconfd; sudo -Eu %1 bash -c 'xfce4-panel -r'").arg(user);
+    const QString cmd = QStringLiteral("pkill xfconfd; sudo -Eu %1 bash -c 'xfce4-panel -r'").arg(user);
     system(cmd.toUtf8());
 }
 
 
-void MainWindow::on_comboChangePass_activated(QString)
+void MainWindow::on_comboChangePass_activated(const QString& /*unused*/)
 {
     addUserBox->setEnabled(false);
     deleteUserBox->setEnabled(false);
@@ -831,7 +831,7 @@ void MainWindow::on_comboChangePass_activated(QString)
 void MainWindow::on_toUserComboBox_activated(const QString &arg1)
 {
     if (arg1 == tr("browse...")) {
-        QString dir = QFileDialog::getExistingDirectory(this, tr("Select folder to copy to"), "/",
+        QString dir = QFileDialog::getExistingDirectory(this, tr("Select folder to copy to"), QStringLiteral("/"),
                                                         QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
         if (!dir.isEmpty()) {
             toUserComboBox->removeItem(toUserComboBox->currentIndex());
@@ -921,7 +921,7 @@ void MainWindow::on_lineEditChangePass_textChanged()
 }
 
 
-void MainWindow::on_comboRenameUser_activated(QString)
+void MainWindow::on_comboRenameUser_activated(const QString& /*unused*/)
 {
     addUserBox->setEnabled(false);
     changePasswordBox->setEnabled(false);
@@ -931,12 +931,12 @@ void MainWindow::on_comboRenameUser_activated(QString)
         refresh();
 }
 
-void MainWindow::on_checkGroups_stateChanged(int)
+void MainWindow::on_checkGroups_stateChanged(int /*unused*/)
 {
     buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
 }
 
-void MainWindow::on_checkMozilla_stateChanged(int)
+void MainWindow::on_checkMozilla_stateChanged(int /*unused*/)
 {
     buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
 }
