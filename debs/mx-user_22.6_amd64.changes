@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 15 Jun 2022 17:04:58 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 22.6
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (22.6) mx; urgency=medium
+ .
+   * Preserve user theme when launching program as root
+   * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
+Checksums-Sha1:
+ df37f4faad4052972c2334798d9607e40f408966 578 mx-user_22.6.dsc
+ 602abd70762c6fbe9b5f03cac43bdfed0e629663 155796 mx-user_22.6.tar.xz
+ 2294cfce121c48386cb033874f86c55fc359a3d0 10130 mx-user_22.6_amd64.buildinfo
+ 88d64a16f59189814aff2b61efba35151281523e 195140 mx-user_22.6_amd64.deb
+Checksums-Sha256:
+ e52aeb8af05f7de86becf2a1c0edc86ab99bbc083935f28a52b606221dcb6e2c 578 mx-user_22.6.dsc
+ 5605cbc563efa9bab74a3d23c6d6829424d8f1ad824feeec013de54efefeba61 155796 mx-user_22.6.tar.xz
+ 8a14f5e829bac3bf6aae5485c59496b84fb51ddcb9943c940cfbf62158b3c42b 10130 mx-user_22.6_amd64.buildinfo
+ f6db9e69bb4d2261595ea02ab57488531dcfb91a607468b526748af4b5cc9776 195140 mx-user_22.6_amd64.deb
+Files:
+ 301d20bbf080c60946e345e104d8d2df 578 system optional mx-user_22.6.dsc
+ c5fdf3c86677a82c809511a4f8c08bf0 155796 system optional mx-user_22.6.tar.xz
+ 8686d586e6845fcd9358d4a371d9ccbe 10130 system optional mx-user_22.6_amd64.buildinfo
+ 9ba763c4ceeb17ffcc09352f4a003b66 195140 system optional mx-user_22.6_amd64.deb

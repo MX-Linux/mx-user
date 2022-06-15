@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: mx-user
 Binary: mx-user
 Architecture: any
-Version: 22.2
+Version: 22.6
 Maintainer: adrian <adrian@mxlinux.org>
 Homepage: https://github.com/timkb4cq/mx-user
 Standards-Version: 3.9.8
@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 10), qtbase5-dev, qttools5-dev-tools
 Package-List:
  mx-user deb system optional arch=any
 Checksums-Sha1:
- 0f9676c4ded1957c0be1748d7572397314ec9c3d 154088 mx-user_22.2.tar.xz
+ 602abd70762c6fbe9b5f03cac43bdfed0e629663 155796 mx-user_22.6.tar.xz
 Checksums-Sha256:
- 112d1d50a602569e653b6253fe9379cc75600c94f815229b91c2fce2f7d4d6cb 154088 mx-user_22.2.tar.xz
+ 5605cbc563efa9bab74a3d23c6d6829424d8f1ad824feeec013de54efefeba61 155796 mx-user_22.6.tar.xz
 Files:
- 18795c8e463ed4ff98940743c0f3aef4 154088 mx-user_22.2.tar.xz
+ c5fdf3c86677a82c809511a4f8c08bf0 155796 mx-user_22.6.tar.xz

@@ -1,3 +1,10 @@
+mx-user (22.6) mx; urgency=medium
+
+  * Preserve user theme when launching program as root
+  * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 15 Jun 2022 17:04:58 -0400
+
 mx-user (22.2) mx; urgency=medium
 
   * GUI improvement: in Options tab make it more obvious that the option has been applied

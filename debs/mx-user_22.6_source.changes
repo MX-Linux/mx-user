@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Wed, 15 Jun 2022 17:04:58 -0400
+Source: mx-user
+Architecture: source
+Version: 22.6
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (22.6) mx; urgency=medium
+ .
+   * Preserve user theme when launching program as root
+   * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
+Checksums-Sha1:
+ 981641b7d4135038eea8cda7cb04ff40c9b6a4dd 578 mx-user_22.6.dsc
+ c901ff4f2387861ff6bb961e3afb5d5210f04efe 155796 mx-user_22.6.tar.xz
+ e3bd1f0bb747740c499fd6e0def762f07a8a1013 10009 mx-user_22.6_i386.buildinfo
+Checksums-Sha256:
+ 91329dacd8a699e0c92f1f7d4071ef15766e4790b059109a5efa7f46d58ece8d 578 mx-user_22.6.dsc
+ 50c1d136bc8bb2b13fb40a89db74e953236ffd0e36611dfb18c1a9610e2c54df 155796 mx-user_22.6.tar.xz
+ 09d2262f402e1c926fd06f32303ab69ab02bc467e4470f81b27cb0bdeeacf529 10009 mx-user_22.6_i386.buildinfo
+Files:
+ 319215994d6c05cc9db6f3917a4af1eb 578 system optional mx-user_22.6.dsc
+ 19aed6cf458fa44a5399f657efdd2437 155796 system optional mx-user_22.6.tar.xz
+ 66a3c003c5ba7d027755e82b6fe74d9e 10009 system optional mx-user_22.6_i386.buildinfo
