@@ -9,7 +9,6 @@ Homepage: https://github.com/timkb4cq/mx-user
 Package: mx-user
 Architecture: any
 Depends: adduser,
-         menu,
          mx-viewer | xdg-utils,
          rsync,
          ${misc:Depends},
