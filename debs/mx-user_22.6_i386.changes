@@ -16,11 +16,11 @@ Changes:
    * Preserve user theme when launching program as root
    * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
 Checksums-Sha1:
- e3bd1f0bb747740c499fd6e0def762f07a8a1013 10009 mx-user_22.6_i386.buildinfo
+ ad021c04f6f06a1af2c633c5c2f6e2e6d3e6394f 10009 mx-user_22.6_i386.buildinfo
  df9f13298a3dcf13bf3acf00158379f1a329dbc4 198116 mx-user_22.6_i386.deb
 Checksums-Sha256:
- 09d2262f402e1c926fd06f32303ab69ab02bc467e4470f81b27cb0bdeeacf529 10009 mx-user_22.6_i386.buildinfo
+ 1a545091c085d92aec9ea8a2aad499dfff06c9b6ec721190f7679a386bbe3348 10009 mx-user_22.6_i386.buildinfo
  a161c032ce08aa44049ea39c6f0e5f7ee5df923673519655d9820657053940f4 198116 mx-user_22.6_i386.deb
 Files:
- 66a3c003c5ba7d027755e82b6fe74d9e 10009 system optional mx-user_22.6_i386.buildinfo
+ ce2a0a1d17c8f6e9c56196ca19081aca 10009 system optional mx-user_22.6_i386.buildinfo
  6cff81c3c1d966de64452cdfad384358 198116 system optional mx-user_22.6_i386.deb
