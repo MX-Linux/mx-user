@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 16 Jun 2022 00:14:09 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 22.6.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (22.6.01) mx; urgency=medium
+ .
+   * Fix policy file
+Checksums-Sha1:
+ 119ec1e08606d36827b4bd57a1ea6a3868ffe51b 1152 mx-user_22.6.01.dsc
+ 788430eb8f01045121c7f462c89c7e67b95087c6 155836 mx-user_22.6.01.tar.xz
+ 4dbf0a4033be3b08684a765a3301d3e11fcbd5d4 10863 mx-user_22.6.01_amd64.buildinfo
+ c85f8e631f1b96901cc6eaba4ab1106281c99719 196600 mx-user_22.6.01_amd64.deb
+Checksums-Sha256:
+ 7321b02afad98b9af31d5f9464e35e1a4b19687573398a469ecbb045ae33c325 1152 mx-user_22.6.01.dsc
+ b904412522dc91fb09bae24231591296e19dd783b20a9ca8d3e01225c4d86a5b 155836 mx-user_22.6.01.tar.xz
+ 6a78d74af74cc9d6a9c318112bc267a0775969c4a6c26dc8319b10b461733156 10863 mx-user_22.6.01_amd64.buildinfo
+ a0dccc86cf56af1da04e5fdef55eca77657b89d6d2b68a3979f00cff6ac94ea9 196600 mx-user_22.6.01_amd64.deb
+Files:
+ 7a0b7e878ee1dba2c45bc46a521b80fa 1152 system optional mx-user_22.6.01.dsc
+ cce1daf2e1850fd11bac3dc7b0f9ae18 155836 system optional mx-user_22.6.01.tar.xz
+ 6849f794a122a0d7963661808fc61d64 10863 system optional mx-user_22.6.01_amd64.buildinfo
+ a233d9b5bfed2603e073a0856453f791 196600 system optional mx-user_22.6.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmKqrlcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumK1uB/0Y46Qpfa+PnfL7/MI5XKHzlvDgPF8/
+AIfboZV1+0mCfGwm4RDw0qwLYaGBhjavf8rLLarWUorvy/6TkObE/cV9cZVy3D4z
+9WapXJg2xvll7ifxKHlNZasQ5X/Tu27/Ez6nmZHtpBOQPLdxmrCIgAMQZDM7JhPe
+NYBUr69W3w0SAuW7sT0s6eFA09p4Q5SYuecmmK3j+sLwWn+SLOhRnQ+jgKBKNbMF
+ig5mmiawhN3IDj42d33MgSbE4s/cV4brbR0OkS1M/+ltDZxh1HUrwsRR41Wg/M09
+XWFVomISiFF1UDZvyiAZ7JuPUZ8yPAPL/hljDLJnSo1SUFACq8orcR33
+=ORZi
+-----END PGP SIGNATURE-----
