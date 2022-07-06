@@ -18,6 +18,7 @@ TRANSLATIONS += translations/mx-user_am.ts \
                 translations/mx-user_da.ts \
                 translations/mx-user_de.ts \
                 translations/mx-user_el.ts \
+                translations/mx-user_en.ts \
                 translations/mx-user_es.ts \
                 translations/mx-user_et.ts \
                 translations/mx-user_eu.ts \
