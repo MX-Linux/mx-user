@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ja">
 <context>
     <name>MEConfig</name>
     <message>
         <location filename="../mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>MX User Manager</translation>
+        <translation>MX ユーザー マネージャー</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="62"/>
@@ -31,7 +29,7 @@
     <message>
         <location filename="../mainwindow.ui" line="141"/>
         <source>confirm password</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワードを確認してください</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="157"/>
@@ -81,7 +79,7 @@
     <message>
         <location filename="../mainwindow.ui" line="245"/>
         <source>Confirm user password:</source>
-        <translation>ユーザーパスワード 確認:</translation>
+        <translation>ユーザーパスワードの確認:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="280"/>
@@ -91,7 +89,7 @@
     <message>
         <location filename="../mainwindow.ui" line="323"/>
         <source>Select user</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザーを選択します</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
@@ -105,7 +103,7 @@
     <message>
         <location filename="../mainwindow.ui" line="348"/>
         <source>User to delete:</source>
-        <translation>削除ユーザー:</translation>
+        <translation>削除するユーザー:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="364"/>
@@ -120,43 +118,43 @@
     <message>
         <location filename="../mainwindow.ui" line="386"/>
         <source>Rename User Account</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザーアカウントの名前変更</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="398"/>
         <location filename="../mainwindow.ui" line="560"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"></translation>
+        <translation>変更するユーザーを選択：</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>New user name:</source>
-        <translation type="unfinished"></translation>
+        <translation>新しいユーザー名</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="481"/>
         <source>Change User Password</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザーパスワードの変更</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="509"/>
         <source>new password</source>
-        <translation type="unfinished"></translation>
+        <translation>新規パスワード</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="525"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワードの確認</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="544"/>
         <source>confirm new password</source>
-        <translation type="unfinished"></translation>
+        <translation>新しいパスワードの確認</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="576"/>
         <source>New user password:</source>
-        <translation type="unfinished"></translation>
+        <translation>新規ユーザーのパスワード</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="610"/>
@@ -184,17 +182,17 @@
         <location filename="../mainwindow.ui" line="662"/>
         <location filename="../mainwindow.ui" line="1447"/>
         <source>User to change:</source>
-        <translation>変更ユーザー: </translation>
+        <translation>変更するユーザー: </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="707"/>
         <source>Restore Defaults</source>
-        <translation>デフォルトの復旧</translation>
+        <translation>既定の復旧</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="728"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation>ブラウザ設定を MX 初期状態へ戻す</translation>
+        <translation>ブラウザ設定を MX の初期状態へ戻す</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="734"/>
@@ -209,12 +207,12 @@
     <message>
         <location filename="../mainwindow.ui" line="744"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation>グループユーザーを MX の初期状態へ戻す</translation>
+        <translation>グループメンバーシップを MX の初期状態へ戻します</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="750"/>
         <source>Group memberships</source>
-        <translation>グループユーザー</translation>
+        <translation>グループメンバーシップ</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="753"/>
@@ -224,7 +222,7 @@
     <message>
         <location filename="../mainwindow.ui" line="763"/>
         <source>Change Autologin Settings</source>
-        <translation>自動ログイン設定の変更</translation>
+        <translation>自動ログインの設定変更</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="769"/>
@@ -255,7 +253,7 @@
     <message>
         <location filename="../mainwindow.ui" line="858"/>
         <source>Select to only copy files</source>
-        <translation>コピーファイルを選択</translation>
+        <translation>コピーのファイルだけを選択</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="861"/>
@@ -281,7 +279,7 @@
     <message>
         <location filename="../mainwindow.ui" line="934"/>
         <source>Select to copy and then delete differences</source>
-        <translation>コピー・差分削除の選択</translation>
+        <translation>選択してコピーし、差分を削除します</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="937"/>
@@ -331,12 +329,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1044"/>
         <source>What to copy/sync:</source>
-        <translation>コピー・同期について</translation>
+        <translation>コピー／同期するもの：</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1060"/>
         <source>Progress</source>
-        <translation>作業</translation>
+        <translation>進行状況</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1090"/>
@@ -352,7 +350,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1125"/>
         <source>Progress of the changes</source>
-        <translation>変更作業</translation>
+        <translation>変更の進行状況</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1162"/>
@@ -382,12 +380,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1320"/>
         <source>Group to delete:</source>
-        <translation>グループ削除: </translation>
+        <translation>削除するグループ：</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1351"/>
         <source>Group Membership</source>
-        <translation>グループユーザー</translation>
+        <translation>グループメンバーシップ</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1470"/>
@@ -397,12 +395,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>* この適用を行う前に再度確認して下さい。誤ったグループの設定によりシステムは破壊される事がでます。もし誤った設定を行った場合、復旧タブから元の設定へ復旧する事ができます。</translation>
+        <translation>* この適用を行う前に再度確認して下さい。誤ったグループを割り当てるとシステムが壊れるかもしれません。もし誤った操作を行った場合は、復旧タブから元の設定へ復旧させてください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
         <source>Apply any changes</source>
-        <translation>変更を適用</translation>
+        <translation>全ての変更を適用</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1553"/>
@@ -452,7 +450,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1638"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation>情報...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1645"/>
@@ -484,25 +482,33 @@
         <translation>なし</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="833"/>
+        <location filename="../mainwindow.cpp" line="841"/>
+        <source>browse...</source>
+        <translation>ブラウズ中...</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>ユーザー設定を復旧します。全ての他アプリケーションを閉じて下さい。それが終わりましたらログアウトまたは再起動して下さい。復旧を行ってよろしいですか？</translation>
+        <translation>ユーザー設定を復旧します。他の全てのアプリケーションを閉じて下さい。それが終わったらログアウトまたは再起動して下さい。本当に今から復旧を行いますか？</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="233"/>
         <source>User group membership was restored.</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザーグループのメンバーシップが復旧しました</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>Mozilla settings were reset.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mozilla の設定はリセットされました</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <location filename="../mainwindow.cpp" line="257"/>
         <source>Autologin options</source>
-        <translation>自動ログインオプション</translation>
+        <translation>自動ログインのオプション</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
@@ -517,17 +523,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation>「コピー先」を指定しなければなりません。ログイン中のデスクトップへコピーすることができません。</translation>
+        <translation>「コピー先」を指定しなければなりません。ログイン中のデスクトップへコピーすることはできません。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation>コピーする前に、全ての他アプリケーションを閉じて下さい。コピー先の容量が十分の大きさである事を確認して下さい。コピー先のデスクトップは削除・上書きされるかもしれません。手続きを進めてもよろしいですか？</translation>
+        <translation>コピーする前に、他の全てのアプリケーションを閉じて下さい。コピー先の容量が十分の大きさであるか確認して下さい。デスクトップ間でコピーすると、コピー先のデスクトップは上書きまたは消去されるかもしれません。本当に作業を進めてもいいですか？</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
         <source>Synchronizing desktop...</source>
-        <translation>デスクトップ同期中...</translation>
+        <translation>デスクトップの同期中...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
@@ -541,41 +547,33 @@
         <translation>ユーザー名は2文字より長くする必要があります。もっと長い名前にして下さい。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="499"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
+        <location filename="../mainwindow.cpp" line="328"/>
+        <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>ユーザー名は小文字である必要があり、
-記号・空白を含める事はできません。
-他の名前を入力して下さい。 </translation>
+        <translation>ユーザー名には特殊文字や空白を含むことができません。
+先へ進むには別の名前を選んで下さい。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="328"/>
-        <source>The user name cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>申し訳ありませんがこの名前は使われています。他の名前を入力してください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
         <location filename="../mainwindow.cpp" line="371"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>入力したパスワードが一致しません。もう一度入力してください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="345"/>
         <location filename="../mainwindow.cpp" line="376"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワードは少なくとも2文字以上でなくてはいけません。作業を進めるには、それ以上の長さのパスワードを入力してください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="360"/>
         <source>The user was added ok.</source>
-        <translation>ユーザーの登録を行いました。</translation>
+        <translation>ユーザーを追加しました。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="363"/>
@@ -585,17 +583,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="388"/>
         <source>Password successfully changed.</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワードは無事に変更されました。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="391"/>
         <source>Failed to change password.</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワードの変更は失敗しました。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="397"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation>この作業は完了していません。ユーザー %1 の削除を行ってもよろしいですか？</translation>
+        <translation>この作業は完了していません。本当にユーザー %1 の削除を行ってもよろしいですか？</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="407"/>
@@ -610,21 +608,20 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="422"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>グループ名は2文字より長くする必要があります。もっと長いグループ名にして下さい。</translation>
+        <translation>グループ名は2文字より長くする必要があります。作業を続けるには、もっと長いグループ名を選んでください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="426"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>グループ名は小文字である必要があり、
-記号・空白を含める事はできません。
-他のグループ名を入力して下さい。</translation>
+        <translation>グループ名は小文字である必要があり、特殊記号や空白を含めることはできません。
+作業を続行するには、別のグループ名を選んでください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>そのグループ名はすでに存在するので、違う名前を入力してください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="441"/>
@@ -639,7 +636,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation>この動作が完了していません。グループ %1 を削除してもよろしいですか？</translation>
+        <translation>このアクションは完了していません。本当にグループ %1 を削除してもよろしいですか？</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
@@ -664,27 +661,35 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="486"/>
         <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"></translation>
+        <translation>選択したユーザー名は現在使用中です</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"></translation>
+        <translation>このユーザー名を変更するには、一度ログアウトした後、別のユーザーアカウントで再度ログインして行ってください。</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>ユーザー名は小文字にする必要があって、特殊記号や空白を含めることはできません。
+先へ進む前に別の名前を選択してください。 </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>申し訳ありませんがこの名前はすでに存在します。違う名前を入力してください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザー名の変更に失敗しました。そのユーザーがログイン中で無いことを確認して、再起動する必要があるかもしれません。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>The user was renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザー名は変更されました。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="547"/>
@@ -709,37 +714,29 @@ Please choose another name before proceeding.</source>
         <translation>デスクトップのコピー中...失敗</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="622"/>
-        <location filename="../mainwindow.cpp" line="833"/>
-        <location filename="../mainwindow.cpp" line="841"/>
-        <source>browse...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Confirmation</source>
-        <translation type="unfinished"></translation>
+        <translation>確認</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスは終了していません。本当にアプリケーションを終了してよろしいですか？</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation> %1について</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="791"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation>バージョン: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="792"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>MX Linux のシンプルなユーザー設定</translation>
+        <translation>MX Linux 向けのシンプルなユーザー設定</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="794"/>
@@ -749,70 +746,51 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ライセンス</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="809"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 のヘルプ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="834"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>License</source>
-        <translation type="vanished">ライセンス</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">キャンセル</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">閉じる(&amp;C)</translation>
-    </message>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">このプログラムは root で実行する必要があります。</translation>
+        <translation>コピー先のフォルダーを選択します</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="54"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="55"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">ライセンス</translation>
+        <translation>ライセンス</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>更新履歴</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">キャンセル</translation>
+        <translation>取り消し</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">閉じる(&amp;C)</translation>
+        <translation>&amp;閉じる</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Error</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="55"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>rootとしてログインしているようです。このプログラムを使用するには、一度ログアウトして通常のユーザーとしてログインしてください。</translation>
     </message>
 </context>
 </TS>

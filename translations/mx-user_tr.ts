@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="tr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="tr">
 <context>
     <name>MEConfig</name>
     <message>
@@ -120,7 +118,7 @@
     <message>
         <location filename="../mainwindow.ui" line="386"/>
         <source>Rename User Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanıcı Hesabını Yeniden Adlandır</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="398"/>
@@ -131,7 +129,7 @@
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>New user name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeni kullanıcı adı:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="481"/>
@@ -194,7 +192,7 @@
     <message>
         <location filename="../mainwindow.ui" line="728"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>MX öntanımlı tarayıcı yapılandırmasını geri yükle</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="734"/>
@@ -209,7 +207,7 @@
     <message>
         <location filename="../mainwindow.ui" line="744"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>MX öntanımlı grup üyeliklerini geri yükle</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="750"/>
@@ -291,7 +289,7 @@
     <message>
         <location filename="../mainwindow.ui" line="983"/>
         <source>Select to copy/sync Shared</source>
-        <translation type="unfinished"></translation>
+        <translation>Paylaşılanı kopyalamak/eşzamanlamak için seçin</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="986"/>
@@ -301,7 +299,7 @@
     <message>
         <location filename="../mainwindow.ui" line="999"/>
         <source>Select to copy/sync entire home</source>
-        <translation type="unfinished"></translation>
+        <translation>Tüm ev dizinini kopyalama/eşzamanlama için seçin</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1002"/>
@@ -311,7 +309,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1018"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarayıcı yapılandırmasını kopyalamak/eşzamanlamak  için seçin</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1021"/>
@@ -321,7 +319,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1034"/>
         <source>Select to copy/sync Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Belgeleri kopyalamak/eşzamanlamak için seçin</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1037"/>
@@ -331,7 +329,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1044"/>
         <source>What to copy/sync:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopyalanacak/eşzamanlanacak olan ne:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1060"/>
@@ -392,12 +390,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1470"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanıcının dahil olduğu gruplar (uygun kutuları seçerek / seçimi kaldırarak grupları değiştirin):</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"></translation>
+        <translation>* Lütfen uygulamadan önce seçimlerinizi iki kez kontrol edin, yanlış grup üyelikleri atamak sisteminizi bozabilir. Bir hata yaptıysanız orijinal üyelikleri geri yüklemek için Onar sekmesini kullanın.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
@@ -484,6 +482,14 @@
         <translation>hiçbiri</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="833"/>
+        <location filename="../mainwindow.cpp" line="841"/>
+        <source>browse...</source>
+        <translation>gözat...</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Kullanıcı yapılandırması onarılacak.Lütfen şimdi bütün diğer  uygulamaları kapatın. Bittiğinde çıkış yapın veya yeniden başlatın.Şimdi onarmak istediğinizden emin misiniz?</translation>
@@ -491,12 +497,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="233"/>
         <source>User group membership was restored.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanıcı grup üyeliği geri yüklendi.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>Mozilla settings were reset.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mozilla ayarları sıfırlandı.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
@@ -522,7 +528,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopyalamadan önce, diğer tüm uygulamaları kapatın. Kopyalanacak hedefin, kopyaladığınız dosyaları içerecek kadar büyük olduğundan emin olun. Masaüstleri arasında kopyalama yapmak, hedef masaüstündeki dosyalarınızı veya tercihlerinizi geçersiz kılabilir veya silebilir. İşleme devam etmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
@@ -541,24 +547,16 @@
         <translation>Kullanıcı adı en az 2 karakter uzunluğunda olmalıdır. Devam etmeden önce lütfen daha uzun bir ad seçin.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="499"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
+        <location filename="../mainwindow.cpp" line="328"/>
+        <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Kullanıcı adı küçük harf olmalı ve
-özel karakterler ve boşluklar içermemelidir.
-Devam etmeden önce lütfen başka bir ad seçin.</translation>
+        <translation>Kullanıcı adı özel karakterler veya boşluk içeremez.
+Lütfen devam etmeden önce başka bir ad seçin.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="328"/>
-        <source>The user name cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Üzgünüm bu ad kullanılıyor. Lütfen farklı bir ad girin.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -610,7 +608,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="422"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>Grup adı en az 2 karakter uzunluğunda olmalıdır.  Devam etmeden önce lütfen daha uzun bir ad seçin.&#xa0;</translation>
+        <translation>Grup adı en az 2 karakter uzunluğunda olmalıdır.  Devam etmeden önce lütfen daha uzun bir ad seçin. </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="426"/>
@@ -624,7 +622,7 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Üzgünüm bu grup adı zaten var. Lütfen farklı bir ad girin.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="441"/>
@@ -664,27 +662,36 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="486"/>
         <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen kullanıcı adı şu an kullanılıyor.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu kullanıcıyı yeniden adlandırmak için, lütfen oturumu kapatın ve başka bir kullanıcı hesabı kullanarak tekrar oturum açın.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>Kullanıcı adı küçük harf olmalı ve
+özel karakterler ve boşluklar içermemelidir.
+Devam etmeden önce lütfen başka bir ad seçin.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Üzgünüm, bu ad sisteminizde zaten var. Lütfen farklı bir ad girin.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanıcı yeniden adlandırılamadı. Lütfen kullanıcının giriş yapmadığından emin olun, yeniden başlatmanız gerekebilir</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>The user was renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanıcı yeniden adlandırıldı.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="547"/>
@@ -709,27 +716,19 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
         <translation>Masaüstü kopyalanıyor...başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="622"/>
-        <location filename="../mainwindow.cpp" line="833"/>
-        <location filename="../mainwindow.cpp" line="841"/>
-        <source>browse...</source>
-        <translation>gözat...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Confirmation</source>
-        <translation type="unfinished"></translation>
+        <translation>Onay</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"></translation>
+        <translation>İşlem gerçekleşmedi. Uygulamayı terketmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Hakkında %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="791"/>
@@ -749,12 +748,12 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Telif Hakkı</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="809"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Yardım</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="834"/>
@@ -763,60 +762,37 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     </message>
 </context>
 <context>
-    <name>QApplication</name>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Ruhsat</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Değişim günlüğü</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">İptal</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Kapat</translation>
-    </message>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Bu programı root olarak çalıştırmalısınız.</translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
-    <message>
-        <location filename="../main.cpp" line="54"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="55"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Ruhsat</translation>
+        <translation>Ruhsat</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Değişim günlüğü</translation>
+        <translation>Değişim günlüğü</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">İptal</translation>
+        <translation>İptal</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Kapat</translation>
+        <translation>&amp;Kapat</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Error</source>
+        <translation>Hata</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="55"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Görünüşe göre root olarak girmişsiniz, lütfen çıkın ve bu programı kullanmak için normal kullanıcı olarak girin. </translation>
     </message>
 </context>
 </TS>

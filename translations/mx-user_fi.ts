@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fi">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fi">
 <context>
     <name>MEConfig</name>
     <message>
@@ -42,14 +40,14 @@
     <message>
         <location filename="../mainwindow.ui" line="160"/>
         <source>User login name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttäjän oletuskäyttäjätunnus:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="176"/>
         <location filename="../mainwindow.ui" line="456"/>
         <location filename="../mainwindow.ui" line="1220"/>
         <source>Enter username of new user</source>
-        <translation type="unfinished"></translation>
+        <translation>Syötä uuden käyttäjän käyttäjänimi.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="182"/>
@@ -120,7 +118,7 @@
     <message>
         <location filename="../mainwindow.ui" line="386"/>
         <source>Rename User Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Nimeä tili uudelleen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="398"/>
@@ -131,7 +129,7 @@
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>New user name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Uusi käyttäjänimi:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="481"/>
@@ -166,7 +164,7 @@
     <message>
         <location filename="../mainwindow.ui" line="613"/>
         <source>Repair a user configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Korjaa käyttäjäkonfiguraatio.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="647"/>
@@ -194,32 +192,32 @@
     <message>
         <location filename="../mainwindow.ui" line="728"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Palauta selainasetukset MX-vakioihin</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="734"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation type="unfinished"></translation>
+        <translation>Mozilla (Iceweasel:in tai Firefox:in) asetukset</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="737"/>
         <source>Alt+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+X</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="744"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Palauta ryhmäjäsenyydet MX-oletuksille.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="750"/>
         <source>Group memberships</source>
-        <translation type="unfinished"></translation>
+        <translation>Ryhmäjäsenyydet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="753"/>
         <source>Alt+G</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+G</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="763"/>
@@ -239,7 +237,7 @@
     <message>
         <location filename="../mainwindow.ui" line="791"/>
         <source>Copy/Sync</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopioi/synkronoi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="818"/>
@@ -250,12 +248,12 @@
         <location filename="../mainwindow.ui" line="845"/>
         <location filename="../mainwindow.ui" line="912"/>
         <source>Select desktop to copy from</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse työpöytä, josta kopioida.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="858"/>
         <source>Select to only copy files</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse kopioidaksesi pelkästään tiedostoja.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="861"/>
@@ -266,12 +264,12 @@
         <location filename="../mainwindow.ui" line="877"/>
         <location filename="../mainwindow.ui" line="890"/>
         <source>Select desktop to copy to</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse työpöytä, johon kopioida.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="899"/>
         <source>Copy to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopioi sijaintiin:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="921"/>
@@ -281,17 +279,17 @@
     <message>
         <location filename="../mainwindow.ui" line="934"/>
         <source>Select to copy and then delete differences</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse kopioitavaksi ja sitten erittele pois eroavaisuudet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="937"/>
         <source>Sync</source>
-        <translation type="unfinished"></translation>
+        <translation>Synkkaus</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="983"/>
         <source>Select to copy/sync Shared</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse Jaot kopioitavaksi/synkattavaksi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="986"/>
@@ -301,7 +299,7 @@
     <message>
         <location filename="../mainwindow.ui" line="999"/>
         <source>Select to copy/sync entire home</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse koko kotikansio kopioitavaksi/synkattavaksi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1002"/>
@@ -311,17 +309,17 @@
     <message>
         <location filename="../mainwindow.ui" line="1018"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse selainasetukset kopioitavaksi/synkattavaksi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1021"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation type="unfinished"></translation>
+        <translation>Mozilla (Firefox:in tai Iceweasel:in) asetukset</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1034"/>
         <source>Select to copy/sync Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse Asiakirjat kopioitavaksi/synkattavaksi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1037"/>
@@ -331,7 +329,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1044"/>
         <source>What to copy/sync:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mitä kopioidaan/synkataan:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1060"/>
@@ -342,7 +340,7 @@
         <location filename="../mainwindow.ui" line="1090"/>
         <location filename="../mainwindow.ui" line="1106"/>
         <source>Status of the changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Muutosten tila</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1109"/>
@@ -352,7 +350,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1125"/>
         <source>Progress of the changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Muutosten eteneminen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1162"/>
@@ -372,7 +370,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1226"/>
         <source>groupname</source>
-        <translation type="unfinished"></translation>
+        <translation>ryhmänimi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1258"/>
@@ -392,7 +390,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1470"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"></translation>
+        <translation>Ryhmät joihin käyttäjä kuuluu (muuta ryhmiä valitsemalla/poisruksaamalla kyseisiä laatikoita):</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
@@ -484,6 +482,14 @@
         <translation>ei mitään</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="833"/>
+        <location filename="../mainwindow.cpp" line="841"/>
+        <source>browse...</source>
+        <translation>selaa...</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Käyttäjän konfiguraatio korjataan. Ole hyvä ja sulje kaikki muut sovellukset nyt. Korjauksen valmistuttua ole hyvä ja kirjaudu ulos, tai käynnistä kone uudelleen.Haluatko varmasti korjata nyt?</translation>
@@ -491,12 +497,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="233"/>
         <source>User group membership was restored.</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttäjäryhmän jäsenyys palautettiin.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>Mozilla settings were reset.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mozilla-asetukset nollattiin.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
@@ -541,24 +547,16 @@
         <translation>Käyttäjänimen on oltava ainakin 2 merkkiä pitkä. Ole hyvä, ja valitse pidempi nimi ennen jatkamista.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="499"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
+        <location filename="../mainwindow.cpp" line="328"/>
+        <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Käyttäjänimen tulee olla pienillä kirjaimilla ja se
-ei voi sisältää erikoismerkkejä tai vililyöntejä.
-Ole hyvä ja valitse toinen ennen kuin jatkat.</translation>
+        <translation>Käyttäjänimi ei voi sisältää erikoismerkkejä tai välilyöntejä.
+Valitse toisenlainen nimi jatkaaksesi.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="328"/>
-        <source>The user name cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pahoittelut, tämä nimi on varattu. Syötä jokin toinen nimi.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -610,34 +608,36 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="422"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ryhmän nimen tulee olla vähintään 2 merkkiä pitkä. Valitse pidempi nimi ennen jatkamista.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="426"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ryhmän nimen tulee olla pienin kirjaimin ja se 
+ei voi sisältää erikoismerkkejä tai välilyöntejä.
+Valitse eri nimi ennen jatkamista.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pahoittelut, tuo ryhmä nimi on jo varattu. Syötä jokin toinen nimi.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="441"/>
         <source>The system group was added ok.</source>
-        <translation type="unfinished"></translation>
+        <translation>Järjestelmäryhmä lisättiin onnistuneesti.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="443"/>
         <source>Failed to add the system group.</source>
-        <translation type="unfinished"></translation>
+        <translation>Järjestelmäryhmän lisääminen epäonnistui.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Tätä toimintoa ei voida perua. Oletko varma että haluat poistaa ryhmän %1?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
@@ -662,27 +662,36 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="486"/>
         <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Valittu käyttäjänimi on jo varattu.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kyseisen käyttäjän uudelleennimeämistä varten, kirjaudu ulos sekä takaisin sisään käyttäen toista tiliä.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>Käyttäjänimen tulee olla pienillä kirjaimilla ja se
+ei voi sisältää erikoismerkkejä tai vililyöntejä.
+Ole hyvä ja valitse toinen ennen kuin jatkat.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pahoittelut, tämä nimi on jo olemassa järjestelmässäsi. Syötä jokin toinen nimi.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttäjän uudelleennimeäminen epäonnistui. Varmista että käyttäjä ei ole kirjautuneena sisään, voi olla että tarvitaan uudelleenkäynnistys.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>The user was renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttäjä nimettiin uudelleen.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="547"/>
@@ -707,27 +716,19 @@ Please choose another name before proceeding.</source>
         <translation>Kopioidaan työpöytää...epäonnistui</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="622"/>
-        <location filename="../mainwindow.cpp" line="833"/>
-        <location filename="../mainwindow.cpp" line="841"/>
-        <source>browse...</source>
-        <translation>selaa...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Confirmation</source>
-        <translation type="unfinished"></translation>
+        <translation>Vahvistus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosessia ei ole valmis. Haluatko varmasti lopettaa sovelluksen?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 lisätietoja</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="791"/>
@@ -747,12 +748,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 lupa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="809"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Apuopas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="834"/>
@@ -761,60 +762,37 @@ Please choose another name before proceeding.</source>
     </message>
 </context>
 <context>
-    <name>QApplication</name>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Lisenssi</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Muutosloki</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Peru</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Sulje</translation>
-    </message>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Sinun täytyy suorittaa tämä ohjelma pääkäyttäjänä.</translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
-    <message>
-        <location filename="../main.cpp" line="54"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="55"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Lisenssi</translation>
+        <translation>Lisenssi</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Muutosloki</translation>
+        <translation>Muutosloki</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Peru</translation>
+        <translation>Peru</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Sulje</translation>
+        <translation>&amp;Sulje</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Error</source>
+        <translation>Virhe</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="55"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Olet kirjautunut sisään pääkäyttäjänä. Kirjaudu sisään normaalina käyttäjänä käyttääksesi tätä ohjelmaa.</translation>
     </message>
 </context>
 </TS>

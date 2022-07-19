@@ -1,25 +1,25 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="kk">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="nb_NO">
 <context>
     <name>MEConfig</name>
     <message>
         <location filename="../mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>MX пайдаланушыларды басқару қолданбасы</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="62"/>
         <source>Administration</source>
-        <translation type="unfinished"/>
+        <translation>Administrasjon</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="65"/>
         <source>Add a new user</source>
-        <translation>Жаңа пайдаланушыны қосу</translation>
+        <translation>Legg til en ny bruker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="105"/>
         <source>Add User Account</source>
-        <translation>Жаңа тіркелгіні қосу</translation>
+        <translation>Legg til brukerkonto</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="132"/>
@@ -29,13 +29,13 @@
     <message>
         <location filename="../mainwindow.ui" line="141"/>
         <source>confirm password</source>
-        <translation type="unfinished"/>
+        <translation>bekreft passord</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="157"/>
         <location filename="../mainwindow.ui" line="1201"/>
         <source>Username of new user</source>
-        <translation type="unfinished"/>
+        <translation>Brukernavn til ny bruker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="160"/>
@@ -53,43 +53,43 @@
         <location filename="../mainwindow.ui" line="182"/>
         <location filename="../mainwindow.ui" line="462"/>
         <source>username</source>
-        <translation type="unfinished"/>
+        <translation>brukernavn</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="198"/>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Password for new user</source>
-        <translation>Жаңа пайдаланушы үшін пароль</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="201"/>
         <source>User password:</source>
-        <translation>Пайдаланушы паролі:</translation>
+        <translation>Bruker passord:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="217"/>
         <source>Enter password for new user</source>
-        <translation>Жаңа пайдаланушы үшін парольді енгізіңіз</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="226"/>
         <source>password</source>
-        <translation type="unfinished"/>
+        <translation>passord</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="245"/>
         <source>Confirm user password:</source>
-        <translation>Пайдаланушы паролін растау:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="280"/>
         <source>Delete User Account</source>
-        <translation type="unfinished"/>
+        <translation>Slett brukerkonto</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="323"/>
         <source>Select user</source>
-        <translation type="unfinished"/>
+        <translation>Velg bruker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
@@ -98,7 +98,7 @@
         <location filename="../mainwindow.ui" line="1438"/>
         <location filename="../mainwindow.ui" line="1463"/>
         <source>Select user to delete</source>
-        <translation type="unfinished"/>
+        <translation>Velg bruker du vil slette</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="348"/>
@@ -129,17 +129,17 @@
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>New user name:</source>
-        <translation type="unfinished"/>
+        <translation>Nytt brukernavn:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="481"/>
         <source>Change User Password</source>
-        <translation type="unfinished"/>
+        <translation>Endre passord for bruker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="509"/>
         <source>new password</source>
-        <translation type="unfinished"/>
+        <translation>Nytt passord</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="525"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../mainwindow.ui" line="610"/>
         <source>Options</source>
-        <translation>Опциялар</translation>
+        <translation>Alternativer</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="613"/>
@@ -217,7 +217,7 @@
     <message>
         <location filename="../mainwindow.ui" line="753"/>
         <source>Alt+G</source>
-        <translation>Alt+G</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="763"/>
@@ -227,7 +227,7 @@
     <message>
         <location filename="../mainwindow.ui" line="769"/>
         <source>Log in automatically</source>
-        <translation type="unfinished"/>
+        <translation>Logg inn automatisk</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="776"/>
@@ -334,23 +334,23 @@
     <message>
         <location filename="../mainwindow.ui" line="1060"/>
         <source>Progress</source>
-        <translation>Барысы</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1090"/>
         <location filename="../mainwindow.ui" line="1106"/>
         <source>Status of the changes</source>
-        <translation>Өзгерістердің қалып-күйі</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1109"/>
         <source>Status:</source>
-        <translation>Қалып-күйі:</translation>
+        <translation>Status:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1125"/>
         <source>Progress of the changes</source>
-        <translation>Өзгерістер барысы</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1162"/>
@@ -405,22 +405,22 @@
     <message>
         <location filename="../mainwindow.ui" line="1553"/>
         <source>Apply</source>
-        <translation>Іске асыру</translation>
+        <translation>Bruk</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1560"/>
         <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1567"/>
         <source>Cancel any changes then quit</source>
-        <translation>Өзгерістерді елемей, қолданбаны жабу</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1570"/>
         <source>Close</source>
-        <translation>Жабу</translation>
+        <translation>Lukk</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1577"/>
@@ -430,12 +430,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1618"/>
         <source>Display help </source>
-        <translation>Көмекті көрсету</translation>
+        <translation>Vis hjelp</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1621"/>
         <source>Help</source>
-        <translation>Көмек</translation>
+        <translation>Hjelp</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1628"/>
@@ -445,12 +445,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1635"/>
         <source>About this application</source>
-        <translation>Бұл қолданба жөнінде</translation>
+        <translation>Om denne applikasjonen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1638"/>
         <source>About...</source>
-        <translation>Осы туралы...</translation>
+        <translation>Om...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1645"/>
@@ -479,7 +479,7 @@
         <location filename="../mainwindow.cpp" line="946"/>
         <location filename="../mainwindow.cpp" line="951"/>
         <source>none</source>
-        <translation>ешнәрсе</translation>
+        <translation>ingen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
@@ -508,17 +508,17 @@
         <location filename="../mainwindow.cpp" line="248"/>
         <location filename="../mainwindow.cpp" line="257"/>
         <source>Autologin options</source>
-        <translation>Автокіру опциялары</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation>Автокіру &apos;%1&apos; тіркелгісі үшін сөндірілген.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation>Автокіру &apos;%1&apos; тіркелгісі үшін іске қосылған.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
@@ -533,12 +533,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
         <source>Synchronizing desktop...</source>
-        <translation>Жұмыс үстелді синхрондау...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Copying desktop...</source>
-        <translation>Жұмыс үстелді көшіру...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
@@ -555,7 +555,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation>Beklager, dette navnet er i bruk. Skriv inn et annet navn.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -572,12 +572,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="360"/>
         <source>The user was added ok.</source>
-        <translation>Пайдаланушы сәтті қосылды.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="363"/>
         <source>Failed to add the user.</source>
-        <translation>Пайдаланушыны қосу сәтсіз аяқталды.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="388"/>
@@ -597,12 +597,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="407"/>
         <source>The user has been deleted.</source>
-        <translation>Пайдаланушы өшірілді.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="409"/>
         <source>Failed to delete the user.</source>
-        <translation>Пайдаланушыны өшіру сәтсіз аяқталды.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="422"/>
@@ -624,12 +624,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="441"/>
         <source>The system group was added ok.</source>
-        <translation>Жүйелік топ сәтті қосылды.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="443"/>
         <source>Failed to add the system group.</source>
-        <translation>Жүйелік топты қосу сәтсіз аяқталды.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
@@ -639,12 +639,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>The group has been deleted.</source>
-        <translation>Топ өшірілді.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="453"/>
         <source>Failed to delete the group.</source>
-        <translation>Топты өшіру сәтсіз аяқталды.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="472"/>
@@ -692,23 +692,23 @@ Please choose another name before proceeding.</source>
         <location filename="../mainwindow.cpp" line="547"/>
         <location filename="../mainwindow.cpp" line="576"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Жұмыс үстелді синхрондау...сәтті</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="549"/>
         <location filename="../mainwindow.cpp" line="578"/>
         <source>Copying desktop...ok</source>
-        <translation>Жұмыс үстелді көшіру...сәтті</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="581"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Жұмыс үстелді синхрондау...сәтсіз</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="583"/>
         <source>Copying desktop...failed</source>
-        <translation>Жұмыс үстелді көшіру...сәтсіз</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="599"/>
@@ -723,12 +723,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
         <source>About %1</source>
-        <translation type="unfinished"/>
+        <translation>Om %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="791"/>
         <source>Version: </source>
-        <translation>Нұсқасы:</translation>
+        <translation>Versjon:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="792"/>
@@ -738,7 +738,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="794"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
@@ -748,7 +748,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="809"/>
         <source>%1 Help</source>
-        <translation type="unfinished"/>
+        <translation>%1 Hjelp</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="834"/>
@@ -761,7 +761,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation>Лицензиясы</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
@@ -772,17 +772,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation>Бас тарту</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Lukk</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="54"/>
         <source>Error</source>
-        <translation>Қате</translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="55"/>
