@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="cs">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="cs">
 <context>
     <name>MEConfig</name>
     <message>
@@ -21,7 +19,7 @@
     <message>
         <location filename="../mainwindow.ui" line="105"/>
         <source>Add User Account</source>
-        <translation>Přidat uživatelské konto</translation>
+        <translation>Přidat uživatelský účet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="132"/>
@@ -86,7 +84,7 @@
     <message>
         <location filename="../mainwindow.ui" line="280"/>
         <source>Delete User Account</source>
-        <translation>Smazat uživatelské konto</translation>
+        <translation>Smazat uživatelský účet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="323"/>
@@ -120,7 +118,7 @@
     <message>
         <location filename="../mainwindow.ui" line="386"/>
         <source>Rename User Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Přejmenovat uživatelský účet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="398"/>
@@ -131,7 +129,7 @@
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>New user name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nové uživatelské jméno:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="481"/>
@@ -172,7 +170,7 @@
         <location filename="../mainwindow.ui" line="647"/>
         <location filename="../mainwindow.ui" line="1363"/>
         <source>Modify User Account</source>
-        <translation>Upravit uživatelské konto</translation>
+        <translation>Upravit uživatelský účet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="659"/>
@@ -397,7 +395,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>*Prosím skontrolujte vybrané položky dřív než budete pokračovat, přiřazení účtu k nesprávné skupině může poškodit Váš systém. Použijte záložku Opravit pro obnovení původního členství pokud jste někde udělali chybu.</translation>
+        <translation>*Prosím zkontrolujte vybrané položky dřív než budete pokračovat, přiřazení účtu k nesprávné skupině může poškodit Váš systém. Použijte záložku Opravit pro obnovení původního členství pokud jste někde udělali chybu.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
@@ -484,6 +482,14 @@
         <translation>není</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="833"/>
+        <location filename="../mainwindow.cpp" line="841"/>
+        <source>browse...</source>
+        <translation>prohledat...</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Nastavení uživatele bude nyní opraveno. Prosím zavřete všechny aplikace. Po dokočení  opravy se odhlašte se nebo restartujte počítač. Jste si jistí, že chcete začít s opravou?</translation>
@@ -491,12 +497,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="233"/>
         <source>User group membership was restored.</source>
-        <translation type="unfinished"></translation>
+        <translation>Členství ve skupině bylo obnoveno.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>Mozilla settings were reset.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení Mozilly bylo resetováno.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
@@ -507,12 +513,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation>Bylo deaktivováno automatické přihlašování pro konto &apos;%1&apos;.</translation>
+        <translation>Bylo deaktivováno automatické přihlašování pro účet &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation>Bylo aktivováno automatické přihlašování pro konto &apos;%1&apos;.</translation>
+        <translation>Bylo aktivováno automatické přihlašování pro účet &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
@@ -541,24 +547,15 @@
         <translation>Uživatelské jméno musí být dlouhé alespoň 2 znaky. Prosím zvolte delší jméno a pokračujte.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="499"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
+        <location filename="../mainwindow.cpp" line="328"/>
+        <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Jméno uživatele musí být vytvořeno z malých písmen
-a nesmí obsahovat speciální znaky nebo mezery.
-Prosím zvolte jiné jméno a pokračujte.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="328"/>
-        <source>The user name cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Je nám líto, jméno je již použito. Prosím vyberte jiné jméno.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -624,7 +621,7 @@ Prosím zvolte jiný název a pokračujte.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Je nám líto, jméno skupiny je již použito. Prosím vyberte jiné jméno.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="441"/>
@@ -664,27 +661,36 @@ Prosím zvolte jiný název a pokračujte.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="486"/>
         <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrané uživatelské jméno je nyní používáno.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pro přejmenování tohoto uživatele se prosím odhlašte a přihlašte se zpět pod jiným účtem.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>Jméno uživatele musí být vytvořeno z malých písmen
+a nesmí obsahovat speciální znaky nebo mezery.
+Prosím zvolte jiné jméno a pokračujte.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Je nám líto, toto jméno je již v systému použito. Prosím vyberte jiné jméno.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodařilo se přejmenovat uživatele. Ujistěte se, že uživatel není přihlášen, případně proveďte restart.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>The user was renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uživatel byl přejmenován.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="547"/>
@@ -709,27 +715,19 @@ Prosím zvolte jiný název a pokračujte.</translation>
         <translation>Kopírování plochy...zlyhalo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="622"/>
-        <location filename="../mainwindow.cpp" line="833"/>
-        <location filename="../mainwindow.cpp" line="841"/>
-        <source>browse...</source>
-        <translation>prohledat...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Confirmation</source>
-        <translation type="unfinished"></translation>
+        <translation>Potvrzení</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation>O %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="791"/>
@@ -749,12 +747,12 @@ Prosím zvolte jiný název a pokračujte.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licence %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="809"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Nápověda %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="834"/>
@@ -763,56 +761,37 @@ Prosím zvolte jiný název a pokračujte.</translation>
     </message>
 </context>
 <context>
-    <name>QApplication</name>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Licence</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Zrušit</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Zavřít</translation>
-    </message>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Tuto aplikaci musíte spustit jako root.</translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
-    <message>
-        <location filename="../main.cpp" line="54"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="55"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Licence</translation>
+        <translation>Licence</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Protokol změn</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Zavřít</translation>
+        <translation>&amp;Zavřít</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Error</source>
+        <translation>Chyba</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="55"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Spuštěno pod účtem root-a, odhlašte se a přihlašte jako bězný uživatel.</translation>
     </message>
 </context>
 </TS>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="lt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="lt">
 <context>
     <name>MEConfig</name>
     <message>
@@ -91,7 +89,7 @@
     <message>
         <location filename="../mainwindow.ui" line="323"/>
         <source>Select user</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
@@ -209,12 +207,12 @@
     <message>
         <location filename="../mainwindow.ui" line="744"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="750"/>
         <source>Group memberships</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="753"/>
@@ -387,17 +385,17 @@
     <message>
         <location filename="../mainwindow.ui" line="1351"/>
         <source>Group Membership</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1470"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
@@ -484,6 +482,14 @@
         <translation>nėra</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="833"/>
+        <location filename="../mainwindow.cpp" line="841"/>
+        <source>browse...</source>
+        <translation>naršyti...</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Naudotojo konfigūracija bus pataisyta. Dabar, prašome užverti visas kitas programas. Užbaigus, prašome atsijungti arba paleisti kompiuterį iš naujo. Ar tikrai norite pataisyti dabar?</translation>
@@ -491,7 +497,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="233"/>
         <source>User group membership was restored.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -541,22 +547,15 @@
         <translation>Naudotojo vardas privalo būti bent 2 simbolių ilgio. Prašome prieš tęsiant, pasirinkti ilgesnį vardą.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="499"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
+        <location filename="../mainwindow.cpp" line="328"/>
+        <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
         <translation>Atleiskite, šis vardas jau yra naudojamas. Pasirinkite kitą vardą.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="328"/>
-        <source>The user name cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -608,29 +607,29 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="422"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="426"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="441"/>
         <source>The system group was added ok.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="443"/>
         <source>Failed to add the system group.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
@@ -660,27 +659,34 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="486"/>
         <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>The user was renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="547"/>
@@ -705,22 +711,14 @@ Please choose another name before proceeding.</source>
         <translation>Kopijuojamas darbalaukis...nepavyko</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="622"/>
-        <location filename="../mainwindow.cpp" line="833"/>
-        <location filename="../mainwindow.cpp" line="841"/>
-        <source>browse...</source>
-        <translation>naršyti...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Confirmation</source>
-        <translation type="unfinished"></translation>
+        <translation>Patvirtinimas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
@@ -750,7 +748,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="809"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 žinynas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="834"/>
@@ -759,60 +757,37 @@ Please choose another name before proceeding.</source>
     </message>
 </context>
 <context>
-    <name>QApplication</name>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Licencija</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Keitinių žurnalas</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Atsisakyti</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Užverti</translation>
-    </message>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Privalote paleisti šią programą kaip pagrindinis (root) naudotojas.</translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
-    <message>
-        <location filename="../main.cpp" line="54"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="55"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Licencija</translation>
+        <translation>Licencija</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Keitinių žurnalas</translation>
+        <translation>Keitinių žurnalas</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Atsisakyti</translation>
+        <translation>Atsisakyti</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Užverti</translation>
+        <translation>&amp;Užverti</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Error</source>
+        <translation>Klaida</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="55"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

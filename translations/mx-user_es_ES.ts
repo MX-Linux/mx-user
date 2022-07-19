@@ -1,95 +1,95 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="kk">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="es_ES">
 <context>
     <name>MEConfig</name>
     <message>
         <location filename="../mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>MX пайдаланушыларды басқару қолданбасы</translation>
+        <translation>MX Gestor de Usuarios</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="62"/>
         <source>Administration</source>
-        <translation type="unfinished"/>
+        <translation>Administración</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="65"/>
         <source>Add a new user</source>
-        <translation>Жаңа пайдаланушыны қосу</translation>
+        <translation>Añadir un nuevo usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="105"/>
         <source>Add User Account</source>
-        <translation>Жаңа тіркелгіні қосу</translation>
+        <translation>Añadir una Cuenta de Usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="132"/>
         <source>Reenter password for new user</source>
-        <translation type="unfinished"/>
+        <translation>Vuelva a ingresar la contraseña para el nuevo usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="141"/>
         <source>confirm password</source>
-        <translation type="unfinished"/>
+        <translation>confirmar contraseña</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="157"/>
         <location filename="../mainwindow.ui" line="1201"/>
         <source>Username of new user</source>
-        <translation type="unfinished"/>
+        <translation>Nombre de usuario del nuevo usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="160"/>
         <source>User login name:</source>
-        <translation type="unfinished"/>
+        <translation>Nombre de inicio de sesión de usuario:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="176"/>
         <location filename="../mainwindow.ui" line="456"/>
         <location filename="../mainwindow.ui" line="1220"/>
         <source>Enter username of new user</source>
-        <translation type="unfinished"/>
+        <translation>Ingrese el nombre del nuevo usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="182"/>
         <location filename="../mainwindow.ui" line="462"/>
         <source>username</source>
-        <translation type="unfinished"/>
+        <translation>nombre de usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="198"/>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Password for new user</source>
-        <translation>Жаңа пайдаланушы үшін пароль</translation>
+        <translation>Contraseña para el nuevo usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="201"/>
         <source>User password:</source>
-        <translation>Пайдаланушы паролі:</translation>
+        <translation>Contraseña de usuario:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="217"/>
         <source>Enter password for new user</source>
-        <translation>Жаңа пайдаланушы үшін парольді енгізіңіз</translation>
+        <translation>Ingrese la contraseña para el nuevo usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="226"/>
         <source>password</source>
-        <translation type="unfinished"/>
+        <translation>contraseña</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="245"/>
         <source>Confirm user password:</source>
-        <translation>Пайдаланушы паролін растау:</translation>
+        <translation>Confirmar contraseña de usuario:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="280"/>
         <source>Delete User Account</source>
-        <translation type="unfinished"/>
+        <translation>Eliminar una Cuenta de Usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="323"/>
         <source>Select user</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
@@ -98,106 +98,106 @@
         <location filename="../mainwindow.ui" line="1438"/>
         <location filename="../mainwindow.ui" line="1463"/>
         <source>Select user to delete</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar usuario a eliminar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="348"/>
         <source>User to delete:</source>
-        <translation type="unfinished"/>
+        <translation>Usuario a eliminar:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="364"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation type="unfinished"/>
+        <translation>Borrar también el directorio home del usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="367"/>
         <source>Delete user home directory</source>
-        <translation type="unfinished"/>
+        <translation>Eliminar el directorio home del usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="386"/>
         <source>Rename User Account</source>
-        <translation type="unfinished"/>
+        <translation>Renombrar la Cuenta de Usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="398"/>
         <location filename="../mainwindow.ui" line="560"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar usuario a modificar:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>New user name:</source>
-        <translation type="unfinished"/>
+        <translation>Nuevo nombre de usuario:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="481"/>
         <source>Change User Password</source>
-        <translation type="unfinished"/>
+        <translation>Cambiar Contraseña de Usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="509"/>
         <source>new password</source>
-        <translation type="unfinished"/>
+        <translation>nueva contraseña</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="525"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"/>
+        <translation>Confirmar nueva contraseña:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="544"/>
         <source>confirm new password</source>
-        <translation type="unfinished"/>
+        <translation>Confirmar nueva contraseña</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="576"/>
         <source>New user password:</source>
-        <translation type="unfinished"/>
+        <translation>Nueva contraseña de usuario:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="610"/>
         <source>Options</source>
-        <translation>Опциялар</translation>
+        <translation>Opciones</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="613"/>
         <source>Repair a user configuration</source>
-        <translation type="unfinished"/>
+        <translation>Reparar una configuración de usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="647"/>
         <location filename="../mainwindow.ui" line="1363"/>
         <source>Modify User Account</source>
-        <translation type="unfinished"/>
+        <translation>Modificar la Cuenta de Usuario</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="659"/>
         <location filename="../mainwindow.ui" line="675"/>
         <source>Select user to repair</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione el usuario a reparar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="662"/>
         <location filename="../mainwindow.ui" line="1447"/>
         <source>User to change:</source>
-        <translation type="unfinished"/>
+        <translation>Usuario a cambiar:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="707"/>
         <source>Restore Defaults</source>
-        <translation type="unfinished"/>
+        <translation>Restaurar predeterminado</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="728"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation type="unfinished"/>
+        <translation>Restaurar las configuraciones del navegador a los valores por defecto de MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="734"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation type="unfinished"/>
+        <translation>Configuración de Mozilla (Iceweasel o Firefox)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="737"/>
@@ -207,12 +207,12 @@
     <message>
         <location filename="../mainwindow.ui" line="744"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation type="unfinished"/>
+        <translation>Restaurar las afiliaciones de grupos a los valores por defecto de MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="750"/>
         <source>Group memberships</source>
-        <translation type="unfinished"/>
+        <translation>Afiliaciones de Grupos</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="753"/>
@@ -222,190 +222,190 @@
     <message>
         <location filename="../mainwindow.ui" line="763"/>
         <source>Change Autologin Settings</source>
-        <translation type="unfinished"/>
+        <translation>Cambiar la configuración de inicio de sesión automático</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="769"/>
         <source>Log in automatically</source>
-        <translation type="unfinished"/>
+        <translation>Iniciar sesión automáticamente</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="776"/>
         <source>Require password to log in</source>
-        <translation type="unfinished"/>
+        <translation>Solicitar contraseña para iniciar sesión</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="791"/>
         <source>Copy/Sync</source>
-        <translation type="unfinished"/>
+        <translation>Copiar/Sincronizar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="818"/>
         <source>Copy Between Desktops</source>
-        <translation type="unfinished"/>
+        <translation>Copiar entre escritorios</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="845"/>
         <location filename="../mainwindow.ui" line="912"/>
         <source>Select desktop to copy from</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione el escritorio desde el que copiar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="858"/>
         <source>Select to only copy files</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar para copiar solo archivos</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="861"/>
         <source>Copy only</source>
-        <translation type="unfinished"/>
+        <translation>Solo copiar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="877"/>
         <location filename="../mainwindow.ui" line="890"/>
         <source>Select desktop to copy to</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar escritorio al que copiar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="899"/>
         <source>Copy to:</source>
-        <translation type="unfinished"/>
+        <translation>Copiar en:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="921"/>
         <source>Copy from:</source>
-        <translation type="unfinished"/>
+        <translation>Copiado de:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="934"/>
         <source>Select to copy and then delete differences</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar copiar y luego borrar las diferencias</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="937"/>
         <source>Sync</source>
-        <translation type="unfinished"/>
+        <translation>Sincronización</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="983"/>
         <source>Select to copy/sync Shared</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar para copia/sincronización compartida</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="986"/>
         <source>Shared folder</source>
-        <translation type="unfinished"/>
+        <translation>Carpeta compartida</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="999"/>
         <source>Select to copy/sync entire home</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar para copia/sincronización completa del directorio home</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1002"/>
         <source>Entire home</source>
-        <translation type="unfinished"/>
+        <translation>Todo home</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1018"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione para copiar/sincronizar la configuración del navegador</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1021"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation type="unfinished"/>
+        <translation>Configuración de Mozilla (Firefox o Iceweasel)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1034"/>
         <source>Select to copy/sync Documents</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar para copiar/sincronizar Documentos</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1037"/>
         <source>Documents folder</source>
-        <translation type="unfinished"/>
+        <translation>Carpeta Documentos</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1044"/>
         <source>What to copy/sync:</source>
-        <translation type="unfinished"/>
+        <translation>Qué copiar/sincronizar:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1060"/>
         <source>Progress</source>
-        <translation>Барысы</translation>
+        <translation>Progreso</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1090"/>
         <location filename="../mainwindow.ui" line="1106"/>
         <source>Status of the changes</source>
-        <translation>Өзгерістердің қалып-күйі</translation>
+        <translation>Estado de los cambios</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1109"/>
         <source>Status:</source>
-        <translation>Қалып-күйі:</translation>
+        <translation>Estado:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1125"/>
         <source>Progress of the changes</source>
-        <translation>Өзгерістер барысы</translation>
+        <translation>Progreso de los cambios</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1162"/>
         <source>Add/Remove Groups</source>
-        <translation type="unfinished"/>
+        <translation>Añadir/Eliminar Grupos</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1174"/>
         <source>Add Group</source>
-        <translation type="unfinished"/>
+        <translation>Añadir un Grupo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1204"/>
         <source>Group name:</source>
-        <translation type="unfinished"/>
+        <translation>Nombre del Grupo:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1226"/>
         <source>groupname</source>
-        <translation type="unfinished"/>
+        <translation>nombredelgrupo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1258"/>
         <source>Delete Group</source>
-        <translation type="unfinished"/>
+        <translation>Eliminar Grupo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1320"/>
         <source>Group to delete:</source>
-        <translation type="unfinished"/>
+        <translation>Grupo a eliminar:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1351"/>
         <source>Group Membership</source>
-        <translation type="unfinished"/>
+        <translation>Afiliacion del Grupo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1470"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"/>
+        <translation>Grupos a los que pertenece el usuario (cambie los grupos seleccionando/deseleccionando las casillas correspondientes):</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"/>
+        <translation>* Verifique sus selecciones antes de presentar la solicitud, asignar afiliaciones de grupo incorrectas puede romper su sistema. Use la pestaña Reparar para restaurar las membresías originales si cometió un error.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
         <source>Apply any changes</source>
-        <translation type="unfinished"/>
+        <translation>Aplicar los cambios</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1553"/>
         <source>Apply</source>
-        <translation>Іске асыру</translation>
+        <translation>Aplicar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1560"/>
@@ -415,12 +415,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1567"/>
         <source>Cancel any changes then quit</source>
-        <translation>Өзгерістерді елемей, қолданбаны жабу</translation>
+        <translation>Cancelar los cambios y luego salir</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1570"/>
         <source>Close</source>
-        <translation>Жабу</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1577"/>
@@ -430,12 +430,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1618"/>
         <source>Display help </source>
-        <translation>Көмекті көрсету</translation>
+        <translation>Mostrar la ayuda </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1621"/>
         <source>Help</source>
-        <translation>Көмек</translation>
+        <translation>Ayuda</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1628"/>
@@ -445,12 +445,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1635"/>
         <source>About this application</source>
-        <translation>Бұл қолданба жөнінде</translation>
+        <translation>Acerca de esta aplicación</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1638"/>
         <source>About...</source>
-        <translation>Осы туралы...</translation>
+        <translation>Acerca de...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1645"/>
@@ -479,7 +479,7 @@
         <location filename="../mainwindow.cpp" line="946"/>
         <location filename="../mainwindow.cpp" line="951"/>
         <source>none</source>
-        <translation>ешнәрсе</translation>
+        <translation>ninguno</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
@@ -487,253 +487,258 @@
         <location filename="../mainwindow.cpp" line="833"/>
         <location filename="../mainwindow.cpp" line="841"/>
         <source>browse...</source>
-        <translation type="unfinished"/>
+        <translation>Buscar...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation type="unfinished"/>
+        <translation>Se reparará la configuración del usuario. Cierre todas las demás aplicaciones ahora. Cuando termine, cierre la sesión o reinicie. ¿Estás seguro de que quieres repararlo ahora?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="233"/>
         <source>User group membership was restored.</source>
-        <translation type="unfinished"/>
+        <translation>Se restauró la pertenencia al grupo de usuarios.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>Mozilla settings were reset.</source>
-        <translation type="unfinished"/>
+        <translation>La configuración de Mozilla se restableció.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <location filename="../mainwindow.cpp" line="257"/>
         <source>Autologin options</source>
-        <translation>Автокіру опциялары</translation>
+        <translation>Opciones de ingreso automático</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation>Автокіру &apos;%1&apos; тіркелгісі үшін сөндірілген.</translation>
+        <translation>El ingreso automático se desactivó para la cuenta &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation>Автокіру &apos;%1&apos; тіркелгісі үшін іске қосылған.</translation>
+        <translation>El ingreso automático se activó para la cuenta &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
-        <translation type="unfinished"/>
+        <translation>Debe especificar un destino en &quot;copiar a&quot;. No se puede copiar al escritorio activo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation type="unfinished"/>
+        <translation>Antes de copiar, cierre todas las otras aplicaciones.  Asegúrese de que el destino al que va a copiar posea suficiente espacio para los archivos a copiarse.  Copiar los escritorios puede reescribir o borrar sus archivos y preferencias en el escritorio de destino. ¿En verdad desea proceder? </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
         <source>Synchronizing desktop...</source>
-        <translation>Жұмыс үстелді синхрондау...</translation>
+        <translation>Sincronizando el escritorio...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Copying desktop...</source>
-        <translation>Жұмыс үстелді көшіру...</translation>
+        <translation>Copiando el escritorio...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
         <location filename="../mainwindow.cpp" line="495"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>El nombre de usuario debe ser de al menos 2 caracteres. Por favor seleccione un nombre más largo antes de proceder.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="328"/>
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>El nombre de usuario no puede contener caracteres especiales ni espacios.
+Por favor elija otro nombre antes de continuar.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation>Lo sentimos, este nombre está en uso. Por favor ingrese un nombre diferente.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
         <location filename="../mainwindow.cpp" line="371"/>
         <source>Password entries do not match. Please try again.</source>
-        <translation type="unfinished"/>
+        <translation>Claves introducidas no concuerdan. Favor intente de nuevo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="345"/>
         <location filename="../mainwindow.cpp" line="376"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>Contraseña debe que tener mínimo 2 caracteres. Favor coloque una más larga antes de proceder. </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="360"/>
         <source>The user was added ok.</source>
-        <translation>Пайдаланушы сәтті қосылды.</translation>
+        <translation>Se agregó con éxito el usuario.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="363"/>
         <source>Failed to add the user.</source>
-        <translation>Пайдаланушыны қосу сәтсіз аяқталды.</translation>
+        <translation>No se pudo agregar el usuario.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="388"/>
         <source>Password successfully changed.</source>
-        <translation type="unfinished"/>
+        <translation>Clave cambiado con éxito. </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="391"/>
         <source>Failed to change password.</source>
-        <translation type="unfinished"/>
+        <translation>Fallo en cambiar clave. </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="397"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"/>
+        <translation>Esta acción no se puede deshacer. ¿Desea realmente borrar al usuario %1?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="407"/>
         <source>The user has been deleted.</source>
-        <translation>Пайдаланушы өшірілді.</translation>
+        <translation>Se ha borrado el usuario.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="409"/>
         <source>Failed to delete the user.</source>
-        <translation>Пайдаланушыны өшіру сәтсіз аяқталды.</translation>
+        <translation>No se pudo borrar el usuario.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="422"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>El nombre del grupo debe ser de al menos 2 caracteres.  Por favor, seleccione uno más largo antes de continuar.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="426"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>El nombre del grupo debe estar en minúscula 
+y no puede incluir espacios o caracteres especiales.
+Escoja otro antes de continuar, por favor.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation>Lo sentimos, ese nombre de grupo ya existe. Por favor ingrese un nombre diferente.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="441"/>
         <source>The system group was added ok.</source>
-        <translation>Жүйелік топ сәтті қосылды.</translation>
+        <translation>El grupo se agregó con éxito al sistema.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="443"/>
         <source>Failed to add the system group.</source>
-        <translation>Жүйелік топты қосу сәтсіз аяқталды.</translation>
+        <translation>No se pudo agregar el grupo al sistema.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"/>
+        <translation>Esta acción no se puede deshacer. ¿Desea realmente borrar el grupo %1?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>The group has been deleted.</source>
-        <translation>Топ өшірілді.</translation>
+        <translation>Se ha borrado el grupo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="453"/>
         <source>Failed to delete the group.</source>
-        <translation>Топты өшіру сәтсіз аяқталды.</translation>
+        <translation>No se pudo borrar el grupo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="472"/>
         <source>The changes have been applied.</source>
-        <translation type="unfinished"/>
+        <translation>Se aplicaron todos los cambios.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="474"/>
         <source>Failed to apply group changes</source>
-        <translation type="unfinished"/>
+        <translation>No se pudo aplicar los cambios a los grupos</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="486"/>
         <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"/>
+        <translation>El nombre de usuario seleccionado está actualmente en uso.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"/>
+        <translation>Para renombrar este usuario, cierre la sesión y vuelva a iniciarla con otra cuenta de usuario.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="499"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>El nombre del usuario debe estar en minúscula
+y no puede incluir espacios o caracteres especiales.
+Escoja otro antes de continuar, por favor.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation>Lo sentimos, este nombre ya existe en su sistema. Por favor ingrese un nombre diferente.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"/>
+        <translation>Error al renombrar el usuario. Asegúrese que el usuario no haya iniciado sesión, es posible que deba reiniciar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>The user was renamed.</source>
-        <translation type="unfinished"/>
+        <translation>El usuario fue renombrado.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="547"/>
         <location filename="../mainwindow.cpp" line="576"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Жұмыс үстелді синхрондау...сәтті</translation>
+        <translation>Sincronizando el escritorio...OK</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="549"/>
         <location filename="../mainwindow.cpp" line="578"/>
         <source>Copying desktop...ok</source>
-        <translation>Жұмыс үстелді көшіру...сәтті</translation>
+        <translation>Copiando el escritorio...OK</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="581"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Жұмыс үстелді синхрондау...сәтсіз</translation>
+        <translation>Sincronizando el escritorio...falló</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="583"/>
         <source>Copying desktop...failed</source>
-        <translation>Жұмыс үстелді көшіру...сәтсіз</translation>
+        <translation>Copiando el escritorio...falló</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Confirmation</source>
-        <translation type="unfinished"/>
+        <translation>Confirmación</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"/>
+        <translation>Proceso no realizado. ¿Está seguro de que desea salir de la aplicación?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
         <source>About %1</source>
-        <translation type="unfinished"/>
+        <translation>Acerca de %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="791"/>
         <source>Version: </source>
-        <translation>Нұсқасы:</translation>
+        <translation>Versión: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="792"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>Configuración simple de usuarios para MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="794"/>
@@ -743,17 +748,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>%1 License</source>
-        <translation type="unfinished"/>
+        <translation>%1 Licencia</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="809"/>
         <source>%1 Help</source>
-        <translation type="unfinished"/>
+        <translation>%1 Ayuda</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="834"/>
         <source>Select folder to copy to</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione carpeta en donde copiar</translation>
     </message>
 </context>
 <context>
@@ -761,33 +766,33 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation>Лицензиясы</translation>
+        <translation>Licencia</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Registro de cambios</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation>Бас тарту</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Cerrar</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="54"/>
         <source>Error</source>
-        <translation>Қате</translation>
+        <translation>Error</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"/>
+        <translation>Parece que ha iniciado sesión como root, cierre la sesión e inicie sesión como usuario normal para usar este programa.</translation>
     </message>
 </context>
 </TS>

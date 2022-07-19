@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ca">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ca">
 <context>
     <name>MEConfig</name>
     <message>
@@ -484,6 +482,14 @@
         <translation>cap</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="833"/>
+        <location filename="../mainwindow.cpp" line="841"/>
+        <source>browse...</source>
+        <translation>navega...</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Es repararà la configuració d&apos;usuari. Si us plau, tanqueu tots els altres programes. En acabar, torneu a entrar o arrencar. Esteu segur que voleu reparar-ho ara?</translation>
@@ -541,24 +547,16 @@
         <translation>El nom d&apos;usuari ha de tenir com a mínim 2 caràcters. Si us plau, trieu un nom més llarg abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="499"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
+        <location filename="../mainwindow.cpp" line="328"/>
+        <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>El nom d&apos;usuari ha d&apos;estar en minúscules i no
-pot contenir espais ni caràcters especials.
-Si us plau, trieu un altre nom abans de continuar.</translation>
+        <translation>El nom d&apos;usuari no pot contenir caràcters especials ni espais.
+Si us plau, trieu-ne un altre abans de continuar.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
         <translation>Ho sento, aquest nom ja està en ús. Si us plau, trieu-ne un altre.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="328"/>
-        <source>The user name cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -672,6 +670,15 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
         <translation>Per reanomenar aquest usuari, si us plau sortiu i torneu a entrar usant un altre compte d&apos;usuari.</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>El nom d&apos;usuari ha d&apos;estar en minúscules i no
+pot contenir espais ni caràcters especials.
+Si us plau, trieu un altre nom abans de continuar.</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>Ho sento, aquest nom ja hi és al vostre sistema. Si us plau, trieu-ne un altre.</translation>
@@ -709,22 +716,14 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
         <translation>Copiant escriptori... fallat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="622"/>
-        <location filename="../mainwindow.cpp" line="833"/>
-        <location filename="../mainwindow.cpp" line="841"/>
-        <source>browse...</source>
-        <translation>navega...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Confirmation</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmació</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha acabat el procés. Esteu segurs que voleu sortir de l&apos;aplicació?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
@@ -763,60 +762,37 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
     </message>
 </context>
 <context>
-    <name>QApplication</name>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Llicència</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Registre de canvis</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancel·la</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">Tan&amp;ca </translation>
-    </message>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Cal ser usuari principal per executar aquest programa</translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
-    <message>
-        <location filename="../main.cpp" line="54"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="55"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Llicència</translation>
+        <translation>Llicència</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Registre de canvis</translation>
+        <translation>Registre de canvis</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancel·la</translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">Tan&amp;ca </translation>
+        <translation>Tan&amp;ca </translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="55"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Sembla que esteu connectat com a administrador, si us plau sortiu i connecteu-vos com a usuari normal per a usar aquest programa.</translation>
     </message>
 </context>
 </TS>

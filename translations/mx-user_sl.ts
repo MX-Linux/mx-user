@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="sl">
 <context>
     <name>MEConfig</name>
     <message>
@@ -484,6 +482,14 @@
         <translation>brez</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="833"/>
+        <location filename="../mainwindow.cpp" line="841"/>
+        <source>browse...</source>
+        <translation>brskanje...</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Uporabniška konfiguracija bo popravljena. Prosimo, zaprite vse aplikacije. Po zaključku se odjavite ali ponovno zaženite sistem. Ste prepričani, da želite pričeti s popravilom?</translation>
@@ -491,12 +497,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="233"/>
         <source>User group membership was restored.</source>
-        <translation type="unfinished"></translation>
+        <translation>Članstvo upoabnika v skupini je bilo obnovljeno.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>Mozilla settings were reset.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mozilla nastavitve so bile ponastavljene.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
@@ -541,24 +547,16 @@
         <translation>Uporabniško imeti dolžino vsaj dveh znakov. Izberite daljše ime za nadaljevanje.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="499"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
+        <location filename="../mainwindow.cpp" line="328"/>
+        <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Uporabniško ime mora vsebovati le majhne znake in
-mora biti brez posebnih znakov ali presledkov.
-Izberite drugo ime.</translation>
+        <translation>Uporabniško ime ne more vsebovati posebnih znakov ali presledkov.
+Prosimo, izberite drugo ime pred nadaljevanjem.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
         <translation>Oprostite, to ime je že v rabi. Izberite drugo ime.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="328"/>
-        <source>The user name cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -672,6 +670,15 @@ Izberite drugo ime.</translation>
         <translation>Za preimenovanje tega uporabnika se odjavite in ponovno prijavite z drugim uporabniškim računom.</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>Uporabniško ime mora vsebovati le majhne znake in
+mora biti brez posebnih znakov ali presledkov.
+Izberite drugo ime.</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>Oprostite, to ime je na vašem sistemu že v rabi. Izberite drugo ime.</translation>
@@ -709,27 +716,19 @@ Izberite drugo ime.</translation>
         <translation>Kopiranje namizia... neuspešno!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="622"/>
-        <location filename="../mainwindow.cpp" line="833"/>
-        <location filename="../mainwindow.cpp" line="841"/>
-        <source>browse...</source>
-        <translation>brskanje...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Confirmation</source>
-        <translation type="unfinished"></translation>
+        <translation>Potrditev</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces ni bil zaključen. Želite vseeno končati program?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation>O %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="791"/>
@@ -749,12 +748,12 @@ Izberite drugo ime.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 licenca</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="809"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 pomoč</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="834"/>
@@ -763,60 +762,37 @@ Izberite drugo ime.</translation>
     </message>
 </context>
 <context>
-    <name>QApplication</name>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Licenca</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Dnevnik sprememb</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Prekliči</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Zapri</translation>
-    </message>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Ta program morate zagnati kot root</translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
-    <message>
-        <location filename="../main.cpp" line="54"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="55"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Licenca</translation>
+        <translation>Licenca</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Dnevnik sprememb</translation>
+        <translation>Dnevnik sprememb</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Prekliči</translation>
+        <translation>Prekliči</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Zapri</translation>
+        <translation>&amp;Zapri</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Error</source>
+        <translation>Napaka</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="55"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Prijevljeni ste kot korenski uporabnik. Izpišite se in se ponovno prijavite kot običajen uporabnik, če želite uporabljati ta program.</translation>
     </message>
 </context>
 </TS>

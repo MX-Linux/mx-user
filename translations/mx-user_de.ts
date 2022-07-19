@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="de">
 <context>
     <name>MEConfig</name>
     <message>
@@ -484,6 +482,14 @@
         <translation>keine</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="833"/>
+        <location filename="../mainwindow.cpp" line="841"/>
+        <source>browse...</source>
+        <translation>Durchsuchen...</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Die Benutzer-Konfiguration wird repariert werden. Schliessen Sie jetzt bitte alle anderen Anwendungen. Anschliessend bitte ausloggen oder neu starten.  Sind Sie sicher, dass Sie jetzt reparieren wollen?</translation>
@@ -541,24 +547,16 @@
         <translation>Der Benutzername muss mindestens 2 Zeichen enthalten.  Wählen Sie bitte einen längeren Benutzernamen.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="499"/>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
+        <location filename="../mainwindow.cpp" line="328"/>
+        <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Der Benutzername muss klein geschrieben werden und 
-darf keine Sonderzeichen oder Leerzeichen enthalten.
-Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
+        <translation>Der Benutzername darf keine Sonderzeichen oder Leerzeichen enthalten.
+Bitte wählen Sie einen anderen Namen, bevor Sie fortfahren.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
         <translation>Dieser Name ist bereits vergeben. Bitte einen anderen Namen wählen.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="328"/>
-        <source>The user name cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -672,6 +670,15 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
         <translation>Um diesen Benutzer umzubenennen bitte ausloggen und mit einem anderen Benutzerkonto wieder einloggen.</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="499"/>
+        <source>The user name needs to be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation>Der Benutzername muss klein geschrieben werden und 
+darf keine Sonderzeichen oder Leerzeichen enthalten.
+Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>Dieser Name existiert bereits auf dem System. Bitte einen anderen Namen wählen.</translation>
@@ -709,22 +716,14 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
         <translation>Der Desktop wird kopiert...nicht gelungen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="622"/>
-        <location filename="../mainwindow.cpp" line="833"/>
-        <location filename="../mainwindow.cpp" line="841"/>
-        <source>browse...</source>
-        <translation>Durchsuchen...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Confirmation</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestätigung</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"></translation>
+        <translation>Prozess nicht abgeschlossen. Wollen Sie wirklich das Programm beenden?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
@@ -763,60 +762,37 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
     </message>
 </context>
 <context>
-    <name>QApplication</name>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Lizenz</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Changelog</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Abbrechen</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Close</translation>
-    </message>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Dieses Programm muss als Benutzer &quot;root&quot; ausgeführt werden.</translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
-    <message>
-        <location filename="../main.cpp" line="54"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="55"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Lizenz</translation>
+        <translation>Lizenz</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Changelog</translation>
+        <translation>Änderungsprotokoll</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Abbrechen</translation>
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Close</translation>
+        <translation>&amp;Schließen</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Error</source>
+        <translation>Fehler</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="55"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Sie sind als Benutzer “root” am System angemeldet. Bitte melden Sie sich ab und melden sich als normaler Benutzer an, um dieses Programm zu verwenden.</translation>
     </message>
 </context>
 </TS>
