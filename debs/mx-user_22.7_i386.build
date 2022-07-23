@@ -1,0 +1,245 @@
+ dpkg-buildpackage -us -uc -ui -B
+dpkg-buildpackage: info: source package mx-user
+dpkg-buildpackage: info: source version 22.7
+dpkg-buildpackage: info: source distribution mx
+dpkg-buildpackage: info: source changed by Dolphin Oracle <dolphinoracle@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture i386
+ fakeroot debian/rules clean
+dh clean --no-automatic-dbgsym --parallel 
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-user/32'
+dh_auto_clean
+rm -f src/translations/*.qm
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-user/32'
+   dh_autoreconf_clean -O--no-automatic-dbgsym -O--parallel
+   dh_clean -O--no-automatic-dbgsym -O--parallel
+ debian/rules build-arch
+dh build-arch --no-automatic-dbgsym --parallel 
+   dh_update_autotools_config -a -O--no-automatic-dbgsym -O--parallel
+   dh_autoreconf -a -O--no-automatic-dbgsym -O--parallel
+   dh_auto_configure -a -O--no-automatic-dbgsym -O--parallel
+	qmake -makefile "QMAKE_CFLAGS_RELEASE=-g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2" "QMAKE_CFLAGS_DEBUG=-g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2" "QMAKE_CXXFLAGS_RELEASE=-g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2" "QMAKE_CXXFLAGS_DEBUG=-g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2" QMAKE_LFLAGS_RELEASE=-Wl,-z,relro QMAKE_LFLAGS_DEBUG=-Wl,-z,relro QMAKE_STRIP=: PREFIX=/usr
+Info: creating stash file /media/demo/dataext/development/working/mx-user/32/.qmake.stash
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-user/32'
+lrelease *.pro
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_am.qm'...
+    Generated 120 translation(s) (120 finished and 0 unfinished)
+    Ignored 27 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_ar.qm'...
+    Generated 17 translation(s) (17 finished and 0 unfinished)
+    Ignored 130 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_bg.qm'...
+    Generated 19 translation(s) (19 finished and 0 unfinished)
+    Ignored 128 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_ca.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_cs.qm'...
+    Generated 145 translation(s) (145 finished and 0 unfinished)
+    Ignored 2 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_da.qm'...
+    Generated 144 translation(s) (144 finished and 0 unfinished)
+    Ignored 3 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_de.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_el.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_en.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_es.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_et.qm'...
+    Generated 3 translation(s) (3 finished and 0 unfinished)
+    Ignored 144 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_eu.qm'...
+    Generated 2 translation(s) (2 finished and 0 unfinished)
+    Ignored 145 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_fa.qm'...
+    Generated 142 translation(s) (142 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_fi.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_fr.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_he_IL.qm'...
+    Generated 89 translation(s) (89 finished and 0 unfinished)
+    Ignored 58 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_hi.qm'...
+    Generated 146 translation(s) (146 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_hr.qm'...
+    Generated 103 translation(s) (103 finished and 0 unfinished)
+    Ignored 44 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_hu.qm'...
+    Generated 39 translation(s) (39 finished and 0 unfinished)
+    Ignored 108 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_id.qm'...
+    Generated 71 translation(s) (71 finished and 0 unfinished)
+    Ignored 76 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_is.qm'...
+    Generated 17 translation(s) (17 finished and 0 unfinished)
+    Ignored 130 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_it.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_ja.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_kk.qm'...
+    Generated 48 translation(s) (48 finished and 0 unfinished)
+    Ignored 99 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_ko.qm'...
+    Generated 3 translation(s) (3 finished and 0 unfinished)
+    Ignored 144 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_lt.qm'...
+    Generated 126 translation(s) (126 finished and 0 unfinished)
+    Ignored 21 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_mk.qm'...
+    Generated 2 translation(s) (2 finished and 0 unfinished)
+    Ignored 145 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_mr.qm'...
+    Generated 15 translation(s) (15 finished and 0 unfinished)
+    Ignored 132 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_nb.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_nl.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_pl.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_pt.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_pt_BR.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_ro.qm'...
+    Generated 105 translation(s) (105 finished and 0 unfinished)
+    Ignored 42 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_ru.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_sk.qm'...
+    Generated 140 translation(s) (140 finished and 0 unfinished)
+    Ignored 7 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_sl.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_sq.qm'...
+    Generated 146 translation(s) (146 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_sr.qm'...
+    Generated 5 translation(s) (5 finished and 0 unfinished)
+    Ignored 142 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_sv.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_tr.qm'...
+    Generated 147 translation(s) (147 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_uk.qm'...
+    Generated 36 translation(s) (36 finished and 0 unfinished)
+    Ignored 111 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_zh_CN.qm'...
+    Generated 106 translation(s) (106 finished and 0 unfinished)
+    Ignored 41 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-user/32/translations/mx-user_zh_TW.qm'...
+    Generated 144 translation(s) (144 finished and 0 unfinished)
+    Ignored 3 untranslated source text(s)
+dh_auto_build -- QMAKE=qmake-qt5 LRELEASE=lrelease-qt5 QMAKE_OPTS="DEFINES+=NO_DEBUG_ON_CONSOLE"
+	make -j4 QMAKE=qmake-qt5 LRELEASE=lrelease-qt5 QMAKE_OPTS=DEFINES\+=NO_DEBUG_ON_CONSOLE
+make[2]: Entering directory '/media/demo/dataext/development/working/mx-user/32'
+/usr/lib/qt5/bin/uic mainwindow.ui -o ui_mainwindow.h
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -D_REENTRANT -Wall -W -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o cmd.o cmd.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -D_REENTRANT -Wall -W -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o about.o about.cpp
+/usr/lib/qt5/bin/rcc -name images images.qrc -o qrc_images.cpp
+g++ -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -dM -E -o moc_predefs.h /usr/lib/i386-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -D_REENTRANT -Wall -W -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o main.o main.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -D_REENTRANT -Wall -W -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o mainwindow.o mainwindow.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -D_REENTRANT -Wall -W -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o qrc_images.o qrc_images.cpp
+/usr/lib/qt5/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /media/demo/dataext/development/working/mx-user/32/moc_predefs.h -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/media/demo/dataext/development/working/mx-user/32 -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtWidgets -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/8 -I/usr/include/i386-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/i686-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/8/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
+mainwindow.cpp: In member function ‘void MainWindow::applyOptions()’:
+mainwindow.cpp:231:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+         system(cmd.toUtf8());
+         ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp:238:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+         system(cmd.toUtf8());
+         ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp:244:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+             system(cmd.toUtf8());
+             ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp:247:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+             system(QStringLiteral("sed -i 's/^User=%1/User=/' /etc/sddm.conf").arg(user).toUtf8());
+             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mainwindow.cpp:253:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+             system(cmd.toUtf8());
+             ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp:256:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+             system(QStringLiteral("sed -i 's/^User=.*/User=%1/' /etc/sddm.conf").arg(user).toUtf8());
+             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mainwindow.cpp: In member function ‘void MainWindow::applyAdd()’:
+mainwindow.cpp:350:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system(cmd.toUtf8());
+     ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp: In member function ‘void MainWindow::applyDelete()’:
+mainwindow.cpp:401:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+             system(cmd.toUtf8());
+             ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp: In member function ‘void MainWindow::syncDone(bool)’:
+mainwindow.cpp:557:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+         system(cmd.toUtf8());
+         ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp:571:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+             system(cmd.toUtf8());
+             ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp:573:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+             system(cmd.toUtf8());
+             ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp: In static member function ‘static void MainWindow::restartPanel(const QString&)’:
+mainwindow.cpp:816:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system(cmd.toUtf8());
+     ~~~~~~^~~~~~~~~~~~~~
+/usr/lib/qt5/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /media/demo/dataext/development/working/mx-user/32/moc_predefs.h -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/media/demo/dataext/development/working/mx-user/32 -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtWidgets -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/8 -I/usr/include/i386-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/i686-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/8/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include cmd.h -o moc_cmd.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -D_REENTRANT -Wall -W -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o moc_mainwindow.o moc_mainwindow.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-user/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -D_REENTRANT -Wall -W -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o moc_cmd.o moc_cmd.cpp
+g++ -Wl,-z,relro -o mx-user main.o mainwindow.o cmd.o about.o qrc_images.o moc_mainwindow.o moc_cmd.o   -lcrypt -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread 
+make[2]: Leaving directory '/media/demo/dataext/development/working/mx-user/32'
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-user/32'
+   dh_auto_test -a -O--no-automatic-dbgsym -O--parallel
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary-arch
+dh binary-arch --no-automatic-dbgsym --parallel 
+   dh_testroot -a -O--no-automatic-dbgsym -O--parallel
+   dh_prep -a -O--no-automatic-dbgsym -O--parallel
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-user/32'
+dh_auto_install -- QMAKE=qmake-qt5 LRELEASE=lrelease-qt5 QMAKE_OPTS="DEFINES+=NO_DEBUG_ON_CONSOLE"
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-user/32'
+   dh_install -a -O--no-automatic-dbgsym -O--parallel
+   dh_installdocs -a -O--no-automatic-dbgsym -O--parallel
+   dh_installchangelogs -a -O--no-automatic-dbgsym -O--parallel
+   dh_systemd_enable -a -O--no-automatic-dbgsym -O--parallel
+   dh_installinit -a -O--no-automatic-dbgsym -O--parallel
+   dh_systemd_start -a -O--no-automatic-dbgsym -O--parallel
+   dh_icons -a -O--no-automatic-dbgsym -O--parallel
+   dh_perl -a -O--no-automatic-dbgsym -O--parallel
+   dh_link -a -O--no-automatic-dbgsym -O--parallel
+   dh_strip_nondeterminism -a -O--no-automatic-dbgsym -O--parallel
+   dh_compress -a -O--no-automatic-dbgsym -O--parallel
+   dh_fixperms -a -O--no-automatic-dbgsym -O--parallel
+   dh_missing -a -O--no-automatic-dbgsym -O--parallel
+   dh_strip -a -O--no-automatic-dbgsym -O--parallel
+   dh_makeshlibs -a -O--no-automatic-dbgsym -O--parallel
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-user/32'
+dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/mx-user/usr/bin/mx-user was not linked against libGL.so.1 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/mx-user/usr/bin/mx-user was not linked against libcrypt.so.1 (it uses none of the library's symbols)
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-user/32'
+   dh_installdeb -a -O--no-automatic-dbgsym -O--parallel
+   dh_gencontrol -a -O--no-automatic-dbgsym -O--parallel
+   dh_md5sums -a -O--no-automatic-dbgsym -O--parallel
+   dh_builddeb -a -O--no-automatic-dbgsym -O--parallel
+dpkg-deb: building package 'mx-user' in '../mx-user_22.7_i386.deb'.
+ dpkg-genbuildinfo --build=any
+ dpkg-genchanges --build=any >../mx-user_22.7_i386.changes
+dpkg-genchanges: info: binary-only arch-specific upload (source code and arch-indep packages not included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now signing dsc file...
+ signfile dsc mx-user_22.7.dsc adrian <adrian@mxlinux.org>
+gpg: skipped "adrian <adrian@mxlinux.org>": No secret key
+gpg: /tmp/debsign.UGNQkUpT/mx-user_22.7.dsc: clear-sign failed: No secret key
+debsign: gpg error occurred!  Aborting....
