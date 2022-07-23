@@ -329,7 +329,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1044"/>
         <source>What to copy/sync:</source>
-        <translation>Què Copiar/Sincronitzar: </translation>
+        <translation>Què copiar/sincronitzar: </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1060"/>
