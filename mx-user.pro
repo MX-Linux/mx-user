@@ -25,6 +25,7 @@ TRANSLATIONS += translations/mx-user_am.ts \
                 translations/mx-user_fa.ts \
                 translations/mx-user_fi.ts \
                 translations/mx-user_fr.ts \
+                translations/mx-user_fr_BE.ts \
                 translations/mx-user_he_IL.ts \
                 translations/mx-user_hi.ts \
                 translations/mx-user_hr.ts \
