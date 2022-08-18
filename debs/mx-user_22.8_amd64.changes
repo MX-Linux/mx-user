@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 17 Aug 2022 22:03:46 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 22.8
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (22.8) mx; urgency=medium
+ .
+   * Fix: launching Firefox from Help
+Checksums-Sha1:
+ 1092fe335ddbb0cb6330e6b9b8d75ce2e33e2a60 1140 mx-user_22.8.dsc
+ 1d77225fc6075d5ab2621265c2e832c51aa6d5e3 181948 mx-user_22.8.tar.xz
+ 994b0088d6ad815f6aeee4e3f4691059ecc15567 10695 mx-user_22.8_amd64.buildinfo
+ b26d7f4f3db2c66a37b80094d56330939d01def3 217532 mx-user_22.8_amd64.deb
+Checksums-Sha256:
+ b958d7ed6364b543d07ca915cd1c74b9d7229b9acbfefdd66b6118d29aeb6e69 1140 mx-user_22.8.dsc
+ 3c095cca94fb941efd5503901b99fd124056f39d58479dce313c0486d87f9ad8 181948 mx-user_22.8.tar.xz
+ 8e4ef89ce398ec48fe986293f5da069374a40a7c5ec0dfc5c8fbe72a743ac2bd 10695 mx-user_22.8_amd64.buildinfo
+ 1e9a4a245c35b4ff5a694176ecbdaf679df73fba8a2dbb8531d38b7675512d0a 217532 mx-user_22.8_amd64.deb
+Files:
+ bd3a61224499f874de4f5e65837f5608 1140 system optional mx-user_22.8.dsc
+ f579beabce51a7d46fa067fa3123f02c 181948 system optional mx-user_22.8.tar.xz
+ bea1b4fca065869f52cd7fde0376fd55 10695 system optional mx-user_22.8_amd64.buildinfo
+ fe219d203001fc6d323bc567323a1802 217532 system optional mx-user_22.8_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmL9nkgTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJJjCACV10HoGq4dSVd4KYjiF/C31MmnB9Bn
+khcbIZK4QUp8CKAl1Hb963ka3lUZ5AZzM5VTyRusExwe/BILEA3rIJGZwRlExoIW
+Bx8Dsf+96RRIe7h460+miWIZKPtLs3Hcs16hACInejENRRIf0AwMwi7pOEVfC2De
+flbecJ4mgufUM18rPlUTkkN40s6s3PtpBe8y8UmZsOhEsVnKlHvTmKP9Snd4Pkm8
+Vei1otHSHM35+Cn4+sBiQBMgsC7zdMNOXHejqCTb9XHPionhh55Gr9TbahnygzVB
+bIgRqfkYQWcVX9452aD6oAq5iMJVisHUHYdj+Jq3we8dWz99oKZ6+YlX
+=wQKl
+-----END PGP SIGNATURE-----

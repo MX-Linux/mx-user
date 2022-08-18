@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 17 Aug 2022 22:03:46 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 22.8
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (22.8) mx; urgency=medium
+ .
+   * Fix: launching Firefox from Help
+Checksums-Sha1:
+ 2325c99f1483669b28c3bea250346c4b3fe7e94f 10009 mx-user_22.8_i386.buildinfo
+ 0651e2bbb7fec05ec1984cdd8b2e28779f306284 220596 mx-user_22.8_i386.deb
+Checksums-Sha256:
+ 09f0c262ea8f2998825a398d199b5828c1b467ada172111d50c0ac80e87e95f5 10009 mx-user_22.8_i386.buildinfo
+ da8151d16c3ba775f5382898aac8a918d7c866d17291ac08fe65c1a10a6f7e2e 220596 mx-user_22.8_i386.deb
+Files:
+ 24da0b850b24ec59bb50e5a7e66d5019 10009 system optional mx-user_22.8_i386.buildinfo
+ 429351891d32a5fa051f18ced8db49e1 220596 system optional mx-user_22.8_i386.deb
