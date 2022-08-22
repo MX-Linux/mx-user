@@ -792,7 +792,7 @@ void MainWindow::on_buttonAbout_clicked()
                         tr("Simple user configuration for MX Linux") +
                        R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-                       QStringLiteral("/usr/share/doc/mx-user/license.html"), tr("%1 License").arg(this->windowTitle()), true);
+                       QStringLiteral("/usr/share/doc/mx-user/license.html"), tr("%1 License").arg(this->windowTitle()));
     this->show();
 }
 
@@ -806,7 +806,7 @@ void MainWindow::on_buttonHelp_clicked()
 
     if (lang.startsWith(QLatin1String("fr")))
         url = QStringLiteral("https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs");
-    displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
+    displayDoc(url, tr("%1 Help").arg(this->windowTitle()));
 }
 
 
