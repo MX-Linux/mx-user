@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 22 Aug 2022 18:59:55 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 22.8.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (22.8.01) mx; urgency=medium
+ .
+   * Fix: launching documents from Help (fixes a problem in Plasma)
+Checksums-Sha1:
+ 899142de0662d7b1abb4cac7c04deac56b079fbe 1152 mx-user_22.8.01.dsc
+ 3dec85a26521fcf7fbfcb189ca70763ef3596b51 182068 mx-user_22.8.01.tar.xz
+ 70058a3edd3052d2cf1edb2d8dc82fb61d115a4d 10719 mx-user_22.8.01_amd64.buildinfo
+ 8e0f17f440de1fc0f9302ba3989b013d4323f295 219000 mx-user_22.8.01_amd64.deb
+Checksums-Sha256:
+ 4f756667b33aedb3c2c4da53794095243784cfe6f5d8af83335b2018a3ff914f 1152 mx-user_22.8.01.dsc
+ 333866337821dcf92db5e917e1c364a91b88fed23b77b7c313b8b55c70bd7eee 182068 mx-user_22.8.01.tar.xz
+ afaf8e13ae876980317e08090abf4dc250ac755cddb241169907f9f5b5a1feb3 10719 mx-user_22.8.01_amd64.buildinfo
+ 107a074bd4b7dd12b5e894d3a7a309d1336e06ce82bff4a1facc967ad37818c2 219000 mx-user_22.8.01_amd64.deb
+Files:
+ ba252d7725ba05422b723074ded89b2e 1152 system optional mx-user_22.8.01.dsc
+ f0569b44a6e8210ec7e5abcf4aa4478d 182068 system optional mx-user_22.8.01.tar.xz
+ 4e0ef30adce54928e699c43e6a4439b7 10719 system optional mx-user_22.8.01_amd64.buildinfo
+ c1abfdd3c054b4afb79471cc830ca127 219000 system optional mx-user_22.8.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmMECs8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumIBYB/9vEIkseALCVybGYXkp+WWFm5heQSFe
+i8hZieABk9q9fMB7eTfz+zt9V6afOi8/vZBG7u2uQrYf6Ne23rLbCUlvhjNYm4JB
+0DZHn46uqpZkhLX6jw8PHHN+Ul95sY81P6C5eBpGV1tjDteMHwyk9plMTCCTqquU
+j5xXmETnYUWqE3IA+z/xQFRBgHZeI+LYhax539IWNx6oOxBt8U4I1TtPLOWdXfzX
+Rqk2heJI1qqjZXgUW29BaF4xDr8bV+Zx8BgquCD7tqRGE+56tqxCkbSDgGh8MSaw
+UAU5a13Pdxu3Mr40igLY6VV0mVJf8VR1B09sj5Zaal3pPJtipBzf5oil
+=ObuP
+-----END PGP SIGNATURE-----
