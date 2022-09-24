@@ -9,87 +9,87 @@
     <message>
         <location filename="../mainwindow.ui" line="62"/>
         <source>Administration</source>
-        <translation type="unfinished"/>
+        <translation>Beheer</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="65"/>
         <source>Add a new user</source>
-        <translation type="unfinished"/>
+        <translation>Nieuwe gebruiker toevoegen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="105"/>
         <source>Add User Account</source>
-        <translation type="unfinished"/>
+        <translation>Gebruikersaccount toevoegen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="132"/>
         <source>Reenter password for new user</source>
-        <translation type="unfinished"/>
+        <translation>Voer opnieuw het wachtwoord in voor de nieuwe gebruiker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="141"/>
         <source>confirm password</source>
-        <translation type="unfinished"/>
+        <translation>bevestig wachtwoord</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="157"/>
         <location filename="../mainwindow.ui" line="1201"/>
         <source>Username of new user</source>
-        <translation type="unfinished"/>
+        <translation>Gebruikersnaam van de nieuwe gebruiker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="160"/>
         <source>User login name:</source>
-        <translation type="unfinished"/>
+        <translation>Gebruikers inlog naam:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="176"/>
         <location filename="../mainwindow.ui" line="456"/>
         <location filename="../mainwindow.ui" line="1220"/>
         <source>Enter username of new user</source>
-        <translation type="unfinished"/>
+        <translation>Voer de gebruikersnaam in van de nieuwe gebruiker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="182"/>
         <location filename="../mainwindow.ui" line="462"/>
         <source>username</source>
-        <translation type="unfinished"/>
+        <translation>gebruikersnaam</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="198"/>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Password for new user</source>
-        <translation type="unfinished"/>
+        <translation>Wachtwoord voor de nieuwe gebruiker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="201"/>
         <source>User password:</source>
-        <translation type="unfinished"/>
+        <translation>Gebruikerswachtwoord:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="217"/>
         <source>Enter password for new user</source>
-        <translation type="unfinished"/>
+        <translation>Voer wachtwoord in voor de nieuwe gebruiker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="226"/>
         <source>password</source>
-        <translation type="unfinished"/>
+        <translation>wachtwoord</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="245"/>
         <source>Confirm user password:</source>
-        <translation type="unfinished"/>
+        <translation>Bevestig gebruikerswachtwoord:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="280"/>
         <source>Delete User Account</source>
-        <translation type="unfinished"/>
+        <translation>Gebruikersaccount Verwijderen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="323"/>
         <source>Select user</source>
-        <translation type="unfinished"/>
+        <translation>Selecteer gebruiker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
@@ -98,63 +98,63 @@
         <location filename="../mainwindow.ui" line="1438"/>
         <location filename="../mainwindow.ui" line="1463"/>
         <source>Select user to delete</source>
-        <translation type="unfinished"/>
+        <translation>Selecteer de gebruiker die u wilt verwijderen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="348"/>
         <source>User to delete:</source>
-        <translation type="unfinished"/>
+        <translation>Gebruiker die u wilt verwijderen:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="364"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation type="unfinished"/>
+        <translation>Verwijder ook de home-directory van de gebruiker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="367"/>
         <source>Delete user home directory</source>
-        <translation type="unfinished"/>
+        <translation>Verwijder home directory van de gebruiker</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="386"/>
         <source>Rename User Account</source>
-        <translation type="unfinished"/>
+        <translation>Hernoem Gebruikersaccount</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="398"/>
         <location filename="../mainwindow.ui" line="560"/>
         <source>Select user to modify:</source>
-        <translation type="unfinished"/>
+        <translation>Selecteer gebruiker die u wilt aanpassen:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>New user name:</source>
-        <translation type="unfinished"/>
+        <translation>Nieuwe gebruikersnaam:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="481"/>
         <source>Change User Password</source>
-        <translation type="unfinished"/>
+        <translation>Gebruikerswachtwoord Veranderen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="509"/>
         <source>new password</source>
-        <translation type="unfinished"/>
+        <translation>nieuw wachtwoord</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="525"/>
         <source>Confirm new password:</source>
-        <translation type="unfinished"/>
+        <translation>Bevestig nieuw wachtwoord:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="544"/>
         <source>confirm new password</source>
-        <translation type="unfinished"/>
+        <translation>bevestig nieuw wachtwoord</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="576"/>
         <source>New user password:</source>
-        <translation type="unfinished"/>
+        <translation>Nieuw gebruikerswachtwoord:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="610"/>
@@ -176,7 +176,7 @@
         <location filename="../mainwindow.ui" line="659"/>
         <location filename="../mainwindow.ui" line="675"/>
         <source>Select user to repair</source>
-        <translation type="unfinished"/>
+        <translation>Selecteer een gebruiker voor reparatie</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="662"/>
@@ -202,7 +202,7 @@
     <message>
         <location filename="../mainwindow.ui" line="737"/>
         <source>Alt+X</source>
-        <translation type="unfinished"/>
+        <translation>Alt+X</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="744"/>
@@ -212,12 +212,12 @@
     <message>
         <location filename="../mainwindow.ui" line="750"/>
         <source>Group memberships</source>
-        <translation type="unfinished"/>
+        <translation>Groepslidmaatschappen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="753"/>
         <source>Alt+G</source>
-        <translation type="unfinished"/>
+        <translation>Alt+G</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="763"/>
@@ -227,7 +227,7 @@
     <message>
         <location filename="../mainwindow.ui" line="769"/>
         <source>Log in automatically</source>
-        <translation type="unfinished"/>
+        <translation>Log automatisch in</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="776"/>
@@ -237,7 +237,7 @@
     <message>
         <location filename="../mainwindow.ui" line="791"/>
         <source>Copy/Sync</source>
-        <translation type="unfinished"/>
+        <translation>Kopiëren/Synchroniseren</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="818"/>
@@ -258,7 +258,7 @@
     <message>
         <location filename="../mainwindow.ui" line="861"/>
         <source>Copy only</source>
-        <translation type="unfinished"/>
+        <translation>Alleen kopiëren</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="877"/>
@@ -269,12 +269,12 @@
     <message>
         <location filename="../mainwindow.ui" line="899"/>
         <source>Copy to:</source>
-        <translation type="unfinished"/>
+        <translation>Kopieer naar:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="921"/>
         <source>Copy from:</source>
-        <translation type="unfinished"/>
+        <translation>Kopiëer van:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="934"/>
@@ -284,27 +284,27 @@
     <message>
         <location filename="../mainwindow.ui" line="937"/>
         <source>Sync</source>
-        <translation type="unfinished"/>
+        <translation>Synchroniseren</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="983"/>
         <source>Select to copy/sync Shared</source>
-        <translation type="unfinished"/>
+        <translation>Kies om Gedeeld te kopiëren/synchroniseren</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="986"/>
         <source>Shared folder</source>
-        <translation type="unfinished"/>
+        <translation>Gedeelde map</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="999"/>
         <source>Select to copy/sync entire home</source>
-        <translation type="unfinished"/>
+        <translation>Selecteer om home als geheel te kopiëren/synchroniseren</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1002"/>
         <source>Entire home</source>
-        <translation type="unfinished"/>
+        <translation>Geheel home</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1018"/>
@@ -324,68 +324,68 @@
     <message>
         <location filename="../mainwindow.ui" line="1037"/>
         <source>Documents folder</source>
-        <translation type="unfinished"/>
+        <translation>Documenten map</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1044"/>
         <source>What to copy/sync:</source>
-        <translation type="unfinished"/>
+        <translation>Wat moet er gekopiëerd/gesynchroniseerd worden:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1060"/>
         <source>Progress</source>
-        <translation type="unfinished"/>
+        <translation>Voortgang</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1090"/>
         <location filename="../mainwindow.ui" line="1106"/>
         <source>Status of the changes</source>
-        <translation type="unfinished"/>
+        <translation>Status van de veranderingen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1109"/>
         <source>Status:</source>
-        <translation type="unfinished"/>
+        <translation>Status:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1125"/>
         <source>Progress of the changes</source>
-        <translation type="unfinished"/>
+        <translation>Voortgang van de veranderingen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1162"/>
         <source>Add/Remove Groups</source>
-        <translation type="unfinished"/>
+        <translation>Groepen Toevoegen/Verwijderen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1174"/>
         <source>Add Group</source>
-        <translation type="unfinished"/>
+        <translation>Groep Toevoegen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1204"/>
         <source>Group name:</source>
-        <translation type="unfinished"/>
+        <translation>Groepsnaam:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1226"/>
         <source>groupname</source>
-        <translation type="unfinished"/>
+        <translation>groepsnaam</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1258"/>
         <source>Delete Group</source>
-        <translation type="unfinished"/>
+        <translation>Groep Verwijderen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1320"/>
         <source>Group to delete:</source>
-        <translation type="unfinished"/>
+        <translation>Te verwijderen groep:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1351"/>
         <source>Group Membership</source>
-        <translation type="unfinished"/>
+        <translation>Groepslidmaatschap</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1470"/>
@@ -400,37 +400,37 @@
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
         <source>Apply any changes</source>
-        <translation type="unfinished"/>
+        <translation>Veranderingen toepassen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1553"/>
         <source>Apply</source>
-        <translation type="unfinished"/>
+        <translation>Toepassen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1560"/>
         <source>Alt+A</source>
-        <translation type="unfinished"/>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1567"/>
         <source>Cancel any changes then quit</source>
-        <translation type="unfinished"/>
+        <translation>Iedere verandering ongedaan maken, dan afsluiten</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1570"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Sluiten</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1577"/>
         <source>Alt+N</source>
-        <translation type="unfinished"/>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1618"/>
         <source>Display help </source>
-        <translation type="unfinished"/>
+        <translation>Toon help</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1621"/>
@@ -440,22 +440,22 @@
     <message>
         <location filename="../mainwindow.ui" line="1628"/>
         <source>Alt+H</source>
-        <translation type="unfinished"/>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1635"/>
         <source>About this application</source>
-        <translation type="unfinished"/>
+        <translation>Over deze applicatie</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1638"/>
         <source>About...</source>
-        <translation type="unfinished"/>
+        <translation>Over...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1645"/>
         <source>Alt+B</source>
-        <translation type="unfinished"/>
+        <translation>Alt+B</translation>
     </message>
 </context>
 <context>
@@ -487,7 +487,7 @@
         <location filename="../mainwindow.cpp" line="833"/>
         <location filename="../mainwindow.cpp" line="841"/>
         <source>browse...</source>
-        <translation type="unfinished"/>
+        <translation>navigeer...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="213"/>
@@ -723,12 +723,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
         <source>About %1</source>
-        <translation type="unfinished"/>
+        <translation>Over %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="791"/>
         <source>Version: </source>
-        <translation type="unfinished"/>
+        <translation>Versie:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="792"/>
@@ -738,17 +738,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../mainwindow.cpp" line="794"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>%1 License</source>
-        <translation type="unfinished"/>
+        <translation>%1 Licentie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="809"/>
         <source>%1 Help</source>
-        <translation type="unfinished"/>
+        <translation>%1 Help</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="834"/>
@@ -761,13 +761,13 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>Licentie</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
@@ -777,17 +777,17 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Sluiten</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="54"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Foutmelding</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"/>
+        <translation>U lijkt ingelogd te zijn als root, gelieve uit te loggen en in te loggen als normale gebruiker om dit programma te gebruiken.</translation>
     </message>
 </context>
 </TS>
