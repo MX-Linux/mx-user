@@ -4,7 +4,7 @@
     <message>
         <location filename="../mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation type="unfinished"/>
+        <translation>MX-gebruikersbeheerder</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="62"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../mainwindow.ui" line="613"/>
         <source>Repair a user configuration</source>
-        <translation type="unfinished"/>
+        <translation>Een gebruikersconfiguratie repareren</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="647"/>
@@ -182,12 +182,12 @@
         <location filename="../mainwindow.ui" line="662"/>
         <location filename="../mainwindow.ui" line="1447"/>
         <source>User to change:</source>
-        <translation type="unfinished"/>
+        <translation>Te wijzigen gebruiker:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="707"/>
         <source>Restore Defaults</source>
-        <translation type="unfinished"/>
+        <translation>Standaardinstellingen herstellen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="728"/>

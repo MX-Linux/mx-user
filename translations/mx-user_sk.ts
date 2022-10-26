@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sk">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="sk">
 <context>
     <name>MEConfig</name>
     <message>
@@ -552,7 +550,7 @@
         <location filename="../mainwindow.cpp" line="328"/>
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
@@ -663,12 +661,12 @@ Prosím vyberte iný názov a pokračujte. </translation>
     <message>
         <location filename="../mainwindow.cpp" line="486"/>
         <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="499"/>
@@ -682,12 +680,12 @@ Prosím vyberte iné meno a pokračujte. </translation>
     <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
@@ -724,7 +722,7 @@ Prosím vyberte iné meno a pokračujte. </translation>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
@@ -765,23 +763,23 @@ Prosím vyberte iné meno a pokračujte. </translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="50"/>
+        <location filename="../about.cpp" line="41"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>
     <message>
+        <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
-        <location filename="../about.cpp" line="60"/>
         <source>Changelog</source>
         <translation>História zmien</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="52"/>
+        <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
         <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="70"/>
+        <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
         <translation>&amp;Zatvoriť</translation>
     </message>
@@ -793,7 +791,7 @@ Prosím vyberte iné meno a pokračujte. </translation>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
