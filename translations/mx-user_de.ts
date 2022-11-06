@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="de">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="de">
 <context>
     <name>MEConfig</name>
     <message>
@@ -45,7 +47,6 @@
     <message>
         <location filename="../mainwindow.ui" line="176"/>
         <location filename="../mainwindow.ui" line="456"/>
-        <location filename="../mainwindow.ui" line="1220"/>
         <source>Enter username of new user</source>
         <translation>Benutzernamen des neuen Benutzers eintragen</translation>
     </message>
@@ -93,7 +94,6 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
-        <location filename="../mainwindow.ui" line="1298"/>
         <location filename="../mainwindow.ui" line="1311"/>
         <location filename="../mainwindow.ui" line="1438"/>
         <location filename="../mainwindow.ui" line="1463"/>
@@ -368,6 +368,11 @@
         <translation>Gruppenname:</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1220"/>
+        <source>Enter name of new group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1226"/>
         <source>groupname</source>
         <translation>Gruppenname</translation>
@@ -376,6 +381,11 @@
         <location filename="../mainwindow.ui" line="1258"/>
         <source>Delete Group</source>
         <translation>Gruppe löschen</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1298"/>
+        <source>Select group to delete</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1320"/>
@@ -394,8 +404,12 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
+        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>*Prüfen Sie bitte nochmals Ihre Auswahl, bevor Sie weiterfahren, falsche Gruppenzugehörigkeiten können das System zerstören.  Wenn Sie einen Fehler machen, benutzen Sie die Reparieren-Funktion um die ursprünglichen Gruppenzugehörigkeiten wiederherzustellen</translation>
+        <translation type="vanished">*Prüfen Sie bitte nochmals Ihre Auswahl, bevor Sie weiterfahren, falsche Gruppenzugehörigkeiten können das System zerstören.  Wenn Sie einen Fehler machen, benutzen Sie die Reparieren-Funktion um die ursprünglichen Gruppenzugehörigkeiten wiederherzustellen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
@@ -764,23 +778,23 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weiterfahren.</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="41"/>
+        <location filename="../about.cpp" line="50"/>
         <source>License</source>
         <translation>Lizenz</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
+        <location filename="../about.cpp" line="60"/>
         <source>Changelog</source>
         <translation>Änderungsprotokoll</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="43"/>
+        <location filename="../about.cpp" line="52"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="63"/>
+        <location filename="../about.cpp" line="70"/>
         <source>&amp;Close</source>
         <translation>&amp;Schließen</translation>
     </message>

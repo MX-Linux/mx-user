@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="da">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="da">
 <context>
     <name>MEConfig</name>
     <message>
@@ -45,7 +47,6 @@
     <message>
         <location filename="../mainwindow.ui" line="176"/>
         <location filename="../mainwindow.ui" line="456"/>
-        <location filename="../mainwindow.ui" line="1220"/>
         <source>Enter username of new user</source>
         <translation>Indtast brugernavn til den nye bruger</translation>
     </message>
@@ -93,7 +94,6 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
-        <location filename="../mainwindow.ui" line="1298"/>
         <location filename="../mainwindow.ui" line="1311"/>
         <location filename="../mainwindow.ui" line="1438"/>
         <location filename="../mainwindow.ui" line="1463"/>
@@ -368,6 +368,11 @@
         <translation>Gruppenavn:</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1220"/>
+        <source>Enter name of new group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1226"/>
         <source>groupname</source>
         <translation>gruppenavn</translation>
@@ -376,6 +381,11 @@
         <location filename="../mainwindow.ui" line="1258"/>
         <source>Delete Group</source>
         <translation>Slet gruppe</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1298"/>
+        <source>Select group to delete</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1320"/>
@@ -394,8 +404,12 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
+        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>*Dobbelttjek venligst dine valg inden de anvendes, tildeling af forkerte gruppemedlemsskaber kan ødelægge systemet. Brug Reparer-fanebladet til at gendanne de originale medlemsskaber hvis du lavede en fejl.</translation>
+        <translation type="vanished">*Dobbelttjek venligst dine valg inden de anvendes, tildeling af forkerte gruppemedlemsskaber kan ødelægge systemet. Brug Reparer-fanebladet til at gendanne de originale medlemsskaber hvis du lavede en fejl.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
@@ -550,7 +564,7 @@
         <location filename="../mainwindow.cpp" line="328"/>
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
@@ -722,7 +736,7 @@ Vælg venligst et andet navn inden du fortsætter.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
@@ -763,23 +777,23 @@ Vælg venligst et andet navn inden du fortsætter.</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="41"/>
+        <location filename="../about.cpp" line="50"/>
         <source>License</source>
         <translation>Licens</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
+        <location filename="../about.cpp" line="60"/>
         <source>Changelog</source>
         <translation>Ændringslog</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="43"/>
+        <location filename="../about.cpp" line="52"/>
         <source>Cancel</source>
         <translation>Annuller</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="63"/>
+        <location filename="../about.cpp" line="70"/>
         <source>&amp;Close</source>
         <translation>&amp;Luk</translation>
     </message>
@@ -791,7 +805,7 @@ Vælg venligst et andet navn inden du fortsætter.</translation>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

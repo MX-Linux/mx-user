@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="pt_BR">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="pt_BR">
 <context>
     <name>MEConfig</name>
     <message>
@@ -45,7 +47,6 @@
     <message>
         <location filename="../mainwindow.ui" line="176"/>
         <location filename="../mainwindow.ui" line="456"/>
-        <location filename="../mainwindow.ui" line="1220"/>
         <source>Enter username of new user</source>
         <translation>Insira o nomedeusuario do novo usuário</translation>
     </message>
@@ -93,7 +94,6 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
-        <location filename="../mainwindow.ui" line="1298"/>
         <location filename="../mainwindow.ui" line="1311"/>
         <location filename="../mainwindow.ui" line="1438"/>
         <location filename="../mainwindow.ui" line="1463"/>
@@ -368,6 +368,11 @@
         <translation>Nome do grupo:</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1220"/>
+        <source>Enter name of new group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1226"/>
         <source>groupname</source>
         <translation>nomedogrupo</translation>
@@ -376,6 +381,11 @@
         <location filename="../mainwindow.ui" line="1258"/>
         <source>Delete Group</source>
         <translation>Excluir Grupo</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1298"/>
+        <source>Select group to delete</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1320"/>
@@ -394,8 +404,12 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
+        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>* Por favor, verifique as suas seleções antes de aplicar, se você atribuir associações de grupo erradas poderá danificar o seu sistema operacional. Se você cometer algum erro, utilize a aba ou guia Reparar para restaurar as associações originais.</translation>
+        <translation type="vanished">* Por favor, verifique as suas seleções antes de aplicar, se você atribuir associações de grupo erradas poderá danificar o seu sistema operacional. Se você cometer algum erro, utilize a aba ou guia Reparar para restaurar as associações originais.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
@@ -768,23 +782,23 @@ antes de continuar.</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="41"/>
+        <location filename="../about.cpp" line="50"/>
         <source>License</source>
         <translation>Licença</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
+        <location filename="../about.cpp" line="60"/>
         <source>Changelog</source>
         <translation>Relatório de alterações</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="43"/>
+        <location filename="../about.cpp" line="52"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="63"/>
+        <location filename="../about.cpp" line="70"/>
         <source>&amp;Close</source>
         <translation>&amp;Fechar</translation>
     </message>

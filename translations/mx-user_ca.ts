@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ca">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ca">
 <context>
     <name>MEConfig</name>
     <message>
@@ -45,7 +47,6 @@
     <message>
         <location filename="../mainwindow.ui" line="176"/>
         <location filename="../mainwindow.ui" line="456"/>
-        <location filename="../mainwindow.ui" line="1220"/>
         <source>Enter username of new user</source>
         <translation>Entreu el nom del nou usuari </translation>
     </message>
@@ -93,7 +94,6 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
-        <location filename="../mainwindow.ui" line="1298"/>
         <location filename="../mainwindow.ui" line="1311"/>
         <location filename="../mainwindow.ui" line="1438"/>
         <location filename="../mainwindow.ui" line="1463"/>
@@ -368,6 +368,11 @@
         <translation>Nom del grup: </translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1220"/>
+        <source>Enter name of new group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1226"/>
         <source>groupname</source>
         <translation>nomdegrup</translation>
@@ -376,6 +381,11 @@
         <location filename="../mainwindow.ui" line="1258"/>
         <source>Delete Group</source>
         <translation>Elimina Grup</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1298"/>
+        <source>Select group to delete</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1320"/>
@@ -394,8 +404,12 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
+        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation>* Si us plau reviseu novament les seleccions abans d&apos;aplicar-ho, l&apos;assignació de pertinença a grups erronis pot trencar el sistema. Useu l&apos;opció Reparar per restaurar les afiliacions originals si feu un error.</translation>
+        <translation type="vanished">* Si us plau reviseu novament les seleccions abans d&apos;aplicar-ho, l&apos;assignació de pertinença a grups erronis pot trencar el sistema. Useu l&apos;opció Reparar per restaurar les afiliacions originals si feu un error.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
@@ -764,23 +778,23 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="41"/>
+        <location filename="../about.cpp" line="50"/>
         <source>License</source>
         <translation>Llicència</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
+        <location filename="../about.cpp" line="60"/>
         <source>Changelog</source>
         <translation>Registre de canvis</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="43"/>
+        <location filename="../about.cpp" line="52"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="63"/>
+        <location filename="../about.cpp" line="70"/>
         <source>&amp;Close</source>
         <translation>Tan&amp;ca </translation>
     </message>

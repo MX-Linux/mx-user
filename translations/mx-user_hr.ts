@@ -1,10 +1,12 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="hr">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="hr">
 <context>
     <name>MEConfig</name>
     <message>
         <location filename="../mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="62"/>
@@ -45,7 +47,6 @@
     <message>
         <location filename="../mainwindow.ui" line="176"/>
         <location filename="../mainwindow.ui" line="456"/>
-        <location filename="../mainwindow.ui" line="1220"/>
         <source>Enter username of new user</source>
         <translation>Unesite korisničko ime novog korisnika</translation>
     </message>
@@ -93,7 +94,6 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
-        <location filename="../mainwindow.ui" line="1298"/>
         <location filename="../mainwindow.ui" line="1311"/>
         <location filename="../mainwindow.ui" line="1438"/>
         <location filename="../mainwindow.ui" line="1463"/>
@@ -118,7 +118,7 @@
     <message>
         <location filename="../mainwindow.ui" line="386"/>
         <source>Rename User Account</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="398"/>
@@ -129,7 +129,7 @@
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>New user name:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="481"/>
@@ -192,7 +192,7 @@
     <message>
         <location filename="../mainwindow.ui" line="728"/>
         <source>Restore browser configs to MX defaults</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="734"/>
@@ -207,12 +207,12 @@
     <message>
         <location filename="../mainwindow.ui" line="744"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="750"/>
         <source>Group memberships</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="753"/>
@@ -222,7 +222,7 @@
     <message>
         <location filename="../mainwindow.ui" line="763"/>
         <source>Change Autologin Settings</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="769"/>
@@ -279,17 +279,17 @@
     <message>
         <location filename="../mainwindow.ui" line="934"/>
         <source>Select to copy and then delete differences</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="937"/>
         <source>Sync</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="983"/>
         <source>Select to copy/sync Shared</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="986"/>
@@ -299,17 +299,17 @@
     <message>
         <location filename="../mainwindow.ui" line="999"/>
         <source>Select to copy/sync entire home</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1002"/>
         <source>Entire home</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1018"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1021"/>
@@ -319,7 +319,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1034"/>
         <source>Select to copy/sync Documents</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1037"/>
@@ -329,7 +329,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1044"/>
         <source>What to copy/sync:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1060"/>
@@ -340,7 +340,7 @@
         <location filename="../mainwindow.ui" line="1090"/>
         <location filename="../mainwindow.ui" line="1106"/>
         <source>Status of the changes</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1109"/>
@@ -350,7 +350,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1125"/>
         <source>Progress of the changes</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1162"/>
@@ -368,6 +368,11 @@
         <translation>Ime grupe:</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1220"/>
+        <source>Enter name of new group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1226"/>
         <source>groupname</source>
         <translation>ime grupe</translation>
@@ -378,6 +383,11 @@
         <translation>Izbrišite grupu</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1298"/>
+        <source>Select group to delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1320"/>
         <source>Group to delete:</source>
         <translation>Grupa za brisanje:</translation>
@@ -385,17 +395,17 @@
     <message>
         <location filename="../mainwindow.ui" line="1351"/>
         <source>Group Membership</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1470"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1490"/>
-        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="unfinished"/>
+        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
@@ -487,7 +497,7 @@
         <location filename="../mainwindow.cpp" line="833"/>
         <location filename="../mainwindow.cpp" line="841"/>
         <source>browse...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="213"/>
@@ -497,12 +507,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="233"/>
         <source>User group membership was restored.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>Mozilla settings were reset.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
@@ -528,17 +538,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
         <source>Synchronizing desktop...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Copying desktop...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
@@ -556,7 +566,7 @@ Molim odaberite drugo ime prije nastavka.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -593,7 +603,7 @@ Molim odaberite drugo ime prije nastavka.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="397"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="407"/>
@@ -622,7 +632,7 @@ Molim odaberite drugo ime prije nastavka..</translation>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="441"/>
@@ -637,7 +647,7 @@ Molim odaberite drugo ime prije nastavka..</translation>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
@@ -657,17 +667,17 @@ Molim odaberite drugo ime prije nastavka..</translation>
     <message>
         <location filename="../mainwindow.cpp" line="474"/>
         <source>Failed to apply group changes</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="486"/>
         <source>The selected user name is currently in use.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="499"/>
@@ -681,39 +691,39 @@ Molim odaberite drugo ime prije nastavka..</translation>
     <message>
         <location filename="../mainwindow.cpp" line="508"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>The user was renamed.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="547"/>
         <location filename="../mainwindow.cpp" line="576"/>
         <source>Synchronizing desktop...ok</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="549"/>
         <location filename="../mainwindow.cpp" line="578"/>
         <source>Copying desktop...ok</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="581"/>
         <source>Synchronizing desktop...failed</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="583"/>
         <source>Copying desktop...failed</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="599"/>
@@ -723,7 +733,7 @@ Molim odaberite drugo ime prije nastavka..</translation>
     <message>
         <location filename="../mainwindow.cpp" line="600"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="790"/>
@@ -738,7 +748,7 @@ Molim odaberite drugo ime prije nastavka..</translation>
     <message>
         <location filename="../mainwindow.cpp" line="792"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="794"/>
@@ -764,23 +774,23 @@ Molim odaberite drugo ime prije nastavka..</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="41"/>
+        <location filename="../about.cpp" line="50"/>
         <source>License</source>
         <translation>Licenca</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
+        <location filename="../about.cpp" line="60"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="43"/>
+        <location filename="../about.cpp" line="52"/>
         <source>Cancel</source>
         <translation>Otkaži</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="63"/>
+        <location filename="../about.cpp" line="70"/>
         <source>&amp;Close</source>
         <translation>&amp;Zatvori</translation>
     </message>
@@ -792,7 +802,7 @@ Molim odaberite drugo ime prije nastavka..</translation>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
