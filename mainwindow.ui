@@ -1217,7 +1217,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Enter username of new user</string>
+             <string>Enter name of new group</string>
             </property>
             <property name="text">
              <string/>
@@ -1295,7 +1295,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Select user to delete</string>
+             <string>Select group to delete</string>
             </property>
            </widget>
           </item>
@@ -1487,7 +1487,7 @@
           <item row="5" column="0" colspan="3">
            <widget class="QLabel" name="label_3">
             <property name="text">
-             <string>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</string>
+             <string>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</string>
             </property>
             <property name="wordWrap">
              <bool>true</bool>
