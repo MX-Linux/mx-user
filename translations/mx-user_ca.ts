@@ -35,7 +35,6 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="157"/>
-        <location filename="../mainwindow.ui" line="1201"/>
         <source>Username of new user</source>
         <translation>Nom del nou usuari </translation>
     </message>
@@ -94,9 +93,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
-        <location filename="../mainwindow.ui" line="1311"/>
         <location filename="../mainwindow.ui" line="1438"/>
-        <location filename="../mainwindow.ui" line="1463"/>
         <source>Select user to delete</source>
         <translation>Trieu l&apos;usuari a eliminar </translation>
     </message>
@@ -363,6 +360,11 @@
         <translation>Afegeix Grup</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1201"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1204"/>
         <source>Group name:</source>
         <translation>Nom del grup: </translation>
@@ -388,6 +390,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1311"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select group to delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1320"/>
         <source>Group to delete:</source>
         <translation>Grup a eliminar:</translation>
@@ -396,6 +403,11 @@
         <location filename="../mainwindow.ui" line="1351"/>
         <source>Group Membership</source>
         <translation>Pertinença a grups</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1463"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select user to change&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1470"/>
