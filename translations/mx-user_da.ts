@@ -420,10 +420,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="vanished">*Dobbelttjek venligst dine valg inden de anvendes, tildeling af forkerte gruppemedlemsskaber kan ødelægge systemet. Brug Reparer-fanebladet til at gendanne de originale medlemsskaber hvis du lavede en fejl.</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="1550"/>
         <source>Apply any changes</source>
         <translation>Anvend ændringer</translation>

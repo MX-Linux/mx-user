@@ -420,10 +420,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="vanished">*कृपया चयन लागू करने से पूर्व उन्हें सुनिश्चित कर लें, समूहों की अनुचित सदस्यता आवंटित करने से सिस्टम को हानि हो सकती है। त्रुटि होने के स्थिति में सुधर टैब उपयोग कर वास्तविक सदस्यताएँ पुनः स्थापित करना संभव है।</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="1550"/>
         <source>Apply any changes</source>
         <translation>परिवर्तन लागू करें</translation>

@@ -420,10 +420,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="vanished">* この適用を行う前に再度確認して下さい。誤ったグループを割り当てるとシステムが壊れるかもしれません。もし誤った操作を行った場合は、復旧タブから元の設定へ復旧させてください。</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="1550"/>
         <source>Apply any changes</source>
         <translation>全ての変更を適用</translation>
