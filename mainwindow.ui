@@ -1198,7 +1198,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Username of new user</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="text">
              <string>Group name:</string>
@@ -1308,7 +1308,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Select user to delete</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select group to delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
@@ -1460,7 +1460,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Select user to delete</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select user to change&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
