@@ -51,7 +51,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="userTab">
       <attribute name="icon">
@@ -1198,7 +1198,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Username of new user</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter name of new group&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="text">
              <string>Group name:</string>
@@ -1308,7 +1308,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Select user to delete</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select group to delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
@@ -1460,7 +1460,7 @@
              </sizepolicy>
             </property>
             <property name="toolTip">
-             <string>Select user to delete</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select user to change&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>

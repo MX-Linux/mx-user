@@ -35,7 +35,6 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="157"/>
-        <location filename="../mainwindow.ui" line="1201"/>
         <source>Username of new user</source>
         <translation>Brugernavn til den nye bruger</translation>
     </message>
@@ -94,9 +93,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
-        <location filename="../mainwindow.ui" line="1311"/>
         <location filename="../mainwindow.ui" line="1438"/>
-        <location filename="../mainwindow.ui" line="1463"/>
         <source>Select user to delete</source>
         <translation>Vælg bruger som skal slettes</translation>
     </message>
@@ -363,6 +360,11 @@
         <translation>Tilføj gruppe</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1201"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1204"/>
         <source>Group name:</source>
         <translation>Gruppenavn:</translation>
@@ -388,6 +390,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1311"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select group to delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1320"/>
         <source>Group to delete:</source>
         <translation>Gruppe som skal slettes:</translation>
@@ -398,6 +405,11 @@
         <translation>Gruppemedlemsskab</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1463"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select user to change&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1470"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
         <translation>Gruppernes bruger tilhører (skift grupperne ved at vælge/fravælge de tilhørende bokse):</translation>
@@ -406,10 +418,6 @@
         <location filename="../mainwindow.ui" line="1490"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="vanished">*Dobbelttjek venligst dine valg inden de anvendes, tildeling af forkerte gruppemedlemsskaber kan ødelægge systemet. Brug Reparer-fanebladet til at gendanne de originale medlemsskaber hvis du lavede en fejl.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>

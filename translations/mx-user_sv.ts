@@ -35,7 +35,6 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="157"/>
-        <location filename="../mainwindow.ui" line="1201"/>
         <source>Username of new user</source>
         <translation>Ny användares användar-namn</translation>
     </message>
@@ -94,9 +93,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
-        <location filename="../mainwindow.ui" line="1311"/>
         <location filename="../mainwindow.ui" line="1438"/>
-        <location filename="../mainwindow.ui" line="1463"/>
         <source>Select user to delete</source>
         <translation>Välj vilken användare som ska tas bort</translation>
     </message>
@@ -363,6 +360,11 @@
         <translation>Lägg till Grupp</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1201"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1204"/>
         <source>Group name:</source>
         <translation>Grupp namn</translation>
@@ -388,6 +390,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1311"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select group to delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1320"/>
         <source>Group to delete:</source>
         <translation>Grupp att ta bort:</translation>
@@ -398,6 +405,11 @@
         <translation>Grupp-medlemskap</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1463"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select user to change&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="1470"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
         <translation>Grupper användaren tillhör (ändra grupperna genom att markera/avmarkera respektive rutor):</translation>
@@ -406,10 +418,6 @@
         <location filename="../mainwindow.ui" line="1490"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system.  Use Repair tab to restore the original memberships if you made a mistake.</source>
-        <translation type="vanished">*Var vänlig dubbelkolla dina val innan genomförandet, att dela ut fel grupp-medlemskap kan förstöra ditt system. Använd reparera-fliken för att återställa orginal-medlemskapen om du gjort ett misstag.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1550"/>
