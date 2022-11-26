@@ -1,4 +1,4 @@
-QT       += core gui widgets
+QT       += widgets
 CONFIG   += c++1z
 
 # The following define makes your compiler warn you if you use any
