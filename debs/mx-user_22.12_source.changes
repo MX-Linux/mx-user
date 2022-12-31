@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 31 Dec 2022 17:24:37 -0500
+Source: mx-user
+Architecture: source
+Version: 22.12
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (22.12) mx; urgency=medium
+ .
+   * List the groups to delete in a list with checkboxes instead of a dropdown menu
+   * Add checkbox option to allow user to create a user-level group (GUI > 1000)
+   * Minor resizing improvements for the interface
+   * Translation updates
+Checksums-Sha1:
+ 26eb0c3f937875de41e2af09c545d44f6aa375ce 1144 mx-user_22.12.dsc
+ 608ba8729ded4b9602c6186a3f7cd4dbf6f7fd58 194092 mx-user_22.12.tar.xz
+ 896a48bf95e61a29c232e4c6a9cfb1dd062cd588 10703 mx-user_22.12_amd64.buildinfo
+Checksums-Sha256:
+ 57beb103430c4f838c3cd49549ce95616aac3cb6681240f8e96724f0522b4610 1144 mx-user_22.12.dsc
+ f2897ac24a8fc0a3a68a23013cb84bf0fa0af9addbd1ddcc008970b7185bc832 194092 mx-user_22.12.tar.xz
+ f766376849988ce108bc9b2596f0e9316b99b2e9ba3b21ab0bc9afb58a364e63 10703 mx-user_22.12_amd64.buildinfo
+Files:
+ 0ace0756bd1b5ce91df49375eb9970c1 1144 system optional mx-user_22.12.dsc
+ df00e3005c900ba61b6068c8fb715514 194092 system optional mx-user_22.12.tar.xz
+ 70eeedca2567f9c0510b1b3313851062 10703 system optional mx-user_22.12_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmOwufwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumNCOB/40wDVmz1F/tVnUCH1c9YC1cIqmjfC0
+gSUY1C5wO6M62WOoFEshKDcmyR2vBtspRx4npf77jY0Xj6WuMvcuBjuPtkH2drNu
+Iau+ViazTcWh8zyog8/Y52+H4fTkmf0nbdKkEqpd4wt8gtbF4zWtkbxI2lG2mmKS
+Bf5Bb4ACs77LSANiElKMYE0w/vdmo0U+Y5maA9BBIr4zCnIs2yaBwWfvRyfTBr48
+5txRy6HFBbWkIAvqcxX/i5fYX5FNxQq5/GJhoX4bWopOQ+pS77Rd4dn4KKLyTrAj
+eTcrz/a5g/zhe3ORJq03YpQHiPLSge09XiXeZ0jBMlNlyU/ZNgv9gUfH
+=4et+
+-----END PGP SIGNATURE-----
