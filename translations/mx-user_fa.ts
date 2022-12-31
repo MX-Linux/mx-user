@@ -93,7 +93,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
-        <location filename="../mainwindow.ui" line="1438"/>
+        <location filename="../mainwindow.ui" line="1426"/>
         <source>Select user to delete</source>
         <translation>کاربری که میخواهید حذف شود انتخاب کنید</translation>
     </message>
@@ -165,7 +165,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="647"/>
-        <location filename="../mainwindow.ui" line="1363"/>
+        <location filename="../mainwindow.ui" line="1383"/>
         <source>Modify User Account</source>
         <translation>ویرایش اکانت کاربری</translation>
     </message>
@@ -177,7 +177,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="662"/>
-        <location filename="../mainwindow.ui" line="1447"/>
+        <location filename="../mainwindow.ui" line="1435"/>
         <source>User to change:</source>
         <translation>کاربر موردنظر:</translation>
     </message>
@@ -360,122 +360,136 @@
         <translation>اضافه کردن گروه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1201"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="1204"/>
+        <location filename="../mainwindow.ui" line="1252"/>
         <source>Group name:</source>
         <translation>نام گروه:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1220"/>
+        <location filename="../mainwindow.ui" line="1201"/>
         <source>Enter name of new group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1226"/>
+        <location filename="../mainwindow.ui" line="1207"/>
         <source>groupname</source>
         <translation>نام گروه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1258"/>
+        <location filename="../mainwindow.ui" line="1271"/>
         <source>Delete Group</source>
         <translation>حذف گروه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1298"/>
-        <source>Select group to delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="1311"/>
+        <location filename="../mainwindow.ui" line="1340"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select group to delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1320"/>
         <source>Group to delete:</source>
-        <translation>این گروه حذف می شود:</translation>
+        <translation type="vanished">این گروه حذف می شود:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1351"/>
+        <location filename="../mainwindow.ui" line="1371"/>
         <source>Group Membership</source>
         <translation>عضویت های گروه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1463"/>
+        <location filename="../mainwindow.ui" line="1497"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select user to change&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1470"/>
+        <location filename="../mainwindow.ui" line="1445"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
         <translation>گروه هایی که این کاربر در آن عضویت دارد( برای تغییر گروه ها گزینه های مناسب را انتخاب کنید):</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1490"/>
+        <location filename="../mainwindow.ui" line="1468"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1550"/>
+        <location filename="../mainwindow.ui" line="1641"/>
         <source>Apply any changes</source>
         <translation>اعمال تغییرت</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1553"/>
+        <location filename="../mainwindow.ui" line="1644"/>
         <source>Apply</source>
         <translation>اعمال</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1560"/>
+        <location filename="../mainwindow.ui" line="1651"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1567"/>
+        <location filename="../mainwindow.ui" line="1573"/>
         <source>Cancel any changes then quit</source>
         <translation>همه تغییرات را نادیده بگیر و خارج شو</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1570"/>
+        <location filename="../mainwindow.ui" line="1217"/>
+        <source>Create a group with GID &gt; 1000</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1220"/>
+        <source>Create a user-level group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1249"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter name of new group&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1349"/>
+        <source>Select group to delete:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1356"/>
+        <source>*Please doublecheck your selections before applying, removing a wrong group can break your system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1576"/>
         <source>Close</source>
         <translation>بستن</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1577"/>
+        <location filename="../mainwindow.ui" line="1583"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1618"/>
+        <location filename="../mainwindow.ui" line="1624"/>
         <source>Display help </source>
         <translation>نمایش راهنما</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1621"/>
+        <location filename="../mainwindow.ui" line="1627"/>
         <source>Help</source>
         <translation>راهنما </translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1628"/>
+        <location filename="../mainwindow.ui" line="1634"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1635"/>
+        <location filename="../mainwindow.ui" line="1658"/>
         <source>About this application</source>
         <translation>درباره این نرم افزار</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1638"/>
+        <location filename="../mainwindow.ui" line="1661"/>
         <source>About...</source>
         <translation>درباره...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1645"/>
+        <location filename="../mainwindow.ui" line="1668"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
@@ -483,156 +497,154 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="111"/>
-        <location filename="../mainwindow.cpp" line="155"/>
-        <location filename="../mainwindow.cpp" line="163"/>
-        <location filename="../mainwindow.cpp" line="176"/>
-        <location filename="../mainwindow.cpp" line="187"/>
-        <location filename="../mainwindow.cpp" line="196"/>
-        <location filename="../mainwindow.cpp" line="205"/>
-        <location filename="../mainwindow.cpp" line="635"/>
-        <location filename="../mainwindow.cpp" line="659"/>
-        <location filename="../mainwindow.cpp" line="687"/>
-        <location filename="../mainwindow.cpp" line="695"/>
-        <location filename="../mainwindow.cpp" line="826"/>
-        <location filename="../mainwindow.cpp" line="930"/>
-        <location filename="../mainwindow.cpp" line="936"/>
-        <location filename="../mainwindow.cpp" line="941"/>
-        <location filename="../mainwindow.cpp" line="946"/>
-        <location filename="../mainwindow.cpp" line="951"/>
+        <location filename="../mainwindow.cpp" line="110"/>
+        <location filename="../mainwindow.cpp" line="154"/>
+        <location filename="../mainwindow.cpp" line="162"/>
+        <location filename="../mainwindow.cpp" line="180"/>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="715"/>
+        <location filename="../mainwindow.cpp" line="869"/>
+        <location filename="../mainwindow.cpp" line="970"/>
+        <location filename="../mainwindow.cpp" line="976"/>
+        <location filename="../mainwindow.cpp" line="981"/>
+        <location filename="../mainwindow.cpp" line="984"/>
+        <location filename="../mainwindow.cpp" line="986"/>
         <source>none</source>
         <translation>هیچکدام</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="622"/>
-        <location filename="../mainwindow.cpp" line="833"/>
-        <location filename="../mainwindow.cpp" line="841"/>
+        <location filename="../mainwindow.cpp" line="140"/>
+        <location filename="../mainwindow.cpp" line="651"/>
+        <location filename="../mainwindow.cpp" line="875"/>
+        <location filename="../mainwindow.cpp" line="883"/>
         <source>browse...</source>
         <translation>مرورگر...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="213"/>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>تنظیمات کاربری بازسازی خواهد شد.اکنون لطفا تمامی برنامه های درحال اجرا را ببندید. بعد از اتمام عملیات سیستم را ری استارت نمایید. آیا درباره بازسازی تنظیمات مطمئن هستید؟ </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="233"/>
+        <location filename="../mainwindow.cpp" line="228"/>
         <source>User group membership was restored.</source>
         <translation>تنظیمات مربوط  به عضویت گروه ها بازنشانی شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="239"/>
+        <location filename="../mainwindow.cpp" line="234"/>
         <source>Mozilla settings were reset.</source>
         <translation>تنظیمات موزیلا بازنشانی شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
-        <location filename="../mainwindow.cpp" line="257"/>
+        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Autologin options</source>
         <translation>تنظیمات ورود خودکار</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="244"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
         <translation>ورود خودکار برای کاربر &apos;1%&apos; غیرفعال شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="258"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation>ورود خودکار برای کاربر &apos;1%&apos; فعال شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="269"/>
+        <location filename="../mainwindow.cpp" line="267"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation>شما باید برای کپی یک مقصد تعیین کنید. شما نمی توانید مقصد را دسکتاپی که وارد آن شده اید انتخاب کنید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="273"/>
+        <location filename="../mainwindow.cpp" line="274"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>قبل از کپی کردن؛ تمامی برنامه های درحال اجرا را ببندید. از وجود فضای کافی در مقصد اطمینان حاصل نمایید. کپی فایل بین دو دسکتاپ ممکن است موجب بازنویسی یا حذف فایل های موجود در دسکتاپ مقصد شود. آیا برای ادامه عملیات مطمئن هستید؟</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="298"/>
         <source>Synchronizing desktop...</source>
         <translation>همگام سازی دسکتاپ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="297"/>
+        <location filename="../mainwindow.cpp" line="300"/>
         <source>Copying desktop...</source>
         <translation>درحال کپی دسکتاپ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
-        <location filename="../mainwindow.cpp" line="495"/>
+        <location filename="../mainwindow.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>رمز عبور باید حداقل 2  کاراکتر باشد. لطفا یک نام بلندتر وارد نمایید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
         <translation>خطا - این نام درحال حاضر اختصاص داده شده است. لطفا نام دیگری وارد نمایید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
-        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="343"/>
+        <location filename="../mainwindow.cpp" line="375"/>
         <source>Password entries do not match. Please try again.</source>
         <translation>گذرواژه های وارد شده منطبق نمی باشند. لطفا دوباره تلاش کنید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="345"/>
-        <location filename="../mainwindow.cpp" line="376"/>
+        <location filename="../mainwindow.cpp" line="349"/>
+        <location filename="../mainwindow.cpp" line="381"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
         <translation>گذرواژه  باید حداقل 2 کاراکترباشد. لطفا یک گذرواژه بلندتر وارد نمایید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="360"/>
+        <location filename="../mainwindow.cpp" line="364"/>
         <source>The user was added ok.</source>
         <translation>کاربر با موفقیت اضافه شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="367"/>
         <source>Failed to add the user.</source>
         <translation>اضافه کردن کاربر با خطا روبرو شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="393"/>
         <source>Password successfully changed.</source>
         <translation>گذرواژه با موفقیت تغییر یافت.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="391"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>Failed to change password.</source>
         <translation>تغییر گذرواژه با خطا روبرو شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="397"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation>این عمل غیر قابل بازگشت می باشد. آیا از حذف کاربر 1% مطمئن هستید؟</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="407"/>
+        <location filename="../mainwindow.cpp" line="413"/>
         <source>The user has been deleted.</source>
         <translation>کاربرحذف شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="415"/>
         <source>Failed to delete the user.</source>
         <translation>حذف کاربر با خطا روبرو شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="422"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>نام گروه باید حداقل 2 کاراکتر باشد. لطفا یک نام بلدتر وارد نمایید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="426"/>
+        <location filename="../mainwindow.cpp" line="433"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -641,57 +653,72 @@ Please choose another name before proceeding.</source>
 لطفا یک نام گروه مناسب انتخاب کنید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
+        <location filename="../mainwindow.cpp" line="441"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
         <translation>خطا - گروه با این نام درحال حاضر اختصاص داده شده است. لطفا نام دیگری وارد نمایید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="441"/>
+        <location filename="../mainwindow.cpp" line="449"/>
         <source>The system group was added ok.</source>
         <translation>گروه سیستم با موفقیت اضافه شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="443"/>
+        <location filename="../mainwindow.cpp" line="451"/>
         <source>Failed to add the system group.</source>
         <translation>خطا هنگام اضافه کردن گروه سیستم.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="464"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation>این عمل غیر قابل بازگشت می باشد. آیا از حذف گروه 1% مطمئن هستید؟</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="451"/>
+        <location filename="../mainwindow.cpp" line="467"/>
+        <source>This action cannot be undone. Are you sure you want to delete the following groups: %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="474"/>
+        <source>Group: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="479"/>
         <source>The group has been deleted.</source>
         <translation>گروه حذف شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="474"/>
         <source>Failed to delete the group.</source>
         <translation>حذف گروه  با خطا روبرو شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="479"/>
+        <source>The groups have been deleted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="496"/>
         <source>The changes have been applied.</source>
         <translation>تغییرات اعمال شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="498"/>
         <source>Failed to apply group changes</source>
         <translation>خطا هنگام اعمال تعییرات گروه.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="486"/>
+        <location filename="../mainwindow.cpp" line="511"/>
         <source>The selected user name is currently in use.</source>
         <translation>نام کاربری انتخاب شده هم اکنون درحال استفاده است.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="487"/>
+        <location filename="../mainwindow.cpp" line="512"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
         <translation>برای تغییر نام کاربر فعلی می بایست logout کنید و با یک نام کاربری دیگر login کنید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="499"/>
+        <location filename="../mainwindow.cpp" line="525"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -700,84 +727,84 @@ Please choose another name before proceeding.</source>
 لطفا یک نام کاربری مناسب انتخاب کنید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="508"/>
+        <location filename="../mainwindow.cpp" line="534"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>خطا - این نام در حال حاضر روی سیستم موجود است. یک نام دیگر انتخاب کنید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="516"/>
+        <location filename="../mainwindow.cpp" line="542"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
         <translation>خطا - تغییر نام کاربر امکان پذیر نیست. مطمئن شوید که کاربر وارد سیستم نشده باشد. ممکن است نیاز به راه اندازی مجدد سیستم باشد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="535"/>
+        <location filename="../mainwindow.cpp" line="564"/>
         <source>The user was renamed.</source>
         <translation>نام کاربر تغییر داده شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="547"/>
         <location filename="../mainwindow.cpp" line="576"/>
+        <location filename="../mainwindow.cpp" line="605"/>
         <source>Synchronizing desktop...ok</source>
         <translation>همگام سازی دسکتاپ ... موفق.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="549"/>
         <location filename="../mainwindow.cpp" line="578"/>
+        <location filename="../mainwindow.cpp" line="607"/>
         <source>Copying desktop...ok</source>
         <translation>عملیات کپی دسکتاپ ... موفق.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="581"/>
+        <location filename="../mainwindow.cpp" line="610"/>
         <source>Synchronizing desktop...failed</source>
         <translation>همگام سازی دسکتاپ ... با خطا روبرو شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="583"/>
+        <location filename="../mainwindow.cpp" line="612"/>
         <source>Copying desktop...failed</source>
         <translation>عملیات کپی دسکتاپ ... با خطا روبرو شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="599"/>
+        <location filename="../mainwindow.cpp" line="629"/>
         <source>Confirmation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="600"/>
+        <location filename="../mainwindow.cpp" line="630"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="790"/>
+        <location filename="../mainwindow.cpp" line="835"/>
         <source>About %1</source>
         <translation>درباره 1%</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="791"/>
+        <location filename="../mainwindow.cpp" line="836"/>
         <source>Version: </source>
         <translation>نسخه:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="792"/>
+        <location filename="../mainwindow.cpp" line="837"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>تنظیمات کاربری آسان MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="794"/>
+        <location filename="../mainwindow.cpp" line="839"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="795"/>
+        <location filename="../mainwindow.cpp" line="840"/>
         <source>%1 License</source>
         <translation>مجوز 1%</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="809"/>
+        <location filename="../mainwindow.cpp" line="854"/>
         <source>%1 Help</source>
         <translation>راهنمای 1%</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="834"/>
+        <location filename="../mainwindow.cpp" line="876"/>
         <source>Select folder to copy to</source>
         <translation>پوشه مقصد برای کپی را انتخاب کنید</translation>
     </message>
@@ -785,33 +812,33 @@ Please choose another name before proceeding.</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="50"/>
+        <location filename="../about.cpp" line="52"/>
         <source>License</source>
         <translation>لایسنس</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="51"/>
-        <location filename="../about.cpp" line="60"/>
+        <location filename="../about.cpp" line="53"/>
+        <location filename="../about.cpp" line="62"/>
         <source>Changelog</source>
         <translation>لیست موارد بهبود یافته</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="52"/>
+        <location filename="../about.cpp" line="54"/>
         <source>Cancel</source>
         <translation>لغو</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="70"/>
+        <location filename="../about.cpp" line="74"/>
         <source>&amp;Close</source>
         <translation>و بستن</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="54"/>
+        <location filename="../main.cpp" line="58"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="55"/>
+        <location filename="../main.cpp" line="59"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
         <translation type="unfinished"></translation>
     </message>

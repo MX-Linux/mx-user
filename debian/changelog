@@ -1,3 +1,12 @@
+mx-user (22.12) mx; urgency=medium
+
+  * List the groups to delete in a list with checkboxes instead of a dropdown menu
+  * Add checkbox option to allow user to create a user-level group (GUI > 1000)
+  * Minor resizing improvements for the interface
+  * Translation updates
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 31 Dec 2022 17:24:37 -0500
+
 mx-user (22.10) mx; urgency=medium
 
   * translations
