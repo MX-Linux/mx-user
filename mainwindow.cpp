@@ -33,7 +33,7 @@ using namespace std::chrono_literals;
 
 enum Tab { Administration, Options, Copy, AddRemoveGroup, GroupMembership, MAX };
 
-MainWindow::MainWindow(QWidget* parent)
+MainWindow::MainWindow(QWidget *parent)
     : QDialog(parent)
 {
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
@@ -59,7 +59,7 @@ MainWindow::MainWindow(QWidget* parent)
 
 MainWindow::~MainWindow() { settings.setValue(QStringLiteral("geometry"), saveGeometry()); }
 
-bool MainWindow::replaceStringInFile(const QString& oldtext, const QString& newtext, const QString& filepath)
+bool MainWindow::replaceStringInFile(const QString &oldtext, const QString &newtext, const QString &filepath)
 {
 
     QString cmd = QStringLiteral("sed -i 's/%1/%2/g' %3").arg(oldtext, newtext, filepath);
@@ -93,7 +93,7 @@ void MainWindow::refresh()
         refreshDelete();
         refreshChangePass();
         refreshRename();
-        users = shell->getCmdOut(QStringLiteral("lslogins --noheadings -u -o user |  grep -vw root"))
+        users = shell->getCmdOut(QStringLiteral("lslogins --noheadings -u -o user |  grep -vw root"), true)
                     .split(QStringLiteral("\n"));
         users.sort();
         comboRenameUser->addItems(users);
@@ -219,7 +219,7 @@ void MainWindow::applyOptions()
             "sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
         QStringList extra_groups_list = shell->getCmdOut(cmd).split(QStringLiteral(","));
         QStringList new_group_list;
-        for (const QString& group : extra_groups_list)
+        for (const QString &group : extra_groups_list)
             if (!listGroups->findItems(group, Qt::MatchExactly).isEmpty())
                 new_group_list << group;
         cmd = "usermod -G '' " + user + "; usermod -G " + new_group_list.join(QStringLiteral(",")) + " "
@@ -486,12 +486,9 @@ void MainWindow::applyGroup()
 void MainWindow::applyMembership()
 {
     QString cmd;
-    // Add all WidgetItems from listGroups
-    auto items = listGroups->findItems(QStringLiteral("*"), Qt::MatchWrap | Qt::MatchWildcard);
-    while (!items.isEmpty()) {
-        auto* item = items.takeFirst();
-        if (item->checkState() == 2)
-            cmd += item->text() + ",";
+    for (auto i = 0; i < listGroups->count(); ++i) {
+        if (listGroups->item(i)->checkState() == Qt::Checked)
+            cmd += listGroups->item(i)->text() + ",";
     }
     cmd.chop(1);
     cmd = QStringLiteral("usermod -G %1 %2").arg(cmd, userComboMembership->currentText());
@@ -618,7 +615,7 @@ void MainWindow::syncDone(bool success)
     setCursor(QCursor(Qt::ArrowCursor));
 }
 
-void MainWindow::keyPressEvent(QKeyEvent* event)
+void MainWindow::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_Escape)
         closeApp();
@@ -639,7 +636,7 @@ void MainWindow::closeApp()
     close();
 }
 
-void MainWindow::on_fromUserComboBox_activated(const QString& /*unused*/)
+void MainWindow::on_fromUserComboBox_activated(const QString & /*unused*/)
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
@@ -654,7 +651,7 @@ void MainWindow::on_fromUserComboBox_activated(const QString& /*unused*/)
     toUserComboBox->addItem(tr("browse..."));
 }
 
-void MainWindow::on_userComboBox_activated(const QString& /*unused*/)
+void MainWindow::on_userComboBox_activated(const QString & /*unused*/)
 {
     buttonApply->setDisabled(true);
     radioAutologinNo->setAutoExclusive(false);
@@ -682,7 +679,7 @@ void MainWindow::on_userComboBox_activated(const QString& /*unused*/)
     }
 }
 
-void MainWindow::on_comboDeleteUser_activated(const QString& /*unused*/)
+void MainWindow::on_comboDeleteUser_activated(const QString & /*unused*/)
 {
     addUserBox->setEnabled(false);
     changePasswordBox->setEnabled(false);
@@ -711,16 +708,7 @@ void MainWindow::on_groupNameEdit_textEdited()
         refresh();
 }
 
-void MainWindow::on_deleteGroupCombo_activated(const QString& /*unused*/)
-{
-    addBox->setEnabled(false);
-    renameUserBox->setEnabled(false);
-    buttonApply->setEnabled(true);
-    if (deleteGroupCombo->currentText() == tr("none"))
-        refresh();
-}
-
-void MainWindow::on_userComboMembership_activated(const QString& /*unused*/)
+void MainWindow::on_userComboMembership_activated(const QString & /*unused*/)
 {
     buildListGroups();
     buttonApply->setEnabled(true);
@@ -734,8 +722,8 @@ void MainWindow::buildListGroups()
     // read /etc/group and add all the groups in the listGroups
     QStringList groups = shell->getCmdOut(QStringLiteral("cat /etc/group | cut -f 1 -d :")).split(QStringLiteral("\n"));
     groups.sort();
-    for (const QString& group : groups) {
-        auto* item = new QListWidgetItem;
+    for (const QString &group : groups) {
+        auto *item = new QListWidgetItem;
         item->setText(group);
         item->setCheckState(Qt::Unchecked);
         listGroups->addItem(item);
@@ -866,13 +854,13 @@ void MainWindow::on_buttonHelp_clicked()
     displayDoc(url, tr("%1 Help").arg(this->windowTitle()));
 }
 
-void MainWindow::restartPanel(const QString& user)
+void MainWindow::restartPanel(const QString &user)
 {
     const QString cmd = QStringLiteral("pkill xfconfd; sudo -Eu %1 bash -c 'xfce4-panel -r'").arg(user);
     system(cmd.toUtf8());
 }
 
-void MainWindow::on_comboChangePass_activated(const QString& /*unused*/)
+void MainWindow::on_comboChangePass_activated(const QString & /*unused*/)
 {
     addUserBox->setEnabled(false);
     deleteUserBox->setEnabled(false);
@@ -882,7 +870,7 @@ void MainWindow::on_comboChangePass_activated(const QString& /*unused*/)
         refresh();
 }
 
-void MainWindow::on_toUserComboBox_activated(const QString& arg1)
+void MainWindow::on_toUserComboBox_activated(const QString &arg1)
 {
     if (arg1 == tr("browse...")) {
         QString dir = QFileDialog::getExistingDirectory(this, tr("Select folder to copy to"), QStringLiteral("/"),
@@ -937,7 +925,7 @@ void MainWindow::on_sharedRadioButton_clicked()
     syncProgressBar->setValue(0);
 }
 
-void MainWindow::on_userPassword2Edit_textChanged(const QString& arg1)
+void MainWindow::on_userPassword2Edit_textChanged(const QString &arg1)
 {
     QPalette pal = userPassword2Edit->palette();
     if (arg1 != userPasswordEdit->text())
@@ -948,7 +936,7 @@ void MainWindow::on_userPassword2Edit_textChanged(const QString& arg1)
     userPassword2Edit->setPalette(pal);
 }
 
-void MainWindow::on_lineEditChangePassConf_textChanged(const QString& arg1)
+void MainWindow::on_lineEditChangePassConf_textChanged(const QString &arg1)
 {
     QPalette pal = lineEditChangePassConf->palette();
     if (arg1 != lineEditChangePass->text())
@@ -973,7 +961,7 @@ void MainWindow::on_lineEditChangePass_textChanged()
     lineEditChangePassConf->setPalette(QApplication::palette());
 }
 
-void MainWindow::on_comboRenameUser_activated(const QString& /*unused*/)
+void MainWindow::on_comboRenameUser_activated(const QString & /*unused*/)
 {
     addUserBox->setEnabled(false);
     changePasswordBox->setEnabled(false);
