@@ -170,13 +170,8 @@ void MainWindow::refreshGroups()
 {
     groupNameEdit->clear();
     addBox->setEnabled(true);
-    deleteGroupCombo->clear();
-    deleteGroupCombo->addItem(tr("none"));
     deleteBox->setEnabled(true);
-    QStringList groups = shell->getCmdOut(QStringLiteral("cat /etc/group | cut -f 1 -d :")).split(QStringLiteral("\n"));
-    groups.removeAll(QStringLiteral("root"));
-    groups.sort();
-    deleteGroupCombo->addItems(groups);
+    buildListGroupsToRemove();
 }
 
 void MainWindow::refreshMembership()
@@ -441,28 +436,48 @@ void MainWindow::applyGroup()
             return;
         }
         // check that group name is not already used
-        QString cmd = QStringLiteral("grep -w '^%1' /etc/group >/dev/null").arg(groupNameEdit->text());
-        if (system(cmd.toUtf8()) == 0) {
+        if (QProcess::execute("grep", {"-w", "^" + groupNameEdit->text(), "/etc/group"}) == 0) {
             QMessageBox::critical(this, windowTitle(),
                                   tr("Sorry, that group name already exists. Please enter a different name."));
             return;
         }
         // run addgroup command
-        cmd = QStringLiteral("addgroup --system %1").arg(groupNameEdit->text());
-        if (system(cmd.toUtf8()) == 0)
+        QString group_user_level = checkGroupUserLevel->checkState() == Qt::Checked
+                                       ? "--quiet" // --quiet because it fails if ""
+                                       : "--system";
+        if (QProcess::execute("addgroup", {groupNameEdit->text(), group_user_level}) == 0)
             QMessageBox::information(this, windowTitle(), tr("The system group was added ok."));
         else
             QMessageBox::critical(this, windowTitle(), tr("Failed to add the system group."));
     } else { // deleting group if addBox disabled
-        QString cmd = QString(tr("This action cannot be undone. Are you sure you want to delete group %1?"))
-                          .arg(deleteGroupCombo->currentText());
-        int ans = QMessageBox::warning(this, windowTitle(), cmd, QMessageBox::Yes, QMessageBox::No);
+        QStringList groups;
+        for (auto i = 0; i < listGroupsToRemove->count(); ++i) {
+            if (listGroupsToRemove->item(i)->checkState() == Qt::Checked)
+                groups << listGroupsToRemove->item(i)->text();
+        }
+        if (groups.isEmpty()) {
+            refresh();
+            return;
+        }
+        QString msg
+            = groups.count() == 1
+                  ? QString(tr("This action cannot be undone. Are you sure you want to delete group %1?"))
+                        .arg(groups.at(0))
+                  : QString(
+                        tr("This action cannot be undone. Are you sure you want to delete the following groups: %1?"))
+                        .arg(groups.join(" "));
+        int ans = QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No);
         if (ans == QMessageBox::Yes) {
-            cmd = QStringLiteral("delgroup %1").arg(deleteGroupCombo->currentText());
-            if (system(cmd.toUtf8()) == 0)
-                QMessageBox::information(this, windowTitle(), tr("The group has been deleted."));
-            else
-                QMessageBox::critical(this, windowTitle(), tr("Failed to delete the group."));
+            for (const auto &group : qAsConst(groups)) {
+                if (QProcess::execute("delgroup", {group}) != 0) {
+                    QMessageBox::critical(this, windowTitle(),
+                                          tr("Failed to delete the group.") + "\n" + tr("Group: %1").arg(group));
+                    refresh();
+                    return;
+                }
+            }
+            msg = groups.count() == 1 ? tr("The group has been deleted.") : tr("The groups have been deleted.");
+            QMessageBox::information(this, windowTitle(), msg);
         }
     }
     refresh();
@@ -735,6 +750,41 @@ void MainWindow::buildListGroups()
         while (!list.isEmpty())
             list.takeFirst()->setCheckState(Qt::Checked);
     }
+}
+
+void MainWindow::buildListGroupsToRemove()
+{
+    listGroupsToRemove->clear();
+    QFile file("/etc/group");
+    if (!file.open(QIODevice::ReadOnly)) {
+        qDebug() << "Can't open /etc/group";
+        exit(EXIT_FAILURE);
+    }
+    QStringList groups = QString(file.readAll()).split("\n");
+    groups.sort();
+    for (const auto &group : qAsConst(groups)) {
+        if (!group.isEmpty()) {
+            auto *item = new QListWidgetItem;
+            item->setText(group.section(":", 0, 0));
+            if (item->text() == "root")
+                continue;
+            item->setCheckState(Qt::Unchecked);
+            listGroupsToRemove->addItem(item);
+        }
+    }
+    disconnect(listGroupsToRemove, &QListWidget::itemChanged, nullptr, nullptr);
+    connect(listGroupsToRemove, &QListWidget::itemChanged, [this](QListWidgetItem *item) {
+        buttonApply->setEnabled(true);
+        addBox->setDisabled(true);
+        if (item->checkState() == Qt::Checked)
+            return;
+        QStringList items;
+        for (auto i = 0; i < listGroupsToRemove->count(); ++i) {
+            if (listGroupsToRemove->item(i)->checkState() == Qt::Checked)
+                return;
+        }
+        refresh();
+    });
 }
 
 // apply but do not close
