@@ -50,6 +50,7 @@ public:
     void applyOptions();
     void applyRename();
     void buildListGroups();
+    void buildListGroupsToRemove();
     void refreshAdd();
     void refreshChangePass();
     void refreshCopy();
@@ -79,7 +80,6 @@ private slots:
     void on_comboDeleteUser_activated(const QString&);
     void on_comboRenameUser_activated(const QString&);
     void on_copyRadioButton_clicked();
-    void on_deleteGroupCombo_activated(const QString&);
     void on_docsRadioButton_clicked();
     void on_entireRadioButton_clicked();
     void on_fromUserComboBox_activated(const QString&);
