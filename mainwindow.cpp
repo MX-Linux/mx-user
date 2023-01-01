@@ -59,13 +59,6 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow() { settings.setValue(QStringLiteral("geometry"), saveGeometry()); }
 
-bool MainWindow::replaceStringInFile(const QString &oldtext, const QString &newtext, const QString &filepath)
-{
-
-    QString cmd = QStringLiteral("sed -i 's/%1/%2/g' %3").arg(oldtext, newtext, filepath);
-    return system(cmd.toUtf8()) == 0;
-}
-
 void MainWindow::refresh()
 {
     setCursor(QCursor(Qt::ArrowCursor));
@@ -852,12 +845,6 @@ void MainWindow::on_buttonHelp_clicked()
     if (lang.startsWith(QLatin1String("fr")))
         url = QStringLiteral("https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs");
     displayDoc(url, tr("%1 Help").arg(this->windowTitle()));
-}
-
-void MainWindow::restartPanel(const QString &user)
-{
-    const QString cmd = QStringLiteral("pkill xfconfd; sudo -Eu %1 bash -c 'xfce4-panel -r'").arg(user);
-    system(cmd.toUtf8());
 }
 
 void MainWindow::on_comboChangePass_activated(const QString & /*unused*/)
