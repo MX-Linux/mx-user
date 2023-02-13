@@ -336,16 +336,15 @@ void MainWindow::applyAdd()
         return;
     }
     QString dshell = QStringLiteral("grep ^DSHELL /etc/adduser.conf |cut -d= -f2");
-    if (!QFile(dshell).exists()){
+    if (!QFile::exists(dshell))
         dshell = "/usr/bin/bash";
-    }
-    QString commentoption = QStringLiteral("LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --gecos | head -1)");
-    if (commentoption.isEmpty()){
-        commentoption = "--comment";
-    }
 
-    QProcess::execute("adduser",
-                      {"--disabled-login", "--force-badname","--shell",dshell ,"--gecos", userNameEdit->text(), userNameEdit->text()});
+    QString commentoption = QStringLiteral("LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --gecos | head -1)");
+    if (commentoption.isEmpty())
+        commentoption = "--comment";
+
+    QProcess::execute("adduser", {"--disabled-login", "--force-badname", "--shell", dshell, "--gecos",
+                                  userNameEdit->text(), userNameEdit->text()});
     QProcess proc;
     proc.start(QStringLiteral("passwd"), QStringList {userNameEdit->text()}, QIODevice::ReadWrite);
     proc.waitForStarted();
