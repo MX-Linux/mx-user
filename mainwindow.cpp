@@ -335,8 +335,17 @@ void MainWindow::applyAdd()
             tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
         return;
     }
+    QString dshell = QStringLiteral("grep ^DSHELL /etc/adduser.conf |cut -d= -f2");
+    if (!QFile(dshell).exists()){
+        dshell = "/usr/bin/bash";
+    }
+    QString commentoption = QStringLiteral("LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --gecos | head -1)");
+    if (commentoption.isEmpty()){
+        commentoption = "--comment";
+    }
+
     QProcess::execute("adduser",
-                      {"--disabled-login", "--force-badname", "--gecos", userNameEdit->text(), userNameEdit->text()});
+                      {"--disabled-login", "--force-badname","--shell",dshell ,"--gecos", userNameEdit->text(), userNameEdit->text()});
     QProcess proc;
     proc.start(QStringLiteral("passwd"), QStringList {userNameEdit->text()}, QIODevice::ReadWrite);
     proc.waitForStarted();
@@ -389,7 +398,7 @@ void MainWindow::applyDelete()
     if (QMessageBox::Yes == QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No)) {
         if (deleteHomeCheckBox->isChecked()) {
             QProcess::execute("killall", {"-u", comboDeleteUser->currentText()});
-            cmd = QStringLiteral("deluser --force --remove-home %1").arg(comboDeleteUser->currentText());
+            cmd = QStringLiteral("deluser --remove-home %1").arg(comboDeleteUser->currentText());
         } else {
             cmd = QStringLiteral("deluser %1").arg(comboDeleteUser->currentText());
         }
