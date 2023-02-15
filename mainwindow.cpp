@@ -335,16 +335,26 @@ void MainWindow::applyAdd()
             tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
         return;
     }
-    QString dshell = QStringLiteral("grep ^DSHELL /etc/adduser.conf |cut -d= -f2");
+
+    QString cmd;
+    cmd = QStringLiteral("sed -n '/^DSHELL=/{ s///; s:^/bin/:/usr/bin/:; h}; ${x; p}' /etc/adduser.conf");
+    QString dshell = shell->getCmdOut(cmd, true).trimmed();
     if (!QFile::exists(dshell))
         dshell = "/usr/bin/bash";
 
-    QString commentoption = QStringLiteral("LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --gecos | head -1)");
-    if (commentoption.isEmpty())
-        commentoption = "--comment";
+    cmd = QStringLiteral("LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --comment | head -1");
+    QString commentOption = shell->getCmdOut(cmd, true).trimmed();
+    if (commentOption != QStringLiteral("--comment"))
+        commentOption = "--gecos";
 
-    QProcess::execute("adduser", {"--disabled-login", "--force-badname", "--shell", dshell, "--gecos",
-                                  userNameEdit->text(), userNameEdit->text()});
+    cmd = QStringLiteral("LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --allow-bad-names | head -1");
+    QString allowBadNames = shell->getCmdOut(cmd, true).trimmed();
+    if (allowBadNames != QStringLiteral("--allow-bad-names"))
+        allowBadNames = QStringLiteral("--force-badname");
+
+    QProcess::execute("adduser", {"--disabled-login", allowBadNames, "--shell", dshell,
+                                  commentOption, userNameEdit->text(), userNameEdit->text()});
+
     QProcess proc;
     proc.start(QStringLiteral("passwd"), QStringList {userNameEdit->text()}, QIODevice::ReadWrite);
     proc.waitForStarted();

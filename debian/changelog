@@ -1,3 +1,11 @@
+mx-user (23.2) mx; urgency=medium
+
+  * Fix default shell detection
+  * Fix handling of future deprecated adduser options
+  * Add version handling to Debian rules
+
+ -- fehlix <fehlix@mxlinux.org>  Wed, 15 Feb 2023 11:47:41 -0500
+
 mx-user (22.12) mx; urgency=medium
 
   * List the groups to delete in a list with checkboxes instead of a dropdown menu
