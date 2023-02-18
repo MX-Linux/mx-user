@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 15 Feb 2023 11:47:41 -0500
+Source: mx-user
+Architecture: source
+Version: 23.2
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Changes:
+ mx-user (23.2) mx; urgency=medium
+ .
+   * Fix default shell detection
+   * Fix handling of future deprecated adduser options
+   * Add version handling to Debian rules
+Checksums-Sha1:
+ 8f2c1d08d87e30dee7a4e868316ab70e3e747104 1140 mx-user_23.2.dsc
+ 84175a3104fa42fc8466afb1f81ea5638488046f 194572 mx-user_23.2.tar.xz
+ df326afec32336b917c5bfa1c641f8b8c40f778f 10695 mx-user_23.2_amd64.buildinfo
+Checksums-Sha256:
+ 1596babef4773b353e8555196db8a9a82c7d76f9da075320acbf47dcdc455a1f 1140 mx-user_23.2.dsc
+ 280fd0ab833d99585d921af66fcb980177f8619445f088050f0cc048372f3b6f 194572 mx-user_23.2.tar.xz
+ a0c12e759d0ac2a2ed45326d63f139d275d7e4c6868f9aafe07412fbd7b3824a 10695 mx-user_23.2_amd64.buildinfo
+Files:
+ d80dbd39ce4d5bffcf02927bf955eab8 1140 system optional mx-user_23.2.dsc
+ 634b62593b1ad4e5e987d2cc60784d51 194572 system optional mx-user_23.2.tar.xz
+ 762182aed61c97c038cf5cfc1eca773e 10695 system optional mx-user_23.2_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmPxGu0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumAnSB/oDpc7kfs8tsDnaQKWxkIfjCBL3TMV7
+iv1Na2L3rR44wzaUzxb6tkrXA/yCJBXDU/XY0BpdG6lCtd1wGi81xlVFEXPh00qf
+KQi8fyIAaFYVwt/gjdUVLuQ9UHMSHa73f6DWL6+AOglw4lWx32Wg9fCux79//8SP
+c4KyzhCvKqgF7mWFAZR5Baq4CWTimvMR4GW1ipKzDqV6UHDjjxeC6HKugI4o/w5I
+svxpHdnHmU0HnjKK4vB+6zqmwhyiyc+d+vjVojAFJtJAQGsfKVKiwBWX1hiv97Cc
+aGocMFnLRLnU7hXVxEsGIbXnb0h0dDJbVHWOeAgiG9NKHAKowshvmret
+=p6/f
+-----END PGP SIGNATURE-----
