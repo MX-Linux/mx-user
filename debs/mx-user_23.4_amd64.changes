@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 13 Apr 2023 13:06:44 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 23.4
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.4) mx; urgency=medium
+ .
+   * Add a checkbox to add/remove new user from sudo group
+   * Update translations
+Checksums-Sha1:
+ 49c3d9bb74917737be52e3ba6bc6c38c06866fe7 1140 mx-user_23.4.dsc
+ c0c46b48956935e1e54f8f483177c7e90e36c187 194164 mx-user_23.4.tar.xz
+ 7a275c99f7fe22a97848ad7a546ee5dcfac0a930 10775 mx-user_23.4_amd64.buildinfo
+ d14b13ed9805e78add692496bd9423ce985c4d0e 235612 mx-user_23.4_amd64.deb
+Checksums-Sha256:
+ 18db5021ea576e632fe35e298410dbf8ee2addc64638ec55ee817b839d5cf3ef 1140 mx-user_23.4.dsc
+ 6d020fee62485ea19f0289ab4ec5847195d61bcefe3cb443e463b86bf4cc08b4 194164 mx-user_23.4.tar.xz
+ f9d415a07f7a42622b0c5b722ae2150dab0fda38c6af34f69540c472f1a6599e 10775 mx-user_23.4_amd64.buildinfo
+ 6a53c588f698f0ca2f02ebe9364f197303f829c8a587ac613a66ec403650b38a 235612 mx-user_23.4_amd64.deb
+Files:
+ a73949aab349568cf9c3bf8df485cb4a 1140 system optional mx-user_23.4.dsc
+ d6d663fe0025b88827fcc4dc6a19741d 194164 system optional mx-user_23.4.tar.xz
+ af5332d6ab8910da13dd0013fb676c70 10775 system optional mx-user_23.4_amd64.buildinfo
+ 43dfb494348bd497a5c75aeb5f23cafa 235612 system optional mx-user_23.4_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQ4OJITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumB/1B/41onJOSgq0U7xxVX7ixWv3DcHZwAjm
+y3RVu01ENEHRpPGxfVuXueP+42TBkC99KnTaOxmYH7fW0nKW7tePW7f/FaT8m6ak
+AI1P4pALqryflLjnlhH3YGxoxcAUYV8r79IGXPHWo1GjlS87sZMVmSR6IrHYqFXz
+A2ibWu7Vk8xsTuDhaJWWt2Mb/aA4p5FAEe9UkJarw54SA6WbrFv697NUwLZf4I5t
+NK8aQNlWngRFEUadFDh8HJFgc5tCFiR9rkQDqOgaYPYKf7XJoQgGQPf0pDbG17Ht
+Iks0X6MGG0BcPl7tFXiPf6Our8RkPWIkf4UckIOho9KsAAcoMyX3pCdN
+=oqzC
+-----END PGP SIGNATURE-----

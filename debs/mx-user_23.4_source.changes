@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 13 Apr 2023 13:06:44 -0400
+Source: mx-user
+Architecture: source
+Version: 23.4
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (23.4) mx; urgency=medium
+ .
+   * Add a checkbox to add/remove new user from sudo group
+   * Update translations
+Checksums-Sha1:
+ 49c3d9bb74917737be52e3ba6bc6c38c06866fe7 1140 mx-user_23.4.dsc
+ c0c46b48956935e1e54f8f483177c7e90e36c187 194164 mx-user_23.4.tar.xz
+ 7a275c99f7fe22a97848ad7a546ee5dcfac0a930 10775 mx-user_23.4_amd64.buildinfo
+Checksums-Sha256:
+ 18db5021ea576e632fe35e298410dbf8ee2addc64638ec55ee817b839d5cf3ef 1140 mx-user_23.4.dsc
+ 6d020fee62485ea19f0289ab4ec5847195d61bcefe3cb443e463b86bf4cc08b4 194164 mx-user_23.4.tar.xz
+ f9d415a07f7a42622b0c5b722ae2150dab0fda38c6af34f69540c472f1a6599e 10775 mx-user_23.4_amd64.buildinfo
+Files:
+ a73949aab349568cf9c3bf8df485cb4a 1140 system optional mx-user_23.4.dsc
+ d6d663fe0025b88827fcc4dc6a19741d 194164 system optional mx-user_23.4.tar.xz
+ af5332d6ab8910da13dd0013fb676c70 10775 system optional mx-user_23.4_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQ4OJITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJ14CACrA02YvtiwFvLAZGIBqvq1ZkU1wjaq
+t0Rtl0ix8B7O3LoqXERLs6EU6AJaBv88Ds8KvBxAWD3KFa1ca37iWbVvaHZh/Wol
+SHO0vW39MeoBbxFFpOr6hoR9NvArCSbJ/V8bkPFmBR+uqDcukOVLmW6ShgE4axkm
+loHZXEptaLyfekI0kMwtGAbwNQd1/xD1856Fh8Ian7xXgCfOg06SS7PPJ5Vbac2W
+fMRFsF1C0VdeFJb3rVMv9+Tiye7hwkxlU/EXlBGPqRxuCYdvXFridR/LcURWe6IG
++jqlKOdB6VhkheHbaizeJqUtIGe8zzF8U/YmWZKHq+EgXJOTADGdILLF
+=7pKV
+-----END PGP SIGNATURE-----

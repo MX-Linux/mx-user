@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Thu, 13 Apr 2023 13:06:44 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 23.4
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.4) mx; urgency=medium
+ .
+   * Add a checkbox to add/remove new user from sudo group
+   * Update translations
+Checksums-Sha1:
+ 4c6a3af044b9bf93b0ac4b0ac61d67a13a04d0d5 9945 mx-user_23.4_i386.buildinfo
+ 52b1db72a06b7ce1e89d2b1f604fab67c89e89cc 239288 mx-user_23.4_i386.deb
+Checksums-Sha256:
+ 4ef9e3fea148d13fa9d597ec34d8e2a121ec32bddea884f93466b358b166bbdf 9945 mx-user_23.4_i386.buildinfo
+ abde65110a0a142279079c8a9122ecb652d9dbef53a83e35658798449d985e69 239288 mx-user_23.4_i386.deb
+Files:
+ 096a69e4cc478964bf5914131be6d05e 9945 system optional mx-user_23.4_i386.buildinfo
+ 15b903278e86d100cbeefb46746d10e7 239288 system optional mx-user_23.4_i386.deb
