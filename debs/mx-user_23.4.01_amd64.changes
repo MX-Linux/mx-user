@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 13 Apr 2023 23:58:35 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 23.4.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.4.01) mx; urgency=medium
+ .
+   * Update icon
+   * Update mx-user.desktop translation
+Checksums-Sha1:
+ ce45438a9e5ab9a066ab00bcc5e95ca7211e3bb1 1152 mx-user_23.4.01.dsc
+ 8a02648767ae03d48ed7f03ade0f33ead607fed6 171804 mx-user_23.4.01.tar.xz
+ d7964be2d9a8a8df1a63c064698b92145ffee620 10719 mx-user_23.4.01_amd64.buildinfo
+ d55575c65f9d50b1e94edad2f5a4859e570b9013 206448 mx-user_23.4.01_amd64.deb
+Checksums-Sha256:
+ 50c999856af3fbb3de40ee0fcb172a920c5ecaca0a485f6040d483e9d9cff34a 1152 mx-user_23.4.01.dsc
+ 9ee2e29b2a6735a781c8c5e434455b5b98553e7881290be07eb705e979181d35 171804 mx-user_23.4.01.tar.xz
+ c0b690319fcb073437ad7628ee0b29198c1a6019cbb0cfc0dac0dbfd5911386d 10719 mx-user_23.4.01_amd64.buildinfo
+ 445643a5b383b2cac285a8c7041e23fa858950da976d6526c8117587225fb0ef 206448 mx-user_23.4.01_amd64.deb
+Files:
+ 54b902ab15d8c18ef8d8d832bc06431e 1152 system optional mx-user_23.4.01.dsc
+ 38c26fb56e9df9354f289a0cac877e2e 171804 system optional mx-user_23.4.01.tar.xz
+ 96956f831f2a032fbe67c6b4be77feb4 10719 system optional mx-user_23.4.01_amd64.buildinfo
+ 4ea22787b5242d8fd8029aac071402d7 206448 system optional mx-user_23.4.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQ40YcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumI20B/kB8vns7kRE82tcRtuXxJgWT0RzJW5u
+gqkmi80QC3mJhBNeQ1vPvAMgENxUmHwad0zwl+S2NZ66eNm8++LqfnU6Kyg6LPvC
+2Ktez2q2+KoeYfzmRI7WE8o25Fi9TgTJ7+5o0ocu27auI+zmLVaNK6R3vxCtYsxY
+FzJ3oI72gzXD/k0TfxYw2HOtQ5V0xjBhPiiSKNomYH1Vl1LQlg9wBl5/t67dxMHW
+yJZuaGeQ6EVzjFjdCLXhoDx3tTVirMzj5dEJhbbhT3W2RdgvkFCYdbUoYwdRkbRZ
+pDEBTNOU4lyl+sU53SsYZraJthxqf36frAkPeOsI4fqvPD1yPBxL1eXd
+=UKpw
+-----END PGP SIGNATURE-----

@@ -24,6 +24,16 @@
         <translation>Lägg till Användar-konto</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="132"/>
+        <source>Enter password for new user</source>
+        <translation>Skriv in lösenord för ny användare</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="141"/>
+        <source>password</source>
+        <translation>lösenord</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="173"/>
         <source>Reenter password for new user</source>
         <translation>Skriv in den nya användarens lösenord en gång till</translation>
@@ -62,24 +72,14 @@
         <translation>Lösenord för ny användare</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="261"/>
-        <source>User password:</source>
-        <translation>Användar-lösenord</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="132"/>
-        <source>Enter password for new user</source>
-        <translation>Skriv in lösenord för ny användare</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="141"/>
-        <source>password</source>
-        <translation>lösenord</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Confirm user password:</source>
         <translation>Bekräfta användar-lösenord:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>User password:</source>
+        <translation>Användar-lösenord</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="271"/>

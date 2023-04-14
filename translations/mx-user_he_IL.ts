@@ -24,6 +24,16 @@
         <translation>הוספת חשבון משתמש</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="132"/>
+        <source>Enter password for new user</source>
+        <translation>נא למלא סיסמה למשתמש החדש</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="141"/>
+        <source>password</source>
+        <translation>סיסמה</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="173"/>
         <source>Reenter password for new user</source>
         <translation>נא להקליד שוב את הסיסמה של המשתמש החדש</translation>
@@ -62,24 +72,14 @@
         <translation>סיסמה למשתמש החדש</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="261"/>
-        <source>User password:</source>
-        <translation>סיסמת המשתמש:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="132"/>
-        <source>Enter password for new user</source>
-        <translation>נא למלא סיסמה למשתמש החדש</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="141"/>
-        <source>password</source>
-        <translation>סיסמה</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Confirm user password:</source>
         <translation>אישור סיסמת המשתמש:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>User password:</source>
+        <translation>סיסמת המשתמש:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="271"/>

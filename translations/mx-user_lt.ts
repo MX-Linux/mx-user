@@ -24,6 +24,16 @@
         <translation>Pridėti naudotojo paskyrą</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="132"/>
+        <source>Enter password for new user</source>
+        <translation>Įveskite naujo naudotojo slaptažodį</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="141"/>
+        <source>password</source>
+        <translation>slaptažodis</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="173"/>
         <source>Reenter password for new user</source>
         <translation>Iš naujo įveskite naujo naudotojo slaptažodį</translation>
@@ -62,24 +72,14 @@
         <translation>Naujo naudotojo slaptažodis</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="261"/>
-        <source>User password:</source>
-        <translation>Naudotojo slaptažodis:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="132"/>
-        <source>Enter password for new user</source>
-        <translation>Įveskite naujo naudotojo slaptažodį</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="141"/>
-        <source>password</source>
-        <translation>slaptažodis</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Confirm user password:</source>
         <translation>Patvirtinkite naudotojo slaptažodį:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>User password:</source>
+        <translation>Naudotojo slaptažodis:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="271"/>

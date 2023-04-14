@@ -24,6 +24,16 @@
         <translation>Benutzerkonto hinzufügen</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="132"/>
+        <source>Enter password for new user</source>
+        <translation>Passwort für den neuen Benutzer eintragen</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="141"/>
+        <source>password</source>
+        <translation>Passwort</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="173"/>
         <source>Reenter password for new user</source>
         <translation>Passwort des neuen Benutzers noch einmal eintragen</translation>
@@ -62,24 +72,14 @@
         <translation>Passwort für den neuen Benutzer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="261"/>
-        <source>User password:</source>
-        <translation>Benutzerpasswort</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="132"/>
-        <source>Enter password for new user</source>
-        <translation>Passwort für den neuen Benutzer eintragen</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="141"/>
-        <source>password</source>
-        <translation>Passwort</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Confirm user password:</source>
         <translation>Benutzerpasswort bestätigen</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>User password:</source>
+        <translation>Benutzerpasswort</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="271"/>
