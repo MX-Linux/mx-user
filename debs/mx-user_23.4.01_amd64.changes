@@ -19,29 +19,29 @@ Changes:
    * Update icon
    * Update mx-user.desktop translation
 Checksums-Sha1:
- ce45438a9e5ab9a066ab00bcc5e95ca7211e3bb1 1152 mx-user_23.4.01.dsc
- 8a02648767ae03d48ed7f03ade0f33ead607fed6 171804 mx-user_23.4.01.tar.xz
- d7964be2d9a8a8df1a63c064698b92145ffee620 10719 mx-user_23.4.01_amd64.buildinfo
- d55575c65f9d50b1e94edad2f5a4859e570b9013 206448 mx-user_23.4.01_amd64.deb
+ 0bb64621ff7e26b053d157504ff553665d7327f3 1152 mx-user_23.4.01.dsc
+ 718c762389071bcb5fd380cb1abaafef6a496287 171884 mx-user_23.4.01.tar.xz
+ 6c258466d6125cce1cd61a4d6d1b5626e05edbd7 10799 mx-user_23.4.01_amd64.buildinfo
+ 8f65c9cccd31e742bcd6c532884396c3f0170527 206456 mx-user_23.4.01_amd64.deb
 Checksums-Sha256:
- 50c999856af3fbb3de40ee0fcb172a920c5ecaca0a485f6040d483e9d9cff34a 1152 mx-user_23.4.01.dsc
- 9ee2e29b2a6735a781c8c5e434455b5b98553e7881290be07eb705e979181d35 171804 mx-user_23.4.01.tar.xz
- c0b690319fcb073437ad7628ee0b29198c1a6019cbb0cfc0dac0dbfd5911386d 10719 mx-user_23.4.01_amd64.buildinfo
- 445643a5b383b2cac285a8c7041e23fa858950da976d6526c8117587225fb0ef 206448 mx-user_23.4.01_amd64.deb
+ 4afca9daef1951c1f3e25073c00424c4150a5ad748e92c390d26712504d56f48 1152 mx-user_23.4.01.dsc
+ 224b5b536b3f59a7b6e4162d99cac03b1e2ded41c5c00302d21c0413cb7467f0 171884 mx-user_23.4.01.tar.xz
+ 9a4a463e14c9ea4eaa48660109828f5d3c45625a616027550c7bb24fca49cbab 10799 mx-user_23.4.01_amd64.buildinfo
+ aa6b38b7bdade16f4f45d9180c2f9eedff3c85bc12847119244bbc98e060bdae 206456 mx-user_23.4.01_amd64.deb
 Files:
- 54b902ab15d8c18ef8d8d832bc06431e 1152 system optional mx-user_23.4.01.dsc
- 38c26fb56e9df9354f289a0cac877e2e 171804 system optional mx-user_23.4.01.tar.xz
- 96956f831f2a032fbe67c6b4be77feb4 10719 system optional mx-user_23.4.01_amd64.buildinfo
- 4ea22787b5242d8fd8029aac071402d7 206448 system optional mx-user_23.4.01_amd64.deb
+ f286514b6c66af861dcef2ca35ad8e28 1152 system optional mx-user_23.4.01.dsc
+ 4423220e619aff0543854a9906829eda 171884 system optional mx-user_23.4.01.tar.xz
+ cb77a0e358e418d3d77f0bbb37305835 10799 system optional mx-user_23.4.01_amd64.buildinfo
+ 7eeaaa0b4e690887b59af3d60252c154 206456 system optional mx-user_23.4.01_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQ40YcTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumI20B/kB8vns7kRE82tcRtuXxJgWT0RzJW5u
-gqkmi80QC3mJhBNeQ1vPvAMgENxUmHwad0zwl+S2NZ66eNm8++LqfnU6Kyg6LPvC
-2Ktez2q2+KoeYfzmRI7WE8o25Fi9TgTJ7+5o0ocu27auI+zmLVaNK6R3vxCtYsxY
-FzJ3oI72gzXD/k0TfxYw2HOtQ5V0xjBhPiiSKNomYH1Vl1LQlg9wBl5/t67dxMHW
-yJZuaGeQ6EVzjFjdCLXhoDx3tTVirMzj5dEJhbbhT3W2RdgvkFCYdbUoYwdRkbRZ
-pDEBTNOU4lyl+sU53SsYZraJthxqf36frAkPeOsI4fqvPD1yPBxL1eXd
-=UKpw
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQ5wFITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumL9nB/9e0Ws0XISjCRrWXMFxD5APAZTWm01n
+jzojWiLy+GCNU4kaLSGU7r8pQqEqoO+sWUMm7/ia8CnvbWC96FNlOl6O/yzFfYZd
+ui2DcnyCqiiA5+BfZmBPO45XWaTTIB3NdA5o2iRPbNZ4G/U3b/WfWnA/D2Gtf6gR
+ZsM51F7pSv+Xna5RzZoMDXeTd7fIZMmnE4TJz0lPVaEqEp3WJnYvfRyWvx67XZoX
+zDciZSo9opeYHx7STEVck4wMd/W834aNR29sH2TVSH1ZK/gVNxYGAT3eZO3yJBZ+
+v0P/VYdxbTOQ3h/pjC15fdFfHAB4hkxSOjddp3pPCiIuepGloFgpBhVd
+=LgE6
 -----END PGP SIGNATURE-----

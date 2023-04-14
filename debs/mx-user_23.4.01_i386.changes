@@ -16,11 +16,11 @@ Changes:
    * Update icon
    * Update mx-user.desktop translation
 Checksums-Sha1:
- 3d07c16e99925ca2f5fd06e733effcdbaa4f19ac 10056 mx-user_23.4.01_i386.buildinfo
- 7ff51ceb4abab99d49505538a3c97987e1cfd070 210740 mx-user_23.4.01_i386.deb
+ 631c13a0b86b8948d68bcccbcf8d9e26cca5b33b 9960 mx-user_23.4.01_i386.buildinfo
+ 3544d3dbaa839d295e7a944afa3f02bada677a44 209896 mx-user_23.4.01_i386.deb
 Checksums-Sha256:
- a48681e42744336e9a4fe88e562a23d10fc1057dd4f3dceea15819968093b9a8 10056 mx-user_23.4.01_i386.buildinfo
- 60bf5338bf5911365b970ae8d80558a48e5fddb5b183b14eb83ddae74db32bb8 210740 mx-user_23.4.01_i386.deb
+ 108ddf89b3c1496d774fd0ccd1d04c3d7c47e2d0ed2cb9b704ef5562bf7661f4 9960 mx-user_23.4.01_i386.buildinfo
+ 31ff2ac2086b18137d7558b3651b03540b5be9993996e08cd385d71e7ec30335 209896 mx-user_23.4.01_i386.deb
 Files:
- 90823366f9406f81b77f63221f4df7f9 10056 system optional mx-user_23.4.01_i386.buildinfo
- 157cd9891dcba3191cf9f4f2fe3cd13e 210740 system optional mx-user_23.4.01_i386.deb
+ 539d6492a6589480c72980e6df929cd3 9960 system optional mx-user_23.4.01_i386.buildinfo
+ 5ad63711e4955daf830e9764a22ab1c0 209896 system optional mx-user_23.4.01_i386.deb
