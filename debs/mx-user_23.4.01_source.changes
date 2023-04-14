@@ -16,26 +16,26 @@ Changes:
    * Update icon
    * Update mx-user.desktop translation
 Checksums-Sha1:
- ce45438a9e5ab9a066ab00bcc5e95ca7211e3bb1 1152 mx-user_23.4.01.dsc
- 8a02648767ae03d48ed7f03ade0f33ead607fed6 171804 mx-user_23.4.01.tar.xz
- d7964be2d9a8a8df1a63c064698b92145ffee620 10719 mx-user_23.4.01_amd64.buildinfo
+ 0bb64621ff7e26b053d157504ff553665d7327f3 1152 mx-user_23.4.01.dsc
+ 718c762389071bcb5fd380cb1abaafef6a496287 171884 mx-user_23.4.01.tar.xz
+ 6c258466d6125cce1cd61a4d6d1b5626e05edbd7 10799 mx-user_23.4.01_amd64.buildinfo
 Checksums-Sha256:
- 50c999856af3fbb3de40ee0fcb172a920c5ecaca0a485f6040d483e9d9cff34a 1152 mx-user_23.4.01.dsc
- 9ee2e29b2a6735a781c8c5e434455b5b98553e7881290be07eb705e979181d35 171804 mx-user_23.4.01.tar.xz
- c0b690319fcb073437ad7628ee0b29198c1a6019cbb0cfc0dac0dbfd5911386d 10719 mx-user_23.4.01_amd64.buildinfo
+ 4afca9daef1951c1f3e25073c00424c4150a5ad748e92c390d26712504d56f48 1152 mx-user_23.4.01.dsc
+ 224b5b536b3f59a7b6e4162d99cac03b1e2ded41c5c00302d21c0413cb7467f0 171884 mx-user_23.4.01.tar.xz
+ 9a4a463e14c9ea4eaa48660109828f5d3c45625a616027550c7bb24fca49cbab 10799 mx-user_23.4.01_amd64.buildinfo
 Files:
- 54b902ab15d8c18ef8d8d832bc06431e 1152 system optional mx-user_23.4.01.dsc
- 38c26fb56e9df9354f289a0cac877e2e 171804 system optional mx-user_23.4.01.tar.xz
- 96956f831f2a032fbe67c6b4be77feb4 10719 system optional mx-user_23.4.01_amd64.buildinfo
+ f286514b6c66af861dcef2ca35ad8e28 1152 system optional mx-user_23.4.01.dsc
+ 4423220e619aff0543854a9906829eda 171884 system optional mx-user_23.4.01.tar.xz
+ cb77a0e358e418d3d77f0bbb37305835 10799 system optional mx-user_23.4.01_amd64.buildinfo
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQ40YcTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumMiDCACgwVeE6nEzx4iwYuKCTtysphWvgzHV
-LjgA6WBzVO1C3MDCuCEzKELHto/j6LObLjhkSIGDL60GyBVnRo6KxBzkxex3qXBt
-jBTbEv266MTTWtHzsdKobthXADORjFNtGOpj8SJtYh5vYwFzNEEfkll/8xWJJyJz
-XUli2GzqGB/f7BJ3Z7uav3o1/2aRsXqLgI/U/GA48Tde2z7JpNqMP2fHpp7Yg6fu
-G8KOuMR63/uV7UZiAHVlvcqQenVYPiZdpnUVYp3Fk1ruVTwTPbDNGnYC+nHMtphe
-xPux29cQzy+TnzrafEcUzsoCH6faAST88/wd2MaiPDm1KnX0bTiH7V7r
-=XF87
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQ5wFITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumEoWCACzQTFRagk+keozY2OBjem6qH+SEu2r
+7UD680+eotXETA7nDn+CpeEZ9Ld7flMyASJuNbJiQEqYYSQhRfCLnRnr3MEJltk2
+KxsfkbdyQ5Yp6ycrmJSZ8b9dp908+2+9P74z8/UvY8L43MOrOsrQlMxZR3TiAVW+
+06tl7NFOdJAz1Gz0epjfl2jd8Hbo76pVevh9azn1q9tp0bXgsV6ROdxCmCnALAp+
+JqId3Pl+J+6TTpjHvwEX6DkPq2KEc5nmSQYMh63mkTXEixpBP2v2rLZlf/ff+kGH
+V01b3M/QzJZaZbHTQUmTLQJj45ZZfkc5m8mGQW0eBkCGSe1LDnLk5Xm/
+=WTtD
 -----END PGP SIGNATURE-----

@@ -82,8 +82,12 @@
         <translation>Användar-lösenord</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="271"/>
         <source>Include user in sudo group</source>
+        <translation type="vanished">Inkludera användare i sudo gruppen</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="271"/>
+        <source>Grant this user administrative rights to the system (sudo)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -82,9 +82,13 @@
         <translation>Mot de passe utilisateur :</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="271"/>
         <source>Include user in sudo group</source>
-        <translation>Inclure l’utilisateur dans le groupe sudo</translation>
+        <translation type="vanished">Inclure l’utilisateur dans le groupe sudo</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="271"/>
+        <source>Grant this user administrative rights to the system (sudo)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="290"/>
