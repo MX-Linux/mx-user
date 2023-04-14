@@ -24,6 +24,16 @@
         <translation>Shto Llogari Përdoruesi</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="132"/>
+        <source>Enter password for new user</source>
+        <translation>Jepni fjalëkalim për përdoruesin e ri</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="141"/>
+        <source>password</source>
+        <translation>fjalëkalim</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="173"/>
         <source>Reenter password for new user</source>
         <translation>Rijepni fjalëkalimin për përdoruesin e ri</translation>
@@ -62,24 +72,14 @@
         <translation>Fjalëkalim për përdorues të ri</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="261"/>
-        <source>User password:</source>
-        <translation>Fjalëkalim përdoruesi:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="132"/>
-        <source>Enter password for new user</source>
-        <translation>Jepni fjalëkalim për përdoruesin e ri</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="141"/>
-        <source>password</source>
-        <translation>fjalëkalim</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Confirm user password:</source>
         <translation>Ripohoni fjalëkalim përdoruesi:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>User password:</source>
+        <translation>Fjalëkalim përdoruesi:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="271"/>

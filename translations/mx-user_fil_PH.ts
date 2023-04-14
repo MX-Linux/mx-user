@@ -24,6 +24,16 @@
         <translation>Magdagdag ng Kuwenta ng User o Tagagamit </translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="132"/>
+        <source>Enter password for new user</source>
+        <translation>Ipasok ang password sa bagong user o gumagamit</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="141"/>
+        <source>password</source>
+        <translation>password</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="173"/>
         <source>Reenter password for new user</source>
         <translation>Ipasok ang password para sa bagong user o tagagamit</translation>
@@ -62,24 +72,14 @@
         <translation>Password para sa bagong user o tagagamit</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="261"/>
-        <source>User password:</source>
-        <translation>Password ng User o gumagamit:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="132"/>
-        <source>Enter password for new user</source>
-        <translation>Ipasok ang password sa bagong user o gumagamit</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="141"/>
-        <source>password</source>
-        <translation>password</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Confirm user password:</source>
         <translation>Kumpirmahin ang password ng user of gumagamit:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>User password:</source>
+        <translation>Password ng User o gumagamit:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="271"/>

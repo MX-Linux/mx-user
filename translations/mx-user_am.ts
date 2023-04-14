@@ -24,6 +24,16 @@
         <translation>የ ተጠቃሚ መግለጫ መጨመሪያ</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="132"/>
+        <source>Enter password for new user</source>
+        <translation>ለ አዲስ ተጠቃሚ የ መግቢያ ቃል ያስገቡ</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="141"/>
+        <source>password</source>
+        <translation>የ መግቢያ ቃል</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="173"/>
         <source>Reenter password for new user</source>
         <translation>ለ አዲስ ተጠቃሚ የ መግቢያ ቃል ያስገቡ</translation>
@@ -62,24 +72,14 @@
         <translation>የ መግቢያ ቃል ለ አዲስ ተጠቃሚ </translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="261"/>
-        <source>User password:</source>
-        <translation>የ ተጠቃሚ የመግቢያ ቃል:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="132"/>
-        <source>Enter password for new user</source>
-        <translation>ለ አዲስ ተጠቃሚ የ መግቢያ ቃል ያስገቡ</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="141"/>
-        <source>password</source>
-        <translation>የ መግቢያ ቃል</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Confirm user password:</source>
         <translation>የ ተጠቃሚ የ መግቢያ ቃል ማረጋገጫ:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="261"/>
+        <source>User password:</source>
+        <translation>የ ተጠቃሚ የመግቢያ ቃል:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="271"/>
