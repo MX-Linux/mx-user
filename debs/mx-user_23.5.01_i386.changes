@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Thu, 18 May 2023 00:17:03 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 23.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.5.01) mx; urgency=medium
+ .
+   * Update logo
+Checksums-Sha1:
+ a8f8f752e13b2aed0b4d33f21b80047fef73d76a 10056 mx-user_23.5.01_i386.buildinfo
+ 16dc90f2986d92379790b471a2932e03650c6ff9 212108 mx-user_23.5.01_i386.deb
+Checksums-Sha256:
+ b87913705fef969c692e21c0db67354e1a087a785530b131865544af0fa309f4 10056 mx-user_23.5.01_i386.buildinfo
+ 53c995f42d6da09359e24e77d8b1db095c73383c34afa617798ec3dd5a63b45d 212108 mx-user_23.5.01_i386.deb
+Files:
+ cfd028399dec5feccbe96f92d7474f71 10056 system optional mx-user_23.5.01_i386.buildinfo
+ 1ba4dd3db37d8111884877174d25704a 212108 system optional mx-user_23.5.01_i386.deb
