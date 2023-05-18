@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 18 May 2023 00:17:03 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 23.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.5.01) mx; urgency=medium
+ .
+   * Update logo
+Checksums-Sha1:
+ 68d93c36bba2ce923315a74f5542f798d3d34ee2 1152 mx-user_23.5.01.dsc
+ 88d76be119df846cac77d41a9b5f10b0dc39bec7 173320 mx-user_23.5.01.tar.xz
+ c518f29d8ab859e85de833fc0d749f54b22b6ef3 10719 mx-user_23.5.01_amd64.buildinfo
+ 4c3590e03a3d4f8a4c0c0ac93ae324f8a5dad4f4 208404 mx-user_23.5.01_amd64.deb
+Checksums-Sha256:
+ 912e9e31d37ca2db99549ecc0808ab52579d0314489c4e89a970480b35ebb71b 1152 mx-user_23.5.01.dsc
+ 3a7db7af720af50e84bf483db81341a11cc02830f15608afc53d483023014780 173320 mx-user_23.5.01.tar.xz
+ ffedc66b1b025fa2a6936c2999a6e53de9dc588a85baaab788a3b9924fe5358a 10719 mx-user_23.5.01_amd64.buildinfo
+ ec192cd293635d990c852ea2b757069c3916ad4f97a488e2cc2dc9277a882f46 208404 mx-user_23.5.01_amd64.deb
+Files:
+ d0a8b20fe32b23cb562a627970e6d211 1152 system optional mx-user_23.5.01.dsc
+ 58a4099d10d3c676c450b5115ffe8df6 173320 system optional mx-user_23.5.01.tar.xz
+ 5a114824ac0b95d22162f3531a8dd332 10719 system optional mx-user_23.5.01_amd64.buildinfo
+ 831c606f754b23fcc1aec3e05dbb013d 208404 system optional mx-user_23.5.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRlpywTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumL6UB/42ymHRo5M/ZHetuxKUxtIVueTwbBwB
+Q57vO5WqVrXPJEHcBAidnQElG/Orz2fB5YON7u6mMr0giw7+uiPsRTjXeBknV7/v
+DAqWW6zCCBZ/GsBtoLoy/q5ao+I+x3hPGkmLIUXi0LBjZ+P9X8todNGIkPoDtQwB
+7bmMSX4hTuzMs6oaeu+jvbEJWEvqUrB/PzG1C9UHS5KYtKP+JFWnJH2OrNJfnnx9
+hvnkYFauNkRy3SSPDXh+Y0gTgl2bi0gQvzW7XtEVRtp3bWRyjLKNZZyhH17kOH7D
+nJPfo7RcDgBfoMmypxxrSJ/Vxi4CrbPb9EHV1cpE3QLfwkcaxyVaYm92
+=erWK
+-----END PGP SIGNATURE-----

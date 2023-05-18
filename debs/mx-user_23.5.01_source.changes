@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 18 May 2023 00:17:03 -0400
+Source: mx-user
+Architecture: source
+Version: 23.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (23.5.01) mx; urgency=medium
+ .
+   * Update logo
+Checksums-Sha1:
+ 68d93c36bba2ce923315a74f5542f798d3d34ee2 1152 mx-user_23.5.01.dsc
+ 88d76be119df846cac77d41a9b5f10b0dc39bec7 173320 mx-user_23.5.01.tar.xz
+ c518f29d8ab859e85de833fc0d749f54b22b6ef3 10719 mx-user_23.5.01_amd64.buildinfo
+Checksums-Sha256:
+ 912e9e31d37ca2db99549ecc0808ab52579d0314489c4e89a970480b35ebb71b 1152 mx-user_23.5.01.dsc
+ 3a7db7af720af50e84bf483db81341a11cc02830f15608afc53d483023014780 173320 mx-user_23.5.01.tar.xz
+ ffedc66b1b025fa2a6936c2999a6e53de9dc588a85baaab788a3b9924fe5358a 10719 mx-user_23.5.01_amd64.buildinfo
+Files:
+ d0a8b20fe32b23cb562a627970e6d211 1152 system optional mx-user_23.5.01.dsc
+ 58a4099d10d3c676c450b5115ffe8df6 173320 system optional mx-user_23.5.01.tar.xz
+ 5a114824ac0b95d22162f3531a8dd332 10719 system optional mx-user_23.5.01_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRlpywTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumNEoB/wPJ6BAwX7SKmoPIG1LGBr0W9ic7qOM
+YI47hoeo084eiCx+i+tzHUOkcbHilSoN2UlyNPDGPbzUQA0jB65IUrRjIqCEBth7
+/0BAWhmN8yg+hb1AQ1nfMMiTziaFYCbGyXpY91vyThzrlMPBAVzNFxszUOj/MWVd
+zDRjL+5JdtNl45F9TRpmZByrdJfxlzGsCanmCX1yi7Z8Y1uw1fzol9Kn+2dvBc9l
+yacG5Sllo3s5dxEJmvQLiDAuqJj8E/vUBf69n1M14gUEpdiTsXwUu/IpnylN5UOe
+SsG1DHDk2w/pGfw/F11qLKf0ou9fG9c5fIUHCxOGZ2ZxxJYG2bC02/wZ
+=/AP0
+-----END PGP SIGNATURE-----
