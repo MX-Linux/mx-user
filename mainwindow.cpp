@@ -353,8 +353,8 @@ void MainWindow::applyAdd()
     if (allowBadNames != QStringLiteral("--allow-bad-names"))
         allowBadNames = QStringLiteral("--force-badname");
 
-    QProcess::execute("adduser", {"--disabled-login", allowBadNames, "--shell", dshell,
-                                  commentOption, userNameEdit->text(), userNameEdit->text()});
+    QProcess::execute("adduser", {"--disabled-login", allowBadNames, "--shell", dshell, commentOption,
+                                  userNameEdit->text(), userNameEdit->text()});
 
     QProcess proc;
     proc.start(QStringLiteral("passwd"), QStringList {userNameEdit->text()}, QIODevice::ReadWrite);
@@ -473,13 +473,14 @@ void MainWindow::applyGroup()
                         .arg(groups.join(" "));
         int ans = QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No);
         if (ans == QMessageBox::Yes) {
-            for (const auto &group : qAsConst(groups)) {
-                if (QProcess::execute("delgroup", {group}) != 0) {
-                    QMessageBox::critical(this, windowTitle(),
-                                          tr("Failed to delete the group.") + "\n" + tr("Group: %1").arg(group));
-                    refresh();
-                    return;
-                }
+            auto it = std::find_if(groups.cbegin(), groups.cend(),
+                                   [&](const auto &group) { return QProcess::execute("delgroup", {group}) != 0; });
+            if (it != groups.cend()) {
+                const auto &group = *it;
+                QMessageBox::critical(this, windowTitle(),
+                                      tr("Failed to delete the group.") + "\n" + tr("Group: %1").arg(group));
+                refresh();
+                return;
             }
             msg = groups.count() == 1 ? tr("The group has been deleted.") : tr("The groups have been deleted.");
             QMessageBox::information(this, windowTitle(), msg);
