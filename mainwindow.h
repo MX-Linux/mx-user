@@ -33,8 +33,8 @@ class MainWindow : public QDialog, public Ui::MEConfig
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow() override;
 
     void applyAdd();
     void applyChangePass();
@@ -61,7 +61,7 @@ public slots:
     void syncDone(bool success);
 
 protected:
-    void keyPressEvent(QKeyEvent *event);
+    void keyPressEvent(QKeyEvent *event) override;
 
 private slots:
     void closeApp();
