@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sat, 01 Jul 2023 19:30:21 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 23.7
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.7) mx; urgency=medium
+ .
+   * Refresh translations
+   * Update policy file
+Checksums-Sha1:
+ a80fbf4f88de5ab61dc1542e19b3bed49bf26c76 10041 mx-user_23.7_i386.buildinfo
+ a5a14cf65d0a8e68dad30f5f1901e4738b864268 213952 mx-user_23.7_i386.deb
+Checksums-Sha256:
+ 76e3072435ee1472eddf92d29a6877b94df8dd1b33a3e9de34e6c9eb0d04a4a5 10041 mx-user_23.7_i386.buildinfo
+ 405beaa05ba5a4d26b41e8c19450e7d7a463cedf4773e750046efd10a6f2ee6c 213952 mx-user_23.7_i386.deb
+Files:
+ 9e6fb5d377e8ee9fe9f4210c8dcc43d5 10041 system optional mx-user_23.7_i386.buildinfo
+ 4cc81224dac2554c2e8bc119a44b89e7 213952 system optional mx-user_23.7_i386.deb
