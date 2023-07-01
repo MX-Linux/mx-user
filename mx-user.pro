@@ -11,8 +11,10 @@ TEMPLATE = app
 TARGET = mx-user
 
 TRANSLATIONS += translations/mx-user_af.ts \
+                translations/mx-user_af.ts \
                 translations/mx-user_am.ts \
                 translations/mx-user_ar.ts \
+                translations/mx-user_ast.ts \
                 translations/mx-user_be.ts \
                 translations/mx-user_bg.ts \
                 translations/mx-user_bn.ts \
@@ -56,12 +58,16 @@ TRANSLATIONS += translations/mx-user_af.ts \
                 translations/mx-user_hr.ts \
                 translations/mx-user_ht.ts \
                 translations/mx-user_hu.ts \
+                translations/mx-user_hy_AM.ts \
+                translations/mx-user_hye.ts \
                 translations/mx-user_hy.ts \
                 translations/mx-user_id.ts \
+                translations/mx-user_ie.ts \
                 translations/mx-user_is.ts \
                 translations/mx-user_it.ts \
                 translations/mx-user_ja.ts \
                 translations/mx-user_jv.ts \
+                translations/mx-user_kab.ts \
                 translations/mx-user_ka.ts \
                 translations/mx-user_kk.ts \
                 translations/mx-user_km.ts \
@@ -87,7 +93,9 @@ TRANSLATIONS += translations/mx-user_af.ts \
                 translations/mx-user_ne.ts \
                 translations/mx-user_nl_BE.ts \
                 translations/mx-user_nl.ts \
+                translations/mx-user_nn.ts \
                 translations/mx-user_ny.ts \
+                translations/mx-user_oc.ts \
                 translations/mx-user_or.ts \
                 translations/mx-user_pa.ts \
                 translations/mx-user_pl.ts \
