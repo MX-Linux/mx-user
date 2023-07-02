@@ -144,14 +144,16 @@ FORMS += \
     mainwindow.ui
 HEADERS += \
     mainwindow.h \
+    passedit.h \
     version.h \
     cmd.h \
     about.h
 SOURCES += main.cpp \
     mainwindow.cpp \
     cmd.cpp \
-    about.cpp
-LIBS += -lcrypt
+    about.cpp \
+    passedit.cpp
+LIBS += -lcrypt -lzxcvbn
 CONFIG += release warn_on thread qt
 
 RESOURCES += \
