@@ -18,6 +18,7 @@
    limitations under the License.
 */
 #include "mainwindow.h"
+#include "passedit.h"
 
 #include <QDebug>
 #include <QFileDialog>
@@ -40,6 +41,8 @@ MainWindow::MainWindow(QWidget *parent)
     setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     setWindowIcon(QApplication::windowIcon());
+    passUser = new PassEdit(userPasswordEdit, userPassword2Edit, 2, this);
+    passChange = new PassEdit(lineEditChangePass, lineEditChangePassConf, 2, this);
 
     shell = new Cmd(this);
     tabWidget->blockSignals(true);
@@ -57,7 +60,10 @@ MainWindow::MainWindow(QWidget *parent)
     refresh();
 }
 
-MainWindow::~MainWindow() { settings.setValue(QStringLiteral("geometry"), saveGeometry()); }
+MainWindow::~MainWindow()
+{
+    settings.setValue(QStringLiteral("geometry"), saveGeometry());
+}
 
 void MainWindow::refresh()
 {
@@ -919,42 +925,6 @@ void MainWindow::on_sharedRadioButton_clicked()
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
-}
-
-void MainWindow::on_userPassword2Edit_textChanged(const QString &arg1)
-{
-    QPalette pal = userPassword2Edit->palette();
-    if (arg1 != userPasswordEdit->text())
-        pal.setColor(QPalette::Base, QColor(255, 0, 0, 20));
-    else
-        pal.setColor(QPalette::Base, QColor(0, 255, 0, 10));
-    userPasswordEdit->setPalette(pal);
-    userPassword2Edit->setPalette(pal);
-}
-
-void MainWindow::on_lineEditChangePassConf_textChanged(const QString &arg1)
-{
-    QPalette pal = lineEditChangePassConf->palette();
-    if (arg1 != lineEditChangePass->text())
-        pal.setColor(QPalette::Base, QColor(255, 0, 0, 20));
-    else
-        pal.setColor(QPalette::Base, QColor(0, 255, 0, 10));
-    lineEditChangePassConf->setPalette(pal);
-    lineEditChangePass->setPalette(pal);
-}
-
-void MainWindow::on_userPasswordEdit_textChanged()
-{
-    userPassword2Edit->clear();
-    userPasswordEdit->setPalette(QApplication::palette());
-    userPassword2Edit->setPalette(QApplication::palette());
-}
-
-void MainWindow::on_lineEditChangePass_textChanged()
-{
-    lineEditChangePassConf->clear();
-    lineEditChangePass->setPalette(QApplication::palette());
-    lineEditChangePassConf->setPalette(QApplication::palette());
 }
 
 void MainWindow::on_comboRenameUser_activated(const QString & /*unused*/)
