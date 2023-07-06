@@ -27,11 +27,11 @@ class PassEdit : public QObject
 private:
     QLineEdit *master = nullptr;
     QLineEdit *slave = nullptr;
-    QString genText;
-    int min, wordMax;
-    bool lastValid = false;
     QAction *actionEye = nullptr;
     QAction *actionGauge = nullptr;
+    QString gentext;
+    int min;
+    bool lastValid = false;
     void generate() noexcept;
     void masterContextMenu(const QPoint &pos) noexcept;
     void masterTextChanged(const QString &text) noexcept;
@@ -40,7 +40,11 @@ private:
     bool eventFilter(QObject *watched, QEvent *event) noexcept;
 public:
     PassEdit(QLineEdit *master, QLineEdit *slave, int min=0, QObject *parent = nullptr) noexcept;
-    bool isValid() const noexcept;
+    inline int minimum() { return min; }
+    inline bool valid() const noexcept { return lastValid; }
+    inline bool confirmed() const noexcept { return (slave->text() == master->text()); }
+    inline bool lengthOK() const noexcept { return (master->text().length() >= min); }
+    inline int length() { return master->text().length(); }
 signals:
     void validationChanged(bool valid);
 };

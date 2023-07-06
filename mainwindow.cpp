@@ -332,11 +332,11 @@ void MainWindow::applyAdd()
         QMessageBox::critical(this, windowTitle(), tr("Sorry, this name is in use. Please enter a different name."));
         return;
     }
-    if (userPasswordEdit->text() != userPassword2Edit->text()) {
+    if (!passUser->confirmed()) {
         QMessageBox::critical(this, windowTitle(), tr("Password entries do not match. Please try again."));
         return;
     }
-    if (userPasswordEdit->text().length() < 2) {
+    if (!passUser->lengthOK()) {
         QMessageBox::critical(
             this, windowTitle(),
             tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
@@ -382,11 +382,11 @@ void MainWindow::applyAdd()
 // change user password
 void MainWindow::applyChangePass()
 {
-    if (lineEditChangePass->text() != lineEditChangePassConf->text()) {
+    if (!passChange->confirmed()) {
         QMessageBox::critical(this, windowTitle(), tr("Password entries do not match. Please try again."));
         return;
     }
-    if (lineEditChangePass->text().length() < 2) {
+    if (!passChange->lengthOK()) {
         QMessageBox::critical(
             this, windowTitle(),
             tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
