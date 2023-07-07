@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Thu, 06 Jul 2023 23:42:04 -0400
+Source: mx-user
+Architecture: source
+Version: 23.7.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Changes:
+ mx-user (23.7.01) mx; urgency=medium
+ .
+   * password gauge from gazelle-installer
+   * update translations
+Checksums-Sha1:
+ 476967af52ec09e35f96501c5251dbfbb2bd045e 605 mx-user_23.7.01.dsc
+ 265dedc919a3c9301e7eec28a5afd06b9f64d90e 179064 mx-user_23.7.01.tar.xz
+ 8d92f6755fda4e5a4fe24cf9c44fa3a0e36bebdf 9579 mx-user_23.7.01_amd64.buildinfo
+Checksums-Sha256:
+ de1cb5bb1624065b0d81cd148627b156fa3a82d62b756e2ce245b8078854dfb8 605 mx-user_23.7.01.dsc
+ 98ac44232b072c0dd8d0a7a77ae5a552c6b913068905c8af09eaeb48802c7944 179064 mx-user_23.7.01.tar.xz
+ 0bb2bc57c8e97ead2775312e5899128ecdf597ef34142bb41cd617d50b2a4056 9579 mx-user_23.7.01_amd64.buildinfo
+Files:
+ d1950dde064221f06140dd19e41be9bf 605 system optional mx-user_23.7.01.dsc
+ 6373cdd74aafb5e1dbc672f78835929f 179064 system optional mx-user_23.7.01.tar.xz
+ 1eda1bd2c745c7ef4cfe753b0603fcaa 9579 system optional mx-user_23.7.01_amd64.buildinfo

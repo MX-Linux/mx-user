@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Thu, 06 Jul 2023 23:42:04 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 23.7.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.7.01) mx; urgency=medium
+ .
+   * password gauge from gazelle-installer
+   * update translations
+Checksums-Sha1:
+ c495bf7b1a4fb40edcea21237858035862b81c68 9357 mx-user_23.7.01_i386.buildinfo
+ 911d7d752a08c34f4182278bdd93a194831ecb36 219336 mx-user_23.7.01_i386.deb
+Checksums-Sha256:
+ 751212a29a2e87c92175b8ff96630a8084bcfdfc308bc66ded9c8b2cc41f79cd 9357 mx-user_23.7.01_i386.buildinfo
+ baee9c19c240fae1b118c7e22a5f7531c9d095f73d6e0482f2dd1425ccf64e33 219336 mx-user_23.7.01_i386.deb
+Files:
+ 61c49f78fc82fa4bc12259321e9c2272 9357 system optional mx-user_23.7.01_i386.buildinfo
+ 913128c35fa8823b10e32fa287d29f7e 219336 system optional mx-user_23.7.01_i386.deb
