@@ -498,155 +498,155 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="103"/>
-        <location filename="../mainwindow.cpp" line="148"/>
-        <location filename="../mainwindow.cpp" line="156"/>
-        <location filename="../mainwindow.cpp" line="174"/>
-        <location filename="../mainwindow.cpp" line="183"/>
-        <location filename="../mainwindow.cpp" line="191"/>
-        <location filename="../mainwindow.cpp" line="666"/>
-        <location filename="../mainwindow.cpp" line="690"/>
-        <location filename="../mainwindow.cpp" line="717"/>
-        <location filename="../mainwindow.cpp" line="865"/>
-        <location filename="../mainwindow.cpp" line="966"/>
-        <location filename="../mainwindow.cpp" line="972"/>
-        <location filename="../mainwindow.cpp" line="977"/>
-        <location filename="../mainwindow.cpp" line="980"/>
-        <location filename="../mainwindow.cpp" line="982"/>
+        <location filename="../mainwindow.cpp" line="109"/>
+        <location filename="../mainwindow.cpp" line="154"/>
+        <location filename="../mainwindow.cpp" line="162"/>
+        <location filename="../mainwindow.cpp" line="180"/>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="672"/>
+        <location filename="../mainwindow.cpp" line="696"/>
+        <location filename="../mainwindow.cpp" line="723"/>
+        <location filename="../mainwindow.cpp" line="871"/>
+        <location filename="../mainwindow.cpp" line="936"/>
+        <location filename="../mainwindow.cpp" line="942"/>
+        <location filename="../mainwindow.cpp" line="947"/>
+        <location filename="../mainwindow.cpp" line="950"/>
+        <location filename="../mainwindow.cpp" line="952"/>
         <source>none</source>
         <translation>ללא</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="133"/>
-        <location filename="../mainwindow.cpp" line="653"/>
-        <location filename="../mainwindow.cpp" line="871"/>
-        <location filename="../mainwindow.cpp" line="879"/>
+        <location filename="../mainwindow.cpp" line="139"/>
+        <location filename="../mainwindow.cpp" line="659"/>
+        <location filename="../mainwindow.cpp" line="877"/>
+        <location filename="../mainwindow.cpp" line="885"/>
         <source>browse...</source>
         <translation>עיון…</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="200"/>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>הגדרות המשתמש תתוקנה. נא לסגור את כל היישומים האחרים כעת. לאחר שסיימת, נא לצאת או להפעיל מחדש. לתקן כעת?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="221"/>
+        <location filename="../mainwindow.cpp" line="227"/>
         <source>User group membership was restored.</source>
         <translation>חברות המשתמש בקבוצות שוחזרה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="226"/>
+        <location filename="../mainwindow.cpp" line="232"/>
         <source>Mozilla settings were reset.</source>
         <translation>ההגדרות של Mozilla אופסו.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="233"/>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="239"/>
+        <location filename="../mainwindow.cpp" line="248"/>
         <source>Autologin options</source>
         <translation>אפשרויות כניסה אוטומטית</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="240"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
         <translation>כניסה אוטומטית הושבתה לחשבון ‚%1’.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation>כניסה אוטומטית הופעלה לחשבון ‚%1’.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="261"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation>יש לציין יעד ‚להעתקה’. אסור להעתיק את שולחן העבודה אליו נכנסת כרגע.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="268"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>בטרם ההעתקה, נא לסגור את כל היישומים האחרים. רצוי לוודא שהיעד להעתקה גדול דיו כדי להעיל את כל הקבצים המועתקים. העתקה בין שולחנות עבודה עלולה לדרוס או למחוק את הקבצים או ההעדפות שלך בשולחן העבודה המיועד. להמשיך?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="292"/>
         <source>Synchronizing desktop...</source>
         <translation>מתבצע סנכרון שולחן העבודה...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="288"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Copying desktop...</source>
         <translation>מתבצעת העתקת שולחן העבודה...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="316"/>
-        <location filename="../mainwindow.cpp" line="527"/>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="533"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>על אורך שם המשתמש להיות 2 תווים לפחות. נא לבחור בשם ארוך יותר בטרם בחירה להמשיך.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="320"/>
+        <location filename="../mainwindow.cpp" line="326"/>
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation>שם המשתמש לא יכול להכיל תווים מיוחדים או רווחים.
 נא לבחור בשם אחר בטרם בחירה להמשיך.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="326"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
         <translation>השם הזה כבר בשימוש, נא לבחור שם אחר, עמך הסליחה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
-        <location filename="../mainwindow.cpp" line="380"/>
+        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="../mainwindow.cpp" line="386"/>
         <source>Password entries do not match. Please try again.</source>
         <translation>רשומות סיסמאות לא תואמות. נא לנסות שוב.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="336"/>
-        <location filename="../mainwindow.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="342"/>
+        <location filename="../mainwindow.cpp" line="392"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
         <translation>על אורך הסיסמה להיות 2 תווים לפחות. נא לבחור בסיסמה ארוך יותר בטרם בחירה להמשיך.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="375"/>
         <source>The user was added ok.</source>
         <translation>המשתמש נוסף בהצלחה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="378"/>
         <source>Failed to add the user.</source>
         <translation>הוספת המשתמש נכשלה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="404"/>
         <source>Password successfully changed.</source>
         <translation>הסיסמה שונתה בהצלחה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="407"/>
         <source>Failed to change password.</source>
         <translation>שינוי הסיסמה נכשל.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation>לא יהיה ניתן לבטל פעולה זו. למחוק את המשתמש %1?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="424"/>
         <source>The user has been deleted.</source>
         <translation>המשתמש נמחק.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="426"/>
         <source>Failed to delete the user.</source>
         <translation>מחיקת המשתמש נכשלה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="433"/>
+        <location filename="../mainwindow.cpp" line="439"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>על אורך שם הקבוצה להיות 2 תווים לפחות. נא לבחור בשם ארוך יותר בטרם בחירה להמשיך.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
+        <location filename="../mainwindow.cpp" line="444"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -655,72 +655,72 @@ Please choose another name before proceeding.</source>
 נא לבחור שם אחר בטרם המשך הפעילות.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="452"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
         <translation>שם הקבוצה הזה כבר קיים. נא למלא שם אחר, עמך הסליחה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="460"/>
         <source>The system group was added ok.</source>
         <translation>קבוצת המערכת נוספה בהצלחה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="462"/>
         <source>Failed to add the system group.</source>
         <translation>הוספת קבוצת המערכת נכשלה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="469"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation>אי אפשר לבטל את הפעולה. למחוק את הקבוצה %1?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="478"/>
         <source>This action cannot be undone. Are you sure you want to delete the following groups: %1?</source>
         <translation>לא ניתן לבטל את הפעולה הזאת. למחוק את הקבוצות הבאות: %1?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="481"/>
+        <location filename="../mainwindow.cpp" line="487"/>
         <source>Failed to delete the group.</source>
         <translation>מחיקת הקבוצה נכשלה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="481"/>
+        <location filename="../mainwindow.cpp" line="487"/>
         <source>Group: %1</source>
         <translation>קבוצה: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="485"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>The group has been deleted.</source>
         <translation>הקבוצה נמחקה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="485"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>The groups have been deleted.</source>
         <translation>הקבוצות נמחקו.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="502"/>
+        <location filename="../mainwindow.cpp" line="508"/>
         <source>The changes have been applied.</source>
         <translation>השינויים הוחלו.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="510"/>
         <source>Failed to apply group changes</source>
         <translation>החלת השינויים לקבוצה נכשלה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="517"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>The selected user name is currently in use.</source>
         <translation>שם המשתמש הנבחר כבר בשימוש.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="518"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
         <translation>כדי לשנות את שם המשתמש, נא לצאת ולחזור עם חשבון אחר.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="531"/>
+        <location filename="../mainwindow.cpp" line="537"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -729,86 +729,134 @@ Please choose another name before proceeding.</source>
 נא לבחור בשם אחר בטרם המשך התהליך.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="538"/>
+        <location filename="../mainwindow.cpp" line="544"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>השם כבר קיים במערכת שלך. נא למלא שם משתמש אחר, עמך הסליחה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="546"/>
+        <location filename="../mainwindow.cpp" line="552"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
         <translation>שינוי שם המשתמש נכשל. נא לוודא שהמשתמש לא נכנס למערכת, יכול להיות שנדרשת הפעלה מחדש</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="568"/>
+        <location filename="../mainwindow.cpp" line="574"/>
         <source>The user was renamed.</source>
         <translation>שם המשתמש השתנה.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="580"/>
-        <location filename="../mainwindow.cpp" line="607"/>
+        <location filename="../mainwindow.cpp" line="586"/>
+        <location filename="../mainwindow.cpp" line="613"/>
         <source>Synchronizing desktop...ok</source>
         <translation>שולחן העבודה מסונכרן…הושלם</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="582"/>
-        <location filename="../mainwindow.cpp" line="609"/>
+        <location filename="../mainwindow.cpp" line="588"/>
+        <location filename="../mainwindow.cpp" line="615"/>
         <source>Copying desktop...ok</source>
         <translation>שולחן העבודה מועתק…הושלם</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="612"/>
+        <location filename="../mainwindow.cpp" line="618"/>
         <source>Synchronizing desktop...failed</source>
         <translation>שולחן העבודה מסונכרן…נכשל</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="614"/>
+        <location filename="../mainwindow.cpp" line="620"/>
         <source>Copying desktop...failed</source>
         <translation>שולחן העבודה מועתק…נכשל</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="631"/>
+        <location filename="../mainwindow.cpp" line="637"/>
         <source>Confirmation</source>
         <translation>אישור</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="632"/>
+        <location filename="../mainwindow.cpp" line="638"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
         <translation>התהליך לא הסתיים. לצאת מהיישום?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="837"/>
+        <location filename="../mainwindow.cpp" line="843"/>
         <source>About %1</source>
         <translation>על אודות %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="838"/>
+        <location filename="../mainwindow.cpp" line="844"/>
         <source>Version: </source>
         <translation>גירסה:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="839"/>
+        <location filename="../mainwindow.cpp" line="845"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>הגדרות משתמש פשוטות ללינוקס MX</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="841"/>
+        <location filename="../mainwindow.cpp" line="847"/>
         <source>Copyright (c) MX Linux</source>
         <translation>זכויות היוצרים (c) שמורות ל־MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="842"/>
+        <location filename="../mainwindow.cpp" line="848"/>
         <source>%1 License</source>
         <translation>רישיון %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="856"/>
+        <location filename="../mainwindow.cpp" line="862"/>
         <source>%1 Help</source>
         <translation>עזרה עבור %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="872"/>
+        <location filename="../mainwindow.cpp" line="878"/>
         <source>Select folder to copy to</source>
         <translation>נא לבחור תיקייה להעתיק אליה</translation>
+    </message>
+</context>
+<context>
+    <name>PassEdit</name>
+    <message>
+        <location filename="../passedit.cpp" line="144"/>
+        <source>Negligible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../passedit.cpp" line="144"/>
+        <source>Very weak</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../passedit.cpp" line="144"/>
+        <source>Weak</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../passedit.cpp" line="145"/>
+        <source>Moderate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../passedit.cpp" line="145"/>
+        <source>Strong</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../passedit.cpp" line="145"/>
+        <source>Very strong</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../passedit.cpp" line="147"/>
+        <source>Password strength: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../passedit.cpp" line="180"/>
+        <source>Hide the password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../passedit.cpp" line="180"/>
+        <source>Show the password</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
