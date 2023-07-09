@@ -850,12 +850,12 @@ Escoller outro nome de usuario</translation>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Agochar o contrasinal</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Amosar o contrasinal</translation>
     </message>
 </context>
 <context>

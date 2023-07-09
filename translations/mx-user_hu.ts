@@ -851,12 +851,12 @@ A folytatás előtt válasszon másik nevet.</translation>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Jelszó elrejtése</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Jelszó megjelenítése</translation>
     </message>
 </context>
 <context>

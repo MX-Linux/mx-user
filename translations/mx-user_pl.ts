@@ -851,12 +851,12 @@ Wybierz inną nazwę, zanim przejdziesz dalej.</translation>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukryj hasło</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokaż hasło</translation>
     </message>
 </context>
 <context>

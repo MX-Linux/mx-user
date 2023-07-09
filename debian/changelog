@@ -1,3 +1,9 @@
+mx-user (23.7.02) mx; urgency=medium
+
+  * update translations
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 08 Jul 2023 22:22:28 -0400
+
 mx-user (23.7.01) mx; urgency=medium
 
   * password gauge from gazelle-installer

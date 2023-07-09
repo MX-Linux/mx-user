@@ -851,12 +851,12 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Şifreyi gizle</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Şifreyi göster</translation>
     </message>
 </context>
 <context>
