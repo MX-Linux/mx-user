@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 08 Jul 2023 22:22:28 -0400
+Source: mx-user
+Architecture: source
+Version: 23.7.02
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Changes:
+ mx-user (23.7.02) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ 6ee7471e200943e295702cb603a8a54bd432e66c 605 mx-user_23.7.02.dsc
+ 70334e2c4165a0b3907f99b8727ed89415d1af2b 180460 mx-user_23.7.02.tar.xz
+ 38cbd74cb28096f841b3831a5ab737a720f79dff 10462 mx-user_23.7.02_amd64.buildinfo
+Checksums-Sha256:
+ 013fdf28f11c90009cf131ddd17d675438160aca0bfbe178c5e1be042c5fc258 605 mx-user_23.7.02.dsc
+ 4f047a0b5e0669e2af8ee0ad5bdac97cf24731ca7bd92cc52116410d247ea10e 180460 mx-user_23.7.02.tar.xz
+ 66a7bc31bb2369a45e89260c3db42c1688fe4862c7eed2fcdc800318020129d9 10462 mx-user_23.7.02_amd64.buildinfo
+Files:
+ bbec33caa8465fc7fb88bc447bcb3836 605 system optional mx-user_23.7.02.dsc
+ 2deed5d308c0d225c27543438d244eb7 180460 system optional mx-user_23.7.02.tar.xz
+ 895c383a1b4f7c86e4434e59945fe003 10462 system optional mx-user_23.7.02_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE9i7eqjrnCpyZ2sQYm2ih6Lm2N1wFAmSqG4YACgkQm2ih6Lm2
+N1xpHQ/9EUe8N50WhdyGnNNRlzpsWGe0Ac/vrt7ocvW/yf9T+6jD8FDic2h6a+k1
+5EXjhY/YSf+c0tLVXmoXG6tGCoGSdgx/2dpBOHrK1KbXacCzrDwf3iyYHgSlufMC
+IUIbSVPk6f27TD7szBXUZaa3v/fkntczwSCk4pkUZudNxDCZ1ZzZlATs0BuJPABZ
+6vGsLf62k5pNWlhj4lH99MRTBaHjG4tOfULxdXZhyaDGUT+JHlyaUZ8ptzaIVfDz
+rq7d1BpUl+Y+jANeyvKBQTyAV8dtAdpbIBHz+a3M8bCg9+uMG0gurP3bUUzzU0Os
+2ti7O6IkFzp1/RCQ+0++YWa84GM7W2IHDvgstdDrmS7XD2JI7fT97tWC05ukypXX
+8wLr/t7DPjhbq6qQ854ukKJebswbe91Mlmafn/y6c4kp4Aw3VrA77cw0QtC24K4C
+QFDNuQGzX4KF6HWWmgapBfBxp6x5DtOq2gLULx1Dp14cGFg8u9Hp94zA/esBELJA
+FNuRmXSYUvkgB/PArpXWW2vDbgBa4BJjNhZsPah3NNG+mFXfTGJRTfAqaHxjNxXc
+qCdQC8YEB96NHw0hi986Durv+HZOBP+7texAfkTWgENT8WT0W9WjiPu9TlPmv1Wn
+DnWF/eSVf0NB7OL0pZkZ6NBtgfEa8GN+uMwxZNNcXMD82IsIBp0=
+=fcst
+-----END PGP SIGNATURE-----

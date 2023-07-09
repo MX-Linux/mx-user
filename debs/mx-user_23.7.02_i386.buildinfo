@@ -1,18 +1,21 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Format: 1.0
 Source: mx-user
 Binary: mx-user
 Architecture: i386
-Version: 23.7.01
+Version: 23.7.02
 Checksums-Md5:
- 913128c35fa8823b10e32fa287d29f7e 219336 mx-user_23.7.01_i386.deb
+ b32dde8762dff38aea082494401a12dd 221092 mx-user_23.7.02_i386.deb
 Checksums-Sha1:
- 911d7d752a08c34f4182278bdd93a194831ecb36 219336 mx-user_23.7.01_i386.deb
+ 28edb9931af5fe3e93f2f35c24dadedc035014c1 221092 mx-user_23.7.02_i386.deb
 Checksums-Sha256:
- baee9c19c240fae1b118c7e22a5f7531c9d095f73d6e0482f2dd1425ccf64e33 219336 mx-user_23.7.01_i386.deb
+ dcce6afe169b6caaaa0a0f1f8a390953559a8dd9a2e64315a06212d2d213a8b0 221092 mx-user_23.7.02_i386.deb
 Build-Origin: Debian
 Build-Architecture: i386
-Build-Date: Fri, 07 Jul 2023 03:46:00 +0000
-Build-Path: /build/mx-user-23.7.01
+Build-Date: Sun, 09 Jul 2023 02:24:37 +0000
+Build-Path: /build/mx-user-23.7.02
 Installed-Build-Depends:
  autoconf (= 2.69-14),
  automake (= 1:1.16.3-2),
@@ -326,4 +329,21 @@ Environment:
  LANG="C"
  LC_ALL="C"
  MAKEFLAGS=" -j4"
- SOURCE_DATE_EPOCH="1688701324"
+ SOURCE_DATE_EPOCH="1688869348"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE9i7eqjrnCpyZ2sQYm2ih6Lm2N1wFAmSqG4UACgkQm2ih6Lm2
+N1xvIRAA4u3RppYK8HibkS9Wn1xGGdq7+hOzKDrWxz/ZTYmmpWUezd/VvrkDSMH6
+dU0146wnYLmLBkM4o9wbY83zN3/GkyTSiC1JhlYLlrXXDZGWK0Qjjv+WSSRMcTvh
+fuRmAEkq31uTkel90RyKNcSDT/I8SS7gLNTV88Z/wDKrHI1HF6fKWQ/KRskZuX9H
+VBV/S5BzO7siwwOIxSO8nUC6ZrRjAK/40XFmHoEOmGz41iHM6Bd8B7GMLGjhywGw
+nV6aftc6/LGs7sXAugc5IVxHJN0zj1KB8yVbO3tqc/7j4qNNne/ZWpgE5psE+444
+3eYBAK0s3epK3/rlSFabyvolp9F4bmBXOlJ3Tbi+6P87pQAvrE35RrxB39vVyp4D
+i07j70zT64lSHQ479ipplXi9ue8crXetMvdBzl9RAjbaqaG0vlxonYFq1+JZNBnY
+aIOJQ6HxANd0IohsyTlFv29i5aQJJgna77bEtIS10prtfGN3fuE06zh6AtN13Rwf
+Gbd3AzNtJd/AvVxYbM5SZ25BMRPAeP05JIAkTwA6npRGl/T66xYvjtxp846THPqt
+47UYPjJSZIM7RSQ44hBzpfePz/BCRsJ9CqaY5+67DYrPnd14hawde2VWlKMLkciA
+DJc/2ZC5U+CXyIiEAPV64tvzwbintTYpZ82exPlWZZDAdk3R7XM=
+=HD9v
+-----END PGP SIGNATURE-----
