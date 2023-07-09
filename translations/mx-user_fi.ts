@@ -851,12 +851,12 @@ Ole hyvä ja valitse toinen ennen kuin jatkat.</translation>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Piilota salasana</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä salasana</translation>
     </message>
 </context>
 <context>

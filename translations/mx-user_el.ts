@@ -816,47 +816,47 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>Αμελητέος</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Πολύ αδύναμο</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύναμο</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέτριο</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Ισχυρό</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Πολύ δυνατό</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="147"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ισχύς κωδικού πρόσβασης: %1</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Απόκρυψη του κωδικού πρόσβασης </translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση κωδικού πρόσβασης </translation>
     </message>
 </context>
 <context>

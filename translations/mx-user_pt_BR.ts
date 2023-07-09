@@ -16,12 +16,12 @@
     <message>
         <location filename="../mainwindow.ui" line="65"/>
         <source>Add a new user</source>
-        <translation>Adicionar um novo usuário</translation>
+        <translation>Adicionar Um Novo Usuário</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="105"/>
         <source>Add User Account</source>
-        <translation>Adicionar Conta de Usuário</translation>
+        <translation>Adicionar Uma Conta de Usuário</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="132"/>
@@ -41,7 +41,7 @@
     <message>
         <location filename="../mainwindow.ui" line="182"/>
         <source>confirm password</source>
-        <translation>Confirme a Senha</translation>
+        <translation>Confirme a senha</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="198"/>
@@ -79,17 +79,17 @@
     <message>
         <location filename="../mainwindow.ui" line="261"/>
         <source>User password:</source>
-        <translation>Senha de usuário:</translation>
+        <translation>Senha do usuário:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="271"/>
         <source>Grant this user administrative rights to the system (sudo)</source>
-        <translation>Conceder a este usuário os direitos administrativos do sistema operacional (sudo)</translation>
+        <translation>Conceder a este usuário os direitos de administrador (sudo) do sistema operacional</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="290"/>
         <source>Delete User Account</source>
-        <translation>Excluir a Conta de Usuário</translation>
+        <translation>Excluir a Conta do Usuário</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="333"/>
@@ -100,43 +100,43 @@
         <location filename="../mainwindow.ui" line="349"/>
         <location filename="../mainwindow.ui" line="1436"/>
         <source>Select user to delete</source>
-        <translation>Selecione o usuário para excluir</translation>
+        <translation>Selecione o usuário que você quer excluir</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="358"/>
         <source>User to delete:</source>
-        <translation>Usuário que será excluído:</translation>
+        <translation>O usuário que será excluído é:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="374"/>
         <source>Also delete the user&apos;s home directory</source>
-        <translation>Excluir também a pasta pessoal ou diretório home do usuário</translation>
+        <translation>Excluir também a pasta pessoal ou diretório ‘home’ do usuário</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="377"/>
         <source>Delete user home directory</source>
-        <translation>Excluir a pasta pessoal ou diretório home do usuário</translation>
+        <translation>Excluir a pasta pessoal ou diretório ‘home’ do usuário</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="396"/>
         <source>Rename User Account</source>
-        <translation>Renomear a Conta de Usuário</translation>
+        <translation>Renomear a Conta do Usuário</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="408"/>
         <location filename="../mainwindow.ui" line="570"/>
         <source>Select user to modify:</source>
-        <translation>Selecione o usuário para modificar:</translation>
+        <translation>Selecione o usuário que você quer modificar:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="450"/>
         <source>New user name:</source>
-        <translation>Novo nome de usuário:</translation>
+        <translation>Novo nome do usuário:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="491"/>
         <source>Change User Password</source>
-        <translation>Alterar a Senha de Usuário</translation>
+        <translation>Alterar a Senha do Usuário</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="519"/>
@@ -151,7 +151,7 @@
     <message>
         <location filename="../mainwindow.ui" line="554"/>
         <source>confirm new password</source>
-        <translation>confirme a nova senha</translation>
+        <translation>Confirme a nova senha</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="586"/>
@@ -166,19 +166,19 @@
     <message>
         <location filename="../mainwindow.ui" line="623"/>
         <source>Repair a user configuration</source>
-        <translation>Reparar uma configuração de usuário</translation>
+        <translation>Reparar uma configuração do usuário</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="657"/>
         <location filename="../mainwindow.ui" line="1393"/>
         <source>Modify User Account</source>
-        <translation>Modificar a Conta de Usuário</translation>
+        <translation>Modificar a Conta do Usuário</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="669"/>
         <location filename="../mainwindow.ui" line="685"/>
         <source>Select user to repair</source>
-        <translation>Selecione o usuário para reparar</translation>
+        <translation>Selecione o usuário que você quer reparar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="672"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../mainwindow.ui" line="744"/>
         <source>Mozilla (Iceweasel or Firefox) configs</source>
-        <translation>Configurações para o Mozilla (Iceweasel ou Firefox)</translation>
+        <translation>Configurações para o Navegador de Internet Mozilla (Iceweasel ou Firefox)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="747"/>
@@ -209,7 +209,7 @@
     <message>
         <location filename="../mainwindow.ui" line="754"/>
         <source>Restore group memberships to MX defaults</source>
-        <translation>Restaurar associações de grupo para os padrões do MX</translation>
+        <translation>Restaurar as associações do grupo para os padrões do MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="760"/>
@@ -250,7 +250,7 @@
         <location filename="../mainwindow.ui" line="855"/>
         <location filename="../mainwindow.ui" line="922"/>
         <source>Select desktop to copy from</source>
-        <translation>Selecione a área de trabalho de onde copiar</translation>
+        <translation>Selecione a área de trabalho de onde você quer copiar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="868"/>
@@ -266,7 +266,7 @@
         <location filename="../mainwindow.ui" line="887"/>
         <location filename="../mainwindow.ui" line="900"/>
         <source>Select desktop to copy to</source>
-        <translation>Selecione a área de trabalho para onde copiar</translation>
+        <translation>Selecione a área de trabalho para onde você quer copiar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="909"/>
@@ -301,7 +301,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1009"/>
         <source>Select to copy/sync entire home</source>
-        <translation>Selecione para copiar/sincronizar toda a pasta pessoal ou diretório home</translation>
+        <translation>Selecione para copiar/sincronizar toda a pasta pessoal ou diretório ‘home’</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1012"/>
@@ -311,12 +311,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1028"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation>Selecione para copiar/sincronizar a configuração do navegador</translation>
+        <translation>Selecione para copiar/sincronizar as configurações do navegador</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1031"/>
         <source>Mozilla (Firefox or Iceweasel) configs</source>
-        <translation>Configurações do Mozilla (Firefox ou Iceweasel)</translation>
+        <translation>Configurações do Navegador de Internet Mozilla (Firefox ou Iceweasel)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1044"/>
@@ -331,7 +331,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1054"/>
         <source>What to copy/sync:</source>
-        <translation>O que copiar/sincronizar:</translation>
+        <translation>O que você quer copiar/sincronizar:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1070"/>
@@ -357,12 +357,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1172"/>
         <source>Add/Remove Groups</source>
-        <translation>Adicionar/Remover grupos</translation>
+        <translation>Adicionar/Remover Grupos</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1184"/>
         <source>Add Group</source>
-        <translation>Adicionar Grupo</translation>
+        <translation>Adicionar Um Grupo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1211"/>
@@ -377,7 +377,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1227"/>
         <source>Create a group with GID &gt; 1000</source>
-        <translation>Crie um grupo com GID &gt; 1000</translation>
+        <translation>Criar um grupo com GID &gt; 1000</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1230"/>
@@ -397,12 +397,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1281"/>
         <source>Delete Group</source>
-        <translation>Excluir Grupo</translation>
+        <translation>Excluir o Grupo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1350"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select group to delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selecione o grupo a ser excluído&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selecione o grupo que você quer excluir/apagar&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1359"/>
@@ -412,7 +412,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1366"/>
         <source>*Please doublecheck your selections before applying, removing a wrong group can break your system.</source>
-        <translation>*Por favor, verifique as suas seleções antes de aplicar, porque se você excluir um grupo errado poderá danificar o seu sistema operacional.</translation>
+        <translation>*Por favor, verifique as suas seleções antes de clicar no botão ‘Aplicar’, porque se você excluir um grupo errado poderá danificar o seu sistema operacional.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1381"/>
@@ -422,12 +422,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1455"/>
         <source>Groups user belongs to (change the groups by selecting/deselecting the appropriate boxes):</source>
-        <translation>O usuário pertence aos grupos (altere os grupos marcando/desmarcando as caixas apropriadas):</translation>
+        <translation>O usuário pertence aos grupos (altere os grupos marcando/desmarcando as caixas de seleção apropriadas):</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1478"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
-        <translation>*Por favor, verifique as suas seleções antes de aplicá-las, se você atribuir associações erradas dos membros do grupo poderá danificar o seu sistema operacional. Se você cometeu algum erro, utilize a opção “Restaurar associações de grupo para os padrões do MX” que está disponível na aba ou guia Opções.</translation>
+        <translation>*Por favor, verifique as suas seleções antes de clicar no botão ‘Aplicar’, se você atribuir associações erradas aos membros do grupo poderá danificar o seu sistema operacional. Se você cometeu algum erro, utilize a opção ‘Restaurar as associações do grupo para os padrões do MX’ que está disponível na aba ou guia ‘Opções’.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1507"/>
@@ -467,7 +467,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1651"/>
         <source>Apply any changes</source>
-        <translation>Aplicar as alterações</translation>
+        <translation>Aplicar as Alterações</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1654"/>
@@ -527,17 +527,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="206"/>
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
-        <translation>A configuração de usuário será reparada. Por favor, feche todos os outros aplicativos agora. Quando você concluir, saia da sessão ou reinicie. Você tem certeza de que quer reparar agora?</translation>
+        <translation>As configurações do usuário será reparada. Por favor, feche todos os outros aplicativos agora. Quando você concluir, saia da sessão ou reinicie o sistema operacional. Você tem certeza de que quer reparar agora?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="227"/>
         <source>User group membership was restored.</source>
-        <translation>A associação ao grupo de usuários foi restaurada.</translation>
+        <translation>A associação ao grupo dos usuários foi restaurada.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Mozilla settings were reset.</source>
-        <translation>As configurações do Mozilla foram redefinidas.</translation>
+        <translation>As configurações do Navegador de Internet Mozilla foram redefinidas.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -563,7 +563,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
-        <translation>Antes de copiar, feche todos os outros aplicativos. Certifique-se de que o destino de ‘copiar para’ é suficientemente grande para receber todos os arquivos que você está copiando. Copiar entre áreas de trabalho pode sobrescrever ou apagar seus arquivos ou preferências na área de trabalho de destino. Você tem certeza de que quer continuar?</translation>
+        <translation>Antes de copiar, feche todos os outros aplicativos. Certifique-se de que o destino de ‘copiar para’ possui espaço livre suficientemente grande para receber todos os arquivos que você está copiando. Copiar entre áreas de trabalho pode sobrescrever ou excluir/apagar seus arquivos ou preferências na área de trabalho de destino. Você tem certeza de que quer continuar?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="292"/>
@@ -586,12 +586,12 @@
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation>O nome de usuário não pode conter caracteres especiais ou espaços.
-Por favor, insira outro nome de usuário antes de prosseguir.</translation>
+Por favor, insira outro nome de usuário antes de continuar.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="332"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
-        <translation>Desculpe, este nome já está em uso. Por favor, insira um nome diferente.</translation>
+        <translation>Desculpe-me, este nome já está em uso. Por favor, insira um nome diferente.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="336"/>
@@ -613,7 +613,7 @@ Por favor, insira outro nome de usuário antes de prosseguir.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
         <source>Failed to add the user.</source>
-        <translation>Falha ao adicionar o usuário.</translation>
+        <translation>Ocorreu uma falha ao adicionar o usuário.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="404"/>
@@ -623,12 +623,12 @@ Por favor, insira outro nome de usuário antes de prosseguir.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="407"/>
         <source>Failed to change password.</source>
-        <translation>Falha na alteração da senha.</translation>
+        <translation>Ocorreu uma falha na alteração da senha.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="414"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
-        <translation>Esta ação não pode ser desfeita. Você tem certeza de que pretende excluir o usuário %1?</translation>
+        <translation>Esta ação não pode ser desfeita. Você tem certeza de que pretende excluir/apagar o usuário %1?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="424"/>
@@ -638,19 +638,19 @@ Por favor, insira outro nome de usuário antes de prosseguir.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="426"/>
         <source>Failed to delete the user.</source>
-        <translation>Falha ao excluir o usuário.</translation>
+        <translation>Ocorreu uma falha ao excluir o usuário.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="439"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
-        <translation>O nome de grupo tem que ter pelo menos 2 caracteres. Por favor, insira um nome mais longo antes de continuar.</translation>
+        <translation>O nome do grupo tem que ter pelo menos 2 caracteres. Por favor, insira um nome mais longo antes de continuar.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="444"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>O nome de grupo tem que estar em letras 
+        <translation>O nome do grupo tem que estar em letras 
 minúsculas e não pode conter caracteres 
 especiais ou espaços.
 Por favor, insira um outro nome antes de 
@@ -659,7 +659,7 @@ continuar.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="452"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
-        <translation>Desculpe, esse nome de grupo já existe. Por favor, insira um nome diferente.</translation>
+        <translation>Desculpe-me, este nome do grupo já existe. Por favor, insira um nome diferente.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="460"/>
@@ -669,22 +669,22 @@ continuar.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="462"/>
         <source>Failed to add the system group.</source>
-        <translation>Falha ao adicionar o grupo.</translation>
+        <translation>Ocorreu uma falha ao adicionar o grupo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="475"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
-        <translation>Esta ação não poderá ser desfeita. Você tem certeza de que pretende excluir o grupo %1?</translation>
+        <translation>Esta ação não poderá ser desfeita. Você tem certeza de que pretende excluir/apagar o grupo %1?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="478"/>
         <source>This action cannot be undone. Are you sure you want to delete the following groups: %1?</source>
-        <translation>Esta ação não poderá ser desfeita. Você tem certeza de que pretende excluir os grupos %1?</translation>
+        <translation>Esta ação não poderá ser desfeita. Você tem certeza de que pretende excluir/apagar os grupos %1?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>Failed to delete the group.</source>
-        <translation>Falha ao excluir o grupo.</translation>
+        <translation>Ocorreu uma falha ao excluir o grupo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
@@ -709,7 +709,7 @@ continuar.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
         <source>Failed to apply group changes</source>
-        <translation>Falha ao aplicar as alterações do grupo</translation>
+        <translation>Ocorreu uma falha ao aplicar as alterações do grupo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="523"/>
@@ -719,28 +719,28 @@ continuar.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="524"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
-        <translation>Para renomear este usuário, saia da sessão e volte a entrar com outra conta de usuário.</translation>
+        <translation>Para renomear este usuário, saia da sessão atual e entre novamente utilizando a  conta de um outro usuário.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>O nome de usuário tem que estar em letras 
+        <translation>O nome do usuário tem que estar em letras 
 minúsculas e não pode conter caracteres 
 especiais ou espaços. 
-Por favor, insira um outro nome de usuário 
+Por favor, insira um outro nome do usuário 
 antes de continuar.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="544"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
-        <translation>Desculpe, este nome já existe em seu sistema. Por favor, insira um nome diferente.</translation>
+        <translation>Desculpe-me, este nome já existe em seu sistema operacional. Por favor, insira um nome diferente.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="552"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
-        <translation>Falha ao renomear o usuário. Por favor, certifique-se de que o usuário não esteja acessando a sessão; pode ser necessário reiniciar.</translation>
+        <translation>Ocorreu uma falha ao renomear o usuário. Por favor, certifique-se de que o usuário não esteja acessando a sessão atual, pode ser necessário reiniciar o sistema operacional.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="574"/>
@@ -751,23 +751,23 @@ antes de continuar.</translation>
         <location filename="../mainwindow.cpp" line="586"/>
         <location filename="../mainwindow.cpp" line="613"/>
         <source>Synchronizing desktop...ok</source>
-        <translation>Sincronizando a área de trabalho... concluído.</translation>
+        <translation>Sincronizando a área de trabalho... foi concluído com sucesso.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="588"/>
         <location filename="../mainwindow.cpp" line="615"/>
         <source>Copying desktop...ok</source>
-        <translation>Copiando a área de trabalho... concluído.</translation>
+        <translation>Copiando a área de trabalho... foi concluído com sucesso.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="618"/>
         <source>Synchronizing desktop...failed</source>
-        <translation>Sincronizando a área de trabalho... falhou</translation>
+        <translation>Sincronizando a área de trabalho... ocorreu uma falha.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="620"/>
         <source>Copying desktop...failed</source>
-        <translation>Copiando a área de trabalho... falhou</translation>
+        <translation>Copiando a área de trabalho... ocorreu uma falha.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="637"/>
@@ -777,7 +777,7 @@ antes de continuar.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="638"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
-        <translation>O processo não foi concluído. Você tem certeza de que quer desistir e fechar o aplicativo?</translation>
+        <translation>O processo não foi concluído. Você tem certeza de que quer desistir e fechar este aplicativo?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="843"/>
@@ -792,7 +792,7 @@ antes de continuar.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="845"/>
         <source>Simple user configuration for MX Linux</source>
-        <translation>Configuração simples de usuários para o MX Linux</translation>
+        <translation>Configurações simples de usuários para o MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="847"/>
@@ -812,7 +812,7 @@ antes de continuar.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="878"/>
         <source>Select folder to copy to</source>
-        <translation>Selecionar a pasta para onde copiar</translation>
+        <translation>Selecionar a pasta para onde você quer copiar</translation>
     </message>
 </context>
 <context>
@@ -820,47 +820,47 @@ antes de continuar.</translation>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>Insignificante</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Muito fraca</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Fraca</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Moderada</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Forte</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Muito forte</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="147"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nível de segurança da senha: %1</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar a senha</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Exibir a senha</translation>
     </message>
 </context>
 <context>
@@ -894,7 +894,7 @@ antes de continuar.</translation>
     <message>
         <location filename="../main.cpp" line="59"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation>Ao que parece, você está acessando a sessão com o usuário root. Por favor, saia da sessão atual e entre novamente com o usuário normal para utilizar este programa.</translation>
+        <translation>Ao que parece, você está acessando a sessão atual com o usuário ‘root’ (administrador). Por favor, saia da sessão atual e entre novamente com o usuário normal para utilizar este programa.</translation>
     </message>
 </context>
 </TS>

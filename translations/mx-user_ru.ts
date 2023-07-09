@@ -850,12 +850,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрыть пароль</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображать пароль</translation>
     </message>
 </context>
 <context>

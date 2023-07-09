@@ -851,12 +851,12 @@ Velg et annet brukernavn.</translation>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjul passord</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis passord</translation>
     </message>
 </context>
 <context>

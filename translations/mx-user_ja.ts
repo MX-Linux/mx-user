@@ -26,7 +26,7 @@
     <message>
         <location filename="../mainwindow.ui" line="132"/>
         <source>Enter password for new user</source>
-        <translation>新規ユーザーのパスワードを入れて下さい</translation>
+        <translation>新規ユーザーのパスワードを入力してください</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="141"/>
@@ -239,7 +239,7 @@
     <message>
         <location filename="../mainwindow.ui" line="801"/>
         <source>Copy/Sync</source>
-        <translation>コピー・同期</translation>
+        <translation>コピー／同期</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="828"/>
@@ -291,7 +291,7 @@
     <message>
         <location filename="../mainwindow.ui" line="993"/>
         <source>Select to copy/sync Shared</source>
-        <translation>コピー・同期先を選択して下さい</translation>
+        <translation>コピー／同期先を選択して下さい</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="996"/>
@@ -301,7 +301,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1009"/>
         <source>Select to copy/sync entire home</source>
-        <translation>コピー・同期するホーム全体の選択</translation>
+        <translation>コピー／同期するホーム全体の選択</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1012"/>
@@ -311,7 +311,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1028"/>
         <source>Select to copy/sync the browser configuration</source>
-        <translation>コピー・同期するブラウザ設定の選択</translation>
+        <translation>コピー／同期するブラウザ設定の選択</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1031"/>
@@ -357,7 +357,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1172"/>
         <source>Add/Remove Groups</source>
-        <translation>グループの追加・削除</translation>
+        <translation>グループの追加／削除</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1184"/>
@@ -814,47 +814,47 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>わずかな</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>非常に弱い</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>弱い</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>ほど良い</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>強い</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>非常に強い</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="147"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワードの強度: %1</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワードを隠す</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>パスワードを表示する</translation>
     </message>
 </context>
 <context>

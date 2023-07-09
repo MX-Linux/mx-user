@@ -849,12 +849,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Ascunde parola</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Arată parola</translation>
     </message>
 </context>
 <context>

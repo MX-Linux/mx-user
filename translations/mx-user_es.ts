@@ -815,47 +815,47 @@ Escoja otro antes de continuar, por favor.</translation>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>Insignificante</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Muy débil</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="144"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Débil</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Moderado</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Fuerte</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="145"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Muy fuerte</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="147"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Fuerza de la contraseña: %1</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar la contraseña</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="180"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar la contraseña</translation>
     </message>
 </context>
 <context>
