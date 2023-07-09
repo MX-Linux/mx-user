@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 08 Jul 2023 22:22:28 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 23.7.02
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.7.02) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ f6af1bdd198cc25ddce3a0ef627ca2f3d23ab9f4 10240 mx-user_23.7.02_i386.buildinfo
+ 28edb9931af5fe3e93f2f35c24dadedc035014c1 221092 mx-user_23.7.02_i386.deb
+Checksums-Sha256:
+ 866c3956ef07a33392d4294d2d945a0b1e62f4da269f6f67a5ec6f2163bc3f8b 10240 mx-user_23.7.02_i386.buildinfo
+ dcce6afe169b6caaaa0a0f1f8a390953559a8dd9a2e64315a06212d2d213a8b0 221092 mx-user_23.7.02_i386.deb
+Files:
+ edf3c35a751e863b559afbfea8358d3f 10240 system optional mx-user_23.7.02_i386.buildinfo
+ b32dde8762dff38aea082494401a12dd 221092 system optional mx-user_23.7.02_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE9i7eqjrnCpyZ2sQYm2ih6Lm2N1wFAmSqG4UACgkQm2ih6Lm2
+N1zvDhAAibUxkIT92QTvNG/1Mb+y+ATa7y7RiiUSeexlv6YjEA2RAcKDHZ53mNj8
+PG+H9IjlC26vxLae5FbdaLxoNOGKO0I8wwWhDe0r15uDUvYfzIPKT7WR+/hoXXU2
+EmlVQEpfJ35scH+mLz8Uph8y03afYjpjhCmGPavFbDBhaytModBAKcZesaIM3s1C
+Ax7fEt1cX5+LMOVJFHoOPt2kBztMbZ66UKTDC4Ncc/YDqeg4eo1yyqAyj+Q0sHfQ
+kvAcymsBK8XkkkXEOVHNk2wVSYevo2bx8c1CwISRWG/D4POHC+i/eZkqBiDFC0oM
+9VkcJW9BwY3mu32pqiMvdnSlgmPiXQEs6NwFqvOECHXIwbopioqLBrCAmuIlKUYp
+B2FYk8FYsYI7BueVJi+If/juG8CNbPP+zrqRc7XLTyI5WjxL/C6jdnhhtdsR1T9L
+cCe75EJmMjH0TR/65JPB5BTYmXqBZZUUa4egWNU82gmSoCDQ8ErPBvd2gx4OOel9
+8cuM/lyvSQAJZiaa5Ur0ECb3/IQXlSd1wA+QxVrhrsU6FRhNxkQ/HGie0ugx6fuf
+GP/V+VpqMSXqRFLbIMw5MuBR0ixgyzHiUe5kGnqqipMGL69xa9u0KVh0OrM/OOFL
+BHMuN8AXLW02635fnbmDV6JxL9Myf3NHS0q5mCeaO1xKvW2fh6Q=
+=laVa
+-----END PGP SIGNATURE-----

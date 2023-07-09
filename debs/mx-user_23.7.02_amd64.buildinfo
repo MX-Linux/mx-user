@@ -5,17 +5,17 @@ Format: 1.0
 Source: mx-user
 Binary: mx-user
 Architecture: amd64
-Version: 23.7.01
+Version: 23.7.02
 Checksums-Md5:
- 34610465546ab08a2846867c84e8bb19 215884 mx-user_23.7.01_amd64.deb
+ edee14bfdfff5f6e9df790658b95db69 217484 mx-user_23.7.02_amd64.deb
 Checksums-Sha1:
- eb4a89b5264810a6ee533e1b83bca3de53fba46f 215884 mx-user_23.7.01_amd64.deb
+ 94be2ee4feacf20bae8b36039ee666871b8a398b 217484 mx-user_23.7.02_amd64.deb
 Checksums-Sha256:
- eae2189217c177087670c2296ff0e80a943884743dcf32240a20fba0a3adbb25 215884 mx-user_23.7.01_amd64.deb
+ a0c145d3394b3122b70e29408cdcca90558a37276fb18fa720da2d95bcc8c682 217484 mx-user_23.7.02_amd64.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Fri, 07 Jul 2023 03:46:56 +0000
-Build-Path: /build/mx-user-23.7.01
+Build-Date: Sun, 09 Jul 2023 02:29:07 +0000
+Build-Path: /build/mx-user-23.7.02
 Installed-Build-Depends:
  autoconf (= 2.69-14),
  automake (= 1:1.16.3-2),
@@ -331,21 +331,21 @@ Environment:
  LANG="C"
  LC_ALL="C"
  MAKEFLAGS=" -j4"
- SOURCE_DATE_EPOCH="1688701324"
+ SOURCE_DATE_EPOCH="1688869348"
 
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE9i7eqjrnCpyZ2sQYm2ih6Lm2N1wFAmSni2wACgkQm2ih6Lm2
-N1ztqRAA1Zp+LCB/Eq7vgtnP7Uovvfrrse4Y+QBr4w/qjMXMSlR71IHvxNIVLGa3
-WRDfMmz+bbSfDs/UNZ8YcILD6i1Bk/DotcR75YLoKYgW3kgU4Wq5GF1bTGR5TsYm
-vojFAX17eY7Uz/vvmRC2Y2HwljBh76ztNBh+idlAExyrh7mPAHnoyupAbUSIUzJm
-++5/iehVELVkXRJ/oWbfTim2qk0CGAmXcx6vkpr6Z9xL7899taoSzJgeEUgaTO9+
-OWC9iXpa7qFazk9TNbf/PBe4iRwaVcoG/80jeMnZ9gM4jcDogM7ZBWD4rREDCpwJ
-R8bZiFwdx8btQoERTvaGuOb6tF8VOymBqNCBiuRvwUAIMytXlX8mFQw5YApyePUS
-kSvkuFe8suj/MecN1QR4otwuVSN9ypV0TzF/rcUZaK8zmV7VKN8+V/jMynkvPk3J
-u5op00S3jT4rej3bnLtgr58DXo1PEewCt0kcbKFVMdcgItZ1Fzc1dNx43sA2/AOw
-HkBaBqJt2VSd4JxG4BpfqdGhxEK+zv6fktHZtwLrxp0XXdunzkpa1xActIBFwNjU
-UsvFBeQ09UGGi5Crdi3Ob7djX0acYWp8ym0R+2heJ0wZydVP5pkyvhg0jXti4+4C
-0uXAeP0f1H5fefVb2Qqv+h3GxuI8c803ugOlFUCG4wnhm9EjG5s=
-=7fh+
+iQIzBAEBCgAdFiEE9i7eqjrnCpyZ2sQYm2ih6Lm2N1wFAmSqG4EACgkQm2ih6Lm2
+N1xYVw/7B7qpTg34AEFwdq/6qZjBTI//E/5MX0XDNPatGEOtCkIymTF6d+sqvCMH
+p+0fo80bgxu4YZQRpLZP62cOHXcIzI69KBUASFF63xierGq3gO7XxE7gTav1sbpW
+ps9Z16pzSsRqgIND6GzK3UV/HDs+1vcNzYIbIAGvxc9xG2IJpvS9o94+BTrV4Y0y
+3AefV2pJ9fkc4FKi7NihiIuskk2Dpbet6mKUQh4Q3+EUhJVKRtCV4aX4xGG2Dur8
+cdCBiv/avxVOtyzb3+27UkNWxlogo8oz5K2d5uNDrp5MbMmU0POvf2XGM6TRPXE9
+ZtH1zSOmH4fRxwxE0efEUTN4eF3JhyN7Zg+k4n6S3AIH2MUEmE7HUQgdVHHqNpl/
+C0RL1rcgTrKeHuubHO9krmJTpTSNMlds3oZ5Ig7MgKs5yFtRhoUtDyeFBko2/yLl
+SH0WTqCSDwVPk5/jCKEOoriHqeur+VH4UtK2ch0zM+VOWZAZJOrvuzDoIMtMu3Xd
+k6nVuDmr/6mnbKvylNplOGUNOwYblwiusTt8Wp4SZ1iwUZa/8xRk8vSCPeveQp13
+kw5z3rJsMLjut6Pb02eE4FpDJruEKXwFI5DQSEp23BHFj+QE7txaCKRWO6Z++01O
++8V3fgKs3ro+nr+YfHHq8ietz+dckVDlLtFMPB31I24HpKB8ZZE=
+=tRsZ
 -----END PGP SIGNATURE-----

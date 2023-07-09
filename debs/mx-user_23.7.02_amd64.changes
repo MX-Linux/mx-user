@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 08 Jul 2023 22:22:28 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: amd64
+Version: 23.7.02
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.7.02) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ 38cbd74cb28096f841b3831a5ab737a720f79dff 10462 mx-user_23.7.02_amd64.buildinfo
+ 94be2ee4feacf20bae8b36039ee666871b8a398b 217484 mx-user_23.7.02_amd64.deb
+Checksums-Sha256:
+ 66a7bc31bb2369a45e89260c3db42c1688fe4862c7eed2fcdc800318020129d9 10462 mx-user_23.7.02_amd64.buildinfo
+ a0c145d3394b3122b70e29408cdcca90558a37276fb18fa720da2d95bcc8c682 217484 mx-user_23.7.02_amd64.deb
+Files:
+ 895c383a1b4f7c86e4434e59945fe003 10462 system optional mx-user_23.7.02_amd64.buildinfo
+ edee14bfdfff5f6e9df790658b95db69 217484 system optional mx-user_23.7.02_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE9i7eqjrnCpyZ2sQYm2ih6Lm2N1wFAmSqG4UACgkQm2ih6Lm2
+N1zakg//XAPua3mX2Ho+prQ7vDWcNdAnraYAy2ZhbMdWqRvpjgdhd/KDnusak8oM
+94mOpT1ZCbOJnxes5a+rbw6uFF2YKteI02aVoxHCjVMqbac4d3XbW0uqwRRoQCcI
+x0TxxnDb0F3tYPHYQVsq6m4XA/KdgVCYYaib4JJJWxRJk1UbtdnbbWLxOTDxGJpq
+efQE8+u+7nybO9QmovVHHtQJjzxV8hEIqjf7lEpixmTmteRLM5Dnzq/7MmbeRYVe
+4AqxRajYpzL7mlTrDKEAJQhXw9lcUjZyw5Q1G0iS5zJqgJxjHQnMZfC/ulvQoSiU
+jaV1AOC1giORHkuCKqlKtGDHNkF9FtnTXgD7N1f/ug+OnuBNmaxu31cI93vo8AB2
+TOf16W9jnY275By8KRs7Ec7/Tg4HF4W1olexMZiiW+elEMoyI7BEy3FzFXuJFt4G
+DRB+IKnrsaYBxC38mhdaGAPY7VtmA74Qnw7XuWNZQG15e4sPJRBNoQ5IEcxH9H6X
+k18plfaJdEwiakBwhSYz8TgV+R9ByVIr6XEBawzhBZ7qcYj+qq2X8ux2DzYwDvkY
+nXf/cVWFQhIa6ypGbW3biIKALleKqLpDG1HlA5yJj0oROvSeklKCmC/8xPBLsIZz
+kJNUoUZn54P7t+2LJZvO67pNa7piGx3BYDmYjXfJBFxolsOEjTk=
+=5YBi
+-----END PGP SIGNATURE-----
