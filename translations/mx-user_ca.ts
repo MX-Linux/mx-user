@@ -815,47 +815,47 @@ Si us plau, trieu un altre nom abans de continuar.</translation>
 <context>
     <name>PassEdit</name>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Negligible</source>
         <translation>Negligible</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Very weak</source>
         <translation>Molt feble</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Weak</source>
         <translation>Feble</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Moderate</source>
         <translation>Moderat</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Strong</source>
         <translation>Fort</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Very strong</source>
         <translation>Molt Fort</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="147"/>
+        <location filename="../passedit.cpp" line="157"/>
         <source>Password strength: %1</source>
         <translation>Robustesa de la contrasenya: %1</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Hide the password</source>
         <translation>Amaga la contrasenya</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Show the password</source>
         <translation>Mostra la contrasenya</translation>
     </message>
