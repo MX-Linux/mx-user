@@ -25,6 +25,8 @@ class PassEdit : public QObject
 {
     Q_OBJECT
 private:
+    enum EntropyThreshold { Negligible = 0, VeryWeak = 40, Weak = 70, Strong = 100, VeryStrong = 130 };
+
     QLineEdit *master = nullptr;
     QLineEdit *slave = nullptr;
     QAction *actionEye = nullptr;
@@ -33,13 +35,14 @@ private:
     int min;
     bool lastValid = false;
     void generate() noexcept;
-    void masterContextMenu(const QPoint &pos) noexcept;
+    void masterContextMenu(QPoint pos) noexcept;
     void masterTextChanged(const QString &text) noexcept;
     void slaveTextChanged(const QString &text) noexcept;
     void eyeToggled(bool checked) noexcept;
     bool eventFilter(QObject *watched, QEvent *event) noexcept;
+
 public:
-    PassEdit(QLineEdit *master, QLineEdit *slave, int min=0, QObject *parent = nullptr) noexcept;
+    PassEdit(QLineEdit *master, QLineEdit *slave, int min = 0, QObject *parent = nullptr) noexcept;
     inline int minimum() { return min; }
     inline bool valid() const noexcept { return lastValid; }
     inline bool confirmed() const noexcept { return (slave->text() == master->text()); }
