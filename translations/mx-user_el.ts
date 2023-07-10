@@ -814,47 +814,47 @@ Please choose another name before proceeding.</source>
 <context>
     <name>PassEdit</name>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Negligible</source>
         <translation>Αμελητέος</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Very weak</source>
         <translation>Πολύ αδύναμο</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Weak</source>
         <translation>Αδύναμο</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Moderate</source>
         <translation>Μέτριο</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Strong</source>
         <translation>Ισχυρό</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Very strong</source>
         <translation>Πολύ δυνατό</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="147"/>
+        <location filename="../passedit.cpp" line="157"/>
         <source>Password strength: %1</source>
         <translation>Ισχύς κωδικού πρόσβασης: %1</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Hide the password</source>
         <translation>Απόκρυψη του κωδικού πρόσβασης </translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Show the password</source>
         <translation>Εμφάνιση κωδικού πρόσβασης </translation>
     </message>

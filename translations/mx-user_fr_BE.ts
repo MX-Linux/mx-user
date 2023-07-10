@@ -814,47 +814,47 @@ Veuillez choisir un autre nom avant de poursuivre.</translation>
 <context>
     <name>PassEdit</name>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Negligible</source>
         <translation>Négligeable</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Very weak</source>
         <translation>Très faible</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Weak</source>
         <translation>Faible</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Moderate</source>
         <translation>Modérée</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Strong</source>
         <translation>Forte</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Very strong</source>
         <translation>Très forte</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="147"/>
+        <location filename="../passedit.cpp" line="157"/>
         <source>Password strength: %1</source>
         <translation>Fiabilité du mot de passe: %1</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Hide the password</source>
         <translation>Cacher le mot de passe</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Show the password</source>
         <translation>Afficher le mot de passe</translation>
     </message>

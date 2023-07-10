@@ -814,47 +814,47 @@ Bitte wählen sie einen anderen Namen, bevor sie weitermachen.</translation>
 <context>
     <name>PassEdit</name>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>Minimal</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Sehr schwach</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Schwach</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Mittel</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Stark</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Sehr stark</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="147"/>
+        <location filename="../passedit.cpp" line="157"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Passwortstärke: %1</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Hide the password</source>
         <translation>Paßwort verbergen</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Show the password</source>
         <translation>Paßwort anzeigen</translation>
     </message>

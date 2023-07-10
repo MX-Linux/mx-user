@@ -812,47 +812,47 @@ Please choose another name before proceeding.</source>
 <context>
     <name>PassEdit</name>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Negligible</source>
         <translation>わずかな</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Very weak</source>
         <translation>非常に弱い</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="144"/>
+        <location filename="../passedit.cpp" line="155"/>
         <source>Weak</source>
         <translation>弱い</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Moderate</source>
         <translation>ほど良い</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Strong</source>
         <translation>強い</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="145"/>
+        <location filename="../passedit.cpp" line="156"/>
         <source>Very strong</source>
         <translation>非常に強い</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="147"/>
+        <location filename="../passedit.cpp" line="157"/>
         <source>Password strength: %1</source>
         <translation>パスワードの強度: %1</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Hide the password</source>
         <translation>パスワードを隠す</translation>
     </message>
     <message>
-        <location filename="../passedit.cpp" line="180"/>
+        <location filename="../passedit.cpp" line="192"/>
         <source>Show the password</source>
         <translation>パスワードを表示する</translation>
     </message>
