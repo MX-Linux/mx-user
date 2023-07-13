@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 13 Jul 2023 13:38:39 -0400
+Source: mx-user
+Architecture: source
+Version: 23.7.05
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (23.7.05) mx; urgency=medium
+ .
+   * Set Session=plasma.desktop only on KDE
+Checksums-Sha1:
+ c40e6998d09f5df612fb3dfe1c5e7f1f35a6a58e 1167 mx-user_23.7.05.dsc
+ adf895d137c8f8a1bfb89d45f228e150c5304566 180152 mx-user_23.7.05.tar.xz
+ af7a8944292dec42cd2c9b44ee4b123c220d9b5e 10778 mx-user_23.7.05_amd64.buildinfo
+Checksums-Sha256:
+ 1148f53d1f6687dbaa21cef757cd89a606c439a06d4c7d29eef53d866e3f326f 1167 mx-user_23.7.05.dsc
+ 43cdfd8fd0aa4532fecd29ed9b08aa9b75ac7d0496f91e092c935080f37d1fd2 180152 mx-user_23.7.05.tar.xz
+ aca6d7523bba304c1778ecb5eb75ff251bd31f20b8d69910fe3477332f5f7b27 10778 mx-user_23.7.05_amd64.buildinfo
+Files:
+ c9857734c38f49ce638e1103b5a8ebf4 1167 system optional mx-user_23.7.05.dsc
+ 4720d79304e8eda8a6006abc650008d4 180152 system optional mx-user_23.7.05.tar.xz
+ cd42852a2444f3002437ed865283200b 10778 system optional mx-user_23.7.05_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmSwNycTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumGB+B/98mnFp4/6fxapOc0DXWIztEZKd+2eL
+x3QH+K5FyQlFo164qGlpq0hhJ27weZF1tHuVxggkTxmFIp5CBd3cGKKW/qC1AouB
+TTIsU6Q/55o8ge9M9YwRjWgDRvtg9pLMNbJc2kFu+hyu8p8g4AMwFfWQF+lFc3S/
+iyE5noFlboqKyy3FvyJ9XZPkcjzP8Jswy7h+tD5PIPIVPM4obahZIVVm4B2Qxze9
+Aw+Btuz2r1u5Q3CYTDOHH+C+8hjyJyqVjxJdEm23drdrNcnJxmKxwYH8WiMBngi2
+JNXEFC/inCkaGjXLxyLgp9Au/+WvktABPVZLIipP46CLc5OJG5cGcfrj
+=TqUY
+-----END PGP SIGNATURE-----
