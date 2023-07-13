@@ -60,10 +60,7 @@ MainWindow::MainWindow(QWidget *parent)
     refresh();
 }
 
-MainWindow::~MainWindow()
-{
-    settings.setValue(QStringLiteral("geometry"), saveGeometry());
-}
+MainWindow::~MainWindow() { settings.setValue(QStringLiteral("geometry"), saveGeometry()); }
 
 void MainWindow::refresh()
 {
@@ -243,8 +240,10 @@ void MainWindow::applyOptions()
             QProcess::execute("sed",
                               {"-iE", QString("/^autologin-user=/d; /^[[]SeatDefaults[]]/aautologin-user=%1").arg(user),
                                "/etc/lightdm/lightdm.conf"});
-        if (QFile::exists(QStringLiteral("/etc/sddm.conf")))
-            QProcess::execute("sed", {"-i", QString("s/^User=.*/User=%1/").arg(user), "/etc/sddm.conf"});
+        if (QFile::exists("/etc/sddm.conf")) {
+            QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
+            sddm_settings.setValue("Autologin/User", user);
+        }
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been enabled for the '%1' account.").arg(user)));
     }
@@ -679,7 +678,6 @@ void MainWindow::on_userComboBox_activated(const QString & /*unused*/)
             radioAutologinNo->setChecked(true);
     } else if (QProcess::execute("pgrep", {"sddm"}) == 0) {
         QSettings sddm_settings(QStringLiteral("/etc/sddm.conf"), QSettings::NativeFormat);
-        qDebug() << "TEST" << sddm_settings.value(QStringLiteral("Autologin/User")).toString();
         if (sddm_settings.value(QStringLiteral("Autologin/User")).toString() == user)
             radioAutologinYes->setChecked(true);
         else
