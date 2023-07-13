@@ -242,6 +242,7 @@ void MainWindow::applyOptions()
                                "/etc/lightdm/lightdm.conf"});
         if (QFile::exists("/etc/sddm.conf")) {
             QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
+            sddm_settings.setValue("Autologin/Session", "plasma.desktop");
             sddm_settings.setValue("Autologin/User", user);
         }
         QMessageBox::information(this, tr("Autologin options"),
