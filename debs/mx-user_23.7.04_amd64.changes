@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 12 Jul 2023 22:26:14 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 23.7.04
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.7.04) mx; urgency=medium
+ .
+   * Fix: sddm autologin if entry doesn't exit in sddm.conf
+Checksums-Sha1:
+ f34273260b2f32666af0660b7182591f97b7dc79 1167 mx-user_23.7.04.dsc
+ bb24b387dc6d2d3948976a6cbf32a19f34a4f788 180092 mx-user_23.7.04.tar.xz
+ 5896ed6dd0f557a5404fca413aeab18c93c7ad29 10778 mx-user_23.7.04_amd64.buildinfo
+ 0c14c7a88f5701fe6cec082cd5a6854ca9de8926 218308 mx-user_23.7.04_amd64.deb
+Checksums-Sha256:
+ 904295f03dc6c419f076edd83d4bcf731d355bd23d959a8df171d69384f42714 1167 mx-user_23.7.04.dsc
+ 5148f410baf7ae5ecbea1da385efc1867fc2293911ac3576be1918c0746fd0ca 180092 mx-user_23.7.04.tar.xz
+ eac565b0850f82dc36715c7da9723d3410f40e05d061cbbdf9f9438157c89ba9 10778 mx-user_23.7.04_amd64.buildinfo
+ 5eba41640aecbdca6fc21bcbc34d57af22fde103034f1e7922a32f4d9e9827f6 218308 mx-user_23.7.04_amd64.deb
+Files:
+ 98afdb032cca701eee80f3663b7199fb 1167 system optional mx-user_23.7.04.dsc
+ 4547db94831e1cf7cfd276ec5032f722 180092 system optional mx-user_23.7.04.tar.xz
+ fc8e4ffb4b7f55c0aa59bdcc2a0b5d47 10778 system optional mx-user_23.7.04_amd64.buildinfo
+ 8404c4b2f54fd2ddfc148e67a7b9e5d9 218308 system optional mx-user_23.7.04_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmSvZiATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumONOCACP+MFcd8i65ANOR0uacZcru3k4Mu14
+/r3GRLalZDYiNQM1Y8qrzkkqhHIajK1rsjXKC0xoRSow2RR01mwOoOMaDxxxCMYR
+ysDVVzRF6Lfv113Wdpd3vwLpoClCkmflczYb/B/x4BG4dm7NHKeCUIll3IhUb1eT
+zOBPZKDInnbYZnKyykQWFN5CtPRj/aYJKJnxF36sgeHtJKtfViBtntcBVU8sEltu
+TIOXwzggUjd/W6PLo21zQhi5WPCkv/bkKotPJv/QocpJP8qEVLeTjjogB2ImYyLl
+qIo5BXvvy/Dchf4fX1/xR6soo8AuXAjvoZ1cSU3zQEhwuiirGV+v20Oq
+=M4E/
+-----END PGP SIGNATURE-----
