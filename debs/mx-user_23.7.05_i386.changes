@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Thu, 13 Jul 2023 13:38:39 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 23.7.05
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.7.05) mx; urgency=medium
+ .
+   * Set Session=plasma.desktop only on KDE
+Checksums-Sha1:
+ c44c86e63a75b2324f1bb0f3ba4780447c1b546c 10115 mx-user_23.7.05_i386.buildinfo
+ 23d94bbebaca111145898dc0bea06201432cb217 222872 mx-user_23.7.05_i386.deb
+Checksums-Sha256:
+ 2c2d38431c7b87db4497c39224124c4a05edd50cc87fda26274ce8a020cb11c4 10115 mx-user_23.7.05_i386.buildinfo
+ 1783b8a09902236eb904a4da15f4978e35488b448aab061fab4cebb3e14f2513 222872 mx-user_23.7.05_i386.deb
+Files:
+ 7202e81dbae3f8ef5134a5e4ca28468b 10115 system optional mx-user_23.7.05_i386.buildinfo
+ 25639b29f70461eb2431e5024713bf72 222872 system optional mx-user_23.7.05_i386.deb

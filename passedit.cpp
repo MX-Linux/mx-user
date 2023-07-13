@@ -98,7 +98,7 @@ void PassEdit::generate() noexcept
         }
         const QString &word = words.at(pos);
         const int origlen = gentext.length();
-        if (origlen)
+        if (origlen != 0)
             gentext.append(' ');
         gentext.append(word);
         if (gentext.length() > genmax) {
@@ -127,7 +127,7 @@ bool PassEdit::eventFilter(QObject *watched, QEvent *event) noexcept
     const QEvent::Type etype = event->type();
     if (etype == QEvent::EnabledChange || etype == QEvent::Hide) {
         auto *w = qobject_cast<QLineEdit *>(watched);
-        if (actionEye && !(w->isVisible() && w->isEnabled()))
+        if ((actionEye != nullptr) && !(w->isVisible() && w->isEnabled()))
             actionEye->setChecked(false);
     }
     return false;

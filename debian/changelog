@@ -1,3 +1,9 @@
+mx-user (23.7.05) mx; urgency=medium
+
+  * Set Session=plasma.desktop only on KDE
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 13 Jul 2023 13:38:39 -0400
+
 mx-user (23.7.04) mx; urgency=medium
 
   * Fix: sddm autologin if entry doesn't exit in sddm.conf
