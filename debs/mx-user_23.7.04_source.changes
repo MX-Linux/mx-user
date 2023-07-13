@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 12 Jul 2023 22:26:14 -0400
+Source: mx-user
+Architecture: source
+Version: 23.7.04
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (23.7.04) mx; urgency=medium
+ .
+   * Fix: sddm autologin if entry doesn't exit in sddm.conf
+Checksums-Sha1:
+ f34273260b2f32666af0660b7182591f97b7dc79 1167 mx-user_23.7.04.dsc
+ bb24b387dc6d2d3948976a6cbf32a19f34a4f788 180092 mx-user_23.7.04.tar.xz
+ 5896ed6dd0f557a5404fca413aeab18c93c7ad29 10778 mx-user_23.7.04_amd64.buildinfo
+Checksums-Sha256:
+ 904295f03dc6c419f076edd83d4bcf731d355bd23d959a8df171d69384f42714 1167 mx-user_23.7.04.dsc
+ 5148f410baf7ae5ecbea1da385efc1867fc2293911ac3576be1918c0746fd0ca 180092 mx-user_23.7.04.tar.xz
+ eac565b0850f82dc36715c7da9723d3410f40e05d061cbbdf9f9438157c89ba9 10778 mx-user_23.7.04_amd64.buildinfo
+Files:
+ 98afdb032cca701eee80f3663b7199fb 1167 system optional mx-user_23.7.04.dsc
+ 4547db94831e1cf7cfd276ec5032f722 180092 system optional mx-user_23.7.04.tar.xz
+ fc8e4ffb4b7f55c0aa59bdcc2a0b5d47 10778 system optional mx-user_23.7.04_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmSvZiETHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumL5vCAC26L2f+sJfeoQYholGvSxeWKrk/+q/
+7IZxd5w0vNan2zudOHJ5mUnziLBSZQzC65r8Y1oKMQv1ZH3UlQdZsDFttnWrrh2K
+GLV8gv/hGsdC8PweTG6NK+RvoIsYY2tybyS3IIh+o4jKmygPOwEA/r6MxavbMOzU
+ElUBLEf4m+RlickPSinDjAdckBqqspdscDlwKWYPEcaB24xqZmrFMeeXlYO4MX+l
+t5K9x55pOA7ckVZKX7YDbMLQlsjewDPeNM/oIXeLE5hJdLh0/VkDz1tvf/uEq0OR
+Lg+JLT5SI9DrVAB79zaPSx6JNRhi+9Jt2/PwUzKiyKytvegEcEMz2ljW
+=UXcE
+-----END PGP SIGNATURE-----
