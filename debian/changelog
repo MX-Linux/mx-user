@@ -1,3 +1,10 @@
+mx-user (23.7.06) mx; urgency=medium
+
+  * Reduce password minimum length to 1 character.
+  * Update translations
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 20 Jul 2023 00:30:19 -0400
+
 mx-user (23.7.05) mx; urgency=medium
 
   * Set Session=plasma.desktop only on KDE

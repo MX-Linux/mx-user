@@ -874,7 +874,7 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../about.cpp" line="54"/>
         <source>Cancel</source>
-        <translation>Отменить</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="74"/>

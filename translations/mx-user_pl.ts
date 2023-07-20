@@ -84,7 +84,7 @@
     <message>
         <location filename="../mainwindow.ui" line="271"/>
         <source>Grant this user administrative rights to the system (sudo)</source>
-        <translation type="unfinished"></translation>
+        <translation>Przyznaj temu użytkownikowi prawa administracyjne do systemu (sudo)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="290"/>
@@ -816,37 +816,37 @@ Wybierz inną nazwę, zanim przejdziesz dalej.</translation>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieistotne</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Bardzo słabe</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Słabe</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Umiarkowane</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Silne</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Bardzo silne</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="157"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Siła hasła: %1</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="192"/>

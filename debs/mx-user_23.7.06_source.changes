@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 20 Jul 2023 00:30:19 -0400
+Source: mx-user
+Architecture: source
+Version: 23.7.06
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (23.7.06) mx; urgency=medium
+ .
+   * Reduce password minimum length to 1 character.
+   * Update translations
+Checksums-Sha1:
+ df075955c70114de89867f4cb4eacea650ec133b 1167 mx-user_23.7.06.dsc
+ f817d1adfe596e9f07d3ae60f1ad81bff25e0dcb 180576 mx-user_23.7.06.tar.xz
+ 5249705e3cd4be8b66d4c7e21d08418720259dbe 10778 mx-user_23.7.06_amd64.buildinfo
+Checksums-Sha256:
+ 2d9cbe05aab88545ad79dc21214f8303430bccdec0fe05e50b5da595918996fd 1167 mx-user_23.7.06.dsc
+ f81a2f9b48d24149980ab629bc7554de8b13dce25fdde65b6074d0cb12ffd076 180576 mx-user_23.7.06.tar.xz
+ 95beacea5fcd85bb0e1c1d6b276c9c5773a6f05f3081735f0ce7f17bd7999444 10778 mx-user_23.7.06_amd64.buildinfo
+Files:
+ d289da75e956453214d7c839f13c9fb6 1167 system optional mx-user_23.7.06.dsc
+ 5c500a132186db4e7d397af433b77116 180576 system optional mx-user_23.7.06.tar.xz
+ ef08c6b3b2268b65564f67598d83eea5 10778 system optional mx-user_23.7.06_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmS4uWwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumLB7B/9iqmJCc4DlnzgM6pueK/fAsyfZqa9H
+ijTytngYB7V//02DX3u5QaNqCicNjK2YzMOl2soMjyGHWcgH2GCak+3gY0w2bxRU
+41EKUq1tGI4zCpHBniUwlmxOtnfvmEKxBZRPQ8BfeS+zngp3zhYC3ijxxAuqTEH8
+Rm79JeIVLIObvSpReY6sktxeC97oIPO6ubqqUFpUblkeHDQ5MsQ0HHeAFuhg+Iab
+cy8q2sBzoqDoGFVC4Nr6sA2MsUYdc5dxv19iUMzVcit6UAYgy2WZC8bE4EQbeVKe
+AHXMqoZCZsfXcx3moHVc8VGPVRWKfcm+hTnSWGPaPTNrVHnZzsckFEBr
+=9xGn
+-----END PGP SIGNATURE-----
