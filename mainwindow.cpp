@@ -41,8 +41,8 @@ MainWindow::MainWindow(QWidget *parent)
     setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     setWindowIcon(QApplication::windowIcon());
-    passUser = new PassEdit(userPasswordEdit, userPassword2Edit, 2, this);
-    passChange = new PassEdit(lineEditChangePass, lineEditChangePassConf, 2, this);
+    passUser = new PassEdit(userPasswordEdit, userPassword2Edit, 1, this);
+    passChange = new PassEdit(lineEditChangePass, lineEditChangePassConf, 1, this);
 
     shell = new Cmd(this);
     tabWidget->blockSignals(true);
