@@ -84,7 +84,7 @@
     <message>
         <location filename="../mainwindow.ui" line="271"/>
         <source>Grant this user administrative rights to the system (sudo)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu kullanıcıya sistem yönetici hakları verin (sudo)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="290"/>
@@ -377,17 +377,17 @@
     <message>
         <location filename="../mainwindow.ui" line="1227"/>
         <source>Create a group with GID &gt; 1000</source>
-        <translation type="unfinished"></translation>
+        <translation>GID &gt; 1000 olan bir grup oluşturun</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1230"/>
         <source>Create a user-level group</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanıcı düzeyinde bir grup oluşturun</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1259"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter name of new group&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Yeni grubun adını girin&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1262"/>
@@ -407,12 +407,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1359"/>
         <source>Select group to delete:</source>
-        <translation type="unfinished"></translation>
+        <translation>Silinecek grubu seçin:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1366"/>
         <source>*Please doublecheck your selections before applying, removing a wrong group can break your system.</source>
-        <translation type="unfinished"></translation>
+        <translation>*Başvurmadan önce lütfen seçimlerinizi iki kez kontrol edin, yanlış bir grubu kaldırmak sisteminizi bozabilir.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1381"/>
@@ -677,7 +677,7 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="479"/>
         <source>This action cannot be undone. Are you sure you want to delete the following groups: %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu işlem geri alınamaz. Şu grupları silmek istediğinizden emin misiniz: %1?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="488"/>
@@ -687,7 +687,7 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="488"/>
         <source>Group: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Grup: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
@@ -697,7 +697,7 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
         <source>The groups have been deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gruplar silindi.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="509"/>
@@ -816,37 +816,37 @@ Devam etmeden önce lütfen başka bir ad seçin.</translation>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>İhmal edilebilir</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Çok zayıf</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Zayıf</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Makul</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Güçlü</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Çok güçlü</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="157"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Şifre gücü: %1</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="192"/>

@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 20 Jul 2023 00:30:19 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 23.7.06
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.7.06) mx; urgency=medium
+ .
+   * Reduce password minimum length to 1 character.
+   * Update translations
+Checksums-Sha1:
+ df075955c70114de89867f4cb4eacea650ec133b 1167 mx-user_23.7.06.dsc
+ f817d1adfe596e9f07d3ae60f1ad81bff25e0dcb 180576 mx-user_23.7.06.tar.xz
+ 5249705e3cd4be8b66d4c7e21d08418720259dbe 10778 mx-user_23.7.06_amd64.buildinfo
+ 96c4d5e846d9d3d64e51ffa892717d77af613422 218884 mx-user_23.7.06_amd64.deb
+Checksums-Sha256:
+ 2d9cbe05aab88545ad79dc21214f8303430bccdec0fe05e50b5da595918996fd 1167 mx-user_23.7.06.dsc
+ f81a2f9b48d24149980ab629bc7554de8b13dce25fdde65b6074d0cb12ffd076 180576 mx-user_23.7.06.tar.xz
+ 95beacea5fcd85bb0e1c1d6b276c9c5773a6f05f3081735f0ce7f17bd7999444 10778 mx-user_23.7.06_amd64.buildinfo
+ 255573d8e948cda15650676f56213bcc60c05bf2e205e3ffc044f06f0d845a98 218884 mx-user_23.7.06_amd64.deb
+Files:
+ d289da75e956453214d7c839f13c9fb6 1167 system optional mx-user_23.7.06.dsc
+ 5c500a132186db4e7d397af433b77116 180576 system optional mx-user_23.7.06.tar.xz
+ ef08c6b3b2268b65564f67598d83eea5 10778 system optional mx-user_23.7.06_amd64.buildinfo
+ 37bf56f7e28db36fbcc5f3deb3071083 218884 system optional mx-user_23.7.06_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmS4uWsTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumF6dCADXfEhxfQ0u7wYQ49j6NOfQUOZ9UZPg
+10+ErT0MFAQS/bLh1LPsQhuSlQt09GTi1pvqZxOLwJHYpNq4d8P7LaZqqFrZmMx3
+aREjygLxeNfDMdJufhtwCj9GJttsAnhQ3H9c/wzB9nNwDGhb3O1DsRKoAxZPrQ0h
+y2k0eK7/BM7lmtMEFyYKlXICicSNmFdR+b7bIc9UhHWQ36BpJa9t9L+Vl8x94nRF
+sqoRGZmaZwHCM/SnQRghbUkd6gsLFJaYb9mv0RL6EEK8CFkfUDCXlxvbxLEqCQkK
+sTPfYV2BSQh2DkGlZCf7DXnqovPMP247IK0EcfVxmPx+SHxGFoGA2m3P
+=zrzB
+-----END PGP SIGNATURE-----

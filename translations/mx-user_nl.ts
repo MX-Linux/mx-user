@@ -816,37 +816,37 @@ Kies a.u.b. een andere naam voordat u doorgaat.</translation>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>Verwaarloosbaar</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeer zwak</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Zwak</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Matig</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Sterk</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeer sterk</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="157"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Wachtwoordsterkte: %1</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="192"/>
