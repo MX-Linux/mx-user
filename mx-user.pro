@@ -18,7 +18,6 @@ TRANSLATIONS += translations/mx-user_af.ts \
                 translations/mx-user_be.ts \
                 translations/mx-user_bg.ts \
                 translations/mx-user_bn.ts \
-                translations/mx-user_bs_BA.ts \
                 translations/mx-user_bs.ts \
                 translations/mx-user_ca.ts \
                 translations/mx-user_ceb.ts \
@@ -56,7 +55,6 @@ TRANSLATIONS += translations/mx-user_af.ts \
                 translations/mx-user_hr.ts \
                 translations/mx-user_ht.ts \
                 translations/mx-user_hu.ts \
-                translations/mx-user_hy_AM.ts \
                 translations/mx-user_hye.ts \
                 translations/mx-user_hy.ts \
                 translations/mx-user_id.ts \
