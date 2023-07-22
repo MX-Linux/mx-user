@@ -36,13 +36,11 @@ TRANSLATIONS += translations/mx-user_af.ts \
                 translations/mx-user_es.ts \
                 translations/mx-user_et.ts \
                 translations/mx-user_eu.ts \
-                translations/mx-user_fa.ts \
-                translations/mx-user_fi_FI.ts \
+                translations/mx-user_fa.ts 
                 translations/mx-user_fil_PH.ts \
                 translations/mx-user_fil.ts \
                 translations/mx-user_fi.ts \
                 translations/mx-user_fr_BE.ts \
-                translations/mx-user_fr_FR.ts \
                 translations/mx-user_fr.ts \
                 translations/mx-user_fy.ts \
                 translations/mx-user_ga.ts \
@@ -104,7 +102,6 @@ TRANSLATIONS += translations/mx-user_af.ts \
                 translations/mx-user_pt.ts \
                 translations/mx-user_ro.ts \
                 translations/mx-user_rue.ts \
-                translations/mx-user_ru_RU.ts \
                 translations/mx-user_ru.ts \
                 translations/mx-user_rw.ts \
                 translations/mx-user_sd.ts \
