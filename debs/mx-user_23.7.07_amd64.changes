@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 24 Jul 2023 15:12:17 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 23.7.07
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.7.07) mx; urgency=medium
+ .
+   * Fix a couple of translations
+Checksums-Sha1:
+ bb800d3f3250caca6355cb1ee0a167e97021709d 1167 mx-user_23.7.07.dsc
+ 1d6b9f461c972f0228db1d13f6132807f9483785 181044 mx-user_23.7.07.tar.xz
+ 33265ab03778ac0c6f53b2529a2e3794af77f49e 10778 mx-user_23.7.07_amd64.buildinfo
+ 2240f6200eac52c9919518b7cb0560befb4eb205 218652 mx-user_23.7.07_amd64.deb
+Checksums-Sha256:
+ 5a462f46d15802da7104456bcb3c45a5221ac2e5952b771cbb29f2d1a726b79c 1167 mx-user_23.7.07.dsc
+ d3e1a6cfc38831ad816765ce291deb07f619625e4efd129c6e448d9070f9fc92 181044 mx-user_23.7.07.tar.xz
+ 4184a866d8634d3776ad1b6e2604e6b8fd567b238e6363dd8de919f7548d48f8 10778 mx-user_23.7.07_amd64.buildinfo
+ c74af70119e1d1cdfbee2179f03e2fd90412828d0a67dc376ebce29f9b870e66 218652 mx-user_23.7.07_amd64.deb
+Files:
+ 5880ebf4272233b988abb4dcb46995ea 1167 system optional mx-user_23.7.07.dsc
+ 92b6c5a20a983dc5af7241852417d6f2 181044 system optional mx-user_23.7.07.tar.xz
+ 81ee03c5e9458faa4e67ecc940de0e61 10778 system optional mx-user_23.7.07_amd64.buildinfo
+ ce5299792e8ed074f281546f57f6ca5e 218652 system optional mx-user_23.7.07_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmS+z3cTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumFTfCACjVCzkznMS8Ie6gYNOjVY+AWFzjgeO
+3zf9LDAG4GyMLhbsKZ0R8hUQskZ/j4XRguBSaYfxu9lLDhI4VO84P5EMrNr0srs7
+Vx66y0k6TL0IHsFJDckJC4HyEkXRGWYNh96P8FFDAyK7vpss6Dnh+KgpGde2xPVh
+ZXEPvWRHbkyKhSvfrNpzdLjzXMR//Nh0a+O0DHziIDbii6T5vk4htvwLukhe7bD+
+Gthep/dKe/xU0+NzjPEnKTSvqC9L8oNNkJCL9+9j0/5duVtTHPP1sloi6lzL76Y+
+Uk6PyHvOyBVlVh4w9lB65CtxXhmJLZd+ROBTj7ldhAk8JdJaOVMAvjk8
+=gIQW
+-----END PGP SIGNATURE-----

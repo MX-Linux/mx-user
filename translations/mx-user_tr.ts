@@ -548,12 +548,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="237"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
-        <translation>&apos;%1&apos; hesabı için otomatik giriş devre dışı bırakıldı.</translation>
+        <translation>‘%1’ hesabı için otomatik giriş devre dışı bırakıldı.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
-        <translation>&apos;%1&apos; hesabı için otomatik giriş etkinleştirildi.</translation>
+        <translation>‘%1’ hesabı için otomatik giriş etkinleştirildi.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>

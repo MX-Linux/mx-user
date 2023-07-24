@@ -84,7 +84,7 @@
     <message>
         <location filename="../mainwindow.ui" line="271"/>
         <source>Grant this user administrative rights to the system (sudo)</source>
-        <translation type="unfinished"></translation>
+        <translation>Adminisztrátor jogok biztosítása a felhasználónak (sudo)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="290"/>
@@ -816,37 +816,37 @@ A folytatás előtt válasszon másik nevet.</translation>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>Jelentéktelen</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Nagyon gyenge</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="155"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>Gyenge</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Közepes</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Erős</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="156"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>Nagyon erős</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="157"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Jelszó erőssége: %1</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="192"/>
