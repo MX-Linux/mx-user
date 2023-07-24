@@ -35,7 +35,7 @@ TRANSLATIONS += translations/mx-user_af.ts \
                 translations/mx-user_es.ts \
                 translations/mx-user_et.ts \
                 translations/mx-user_eu.ts \
-                translations/mx-user_fa.ts 
+                translations/mx-user_fa.ts \
                 translations/mx-user_fil_PH.ts \
                 translations/mx-user_fil.ts \
                 translations/mx-user_fi.ts \
