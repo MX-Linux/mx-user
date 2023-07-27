@@ -85,7 +85,7 @@ void PassEdit::generate() noexcept
             return;
         for (int i = std::min(GEN_NUMBER_MAX, (words.count() / GEN_WORD_NUM_RATIO) - 1); i >= 0; --i)
             words.append(QString::number(i));
-        std::srand(unsigned(std::time(nullptr)));
+        std::srand(static_cast<unsigned>(std::time(nullptr)));
         pos = words.count();
     }
     gentext.clear();
