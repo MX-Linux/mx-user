@@ -208,11 +208,10 @@ void MainWindow::applyOptions()
     }
     setCursor(QCursor(Qt::WaitCursor));
 
-    QString cmd;
     // restore groups
     if (checkGroups->isChecked() && user != QLatin1String("root")) {
         buildListGroups();
-        cmd = QStringLiteral(
+        QString cmd = QStringLiteral(
             "sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'");
         QStringList extra_groups_list = shell->getCmdOut(cmd).split(QStringLiteral(","));
         QStringList new_group_list;
@@ -411,10 +410,10 @@ void MainWindow::applyChangePass()
 
 void MainWindow::applyDelete()
 {
-    QString cmd;
-    QString msg = QString(tr("This action cannot be undone. Are you sure you want to delete user %1?"))
+    QString msg = tr("This action cannot be undone. Are you sure you want to delete user %1?")
                       .arg(comboDeleteUser->currentText());
     if (QMessageBox::Yes == QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No)) {
+        QString cmd;
         if (deleteHomeCheckBox->isChecked()) {
             QProcess::execute("killall", {"-u", comboDeleteUser->currentText()});
             cmd = QStringLiteral("deluser --remove-home %1").arg(comboDeleteUser->currentText());
@@ -473,10 +472,9 @@ void MainWindow::applyGroup()
         }
         QString msg
             = groups.count() == 1
-                  ? QString(tr("This action cannot be undone. Are you sure you want to delete group %1?"))
+                  ? tr("This action cannot be undone. Are you sure you want to delete group %1?")
                         .arg(groups.at(0))
-                  : QString(
-                        tr("This action cannot be undone. Are you sure you want to delete the following groups: %1?"))
+                  : tr("This action cannot be undone. Are you sure you want to delete the following groups: %1?")
                         .arg(groups.join(" "));
         int ans = QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No);
         if (ans == QMessageBox::Yes) {
@@ -769,7 +767,7 @@ void MainWindow::buildListGroupsToRemove()
         }
     }
     disconnect(listGroupsToRemove, &QListWidget::itemChanged, nullptr, nullptr);
-    connect(listGroupsToRemove, &QListWidget::itemChanged, [this](QListWidgetItem *item) {
+    connect(listGroupsToRemove, &QListWidget::itemChanged, this, [this](QListWidgetItem *item) {
         buttonApply->setEnabled(true);
         addBox->setDisabled(true);
         if (item->checkState() == Qt::Checked)
