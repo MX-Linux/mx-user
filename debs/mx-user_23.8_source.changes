@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 18 Aug 2023 18:32:22 -0400
+Source: mx-user
+Architecture: source
+Version: 23.8
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (23.8) mx; urgency=medium
+ .
+   * Change command to accomodate for different lightdm.conf structure when applying autologin
+Checksums-Sha1:
+ 31a80726e7da46d03c5a1168ef70f51f4f979941 1155 mx-user_23.8.dsc
+ 575ae53740c838dc054a8c01b2a232912963d27c 181232 mx-user_23.8.tar.xz
+ 70a8bb4eec9979a58ad48528099e72e3de30cd39 10930 mx-user_23.8_amd64.buildinfo
+Checksums-Sha256:
+ f3dbb9a1138d8c04700d9aaf69fe41c99afc32d6b12482c78f3ff789ae96ce9f 1155 mx-user_23.8.dsc
+ 70e4800ce78bb23a7ada793ed92fe187d1bcdbe15e72109dd5547d4f591b745d 181232 mx-user_23.8.tar.xz
+ aa57bc017fd51ce0c2d745fb0d2b0258d25d24539bda3a0204200015052d59d7 10930 mx-user_23.8_amd64.buildinfo
+Files:
+ e8055ad1cafebc3192a8cb86b2849c8d 1155 system optional mx-user_23.8.dsc
+ bf3ac2759704bbb1948834ad61c59801 181232 system optional mx-user_23.8.tar.xz
+ 082bc614bdc8a6b7c77acb7b67ff541f 10930 system optional mx-user_23.8_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmTf8esTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumCaWB/4qAyD1ZfCtPDL67OO2y7mT8+ej/qjO
+emOSwrPwcEOKyqYuLIvvhFPJ+wPubS91kPT9+xkE0aT+j7LHXEY+7AW/EUebwk1C
+wN8CwDajffv1vSDunK9AAuGQsS+73ZvI5VUvHyO4aR5kAHofb2g+H+7RvK01FZ9U
+GPu+FOHsbxeUZQTrYW84L+5ecDj/hsc31EqyBtB2DSzBWJF8j0KL9k1NDg4qoCuM
+0/fU6KCxJR7mmURYu+d1ewwWdVQk6KLWH5X4KE0VtN9SVRYPmAWkRvobgBxSWU9s
+y0NZ0uA8f7ClMteHGAAVu1sOBLpc9LHzxuhLHFmzB0U/u4vz/25/xw8p
+=y7pG
+-----END PGP SIGNATURE-----
