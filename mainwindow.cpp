@@ -248,9 +248,8 @@ void MainWindow::applyOptions()
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
         if (QFile::exists(QStringLiteral("/etc/lightdm/lightdm.conf"))) {
-            QProcess::execute("sed",
-                              {"-iE", QString("/^autologin-user=/d; /^[[]SeatDefaults[]]/aautologin-user=%1").arg(user),
-                               "/etc/lightdm/lightdm.conf"});
+            QProcess::execute("sed", {"-iE", QString(R"(/^#?autologin-user=/d; /^\[SeatDefaults\]/{N; s/\[SeatDefaults\]\n/\[SeatDefaults\]\nautologin-user=%1\n/}; /^\[Seat:\*\]/{N; s/\[Seat:\*\]\n/&autologin-user=%1\n/})").arg(user),
+                                      "/etc/lightdm/lightdm.conf"});
         }
         if (QFile::exists("/etc/sddm.conf")) {
             QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
