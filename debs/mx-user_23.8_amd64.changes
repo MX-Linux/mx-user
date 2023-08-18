@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 18 Aug 2023 18:32:22 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 23.8
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.8) mx; urgency=medium
+ .
+   * Change command to accomodate for different lightdm.conf structure when applying autologin
+Checksums-Sha1:
+ 31a80726e7da46d03c5a1168ef70f51f4f979941 1155 mx-user_23.8.dsc
+ 575ae53740c838dc054a8c01b2a232912963d27c 181232 mx-user_23.8.tar.xz
+ 70a8bb4eec9979a58ad48528099e72e3de30cd39 10930 mx-user_23.8_amd64.buildinfo
+ c913817b02874d753bb48fd5e75b3a071bb464da 218796 mx-user_23.8_amd64.deb
+Checksums-Sha256:
+ f3dbb9a1138d8c04700d9aaf69fe41c99afc32d6b12482c78f3ff789ae96ce9f 1155 mx-user_23.8.dsc
+ 70e4800ce78bb23a7ada793ed92fe187d1bcdbe15e72109dd5547d4f591b745d 181232 mx-user_23.8.tar.xz
+ aa57bc017fd51ce0c2d745fb0d2b0258d25d24539bda3a0204200015052d59d7 10930 mx-user_23.8_amd64.buildinfo
+ 703ca5ffea996e435746e9f3e190f03caf204f02df1dadecd41ea6700c141226 218796 mx-user_23.8_amd64.deb
+Files:
+ e8055ad1cafebc3192a8cb86b2849c8d 1155 system optional mx-user_23.8.dsc
+ bf3ac2759704bbb1948834ad61c59801 181232 system optional mx-user_23.8.tar.xz
+ 082bc614bdc8a6b7c77acb7b67ff541f 10930 system optional mx-user_23.8_amd64.buildinfo
+ 7bf561f5224d397fd579a3da4012e944 218796 system optional mx-user_23.8_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmTf8eoTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJU7B/9ouvtgSne7RpjjJ086FnupEx6eU/Xo
+T6WZDblaoYQYBEkw9Hz5WNq2l7OFs9ZoAIsTpnrMN8no/e/Jw7P7iHYdVI6jablq
+O/hm39y51khIDUTH/wxWgiwQa3E1HpMW9V9JTgrQ9l/J/+LUJDe1lieMyvwkvS0q
+4oNIB7CG7hsgG9K5aHCXBEhFFf79LHlD2UGSSrBUNC1rW+f7GeNBz3AnxokLsfji
+/fWsMiXsr7zHQQIh6bYR05IECFLAikmiSy6r7A6jy/uzNyLvaSh9ji/WNXmkHqbt
+fERreqlmPkAZNiAN04dtwUTCgQx25PacC4q7MhYTwFC9Ir1MuYuEDeZV
+=RSYP
+-----END PGP SIGNATURE-----
