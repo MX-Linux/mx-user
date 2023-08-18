@@ -16,31 +16,31 @@ Description:
 Changes:
  mx-user (23.8) mx; urgency=medium
  .
-   * Change command to accomodate for different lightdm.conf structure when applying autologin
+   * Change command to accommodate for different lightdm.conf structure when applying autologin
 Checksums-Sha1:
- 31a80726e7da46d03c5a1168ef70f51f4f979941 1155 mx-user_23.8.dsc
- 575ae53740c838dc054a8c01b2a232912963d27c 181232 mx-user_23.8.tar.xz
- 70a8bb4eec9979a58ad48528099e72e3de30cd39 10930 mx-user_23.8_amd64.buildinfo
- c913817b02874d753bb48fd5e75b3a071bb464da 218796 mx-user_23.8_amd64.deb
+ 74fc87223be49a2ba52609ae519840d1fa1457d7 1155 mx-user_23.8.dsc
+ edb45d0e6f8dfccda02b50c51461f3b65c651e51 181220 mx-user_23.8.tar.xz
+ 55422726762ffed9b136dc941a2bdf41ae10cb43 10930 mx-user_23.8_amd64.buildinfo
+ 5ec600d42e5b5ca7971316da61b3e3d6df2e1d10 218864 mx-user_23.8_amd64.deb
 Checksums-Sha256:
- f3dbb9a1138d8c04700d9aaf69fe41c99afc32d6b12482c78f3ff789ae96ce9f 1155 mx-user_23.8.dsc
- 70e4800ce78bb23a7ada793ed92fe187d1bcdbe15e72109dd5547d4f591b745d 181232 mx-user_23.8.tar.xz
- aa57bc017fd51ce0c2d745fb0d2b0258d25d24539bda3a0204200015052d59d7 10930 mx-user_23.8_amd64.buildinfo
- 703ca5ffea996e435746e9f3e190f03caf204f02df1dadecd41ea6700c141226 218796 mx-user_23.8_amd64.deb
+ da2eddd0940a6eac230d57afdde5462eb279e9779327da4861f87eb6d0df4da7 1155 mx-user_23.8.dsc
+ 2e5ba3b4486c8a488f4a146412dbd6a1ce06c022fd48c292cee5984d553d3f16 181220 mx-user_23.8.tar.xz
+ d0be905767271def51fd23d97c06e7eca061bbf7eec4945a735c9b748444255f 10930 mx-user_23.8_amd64.buildinfo
+ e10d6d1809dd8325e87db441e6f44e0f4c7aaafd98630d0b5080523ec04a952a 218864 mx-user_23.8_amd64.deb
 Files:
- e8055ad1cafebc3192a8cb86b2849c8d 1155 system optional mx-user_23.8.dsc
- bf3ac2759704bbb1948834ad61c59801 181232 system optional mx-user_23.8.tar.xz
- 082bc614bdc8a6b7c77acb7b67ff541f 10930 system optional mx-user_23.8_amd64.buildinfo
- 7bf561f5224d397fd579a3da4012e944 218796 system optional mx-user_23.8_amd64.deb
+ f200aa00a720941fa27ed9926004c20c 1155 system optional mx-user_23.8.dsc
+ 28c6ae7910358856e2b9b78c8e5ba793 181220 system optional mx-user_23.8.tar.xz
+ 56d567e0fdd04a7696fe36f6bca5860c 10930 system optional mx-user_23.8_amd64.buildinfo
+ 02386c782b5abced53ea78191179d796 218864 system optional mx-user_23.8_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmTf8eoTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJU7B/9ouvtgSne7RpjjJ086FnupEx6eU/Xo
-T6WZDblaoYQYBEkw9Hz5WNq2l7OFs9ZoAIsTpnrMN8no/e/Jw7P7iHYdVI6jablq
-O/hm39y51khIDUTH/wxWgiwQa3E1HpMW9V9JTgrQ9l/J/+LUJDe1lieMyvwkvS0q
-4oNIB7CG7hsgG9K5aHCXBEhFFf79LHlD2UGSSrBUNC1rW+f7GeNBz3AnxokLsfji
-/fWsMiXsr7zHQQIh6bYR05IECFLAikmiSy6r7A6jy/uzNyLvaSh9ji/WNXmkHqbt
-fERreqlmPkAZNiAN04dtwUTCgQx25PacC4q7MhYTwFC9Ir1MuYuEDeZV
-=RSYP
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmTgAb8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumMocB/9A7htsVqxIIqU0pNBbJLxV8DlJI/Ak
+Rua6KQyFGI77wrxys441BgprVOOjtZutdpJZSEf8vdtD1ZjCLchbaCUYVC6RnKfH
+UfcvMo7O1gQtjVKyIaZ/bcj6TuyG3ExHS+8+938FqvQZxrrYOaZnp6bVCuFXohQI
+10A0nWS6FfQPVkHMdtwe+Y3De2gh6oSTRd6oJAQz11KDGEcXN5MuBzm0oeJAgA+2
+dnB0HeAsYhBvgvk7pMpSH4q9W61mlNnAgk9N6wWo3YVXCORtZnxqHiuqq9HcYJPz
+UAm2HHIc15C+mqODBqGFxFpRjELi8on0K9rfAFrRBmg93B5CNTk2LZ/P
+=F+40
 -----END PGP SIGNATURE-----

@@ -13,13 +13,13 @@ Description:
 Changes:
  mx-user (23.8) mx; urgency=medium
  .
-   * Change command to accomodate for different lightdm.conf structure when applying autologin
+   * Change command to accommodate for different lightdm.conf structure when applying autologin
 Checksums-Sha1:
- bde119df20b3c7d585ad19628fa50b33c760fedf 10100 mx-user_23.8_i386.buildinfo
- d3446be704d68b821bf42e811894ccab391ba58a 223440 mx-user_23.8_i386.deb
+ 37554b20b17cb87252fc5a8f61385036915e8d02 10100 mx-user_23.8_i386.buildinfo
+ 383dbc5e09b7e253d36388b88f888db01a20a945 223388 mx-user_23.8_i386.deb
 Checksums-Sha256:
- 6276cc55a239b202b7f67297a1cd0531352f80fe33d391df0737d9f19d9c04d1 10100 mx-user_23.8_i386.buildinfo
- 6869f8757f337813acceaa38934d2ce2e289917e125613ff1c401b243cf9cb09 223440 mx-user_23.8_i386.deb
+ eb6d4ef9f91bf584aa9a0c28e8f3c0aeab6279ac90be41b05e1cb174deb93674 10100 mx-user_23.8_i386.buildinfo
+ f7f2d2a1b4cf373a5d83357db2593c010efcf922a8ca3c11c25f034a1aa1c66a 223388 mx-user_23.8_i386.deb
 Files:
- 1e8abd6db393c98ade123f58c482e6ab 10100 system optional mx-user_23.8_i386.buildinfo
- cf13995bc32ef13aff8e4b2960d1ca56 223440 system optional mx-user_23.8_i386.deb
+ 21ab44459b38e8866b3f6a633aae86f8 10100 system optional mx-user_23.8_i386.buildinfo
+ d3414ab9aa147b8a01f172fff4e4dec3 223388 system optional mx-user_23.8_i386.deb
