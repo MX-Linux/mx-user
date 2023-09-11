@@ -239,7 +239,9 @@ void MainWindow::applyOptions()
     }
     if (radioAutologinNo->isChecked()) {
         if (QFile::exists(QStringLiteral("/etc/lightdm/lightdm.conf"))) {
-            QProcess::execute("sed", {"-iE", QString("/^autologin-user=%1/d").arg(user), "/etc/lightdm/lightdm.conf"});
+            QProcess::execute("sed", {"-i", "-E",
+                                      "-e", QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=/d;})"),
+                                      "/etc/lightdm/lightdm.conf"});
         }
         if (QFile::exists(QStringLiteral("/etc/sddm.conf"))) {
             QProcess::execute("sed", {"-i", QString("s/^User=%1/User=/").arg(user), "/etc/sddm.conf"});
@@ -248,7 +250,9 @@ void MainWindow::applyOptions()
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
         if (QFile::exists(QStringLiteral("/etc/lightdm/lightdm.conf"))) {
-            QProcess::execute("sed", {"-iE", QString(R"(/^#?autologin-user=/d; /^\[SeatDefaults\]/{N; s/\[SeatDefaults\]\n/\[SeatDefaults\]\nautologin-user=%1\n/}; /^\[Seat:\*\]/{N; s/\[Seat:\*\]\n/&autologin-user=%1\n/})").arg(user),
+            QProcess::execute("sed", {"-i", "-E",
+                                      "-e", QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=/d;})"),
+                                      "-e", QString(R"(/^[[]Seat(Defaults|:[*])[]]/aautologin-user=%1)").arg(user),
                                       "/etc/lightdm/lightdm.conf"});
         }
         if (QFile::exists("/etc/sddm.conf")) {
@@ -444,6 +448,11 @@ void MainWindow::applyDelete()
             cmd = QStringLiteral("deluser %1").arg(comboDeleteUser->currentText());
         }
         if (shell->run(cmd)) {
+            if (QFile::exists(QStringLiteral("/etc/lightdm/lightdm.conf"))) {
+                QProcess::execute("sed", {"-i", "-E",
+                                          "-e", QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=%1$/d;})").arg(comboDeleteUser->currentText()),
+                                          "/etc/lightdm/lightdm.conf"});
+            }
             QMessageBox::information(this, windowTitle(), tr("The user has been deleted."));
         } else {
             QMessageBox::critical(this, windowTitle(), tr("Failed to delete the user."));
