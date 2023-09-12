@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 11 Sep 2023 17:57:25 -0400
+Source: mx-user
+Architecture: source
+Version: 23.9
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Changes:
+ mx-user (23.9) mx; urgency=medium
+ .
+   * Fix: there can be only one autologin-user
+   * Fix: remove dead autologin-user with user deletion
+   * Adjust: version.h in debian rules
+Checksums-Sha1:
+ a3635387a873cabb43617dfbbe1c01578661245f 1155 mx-user_23.9.dsc
+ f458fa4a0b08ab3c2acb6a71637061c2a00c92d8 181316 mx-user_23.9.tar.xz
+ f49ed553840a5ace71c9c989a971b1fb697cd434 10930 mx-user_23.9_amd64.buildinfo
+Checksums-Sha256:
+ d90457a23e8762a53338358d94c5f0795718030e7df01b5adff0757fa74d11a7 1155 mx-user_23.9.dsc
+ 83dc7e2a4e2f81cfaac630e0a1dbaa3e01c7c6c612a1c7ac9668e132f035c7d8 181316 mx-user_23.9.tar.xz
+ 2cb11c419ad9a15e500c2efa9b394069ab3d903e14b2e4524b8bcf03c1d9d649 10930 mx-user_23.9_amd64.buildinfo
+Files:
+ cb7b8ed7233becce4c8ead454c6781c4 1155 system optional mx-user_23.9.dsc
+ 21a645f61141280d35f32a2c07e15260 181316 system optional mx-user_23.9.tar.xz
+ 8b3a823a1e307f1761e35f6db2360e54 10930 system optional mx-user_23.9_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmT/s7oTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumC8GCACA0BkrzIMiimzEWP+owLB4YWZ4taZd
+W2U1OGQFWjAjT5HAiG0zG/697tVlQ+exGWYpIrfbshvoKeJfoozFN0KBzuYfXLKf
+VNTuj02SU57Ba2DLwD6szmXcDxku0HrAOIsS0WB+d52muCPSonDTJFEai53C9/4E
+e42JW1spBH4NiIWam5BrhEKbnPuRY1/GmZoDuj+utvvC4Qkzfgpz74SLJzD9SaOQ
+YtEPsnuFrSqKr4s8ZJqMQfBEJEi8SL32Pg2aXhDlb+V3HNJzZiM03/UPiyRcn9sr
+xwM3OATyBo50VsXCX58Lktta/hENkrraWPwi0h2VL6QZg8lvDi8tRqjU
+=3QEw
+-----END PGP SIGNATURE-----

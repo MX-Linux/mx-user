@@ -1,0 +1,48 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 11 Sep 2023 17:57:25 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 23.9
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (23.9) mx; urgency=medium
+ .
+   * Fix: there can be only one autologin-user
+   * Fix: remove dead autologin-user with user deletion
+   * Adjust: version.h in debian rules
+Checksums-Sha1:
+ a3635387a873cabb43617dfbbe1c01578661245f 1155 mx-user_23.9.dsc
+ f458fa4a0b08ab3c2acb6a71637061c2a00c92d8 181316 mx-user_23.9.tar.xz
+ f49ed553840a5ace71c9c989a971b1fb697cd434 10930 mx-user_23.9_amd64.buildinfo
+ f2174906a43053b7bf4cf89ff9bad8912c3888d1 219128 mx-user_23.9_amd64.deb
+Checksums-Sha256:
+ d90457a23e8762a53338358d94c5f0795718030e7df01b5adff0757fa74d11a7 1155 mx-user_23.9.dsc
+ 83dc7e2a4e2f81cfaac630e0a1dbaa3e01c7c6c612a1c7ac9668e132f035c7d8 181316 mx-user_23.9.tar.xz
+ 2cb11c419ad9a15e500c2efa9b394069ab3d903e14b2e4524b8bcf03c1d9d649 10930 mx-user_23.9_amd64.buildinfo
+ 262bcaef3205ac6f6b9ad6025d239fa90fe2b8524c375864242e3ed9acd4267f 219128 mx-user_23.9_amd64.deb
+Files:
+ cb7b8ed7233becce4c8ead454c6781c4 1155 system optional mx-user_23.9.dsc
+ 21a645f61141280d35f32a2c07e15260 181316 system optional mx-user_23.9.tar.xz
+ 8b3a823a1e307f1761e35f6db2360e54 10930 system optional mx-user_23.9_amd64.buildinfo
+ 84fdbb33ff3c751ffca2500fd1d4604c 219128 system optional mx-user_23.9_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmT/s7kTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJwGB/4gpsGbJkZbBnSFm3YxrKuoaUs1x3uy
+AQ+Ivl48dwfsfTaPg2rubMRJSM4Bc6TAFbcPApj1DjxvDISWmBnncFauHm+8si7W
+1OPuqON0FOZYIyO2AlyII/zyxGEijpqHEy04ZQV1ipQ3E+lOIRn35CFwwC/ijzTY
+ofGepaOXfL5A0DEmvBkfPxl7teF3ZTqpGKfonyadbIBV9b01/7NQAIJBraHvHlo9
+UvjL4O0313OQttxXe/wJRuDNmgimq6Weeqc7p1AITfMRscNUA+8A6ksQe3GVBvu7
+4Pz9xStmeL6Ica0JCYDUuPglR23Y3+fEMS3g0wHJyt1BWrCZdg6wlkgn
+=hcc9
+-----END PGP SIGNATURE-----
