@@ -15,18 +15,21 @@ TRANSLATIONS += \
 
 FORMS += \
     mainwindow.ui
+
 HEADERS += \
+    common.h \
     mainwindow.h \
     passedit.h \
-    version.h \
     cmd.h \
     about.h
+
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
     cmd.cpp \
     about.cpp \
     passedit.cpp
+
 LIBS += -lcrypt -lzxcvbn
 
 RESOURCES += \

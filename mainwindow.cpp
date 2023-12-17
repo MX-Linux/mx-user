@@ -51,12 +51,12 @@ MainWindow::MainWindow(QWidget *parent)
     tabWidget->blockSignals(false);
     QSize size = this->size();
     restoreGeometry(settings.value("geometry").toByteArray());
-    if (this->isMaximized()) { // if started maximized give option to resize to normal window size
-        this->resize(size);
+    if (isMaximized()) { // if started maximized give option to resize to normal window size
+        resize(size);
         QRect screenGeometry = QApplication::primaryScreen()->geometry();
-        int x = (screenGeometry.width() - this->width()) / 2;
-        int y = (screenGeometry.height() - this->height()) / 2;
-        this->move(x, y);
+        int x = (screenGeometry.width() - width()) / 2;
+        int y = (screenGeometry.height() - height()) / 2;
+        move(x, y);
     }
     refresh();
 }
@@ -553,8 +553,8 @@ void MainWindow::applyRename()
     const QString old_name = comboRenameUser->currentText();
     const QString new_name = renameUserNameEdit->text();
 
-    // validate data before proceeding
-    // check if selected user is in use
+    // Validate data before proceeding
+    // Check if selected user is in use
     if (shell->getOut("logname", true) == old_name) {
         QMessageBox::critical(
             this, windowTitle(),
@@ -564,7 +564,7 @@ void MainWindow::applyRename()
         return;
     }
 
-    // see if username is reasonable length
+    // See if username is reasonable length
     if (new_name.length() < 2) {
         QMessageBox::critical(
             this, windowTitle(),
@@ -583,7 +583,7 @@ void MainWindow::applyRename()
         return;
     }
 
-    // rename user
+    // Rename user
     bool success
         = shell->runAsRoot("usermod --login " + new_name + " --move-home --home /home/" + new_name + " " + old_name);
     if (!success) {
@@ -593,17 +593,17 @@ void MainWindow::applyRename()
         return;
     }
 
-    // rename other instances of the old name, like "Finger" name if present
+    // Rename other instances of the old name, like "Finger" name if present
     shell->runAsRoot("sed -i 's/\\b" + old_name + "\\b/" + new_name + "/g' /etc/passwd");
 
-    // change group
+    // Change group
     shell->runAsRoot("groupmod --new-name " + new_name + " " + old_name);
 
-    // fix "home/old_user" string in all ~/ files
+    // Fix "home/old_user" string in all ~/ files
     shell->runAsRoot(
         QString("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'").arg(old_name, new_name));
 
-    // change autologin name (Xfce and KDE)
+    // Change autologin name (Xfce and KDE)
     if (QFile::exists("/etc/lightdm/lightdm.conf")) {
         shell->runAsRoot(QString("sed -i 's/autologin-user=%1/autologin-user=%2/g' /etc/lightdm/lightdm.conf")
                              .arg(old_name, new_name));
@@ -621,7 +621,7 @@ void MainWindow::syncDone(bool success)
     if (success) {
         QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
 
-        // if a directory rather than a user name
+        // If a directory rather than a user name
         if (toUserComboBox->currentText().contains("/")) {
             if (syncRadioButton->isChecked()) {
                 syncStatusEdit->setText(tr("Synchronizing desktop...ok"));
@@ -633,11 +633,11 @@ void MainWindow::syncDone(bool success)
             return;
         }
 
-        // fix owner
+        // Fix owner
         QString cmd = QString("chown -R %1:%1 %2").arg(toUserComboBox->currentText(), toDir);
         shell->runAsRoot(cmd);
 
-        // fix "home/old_user" string in all ~/ or ~/.mozilla files
+        // Fix "home/old_user" string in all ~/ or ~/.mozilla files
         if (entireRadioButton->isChecked()) {
             cmd = QString("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'")
                       .arg(fromUserComboBox->currentText(), toUserComboBox->currentText());
@@ -648,7 +648,6 @@ void MainWindow::syncDone(bool success)
         shell->runAsRoot(cmd);
 
         if (entireRadioButton->isChecked()) {
-            // delete some files
             shell->runAsRoot("rm -f " + toDir + "/.recently-used");
             shell->runAsRoot("rm -f " + toDir + "/.openoffice.org/*/.lock");
         }
@@ -780,7 +779,7 @@ void MainWindow::on_userComboMembership_activated(const QString & /*unused*/)
 void MainWindow::buildListGroups()
 {
     listGroups->clear();
-    // read /etc/group and add all the groups in the listGroups
+    // Read /etc/group and add all the groups in the listGroups
     QStringList groups = shell->getOut("cat /etc/group | cut -f 1 -d :").trimmed().split("\n");
     groups.sort();
     for (const QString &group : groups) {
@@ -789,7 +788,7 @@ void MainWindow::buildListGroups()
         item->setCheckState(Qt::Unchecked);
         listGroups->addItem(item);
     }
-    // check the boxes for the groups that the current user belongs to
+    // Check the boxes for the groups that the current user belongs to
     const QString cmd = QString("id -nG %1").arg(userComboMembership->currentText());
     const QString out = shell->getOut(cmd);
     QStringList out_tok = out.split(" ");
@@ -891,7 +890,7 @@ void MainWindow::on_tabWidget_currentChanged()
     refresh();
 }
 
-// close but do not apply
+// Close but do not apply
 void MainWindow::on_buttonCancel_clicked()
 {
     closeApp();
@@ -902,21 +901,19 @@ void MainWindow::progress()
     syncProgressBar->setValue((syncProgressBar->value() + 1) % syncProgressBar->maximum());
 }
 
-// show about
 void MainWindow::on_buttonAbout_clicked()
 {
-    this->hide();
+    hide();
     displayAboutMsgBox(
-        tr("About %1").arg(this->windowTitle()),
-        "<p align=\"center\"><b><h2>" + this->windowTitle() + "</h2></b></p><p align=\"center\">" + tr("Version: ")
-            + VERSION + "</p><p align=\"center\"><h3>" + tr("Simple user configuration for MX Linux")
+        tr("About %1").arg(windowTitle()),
+        "<p align=\"center\"><b><h2>" + windowTitle() + "</h2></b></p><p align=\"center\">" + tr("Version: ") + VERSION
+            + "</p><p align=\"center\"><h3>" + tr("Simple user configuration for MX Linux")
             + R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)"
             + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-        "/usr/share/doc/mx-user/license.html", tr("%1 License").arg(this->windowTitle()));
-    this->show();
+        "/usr/share/doc/mx-user/license.html", tr("%1 License").arg(windowTitle()));
+    show();
 }
 
-// Help button clicked
 void MainWindow::on_buttonHelp_clicked()
 {
     QLocale locale;
@@ -927,7 +924,7 @@ void MainWindow::on_buttonHelp_clicked()
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-gestionnaire-des-utilisateurs";
     }
-    displayDoc(url, tr("%1 Help").arg(this->windowTitle()));
+    displayDoc(url, tr("%1 Help").arg(windowTitle()));
 }
 
 void MainWindow::on_comboChangePass_activated(const QString & /*unused*/)

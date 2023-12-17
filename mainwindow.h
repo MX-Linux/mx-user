@@ -17,9 +17,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include "ui_mainwindow.h"
 
@@ -98,5 +96,3 @@ private:
     class PassEdit *passUser;
     class PassEdit *passChange;
 };
-
-#endif
