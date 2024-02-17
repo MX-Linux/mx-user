@@ -13,20 +13,20 @@ Build-Depends: debhelper (>= 10), qtbase5-dev, qttools5-dev-tools, libzxcvbn-dev
 Package-List:
  mx-user deb system optional arch=any
 Checksums-Sha1:
- 6d8cef75b643e9e3bd845fa633b609ef5eb00ae2 175460 mx-user_24.2.tar.xz
+ cf9b4456f0580f5b6751f571836863fa2deda118 175468 mx-user_24.2.tar.xz
 Checksums-Sha256:
- f4040bdbac646348ad1dff3ddc632d44c5b74505c9413f63c97f59a6d44b71d3 175460 mx-user_24.2.tar.xz
+ d82639323be617bfcdf2139784d4bbce9e0288bd962cad23e66b7b45f42c3b31 175468 mx-user_24.2.tar.xz
 Files:
- 59ce7a0005c0c904c91485873ad37512 175460 mx-user_24.2.tar.xz
+ 8d332c7f5bda1dcf542d665d0b2431a0 175468 mx-user_24.2.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmXRGOUTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHJJCACaqrETwm7FtpOjmJQAC+TxnAk/EqMy
-r04WN9u+nX+9qyBDxyUWQ6yijvqLF7sFNvfWW7+naC7+oXRVan1mpV8/X9IEItC+
-H6R31AUUM7GmcB0W0SEXWq9vPL8mQH5Y5+I0/oIkiZvcpC0mRw0DUiHl+FZxgTUl
-iV4xVckj9MKg5EZeAa2RYyNvMWIXErjapYEuT/K9ODrPGY5Uij55IFzEhTCzQfFf
-qh1Cdmoeinrz2TIxd4KduoVVryfIIcPh7o1hJ73hu4cvFBDVDSUMhmKbmOCanfvm
-7yhw2gavnJ+Hl1ZwIxRC/gzXLL0M4PV7hhwSfYKIaaiSY1188Ecf0Zdz
-=xPps
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmXRGg4THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumFXxB/91v2Utc6BHcgcnZHBVH4Y1ZxyO4Z9o
++O+4te8EOv77uHJpVpXvzTvm4NU3QWqCgM8HRmMcZ9SRKKX3teoKkmg6zVvV3jAR
+A6x2eCL+czPot7dfLUUYDzCTlUBzaBzVzuPJ1HqNBD2ju8RTFfMW0bIx/yIEd1Qw
+WUFbyACih9i1DX13TL6tjKgFqrANZDJBBT8KHGb+rcwBiqK70y+2s27v/yUOnG/S
+eDf5UdY6qnZEMzdnfDiRM1Pfv6iiYgPSxUS9n/FMbPGM4zyLSsc3UTZNTYnduAkX
+8688N2FG+evaxteVSklsuWWK3ZlmJ4C3iP3SV1khiqzt6TYlo2SMR/uW
+=7Ynl
 -----END PGP SIGNATURE-----
