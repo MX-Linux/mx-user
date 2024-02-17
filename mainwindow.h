@@ -27,6 +27,11 @@
 
 #include "cmd.h"
 
+namespace Tab
+{
+enum { Administration, Options, Copy, AddRemoveGroup, GroupMembership, MAX };
+}
+
 class MainWindow : public QDialog, public Ui::MEConfig
 {
     Q_OBJECT
