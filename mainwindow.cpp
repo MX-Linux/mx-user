@@ -57,6 +57,7 @@ MainWindow::MainWindow(QWidget *parent)
         move(x, y);
     }
     refresh();
+    setConnections();
 }
 
 MainWindow::~MainWindow()
@@ -194,7 +195,7 @@ void MainWindow::refreshRename()
 void MainWindow::applyOptions()
 {
     const QString user = userComboBox->currentText();
-    if (user == (tr("none"))) { // no user selected
+    if (user == (tr("none"))) { // No user selected
         return;
     }
     QString home = user;
@@ -218,7 +219,7 @@ void MainWindow::applyOptions()
     if (checkGroups->isChecked() && user != "root") {
         buildListGroups();
         QString cmd = "sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'";
-        QStringList extra_groups_list = shell->getOutAsRoot(cmd).split(",");
+        QStringList extra_groups_list = shell->getOutAsRoot(cmd).split(',');
         QStringList new_group_list;
         for (const QString &group : extra_groups_list) {
             if (!listGroups->findItems(group, Qt::MatchExactly).isEmpty()) {
@@ -287,7 +288,7 @@ void MainWindow::applyDesktop()
 
     QString fromDir = QString("/home/%1").arg(fromUserComboBox->currentText());
     QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
-    if (toUserComboBox->currentText().contains("/")) { // if a directory rather than a user name
+    if (toUserComboBox->currentText().contains('/')) { // If a directory rather than a user name
         toDir = toUserComboBox->currentText();
     }
     if (docsRadioButton->isChecked()) {
@@ -308,23 +309,30 @@ void MainWindow::applyDesktop()
     } else {
         syncStatusEdit->setText(tr("Copying desktop..."));
     }
-    QString cmd = "rsync -qa ";
+    QString cmd = "rsync -a --info=progress2 ";
     if (syncRadioButton->isChecked()) {
         cmd.append("--delete-after ");
     }
     cmd.append(fromDir);
     cmd.append(' ');
     cmd.append(toDir);
-    QTimer timer;
-    timer.start(100ms);
-    connect(&timer, &QTimer::timeout, this, &MainWindow::progress);
-
     for (int tab = 0; tab < Tab::MAX; ++tab) {
         if (tab == Tab::Copy) {
             continue;
         }
         tabWidget->setTabEnabled(tab, false);
     }
+    connect(shell, &Cmd::outputAvailable, this, [this](const QString &out) {
+        QRegularExpression regex("\\b(\\d+)%");
+        QRegularExpressionMatch match = regex.match(out);
+        if (match.hasMatch()) {
+            bool ok = false;
+            int percent = match.captured(1).toInt(&ok);
+            if (ok && percent > syncProgressBar->value()) {
+                syncProgressBar->setValue(percent);
+            }
+        }
+    });
     syncDone(shell->runAsRoot(cmd));
     for (int tab = 0; tab < Tab::MAX; ++tab) {
         tabWidget->setTabEnabled(tab, true);
@@ -335,9 +343,9 @@ void MainWindow::applyAdd()
 {
     // Validate data before proceeding, see if username is reasonable length
     if (userNameEdit->text().length() < 2) {
-        QMessageBox::critical(
-            this, windowTitle(),
-            tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
+        QMessageBox::critical(this, windowTitle(),
+                              tr("The user name needs to be at least 2 characters long. Please select a longer "
+                                 "name before proceeding."));
         return;
     } else if (!userNameEdit->text().contains(QRegularExpression("^[A-Za-z_][A-Za-z0-9_-]*[$]?$"))) {
         QMessageBox::critical(this, windowTitle(),
@@ -355,9 +363,9 @@ void MainWindow::applyAdd()
         return;
     }
     if (!passUser->lengthOK()) {
-        QMessageBox::critical(
-            this, windowTitle(),
-            tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
+        QMessageBox::critical(this, windowTitle(),
+                              tr("Password needs to be at least 2 characters long. Please enter a longer password "
+                                 "before proceeding."));
         return;
     }
 
@@ -410,9 +418,9 @@ void MainWindow::applyChangePass()
         return;
     }
     if (!passChange->lengthOK()) {
-        QMessageBox::critical(
-            this, windowTitle(),
-            tr("Password needs to be at least 2 characters long. Please enter a longer password before proceeding."));
+        QMessageBox::critical(this, windowTitle(),
+                              tr("Password needs to be at least 2 characters long. Please enter a longer password "
+                                 "before proceeding."));
         return;
     }
 
@@ -509,7 +517,7 @@ void MainWindow::applyGroup()
             = groups.count() == 1
                   ? tr("This action cannot be undone. Are you sure you want to delete group %1?").arg(groups.at(0))
                   : tr("This action cannot be undone. Are you sure you want to delete the following groups: %1?")
-                        .arg(groups.join(" "));
+                        .arg(groups.join(' '));
         int ans = QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No);
         if (ans == QMessageBox::Yes) {
             auto it = std::find_if(groups.cbegin(), groups.cend(),
@@ -562,9 +570,9 @@ void MainWindow::applyRename()
 
     // See if username is reasonable length
     if (new_name.length() < 2) {
-        QMessageBox::critical(
-            this, windowTitle(),
-            tr("The user name needs to be at least 2 characters long. Please select a longer name before proceeding."));
+        QMessageBox::critical(this, windowTitle(),
+                              tr("The user name needs to be at least 2 characters long. Please select a longer "
+                                 "name before proceeding."));
         return;
     } else if (!new_name.contains(QRegularExpression("^[a-z_][a-z0-9_-]*[$]?$"))) {
         QMessageBox::critical(this, windowTitle(),
@@ -618,7 +626,7 @@ void MainWindow::syncDone(bool success)
         QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
 
         // If a directory rather than a user name
-        if (toUserComboBox->currentText().contains("/")) {
+        if (toUserComboBox->currentText().contains('/')) {
             if (syncRadioButton->isChecked()) {
                 syncStatusEdit->setText(tr("Synchronizing desktop...ok"));
             } else {
@@ -685,7 +693,35 @@ void MainWindow::closeApp()
     close();
 }
 
-void MainWindow::on_fromUserComboBox_activated(const QString & /*unused*/)
+void MainWindow::setConnections()
+{
+    connect(buttonAbout, &QPushButton::clicked, this, &MainWindow::buttonAbout_clicked);
+    connect(buttonApply, &QPushButton::clicked, this, &MainWindow::buttonApply_clicked);
+    connect(buttonCancel, &QPushButton::clicked, this, &MainWindow::buttonCancel_clicked);
+    connect(buttonHelp, &QPushButton::clicked, this, &MainWindow::buttonHelp_clicked);
+    connect(checkGroups, &QCheckBox::stateChanged, this, &MainWindow::checkGroups_stateChanged);
+    connect(checkMozilla, &QCheckBox::stateChanged, this, &MainWindow::checkMozilla_stateChanged);
+    connect(comboChangePass, &QComboBox::textActivated, this, &MainWindow::comboChangePass_activated);
+    connect(comboDeleteUser, &QComboBox::textActivated, this, &MainWindow::comboDeleteUser_activated);
+    connect(comboRenameUser, &QComboBox::textActivated, this, &MainWindow::comboRenameUser_activated);
+    connect(copyRadioButton, &QRadioButton::clicked, this, &MainWindow::copyRadioButton_clicked);
+    connect(docsRadioButton, &QRadioButton::clicked, this, &MainWindow::docsRadioButton_clicked);
+    connect(entireRadioButton, &QRadioButton::clicked, this, &MainWindow::entireRadioButton_clicked);
+    connect(fromUserComboBox, &QComboBox::textActivated, this, &MainWindow::fromUserComboBox_activated);
+    connect(groupNameEdit, &QLineEdit::textEdited, this, &MainWindow::groupNameEdit_textEdited);
+    connect(mozillaRadioButton, &QRadioButton::clicked, this, &MainWindow::mozillaRadioButton_clicked);
+    connect(radioAutologinNo, &QRadioButton::clicked, this, &MainWindow::radioAutologinNo_clicked);
+    connect(radioAutologinYes, &QRadioButton::clicked, this, &MainWindow::radioAutologinYes_clicked);
+    connect(sharedRadioButton, &QRadioButton::clicked, this, &MainWindow::sharedRadioButton_clicked);
+    connect(syncRadioButton, &QRadioButton::clicked, this, &MainWindow::syncRadioButton_clicked);
+    connect(tabWidget, &QTabWidget::currentChanged, this, &MainWindow::tabWidget_currentChanged);
+    connect(toUserComboBox, &QComboBox::textActivated, this, &MainWindow::toUserComboBox_activated);
+    connect(userComboBox, &QComboBox::textActivated, this, &MainWindow::userComboBox_activated);
+    connect(userComboMembership, &QComboBox::textActivated, this, &MainWindow::userComboMembership_activated);
+    connect(userNameEdit, &QLineEdit::textEdited, this, &MainWindow::userNameEdit_textEdited);
+}
+
+void MainWindow::fromUserComboBox_activated(const QString & /*unused*/)
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
@@ -701,7 +737,7 @@ void MainWindow::on_fromUserComboBox_activated(const QString & /*unused*/)
     toUserComboBox->addItem(tr("browse..."));
 }
 
-void MainWindow::on_userComboBox_activated(const QString & /*unused*/)
+void MainWindow::userComboBox_activated(const QString & /*unused*/)
 {
     buttonApply->setDisabled(true);
     radioAutologinNo->setAutoExclusive(false);
@@ -731,7 +767,7 @@ void MainWindow::on_userComboBox_activated(const QString & /*unused*/)
     }
 }
 
-void MainWindow::on_comboDeleteUser_activated(const QString & /*unused*/)
+void MainWindow::comboDeleteUser_activated(const QString & /*unused*/)
 {
     addUserBox->setEnabled(false);
     changePasswordBox->setEnabled(false);
@@ -742,7 +778,7 @@ void MainWindow::on_comboDeleteUser_activated(const QString & /*unused*/)
     }
 }
 
-void MainWindow::on_userNameEdit_textEdited()
+void MainWindow::userNameEdit_textEdited()
 {
     deleteUserBox->setEnabled(false);
     changePasswordBox->setEnabled(false);
@@ -753,7 +789,7 @@ void MainWindow::on_userNameEdit_textEdited()
     }
 }
 
-void MainWindow::on_groupNameEdit_textEdited()
+void MainWindow::groupNameEdit_textEdited()
 {
     deleteBox->setEnabled(false);
     renameUserBox->setEnabled(false);
@@ -763,7 +799,7 @@ void MainWindow::on_groupNameEdit_textEdited()
     }
 }
 
-void MainWindow::on_userComboMembership_activated(const QString & /*unused*/)
+void MainWindow::userComboMembership_activated(const QString & /*unused*/)
 {
     buildListGroups();
     buttonApply->setEnabled(true);
@@ -787,7 +823,7 @@ void MainWindow::buildListGroups()
     // Check the boxes for the groups that the current user belongs to
     const QString cmd = QString("id -nG %1").arg(userComboMembership->currentText());
     const QString out = shell->getOut(cmd);
-    QStringList out_tok = out.split(" ");
+    QStringList out_tok = out.split(' ');
     while (!out_tok.isEmpty()) {
         QString text = out_tok.takeFirst().trimmed();
         auto list = listGroups->findItems(text, Qt::MatchExactly);
@@ -836,7 +872,7 @@ void MainWindow::buildListGroupsToRemove()
 }
 
 // apply but do not close
-void MainWindow::on_buttonApply_clicked()
+void MainWindow::buttonApply_clicked()
 {
     if (!buttonApply->isEnabled()) {
         return;
@@ -881,23 +917,18 @@ void MainWindow::on_buttonApply_clicked()
     }
 }
 
-void MainWindow::on_tabWidget_currentChanged()
+void MainWindow::tabWidget_currentChanged()
 {
     refresh();
 }
 
 // Close but do not apply
-void MainWindow::on_buttonCancel_clicked()
+void MainWindow::buttonCancel_clicked()
 {
     closeApp();
 }
 
-void MainWindow::progress()
-{
-    syncProgressBar->setValue((syncProgressBar->value() + 1) % syncProgressBar->maximum());
-}
-
-void MainWindow::on_buttonAbout_clicked()
+void MainWindow::buttonAbout_clicked()
 {
     hide();
     displayAboutMsgBox(
@@ -910,7 +941,7 @@ void MainWindow::on_buttonAbout_clicked()
     show();
 }
 
-void MainWindow::on_buttonHelp_clicked()
+void MainWindow::buttonHelp_clicked()
 {
     QLocale locale;
     const QString lang = locale.bcp47Name();
@@ -923,7 +954,7 @@ void MainWindow::on_buttonHelp_clicked()
     displayDoc(url, tr("%1 Help").arg(windowTitle()));
 }
 
-void MainWindow::on_comboChangePass_activated(const QString & /*unused*/)
+void MainWindow::comboChangePass_activated(const QString & /*unused*/)
 {
     addUserBox->setEnabled(false);
     deleteUserBox->setEnabled(false);
@@ -934,7 +965,7 @@ void MainWindow::on_comboChangePass_activated(const QString & /*unused*/)
     }
 }
 
-void MainWindow::on_toUserComboBox_activated(const QString &arg1)
+void MainWindow::toUserComboBox_activated(const QString &arg1)
 {
     if (arg1 == tr("browse...")) {
         QString dir = QFileDialog::getExistingDirectory(this, tr("Select folder to copy to"), "/",
@@ -954,43 +985,43 @@ void MainWindow::on_toUserComboBox_activated(const QString &arg1)
     syncProgressBar->setValue(0);
 }
 
-void MainWindow::on_copyRadioButton_clicked()
+void MainWindow::copyRadioButton_clicked()
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
 }
 
-void MainWindow::on_syncRadioButton_clicked()
+void MainWindow::syncRadioButton_clicked()
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
 }
 
-void MainWindow::on_entireRadioButton_clicked()
+void MainWindow::entireRadioButton_clicked()
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
 }
 
-void MainWindow::on_docsRadioButton_clicked()
+void MainWindow::docsRadioButton_clicked()
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
 }
 
-void MainWindow::on_mozillaRadioButton_clicked()
+void MainWindow::mozillaRadioButton_clicked()
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
 }
 
-void MainWindow::on_sharedRadioButton_clicked()
+void MainWindow::sharedRadioButton_clicked()
 {
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
 }
 
-void MainWindow::on_comboRenameUser_activated(const QString & /*unused*/)
+void MainWindow::comboRenameUser_activated(const QString & /*unused*/)
 {
     addUserBox->setEnabled(false);
     changePasswordBox->setEnabled(false);
@@ -1001,22 +1032,22 @@ void MainWindow::on_comboRenameUser_activated(const QString & /*unused*/)
     }
 }
 
-void MainWindow::on_checkGroups_stateChanged(int /*unused*/)
+void MainWindow::checkGroups_stateChanged(int /*unused*/)
 {
     buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
 }
 
-void MainWindow::on_checkMozilla_stateChanged(int /*unused*/)
+void MainWindow::checkMozilla_stateChanged(int /*unused*/)
 {
     buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
 }
 
-void MainWindow::on_radioAutologinYes_clicked()
+void MainWindow::radioAutologinYes_clicked()
 {
     buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
 }
 
-void MainWindow::on_radioAutologinNo_clicked()
+void MainWindow::radioAutologinNo_clicked()
 {
     buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
 }
