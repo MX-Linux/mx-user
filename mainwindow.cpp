@@ -33,14 +33,12 @@
 
 using namespace std::chrono_literals;
 
-enum Tab { Administration, Options, Copy, AddRemoveGroup, GroupMembership, MAX };
-
 MainWindow::MainWindow(QWidget *parent)
     : QDialog(parent)
 {
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     setupUi(this);
-    setWindowFlags(Qt::Window); // for the close, min and max buttons
+    setWindowFlags(Qt::Window); // For the close, min and max buttons
     setWindowIcon(QApplication::windowIcon());
     passUser = new PassEdit(userPasswordEdit, userPassword2Edit, 1, this);
     passChange = new PassEdit(lineEditChangePass, lineEditChangePassConf, 1, this);
@@ -51,7 +49,7 @@ MainWindow::MainWindow(QWidget *parent)
     tabWidget->blockSignals(false);
     QSize size = this->size();
     restoreGeometry(settings.value("geometry").toByteArray());
-    if (isMaximized()) { // if started maximized give option to resize to normal window size
+    if (isMaximized()) { // If started maximized give option to resize to normal window size
         resize(size);
         QRect screenGeometry = QApplication::primaryScreen()->geometry();
         int x = (screenGeometry.width() - width()) / 2;
@@ -93,7 +91,7 @@ void MainWindow::refresh()
         refreshDelete();
         refreshChangePass();
         refreshRename();
-        users = shell->getOut("lslogins --noheadings -u -o user | grep -vw root", true).trimmed().split("\n");
+        users = shell->getOut("lslogins --noheadings -u -o user | grep -vw root", true).trimmed().split('\n');
         users.sort();
         comboRenameUser->addItems(users);
         comboChangePass->addItems(users);
@@ -216,7 +214,7 @@ void MainWindow::applyOptions()
     }
     setCursor(QCursor(Qt::WaitCursor));
 
-    // restore groups
+    // Restore groups
     if (checkGroups->isChecked() && user != "root") {
         buildListGroups();
         QString cmd = "sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'";
@@ -228,10 +226,10 @@ void MainWindow::applyOptions()
             }
         }
         shell->runAsRoot("usermod -G '' " + user);
-        shell->runAsRoot("usermod -G " + new_group_list.join(",") + " " + user);
+        shell->runAsRoot("usermod -G " + new_group_list.join(',') + ' ' + user);
         QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
     }
-    // reset Mozilla configs
+    // Reset Mozilla configs
     if (checkMozilla->isChecked()) {
         shell->runAsRoot("rm -r " + home + "/.mozilla");
         QMessageBox::information(this, windowTitle(), tr("Mozilla settings were reset."));
@@ -277,7 +275,6 @@ void MainWindow::applyDesktop()
             tr("You must specify a 'copy to' destination. You cannot copy to the desktop you are logged in to."));
         return;
     }
-    // verify
     if (QMessageBox::Yes
         != QMessageBox::critical(
             this, windowTitle(),
@@ -303,7 +300,7 @@ void MainWindow::applyDesktop()
         fromDir.append("/Shared");
         toDir.append("/Shared");
     }
-    fromDir.append("/");
+    fromDir.append('/');
 
     setCursor(QCursor(Qt::WaitCursor));
     if (syncRadioButton->isChecked()) {
@@ -316,7 +313,7 @@ void MainWindow::applyDesktop()
         cmd.append("--delete-after ");
     }
     cmd.append(fromDir);
-    cmd.append(" ");
+    cmd.append(' ');
     cmd.append(toDir);
     QTimer timer;
     timer.start(100ms);
@@ -336,8 +333,7 @@ void MainWindow::applyDesktop()
 
 void MainWindow::applyAdd()
 {
-    // validate data before proceeding
-    // see if username is reasonable length
+    // Validate data before proceeding, see if username is reasonable length
     if (userNameEdit->text().length() < 2) {
         QMessageBox::critical(
             this, windowTitle(),
@@ -349,8 +345,8 @@ void MainWindow::applyAdd()
                                  "Please choose another name before proceeding."));
         return;
     }
-    // check that user name is not already used
-    if (QProcess::execute("grep", {"-w", "^" + userNameEdit->text(), "/etc/passwd"}) == 0) {
+    // Check that user name is not already used
+    if (QProcess::execute("grep", {"-w", '^' + userNameEdit->text(), "/etc/passwd"}) == 0) {
         QMessageBox::critical(this, windowTitle(), tr("Sorry, this name is in use. Please enter a different name."));
         return;
     }
@@ -384,15 +380,15 @@ void MainWindow::applyAdd()
     }
 
     shell->runAsRoot("adduser --disabled-login " + allowBadNames + " --shell " + dshell + " " + commentOption + " "
-                     + userNameEdit->text() + " " + userNameEdit->text());
+                     + userNameEdit->text() + ' ' + userNameEdit->text());
 
     QProcess proc;
     QString elevate {QFile::exists("/usr/bin/pkexec") ? "/usr/bin/pkexec" : "/usr/bin/gksu"};
     QString helper {"/usr/lib/" + QApplication::applicationName() + "/helper"};
     proc.start(elevate, {helper, "passwd", userNameEdit->text()}, QIODevice::ReadWrite);
     proc.waitForStarted();
-    proc.write(userPasswordEdit->text().toUtf8() + "\n");
-    proc.write(userPasswordEdit->text().toUtf8() + "\n");
+    proc.write(userPasswordEdit->text().toUtf8() + '\n');
+    proc.write(userPasswordEdit->text().toUtf8() + '\n');
     proc.waitForFinished();
 
     if (proc.exitCode() == 0) {
@@ -406,7 +402,7 @@ void MainWindow::applyAdd()
     }
 }
 
-// change user password
+// Change user password
 void MainWindow::applyChangePass()
 {
     if (!passChange->confirmed()) {
@@ -425,8 +421,8 @@ void MainWindow::applyChangePass()
     QString helper {"/usr/lib/" + QApplication::applicationName() + "/helper"};
     proc.start(elevate, {helper, "passwd", comboChangePass->currentText()}, QIODevice::ReadWrite);
     proc.waitForStarted();
-    proc.write(lineEditChangePass->text().toUtf8() + "\n");
-    proc.write(lineEditChangePass->text().toUtf8() + "\n");
+    proc.write(lineEditChangePass->text().toUtf8() + '\n');
+    proc.write(lineEditChangePass->text().toUtf8() + '\n');
     proc.waitForFinished();
 
     if (proc.exitCode() == 0) {
@@ -467,7 +463,7 @@ void MainWindow::applyDelete()
 
 void MainWindow::applyGroup()
 {
-    // checks if adding or removing groups
+    // Checks if adding or removing groups
     if (addBox->isEnabled()) {
         // validate data before proceeding
         // see if groupname is reasonable length
@@ -483,13 +479,13 @@ void MainWindow::applyGroup()
                                      "Please choose another name before proceeding."));
             return;
         }
-        // check that group name is not already used
-        if (QProcess::execute("grep", {"-w", "^" + groupNameEdit->text(), "/etc/group"}) == 0) {
+        // Check that group name is not already used
+        if (QProcess::execute("grep", {"-w", '^' + groupNameEdit->text(), "/etc/group"}) == 0) {
             QMessageBox::critical(this, windowTitle(),
                                   tr("Sorry, that group name already exists. Please enter a different name."));
             return;
         }
-        // run addgroup command
+        // Run addgroup command
         QString group_user_level = checkGroupUserLevel->checkState() == Qt::Checked
                                        ? "--quiet" // --quiet because it fails if ""
                                        : "--system";
@@ -498,7 +494,7 @@ void MainWindow::applyGroup()
         } else {
             QMessageBox::critical(this, windowTitle(), tr("Failed to add the system group."));
         }
-    } else { // deleting group if addBox disabled
+    } else { // Deleting group if addBox disabled
         QStringList groups;
         for (auto i = 0; i < listGroupsToRemove->count(); ++i) {
             if (listGroupsToRemove->item(i)->checkState() == Qt::Checked) {
@@ -521,7 +517,7 @@ void MainWindow::applyGroup()
             if (it != groups.cend()) {
                 const auto &group = *it;
                 QMessageBox::critical(this, windowTitle(),
-                                      tr("Failed to delete the group.") + "\n" + tr("Group: %1").arg(group));
+                                      tr("Failed to delete the group.") + '\n' + tr("Group: %1").arg(group));
                 refresh();
                 return;
             }
@@ -537,11 +533,11 @@ void MainWindow::applyMembership()
     QString groups;
     for (auto i = 0; i < listGroups->count(); ++i) {
         if (listGroups->item(i)->checkState() == Qt::Checked) {
-            groups += listGroups->item(i)->text() + ",";
+            groups += listGroups->item(i)->text() + ',';
         }
     }
     groups.chop(1);
-    if (shell->runAsRoot("usermod -G " + groups + " " + userComboMembership->currentText())) {
+    if (shell->runAsRoot("usermod -G " + groups + ' ' + userComboMembership->currentText())) {
         QMessageBox::information(this, windowTitle(), tr("The changes have been applied."));
     } else {
         QMessageBox::critical(this, windowTitle(), tr("Failed to apply group changes"));
@@ -577,7 +573,7 @@ void MainWindow::applyRename()
                                  "Please choose another name before proceeding."));
         return;
     }
-    if (QProcess::execute("grep", {"-w", "^" + new_name, "/etc/passwd"}) == 0) {
+    if (QProcess::execute("grep", {"-w", '^' + new_name, "/etc/passwd"}) == 0) {
         QMessageBox::critical(this, windowTitle(),
                               tr("Sorry, this name already exists on your system. Please enter a different name."));
         return;
@@ -780,7 +776,7 @@ void MainWindow::buildListGroups()
 {
     listGroups->clear();
     // Read /etc/group and add all the groups in the listGroups
-    QStringList groups = shell->getOut("cat /etc/group | cut -f 1 -d :").trimmed().split("\n");
+    QStringList groups = shell->getOut("cat /etc/group | cut -f 1 -d :").trimmed().split('\n');
     groups.sort();
     for (const QString &group : groups) {
         auto *item = new QListWidgetItem;
@@ -809,12 +805,12 @@ void MainWindow::buildListGroupsToRemove()
         qDebug() << "Can't open /etc/group";
         exit(EXIT_FAILURE);
     }
-    QStringList groups = QString(file.readAll()).split("\n");
+    QStringList groups = QString(file.readAll()).split('\n');
     groups.sort();
     for (const auto &group : qAsConst(groups)) {
         if (!group.isEmpty()) {
             auto *item = new QListWidgetItem;
-            item->setText(group.section(":", 0, 0));
+            item->setText(group.section(':', 0, 0));
             if (item->text() == "root") {
                 continue;
             }
