@@ -124,7 +124,10 @@ void MainWindow::refreshCopy()
 {
     fromUserComboBox->clear();
     fromUserComboBox->addItems(users);
-    const QString logname = shell->getOut("logname", true);
+    QString logname = QString::fromUtf8(qgetenv("SUDO_USER")).trimmed();
+    if (logname.isEmpty()) {
+        logname = QString::fromUtf8(qgetenv("LOGNAME")).trimmed();
+    }
     fromUserComboBox->setCurrentIndex(fromUserComboBox->findText(logname));
     copyRadioButton->setChecked(true);
     entireRadioButton->setChecked(true);
@@ -559,7 +562,11 @@ void MainWindow::applyRename()
 
     // Validate data before proceeding
     // Check if selected user is in use
-    if (shell->getOut("logname", true) == old_name) {
+    QString logname = QString::fromUtf8(qgetenv("SUDO_USER")).trimmed();
+    if (logname.isEmpty()) {
+        logname = QString::fromUtf8(qgetenv("LOGNAME")).trimmed();
+    }
+    if (logname == old_name) {
         QMessageBox::critical(
             this, windowTitle(),
             tr("The selected user name is currently in use.") + "\n\n"
@@ -733,7 +740,11 @@ void MainWindow::fromUserComboBox_activated(const QString & /*unused*/)
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
     QStringList items = users;
-    items.removeAll(shell->getOut("logname", true));
+    QString logname = QString::fromUtf8(qgetenv("SUDO_USER")).trimmed();
+    if (logname.isEmpty()) {
+        logname = QString::fromUtf8(qgetenv("LOGNAME")).trimmed();
+    }
+    items.removeAll(logname);
     items.removeAll(fromUserComboBox->currentText());
     items.sort();
     toUserComboBox->clear();
