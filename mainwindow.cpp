@@ -708,17 +708,13 @@ void MainWindow::setConnections()
     connect(buttonHelp, &QPushButton::clicked, this, &MainWindow::buttonHelp_clicked);
     connect(checkGroups, &QCheckBox::stateChanged, this, &MainWindow::checkGroups_stateChanged);
     connect(checkMozilla, &QCheckBox::stateChanged, this, &MainWindow::checkMozilla_stateChanged);
-    connect(comboChangePass, QOverload<const QString &>::of(&QComboBox::activated), this,
-            &MainWindow::comboChangePass_activated);
-    connect(comboDeleteUser, QOverload<const QString &>::of(&QComboBox::activated), this,
-            &MainWindow::comboDeleteUser_activated);
-    connect(comboRenameUser, QOverload<const QString &>::of(&QComboBox::activated), this,
-            &MainWindow::comboRenameUser_activated);
+    connect(comboChangePass, &QComboBox::textActivated, this, &MainWindow::comboChangePass_activated);
+    connect(comboDeleteUser, &QComboBox::textActivated, this, &MainWindow::comboDeleteUser_activated);
+    connect(comboRenameUser, &QComboBox::textActivated, this, &MainWindow::comboRenameUser_activated);
     connect(copyRadioButton, &QRadioButton::clicked, this, &MainWindow::copyRadioButton_clicked);
     connect(docsRadioButton, &QRadioButton::clicked, this, &MainWindow::docsRadioButton_clicked);
     connect(entireRadioButton, &QRadioButton::clicked, this, &MainWindow::entireRadioButton_clicked);
-    connect(fromUserComboBox, QOverload<const QString &>::of(&QComboBox::activated), this,
-            &MainWindow::fromUserComboBox_activated);
+    connect(fromUserComboBox, &QComboBox::textActivated, this, &MainWindow::fromUserComboBox_activated);
     connect(groupNameEdit, &QLineEdit::textEdited, this, &MainWindow::groupNameEdit_textEdited);
     connect(mozillaRadioButton, &QRadioButton::clicked, this, &MainWindow::mozillaRadioButton_clicked);
     connect(radioAutologinNo, &QRadioButton::clicked, this, &MainWindow::radioAutologinNo_clicked);
@@ -726,12 +722,9 @@ void MainWindow::setConnections()
     connect(sharedRadioButton, &QRadioButton::clicked, this, &MainWindow::sharedRadioButton_clicked);
     connect(syncRadioButton, &QRadioButton::clicked, this, &MainWindow::syncRadioButton_clicked);
     connect(tabWidget, &QTabWidget::currentChanged, this, &MainWindow::tabWidget_currentChanged);
-    connect(toUserComboBox, QOverload<const QString &>::of(&QComboBox::activated), this,
-            &MainWindow::toUserComboBox_activated);
-    connect(userComboBox, QOverload<const QString &>::of(&QComboBox::activated), this,
-            &MainWindow::userComboBox_activated);
-    connect(userComboMembership, QOverload<const QString &>::of(&QComboBox::activated), this,
-            &MainWindow::userComboMembership_activated);
+    connect(toUserComboBox, &QComboBox::textActivated, this, &MainWindow::toUserComboBox_activated);
+    connect(userComboBox, &QComboBox::textActivated, this, &MainWindow::userComboBox_activated);
+    connect(userComboMembership, &QComboBox::textActivated, this, &MainWindow::userComboMembership_activated);
     connect(userNameEdit, &QLineEdit::textEdited, this, &MainWindow::userNameEdit_textEdited);
 }
 
