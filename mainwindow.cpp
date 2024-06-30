@@ -451,8 +451,8 @@ void MainWindow::applyDelete()
     if (QMessageBox::Yes == QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No)) {
         QString cmd;
         if (deleteHomeCheckBox->isChecked()) {
-            shell->runAsRoot("timeout 5s killall -w -u " + comboDeleteUser->currentText());
-            shell->runAsRoot("timeout 5s killall -9 -w -u " + comboDeleteUser->currentText());
+            shell->runAsRoot("timeout 5s killall -w -u " + comboDeleteUser->currentText()
+                             + "; timeout 5s killall -9 -w -u " + comboDeleteUser->currentText());
             cmd = QString("deluser --remove-home %1").arg(comboDeleteUser->currentText());
         } else {
             cmd = QString("deluser %1").arg(comboDeleteUser->currentText());
