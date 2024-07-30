@@ -257,11 +257,10 @@ void MainWindow::applyOptions()
                              + " /etc/lightdm/lightdm.conf");
         }
         if (QFile::exists("/etc/sddm.conf")) {
-            QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
+            shell->runAsRoot(QString("sed -i 's/^User=.*/User=%1/' /etc/sddm.conf").arg(user));
             if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == "KDE") {
-                sddm_settings.setValue("Autologin/Session", "plasma.desktop");
+                shell->runAsRoot("sed -i 's/^Session=.*/Session=plasma.desktop/' /etc/sddm.conf");
             }
-            sddm_settings.setValue("Autologin/User", user);
         }
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been enabled for the '%1' account.").arg(user)));
