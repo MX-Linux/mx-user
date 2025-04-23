@@ -848,7 +848,7 @@ void MainWindow::buildListGroupsToRemove()
     }
     QStringList groups = QString(file.readAll()).split('\n');
     groups.sort();
-    for (const auto &group : qAsConst(groups)) {
+    for (const auto &group : std::as_const(groups)) {
         if (!group.isEmpty()) {
             auto *item = new QListWidgetItem;
             item->setText(group.section(':', 0, 0));
