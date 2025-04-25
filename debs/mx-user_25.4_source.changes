@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 24 Apr 2025 20:41:04 -0400
+Source: mx-user
+Architecture: source
+Version: 25.4
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (25.4) mx; urgency=medium
+ .
+   * Update to Qt6
+Checksums-Sha1:
+ af780db3c6e3b29e14681077b08776e0f77b2e78 1295 mx-user_25.4.dsc
+ 6835a218f568ef0977e650f8bff63e9772b6c22c 177760 mx-user_25.4.tar.xz
+ 3f60fd32325395c420e2646ac82868c9953c3c2a 10638 mx-user_25.4_amd64.buildinfo
+Checksums-Sha256:
+ 082e224656fa2a9a154979f130974f010209d9b7daf9faf89b31dbaf260761a8 1295 mx-user_25.4.dsc
+ 8e87266675775184d595ce74eff522f4f547964463a962ff11d2c4aa92b1d2be 177760 mx-user_25.4.tar.xz
+ 6b4bcac79fa9f27528733ac3415654a79e065d683d14b093beb761e3af7a88fd 10638 mx-user_25.4_amd64.buildinfo
+Files:
+ 14e19be0860cd7948643578f305177d6 1295 admin optional mx-user_25.4.dsc
+ 2b050e2822304e560d71da980ee7fa63 177760 admin optional mx-user_25.4.tar.xz
+ 176914bf3fba990749424cadb6d180c1 10638 admin optional mx-user_25.4_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmgK3OkTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumKP+B/9SFr0GzDQ2o1ZuiLC8PrULwoGKTVLK
+ib0QWmzcLtJ7GyB/qucbCv2p94MsoE33QxDSzXb1MaAUONa+X42/GY6I51+oRRcV
+OW/6aw5odG+Rht/HY/2hijrPm9hmqVh9bz2LtArEiXigkbsGzJyboMYyqtrOa00U
+vNNwSV9UcbVS1MrtdCGrn4Naz4kpE6D54ZsVd5Vb8GUdjQRkk6vOkzqGm8ERG5BO
+i9qIXBwOmThh9oxo/u60S0bLQ0jLWztJDwExeA40Elb8eKioppfnTU3N3Vp1BdIp
+T4KukVdEQvDICTwtpriyDbZz5MuVMAD2lpBEMMbsnVBwEgmHe2Hgr7QK
+=E0JJ
+-----END PGP SIGNATURE-----
