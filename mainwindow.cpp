@@ -577,10 +577,9 @@ void MainWindow::applyRename()
                               tr("The user name needs to be at least 2 characters long. Please select a longer "
                                  "name before proceeding."));
         return;
-    } else if (!new_name.contains(QRegularExpression("^[a-z_][a-z0-9_-]*[$]?$"))) {
+    } else if (!new_name.contains(QRegularExpression("^[A-Za-z_][A-Za-z0-9_-]*[$]?$"))) {
         QMessageBox::critical(this, windowTitle(),
-                              tr("The user name needs to be lower case and it\n"
-                                 "cannot contain special characters or spaces.\n"
+                              tr("The user name cannot contain special characters or spaces.\n"
                                  "Please choose another name before proceeding."));
         return;
     }
