@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Thu, 01 May 2025 18:38:18 -0400
+Source: mx-user
+Architecture: source
+Version: 25.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (25.5.01) mx; urgency=medium
+ .
+   * Fix string replacement when renaming user
+Checksums-Sha1:
+ 528de04105a7a6a8b31f594241d746bcd28e30a4 611 mx-user_25.5.01.dsc
+ 5409dcfe4fa61d49fabc74d3bddda82cf5ecd0fb 177764 mx-user_25.5.01.tar.xz
+ 508eaffee46db419857f046bda98137fc09f2dce 9815 mx-user_25.5.01_arm64.buildinfo
+Checksums-Sha256:
+ 3f4f9711a8e3da6f1b906870509ac23aef271fee24505d83dd61f4b897f8bdb4 611 mx-user_25.5.01.dsc
+ f07ff53bc1d22866165120bf42b34c9381a061593de394ce9e8e13eef530e410 177764 mx-user_25.5.01.tar.xz
+ ac9318468188039a722b98237e5efd5c944c671de6e448dcbf4be6bf9013719d 9815 mx-user_25.5.01_arm64.buildinfo
+Files:
+ 85b010984f43d85266c5b5b659c67502 611 system optional mx-user_25.5.01.dsc
+ 0af86891e83ec9835bc8a0b44a18aa94 177764 system optional mx-user_25.5.01.tar.xz
+ 3c137cd820490bf56183ad071ef34ddb 9815 system optional mx-user_25.5.01_arm64.buildinfo

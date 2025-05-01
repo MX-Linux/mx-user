@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Thu, 01 May 2025 18:38:18 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: arm64
+Version: 25.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (25.5.01) mx; urgency=medium
+ .
+   * Fix string replacement when renaming user
+Checksums-Sha1:
+ 508eaffee46db419857f046bda98137fc09f2dce 9815 mx-user_25.5.01_arm64.buildinfo
+ e9400403695a3492f31e6cb1394c940ba9b0f70b 209648 mx-user_25.5.01_arm64.deb
+Checksums-Sha256:
+ ac9318468188039a722b98237e5efd5c944c671de6e448dcbf4be6bf9013719d 9815 mx-user_25.5.01_arm64.buildinfo
+ 96d903430646bf07870f74a143b1f207a4509f9dd86a48dd32137fd4ea8e166f 209648 mx-user_25.5.01_arm64.deb
+Files:
+ 3c137cd820490bf56183ad071ef34ddb 9815 system optional mx-user_25.5.01_arm64.buildinfo
+ e77eb0405e687d2be7ee40b07bb02ef2 209648 system optional mx-user_25.5.01_arm64.deb

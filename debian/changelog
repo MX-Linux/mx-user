@@ -1,3 +1,9 @@
+mx-user (25.5.01) mx; urgency=medium
+
+  * Fix string replacement when renaming user
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 01 May 2025 18:38:18 -0400
+
 mx-user (25.5) mx; urgency=medium
 
   * Fix: allow mix of cases when renaming username

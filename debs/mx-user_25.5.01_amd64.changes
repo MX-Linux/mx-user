@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 01 May 2025 18:38:18 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 25.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (25.5.01) mx; urgency=medium
+ .
+   * Fix string replacement when renaming user
+Checksums-Sha1:
+ 1902b8554ae65958f21cb168ee709173fbb17ad8 1173 mx-user_25.5.01.dsc
+ 62c96a01119b1622b8f0587afda06fd2367a2f3b 177772 mx-user_25.5.01.tar.xz
+ 1da508cc3e8ed609df8e51d866e3cbcee4bfdf32 10688 mx-user_25.5.01_amd64.buildinfo
+ 966820b014a64ffaec90a6095bfeeab535b19f3b 217748 mx-user_25.5.01_amd64.deb
+Checksums-Sha256:
+ 73fac4640cc4d9129b317c274922be0fb7f3fad96b79156af349ddb0d234317f 1173 mx-user_25.5.01.dsc
+ 057869a49a7baa9db8803bb7e872c5662a66411dd4c12bf32979293cdb94445d 177772 mx-user_25.5.01.tar.xz
+ 6e79721d957f16954da2f6b52dcad7500130c497fb823b28c6fb01c2ee7fed37 10688 mx-user_25.5.01_amd64.buildinfo
+ aff571973898381d09ac74f38c00053f48bdc0a5322b9ba3949e68f6b82afad4 217748 mx-user_25.5.01_amd64.deb
+Files:
+ d66a92d9d69cb82f969340a17aebe30d 1173 system optional mx-user_25.5.01.dsc
+ a5802da4a69e5196af26f02529cbb1a5 177772 system optional mx-user_25.5.01.tar.xz
+ 6f1ca2213eb962db1826ea82bdef2c4c 10688 system optional mx-user_25.5.01_amd64.buildinfo
+ 3ec25dba99d7be128899c7f30562305f 217748 system optional mx-user_25.5.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmgT+FYTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumG8+B/9iQalhRJDUjixoXaM+lFEEywIRpigd
+/FPbSNhfxPjzoKBICfKBJfn9HMZkpPqBj6aJ3I431tqNc0FsLvBFGLNoe2ORqDVY
+SjAc/+Y1n8NyBRwHK+m/Igmt3PfS6JNJYTVr3DgweI0fwPoT8rpStA1EZeOUClEm
+X6LnKCUENgsZj/P4xjjhuHUgFWPLLYLKGgvduxiAwkjngQxKRdQOB3ZrZ0qCXZ4B
+8Kkq4MVQt5Br8XtlKseyupPZ++ga4BySMfFcosTAGl6gNd8dpfkIBAMksHBnn+wR
+9H9kLLDXPEeqANtzkMPrM2PL6S3hbJ5YcQ/CF/+MZTMu7rU9n4Y1jeV/
+=LATl
+-----END PGP SIGNATURE-----

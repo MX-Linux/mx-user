@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Thu, 01 May 2025 18:38:18 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 25.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (25.5.01) mx; urgency=medium
+ .
+   * Fix string replacement when renaming user
+Checksums-Sha1:
+ dc228789f96978e753c52dd6ba9bda0f94a15e01 9844 mx-user_25.5.01_i386.buildinfo
+ b7b92fba3e62630fd1a9acdefd0dcba8d16b8262 222364 mx-user_25.5.01_i386.deb
+Checksums-Sha256:
+ f3a2a104cf2befafe8830bba5b44bad015aac9e983367d2849ae9cff554b2d4c 9844 mx-user_25.5.01_i386.buildinfo
+ a2c6627ad2413a2093c0b8d387e5891283c78f20b133f177ed4144e8af039f1f 222364 mx-user_25.5.01_i386.deb
+Files:
+ 8cce3bca00fcb72ae3aa7ec48ea862ec 9844 system optional mx-user_25.5.01_i386.buildinfo
+ 1c7ee15860fcd9cec4472745c8774cd8 222364 system optional mx-user_25.5.01_i386.deb
