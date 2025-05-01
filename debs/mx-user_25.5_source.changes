@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Thu, 01 May 2025 08:20:27 -0400
+Source: mx-user
+Architecture: source
+Version: 25.5
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-user (25.5) mx; urgency=medium
+ .
+   * Fix: allow mix of cases when renaming username
+   * Update translations
+Checksums-Sha1:
+ 822ea399016af2a2eb1da12e88c38d9a44bf126a 599 mx-user_25.5.dsc
+ 32a3955137c18cf6cda37177398c5a4fd8efb9db 177652 mx-user_25.5.tar.xz
+ 56899c6e03eaab2831ddd328e6f57aa2fd06f078 9800 mx-user_25.5_arm64.buildinfo
+Checksums-Sha256:
+ 270cea8f2b5781c79a2ad724c4d57982397986024f0b147ad445d05bd14843ec 599 mx-user_25.5.dsc
+ f0166c4136eccf4970b142321921cdd9bc38cf08d71eea5109098dd1f6a71cda 177652 mx-user_25.5.tar.xz
+ 8f0479c9d31ca74bbd58297d67ec5e00e9e807ecad5329faaa766a9b6297e371 9800 mx-user_25.5_arm64.buildinfo
+Files:
+ f344aee96d6edf50e472bb9b96634def 599 system optional mx-user_25.5.dsc
+ 07de8bdb9ad092b5d101f23f6d2aca2c 177652 system optional mx-user_25.5.tar.xz
+ 0d8e91254e5f9c6588120e012ca33b97 9800 system optional mx-user_25.5_arm64.buildinfo

@@ -1,3 +1,10 @@
+mx-user (25.5) mx; urgency=medium
+
+  * Fix: allow mix of cases when renaming username
+  * Update translations
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 01 May 2025 08:20:27 -0400
+
 mx-user (24.11) mx; urgency=medium
 
   * Remove 'none' user from some combo boxes -- not needed

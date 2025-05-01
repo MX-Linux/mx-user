@@ -501,22 +501,22 @@
         <location filename="../mainwindow.cpp" line="157"/>
         <location filename="../mainwindow.cpp" line="165"/>
         <location filename="../mainwindow.cpp" line="192"/>
-        <location filename="../mainwindow.cpp" line="781"/>
-        <location filename="../mainwindow.cpp" line="811"/>
-        <location filename="../mainwindow.cpp" line="968"/>
-        <location filename="../mainwindow.cpp" line="1035"/>
-        <location filename="../mainwindow.cpp" line="1042"/>
-        <location filename="../mainwindow.cpp" line="1047"/>
-        <location filename="../mainwindow.cpp" line="1052"/>
-        <location filename="../mainwindow.cpp" line="1057"/>
+        <location filename="../mainwindow.cpp" line="780"/>
+        <location filename="../mainwindow.cpp" line="810"/>
+        <location filename="../mainwindow.cpp" line="967"/>
+        <location filename="../mainwindow.cpp" line="1034"/>
+        <location filename="../mainwindow.cpp" line="1041"/>
+        <location filename="../mainwindow.cpp" line="1046"/>
+        <location filename="../mainwindow.cpp" line="1051"/>
+        <location filename="../mainwindow.cpp" line="1056"/>
         <source>none</source>
         <translation>هیچکدام</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
-        <location filename="../mainwindow.cpp" line="745"/>
-        <location filename="../mainwindow.cpp" line="975"/>
-        <location filename="../mainwindow.cpp" line="984"/>
+        <location filename="../mainwindow.cpp" line="744"/>
+        <location filename="../mainwindow.cpp" line="974"/>
+        <location filename="../mainwindow.cpp" line="983"/>
         <source>browse...</source>
         <translation>مرورگر...</translation>
     </message>
@@ -579,6 +579,7 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="350"/>
+        <location filename="../mainwindow.cpp" line="582"/>
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
@@ -715,93 +716,92 @@ Please choose another name before proceeding.</source>
         <translation>برای تغییر نام کاربر فعلی می بایست logout کنید و با یک نام کاربری دیگر login کنید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="582"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>نام کاربری باید با حروف کوچک نوشته شود و
+        <translation type="vanished">نام کاربری باید با حروف کوچک نوشته شود و
  نمی تواند دارای فاصله یا کاراکترهای خاص باشد.
 لطفا یک نام کاربری مناسب انتخاب کنید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="589"/>
+        <location filename="../mainwindow.cpp" line="588"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>خطا - این نام در حال حاضر روی سیستم موجود است. یک نام دیگر انتخاب کنید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="598"/>
+        <location filename="../mainwindow.cpp" line="597"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
         <translation>خطا - تغییر نام کاربر امکان پذیر نیست. مطمئن شوید که کاربر وارد سیستم نشده باشد. ممکن است نیاز به راه اندازی مجدد سیستم باشد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="621"/>
         <source>The user was renamed.</source>
         <translation>نام کاربر تغییر داده شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="634"/>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="633"/>
+        <location filename="../mainwindow.cpp" line="661"/>
         <source>Synchronizing desktop...ok</source>
         <translation>همگام سازی دسکتاپ ... موفق.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="636"/>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="635"/>
+        <location filename="../mainwindow.cpp" line="663"/>
         <source>Copying desktop...ok</source>
         <translation>عملیات کپی دسکتاپ ... موفق.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="667"/>
         <source>Synchronizing desktop...failed</source>
         <translation>همگام سازی دسکتاپ ... با خطا روبرو شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="669"/>
         <source>Copying desktop...failed</source>
         <translation>عملیات کپی دسکتاپ ... با خطا روبرو شد.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="689"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>Confirmation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="689"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="940"/>
+        <location filename="../mainwindow.cpp" line="939"/>
         <source>About %1</source>
         <translation>درباره 1%</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="941"/>
+        <location filename="../mainwindow.cpp" line="940"/>
         <source>Version: </source>
         <translation>نسخه:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="942"/>
+        <location filename="../mainwindow.cpp" line="941"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>تنظیمات کاربری آسان MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="944"/>
+        <location filename="../mainwindow.cpp" line="943"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="945"/>
+        <location filename="../mainwindow.cpp" line="944"/>
         <source>%1 License</source>
         <translation>مجوز 1%</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="959"/>
+        <location filename="../mainwindow.cpp" line="958"/>
         <source>%1 Help</source>
         <translation>راهنمای 1%</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="976"/>
+        <location filename="../mainwindow.cpp" line="975"/>
         <source>Select folder to copy to</source>
         <translation>پوشه مقصد برای کپی را انتخاب کنید</translation>
     </message>

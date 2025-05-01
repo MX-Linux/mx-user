@@ -501,22 +501,22 @@
         <location filename="../mainwindow.cpp" line="157"/>
         <location filename="../mainwindow.cpp" line="165"/>
         <location filename="../mainwindow.cpp" line="192"/>
-        <location filename="../mainwindow.cpp" line="781"/>
-        <location filename="../mainwindow.cpp" line="811"/>
-        <location filename="../mainwindow.cpp" line="968"/>
-        <location filename="../mainwindow.cpp" line="1035"/>
-        <location filename="../mainwindow.cpp" line="1042"/>
-        <location filename="../mainwindow.cpp" line="1047"/>
-        <location filename="../mainwindow.cpp" line="1052"/>
-        <location filename="../mainwindow.cpp" line="1057"/>
+        <location filename="../mainwindow.cpp" line="780"/>
+        <location filename="../mainwindow.cpp" line="810"/>
+        <location filename="../mainwindow.cpp" line="967"/>
+        <location filename="../mainwindow.cpp" line="1034"/>
+        <location filename="../mainwindow.cpp" line="1041"/>
+        <location filename="../mainwindow.cpp" line="1046"/>
+        <location filename="../mainwindow.cpp" line="1051"/>
+        <location filename="../mainwindow.cpp" line="1056"/>
         <source>none</source>
         <translation>wala</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
-        <location filename="../mainwindow.cpp" line="745"/>
-        <location filename="../mainwindow.cpp" line="975"/>
-        <location filename="../mainwindow.cpp" line="984"/>
+        <location filename="../mainwindow.cpp" line="744"/>
+        <location filename="../mainwindow.cpp" line="974"/>
+        <location filename="../mainwindow.cpp" line="983"/>
         <source>browse...</source>
         <translation>maghanap...</translation>
     </message>
@@ -579,6 +579,7 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="350"/>
+        <location filename="../mainwindow.cpp" line="582"/>
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation>Ang pangalan ng gumagamit ay hindi maaring maglamang ng mga espesyal na character maging ng espasyo.
@@ -714,91 +715,90 @@ Please choose another name before proceeding.</source>
         <translation>Para baguhin ang pangalan ng gumagamit na ito, mangyaring lumabas at pumasok muli gamit ang ibang gumagamit na kuwenta.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="582"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>Ang pangalan ng gumagamit ay dapat mga maliit na titik at di maaring maglaman ng mga special character o ng espasyo. Pumili ng ibang pangalan bago magpatuloy.</translation>
+        <translation type="vanished">Ang pangalan ng gumagamit ay dapat mga maliit na titik at di maaring maglaman ng mga special character o ng espasyo. Pumili ng ibang pangalan bago magpatuloy.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="589"/>
+        <location filename="../mainwindow.cpp" line="588"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>Paumanhin, ang pangalan na ito ay umiiral na sa iyong sistema. Pumili ng ibang pangalan.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="598"/>
+        <location filename="../mainwindow.cpp" line="597"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
         <translation>Bigo sa pagpapalit ng pangalan ng gumagamit Tiyaking ang  gumagamit ay hindi nakapasok. Maaring mangangailangan kang muling magsimula.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="621"/>
         <source>The user was renamed.</source>
         <translation>Hindi napalitan ang pangalan ng gumagamit.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="634"/>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="633"/>
+        <location filename="../mainwindow.cpp" line="661"/>
         <source>Synchronizing desktop...ok</source>
         <translation>Maayos ang pagsasabay ng desktop...ok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="636"/>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="635"/>
+        <location filename="../mainwindow.cpp" line="663"/>
         <source>Copying desktop...ok</source>
         <translation>Kumokopya ng desktop...ok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="667"/>
         <source>Synchronizing desktop...failed</source>
         <translation>Pagsasabay ng desktop...ay bigo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="669"/>
         <source>Copying desktop...failed</source>
         <translation>Ang pagkokopya ng desktop...ay bigo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="689"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>Confirmation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="689"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="940"/>
+        <location filename="../mainwindow.cpp" line="939"/>
         <source>About %1</source>
         <translation>Patungkol sa %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="941"/>
+        <location filename="../mainwindow.cpp" line="940"/>
         <source>Version: </source>
         <translation>Bersyon: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="942"/>
+        <location filename="../mainwindow.cpp" line="941"/>
         <source>Simple user configuration for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="944"/>
+        <location filename="../mainwindow.cpp" line="943"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Karapatan (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="945"/>
+        <location filename="../mainwindow.cpp" line="944"/>
         <source>%1 License</source>
         <translation>%1 Pahintulot</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="959"/>
+        <location filename="../mainwindow.cpp" line="958"/>
         <source>%1 Help</source>
         <translation>%1 Tulong</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="976"/>
+        <location filename="../mainwindow.cpp" line="975"/>
         <source>Select folder to copy to</source>
         <translation>Pumili ng folder na kokopyahin</translation>
     </message>

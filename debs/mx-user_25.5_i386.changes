@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Thu, 01 May 2025 08:20:27 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: i386
+Version: 25.5
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (25.5) mx; urgency=medium
+ .
+   * Fix: allow mix of cases when renaming username
+   * Update translations
+Checksums-Sha1:
+ 3111c7baca846a995ecd0da5a132dc9eb05e0b6d 9829 mx-user_25.5_i386.buildinfo
+ bea80850ff2ac8195868d4c7d8a1b20859f2910c 221272 mx-user_25.5_i386.deb
+Checksums-Sha256:
+ dba92e096fcb2e9266afc9def7baaf0e93cfab878fff70fa672dd362a8ec0561 9829 mx-user_25.5_i386.buildinfo
+ f58d61b813260bcb4732ed177ebe1879b0269b36baf88b76e4b35818fb204a48 221272 mx-user_25.5_i386.deb
+Files:
+ 9f0a7a63df1d4983e55bbaa0ca99ef22 9829 system optional mx-user_25.5_i386.buildinfo
+ d6915923af17fff4731c833778467da1 221272 system optional mx-user_25.5_i386.deb

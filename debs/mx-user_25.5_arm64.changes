@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Thu, 01 May 2025 08:20:27 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: arm64
+Version: 25.5
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (25.5) mx; urgency=medium
+ .
+   * Fix: allow mix of cases when renaming username
+   * Update translations
+Checksums-Sha1:
+ 56899c6e03eaab2831ddd328e6f57aa2fd06f078 9800 mx-user_25.5_arm64.buildinfo
+ edefa2f283827746641d824cce704acfed404fd1 208956 mx-user_25.5_arm64.deb
+Checksums-Sha256:
+ 8f0479c9d31ca74bbd58297d67ec5e00e9e807ecad5329faaa766a9b6297e371 9800 mx-user_25.5_arm64.buildinfo
+ de027deb4e3ca8cd7a183c5b76ac50a5913438f921c11805bb293bf0257b9939 208956 mx-user_25.5_arm64.deb
+Files:
+ 0d8e91254e5f9c6588120e012ca33b97 9800 system optional mx-user_25.5_arm64.buildinfo
+ 663277ed802fd4eb9f2213a5afc384f1 208956 system optional mx-user_25.5_arm64.deb

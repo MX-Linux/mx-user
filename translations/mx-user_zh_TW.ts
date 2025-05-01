@@ -84,7 +84,7 @@
     <message>
         <location filename="../mainwindow.ui" line="271"/>
         <source>Grant this user administrative rights to the system (sudo)</source>
-        <translation type="unfinished"></translation>
+        <translation>授予此使用者對系統的管理權限 (sudo)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="290"/>
@@ -367,7 +367,7 @@
     <message>
         <location filename="../mainwindow.ui" line="1211"/>
         <source>Enter name of new group</source>
-        <translation type="unfinished"></translation>
+        <translation>輸入新群組名稱</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1217"/>
@@ -377,17 +377,17 @@
     <message>
         <location filename="../mainwindow.ui" line="1227"/>
         <source>Create a group with GID &gt; 1000</source>
-        <translation type="unfinished"></translation>
+        <translation>新增 GID &gt; 1000 的組別</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1230"/>
         <source>Create a user-level group</source>
-        <translation type="unfinished"></translation>
+        <translation>新增一個使用者等級的組別</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1259"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter name of new group&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>輸入新組別名稱</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1262"/>
@@ -402,17 +402,17 @@
     <message>
         <location filename="../mainwindow.ui" line="1350"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select group to delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>選取欲刪除的組別</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1359"/>
         <source>Select group to delete:</source>
-        <translation type="unfinished"></translation>
+        <translation>欲刪除的組別：</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1366"/>
         <source>*Please doublecheck your selections before applying, removing a wrong group can break your system.</source>
-        <translation type="unfinished"></translation>
+        <translation>*請在套用前仔細檢查您所選擇的組別，移除錯誤的組別可能會破壞您的系統。</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1381"/>
@@ -427,12 +427,12 @@
     <message>
         <location filename="../mainwindow.ui" line="1478"/>
         <source>*Please doublecheck your selections before applying, assigning wrong group memberships can break your system. If you made a mistake, use restore group membership in Options tab to restore the defaults.</source>
-        <translation type="unfinished"></translation>
+        <translation>*請在套用前仔細檢查您所選擇的組別，指派錯誤的群組成員可能會破壞您的系統。 如果發選擇錯誤，請使用選項索引標籤中的還原組別成員身份來還原預設值。</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1507"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select user to change&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇欲變更的使用者</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1583"/>
@@ -501,22 +501,22 @@
         <location filename="../mainwindow.cpp" line="157"/>
         <location filename="../mainwindow.cpp" line="165"/>
         <location filename="../mainwindow.cpp" line="192"/>
-        <location filename="../mainwindow.cpp" line="781"/>
-        <location filename="../mainwindow.cpp" line="811"/>
-        <location filename="../mainwindow.cpp" line="968"/>
-        <location filename="../mainwindow.cpp" line="1035"/>
-        <location filename="../mainwindow.cpp" line="1042"/>
-        <location filename="../mainwindow.cpp" line="1047"/>
-        <location filename="../mainwindow.cpp" line="1052"/>
-        <location filename="../mainwindow.cpp" line="1057"/>
+        <location filename="../mainwindow.cpp" line="780"/>
+        <location filename="../mainwindow.cpp" line="810"/>
+        <location filename="../mainwindow.cpp" line="967"/>
+        <location filename="../mainwindow.cpp" line="1034"/>
+        <location filename="../mainwindow.cpp" line="1041"/>
+        <location filename="../mainwindow.cpp" line="1046"/>
+        <location filename="../mainwindow.cpp" line="1051"/>
+        <location filename="../mainwindow.cpp" line="1056"/>
         <source>none</source>
         <translation>無</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
-        <location filename="../mainwindow.cpp" line="745"/>
-        <location filename="../mainwindow.cpp" line="975"/>
-        <location filename="../mainwindow.cpp" line="984"/>
+        <location filename="../mainwindow.cpp" line="744"/>
+        <location filename="../mainwindow.cpp" line="974"/>
+        <location filename="../mainwindow.cpp" line="983"/>
         <source>browse...</source>
         <translation>瀏覽</translation>
     </message>
@@ -579,6 +579,7 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="350"/>
+        <location filename="../mainwindow.cpp" line="582"/>
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation type="unfinished"></translation>
@@ -715,91 +716,90 @@ Please choose another name before proceeding.</source>
         <translation>要重新命名這個用戶，請先登出，然後用另一個用戶賬號重新登錄。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="582"/>
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation>使用者名稱必須是英文小寫字母，不可以用特殊字元和空白。請選擇別的名稱，才能繼續。</translation>
+        <translation type="vanished">使用者名稱必須是英文小寫字母，不可以用特殊字元和空白。請選擇別的名稱，才能繼續。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="589"/>
+        <location filename="../mainwindow.cpp" line="588"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>抱歉，您的系統中已經存在這個名字。請輸入一個不同的名字。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="598"/>
+        <location filename="../mainwindow.cpp" line="597"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
         <translation>重命名用戶失敗。請確認該用戶沒有登錄，您可能需要重新啟動。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="621"/>
         <source>The user was renamed.</source>
         <translation>該用戶被重新命名。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="634"/>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="633"/>
+        <location filename="../mainwindow.cpp" line="661"/>
         <source>Synchronizing desktop...ok</source>
         <translation>正在同步桌面……好了</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="636"/>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="635"/>
+        <location filename="../mainwindow.cpp" line="663"/>
         <source>Copying desktop...ok</source>
         <translation>正在複製桌面……好了</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="667"/>
         <source>Synchronizing desktop...failed</source>
         <translation>正在同步桌面……失敗</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="669"/>
         <source>Copying desktop...failed</source>
         <translation>正在複製桌面……失敗</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="689"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>Confirmation</source>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="689"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="940"/>
+        <location filename="../mainwindow.cpp" line="939"/>
         <source>About %1</source>
         <translation>大約 %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="941"/>
+        <location filename="../mainwindow.cpp" line="940"/>
         <source>Version: </source>
         <translation>版本：</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="942"/>
+        <location filename="../mainwindow.cpp" line="941"/>
         <source>Simple user configuration for MX Linux</source>
         <translation>MX Linux 當中的設定使用者的簡易工具</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="944"/>
+        <location filename="../mainwindow.cpp" line="943"/>
         <source>Copyright (c) MX Linux</source>
         <translation>版權所有 (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="945"/>
+        <location filename="../mainwindow.cpp" line="944"/>
         <source>%1 License</source>
         <translation>%1 許可</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="959"/>
+        <location filename="../mainwindow.cpp" line="958"/>
         <source>%1 Help</source>
         <translation>%1 幫助</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="976"/>
+        <location filename="../mainwindow.cpp" line="975"/>
         <source>Select folder to copy to</source>
         <translation>選擇欲複製到哪一個資料夾</translation>
     </message>
@@ -809,47 +809,47 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../passedit.cpp" line="162"/>
         <source>Negligible</source>
-        <translation type="unfinished"></translation>
+        <translation>極低安全性</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="162"/>
         <source>Very weak</source>
-        <translation type="unfinished"></translation>
+        <translation>極低安全性</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="162"/>
         <source>Weak</source>
-        <translation type="unfinished"></translation>
+        <translation>低度安全性</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="163"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>中度安全性</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="163"/>
         <source>Strong</source>
-        <translation type="unfinished"></translation>
+        <translation>強安全性</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="163"/>
         <source>Very strong</source>
-        <translation type="unfinished"></translation>
+        <translation>極高安全性</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="164"/>
         <source>Password strength: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>密碼長度： %1</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="200"/>
         <source>Hide the password</source>
-        <translation type="unfinished"></translation>
+        <translation>隱藏密碼</translation>
     </message>
     <message>
         <location filename="../passedit.cpp" line="200"/>
         <source>Show the password</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示密碼</translation>
     </message>
 </context>
 <context>
@@ -884,12 +884,12 @@ Please choose another name before proceeding.</source>
     <message>
         <location filename="../main.cpp" line="66"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
+        <translation>您似乎是以 root 身份登錄，請登出並以一般使用者身份登錄以使用此程式。</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="74"/>
         <source>You must run this program with admin access.</source>
-        <translation type="unfinished"></translation>
+        <translation>您必須以系統管理員權限執行此程式。</translation>
     </message>
 </context>
 </TS>

@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 01 May 2025 08:20:27 -0400
+Source: mx-user
+Binary: mx-user
+Architecture: source amd64
+Version: 25.5
+Distribution: mx
+Urgency: medium
+Maintainer: adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-user    - MX User manager
+Changes:
+ mx-user (25.5) mx; urgency=medium
+ .
+   * Fix: allow mix of cases when renaming username
+   * Update translations
+Checksums-Sha1:
+ bd12fc9597417673240987f0936e53c5da971477 1161 mx-user_25.5.dsc
+ ad99de561d8ab773e203ddbb3e7667c4857bde8b 177560 mx-user_25.5.tar.xz
+ 304b1848cac9760378ba1d1122b0447970f9ac30 10664 mx-user_25.5_amd64.buildinfo
+ ca43f4131044b62344349c13b779d5f3cdce5fcd 216872 mx-user_25.5_amd64.deb
+Checksums-Sha256:
+ 35274bc32dadd142c043870f4925ea5d23716f9a17439f396fbfb5c9f74020d2 1161 mx-user_25.5.dsc
+ 07e809188b33bde74cdc1ec985f575becd4b9ca121d18555dcf0103f6b1fd107 177560 mx-user_25.5.tar.xz
+ 2c1bec2cc81105cabefa049064f8649395e010e9b8c82658306e58710e060929 10664 mx-user_25.5_amd64.buildinfo
+ 05073b76ffda8a3199566c25c876659461eba8178f5f44a755fc74af7cd749b0 216872 mx-user_25.5_amd64.deb
+Files:
+ fed4725a437ea2d1fdd8f7a08b1efba0 1161 system optional mx-user_25.5.dsc
+ 3fe1b2faef1cdc9a670cd3fd1962a5f5 177560 system optional mx-user_25.5.tar.xz
+ c65a9f29c7f8ecc214f556c15e7365af 10664 system optional mx-user_25.5_amd64.buildinfo
+ f932ac39a2e2d0f5862886fc0a70e653 216872 system optional mx-user_25.5_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmgTa0YTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumN1XCACCh+xVF8V3FomNCxGhobxg0Bq2if0/
+tKp9SOwbo6nhFjxtt3hkxwEzRaLXAYX4/Acy9fEHI2ju2AkpXr11O65iPZY4Oy08
+FAhogZQDu1WVFMH00HcjTEBRMRM3U4O46Fy1vHpVHB1u/2XDj+wG7wQJnK1vQgso
+e/ec8CFpS9Eg1cAnbBL9xKaog/OfvD3WK9u6wgMOOYySbJ/Bsnrpo/uvfijrxIbH
+6ruwUA2fL7Au3aRLbBLO2oAVgIxUHMNFlGGz0bqGrxHThwlgdAW8z8B43Rkf8KVZ
+BVGRXF8xIJCoQeyILAN4njmrcthREWJQGFCNNCOqIubjEe2arAWfespM
+=0jzy
+-----END PGP SIGNATURE-----
