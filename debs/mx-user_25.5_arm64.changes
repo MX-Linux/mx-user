@@ -14,13 +14,14 @@ Changes:
  mx-user (25.5) mx; urgency=medium
  .
    * Fix: allow mix of cases when renaming username
+   * Fix: allow for dashes in username
    * Update translations
 Checksums-Sha1:
- 56899c6e03eaab2831ddd328e6f57aa2fd06f078 9800 mx-user_25.5_arm64.buildinfo
- edefa2f283827746641d824cce704acfed404fd1 208956 mx-user_25.5_arm64.deb
+ f9259b03ad46e9e2707a5a74798e008f8b364676 9801 mx-user_25.5_arm64.buildinfo
+ 40fa1e61a2f020693d863dfc6acbf89f310b5738 209268 mx-user_25.5_arm64.deb
 Checksums-Sha256:
- 8f0479c9d31ca74bbd58297d67ec5e00e9e807ecad5329faaa766a9b6297e371 9800 mx-user_25.5_arm64.buildinfo
- de027deb4e3ca8cd7a183c5b76ac50a5913438f921c11805bb293bf0257b9939 208956 mx-user_25.5_arm64.deb
+ 9df63a9b180943fd9acbd19f6cd7925d51fae734456dca2bfcb4ad57c5eba60a 9801 mx-user_25.5_arm64.buildinfo
+ 799db67b92d6334b2b8298bcfe1aef35054db975ae1aa6783c62c50154bc360d 209268 mx-user_25.5_arm64.deb
 Files:
- 0d8e91254e5f9c6588120e012ca33b97 9800 system optional mx-user_25.5_arm64.buildinfo
- 663277ed802fd4eb9f2213a5afc384f1 208956 system optional mx-user_25.5_arm64.deb
+ ac29b60263718e4b62130e70a788a5e9 9801 system optional mx-user_25.5_arm64.buildinfo
+ b5993d52c6d6e6d1ba417d1ac7e58124 209268 system optional mx-user_25.5_arm64.deb

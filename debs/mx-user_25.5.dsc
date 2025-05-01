@@ -10,8 +10,8 @@ Build-Depends: debhelper-compat (= 13), qtbase5-dev, qttools5-dev-tools, libzxcv
 Package-List:
  mx-user deb system optional arch=any
 Checksums-Sha1:
- 32a3955137c18cf6cda37177398c5a4fd8efb9db 177652 mx-user_25.5.tar.xz
+ 80e50e62f1a691d58f750b183406b115b999dee6 177664 mx-user_25.5.tar.xz
 Checksums-Sha256:
- f0166c4136eccf4970b142321921cdd9bc38cf08d71eea5109098dd1f6a71cda 177652 mx-user_25.5.tar.xz
+ e45a20ae171976c9b7e24ea4595079e9841fd6056ba960e3e9a2f0f498862f4e 177664 mx-user_25.5.tar.xz
 Files:
- 07de8bdb9ad092b5d101f23f6d2aca2c 177652 mx-user_25.5.tar.xz
+ 310c91735162d3eb2bdce02899d8e580 177664 mx-user_25.5.tar.xz

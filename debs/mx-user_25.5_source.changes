@@ -11,16 +11,17 @@ Changes:
  mx-user (25.5) mx; urgency=medium
  .
    * Fix: allow mix of cases when renaming username
+   * Fix: allow for dashes in username
    * Update translations
 Checksums-Sha1:
- 822ea399016af2a2eb1da12e88c38d9a44bf126a 599 mx-user_25.5.dsc
- 32a3955137c18cf6cda37177398c5a4fd8efb9db 177652 mx-user_25.5.tar.xz
- 56899c6e03eaab2831ddd328e6f57aa2fd06f078 9800 mx-user_25.5_arm64.buildinfo
+ c5f975bfb1fb6115181c97c0d2ac3ad01e38f0db 599 mx-user_25.5.dsc
+ 80e50e62f1a691d58f750b183406b115b999dee6 177664 mx-user_25.5.tar.xz
+ f9259b03ad46e9e2707a5a74798e008f8b364676 9801 mx-user_25.5_arm64.buildinfo
 Checksums-Sha256:
- 270cea8f2b5781c79a2ad724c4d57982397986024f0b147ad445d05bd14843ec 599 mx-user_25.5.dsc
- f0166c4136eccf4970b142321921cdd9bc38cf08d71eea5109098dd1f6a71cda 177652 mx-user_25.5.tar.xz
- 8f0479c9d31ca74bbd58297d67ec5e00e9e807ecad5329faaa766a9b6297e371 9800 mx-user_25.5_arm64.buildinfo
+ 4a867e2a3e80bb753b379171d9ab6709dd332ebcabcf44c1ea61b1211444b9fd 599 mx-user_25.5.dsc
+ e45a20ae171976c9b7e24ea4595079e9841fd6056ba960e3e9a2f0f498862f4e 177664 mx-user_25.5.tar.xz
+ 9df63a9b180943fd9acbd19f6cd7925d51fae734456dca2bfcb4ad57c5eba60a 9801 mx-user_25.5_arm64.buildinfo
 Files:
- f344aee96d6edf50e472bb9b96634def 599 system optional mx-user_25.5.dsc
- 07de8bdb9ad092b5d101f23f6d2aca2c 177652 system optional mx-user_25.5.tar.xz
- 0d8e91254e5f9c6588120e012ca33b97 9800 system optional mx-user_25.5_arm64.buildinfo
+ ba33bd9a43e2ea7b26d6f64989a50782 599 system optional mx-user_25.5.dsc
+ 310c91735162d3eb2bdce02899d8e580 177664 system optional mx-user_25.5.tar.xz
+ ac29b60263718e4b62130e70a788a5e9 9801 system optional mx-user_25.5_arm64.buildinfo

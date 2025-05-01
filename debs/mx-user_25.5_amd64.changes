@@ -17,31 +17,32 @@ Changes:
  mx-user (25.5) mx; urgency=medium
  .
    * Fix: allow mix of cases when renaming username
+   * Fix: allow for dashes in username
    * Update translations
 Checksums-Sha1:
- bd12fc9597417673240987f0936e53c5da971477 1161 mx-user_25.5.dsc
- ad99de561d8ab773e203ddbb3e7667c4857bde8b 177560 mx-user_25.5.tar.xz
- 304b1848cac9760378ba1d1122b0447970f9ac30 10664 mx-user_25.5_amd64.buildinfo
- ca43f4131044b62344349c13b779d5f3cdce5fcd 216872 mx-user_25.5_amd64.deb
+ 901385559d2938d0bb8cab5760d45528fa2fafcc 1161 mx-user_25.5.dsc
+ 03f81e5885b968b411d77ece4a97a0f79939386a 177640 mx-user_25.5.tar.xz
+ 33bce4c38c0732a78a8b03b92947b321da7af8e3 10665 mx-user_25.5_amd64.buildinfo
+ 7f3fc5c73e276f857e407a614af0a7dcd690c066 217252 mx-user_25.5_amd64.deb
 Checksums-Sha256:
- 35274bc32dadd142c043870f4925ea5d23716f9a17439f396fbfb5c9f74020d2 1161 mx-user_25.5.dsc
- 07e809188b33bde74cdc1ec985f575becd4b9ca121d18555dcf0103f6b1fd107 177560 mx-user_25.5.tar.xz
- 2c1bec2cc81105cabefa049064f8649395e010e9b8c82658306e58710e060929 10664 mx-user_25.5_amd64.buildinfo
- 05073b76ffda8a3199566c25c876659461eba8178f5f44a755fc74af7cd749b0 216872 mx-user_25.5_amd64.deb
+ af87c09e4c2b4e10f7b958042923e44fbb6dda7fe40d71e1379f5db99f56d286 1161 mx-user_25.5.dsc
+ 7bb933eb6535a484ed608f0c05b421b4eda30a519b2ecab9823f0901b31accc5 177640 mx-user_25.5.tar.xz
+ 34b8191b275e9f64698e2586e813dbd8057e12478b1084881f8320596b6b25b9 10665 mx-user_25.5_amd64.buildinfo
+ 9bbbb28f2bc2612ab123c5917b17e0f82c1843ed65819acfae58fd2d00bca796 217252 mx-user_25.5_amd64.deb
 Files:
- fed4725a437ea2d1fdd8f7a08b1efba0 1161 system optional mx-user_25.5.dsc
- 3fe1b2faef1cdc9a670cd3fd1962a5f5 177560 system optional mx-user_25.5.tar.xz
- c65a9f29c7f8ecc214f556c15e7365af 10664 system optional mx-user_25.5_amd64.buildinfo
- f932ac39a2e2d0f5862886fc0a70e653 216872 system optional mx-user_25.5_amd64.deb
+ 560483904c64a403e692d657b8417165 1161 system optional mx-user_25.5.dsc
+ f23203d3839f15e357bf3bbdf976aaf0 177640 system optional mx-user_25.5.tar.xz
+ e863389d2b2c9eee5bab054eae9dd64d 10665 system optional mx-user_25.5_amd64.buildinfo
+ b8f985118cb3faabdd3199dd997797ca 217252 system optional mx-user_25.5_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmgTa0YTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumN1XCACCh+xVF8V3FomNCxGhobxg0Bq2if0/
-tKp9SOwbo6nhFjxtt3hkxwEzRaLXAYX4/Acy9fEHI2ju2AkpXr11O65iPZY4Oy08
-FAhogZQDu1WVFMH00HcjTEBRMRM3U4O46Fy1vHpVHB1u/2XDj+wG7wQJnK1vQgso
-e/ec8CFpS9Eg1cAnbBL9xKaog/OfvD3WK9u6wgMOOYySbJ/Bsnrpo/uvfijrxIbH
-6ruwUA2fL7Au3aRLbBLO2oAVgIxUHMNFlGGz0bqGrxHThwlgdAW8z8B43Rkf8KVZ
-BVGRXF8xIJCoQeyILAN4njmrcthREWJQGFCNNCOqIubjEe2arAWfespM
-=0jzy
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmgTmFATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumG5yB/sEAtpTf5/hosGeZHIUFZS4nLOqpqlh
++TW96GMafe9/EFny/dXhBFRyCmduXBg2j25dXCOMI85a1HoaWza4ffeHFEXMjaJR
+CHViuy4gNRynk5NClBNUXYjax6xHdvc8OcauWkAU0rAf+T6k5pfwQrXqsxzGZ7YE
+K2Op3TCzlMGW2N0KpQ33zUa2WxifdF0tLCna/43h8GAHp2JVa5dehvXp2Naa7aLW
+Z5tt4/hi1Va8SprZAHcAhSDRBLCD1n3wCdW1DD8nMr9+Eo0pcOaG9nRZAX+2k7CB
+ajaXB056xS0bnbvurRPNc2aat3e6eTJ649htwMoGHIMsAbY6sOg0n8u5
+=2jlk
 -----END PGP SIGNATURE-----

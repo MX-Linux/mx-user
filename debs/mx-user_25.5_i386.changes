@@ -14,13 +14,14 @@ Changes:
  mx-user (25.5) mx; urgency=medium
  .
    * Fix: allow mix of cases when renaming username
+   * Fix: allow for dashes in username
    * Update translations
 Checksums-Sha1:
- 3111c7baca846a995ecd0da5a132dc9eb05e0b6d 9829 mx-user_25.5_i386.buildinfo
- bea80850ff2ac8195868d4c7d8a1b20859f2910c 221272 mx-user_25.5_i386.deb
+ 24dcdc3524aad2144e2fe9ed8df3ecde39e96638 9830 mx-user_25.5_i386.buildinfo
+ a3a88d9180560e653aeed75a3006847dabe0a704 221908 mx-user_25.5_i386.deb
 Checksums-Sha256:
- dba92e096fcb2e9266afc9def7baaf0e93cfab878fff70fa672dd362a8ec0561 9829 mx-user_25.5_i386.buildinfo
- f58d61b813260bcb4732ed177ebe1879b0269b36baf88b76e4b35818fb204a48 221272 mx-user_25.5_i386.deb
+ 0cdab4356bba996357d7d6ec361756f6f810e77ec8762770f8e999ef1892273a 9830 mx-user_25.5_i386.buildinfo
+ 12a5a3e839e093fe79da581200703a1c9b4377b32599fc5ae40ea8a1753bd5a0 221908 mx-user_25.5_i386.deb
 Files:
- 9f0a7a63df1d4983e55bbaa0ca99ef22 9829 system optional mx-user_25.5_i386.buildinfo
- d6915923af17fff4731c833778467da1 221272 system optional mx-user_25.5_i386.deb
+ dfc6ee2b6bdace8e7bf0d2a67518f844 9830 system optional mx-user_25.5_i386.buildinfo
+ 4560f6f20b5a35ccfe8779e69034d16e 221908 system optional mx-user_25.5_i386.deb
