@@ -352,7 +352,7 @@ void MainWindow::applyAdd()
         return;
     }
     // Check that user name is not already used
-    if (QProcess::execute("grep", {"-w", '^' + userNameEdit->text(), "/etc/passwd"}) == 0) {
+    if (QProcess::execute("grep", {"-E", "^" + userNameEdit->text() + ":", "/etc/passwd"}) == 0) {
         QMessageBox::critical(this, windowTitle(), tr("Sorry, this name is in use. Please enter a different name."));
         return;
     }
@@ -391,7 +391,8 @@ void MainWindow::applyAdd()
     QProcess proc;
     QString elevate {QFile::exists("/usr/bin/pkexec") ? "/usr/bin/pkexec" : "/usr/bin/gksu"};
     QString helper {"/usr/lib/" + QApplication::applicationName() + "/helper"};
-    proc.start(elevate, {helper, "passwd", userNameEdit->text()}, QIODevice::ReadWrite);
+    QString userNameArg = userNameEdit->text();
+    proc.start(elevate, {helper, "passwd", userNameArg}, QIODevice::ReadWrite);
     proc.waitForStarted();
     proc.write(userPasswordEdit->text().toUtf8() + '\n');
     proc.write(userPasswordEdit->text().toUtf8() + '\n');
@@ -399,7 +400,7 @@ void MainWindow::applyAdd()
 
     if (proc.exitCode() == 0) {
         if (!checkSudoGroup->isChecked()) {
-            shell->runAsRoot("delgroup " + userNameEdit->text() + " sudo");
+            shell->runAsRoot("delgroup " + userNameArg + " sudo");
         }
         QMessageBox::information(this, windowTitle(), tr("The user was added ok."));
         refresh();
@@ -583,7 +584,7 @@ void MainWindow::applyRename()
                                  "Please choose another name before proceeding."));
         return;
     }
-    if (QProcess::execute("grep", {"-w", '^' + new_name, "/etc/passwd"}) == 0) {
+    if (QProcess::execute("grep", {"-E", "^" + new_name + ":", "/etc/passwd"}) == 0) {
         QMessageBox::critical(this, windowTitle(),
                               tr("Sorry, this name already exists on your system. Please enter a different name."));
         return;
@@ -600,22 +601,23 @@ void MainWindow::applyRename()
     }
 
     // Rename other instances of the old name, like "Finger" name if present
-    shell->runAsRoot("sed -i 's/\\b" + old_name + "\\b/" + new_name + "/g' /etc/passwd");
+    shell->runAsRoot("sed -i 's/" + QRegularExpression::escape(old_name) + "/" + QRegularExpression::escape(new_name) + "/g' /etc/passwd");
 
     // Change group
     shell->runAsRoot("groupmod --new-name " + new_name + " " + old_name);
 
     // Fix "home/old_user" string in all ~/ files
-    shell->runAsRoot(
-        QString("grep -rl \"home/%1\" /home/%2 | xargs sed -i 's|home/%1|home/%2|g'").arg(old_name, new_name));
+    shell->runAsRoot(QString(R"(find /home/%1 -type f -exec sed -i 's|home/%1|home/%2|g' {} +)")
+                         .arg(QRegularExpression::escape(old_name), QRegularExpression::escape(new_name)));
 
     // Change autologin name (Xfce and KDE)
     if (QFile::exists("/etc/lightdm/lightdm.conf")) {
         shell->runAsRoot(QString("sed -i 's/autologin-user=%1/autologin-user=%2/g' /etc/lightdm/lightdm.conf")
-                             .arg(old_name, new_name));
+                             .arg(QRegularExpression::escape(old_name), QRegularExpression::escape(new_name)));
     }
     if (QFile::exists("/etc/sddm.conf")) {
-        shell->runAsRoot(QString("sed -i 's/User=%1/User=%2/g' /etc/sddm.conf").arg(old_name, new_name));
+        shell->runAsRoot(QString("sed -i 's/^User=%1$/User=%2/g' /etc/sddm.conf")
+                             .arg(QRegularExpression::escape(old_name), QRegularExpression::escape(new_name)));
     }
 
     QMessageBox::information(this, windowTitle(), tr("The user was renamed."));
