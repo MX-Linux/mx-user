@@ -601,7 +601,12 @@ void MainWindow::applyRename()
     }
 
     // Rename other instances of the old name, like "Finger" name if present
-    shell->runAsRoot("sed -i 's/" + QRegularExpression::escape(old_name) + "/" + QRegularExpression::escape(new_name) + "/g' /etc/passwd");
+    QString StartRex = "([^-_[:alnum:]])";
+    QString EndRex = "([^-_[:alnum:]$])";
+    QString escapedNew = QRegularExpression::escape(new_name);
+    QString escapedOld = QRegularExpression::escape(old_name);
+    shell->runAsRoot("sed -i  -r '/^" + escapedNew + ":/s/" + StartRex + escapedOld + EndRex + "/\\1" + escapedNew
+                     + "\\2/g' /etc/passwd");
 
     // Change group
     shell->runAsRoot("groupmod --new-name " + new_name + " " + old_name);
