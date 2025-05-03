@@ -1,3 +1,10 @@
+mx-user (25.5) mx; urgency=medium
+
+  * Allow for dashes in the username
+  * Allow upper case when renaming user
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 03 May 2025 08:26:14 -0400
+
 mx-user (25.4) mx; urgency=medium
 
   * Update to Qt6
