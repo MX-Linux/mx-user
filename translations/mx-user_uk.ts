@@ -501,22 +501,22 @@
         <location filename="../mainwindow.cpp" line="157"/>
         <location filename="../mainwindow.cpp" line="165"/>
         <location filename="../mainwindow.cpp" line="192"/>
-        <location filename="../mainwindow.cpp" line="787"/>
-        <location filename="../mainwindow.cpp" line="817"/>
-        <location filename="../mainwindow.cpp" line="974"/>
-        <location filename="../mainwindow.cpp" line="1041"/>
-        <location filename="../mainwindow.cpp" line="1048"/>
-        <location filename="../mainwindow.cpp" line="1053"/>
-        <location filename="../mainwindow.cpp" line="1058"/>
-        <location filename="../mainwindow.cpp" line="1063"/>
+        <location filename="../mainwindow.cpp" line="810"/>
+        <location filename="../mainwindow.cpp" line="840"/>
+        <location filename="../mainwindow.cpp" line="997"/>
+        <location filename="../mainwindow.cpp" line="1064"/>
+        <location filename="../mainwindow.cpp" line="1071"/>
+        <location filename="../mainwindow.cpp" line="1076"/>
+        <location filename="../mainwindow.cpp" line="1081"/>
+        <location filename="../mainwindow.cpp" line="1086"/>
         <source>none</source>
         <translation>нічого</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
-        <location filename="../mainwindow.cpp" line="751"/>
-        <location filename="../mainwindow.cpp" line="981"/>
-        <location filename="../mainwindow.cpp" line="990"/>
+        <location filename="../mainwindow.cpp" line="774"/>
+        <location filename="../mainwindow.cpp" line="1004"/>
+        <location filename="../mainwindow.cpp" line="1013"/>
         <source>browse...</source>
         <translation>огляд...</translation>
     </message>
@@ -536,114 +536,114 @@
         <translation>Налаштування Mozilla скинуто.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="246"/>
-        <location filename="../mainwindow.cpp" line="261"/>
+        <location filename="../mainwindow.cpp" line="250"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Autologin options</source>
         <translation>Опції автоматичного входу</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="247"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
         <translation>Автоматичний вхід вимкнено для облікового запису «%1».</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation>Для облікового запису «%1» увімкнено автоматичний вхід.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation>Ви повинні вказати пункт призначення дії «копіювати». Ви не можете скопіювати на стільницю, на якому ви ввійшли.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="280"/>
+        <location filename="../mainwindow.cpp" line="300"/>
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>Перед копіюванням закрийте всі інші програми. Переконайтеся, що місце призначення копії достатньо велике, щоб умістити файли, які ви копіюєте. Копіювання між стільницями може перезаписати або видалити ваші файли чи налаштування на стільниці призначення. Ви впевнені, що бажаєте продовжити?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="326"/>
         <source>Synchronizing desktop...</source>
         <translation>Синхронізація стільниць...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="308"/>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>Copying desktop...</source>
         <translation>Копіювання стільниці...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="345"/>
-        <location filename="../mainwindow.cpp" line="578"/>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="598"/>
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Ім&apos;я користувача має містити принаймні 2 символи. Перш ніж продовжити, виберіть довшу назву.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="350"/>
-        <location filename="../mainwindow.cpp" line="583"/>
+        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="603"/>
         <source>The user name cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
         <translation>Ім&apos;я користувача не може містити спеціальні символи або пробіли.
 Перш ніж продовжити, виберіть інше ім’я.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="356"/>
+        <location filename="../mainwindow.cpp" line="376"/>
         <source>Sorry, this name is in use. Please enter a different name.</source>
         <translation>Це ім&apos;я вже використовується. Введіть інше ім&apos;я.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="360"/>
-        <location filename="../mainwindow.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="380"/>
+        <location filename="../mainwindow.cpp" line="436"/>
         <source>Password entries do not match. Please try again.</source>
         <translation>Паролі не збігаються. Будь ласка, спробуйте ще.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
-        <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="385"/>
+        <location filename="../mainwindow.cpp" line="441"/>
         <source>Password needs to be at least 2 characters long. Please enter a longer password before proceeding.</source>
         <translation>Пароль має бути не менше 2 символів. Перш ніж продовжити, введіть довший пароль.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="405"/>
+        <location filename="../mainwindow.cpp" line="425"/>
         <source>The user was added ok.</source>
         <translation>Користувача додано успішно.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>Failed to add the user.</source>
         <translation>Не вдалося додати користувача.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="456"/>
         <source>Password successfully changed.</source>
         <translation>Пароль успішно змінено.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="439"/>
+        <location filename="../mainwindow.cpp" line="459"/>
         <source>Failed to change password.</source>
         <translation>Не вдалося змінити пароль.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="465"/>
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation>Цю дію неможливо відмінити. Ви впевнені, що бажаєте видалити користувача %1?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="464"/>
+        <location filename="../mainwindow.cpp" line="484"/>
         <source>The user has been deleted.</source>
         <translation>Користувача видалено.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="466"/>
+        <location filename="../mainwindow.cpp" line="486"/>
         <source>Failed to delete the user.</source>
         <translation>Не вдалося видалити користувача.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="480"/>
+        <location filename="../mainwindow.cpp" line="500"/>
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Назва групи має містити принаймні 2 символи. Перш ніж продовжити, виберіть довшу назву.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="485"/>
+        <location filename="../mainwindow.cpp" line="505"/>
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -652,157 +652,149 @@ Please choose another name before proceeding.</source>
 Перш ніж продовжити, виберіть іншу назву.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="493"/>
+        <location filename="../mainwindow.cpp" line="513"/>
         <source>Sorry, that group name already exists. Please enter a different name.</source>
         <translation>Така назва групи вже існує. Будь ласка, введіть іншу назву</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="501"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>The system group was added ok.</source>
         <translation>Системну групу додано успішно.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>Failed to add the system group.</source>
         <translation>Не вдалося додати системну групу.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="518"/>
+        <location filename="../mainwindow.cpp" line="538"/>
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation>Цю дію не можна скасувати. Ви впевнені, що бажаєте видалити групу %1?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="519"/>
+        <location filename="../mainwindow.cpp" line="539"/>
         <source>This action cannot be undone. Are you sure you want to delete the following groups: %1?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="528"/>
+        <location filename="../mainwindow.cpp" line="548"/>
         <source>Failed to delete the group.</source>
         <translation>Не вдалося видалити групу.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="528"/>
+        <location filename="../mainwindow.cpp" line="548"/>
         <source>Group: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="532"/>
+        <location filename="../mainwindow.cpp" line="552"/>
         <source>The group has been deleted.</source>
         <translation>Групу видалено.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="532"/>
+        <location filename="../mainwindow.cpp" line="552"/>
         <source>The groups have been deleted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="549"/>
+        <location filename="../mainwindow.cpp" line="569"/>
         <source>The changes have been applied.</source>
         <translation>Зміни застосовано.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="551"/>
+        <location filename="../mainwindow.cpp" line="571"/>
         <source>Failed to apply group changes</source>
         <translation>Не вдалося застосувати зміни групи</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="569"/>
+        <location filename="../mainwindow.cpp" line="589"/>
         <source>The selected user name is currently in use.</source>
         <translation>Вибране ім&apos;я користувача зараз використовується.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="570"/>
+        <location filename="../mainwindow.cpp" line="590"/>
         <source>To rename this user, please log out and log back in using another user account.</source>
         <translation>Щоб перейменувати цього користувача, будь ласка, вийдіть із системи та увійдіть знову, використовуючи інший обліковий запис користувача.</translation>
     </message>
     <message>
-        <source>The user name needs to be lower case and it
-cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="vanished">Ім’я користувача має бути написане малими буквами
-не може містити спеціальних символів або пробілів.
-Перш ніж продовжити, виберіть інше ім’я.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="589"/>
+        <location filename="../mainwindow.cpp" line="609"/>
         <source>Sorry, this name already exists on your system. Please enter a different name.</source>
         <translation>На жаль, це ім&apos;я вже існує у вашій системі. Будь ласка, введіть інше ім&apos;я.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="598"/>
+        <location filename="../mainwindow.cpp" line="618"/>
         <source>Failed to rename the user. Please make sure that the user is not logged in, you might need to restart</source>
         <translation>Не вдалося перейменувати користувача. Будь ласка, переконайтеся, що користувач не ввійшов у систему, можливо, вам знадобиться перезапустити</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="628"/>
+        <location filename="../mainwindow.cpp" line="651"/>
         <source>The user was renamed.</source>
         <translation>Користувача було перейменовано.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="640"/>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="663"/>
+        <location filename="../mainwindow.cpp" line="691"/>
         <source>Synchronizing desktop...ok</source>
         <translation>Синхронізація стільниці... виконано</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="642"/>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="665"/>
+        <location filename="../mainwindow.cpp" line="693"/>
         <source>Copying desktop...ok</source>
         <translation>Копіювання стільниці... виконано</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="674"/>
+        <location filename="../mainwindow.cpp" line="697"/>
         <source>Synchronizing desktop...failed</source>
         <translation>Синхронізація стільниці...не вдалося</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="676"/>
+        <location filename="../mainwindow.cpp" line="699"/>
         <source>Copying desktop...failed</source>
         <translation>Копіювання стільниці... не вдалося</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="695"/>
+        <location filename="../mainwindow.cpp" line="718"/>
         <source>Confirmation</source>
         <translation>Підтвердження</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="696"/>
+        <location filename="../mainwindow.cpp" line="719"/>
         <source>Process not done. Are you sure you want to quit the application?</source>
         <translation>Процес не виконано. Ви впевнені, що бажаєте вийти з програми?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="946"/>
+        <location filename="../mainwindow.cpp" line="969"/>
         <source>About %1</source>
         <translation>Про %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="947"/>
+        <location filename="../mainwindow.cpp" line="970"/>
         <source>Version: </source>
         <translation>Версія:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="948"/>
+        <location filename="../mainwindow.cpp" line="971"/>
         <source>Simple user configuration for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="950"/>
+        <location filename="../mainwindow.cpp" line="973"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="951"/>
+        <location filename="../mainwindow.cpp" line="974"/>
         <source>%1 License</source>
         <translation>%1 Ліцензія</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="965"/>
+        <location filename="../mainwindow.cpp" line="988"/>
         <source>%1 Help</source>
         <translation>%1 Довідка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="982"/>
+        <location filename="../mainwindow.cpp" line="1005"/>
         <source>Select folder to copy to</source>
         <translation>Виберіть каталог для копіювання</translation>
     </message>

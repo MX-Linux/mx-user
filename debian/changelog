@@ -1,3 +1,9 @@
+mx-user (25.5.02) mx; urgency=medium
+
+  * Read sddm settings from /etc/sddm.conf.d/kde_settings.conf if file exists 
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 06 May 2025 15:56:52 -0400
+
 mx-user (25.5) mx; urgency=medium
 
   * Allow for dashes in the username
