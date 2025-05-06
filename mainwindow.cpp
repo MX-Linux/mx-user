@@ -240,7 +240,11 @@ void MainWindow::applyOptions()
                              + QString(R"('/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=/d;'})")
                              + " /etc/lightdm/lightdm.conf");
         }
-        if (QFile::exists("/etc/sddm.conf")) {
+
+        if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
+            shell->runAsRoot("sed -i " + QString("s/^User=%1/User=/").arg(user)
+                             + " /etc/sddm.conf.d/kde_settings.conf");
+        } else if (QFile::exists("/etc/sddm.conf")) {
             shell->runAsRoot("sed -i " + QString("s/^User=%1/User=/").arg(user) + " /etc/sddm.conf");
         }
         QMessageBox::information(this, tr("Autologin options"),
@@ -252,7 +256,23 @@ void MainWindow::applyOptions()
                              + " -e " + QString(R"('/^[[]Seat(Defaults|:[*])[]]/aautologin-user=%1')").arg(user)
                              + " /etc/lightdm/lightdm.conf");
         }
-        if (QFile::exists("/etc/sddm.conf")) {
+        if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
+            shell->runAsRoot("sed -i " + QString("s/^User=.*/User=%1/").arg(user)
+                             + " /etc/sddm.conf.d/kde_settings.conf");
+            if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == "KDE") {
+                QString sessionType;
+                if (qEnvironmentVariable("XDG_SESSION_TYPE") == "wayland") {
+                    sessionType = "plasma";
+                } else if (qEnvironmentVariable("XDG_SESSION_TYPE") == "x11") {
+                    sessionType = "plasmax11";
+                }
+
+                if (!sessionType.isEmpty()) {
+                    shell->runAsRoot(QString("sed -i 's/^Session=.*/Session=%1/' /etc/sddm.conf.d/kde_settings.conf")
+                                         .arg(sessionType));
+                }
+            }
+        } else if (QFile::exists("/etc/sddm.conf")) {
             shell->runAsRoot(QString("sed -i 's/^User=.*/User=%1/' /etc/sddm.conf").arg(user));
             if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == "KDE") {
                 shell->runAsRoot("sed -i 's/^Session=.*/Session=plasma.desktop/' /etc/sddm.conf");
@@ -620,7 +640,10 @@ void MainWindow::applyRename()
         shell->runAsRoot(QString("sed -i 's/autologin-user=%1/autologin-user=%2/g' /etc/lightdm/lightdm.conf")
                              .arg(QRegularExpression::escape(old_name), QRegularExpression::escape(new_name)));
     }
-    if (QFile::exists("/etc/sddm.conf")) {
+    if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
+        shell->runAsRoot(QString("sed -i 's/^User=%1$/User=%2/g' /etc/sddm.conf.d/kde_settings.conf")
+                             .arg(QRegularExpression::escape(old_name), QRegularExpression::escape(new_name)));
+    } else if (QFile::exists("/etc/sddm.conf")) {
         shell->runAsRoot(QString("sed -i 's/^User=%1$/User=%2/g' /etc/sddm.conf")
                              .arg(QRegularExpression::escape(old_name), QRegularExpression::escape(new_name)));
     }
