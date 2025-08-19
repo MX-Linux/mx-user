@@ -112,7 +112,7 @@ void PassEdit::generate() noexcept
         }
         entropy = ZxcvbnMatch(gentext.toUtf8().constData(), nullptr, nullptr);
         ++pos;
-    } while (gentext.length() <= min || entropy <= VeryStrong);
+    } while (gentext.length() <= min || entropy <= static_cast<double>(VeryStrong));
 }
 
 void PassEdit::masterContextMenu(QPoint pos) noexcept

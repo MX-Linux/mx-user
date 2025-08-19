@@ -71,8 +71,8 @@ private slots:
     void buttonApply_clicked();
     void buttonCancel_clicked();
     void buttonHelp_clicked();
-    void checkGroups_stateChanged(int);
-    void checkMozilla_stateChanged(int);
+    void checkGroups_stateChanged(Qt::CheckState);
+    void checkMozilla_stateChanged(Qt::CheckState);
     void closeApp();
     void comboChangePass_activated(const QString &);
     void comboDeleteUser_activated(const QString &);

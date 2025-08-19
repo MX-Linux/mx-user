@@ -734,8 +734,8 @@ void MainWindow::setConnections()
     connect(buttonApply, &QPushButton::clicked, this, &MainWindow::buttonApply_clicked);
     connect(buttonCancel, &QPushButton::clicked, this, &MainWindow::buttonCancel_clicked);
     connect(buttonHelp, &QPushButton::clicked, this, &MainWindow::buttonHelp_clicked);
-    connect(checkGroups, &QCheckBox::stateChanged, this, &MainWindow::checkGroups_stateChanged);
-    connect(checkMozilla, &QCheckBox::stateChanged, this, &MainWindow::checkMozilla_stateChanged);
+    connect(checkGroups, &QCheckBox::checkStateChanged, this, &MainWindow::checkGroups_stateChanged);
+    connect(checkMozilla, &QCheckBox::checkStateChanged, this, &MainWindow::checkMozilla_stateChanged);
     connect(comboChangePass, &QComboBox::textActivated, this, &MainWindow::comboChangePass_activated);
     connect(comboDeleteUser, &QComboBox::textActivated, this, &MainWindow::comboDeleteUser_activated);
     connect(comboRenameUser, &QComboBox::textActivated, this, &MainWindow::comboRenameUser_activated);
@@ -1069,12 +1069,12 @@ void MainWindow::comboRenameUser_activated(const QString & /*unused*/)
     }
 }
 
-void MainWindow::checkGroups_stateChanged(int /*unused*/)
+void MainWindow::checkGroups_stateChanged(Qt::CheckState /*unused*/)
 {
     buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
 }
 
-void MainWindow::checkMozilla_stateChanged(int /*unused*/)
+void MainWindow::checkMozilla_stateChanged(Qt::CheckState /*unused*/)
 {
     buttonApply->setEnabled(userComboBox->currentText() != tr("none"));
 }
