@@ -150,6 +150,7 @@ endif()
 target_compile_definitions(mx-user PRIVATE
     QT_DEPRECATED_WARNINGS
     QT_DISABLE_DEPRECATED_BEFORE=0x060000
+    VERSION="${PROJECT_VERSION}"
 )
 
 # Release-specific optimizations
@@ -173,21 +174,11 @@ qt6_add_translations(mx-user
     QM_FILES_OUTPUT_VARIABLE qm_files
 )
 
-# Generate version.h file
-configure_file(
-    "${CMAKE_SOURCE_DIR}/version.h.in"
-    "${CMAKE_BINARY_DIR}/version.h"
-    @ONLY
-)
-
 # Set target properties
 set_target_properties(mx-user PROPERTIES
     OUTPUT_NAME "mx-user"
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
 )
-
-# Add build directory to include path for generated version.h
-target_include_directories(mx-user PRIVATE ${CMAKE_BINARY_DIR})
 
 # Install target (required by Debian build system)
 # Other files are handled by debian/install

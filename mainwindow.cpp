@@ -28,8 +28,11 @@
 #include <QTimer>
 
 #include "about.h"
-#include "version.h"
 #include <chrono>
+
+#ifndef VERSION
+    #define VERSION "?.?.?.?"
+#endif
 
 using namespace std::chrono_literals;
 
