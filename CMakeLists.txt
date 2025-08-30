@@ -171,6 +171,7 @@ endif()
 # Handle translations
 qt6_add_translations(mx-user
     TS_FILES ${TRANSLATION_FILES}
+    LRELEASE_OPTIONS -compress -nounfinished -removeidentical -silent
     QM_FILES_OUTPUT_VARIABLE qm_files
 )
 
