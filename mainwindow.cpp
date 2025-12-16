@@ -31,7 +31,7 @@
 #include <chrono>
 
 #ifndef VERSION
-    #define VERSION "?.?.?.?"
+#define VERSION "?.?.?.?"
 #endif
 
 using namespace std::chrono_literals;
@@ -901,7 +901,6 @@ void MainWindow::buildListGroupsToRemove()
         if (item->checkState() == Qt::Checked) {
             return;
         }
-        QStringList items;
         for (auto i = 0; i < listGroupsToRemove->count(); ++i) {
             if (listGroupsToRemove->item(i)->checkState() == Qt::Checked) {
                 return;
