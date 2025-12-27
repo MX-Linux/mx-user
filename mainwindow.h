@@ -100,4 +100,8 @@ private:
     class PassEdit *passChange;
     class PassEdit *passUser;
     void setConnections();
+    QString adminGroupName() const;
+    QString defaultShellPath() const;
+    QStringList defaultExtraGroups() const;
+    bool commandExists(const QString &command) const;
 };

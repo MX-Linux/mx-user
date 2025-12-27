@@ -10,7 +10,7 @@ A graphical tool for managing user accounts on MX Linux. Features include creati
 ## Features
 
 - **User Management**: Create, delete, and rename user accounts
-- **Password Management**: Change passwords with strength validation using zxcvbn
+- **Password Management**: Change passwords with strength validation using zxcvbn (falls back to a basic length check when libzxcvbn is unavailable)
 - **Group Management**: Add/remove groups and manage user membership
 - **Profile Copying**: Copy desktop configurations between users
 - **Autologin Configuration**: Enable/disable autologin for lightdm and sddm
@@ -26,6 +26,7 @@ Requires Qt6, ninja-build, and C++20 compiler.
 ./build.sh --debug      # Debug build  
 ./build.sh --clang      # Use clang instead of gcc
 ./build.sh --debian     # Build Debian package
+./build.sh --arch       # Build Arch Linux package (uses makepkg/PKGBUILD)
 ```
 
 **Manual build:**
@@ -35,3 +36,5 @@ cmake -G Ninja ..
 ninja
 ```
 
+For Arch packaging directly, run `makepkg` in the project root. Set `PKGVER` to override the version detected from `debian/changelog`.
+On Arch, libzxcvbn is disabled in the PKGBUILD; to build with it manually, install the library and pass `-DENABLE_ZXCVBN=ON` to CMake.

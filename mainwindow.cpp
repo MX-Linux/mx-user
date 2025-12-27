@@ -22,8 +22,12 @@
 #include "passedit.h"
 
 #include <QDebug>
+#include <QFile>
 #include <QFileDialog>
+#include <QProcess>
+#include <QRegularExpression>
 #include <QScreen>
+#include <QStandardPaths>
 #include <QTextEdit>
 #include <QTimer>
 
@@ -151,7 +155,14 @@ void MainWindow::refreshAdd()
     userPasswordEdit->clear();
     userPassword2Edit->clear();
     addUserBox->setEnabled(true);
-    checkSudoGroup->setVisible(shell->run("grep -q '^EXTRA_GROUPS=.*\\<sudo\\>' /etc/adduser.conf", true));
+    const QString adminGroup = adminGroupName();
+    const QStringList extraGroups = defaultExtraGroups();
+    const bool adminInDefaults = !adminGroup.isEmpty() && extraGroups.contains(adminGroup);
+    checkSudoGroup->setVisible(!adminGroup.isEmpty());
+    checkSudoGroup->setChecked(adminInDefaults);
+    if (!adminGroup.isEmpty()) {
+        checkSudoGroup->setText(tr("Add user to %1 group").arg(adminGroup));
+    }
 }
 
 void MainWindow::refreshDelete()
@@ -220,17 +231,23 @@ void MainWindow::applyOptions()
     // Restore groups
     if (checkGroups->isChecked() && user != "root") {
         buildListGroups();
-        QString cmd = "sed -n '/^EXTRA_GROUPS=/s/^EXTRA_GROUPS=//p' /etc/adduser.conf | sed  -e 's/ /,/g' -e 's/\"//g'";
-        QStringList extra_groups_list = shell->getOutAsRoot(cmd).split(',');
-        QStringList new_group_list;
-        for (const QString &group : extra_groups_list) {
-            if (!listGroups->findItems(group, Qt::MatchExactly).isEmpty()) {
-                new_group_list << group;
+        QStringList extra_groups_list = defaultExtraGroups();
+        if (extra_groups_list.isEmpty()) {
+            QMessageBox::information(this, windowTitle(),
+                                     tr("No default extra groups are configured on this system."));
+        } else {
+            QStringList new_group_list;
+            for (const QString &group : extra_groups_list) {
+                if (!listGroups->findItems(group, Qt::MatchExactly).isEmpty()) {
+                    new_group_list << group;
+                }
             }
+            shell->runAsRoot("usermod -G '' " + user);
+            if (!new_group_list.isEmpty()) {
+                shell->runAsRoot("usermod -G " + new_group_list.join(',') + ' ' + user);
+            }
+            QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
         }
-        shell->runAsRoot("usermod -G '' " + user);
-        shell->runAsRoot("usermod -G " + new_group_list.join(',') + ' ' + user);
-        QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
     }
     // Reset Mozilla configs
     if (checkMozilla->isChecked()) {
@@ -390,26 +407,54 @@ void MainWindow::applyAdd()
         return;
     }
 
-    QString cmd {"sed -n '/^DSHELL=/{ s///; s:^/bin/:/usr/bin/:; h}; ${x; p}' /etc/adduser.conf"};
-    QString dshell = shell->getOutAsRoot(cmd, true).trimmed();
-    if (!QFile::exists(dshell)) {
-        dshell = "/usr/bin/bash";
+    const QString adminGroup = adminGroupName();
+    QStringList extraGroups = defaultExtraGroups();
+    if (!adminGroup.isEmpty()) {
+        if (checkSudoGroup->isChecked() && !extraGroups.contains(adminGroup)) {
+            extraGroups << adminGroup;
+        } else if (!checkSudoGroup->isChecked()) {
+            extraGroups.removeAll(adminGroup);
+        }
     }
 
-    cmd = "LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --comment | head -1";
-    QString commentOption = shell->getOutAsRoot(cmd, true).trimmed();
-    if (commentOption != "--comment") {
-        commentOption = "--gecos";
+    const QString dshell = defaultShellPath();
+    const bool hasAdduser = commandExists("adduser");
+    const bool hasUseradd = commandExists("useradd");
+    if (!hasAdduser && !hasUseradd) {
+        QMessageBox::critical(this, windowTitle(),
+                              tr("No suitable user management tools found (adduser or useradd)."));
+        return;
     }
 
-    cmd = "LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --allow-bad-names | head -1";
-    QString allowBadNames = shell->getOutAsRoot(cmd, true).trimmed();
-    if (allowBadNames != "--allow-bad-names") {
-        allowBadNames = "--force-badname";
+    bool success = false;
+    if (hasAdduser) {
+        QString cmd = "LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --comment | head -1";
+        QString commentOption = shell->getOutAsRoot(cmd, true).trimmed();
+        if (commentOption != "--comment") {
+            commentOption = "--gecos";
+        }
+
+        cmd = "LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --allow-bad-names | head -1";
+        QString allowBadNames = shell->getOutAsRoot(cmd, true).trimmed();
+        if (allowBadNames != "--allow-bad-names") {
+            allowBadNames = "--force-badname";
+        }
+
+        success = shell->runAsRoot("adduser --disabled-login " + allowBadNames + " --shell " + dshell + " "
+                                   + commentOption + " " + userNameEdit->text() + ' ' + userNameEdit->text());
+    } else {
+        QStringList useraddArgs {"-m", "-s", dshell, "-c", userNameEdit->text()};
+        if (!extraGroups.isEmpty()) {
+            useraddArgs << "-G" << extraGroups.join(',');
+        }
+        useraddArgs << userNameEdit->text();
+        success = shell->runAsRoot("useradd " + useraddArgs.join(' '));
     }
 
-    shell->runAsRoot("adduser --disabled-login " + allowBadNames + " --shell " + dshell + " " + commentOption + " "
-                     + userNameEdit->text() + ' ' + userNameEdit->text());
+    if (!success) {
+        QMessageBox::critical(this, windowTitle(), tr("Failed to add the user."));
+        return;
+    }
 
     QProcess proc;
     QString elevate {QFile::exists("/usr/bin/pkexec") ? "/usr/bin/pkexec" : "/usr/bin/gksu"};
@@ -422,8 +467,9 @@ void MainWindow::applyAdd()
     proc.waitForFinished();
 
     if (proc.exitCode() == 0) {
-        if (!checkSudoGroup->isChecked()) {
-            shell->runAsRoot("delgroup " + userNameArg + " sudo");
+        if (!adminGroup.isEmpty()) {
+            const QString groupCommand = checkSudoGroup->isChecked() ? "gpasswd -a " : "gpasswd -d ";
+            shell->runAsRoot(groupCommand + userNameArg + ' ' + adminGroup, true);
         }
         QMessageBox::information(this, windowTitle(), tr("The user was added ok."));
         refresh();
@@ -469,12 +515,22 @@ void MainWindow::applyDelete()
                       .arg(comboDeleteUser->currentText());
     if (QMessageBox::Yes == QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No)) {
         QString cmd;
+        const QString username = comboDeleteUser->currentText();
+        const bool hasDeluser = commandExists("deluser");
+        const bool hasUserdel = commandExists("userdel");
+        if (!hasDeluser && !hasUserdel) {
+            QMessageBox::critical(this, windowTitle(),
+                                  tr("No suitable user removal tools found (deluser or userdel)."));
+            return;
+        }
+
         if (deleteHomeCheckBox->isChecked()) {
-            shell->runAsRoot("timeout 5s killall -w -u " + comboDeleteUser->currentText() + " >/dev/null 2>&1");
-            shell->runAsRoot("timeout 5s killall -9 -w -u " + comboDeleteUser->currentText() + " >/dev/null 2>&1");
-            cmd = QString("deluser --remove-home %1").arg(comboDeleteUser->currentText());
+            shell->runAsRoot("timeout 5s killall -w -u " + username + " >/dev/null 2>&1");
+            shell->runAsRoot("timeout 5s killall -9 -w -u " + username + " >/dev/null 2>&1");
+            cmd = hasDeluser ? QString("deluser --remove-home %1").arg(username)
+                             : QString("userdel -r %1").arg(username);
         } else {
-            cmd = QString("deluser %1").arg(comboDeleteUser->currentText());
+            cmd = hasDeluser ? QString("deluser %1").arg(username) : QString("userdel %1").arg(username);
         }
         if (shell->runAsRoot(cmd)) {
             if (QFile::exists("/etc/lightdm/lightdm.conf")) {
@@ -516,11 +572,25 @@ void MainWindow::applyGroup()
                                   tr("Sorry, that group name already exists. Please enter a different name."));
             return;
         }
+        const bool hasAddgroup = commandExists("addgroup");
+        const bool hasGroupadd = commandExists("groupadd");
+        if (!hasAddgroup && !hasGroupadd) {
+            QMessageBox::critical(this, windowTitle(),
+                                  tr("No suitable group creation tools found (addgroup or groupadd)."));
+            return;
+        }
         // Run addgroup command
-        QString group_user_level = checkGroupUserLevel->checkState() == Qt::Checked
-                                       ? "--quiet" // --quiet because it fails if ""
-                                       : "--system";
-        if (shell->runAsRoot("addgroup " + groupNameEdit->text() + " " + group_user_level)) {
+        QString groupCommand;
+        if (hasAddgroup) {
+            QString group_user_level = checkGroupUserLevel->checkState() == Qt::Checked
+                                           ? "--quiet" // --quiet because it fails if ""
+                                           : "--system";
+            groupCommand = "addgroup " + groupNameEdit->text() + " " + group_user_level;
+        } else {
+            QString group_user_level = checkGroupUserLevel->checkState() == Qt::Checked ? "" : "--system ";
+            groupCommand = "groupadd " + group_user_level + groupNameEdit->text();
+        }
+        if (shell->runAsRoot(groupCommand.trimmed())) {
             QMessageBox::information(this, windowTitle(), tr("The system group was added ok."));
         } else {
             QMessageBox::critical(this, windowTitle(), tr("Failed to add the system group."));
@@ -543,8 +613,17 @@ void MainWindow::applyGroup()
                         .arg(groups.join(' '));
         int ans = QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No);
         if (ans == QMessageBox::Yes) {
-            auto it = std::find_if(groups.cbegin(), groups.cend(),
-                                   [&](const auto &group) { return !shell->runAsRoot("delgroup " + group); });
+            const bool hasDelgroup = commandExists("delgroup");
+            const bool hasGroupdel = commandExists("groupdel");
+            if (!hasDelgroup && !hasGroupdel) {
+                QMessageBox::critical(this, windowTitle(),
+                                      tr("No suitable group removal tools found (delgroup or groupdel)."));
+                return;
+            }
+            auto it = std::find_if(groups.cbegin(), groups.cend(), [&](const auto &group) {
+                const QString command = hasDelgroup ? "delgroup " + group : "groupdel " + group;
+                return !shell->runAsRoot(command);
+            });
             if (it != groups.cend()) {
                 const auto &group = *it;
                 QMessageBox::critical(this, windowTitle(),
@@ -908,6 +987,90 @@ void MainWindow::buildListGroupsToRemove()
         }
         refresh();
     });
+}
+
+bool MainWindow::commandExists(const QString &command) const
+{
+    return !QStandardPaths::findExecutable(command).isEmpty();
+}
+
+QString MainWindow::adminGroupName() const
+{
+    const QStringList candidateGroups {"sudo", "wheel"};
+    for (const auto &group : candidateGroups) {
+        if (QProcess::execute("getent", {"group", group}) == 0) {
+            return group;
+        }
+    }
+
+    QFile groupFile("/etc/group");
+    if (!groupFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        return {};
+    }
+
+    const QString contents = QString::fromUtf8(groupFile.readAll());
+    for (const auto &group : candidateGroups) {
+        QRegularExpression rx(QStringLiteral("^%1:").arg(QRegularExpression::escape(group)), QRegularExpression::MultilineOption);
+        if (rx.match(contents).hasMatch()) {
+            return group;
+        }
+    }
+
+    return {};
+}
+
+QString MainWindow::defaultShellPath() const
+{
+    auto normalizedShell = [](QString shellPath) {
+        if (shellPath.startsWith("/bin/")) {
+            shellPath.replace(0, 5, "/usr/bin/");
+        }
+        if (!QFile::exists(shellPath)) {
+            shellPath = "/usr/bin/bash";
+        }
+        return shellPath;
+    };
+
+    QFile adduserConf("/etc/adduser.conf");
+    if (adduserConf.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        while (!adduserConf.atEnd()) {
+            const QString line = QString::fromUtf8(adduserConf.readLine()).trimmed();
+            if (line.startsWith("DSHELL=")) {
+                return normalizedShell(line.section('=', 1).remove('"'));
+            }
+        }
+    }
+
+    QFile userAddDefault("/etc/default/useradd");
+    if (userAddDefault.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        while (!userAddDefault.atEnd()) {
+            const QString line = QString::fromUtf8(userAddDefault.readLine()).trimmed();
+            if (line.startsWith("SHELL=")) {
+                return normalizedShell(line.section('=', 1).remove('"'));
+            }
+        }
+    }
+
+    return normalizedShell("/usr/bin/bash");
+}
+
+QStringList MainWindow::defaultExtraGroups() const
+{
+    QFile adduserConf("/etc/adduser.conf");
+    if (!adduserConf.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        return {};
+    }
+
+    while (!adduserConf.atEnd()) {
+        const QString line = QString::fromUtf8(adduserConf.readLine()).trimmed();
+        if (!line.startsWith("EXTRA_GROUPS=")) {
+            continue;
+        }
+        QString groups = line.section('=', 1).remove('"');
+        return groups.split(QRegularExpression("[\\s,]+"), Qt::SkipEmptyParts);
+    }
+
+    return {};
 }
 
 // apply but do not close

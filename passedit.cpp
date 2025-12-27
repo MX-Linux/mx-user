@@ -28,8 +28,27 @@
 
 #include <algorithm>
 #include <cmath>
+#include <cstring>
 #include <random>
+
+#ifndef WITH_ZXCVBN
+#define WITH_ZXCVBN 0
+#endif
+
+#if WITH_ZXCVBN
 #include <zxcvbn.h>
+#else
+static constexpr double Negligible = 0.0;
+static constexpr double VeryWeak = 4.0;
+static constexpr double Weak = 8.0;
+static constexpr double Strong = 12.0;
+static constexpr double VeryStrong = 16.0;
+static inline double ZxcvbnMatch(const char *input, void *, void *)
+{
+    // Simple entropy proxy based on length; avoids libzxcvbn dependency.
+    return input ? static_cast<double>(std::strlen(input)) : 0.0;
+}
+#endif
 
 // Password generator parameters applicable accross every PassEdit instance.
 static const int GEN_WORD_MAX = 6;       // Maximum number of characters per word.
