@@ -1031,6 +1031,30 @@ QString MainWindow::defaultShellPath() const
         return shellPath;
     };
 
+#ifdef BUILD_FOR_ARCH
+    // For Arch Linux, check /etc/default/useradd first
+    QFile userAddDefault("/etc/default/useradd");
+    if (userAddDefault.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        while (!userAddDefault.atEnd()) {
+            const QString line = QString::fromUtf8(userAddDefault.readLine()).trimmed();
+            if (line.startsWith("SHELL=")) {
+                return normalizedShell(line.section('=', 1).remove('"'));
+            }
+        }
+    }
+
+    // Fallback to /etc/adduser.conf
+    QFile adduserConf("/etc/adduser.conf");
+    if (adduserConf.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        while (!adduserConf.atEnd()) {
+            const QString line = QString::fromUtf8(adduserConf.readLine()).trimmed();
+            if (line.startsWith("DSHELL=")) {
+                return normalizedShell(line.section('=', 1).remove('"'));
+            }
+        }
+    }
+#else
+    // For Debian-based systems, check /etc/adduser.conf first
     QFile adduserConf("/etc/adduser.conf");
     if (adduserConf.open(QIODevice::ReadOnly | QIODevice::Text)) {
         while (!adduserConf.atEnd()) {
@@ -1041,6 +1065,7 @@ QString MainWindow::defaultShellPath() const
         }
     }
 
+    // Fallback to /etc/default/useradd
     QFile userAddDefault("/etc/default/useradd");
     if (userAddDefault.open(QIODevice::ReadOnly | QIODevice::Text)) {
         while (!userAddDefault.atEnd()) {
@@ -1050,6 +1075,7 @@ QString MainWindow::defaultShellPath() const
             }
         }
     }
+#endif
 
     return normalizedShell("/usr/bin/bash");
 }

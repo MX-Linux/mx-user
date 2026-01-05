@@ -145,6 +145,8 @@ if(ENABLE_ZXCVBN)
     endif()
 endif()
 
+option(BUILD_FOR_ARCH "Build for Arch Linux (use /etc/default/useradd instead of /etc/adduser.conf)" OFF)
+
 # Link Qt6 libraries and system libraries
 target_link_libraries(mx-user
     Qt6::Core
@@ -158,6 +160,12 @@ if(ENABLE_ZXCVBN)
     target_compile_definitions(mx-user PRIVATE WITH_ZXCVBN=1)
 else()
     target_compile_definitions(mx-user PRIVATE WITH_ZXCVBN=0)
+endif()
+
+if(BUILD_FOR_ARCH)
+    target_compile_definitions(mx-user PRIVATE BUILD_FOR_ARCH=1)
+else()
+    target_compile_definitions(mx-user PRIVATE BUILD_FOR_ARCH=0)
 endif()
 
 # Set compiler flags

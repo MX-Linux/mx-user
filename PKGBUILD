@@ -22,6 +22,7 @@ build() {
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
         -DENABLE_ZXCVBN=OFF \
+        -DBUILD_FOR_ARCH=ON \
         -DPROJECT_VERSION_OVERRIDE="${pkgver}"
 
     cmake --build build --parallel
@@ -49,5 +50,10 @@ package() {
     install -dm755 "${pkgdir}/usr/share/doc/mx-user"
     if [ -d help ]; then
         cp -r help/* "${pkgdir}/usr/share/doc/mx-user/" 2>/dev/null || true
+    fi
+
+    # Install changelog
+    if [ -f debian/changelog ]; then
+        gzip -c debian/changelog > "${pkgdir}/usr/share/doc/mx-user/changelog.gz"
     fi
 }
