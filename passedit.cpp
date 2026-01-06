@@ -39,14 +39,14 @@
 #include <zxcvbn.h>
 #else
 static constexpr double Negligible = 0.0;
-static constexpr double VeryWeak = 4.0;
-static constexpr double Weak = 8.0;
-static constexpr double Strong = 12.0;
-static constexpr double VeryStrong = 16.0;
+static constexpr double VeryWeak = 0.8;
+static constexpr double Weak = 1.6;
+static constexpr double Strong = 2.4;
+static constexpr double VeryStrong = 3.2;
 static inline double ZxcvbnMatch(const char *input, void *, void *)
 {
     // Simple entropy proxy based on length; avoids libzxcvbn dependency.
-    return input ? static_cast<double>(std::strlen(input)) : 0.0;
+    return input ? static_cast<double>(std::strlen(input)) * 5 : 0.0;
 }
 #endif
 
