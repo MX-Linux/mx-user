@@ -24,5 +24,5 @@ signals:
 private:
     QString elevate;
     QString helper;
-    QString out_buffer;
+    QString outBuffer;
 };

@@ -178,7 +178,7 @@ void MainWindow::refreshChangePass()
     comboChangePass->clear();
     comboChangePass->addItem(tr("none"));
     changePasswordBox->setEnabled(true);
-    comboChangePass->addItem("root");
+    comboChangePass->addItem(QStringLiteral("root"));
     lineEditChangePass->clear();
     lineEditChangePassConf->clear();
 }
@@ -212,8 +212,8 @@ void MainWindow::applyOptions()
 {
     const QString user = userComboBox->currentText();
     QString home = user;
-    if (user != "root") {
-        home = QString("/home/%1").arg(user);
+    if (user != QStringLiteral("root")) {
+        home = QStringLiteral("/home/%1").arg(user);
     }
 
     if (checkGroups->isChecked() || checkMozilla->isChecked()) {
@@ -229,7 +229,7 @@ void MainWindow::applyOptions()
     setCursor(QCursor(Qt::WaitCursor));
 
     // Restore groups
-    if (checkGroups->isChecked() && user != "root") {
+    if (checkGroups->isChecked() && user != QStringLiteral("root")) {
         buildListGroups();
         QStringList extra_groups_list = defaultExtraGroups();
         if (extra_groups_list.isEmpty()) {
@@ -262,10 +262,10 @@ void MainWindow::applyOptions()
         }
 
         if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
-            shell->runAsRoot("sed -i " + QString("s/^User=%1/User=/").arg(user)
+            shell->runAsRoot("sed -i " + QStringLiteral("s/^User=%1/User=/").arg(user)
                              + " /etc/sddm.conf.d/kde_settings.conf");
         } else if (QFile::exists("/etc/sddm.conf")) {
-            shell->runAsRoot("sed -i " + QString("s/^User=%1/User=/").arg(user) + " /etc/sddm.conf");
+            shell->runAsRoot("sed -i " + QStringLiteral("s/^User=%1/User=/").arg(user) + " /etc/sddm.conf");
         }
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
@@ -277,14 +277,14 @@ void MainWindow::applyOptions()
                              + " /etc/lightdm/lightdm.conf");
         }
         if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
-            shell->runAsRoot("sed -i " + QString("s/^User=.*/User=%1/").arg(user)
+            shell->runAsRoot("sed -i " + QStringLiteral("s/^User=.*/User=%1/").arg(user)
                              + " /etc/sddm.conf.d/kde_settings.conf");
-            if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == "KDE") {
+            if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == QLatin1String("KDE")) {
                 QString sessionType;
-                if (qEnvironmentVariable("XDG_SESSION_TYPE") == "wayland") {
-                    sessionType = "plasma";
-                } else if (qEnvironmentVariable("XDG_SESSION_TYPE") == "x11") {
-                    sessionType = "plasmax11";
+                if (qEnvironmentVariable("XDG_SESSION_TYPE") == QLatin1String("wayland")) {
+                    sessionType = QStringLiteral("plasma");
+                } else if (qEnvironmentVariable("XDG_SESSION_TYPE") == QLatin1String("x11")) {
+                    sessionType = QStringLiteral("plasmax11");
                 }
 
                 if (!sessionType.isEmpty()) {
@@ -294,7 +294,7 @@ void MainWindow::applyOptions()
             }
         } else if (QFile::exists("/etc/sddm.conf")) {
             shell->runAsRoot(QString("sed -i 's/^User=.*/User=%1/' /etc/sddm.conf").arg(user));
-            if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == "KDE") {
+            if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == QLatin1String("KDE")) {
                 shell->runAsRoot("sed -i 's/^Session=.*/Session=plasma.desktop/' /etc/sddm.conf");
             }
         }
@@ -324,8 +324,8 @@ void MainWindow::applyDesktop()
         return;
     }
 
-    QString fromDir = QString("/home/%1").arg(fromUserComboBox->currentText());
-    QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
+    QString fromDir = QStringLiteral("/home/%1").arg(fromUserComboBox->currentText());
+    QString toDir = QStringLiteral("/home/%1").arg(toUserComboBox->currentText());
     if (toUserComboBox->currentText().contains('/')) { // If a directory rather than a user name
         toDir = toUserComboBox->currentText();
     }
@@ -430,14 +430,14 @@ void MainWindow::applyAdd()
     if (hasAdduser) {
         QString cmd = "LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --comment | head -1";
         QString commentOption = shell->getOutAsRoot(cmd, true).trimmed();
-        if (commentOption != "--comment") {
-            commentOption = "--gecos";
+        if (commentOption != QLatin1String("--comment")) {
+            commentOption = QStringLiteral("--gecos");
         }
 
         cmd = "LC_ALL=C adduser --help 2>/dev/null | grep -m1 -o -- --allow-bad-names | head -1";
         QString allowBadNames = shell->getOutAsRoot(cmd, true).trimmed();
-        if (allowBadNames != "--allow-bad-names") {
-            allowBadNames = "--force-badname";
+        if (allowBadNames != QLatin1String("--allow-bad-names")) {
+            allowBadNames = QStringLiteral("--force-badname");
         }
 
         success = shell->runAsRoot("adduser --disabled-login " + allowBadNames + " --shell " + dshell + " "
@@ -527,10 +527,10 @@ void MainWindow::applyDelete()
         if (deleteHomeCheckBox->isChecked()) {
             shell->runAsRoot("timeout 5s killall -w -u " + username + " >/dev/null 2>&1");
             shell->runAsRoot("timeout 5s killall -9 -w -u " + username + " >/dev/null 2>&1");
-            cmd = hasDeluser ? QString("deluser --remove-home %1").arg(username)
-                             : QString("userdel -r %1").arg(username);
+            cmd = hasDeluser ? QStringLiteral("deluser --remove-home %1").arg(username)
+                             : QStringLiteral("userdel -r %1").arg(username);
         } else {
-            cmd = hasDeluser ? QString("deluser %1").arg(username) : QString("userdel %1").arg(username);
+            cmd = hasDeluser ? QStringLiteral("deluser %1").arg(username) : QStringLiteral("userdel %1").arg(username);
         }
         if (shell->runAsRoot(cmd)) {
             if (QFile::exists("/etc/lightdm/lightdm.conf")) {
@@ -597,9 +597,10 @@ void MainWindow::applyGroup()
         }
     } else { // Deleting group if addBox disabled
         QStringList groups;
-        for (auto i = 0; i < listGroupsToRemove->count(); ++i) {
-            if (listGroupsToRemove->item(i)->checkState() == Qt::Checked) {
-                groups << listGroupsToRemove->item(i)->text();
+        for (int i = 0; i < listGroupsToRemove->count(); ++i) {
+            auto *item = listGroupsToRemove->item(i);
+            if (item && item->checkState() == Qt::Checked) {
+                groups << item->text();
             }
         }
         if (groups.isEmpty()) {
@@ -641,9 +642,10 @@ void MainWindow::applyGroup()
 void MainWindow::applyMembership()
 {
     QString groups;
-    for (auto i = 0; i < listGroups->count(); ++i) {
-        if (listGroups->item(i)->checkState() == Qt::Checked) {
-            groups += listGroups->item(i)->text() + ',';
+    for (int i = 0; i < listGroups->count(); ++i) {
+        auto *item = listGroups->item(i);
+        if (item && item->checkState() == Qt::Checked) {
+            groups += item->text() + ',';
         }
     }
     groups.chop(1);
@@ -740,7 +742,7 @@ void MainWindow::applyRename()
 void MainWindow::syncDone(bool success)
 {
     if (success) {
-        QString toDir = QString("/home/%1").arg(toUserComboBox->currentText());
+        QString toDir = QStringLiteral("/home/%1").arg(toUserComboBox->currentText());
 
         // If a directory rather than a user name
         if (toUserComboBox->currentText().contains('/')) {
@@ -755,7 +757,7 @@ void MainWindow::syncDone(bool success)
         }
 
         // Fix owner
-        QString cmd = QString("chown -R %1:%1 %2").arg(toUserComboBox->currentText(), toDir);
+        QString cmd = QStringLiteral("chown -R %1:%1 %2").arg(toUserComboBox->currentText(), toDir);
         shell->runAsRoot(cmd);
 
         // Fix "home/old_user" string in all ~/ or ~/.mozilla files
@@ -966,7 +968,7 @@ void MainWindow::buildListGroupsToRemove()
         if (!group.isEmpty()) {
             auto *item = new QListWidgetItem;
             item->setText(group.section(':', 0, 0));
-            if (item->text() == "root") {
+            if (item->text() == QStringLiteral("root")) {
                 continue;
             }
             item->setCheckState(Qt::Unchecked);
@@ -980,8 +982,9 @@ void MainWindow::buildListGroupsToRemove()
         if (item->checkState() == Qt::Checked) {
             return;
         }
-        for (auto i = 0; i < listGroupsToRemove->count(); ++i) {
-            if (listGroupsToRemove->item(i)->checkState() == Qt::Checked) {
+        for (int i = 0; i < listGroupsToRemove->count(); ++i) {
+            auto *item = listGroupsToRemove->item(i);
+            if (item && item->checkState() == Qt::Checked) {
                 return;
             }
         }

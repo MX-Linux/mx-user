@@ -51,9 +51,9 @@ static inline double ZxcvbnMatch(const char *input, void *, void *)
 #endif
 
 // Password generator parameters applicable accross every PassEdit instance.
-static const int GEN_WORD_MAX = 6;       // Maximum number of characters per word.
-static const int GEN_NUMBER_MAX = 999;   // Numbers will go from 0 to GEN_NUMBER_MAX without duplicates.
-static const int GEN_WORD_NUM_RATIO = 3; // Ratio N:1 of words to numbers (if less than GEN_NUMBER_MAX).
+static constexpr int GEN_WORD_MAX = 6;       // Maximum number of characters per word.
+static constexpr int GEN_NUMBER_MAX = 999;   // Numbers will go from 0 to GEN_NUMBER_MAX without duplicates.
+static constexpr int GEN_WORD_NUM_RATIO = 3; // Ratio N:1 of words to numbers (if less than GEN_NUMBER_MAX).
 
 PassEdit::PassEdit(QLineEdit *master, QLineEdit *slave, int min, QObject *parent) noexcept
     : QObject(parent),
