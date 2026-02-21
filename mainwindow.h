@@ -104,4 +104,5 @@ private:
     QString defaultShellPath() const;
     QStringList defaultExtraGroups() const;
     bool commandExists(const QString &command) const;
+    QString currentLogname() const;
 };

@@ -130,10 +130,7 @@ void MainWindow::refreshCopy()
 {
     fromUserComboBox->clear();
     fromUserComboBox->addItems(users);
-    QString logname = QString::fromUtf8(qgetenv("SUDO_USER")).trimmed();
-    if (logname.isEmpty()) {
-        logname = QString::fromUtf8(qgetenv("LOGNAME")).trimmed();
-    }
+    const QString logname = currentLogname();
     fromUserComboBox->setCurrentIndex(fromUserComboBox->findText(logname));
     copyRadioButton->setChecked(true);
     entireRadioButton->setChecked(true);
@@ -663,10 +660,7 @@ void MainWindow::applyRename()
 
     // Validate data before proceeding
     // Check if selected user is in use
-    QString logname = QString::fromUtf8(qgetenv("SUDO_USER")).trimmed();
-    if (logname.isEmpty()) {
-        logname = QString::fromUtf8(qgetenv("LOGNAME")).trimmed();
-    }
+    const QString logname = currentLogname();
     if (logname == old_name) {
         QMessageBox::critical(
             this, windowTitle(),
@@ -846,10 +840,7 @@ void MainWindow::fromUserComboBox_activated(const QString & /*unused*/)
     buttonApply->setEnabled(true);
     syncProgressBar->setValue(0);
     QStringList items = users;
-    QString logname = QString::fromUtf8(qgetenv("SUDO_USER")).trimmed();
-    if (logname.isEmpty()) {
-        logname = QString::fromUtf8(qgetenv("LOGNAME")).trimmed();
-    }
+    const QString logname = currentLogname();
     items.removeAll(logname);
     items.removeAll(fromUserComboBox->currentText());
     items.sort();
@@ -995,6 +986,15 @@ void MainWindow::buildListGroupsToRemove()
 bool MainWindow::commandExists(const QString &command) const
 {
     return !QStandardPaths::findExecutable(command).isEmpty();
+}
+
+QString MainWindow::currentLogname() const
+{
+    QString logname = QString::fromUtf8(qgetenv("SUDO_USER")).trimmed();
+    if (logname.isEmpty()) {
+        logname = QString::fromUtf8(qgetenv("LOGNAME")).trimmed();
+    }
+    return logname;
 }
 
 QString MainWindow::adminGroupName() const
