@@ -151,7 +151,7 @@ bool PassEdit::eventFilter(QObject *watched, QEvent *event) noexcept
     const QEvent::Type etype = event->type();
     if (etype == QEvent::EnabledChange || etype == QEvent::Hide) {
         auto *w = qobject_cast<QLineEdit *>(watched);
-        if ((actionEye != nullptr) && !(w->isVisible() && w->isEnabled())) {
+        if (w && (actionEye != nullptr) && !(w->isVisible() && w->isEnabled())) {
             actionEye->setChecked(false);
         }
     }
