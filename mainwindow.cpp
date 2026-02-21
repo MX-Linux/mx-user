@@ -454,10 +454,8 @@ void MainWindow::applyAdd()
     }
 
     QProcess proc;
-    QString elevate {QFile::exists("/usr/bin/pkexec") ? "/usr/bin/pkexec" : "/usr/bin/gksu"};
-    QString helper {"/usr/lib/" + QApplication::applicationName() + "/helper"};
     QString userNameArg = userNameEdit->text();
-    proc.start(elevate, {helper, "passwd", userNameArg}, QIODevice::ReadWrite);
+    proc.start(shell->elevatePath(), {shell->helperPath(), "passwd", userNameArg}, QIODevice::ReadWrite);
     proc.waitForStarted();
     proc.write(userPasswordEdit->text().toUtf8() + '\n');
     proc.write(userPasswordEdit->text().toUtf8() + '\n');
@@ -490,9 +488,7 @@ void MainWindow::applyChangePass()
     }
 
     QProcess proc;
-    QString elevate {QFile::exists("/usr/bin/pkexec") ? "/usr/bin/pkexec" : "/usr/bin/gksu"};
-    QString helper {"/usr/lib/" + QApplication::applicationName() + "/helper"};
-    proc.start(elevate, {helper, "passwd", comboChangePass->currentText()}, QIODevice::ReadWrite);
+    proc.start(shell->elevatePath(), {shell->helperPath(), "passwd", comboChangePass->currentText()}, QIODevice::ReadWrite);
     proc.waitForStarted();
     proc.write(lineEditChangePass->text().toUtf8() + '\n');
     proc.write(lineEditChangePass->text().toUtf8() + '\n');
