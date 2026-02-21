@@ -634,15 +634,14 @@ void MainWindow::applyGroup()
 
 void MainWindow::applyMembership()
 {
-    QString groups;
+    QStringList groups;
     for (int i = 0; i < listGroups->count(); ++i) {
         auto *item = listGroups->item(i);
         if (item && item->checkState() == Qt::Checked) {
-            groups += item->text() + ',';
+            groups << item->text();
         }
     }
-    groups.chop(1);
-    if (shell->runAsRoot("usermod -G " + groups + ' ' + userComboMembership->currentText())) {
+    if (shell->runAsRoot("usermod -G " + groups.join(',') + ' ' + userComboMembership->currentText())) {
         QMessageBox::information(this, windowTitle(), tr("The changes have been applied."));
     } else {
         QMessageBox::critical(this, windowTitle(), tr("Failed to apply group changes"));
