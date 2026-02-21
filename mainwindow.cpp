@@ -19,6 +19,7 @@
 */
 
 #include "mainwindow.h"
+#include "about.h"
 #include "passedit.h"
 
 #include <QDebug>
@@ -31,14 +32,9 @@
 #include <QTextEdit>
 #include <QTimer>
 
-#include "about.h"
-#include <chrono>
-
 #ifndef VERSION
 #define VERSION "?.?.?.?"
 #endif
-
-using namespace std::chrono_literals;
 
 MainWindow::MainWindow(QWidget *parent)
     : QDialog(parent)
@@ -54,10 +50,10 @@ MainWindow::MainWindow(QWidget *parent)
     tabWidget->blockSignals(true);
     tabWidget->setCurrentIndex(Tab::Administration);
     tabWidget->blockSignals(false);
-    QSize size = this->size();
+    QSize savedSize = QDialog::size();
     restoreGeometry(settings.value("geometry").toByteArray());
     if (isMaximized()) { // If started maximized give option to resize to normal window size
-        resize(size);
+        resize(savedSize);
         QRect screenGeometry = QApplication::primaryScreen()->geometry();
         int x = (screenGeometry.width() - width()) / 2;
         int y = (screenGeometry.height() - height()) / 2;
@@ -575,13 +571,13 @@ void MainWindow::applyGroup()
         // Run addgroup command
         QString groupCommand;
         if (hasAddgroup) {
-            QString group_user_level = checkGroupUserLevel->checkState() == Qt::Checked
-                                           ? "--quiet" // --quiet because it fails if ""
-                                           : "--system";
-            groupCommand = "addgroup " + groupNameEdit->text() + " " + group_user_level;
+            const QString level = checkGroupUserLevel->checkState() == Qt::Checked
+                                      ? "--quiet" // --quiet because it fails if ""
+                                      : "--system";
+            groupCommand = "addgroup " + groupNameEdit->text() + " " + level;
         } else {
-            QString group_user_level = checkGroupUserLevel->checkState() == Qt::Checked ? "" : "--system ";
-            groupCommand = "groupadd " + group_user_level + groupNameEdit->text();
+            const QString level = checkGroupUserLevel->checkState() == Qt::Checked ? "" : "--system ";
+            groupCommand = "groupadd " + level + groupNameEdit->text();
         }
         if (shell->runAsRoot(groupCommand.trimmed())) {
             QMessageBox::information(this, windowTitle(), tr("The system group was added ok."));

@@ -1,4 +1,5 @@
 #include "about.h"
+#include "common.h"
 
 #include <QApplication>
 #include <QFileInfo>
@@ -9,7 +10,6 @@
 #include <QTextEdit>
 #include <QVBoxLayout>
 
-#include "common.h"
 #include <unistd.h>
 
 // Display doc as nomal user when run as root

@@ -2,8 +2,6 @@
 
 #include <QProcess>
 
-class QTextStream;
-
 class Cmd : public QProcess
 {
     Q_OBJECT

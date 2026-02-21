@@ -100,9 +100,9 @@ private:
     class PassEdit *passChange;
     class PassEdit *passUser;
     void setConnections();
-    QString adminGroupName() const;
-    QString defaultShellPath() const;
-    QStringList defaultExtraGroups() const;
-    bool commandExists(const QString &command) const;
-    QString currentLogname() const;
+    [[nodiscard]] QString adminGroupName() const;
+    [[nodiscard]] QString defaultShellPath() const;
+    [[nodiscard]] QStringList defaultExtraGroups() const;
+    [[nodiscard]] bool commandExists(const QString &command) const;
+    [[nodiscard]] QString currentLogname() const;
 };
