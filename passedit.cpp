@@ -109,7 +109,6 @@ void PassEdit::generate() noexcept
         for (int i = numLimit; i >= 0; --i) {
             words.append(QString::number(i));
         }
-        std::srand(static_cast<unsigned>(std::time(nullptr)));
         pos = words.count();
     }
     gentext.clear();

@@ -30,7 +30,6 @@
 #include <QScreen>
 #include <QStandardPaths>
 #include <QTextEdit>
-#include <QTimer>
 
 #ifndef VERSION
 #define VERSION "?.?.?.?"
@@ -965,8 +964,8 @@ void MainWindow::buildListGroupsToRemove()
             return;
         }
         for (int i = 0; i < listGroupsToRemove->count(); ++i) {
-            auto *item = listGroupsToRemove->item(i);
-            if (item && item->checkState() == Qt::Checked) {
+            auto *listItem = listGroupsToRemove->item(i);
+            if (listItem && listItem->checkState() == Qt::Checked) {
                 return;
             }
         }
