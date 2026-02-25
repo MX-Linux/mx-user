@@ -53,8 +53,12 @@ else()
     endif()
 endif()
 
+# Store full version (e.g., "26.02arch") and strip non-numeric suffix for CMake
+set(PROJECT_VERSION_FULL "${PROJECT_VERSION_FROM_CHANGELOG}")
+string(REGEX REPLACE "[^0-9.].*$" "" PROJECT_VERSION_NUMERIC "${PROJECT_VERSION_FROM_CHANGELOG}")
+
 project(mx-user
-    VERSION ${PROJECT_VERSION_FROM_CHANGELOG}
+    VERSION ${PROJECT_VERSION_NUMERIC}
     DESCRIPTION "MX User Manager - Graphical tool for managing user accounts"
     LANGUAGES CXX
 )
@@ -189,7 +193,7 @@ endif()
 target_compile_definitions(mx-user PRIVATE
     QT_DEPRECATED_WARNINGS
     QT_DISABLE_DEPRECATED_BEFORE=0x060000
-    VERSION="${PROJECT_VERSION}"
+    VERSION="${PROJECT_VERSION_FULL}"
 )
 
 # Release-specific optimizations
