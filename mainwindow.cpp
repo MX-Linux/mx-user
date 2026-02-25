@@ -116,7 +116,8 @@ void MainWindow::refreshOptions()
     radioAutologinYes->setAutoExclusive(false);
     radioAutologinYes->setChecked(false);
     radioAutologinYes->setAutoExclusive(true);
-    if ((QProcess::execute("pgrep", {"lightdm"}) != 0) && QProcess::execute("pgrep", {"sddm"}) != 0) {
+    if ((QProcess::execute("pgrep", {"lightdm"}) != 0) && QProcess::execute("pgrep", {"sddm"}) != 0
+        && QProcess::execute("pgrep", {"plasmalogin"}) != 0) {
         groupBox->setVisible(false);
     }
 }
@@ -259,6 +260,10 @@ void MainWindow::applyOptions()
         } else if (QFile::exists("/etc/sddm.conf")) {
             shell->runAsRoot("sed -i " + QStringLiteral("s/^User=%1/User=/").arg(user) + " /etc/sddm.conf");
         }
+        if (QFile::exists("/etc/plasmalogin.conf.d/autologin.conf")) {
+            shell->runAsRoot("sed -i " + QStringLiteral("s/^User=%1/User=/").arg(user)
+                             + " /etc/plasmalogin.conf.d/autologin.conf");
+        }
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
@@ -289,6 +294,10 @@ void MainWindow::applyOptions()
             if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == QLatin1String("KDE")) {
                 shell->runAsRoot("sed -i 's/^Session=.*/Session=plasma.desktop/' /etc/sddm.conf");
             }
+        }
+        if (QFile::exists("/etc/plasmalogin.conf.d/autologin.conf")) {
+            shell->runAsRoot("sed -i " + QStringLiteral("s/^User=.*/User=%1/").arg(user)
+                             + " /etc/plasmalogin.conf.d/autologin.conf");
         }
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been enabled for the '%1' account.").arg(user)));
@@ -528,6 +537,17 @@ void MainWindow::applyDelete()
                           .arg(comboDeleteUser->currentText())
                     + " /etc/lightdm/lightdm.conf");
             }
+            if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
+                shell->runAsRoot("sed -i " + QStringLiteral("s/^User=%1$/User=/").arg(comboDeleteUser->currentText())
+                                 + " /etc/sddm.conf.d/kde_settings.conf");
+            } else if (QFile::exists("/etc/sddm.conf")) {
+                shell->runAsRoot("sed -i " + QStringLiteral("s/^User=%1$/User=/").arg(comboDeleteUser->currentText())
+                                 + " /etc/sddm.conf");
+            }
+            if (QFile::exists("/etc/plasmalogin.conf.d/autologin.conf")) {
+                shell->runAsRoot("sed -i " + QStringLiteral("s/^User=%1$/User=/").arg(comboDeleteUser->currentText())
+                                 + " /etc/plasmalogin.conf.d/autologin.conf");
+            }
             QMessageBox::information(this, windowTitle(), tr("The user has been deleted."));
         } else {
             QMessageBox::critical(this, windowTitle(), tr("Failed to delete the user."));
@@ -718,6 +738,10 @@ void MainWindow::applyRename()
         shell->runAsRoot(QString("sed -i 's/^User=%1$/User=%2/g' /etc/sddm.conf")
                              .arg(QRegularExpression::escape(old_name), QRegularExpression::escape(new_name)));
     }
+    if (QFile::exists("/etc/plasmalogin.conf.d/autologin.conf")) {
+        shell->runAsRoot(QString("sed -i 's/^User=%1$/User=%2/g' /etc/plasmalogin.conf.d/autologin.conf")
+                             .arg(QRegularExpression::escape(old_name), QRegularExpression::escape(new_name)));
+    }
 
     QMessageBox::information(this, windowTitle(), tr("The user was renamed."));
     refresh();
@@ -862,6 +886,13 @@ void MainWindow::userComboBox_activated(const QString & /*unused*/)
     } else if (QProcess::execute("pgrep", {"sddm"}) == 0) {
         QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
         if (sddm_settings.value("Autologin/User").toString() == user) {
+            radioAutologinYes->setChecked(true);
+        } else {
+            radioAutologinNo->setChecked(true);
+        }
+    } else if (QProcess::execute("pgrep", {"plasmalogin"}) == 0) {
+        QSettings plasma_settings("/etc/plasmalogin.conf.d/autologin.conf", QSettings::NativeFormat);
+        if (plasma_settings.value("Autologin/User").toString() == user) {
             radioAutologinYes->setChecked(true);
         } else {
             radioAutologinNo->setChecked(true);
