@@ -32,6 +32,20 @@ namespace Tab
 enum { Administration, Options, Copy, AddRemoveGroup, GroupMembership, MAX };
 }
 
+// Snapshot of a desktop-copy operation, captured in applyDesktop() before the
+// copy starts so syncDone() acts on exactly what was copied rather than on the
+// live (possibly changed) UI state.
+struct CopyJob
+{
+    QString fromUser;
+    QString toUser;
+    QString toDir;             // final rsync destination, including any subdirectory
+    bool toIsDir = false;      // destination is a browsed directory, not a user account
+    bool entire = false;       // entire-home copy (enables ~/.recently-used and lock cleanup)
+    bool rewritePaths = false; // rewrite "home/<from>" references (entire-home or .mozilla copy)
+    bool sync = false;         // sync mode (affects status text only)
+};
+
 class MainWindow : public QDialog, public Ui::MEConfig
 {
     Q_OBJECT
@@ -61,7 +75,7 @@ public:
     void refreshRename();
 
 public slots:
-    void syncDone(bool success);
+    void syncDone(bool success, const CopyJob &job);
 
 protected:
     void keyPressEvent(QKeyEvent *event) override;

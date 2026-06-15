@@ -308,6 +308,17 @@ void MainWindow::applyDesktop()
     }
     fromDir.append('/');
 
+    // Snapshot the operation now so the post-copy follow-ups in syncDone act on
+    // exactly what was copied, independent of any later change to the controls.
+    CopyJob job;
+    job.fromUser = fromUserComboBox->currentText();
+    job.toUser = toUserComboBox->currentText();
+    job.toDir = toDir;
+    job.toIsDir = toUserComboBox->currentText().contains('/');
+    job.entire = entireRadioButton->isChecked();
+    job.rewritePaths = entireRadioButton->isChecked() || mozillaRadioButton->isChecked();
+    job.sync = syncRadioButton->isChecked();
+
     setCursor(QCursor(Qt::WaitCursor));
     if (syncRadioButton->isChecked()) {
         syncStatusEdit->setText(tr("Synchronizing desktop..."));
@@ -331,8 +342,7 @@ void MainWindow::applyDesktop()
             }
         }
     });
-    syncDone(shell->runHelper({"rsync-copy", fromUserComboBox->currentText(), fromDir, toDir,
-                               syncRadioButton->isChecked() ? "sync" : "copy"}));
+    syncDone(shell->runHelper({"rsync-copy", job.fromUser, fromDir, toDir, job.sync ? "sync" : "copy"}), job);
     disconnect(conn);
     for (int tab = 0; tab < Tab::MAX; ++tab) {
         tabWidget->setTabEnabled(tab, true);
@@ -622,54 +632,32 @@ void MainWindow::applyRename()
     refresh();
 }
 
-void MainWindow::syncDone(bool success)
+void MainWindow::syncDone(bool success, const CopyJob &job)
 {
     if (success) {
-        QString toDir = QStringLiteral("/home/%1").arg(toUserComboBox->currentText());
-
-        // If a directory rather than a user name
-        if (toUserComboBox->currentText().contains('/')) {
-            if (syncRadioButton->isChecked()) {
-                syncStatusEdit->setText(tr("Synchronizing desktop...ok"));
-            } else {
-                syncStatusEdit->setText(tr("Copying desktop...ok"));
-            }
+        // Destination is a browsed directory, not a managed home: just report.
+        if (job.toIsDir) {
+            syncStatusEdit->setText(job.sync ? tr("Synchronizing desktop...ok") : tr("Copying desktop...ok"));
             syncProgressBar->setValue(syncProgressBar->maximum());
             setCursor(QCursor(Qt::ArrowCursor));
             return;
         }
 
-        // Fix owner
-        shell->runHelper({"chown-home", toUserComboBox->currentText(), toDir});
+        // Fix owner of exactly the copied subtree (job.toDir is what rsync wrote).
+        shell->runHelper({"chown-home", job.toUser, job.toDir});
 
-        // Fix "home/old_user" string in all ~/ or ~/.mozilla files
-        QString scanPath;
-        if (entireRadioButton->isChecked()) {
-            scanPath = QString("/home/%1").arg(toUserComboBox->currentText());
-        } else if (mozillaRadioButton->isChecked()) {
-            scanPath = QString("/home/%1/.mozilla").arg(toUserComboBox->currentText());
-        }
-        if (!scanPath.isEmpty()) {
-            shell->runHelper({"rewrite-home-paths", toUserComboBox->currentText(), scanPath,
-                              fromUserComboBox->currentText(), toUserComboBox->currentText()});
+        // Fix "home/<from>" references for entire-home or .mozilla copies.
+        if (job.rewritePaths) {
+            shell->runHelper({"rewrite-home-paths", job.toUser, job.toDir, job.fromUser, job.toUser});
         }
 
-        if (entireRadioButton->isChecked()) {
-            shell->runHelper({"remove-home-path", toUserComboBox->currentText(), toDir + "/.recently-used"});
-            shell->runHelper({"clean-openoffice-locks", toUserComboBox->currentText(), toDir}, nullptr, nullptr,
-                             QuietMode::Yes);
+        if (job.entire) {
+            shell->runHelper({"remove-home-path", job.toUser, job.toDir + "/.recently-used"});
+            shell->runHelper({"clean-openoffice-locks", job.toUser, job.toDir}, nullptr, nullptr, QuietMode::Yes);
         }
-        if (syncRadioButton->isChecked()) {
-            syncStatusEdit->setText(tr("Synchronizing desktop...ok"));
-        } else {
-            syncStatusEdit->setText(tr("Copying desktop...ok"));
-        }
+        syncStatusEdit->setText(job.sync ? tr("Synchronizing desktop...ok") : tr("Copying desktop...ok"));
     } else {
-        if (syncRadioButton->isChecked()) {
-            syncStatusEdit->setText(tr("Synchronizing desktop...failed"));
-        } else {
-            syncStatusEdit->setText(tr("Copying desktop...failed"));
-        }
+        syncStatusEdit->setText(job.sync ? tr("Synchronizing desktop...failed") : tr("Copying desktop...failed"));
     }
     syncProgressBar->setValue(syncProgressBar->maximum());
     setCursor(QCursor(Qt::ArrowCursor));
