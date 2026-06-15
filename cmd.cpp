@@ -54,11 +54,9 @@ QString Cmd::getOut(const QString &cmd, QuietMode quiet)
     return output;
 }
 
-QString Cmd::getOutAsRoot(const QString &cmd, const QStringList &args, QuietMode quiet)
+bool Cmd::runHelper(const QStringList &actionArgs, QString *output, const QByteArray *input, QuietMode quiet)
 {
-    QString output;
-    procAsRoot(cmd, args, &output, nullptr, quiet);
-    return output;
+    return helperProc(actionArgs, output, input, quiet);
 }
 
 bool Cmd::helperProc(const QStringList &helperArgs, QString *output, const QByteArray *input, QuietMode quiet)
@@ -74,22 +72,15 @@ bool Cmd::helperProc(const QStringList &helperArgs, QString *output, const QByte
         programArgs.prepend(helper);
     }
 
-    const bool result = proc(program, programArgs, output, input, quiet, Elevation::No);
+    const bool result = proc(program, programArgs, output, input, quiet);
     if (exitCode() == EXIT_CODE_PERMISSION_DENIED || exitCode() == EXIT_CODE_COMMAND_NOT_FOUND) {
         handleElevationError();
     }
     return result;
 }
 
-bool Cmd::proc(const QString &cmd, const QStringList &args, QString *output, const QByteArray *input, QuietMode quiet,
-               Elevation elevation)
+bool Cmd::proc(const QString &cmd, const QStringList &args, QString *output, const QByteArray *input, QuietMode quiet)
 {
-    if (elevation == Elevation::Yes) {
-        QStringList helperArgs {"exec", cmd};
-        helperArgs += args;
-        return helperProc(helperArgs, output, input, quiet);
-    }
-
     outBuffer.clear();
     if (state() != QProcess::NotRunning) {
         qDebug() << "Process already running:" << program() << arguments();
@@ -115,17 +106,6 @@ bool Cmd::proc(const QString &cmd, const QStringList &args, QString *output, con
     }
 
     return (exitStatus() == QProcess::NormalExit && exitCode() == 0);
-}
-
-bool Cmd::procAsRoot(const QString &cmd, const QStringList &args, QString *output, const QByteArray *input,
-                     QuietMode quiet)
-{
-    if (cmd == QLatin1String("passwd")) {
-        QStringList helperArgs {"passwd"};
-        helperArgs += args;
-        return helperProc(helperArgs, output, input, quiet);
-    }
-    return proc(cmd, args, output, input, quiet, Elevation::Yes);
 }
 
 bool Cmd::run(const QString &cmd, QString *output, const QByteArray *input, QuietMode quiet)

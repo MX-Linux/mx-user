@@ -237,78 +237,34 @@ void MainWindow::applyOptions()
                     new_group_list << group;
                 }
             }
-            shell->procAsRoot("usermod", {"-G", "", user});
-            if (!new_group_list.isEmpty()) {
-                shell->procAsRoot("usermod", {"-G", new_group_list.join(','), user});
-            }
+            shell->runHelper({"set-groups", user, new_group_list.join(',')});
             QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
         }
     }
     // Reset Mozilla configs
     if (checkMozilla->isChecked()) {
-        shell->procAsRoot("rm", {"-r", home + "/.mozilla"});
+        shell->runHelper({"remove-home-path", user, home + "/.mozilla"});
         QMessageBox::information(this, windowTitle(), tr("Mozilla settings were reset."));
     }
     if (radioAutologinNo->isChecked()) {
-        if (QFile::exists("/etc/lightdm/lightdm.conf")) {
-            shell->procAsRoot("sed", {"-i", "-E",
-                                      QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=/d;})"),
-                                      "/etc/lightdm/lightdm.conf"});
-        }
-
-        if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
-            shell->procAsRoot("sed",
-                              {"-i", QStringLiteral("s/^User=%1/User=/").arg(user), "/etc/sddm.conf.d/kde_settings.conf"});
-        } else if (QFile::exists("/etc/sddm.conf")) {
-            shell->procAsRoot("sed", {"-i", QStringLiteral("s/^User=%1/User=/").arg(user), "/etc/sddm.conf"});
-        }
-        if (QFile::exists("/etc/plasmalogin.conf.d/autologin.conf")) {
-            shell->procAsRoot("sed",
-                              {"-i", QStringLiteral("s/^User=%1/User=/").arg(user), "/etc/plasmalogin.conf.d/autologin.conf"});
-        }
+        shell->runHelper({"autologin-disable", user});
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been disabled for the '%1' account.").arg(user)));
     } else if (radioAutologinYes->isChecked()) {
-        if (QFile::exists("/etc/lightdm/lightdm.conf")) {
-            shell->procAsRoot("sed",
-                              {"-i",
-                               "-E",
-                               "-e",
-                               QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=/d;})"),
-                               "-e",
-                               QString(R"(/^[[]Seat(Defaults|:[*])[]]/aautologin-user=%1)").arg(user),
-                               "/etc/lightdm/lightdm.conf"});
-        }
-        if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
-            shell->procAsRoot("sed", {"-i",
-                                      QStringLiteral("s/^User=.*/User=%1/").arg(user),
-                                      "/etc/sddm.conf.d/kde_settings.conf"});
-            if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == QLatin1String("KDE")) {
-                QString sessionType;
-                if (qEnvironmentVariable("XDG_SESSION_TYPE") == QLatin1String("wayland")) {
-                    sessionType = QStringLiteral("plasma");
-                } else if (qEnvironmentVariable("XDG_SESSION_TYPE") == QLatin1String("x11")) {
-                    sessionType = QStringLiteral("plasmax11");
-                }
-
-                if (!sessionType.isEmpty()) {
-                    shell->procAsRoot("sed",
-                                      {"-i",
-                                       QString("s/^Session=.*/Session=%1/").arg(sessionType),
-                                       "/etc/sddm.conf.d/kde_settings.conf"});
-                }
+        // The helper edits whichever DM config exists; supply the desired session
+        // names so it can set them on the sddm config it chooses.
+        QString kdeSession;
+        QString defaultSession;
+        if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == QLatin1String("KDE")) {
+            const QString sessionType = qEnvironmentVariable("XDG_SESSION_TYPE");
+            if (sessionType == QLatin1String("wayland")) {
+                kdeSession = QStringLiteral("plasma");
+            } else if (sessionType == QLatin1String("x11")) {
+                kdeSession = QStringLiteral("plasmax11");
             }
-        } else if (QFile::exists("/etc/sddm.conf")) {
-            shell->procAsRoot("sed", {"-i", QString("s/^User=.*/User=%1/").arg(user), "/etc/sddm.conf"});
-            if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == QLatin1String("KDE")) {
-                shell->procAsRoot("sed", {"-i", "s/^Session=.*/Session=plasma.desktop/", "/etc/sddm.conf"});
-            }
+            defaultSession = QStringLiteral("plasma.desktop");
         }
-        if (QFile::exists("/etc/plasmalogin.conf.d/autologin.conf")) {
-            shell->procAsRoot("sed",
-                              {"-i", QStringLiteral("s/^User=.*/User=%1/").arg(user),
-                               "/etc/plasmalogin.conf.d/autologin.conf"});
-        }
+        shell->runHelper({"autologin-enable", user, kdeSession, defaultSession});
         QMessageBox::information(this, tr("Autologin options"),
                                  (tr("Autologin has been enabled for the '%1' account.").arg(user)));
     }
@@ -358,11 +314,6 @@ void MainWindow::applyDesktop()
     } else {
         syncStatusEdit->setText(tr("Copying desktop..."));
     }
-    QStringList rsyncArgs {"-a", "--info=progress2"};
-    if (syncRadioButton->isChecked()) {
-        rsyncArgs << "--delete-after";
-    }
-    rsyncArgs << fromDir << toDir;
     for (int tab = 0; tab < Tab::MAX; ++tab) {
         if (tab == Tab::Copy) {
             continue;
@@ -380,7 +331,8 @@ void MainWindow::applyDesktop()
             }
         }
     });
-    syncDone(shell->procAsRoot("rsync", rsyncArgs));
+    syncDone(shell->runHelper({"rsync-copy", fromUserComboBox->currentText(), fromDir, toDir,
+                               syncRadioButton->isChecked() ? "sync" : "copy"}));
     disconnect(conn);
     for (int tab = 0; tab < Tab::MAX; ++tab) {
         tabWidget->setTabEnabled(tab, true);
@@ -436,24 +388,10 @@ void MainWindow::applyAdd()
         return;
     }
 
-    bool success = false;
-    if (hasAdduser) {
-        const QString addUserHelp = shell->getOutAsRoot("adduser", {"--help"}, QuietMode::Yes);
-        QString commentOption = addUserHelp.contains("--comment") ? QStringLiteral("--comment") : QStringLiteral("--gecos");
-        QString allowBadNames
-            = addUserHelp.contains("--allow-bad-names") ? QStringLiteral("--allow-bad-names") : QStringLiteral("--force-badname");
-
-        success = shell->procAsRoot("adduser",
-                                    {"--disabled-login", allowBadNames, "--shell", dshell, commentOption,
-                                     userNameEdit->text(), userNameEdit->text()});
-    } else {
-        QStringList useraddArgs {"-m", "-s", dshell, "-c", userNameEdit->text()};
-        if (!extraGroups.isEmpty()) {
-            useraddArgs << "-G" << extraGroups.join(',');
-        }
-        useraddArgs << userNameEdit->text();
-        success = shell->procAsRoot("useradd", useraddArgs);
-    }
+    // The helper picks adduser/useradd, detects its option spelling, and applies
+    // the groups; extra groups are only used by the useradd path, matching the
+    // adduser path's reliance on the system EXTRA_GROUPS configuration.
+    const bool success = shell->runHelper({"add-user", userNameEdit->text(), dshell, extraGroups.join(',')});
 
     if (!success) {
         QMessageBox::critical(this, windowTitle(), tr("Failed to add the user."));
@@ -462,12 +400,11 @@ void MainWindow::applyAdd()
 
     QString userNameArg = userNameEdit->text();
     const QByteArray passwordInput = userPasswordEdit->text().toUtf8() + '\n' + userPasswordEdit->text().toUtf8() + '\n';
-    if (shell->procAsRoot("passwd", {userNameArg}, nullptr, &passwordInput, QuietMode::Yes)) {
+    if (shell->runHelper({"set-password", userNameArg}, nullptr, &passwordInput, QuietMode::Yes)) {
         if (!adminGroup.isEmpty()) {
-            const QStringList groupArgs
-                = checkSudoGroup->isChecked() ? QStringList {"-a", userNameArg, adminGroup}
-                                             : QStringList {"-d", userNameArg, adminGroup};
-            shell->procAsRoot("gpasswd", groupArgs, nullptr, nullptr, QuietMode::Yes);
+            shell->runHelper({checkSudoGroup->isChecked() ? "group-add-member" : "group-remove-member", userNameArg,
+                              adminGroup},
+                             nullptr, nullptr, QuietMode::Yes);
         }
         QMessageBox::information(this, windowTitle(), tr("The user was added ok."));
         refresh();
@@ -492,7 +429,7 @@ void MainWindow::applyChangePass()
 
     const QByteArray passwordInput
         = lineEditChangePass->text().toUtf8() + '\n' + lineEditChangePass->text().toUtf8() + '\n';
-    if (shell->procAsRoot("passwd", {comboChangePass->currentText()}, nullptr, &passwordInput, QuietMode::Yes)) {
+    if (shell->runHelper({"set-password", comboChangePass->currentText()}, nullptr, &passwordInput, QuietMode::Yes)) {
         QMessageBox::information(this, windowTitle(), tr("Password successfully changed."));
         refresh();
     } else {
@@ -515,41 +452,16 @@ void MainWindow::applyDelete()
         }
 
         if (deleteHomeCheckBox->isChecked()) {
-            shell->procAsRoot("timeout", {"5s", "killall", "-w", "-u", username}, nullptr, nullptr, QuietMode::Yes);
-            shell->procAsRoot("timeout", {"5s", "killall", "-9", "-w", "-u", username}, nullptr, nullptr, QuietMode::Yes);
-        } else {
+            shell->runHelper({"kill-user", username}, nullptr, nullptr, QuietMode::Yes);
         }
 
-        const bool deleted = hasDeluser
-            ? shell->procAsRoot("deluser", deleteHomeCheckBox->isChecked() ? QStringList {"--remove-home", username}
-                                                                           : QStringList {username})
-            : shell->procAsRoot("userdel", deleteHomeCheckBox->isChecked() ? QStringList {"-r", username}
-                                                                           : QStringList {username});
+        QStringList delUserArgs {"del-user", username};
+        if (deleteHomeCheckBox->isChecked()) {
+            delUserArgs << "--remove-home";
+        }
+        const bool deleted = shell->runHelper(delUserArgs);
         if (deleted) {
-            if (QFile::exists("/etc/lightdm/lightdm.conf")) {
-                shell->procAsRoot("sed", {"-i",
-                                          "-E",
-                                          "-e",
-                                          QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=%1$/d;})")
-                                              .arg(comboDeleteUser->currentText()),
-                                          "/etc/lightdm/lightdm.conf"});
-            }
-            if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
-                shell->procAsRoot(
-                    "sed",
-                    {"-i", QStringLiteral("s/^User=%1$/User=/").arg(comboDeleteUser->currentText()),
-                     "/etc/sddm.conf.d/kde_settings.conf"});
-            } else if (QFile::exists("/etc/sddm.conf")) {
-                shell->procAsRoot("sed",
-                                  {"-i", QStringLiteral("s/^User=%1$/User=/").arg(comboDeleteUser->currentText()),
-                                   "/etc/sddm.conf"});
-            }
-            if (QFile::exists("/etc/plasmalogin.conf.d/autologin.conf")) {
-                shell->procAsRoot(
-                    "sed",
-                    {"-i", QStringLiteral("s/^User=%1$/User=/").arg(comboDeleteUser->currentText()),
-                     "/etc/plasmalogin.conf.d/autologin.conf"});
-            }
+            shell->runHelper({"autologin-remove-user", username});
             QMessageBox::information(this, windowTitle(), tr("The user has been deleted."));
         } else {
             QMessageBox::critical(this, windowTitle(), tr("Failed to delete the user."));
@@ -589,25 +501,13 @@ void MainWindow::applyGroup()
                                   tr("No suitable group creation tools found (addgroup or groupadd)."));
             return;
         }
-        // Run addgroup command
-        if (hasAddgroup) {
-            const QStringList groupArgs = checkGroupUserLevel->checkState() == Qt::Checked
-                ? QStringList {groupNameEdit->text(), "--quiet"}
-                : QStringList {groupNameEdit->text(), "--system"};
-            if (shell->procAsRoot("addgroup", groupArgs)) {
-                QMessageBox::information(this, windowTitle(), tr("The system group was added ok."));
-            } else {
-                QMessageBox::critical(this, windowTitle(), tr("Failed to add the system group."));
-            }
+        // Run the group-creation command via the helper
+        const QString scope = checkGroupUserLevel->checkState() == Qt::Checked ? QStringLiteral("user")
+                                                                               : QStringLiteral("system");
+        if (shell->runHelper({"add-group", groupNameEdit->text(), scope})) {
+            QMessageBox::information(this, windowTitle(), tr("The system group was added ok."));
         } else {
-            const QStringList groupArgs = checkGroupUserLevel->checkState() == Qt::Checked
-                ? QStringList {groupNameEdit->text()}
-                : QStringList {"--system", groupNameEdit->text()};
-            if (shell->procAsRoot("groupadd", groupArgs)) {
-                QMessageBox::information(this, windowTitle(), tr("The system group was added ok."));
-            } else {
-                QMessageBox::critical(this, windowTitle(), tr("Failed to add the system group."));
-            }
+            QMessageBox::critical(this, windowTitle(), tr("Failed to add the system group."));
         }
     } else { // Deleting group if addBox disabled
         QStringList groups;
@@ -635,9 +535,8 @@ void MainWindow::applyGroup()
                                       tr("No suitable group removal tools found (delgroup or groupdel)."));
                 return;
             }
-            auto it = std::find_if(groups.cbegin(), groups.cend(), [&](const auto &group) {
-                return hasDelgroup ? !shell->procAsRoot("delgroup", {group}) : !shell->procAsRoot("groupdel", {group});
-            });
+            auto it = std::find_if(groups.cbegin(), groups.cend(),
+                                   [&](const auto &group) { return !shell->runHelper({"del-group", group}); });
             if (it != groups.cend()) {
                 const auto &group = *it;
                 QMessageBox::critical(this, windowTitle(),
@@ -661,7 +560,7 @@ void MainWindow::applyMembership()
             groups << item->text();
         }
     }
-    if (shell->procAsRoot("usermod", {"-G", groups.join(','), userComboMembership->currentText()})) {
+    if (shell->runHelper({"set-groups", userComboMembership->currentText(), groups.join(',')})) {
         QMessageBox::information(this, windowTitle(), tr("The changes have been applied."));
     } else {
         QMessageBox::critical(this, windowTitle(), tr("Failed to apply group changes"));
@@ -703,11 +602,12 @@ void MainWindow::applyRename()
         return;
     }
 
-    shell->procAsRoot("timeout", {"5s", "killall", "-w", "-u", old_name}, nullptr, nullptr, QuietMode::Yes);
-    shell->procAsRoot("timeout", {"5s", "killall", "-9", "-w", "-u", old_name}, nullptr, nullptr, QuietMode::Yes);
+    shell->runHelper({"kill-user", old_name}, nullptr, nullptr, QuietMode::Yes);
 
-    // Rename user
-    bool success = shell->procAsRoot("usermod", {"--login", new_name, "--move-home", "--home", "/home/" + new_name, old_name});
+    // Rename the user. The helper relocates the home directory, updates the
+    // GECOS/full-name field, renames the personal group, and rewrites "home/<old>"
+    // references inside the (new) home directory.
+    bool success = shell->runHelper({"rename-user", old_name, new_name});
     if (!success) {
         QMessageBox::critical(this, windowTitle(),
                               tr("Failed to rename the user. Please make sure that the user is not logged in, you "
@@ -715,43 +615,8 @@ void MainWindow::applyRename()
         return;
     }
 
-    // Rename other instances of the old name, like "Finger" name if present
-    QString StartRex = "([^-_[:alnum:]])";
-    QString EndRex = "([^-_[:alnum:]$])";
-    QString escapedNew = QRegularExpression::escape(new_name);
-    QString escapedOld = QRegularExpression::escape(old_name);
-    shell->procAsRoot("sed",
-                      {"-i", "-r",
-                       QString("/^%1:/s/%2%3%4/\\1%5\\2/g")
-                           .arg(escapedNew, StartRex, escapedOld, EndRex, escapedNew),
-                       "/etc/passwd"});
-
-    // Change group
-    shell->procAsRoot("groupmod", {"--new-name", new_name, old_name});
-
-    // Fix "home/old_user" string in all ~/ files
-    shell->procAsRoot("find",
-                      {QString("/home/%1").arg(old_name), "-type", "f", "-exec", "sed", "-i",
-                       QString("s|home/%1|home/%2|g").arg(old_name, new_name), "{}", "+"});
-
     // Change autologin name (Xfce and KDE)
-    if (QFile::exists("/etc/lightdm/lightdm.conf")) {
-        shell->procAsRoot("sed", {"-i",
-                                  QString("s/autologin-user=%1/autologin-user=%2/g").arg(escapedOld, escapedNew),
-                                  "/etc/lightdm/lightdm.conf"});
-    }
-    if (QFile::exists("/etc/sddm.conf.d/kde_settings.conf")) {
-        shell->procAsRoot("sed",
-                          {"-i", QString("s/^User=%1$/User=%2/g").arg(escapedOld, escapedNew),
-                           "/etc/sddm.conf.d/kde_settings.conf"});
-    } else if (QFile::exists("/etc/sddm.conf")) {
-        shell->procAsRoot("sed", {"-i", QString("s/^User=%1$/User=%2/g").arg(escapedOld, escapedNew), "/etc/sddm.conf"});
-    }
-    if (QFile::exists("/etc/plasmalogin.conf.d/autologin.conf")) {
-        shell->procAsRoot("sed",
-                          {"-i", QString("s/^User=%1$/User=%2/g").arg(escapedOld, escapedNew),
-                           "/etc/plasmalogin.conf.d/autologin.conf"});
-    }
+    shell->runHelper({"autologin-rename", old_name, new_name});
 
     QMessageBox::information(this, windowTitle(), tr("The user was renamed."));
     refresh();
@@ -775,7 +640,7 @@ void MainWindow::syncDone(bool success)
         }
 
         // Fix owner
-        shell->procAsRoot("chown", {"-R", QString("%1:%1").arg(toUserComboBox->currentText()), toDir});
+        shell->runHelper({"chown-home", toUserComboBox->currentText(), toDir});
 
         // Fix "home/old_user" string in all ~/ or ~/.mozilla files
         QString scanPath;
@@ -785,18 +650,14 @@ void MainWindow::syncDone(bool success)
             scanPath = QString("/home/%1/.mozilla").arg(toUserComboBox->currentText());
         }
         if (!scanPath.isEmpty()) {
-            shell->procAsRoot("find",
-                              {scanPath, "-type", "f", "-exec", "sed", "-i",
-                               QString("s|home/%1|home/%2|g")
-                                   .arg(fromUserComboBox->currentText(), toUserComboBox->currentText()),
-                               "{}", "+"});
+            shell->runHelper({"rewrite-home-paths", toUserComboBox->currentText(), scanPath,
+                              fromUserComboBox->currentText(), toUserComboBox->currentText()});
         }
 
         if (entireRadioButton->isChecked()) {
-            shell->procAsRoot("rm", {"-f", toDir + "/.recently-used"});
-            shell->procAsRoot("find",
-                              {toDir + "/.openoffice.org", "-type", "f", "-name", ".lock", "-delete"},
-                              nullptr, nullptr, QuietMode::Yes);
+            shell->runHelper({"remove-home-path", toUserComboBox->currentText(), toDir + "/.recently-used"});
+            shell->runHelper({"clean-openoffice-locks", toUserComboBox->currentText(), toDir}, nullptr, nullptr,
+                             QuietMode::Yes);
         }
         if (syncRadioButton->isChecked()) {
             syncStatusEdit->setText(tr("Synchronizing desktop...ok"));
