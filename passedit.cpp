@@ -137,6 +137,7 @@ void PassEdit::generate() noexcept
 void PassEdit::masterContextMenu(QPoint pos) noexcept
 {
     QMenu *menu = master->createStandardContextMenu();
+    menu->setAttribute(Qt::WA_DeleteOnClose);
     menu->addSeparator();
     QAction *actGenPass = menu->addAction(gentext);
     connect(actGenPass, &QAction::triggered, this, [this]() {
