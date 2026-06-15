@@ -369,7 +369,7 @@ void MainWindow::applyDesktop()
         }
         tabWidget->setTabEnabled(tab, false);
     }
-    connect(shell, &Cmd::outputAvailable, this, [this](const QString &out) {
+    const auto conn = connect(shell, &Cmd::outputAvailable, this, [this](const QString &out) {
         QRegularExpression regex("\\b(\\d+)%");
         QRegularExpressionMatch match = regex.match(out);
         if (match.hasMatch()) {
@@ -381,6 +381,7 @@ void MainWindow::applyDesktop()
         }
     });
     syncDone(shell->procAsRoot("rsync", rsyncArgs));
+    disconnect(conn);
     for (int tab = 0; tab < Tab::MAX; ++tab) {
         tabWidget->setTabEnabled(tab, true);
     }
