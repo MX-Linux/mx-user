@@ -21,6 +21,7 @@
 
 #include "ui_mainwindow.h"
 
+#include <QCloseEvent>
 #include <QKeyEvent>
 #include <QMessageBox>
 #include <QSettings>
@@ -31,6 +32,10 @@ namespace Tab
 {
 enum { Administration, Options, Copy, AddRemoveGroup, GroupMembership, MAX };
 }
+
+// The login manager in use, detected once at startup (it does not change during
+// a session) instead of probing with pgrep on every selection change.
+enum class DisplayManager { None, Lightdm, Sddm, Plasmalogin };
 
 // Snapshot of a desktop-copy operation, captured in applyDesktop() before the
 // copy starts so syncDone() acts on exactly what was copied rather than on the
@@ -79,6 +84,7 @@ public slots:
 
 protected:
     void keyPressEvent(QKeyEvent *event) override;
+    void closeEvent(QCloseEvent *event) override;
 
 private slots:
     void buttonAbout_clicked();
@@ -111,9 +117,11 @@ private:
     Cmd *shell;
     QSettings settings;
     QStringList users;
+    DisplayManager displayManager = DisplayManager::None;
     class PassEdit *passChange;
     class PassEdit *passUser;
     void setConnections();
+    [[nodiscard]] DisplayManager detectDisplayManager() const;
     [[nodiscard]] QString adminGroupName() const;
     [[nodiscard]] QString defaultShellPath() const;
     [[nodiscard]] QStringList defaultExtraGroups() const;

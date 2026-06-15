@@ -46,6 +46,7 @@ MainWindow::MainWindow(QWidget *parent)
     passChange = new PassEdit(lineEditChangePass, lineEditChangePassConf, 1, this);
 
     shell = new Cmd(this);
+    displayManager = detectDisplayManager();
     tabWidget->blockSignals(true);
     tabWidget->setCurrentIndex(Tab::Administration);
     tabWidget->blockSignals(false);
@@ -106,6 +107,20 @@ void MainWindow::refresh()
     }
 }
 
+DisplayManager MainWindow::detectDisplayManager() const
+{
+    if (QProcess::execute("pgrep", {"lightdm"}) == 0) {
+        return DisplayManager::Lightdm;
+    }
+    if (QProcess::execute("pgrep", {"sddm"}) == 0) {
+        return DisplayManager::Sddm;
+    }
+    if (QProcess::execute("pgrep", {"plasmalogin"}) == 0) {
+        return DisplayManager::Plasmalogin;
+    }
+    return DisplayManager::None;
+}
+
 void MainWindow::refreshOptions()
 {
     userComboBox->clear();
@@ -118,10 +133,8 @@ void MainWindow::refreshOptions()
     radioAutologinYes->setAutoExclusive(false);
     radioAutologinYes->setChecked(false);
     radioAutologinYes->setAutoExclusive(true);
-    if ((QProcess::execute("pgrep", {"lightdm"}) != 0) && QProcess::execute("pgrep", {"sddm"}) != 0
-        && QProcess::execute("pgrep", {"plasmalogin"}) != 0) {
-        groupBox->setVisible(false);
-    }
+    // Autologin options only make sense when a supported login manager is running.
+    groupBox->setVisible(displayManager != DisplayManager::None);
 }
 
 void MainWindow::refreshCopy()
@@ -674,7 +687,10 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
     }
 }
 
-void MainWindow::closeApp()
+// All close paths (Cancel button, Escape, and the window-manager [X]) funnel
+// through close() -> closeEvent(), so the "process not done" confirmation is
+// applied consistently and the window can never be torn down silently.
+void MainWindow::closeEvent(QCloseEvent *event)
 {
     if (shell->state() != QProcess::NotRunning) {
         setCursor(QCursor(Qt::ArrowCursor));
@@ -683,9 +699,15 @@ void MainWindow::closeApp()
                                      tr("Process not done. Are you sure you want to quit the application?"),
                                      QMessageBox::Yes | QMessageBox::No)) {
             setCursor(QCursor(Qt::WaitCursor));
+            event->ignore();
             return;
         }
     }
+    event->accept();
+}
+
+void MainWindow::closeApp()
+{
     close();
 }
 
@@ -753,29 +775,29 @@ void MainWindow::userComboBox_activated(const QString & /*unused*/)
     radioAutologinYes->setAutoExclusive(false);
     radioAutologinYes->setChecked(false);
     radioAutologinYes->setAutoExclusive(true);
-    QString user = userComboBox->currentText();
-    if (QProcess::execute("pgrep", {"lightdm"}) == 0) {
+    const QString user = userComboBox->currentText();
+    bool autologin = false;
+    switch (displayManager) {
+    case DisplayManager::Lightdm: {
         const QString cmd = QString("grep -qw ^autologin-user=%1 /etc/lightdm/lightdm.conf").arg(user);
-        if (shell->run(cmd, nullptr, nullptr, QuietMode::Yes)) {
-            radioAutologinYes->setChecked(true);
-        } else {
-            radioAutologinNo->setChecked(true);
-        }
-    } else if (QProcess::execute("pgrep", {"sddm"}) == 0) {
-        QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
-        if (sddm_settings.value("Autologin/User").toString() == user) {
-            radioAutologinYes->setChecked(true);
-        } else {
-            radioAutologinNo->setChecked(true);
-        }
-    } else if (QProcess::execute("pgrep", {"plasmalogin"}) == 0) {
-        QSettings plasma_settings("/etc/plasmalogin.conf.d/autologin.conf", QSettings::NativeFormat);
-        if (plasma_settings.value("Autologin/User").toString() == user) {
-            radioAutologinYes->setChecked(true);
-        } else {
-            radioAutologinNo->setChecked(true);
-        }
+        autologin = shell->run(cmd, nullptr, nullptr, QuietMode::Yes);
+        break;
     }
+    case DisplayManager::Sddm: {
+        QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
+        autologin = sddm_settings.value("Autologin/User").toString() == user;
+        break;
+    }
+    case DisplayManager::Plasmalogin: {
+        QSettings plasma_settings("/etc/plasmalogin.conf.d/autologin.conf", QSettings::NativeFormat);
+        autologin = plasma_settings.value("Autologin/User").toString() == user;
+        break;
+    }
+    case DisplayManager::None:
+        return;
+    }
+    radioAutologinYes->setChecked(autologin);
+    radioAutologinNo->setChecked(!autologin);
 }
 
 void MainWindow::comboDeleteUser_activated(const QString & /*unused*/)
