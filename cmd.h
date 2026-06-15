@@ -22,6 +22,12 @@ public:
 
     [[nodiscard]] QString readAllOutput() const;
 
+    // True when the last (or any) helper call in the current operation failed
+    // because privilege elevation was refused/unavailable. The caller should
+    // revert/refresh its GUI state and reset this before the next operation.
+    [[nodiscard]] bool elevationError() const { return elevationFailed; }
+    void resetElevationError() { elevationFailed = false; }
+
 signals:
     void done();
     void errorAvailable(const QString &err);
@@ -35,6 +41,7 @@ private:
     QString elevationCommand;
     QString helper;
     QString outBuffer;
+    bool elevationFailed = false;
 
     static constexpr int EXIT_CODE_COMMAND_NOT_FOUND = 127;
     static constexpr int EXIT_CODE_PERMISSION_DENIED = 126;

@@ -61,6 +61,13 @@ bool Cmd::runHelper(const QStringList &actionArgs, QString *output, const QByteA
 
 bool Cmd::helperProc(const QStringList &helperArgs, QString *output, const QByteArray *input, QuietMode quiet)
 {
+    // Once elevation has been refused in the current operation, do not run (and
+    // re-prompt for) any further helper calls. This keeps multi-step operations
+    // atomic and ensures the user sees the failure message only once.
+    if (elevationFailed) {
+        return false;
+    }
+
     if (getuid() != 0 && elevationCommand.isEmpty()) {
         qWarning() << "No elevation helper available";
         return false;
@@ -74,7 +81,9 @@ bool Cmd::helperProc(const QStringList &helperArgs, QString *output, const QByte
 
     const bool result = proc(program, programArgs, output, input, quiet);
     if (exitCode() == EXIT_CODE_PERMISSION_DENIED || exitCode() == EXIT_CODE_COMMAND_NOT_FOUND) {
+        elevationFailed = true;
         handleElevationError();
+        return false;
     }
     return result;
 }
@@ -121,10 +130,9 @@ void Cmd::handleElevationError()
 {
     if (qobject_cast<MainWindow *>(qApp->activeWindow())) {
         QMessageBox::critical(nullptr, tr("Administrator Access Required"),
-                              tr("This operation requires administrator privileges. Please restart the application "
-                                 "and enter your password when prompted."));
+                              tr("This operation requires administrator privileges. The change was not applied. "
+                                 "Please try again and enter your password when prompted."));
     }
-    exit(EXIT_FAILURE);
 }
 
 QString Cmd::readAllOutput() const

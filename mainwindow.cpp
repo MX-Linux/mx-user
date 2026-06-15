@@ -250,19 +250,22 @@ void MainWindow::applyOptions()
                     new_group_list << group;
                 }
             }
-            shell->runHelper({"set-groups", user, new_group_list.join(',')});
-            QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
+            if (shell->runHelper({"set-groups", user, new_group_list.join(',')})) {
+                QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
+            }
         }
     }
     // Reset Mozilla configs
     if (checkMozilla->isChecked()) {
-        shell->runHelper({"remove-home-path", user, home + "/.mozilla"});
-        QMessageBox::information(this, windowTitle(), tr("Mozilla settings were reset."));
+        if (shell->runHelper({"remove-home-path", user, home + "/.mozilla"})) {
+            QMessageBox::information(this, windowTitle(), tr("Mozilla settings were reset."));
+        }
     }
     if (radioAutologinNo->isChecked()) {
-        shell->runHelper({"autologin-disable", user});
-        QMessageBox::information(this, tr("Autologin options"),
-                                 (tr("Autologin has been disabled for the '%1' account.").arg(user)));
+        if (shell->runHelper({"autologin-disable", user})) {
+            QMessageBox::information(this, tr("Autologin options"),
+                                     (tr("Autologin has been disabled for the '%1' account.").arg(user)));
+        }
     } else if (radioAutologinYes->isChecked()) {
         // The helper edits whichever DM config exists; supply the desired session
         // names so it can set them on the sddm config it chooses.
@@ -277,9 +280,10 @@ void MainWindow::applyOptions()
             }
             defaultSession = QStringLiteral("plasma.desktop");
         }
-        shell->runHelper({"autologin-enable", user, kdeSession, defaultSession});
-        QMessageBox::information(this, tr("Autologin options"),
-                                 (tr("Autologin has been enabled for the '%1' account.").arg(user)));
+        if (shell->runHelper({"autologin-enable", user, kdeSession, defaultSession})) {
+            QMessageBox::information(this, tr("Autologin options"),
+                                     (tr("Autologin has been enabled for the '%1' account.").arg(user)));
+        }
     }
     setCursor(QCursor(Qt::ArrowCursor));
     buttonApply->setEnabled(false);
@@ -417,7 +421,9 @@ void MainWindow::applyAdd()
     const bool success = shell->runHelper({"add-user", userNameEdit->text(), dshell, extraGroups.join(',')});
 
     if (!success) {
-        QMessageBox::critical(this, windowTitle(), tr("Failed to add the user."));
+        if (!shell->elevationError()) {
+            QMessageBox::critical(this, windowTitle(), tr("Failed to add the user."));
+        }
         return;
     }
 
@@ -431,7 +437,7 @@ void MainWindow::applyAdd()
         }
         QMessageBox::information(this, windowTitle(), tr("The user was added ok."));
         refresh();
-    } else {
+    } else if (!shell->elevationError()) {
         QMessageBox::critical(this, windowTitle(), tr("Failed to add the user."));
     }
 }
@@ -455,7 +461,7 @@ void MainWindow::applyChangePass()
     if (shell->runHelper({"set-password", comboChangePass->currentText()}, nullptr, &passwordInput, QuietMode::Yes)) {
         QMessageBox::information(this, windowTitle(), tr("Password successfully changed."));
         refresh();
-    } else {
+    } else if (!shell->elevationError()) {
         QMessageBox::critical(this, windowTitle(), tr("Failed to change password."));
     }
 }
@@ -486,7 +492,7 @@ void MainWindow::applyDelete()
         if (deleted) {
             shell->runHelper({"autologin-remove-user", username});
             QMessageBox::information(this, windowTitle(), tr("The user has been deleted."));
-        } else {
+        } else if (!shell->elevationError()) {
             QMessageBox::critical(this, windowTitle(), tr("Failed to delete the user."));
         }
         refresh();
@@ -529,7 +535,7 @@ void MainWindow::applyGroup()
                                                                                : QStringLiteral("system");
         if (shell->runHelper({"add-group", groupNameEdit->text(), scope})) {
             QMessageBox::information(this, windowTitle(), tr("The system group was added ok."));
-        } else {
+        } else if (!shell->elevationError()) {
             QMessageBox::critical(this, windowTitle(), tr("Failed to add the system group."));
         }
     } else { // Deleting group if addBox disabled
@@ -562,8 +568,10 @@ void MainWindow::applyGroup()
                                    [&](const auto &group) { return !shell->runHelper({"del-group", group}); });
             if (it != groups.cend()) {
                 const auto &group = *it;
-                QMessageBox::critical(this, windowTitle(),
-                                      tr("Failed to delete the group.") + '\n' + tr("Group: %1").arg(group));
+                if (!shell->elevationError()) {
+                    QMessageBox::critical(this, windowTitle(),
+                                          tr("Failed to delete the group.") + '\n' + tr("Group: %1").arg(group));
+                }
                 refresh();
                 return;
             }
@@ -585,7 +593,7 @@ void MainWindow::applyMembership()
     }
     if (shell->runHelper({"set-groups", userComboMembership->currentText(), groups.join(',')})) {
         QMessageBox::information(this, windowTitle(), tr("The changes have been applied."));
-    } else {
+    } else if (!shell->elevationError()) {
         QMessageBox::critical(this, windowTitle(), tr("Failed to apply group changes"));
     }
 }
@@ -632,9 +640,11 @@ void MainWindow::applyRename()
     // references inside the (new) home directory.
     bool success = shell->runHelper({"rename-user", old_name, new_name});
     if (!success) {
-        QMessageBox::critical(this, windowTitle(),
-                              tr("Failed to rename the user. Please make sure that the user is not logged in, you "
-                                 "might need to restart"));
+        if (!shell->elevationError()) {
+            QMessageBox::critical(this, windowTitle(),
+                                  tr("Failed to rename the user. Please make sure that the user is not logged in, you "
+                                     "might need to restart"));
+        }
         return;
     }
 
@@ -1055,6 +1065,10 @@ void MainWindow::buttonApply_clicked()
         return;
     }
 
+    // Start each operation with a clean elevation state so a refusal during this
+    // Apply can be detected and the affected tab reverted afterwards.
+    shell->resetElevationError();
+
     switch (tabWidget->currentIndex()) {
     case Tab::Options:
         setCursor(QCursor(Qt::WaitCursor));
@@ -1091,6 +1105,13 @@ void MainWindow::buttonApply_clicked()
         }
         setCursor(QCursor(Qt::ArrowCursor));
         break;
+    }
+
+    // Elevation was refused mid-operation: the privileged helper made no change,
+    // so reload the current tab to discard any pending selections and reflect the
+    // unchanged system state.
+    if (shell->elevationError()) {
+        refresh();
     }
 }
 
