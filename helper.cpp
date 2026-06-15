@@ -535,8 +535,16 @@ int opRewriteHomePaths(const QStringList &args)
         printError(QStringLiteral("rewrite-home-paths requires <owner-user> <dir under that home> <old-user> <new-user>"));
         return 1;
     }
+    // Only rewrite text files that actually contain the old path. The `grep -I`
+    // test makes find skip binary files (SQLite databases, caches, browser
+    // profiles, images, ...), which `sed -i` would otherwise corrupt by treating
+    // them as text. find runs sed (batched via +) only on files the grep test
+    // selected.
+    const QString pattern = QStringLiteral("home/%1").arg(args.at(2));
     const QString script = QString("s|home/%1|home/%2|g").arg(args.at(2), args.at(3));
-    return runTool(QStringLiteral("find"), {dir, "-type", "f", "-exec", "sed", "-i", script, "{}", "+"});
+    return runTool(QStringLiteral("find"),
+                   {dir, "-type", "f", "-exec", "grep", "-IqF", "-e", pattern, "{}", ";", "-exec", "sed", "-i",
+                    script, "{}", "+"});
 }
 
 [[nodiscard]] int opRenameUser(const QStringList &args)
