@@ -679,6 +679,10 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_Escape) {
         closeApp();
+    } else {
+        // Defer every other key to QDialog so standard handling (e.g. Enter
+        // activating the default button) is not swallowed.
+        QDialog::keyPressEvent(event);
     }
 }
 
