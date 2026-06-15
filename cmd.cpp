@@ -99,7 +99,11 @@ bool Cmd::proc(const QString &cmd, const QStringList &args, QString *output, con
         write(*input);
     }
     closeWriteChannel();
-    loop.exec();
+    // Block GUI re-entrancy while the command runs: exclude user input events so
+    // the user cannot change selections, re-trigger Apply, or close the window
+    // mid-operation. Process/timer/paint events still run, so progress updates
+    // and repaints continue; deferred input is delivered once the command ends.
+    loop.exec(QEventLoop::ExcludeUserInputEvents);
 
     if (output) {
         *output = outBuffer.trimmed();
