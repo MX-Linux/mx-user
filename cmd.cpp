@@ -100,10 +100,20 @@ bool Cmd::proc(const QString &cmd, const QStringList &args, QString *output, con
         qDebug() << cmd << args;
     }
 
+    start(cmd, args);
+    if (!waitForStarted()) {
+        // The process never started (e.g. the binary is missing or not
+        // executable): finished() will never fire, so return now instead of
+        // blocking forever in the event loop below.
+        if (output) {
+            *output = outBuffer.trimmed();
+        }
+        return false;
+    }
+
     QEventLoop loop;
     connect(this, &Cmd::done, &loop, &QEventLoop::quit);
 
-    start(cmd, args);
     if (input && !input->isEmpty()) {
         write(*input);
     }
