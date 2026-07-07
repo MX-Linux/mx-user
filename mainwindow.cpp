@@ -789,8 +789,16 @@ void MainWindow::userComboBox_activated(const QString & /*unused*/)
     bool autologin = false;
     switch (displayManager) {
     case DisplayManager::Lightdm: {
-        const QString cmd = QString("grep -qw ^autologin-user=%1 /etc/lightdm/lightdm.conf").arg(user);
-        autologin = shell->run(cmd, nullptr, nullptr, QuietMode::Yes);
+        QFile lightdmConf(QStringLiteral("/etc/lightdm/lightdm.conf"));
+        if (lightdmConf.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            const QString needle = QStringLiteral("autologin-user=%1").arg(user);
+            while (!lightdmConf.atEnd()) {
+                if (QString::fromUtf8(lightdmConf.readLine()).trimmed() == needle) {
+                    autologin = true;
+                    break;
+                }
+            }
+        }
         break;
     }
     case DisplayManager::Sddm: {
@@ -873,9 +881,14 @@ void MainWindow::buildListGroups()
         item->setCheckState(Qt::Unchecked);
         listGroups->addItem(item);
     }
-    // Check the boxes for the groups that the current user belongs to
-    const QString cmd = QString("id -nG %1").arg(userComboMembership->currentText());
-    const QString out = shell->getOut(cmd);
+    // Check the boxes for the groups that the current user belongs to. Run
+    // via an argument list (not a shell string) so the username can't be
+    // interpreted as shell syntax.
+    const QString user = userComboMembership->currentText();
+    QString out;
+    if (!user.isEmpty()) {
+        shell->proc(QStringLiteral("id"), {"-nG", user}, &out, nullptr, QuietMode::Yes);
+    }
     QStringList out_tok = out.split(' ');
     while (!out_tok.isEmpty()) {
         QString text = out_tok.takeFirst().trimmed();
