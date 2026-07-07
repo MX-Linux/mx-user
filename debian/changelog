@@ -1,3 +1,11 @@
+mx-user (26.07) mx; urgency=medium
+
+  * Lock the main window to a fixed height so the layout stays consistent
+    between tabs instead of stretching unevenly.
+  * Fix the application freezing if command fails to start.
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 06 Jul 2026 23:00:52 -0400
+
 mx-user (26.06) mx; urgency=medium
 
   * Prevent files such as databases, caches and browser data from being damaged
