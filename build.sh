@@ -26,6 +26,9 @@ set -e
 
 # Default values
 BUILD_DIR="build"
+# Debian source package name; prefixes every artifact debuild writes to ../
+DEB_SOURCE="$(sed -n 's/^Source:[[:space:]]*//p' debian/control 2>/dev/null || true)"
+DEB_SOURCE="${DEB_SOURCE:-mx-user}"
 BUILD_TYPE="Release"
 USE_CLANG=false
 CLEAN=false
@@ -80,19 +83,16 @@ if [ "$DEBIAN_BUILD" = true ]; then
 
     echo "Creating debs directory and moving debian artifacts..."
     mkdir -p debs
-    mv ../*.deb debs/ 2>/dev/null || true
-    mv ../*.changes debs/ 2>/dev/null || true
-    mv ../*.dsc debs/ 2>/dev/null || true
-    mv ../*.tar.* debs/ 2>/dev/null || true
-    mv ../*.buildinfo debs/ 2>/dev/null || true
-    mv ../*build* debs/ 2>/dev/null || true
+    # Only this package's outputs (mx-user_<version>... and its -dbgsym), never
+    # unrelated files that happen to sit in the parent directory.
+    mv ../"${DEB_SOURCE}"_* ../"${DEB_SOURCE}"-dbgsym_* debs/ 2>/dev/null || true
 
     echo "Cleaning build directory and debian artifacts..."
     rm -rf "$BUILD_DIR"
     rm -f debian/*.debhelper.log debian/*.substvars debian/files
     rm -rf debian/.debhelper/ debian/mx-user/ obj-*/
     rm -f translations/*.qm
-    rm -f ../*build* ../*.buildinfo 2>/dev/null || true
+    rm -f ../"${DEB_SOURCE}"_*.build ../"${DEB_SOURCE}"_*.buildinfo 2>/dev/null || true
 
     echo "Debian package build completed!"
     echo "Debian artifacts moved to debs/ directory"
@@ -146,7 +146,7 @@ if [ "$CLEAN" = true ]; then
     rm -f debian/*.debhelper.log debian/*.substvars debian/files
     rm -rf debian/.debhelper/ debian/mx-user/ obj-*/
     rm -f translations/*.qm
-    rm -f ../*build* ../*.buildinfo 2>/dev/null || true
+    rm -f ../"${DEB_SOURCE}"_*.build ../"${DEB_SOURCE}"_*.buildinfo 2>/dev/null || true
 fi
 
 # Create build directory
