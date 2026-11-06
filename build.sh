@@ -162,7 +162,9 @@ CMAKE_ARGS=(
 )
 
 if [ "$USE_CLANG" = true ]; then
-    CMAKE_ARGS+=(-DUSE_CLANG=ON)
+    # Passing the compiler (not just USE_CLANG) makes CMake reconfigure an
+    # existing build directory that was set up for another compiler.
+    CMAKE_ARGS+=(-DUSE_CLANG=ON -DCMAKE_CXX_COMPILER=clang++)
     echo "Using clang compiler"
 fi
 
