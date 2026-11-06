@@ -123,6 +123,37 @@ const UidRange &uidRange()
     return range;
 }
 
+// The autologin user SDDM will actually use. SDDM reads its configuration in
+// this order, later values overriding earlier ones: the system drop-ins in
+// /usr/lib/sddm/sddm.conf.d, the local drop-ins in /etc/sddm.conf.d (each
+// directory's *.conf files in alphabetical order), then /etc/sddm.conf. The
+// helper may write either /etc/sddm.conf.d/kde_settings.conf or /etc/sddm.conf,
+// so reading a single file can disagree with what was just configured.
+QString sddmAutologinUser()
+{
+    QStringList files;
+    for (const QString &dirPath : {QStringLiteral("/usr/lib/sddm/sddm.conf.d"), QStringLiteral("/etc/sddm.conf.d")}) {
+        const QDir dir(dirPath);
+        const QStringList names = dir.entryList({QStringLiteral("*.conf")}, QDir::Files | QDir::Readable, QDir::Name);
+        for (const QString &name : names) {
+            files << dir.filePath(name);
+        }
+    }
+    files << QStringLiteral("/etc/sddm.conf");
+
+    QString user;
+    for (const QString &file : std::as_const(files)) {
+        if (!QFileInfo::exists(file)) {
+            continue;
+        }
+        const QSettings conf(file, QSettings::IniFormat);
+        if (conf.contains(QStringLiteral("Autologin/User"))) {
+            user = conf.value(QStringLiteral("Autologin/User")).toString();
+        }
+    }
+    return user;
+}
+
 // The comm (executable) name of every running process, collected in a single
 // /proc scan so callers checking several candidate names don't each pay for
 // their own scan. Note this is an exact match on comm, unlike pgrep's
@@ -913,8 +944,7 @@ void MainWindow::userComboBox_activated(const QString & /*unused*/)
         break;
     }
     case DisplayManager::Sddm: {
-        QSettings sddm_settings("/etc/sddm.conf", QSettings::NativeFormat);
-        autologin = sddm_settings.value("Autologin/User").toString() == user;
+        autologin = sddmAutologinUser() == user;
         break;
     }
     case DisplayManager::Plasmalogin: {
