@@ -1,6 +1,6 @@
 # Maintainer: Adrian <adrian@mxlinux.org>
 pkgname=mx-user
-pkgver=${PKGVER:-26.07.1}
+pkgver=${PKGVER:-26.11}
 pkgrel=1
 pkgdesc="Simple user configuration tool"
 arch=('x86_64')

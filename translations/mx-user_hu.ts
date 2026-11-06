@@ -4,7 +4,7 @@
     <message>
         <location filename="../mainwindow.ui" line="26"/>
         <source>MX User Manager</source>
-        <translation>MX felhasználókezelő</translation>
+        <translation>MX Felhasználókezelő</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="62"/>
