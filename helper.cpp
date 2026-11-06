@@ -401,6 +401,28 @@ int runTool(const QString &key, const QStringList &args, const QByteArray &input
     return relayResult(runProcess(program, args, input));
 }
 
+// Run an allow-listed tool whose stdout/stderr go straight to the helper's own,
+// so the caller sees output while the tool runs (e.g. rsync progress) instead of
+// all at once when it exits. Use runTool() when output must be captured first.
+int runToolStreaming(const QString &key, const QStringList &args)
+{
+    const QString program = resolveTool(key);
+    if (program.isEmpty()) {
+        printError(QString("Command is not available: %1").arg(key));
+        return 127;
+    }
+    QProcess process;
+    process.setProcessChannelMode(QProcess::ForwardedChannels);
+    process.start(program, args);
+    if (!process.waitForStarted()) {
+        printError(QString("Failed to start %1").arg(program));
+        return 127;
+    }
+    process.closeWriteChannel();
+    process.waitForFinished(-1);
+    return process.exitStatus() == QProcess::NormalExit ? process.exitCode() : 1;
+}
+
 // --------------------------------------------------------------------------
 // Display-manager autologin configuration
 // --------------------------------------------------------------------------
@@ -727,7 +749,7 @@ int opRewriteHomePaths(const QStringList &args)
     // Preserve rsync's "copy directory contents" semantics: the source always
     // carried a trailing slash in the original call.
     rsyncArgs << (fromSafe + '/') << toSafe;
-    return runTool(QStringLiteral("rsync"), rsyncArgs);
+    return runToolStreaming(QStringLiteral("rsync"), rsyncArgs);
 }
 
 // Set `values` (key, value pairs) in every section of the INI-style file `path`
