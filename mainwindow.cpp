@@ -795,27 +795,26 @@ void MainWindow::applyRename()
 
 void MainWindow::syncDone(bool success, const CopyJob &job)
 {
-    if (success) {
-        // Destination is a browsed directory, not a managed home: just report.
-        if (job.toIsDir) {
-            syncStatusEdit->setText(job.sync ? tr("Synchronizing desktop...ok") : tr("Copying desktop...ok"));
-            syncProgressBar->setValue(syncProgressBar->maximum());
-            setCursor(QCursor(Qt::ArrowCursor));
-            return;
-        }
-
+    // A browsed directory is not a managed home: there is nothing to fix up.
+    if (success && !job.toIsDir) {
         // Fix owner of exactly the copied subtree (job.toDir is what rsync wrote).
-        shell->runHelper({"chown-home", job.toUser, job.toDir});
+        // rsync preserved the source account's ownership, so if this fails the
+        // destination user may be unable to use the copy: report the copy failed.
+        success = shell->runHelper({"chown-home", job.toUser, job.toDir});
+        if (success) {
+            // Fix "home/<from>" references for entire-home or .mozilla copies.
+            if (job.rewritePaths) {
+                shell->runHelper({"rewrite-home-paths", job.toUser, job.toDir, job.fromUser, job.toUser});
+            }
 
-        // Fix "home/<from>" references for entire-home or .mozilla copies.
-        if (job.rewritePaths) {
-            shell->runHelper({"rewrite-home-paths", job.toUser, job.toDir, job.fromUser, job.toUser});
+            if (job.entire) {
+                shell->runHelper({"remove-home-path", job.toUser, job.toDir + "/.recently-used"});
+                shell->runHelper({"clean-openoffice-locks", job.toUser, job.toDir}, nullptr, nullptr,
+                                 QuietMode::Yes);
+            }
         }
-
-        if (job.entire) {
-            shell->runHelper({"remove-home-path", job.toUser, job.toDir + "/.recently-used"});
-            shell->runHelper({"clean-openoffice-locks", job.toUser, job.toDir}, nullptr, nullptr, QuietMode::Yes);
-        }
+    }
+    if (success) {
         syncStatusEdit->setText(job.sync ? tr("Synchronizing desktop...ok") : tr("Copying desktop...ok"));
     } else {
         syncStatusEdit->setText(job.sync ? tr("Synchronizing desktop...failed") : tr("Copying desktop...failed"));

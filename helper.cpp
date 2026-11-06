@@ -663,7 +663,9 @@ int opRewriteHomePaths(const QStringList &args)
         printError(QStringLiteral("chown-home requires <user> <path under that user's home>"));
         return 1;
     }
-    return runTool(QStringLiteral("chown"), {"-R", QString("%1:%1").arg(args.at(0)), safe});
+    // "<user>:" sets the group to the user's login group, which need not share
+    // the user's name (e.g. primary group "users").
+    return runTool(QStringLiteral("chown"), {"-R", QString("%1:").arg(args.at(0)), "--", safe});
 }
 
 [[nodiscard]] int opCleanOpenOfficeLocks(const QStringList &args)
