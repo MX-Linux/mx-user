@@ -715,6 +715,15 @@ int opRewriteHomePaths(const QStringList &args)
     return 0;
 }
 
+// Escape a validated user name for use as a literal in a sed regex. Names are
+// limited to [A-Za-z0-9_-] plus an optional trailing '$', which is the only
+// regex metacharacter they can contain.
+[[nodiscard]] QString sedLiteral(const QString &user)
+{
+    QString escaped = user;
+    return escaped.replace(QLatin1Char('$'), QLatin1String("[$]"));
+}
+
 // Clear autologin only where it is set to exactly `user`; entries for other
 // accounts are left untouched.
 void clearAutologinFor(const QString &user)
@@ -722,15 +731,16 @@ void clearAutologinFor(const QString &user)
     if (QFileInfo::exists(LightdmConf)) {
         runTool(QStringLiteral("sed"),
                 {"-i", "-E",
-                 QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=%1[[:space:]]*$/d;})").arg(user),
+                 QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=%1[[:space:]]*$/d;})").arg(sedLiteral(user)),
                  LightdmConf});
     }
     const QString sddm = sddmConfFile();
     if (!sddm.isEmpty()) {
-        runTool(QStringLiteral("sed"), {"-i", QString("s/^User=%1$/User=/").arg(user), sddm});
+        runTool(QStringLiteral("sed"), {"-i", QString("s/^User=%1[[:space:]]*$/User=/").arg(sedLiteral(user)), sddm});
     }
     if (QFileInfo::exists(PlasmaConf)) {
-        runTool(QStringLiteral("sed"), {"-i", QString("s/^User=%1$/User=/").arg(user), PlasmaConf});
+        runTool(QStringLiteral("sed"),
+                {"-i", QString("s/^User=%1[[:space:]]*$/User=/").arg(sedLiteral(user)), PlasmaConf});
     }
 }
 
@@ -764,14 +774,19 @@ void clearAutologinFor(const QString &user)
     const QString newName = args.at(1);
     if (QFileInfo::exists(LightdmConf)) {
         runTool(QStringLiteral("sed"),
-                {"-i", QString("s/autologin-user=%1/autologin-user=%2/g").arg(oldName, newName), LightdmConf});
+                {"-i", "-E",
+                 QString(R"(s/^([#[:space:]]*autologin-user=)%1([[:space:]]*)$/\1%2\2/)")
+                     .arg(sedLiteral(oldName), newName),
+                 LightdmConf});
     }
     const QString sddm = sddmConfFile();
     if (!sddm.isEmpty()) {
-        runTool(QStringLiteral("sed"), {"-i", QString("s/^User=%1$/User=%2/g").arg(oldName, newName), sddm});
+        runTool(QStringLiteral("sed"),
+                {"-i", QString("s/^User=%1[[:space:]]*$/User=%2/").arg(sedLiteral(oldName), newName), sddm});
     }
     if (QFileInfo::exists(PlasmaConf)) {
-        runTool(QStringLiteral("sed"), {"-i", QString("s/^User=%1$/User=%2/g").arg(oldName, newName), PlasmaConf});
+        runTool(QStringLiteral("sed"),
+                {"-i", QString("s/^User=%1[[:space:]]*$/User=%2/").arg(sedLiteral(oldName), newName), PlasmaConf});
     }
     return 0;
 }
