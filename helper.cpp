@@ -183,6 +183,44 @@ void printError(const QString &message)
     return true;
 }
 
+// Resolve `requested` as an entry *inside* `user`'s home without following its
+// final component. Only the containing directory is symlink-resolved and must be
+// the home or lie within it; the final name is re-attached verbatim. On success,
+// *safe receives <canonical parent>/<name>.
+//
+// Use this for operations that act on the entry itself rather than on what it
+// points to (deletion): if the entry is a symlink, `rm -rf` on this path unlinks
+// the symlink instead of recursively deleting its target. The home directory
+// itself can never be returned, since the result always has a final component
+// below a contained parent.
+[[nodiscard]] bool resolveEntryWithinHome(const QString &user, const QString &requested, QString *safe)
+{
+    if (!isUserName(user) || requested.contains(QChar(u'\0')) || requested.contains('\n')
+        || requested.contains('\r')) {
+        return false;
+    }
+    const QString homeReal = QFileInfo(QStringLiteral("/home/%1").arg(user)).canonicalFilePath();
+    if (homeReal.isEmpty()) {
+        return false;
+    }
+    const QString clean = QDir::cleanPath(requested);
+    if (!clean.startsWith('/')) {
+        return false;
+    }
+    const QString name = QFileInfo(clean).fileName();
+    if (name.isEmpty() || name == QLatin1String(".") || name == QLatin1String("..")) {
+        return false;
+    }
+    const QString parentReal = QFileInfo(QFileInfo(clean).path()).canonicalFilePath();
+    if (parentReal.isEmpty() || (parentReal != homeReal && !parentReal.startsWith(homeReal + '/'))) {
+        return false;
+    }
+    if (safe) {
+        *safe = parentReal + '/' + name;
+    }
+    return true;
+}
+
 // rsync destinations are restricted to the only places the GUI is meant to copy
 // into: anywhere under /home (another user's profile) or under a removable-media
 // mount root. This is an allowlist, not a denylist — a root-run rsync (including
@@ -589,11 +627,13 @@ int opRewriteHomePaths(const QStringList &args)
 {
     // <user> <path under that user's home>
     QString safe;
-    if (args.size() != 2 || !resolveWithinHome(args.at(0), args.at(1), &safe)) {
+    // The final component is not resolved, so a symlinked entry (e.g. ~/.mozilla
+    // -> ~/Documents, or ~/.recently-used -> .) is unlinked, never its target.
+    if (args.size() != 2 || !resolveEntryWithinHome(args.at(0), args.at(1), &safe)) {
         printError(QStringLiteral("remove-home-path requires <user> <path under that user's home>"));
         return 1;
     }
-    return runTool(QStringLiteral("rm"), {"-rf", safe});
+    return runTool(QStringLiteral("rm"), {"-rf", "--", safe});
 }
 
 [[nodiscard]] int opChownHome(const QStringList &args)
