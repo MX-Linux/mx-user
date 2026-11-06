@@ -218,12 +218,8 @@ void MainWindow::refreshOptions()
     userComboBox->addItems(users);
     checkGroups->setChecked(false);
     checkMozilla->setChecked(false);
-    radioAutologinNo->setAutoExclusive(false);
-    radioAutologinNo->setChecked(false);
-    radioAutologinNo->setAutoExclusive(true);
-    radioAutologinYes->setAutoExclusive(false);
-    radioAutologinYes->setChecked(false);
-    radioAutologinYes->setAutoExclusive(true);
+    // Load the autologin state of the preselected user (also resets the radios).
+    userComboBox_activated(userComboBox->currentText());
     // Autologin options only make sense when a supported login manager is running.
     groupBox->setVisible(displayManager != DisplayManager::None);
 }
@@ -352,12 +348,15 @@ void MainWindow::applyOptions()
             QMessageBox::information(this, windowTitle(), tr("Mozilla settings were reset."));
         }
     }
-    if (radioAutologinNo->isChecked()) {
+    // Only touch the display-manager config when the choice differs from the state
+    // loaded for this user; applying an unrelated reset must not change autologin.
+    if (radioAutologinNo->isChecked() && autologinLoaded) {
         if (shell->runHelper({"autologin-disable", user})) {
+            autologinLoaded = false;
             QMessageBox::information(this, tr("Autologin options"),
                                      (tr("Autologin has been disabled for the '%1' account.").arg(user)));
         }
-    } else if (radioAutologinYes->isChecked()) {
+    } else if (radioAutologinYes->isChecked() && !autologinLoaded) {
         // The helper edits whichever DM config exists; supply the desired session
         // names so it can set them on the sddm config it chooses.
         QString kdeSession;
@@ -372,6 +371,7 @@ void MainWindow::applyOptions()
             defaultSession = QStringLiteral("plasma.desktop");
         }
         if (shell->runHelper({"autologin-enable", user, kdeSession, defaultSession})) {
+            autologinLoaded = true;
             QMessageBox::information(this, tr("Autologin options"),
                                      (tr("Autologin has been enabled for the '%1' account.").arg(user)));
         }
@@ -892,7 +892,11 @@ void MainWindow::userComboBox_activated(const QString & /*unused*/)
     radioAutologinYes->setAutoExclusive(false);
     radioAutologinYes->setChecked(false);
     radioAutologinYes->setAutoExclusive(true);
+    autologinLoaded = false;
     const QString user = userComboBox->currentText();
+    if (user.isEmpty()) {
+        return;
+    }
     bool autologin = false;
     switch (displayManager) {
     case DisplayManager::Lightdm: {
@@ -921,6 +925,7 @@ void MainWindow::userComboBox_activated(const QString & /*unused*/)
     case DisplayManager::None:
         return;
     }
+    autologinLoaded = autologin;
     radioAutologinYes->setChecked(autologin);
     radioAutologinNo->setChecked(!autologin);
 }

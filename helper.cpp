@@ -715,39 +715,14 @@ int opRewriteHomePaths(const QStringList &args)
     return 0;
 }
 
-[[nodiscard]] int opAutologinDisable(const QStringList &args)
+// Clear autologin only where it is set to exactly `user`; entries for other
+// accounts are left untouched.
+void clearAutologinFor(const QString &user)
 {
-    if (args.size() != 1 || !isUserName(args.constFirst())) {
-        printError(QStringLiteral("autologin-disable requires one valid username"));
-        return 1;
-    }
-    const QString user = args.constFirst();
     if (QFileInfo::exists(LightdmConf)) {
         runTool(QStringLiteral("sed"),
                 {"-i", "-E",
-                 QStringLiteral(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=/d;})"), LightdmConf});
-    }
-    const QString sddm = sddmConfFile();
-    if (!sddm.isEmpty()) {
-        runTool(QStringLiteral("sed"), {"-i", QString("s/^User=%1/User=/").arg(user), sddm});
-    }
-    if (QFileInfo::exists(PlasmaConf)) {
-        runTool(QStringLiteral("sed"), {"-i", QString("s/^User=%1/User=/").arg(user), PlasmaConf});
-    }
-    return 0;
-}
-
-[[nodiscard]] int opAutologinRemoveUser(const QStringList &args)
-{
-    if (args.size() != 1 || !isUserName(args.constFirst())) {
-        printError(QStringLiteral("autologin-remove-user requires one valid username"));
-        return 1;
-    }
-    const QString user = args.constFirst();
-    if (QFileInfo::exists(LightdmConf)) {
-        runTool(QStringLiteral("sed"),
-                {"-i", "-E",
-                 QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=%1$/d;})").arg(user),
+                 QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=%1[[:space:]]*$/d;})").arg(user),
                  LightdmConf});
     }
     const QString sddm = sddmConfFile();
@@ -757,6 +732,25 @@ int opRewriteHomePaths(const QStringList &args)
     if (QFileInfo::exists(PlasmaConf)) {
         runTool(QStringLiteral("sed"), {"-i", QString("s/^User=%1$/User=/").arg(user), PlasmaConf});
     }
+}
+
+[[nodiscard]] int opAutologinDisable(const QStringList &args)
+{
+    if (args.size() != 1 || !isUserName(args.constFirst())) {
+        printError(QStringLiteral("autologin-disable requires one valid username"));
+        return 1;
+    }
+    clearAutologinFor(args.constFirst());
+    return 0;
+}
+
+[[nodiscard]] int opAutologinRemoveUser(const QStringList &args)
+{
+    if (args.size() != 1 || !isUserName(args.constFirst())) {
+        printError(QStringLiteral("autologin-remove-user requires one valid username"));
+        return 1;
+    }
+    clearAutologinFor(args.constFirst());
     return 0;
 }
 
