@@ -83,6 +83,15 @@ void printError(const QString &message)
     return matchesPattern(value, QStringLiteral(R"([A-Za-z_][A-Za-z0-9_-]*[$]?)"));
 }
 
+// Escape a validated user name for use as a literal in a sed regex. Names are
+// limited to [A-Za-z0-9_-] plus an optional trailing '$', which is the only
+// regex metacharacter they can contain.
+[[nodiscard]] QString sedLiteral(const QString &user)
+{
+    QString escaped = user;
+    return escaped.replace(QLatin1Char('$'), QLatin1String("[$]"));
+}
+
 [[nodiscard]] bool isGroupName(const QString &value)
 {
     return matchesPattern(value, QStringLiteral(R"([A-Za-z0-9_][A-Za-z0-9_.-]*[$]?)"));
@@ -578,10 +587,20 @@ int opRewriteHomePaths(const QStringList &args)
     // profiles, images, ...), which `sed -i` would otherwise corrupt by treating
     // them as text. find runs sed (batched via +) only on files the grep test
     // selected.
+    //
+    // The old name must end the directory component: it has to be followed by
+    // '/', the end of the line, whitespace, a quote, or a delimiter used in
+    // config syntax (lists, key=value, URLs, markup). Anything else may continue
+    // a different directory name, so "home/alice" leaves "home/alice2",
+    // "home/alice.bak" and "home/alice+old" alone. The terminator is kept.
+    // '%' is absent because in a URL "alice%20x" names a different directory;
+    // braces are absent because find's "-exec ... +" rejects any argument other
+    // than the final one containing "{}".
     const QString pattern = QStringLiteral("home/%1").arg(args.at(2));
-    const QString script = QString("s|home/%1|home/%2|g").arg(args.at(2), args.at(3));
+    const QString script = QString(R"(s#home/%1([]/"'[:space:]:;,=<>()&?[]|$)#home/%2\1#g)")
+                               .arg(sedLiteral(args.at(2)), args.at(3));
     return runTool(QStringLiteral("find"),
-                   {dir, "-type", "f", "-exec", "grep", "-IqF", "-e", pattern, "{}", ";", "-exec", "sed", "-i",
+                   {dir, "-type", "f", "-exec", "grep", "-IqF", "-e", pattern, "{}", ";", "-exec", "sed", "-i", "-E",
                     script, "{}", "+"});
 }
 
@@ -713,15 +732,6 @@ int opRewriteHomePaths(const QStringList &args)
         runTool(QStringLiteral("sed"), {"-i", QString("s/^User=.*/User=%1/").arg(user), PlasmaConf});
     }
     return 0;
-}
-
-// Escape a validated user name for use as a literal in a sed regex. Names are
-// limited to [A-Za-z0-9_-] plus an optional trailing '$', which is the only
-// regex metacharacter they can contain.
-[[nodiscard]] QString sedLiteral(const QString &user)
-{
-    QString escaped = user;
-    return escaped.replace(QLatin1Char('$'), QLatin1String("[$]"));
 }
 
 // Clear autologin only where it is set to exactly `user`; entries for other
