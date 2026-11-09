@@ -36,6 +36,9 @@
 
 #include <grp.h>
 #include <pwd.h>
+#include <sys/stat.h>
+
+#include <cerrno>
 
 #include <vector>
 
@@ -567,6 +570,14 @@ void MainWindow::applyAdd()
         return;
     }
 
+    // adduser/useradd reuse a home directory that already exists (e.g. left
+    // behind when a user was deleted without removing it); a rollback below
+    // must never delete such a directory. Only a definite "not found" counts as
+    // absent; any other lookup error (e.g. no access to /home) keeps the home.
+    const QString expectedHome = QStringLiteral("/home/%1").arg(userNameEdit->text());
+    struct stat homeStat {};
+    const bool homeAbsent = ::lstat(QFile::encodeName(expectedHome).constData(), &homeStat) != 0 && errno == ENOENT;
+
     // The helper picks adduser/useradd, detects its option spelling, and applies
     // the groups; extra groups are only used by the useradd path, matching the
     // adduser path's reliance on the system EXTRA_GROUPS configuration.
@@ -589,8 +600,27 @@ void MainWindow::applyAdd()
         }
         QMessageBox::information(this, windowTitle(), tr("The user was added ok."));
         refresh();
-    } else if (!shell->elevationError()) {
-        QMessageBox::critical(this, windowTitle(), tr("Failed to add the user."));
+    } else {
+        // The account already exists, but without a usable password. Remove the
+        // account this call just created so the user can simply try again; if
+        // that is not possible (e.g. elevation was refused), say what was left.
+        // Its home is removed only if this call created it.
+        QStringList delUserArgs {"del-user", userNameArg};
+        const passwd *pw = getpwnam(userNameArg.toLocal8Bit().constData());
+        if (homeAbsent && pw && QString::fromLocal8Bit(pw->pw_dir) == expectedHome) {
+            delUserArgs << "--remove-home";
+        }
+        const bool removed
+            = !shell->elevationError() && shell->runHelper(delUserArgs, nullptr, nullptr, QuietMode::Yes);
+        if (removed) {
+            QMessageBox::critical(this, windowTitle(), tr("Failed to add the user."));
+        } else {
+            QMessageBox::critical(this, windowTitle(),
+                                  tr("The user %1 was created, but its password could not be set. "
+                                     "Set a password for it or delete it on the Administration tab.")
+                                      .arg(userNameArg));
+        }
+        refresh();
     }
 }
 
