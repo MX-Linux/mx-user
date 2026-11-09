@@ -34,8 +34,9 @@ package() {
 
     install -Dm755 build/mx-user "${pkgdir}/usr/bin/mx-user"
 
-    install -dm755 "${pkgdir}/usr/share/mx-user/locale"
-    install -Dm644 build/*.qm "${pkgdir}/usr/share/mx-user/locale/" 2>/dev/null || true
+    # No error suppression: a glob that matched nothing must fail the build
+    # rather than ship a package without translations.
+    install -Dm644 -t "${pkgdir}/usr/share/mx-user/locale/" build/*.qm
 
     install -dm755 "${pkgdir}/usr/lib/mx-user"
     install -Dm755 build/helper "${pkgdir}/usr/lib/mx-user/helper"
@@ -46,7 +47,7 @@ package() {
     install -Dm644 mx-user.desktop "${pkgdir}/usr/share/applications/mx-user.desktop"
     install -Dm644 debian/mx-user.1 "${pkgdir}/usr/share/man/man1/mx-user.1"
 
-    install -Dm644 icons/mx-user.png "${pkgdir}/usr/share/icons/hicolor/256x256/apps/mx-user.png"
+    install -Dm644 icons/mx-user.png "${pkgdir}/usr/share/icons/hicolor/64x64/apps/mx-user.png"
     install -Dm644 icons/mx-user.svg "${pkgdir}/usr/share/icons/hicolor/scalable/apps/mx-user.svg"
 
     install -dm755 "${pkgdir}/usr/share/doc/mx-user"
@@ -58,4 +59,6 @@ package() {
     if [ -f debian/changelog ]; then
         gzip -c debian/changelog > "${pkgdir}/usr/share/doc/mx-user/changelog.gz"
     fi
+
+    install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
