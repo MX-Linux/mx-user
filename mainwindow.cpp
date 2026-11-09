@@ -373,6 +373,16 @@ void MainWindow::applyOptions()
     }
     setCursor(QCursor(Qt::WaitCursor));
 
+    // A refused elevation is already reported by Cmd (and the tab refreshed by
+    // buttonApply_clicked); any other failure is shown with the helper's output.
+    QString output;
+    const auto reportFailure = [this, &output](const QString &title, const QString &message) {
+        if (shell->elevationError()) {
+            return;
+        }
+        QMessageBox::critical(this, title, output.isEmpty() ? message : message + "\n\n" + output);
+    };
+
     // Restore groups
     if (checkGroups->isChecked() && user != QStringLiteral("root")) {
         buildListGroups();
@@ -395,24 +405,32 @@ void MainWindow::applyOptions()
                 && isSupplementaryMember(user, adminGroup)) {
                 new_group_list << adminGroup;
             }
-            if (shell->runHelper({"set-groups", user, new_group_list.join(',')})) {
+            if (shell->runHelper({"set-groups", user, new_group_list.join(',')}, &output)) {
                 QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
+            } else {
+                reportFailure(windowTitle(), tr("Could not restore the user's group membership."));
             }
         }
     }
     // Reset Mozilla configs
     if (checkMozilla->isChecked()) {
-        if (shell->runHelper({"remove-home-path", user, home + "/.mozilla"})) {
+        if (shell->runHelper({"remove-home-path", user, home + "/.mozilla"}, &output)) {
             QMessageBox::information(this, windowTitle(), tr("Mozilla settings were reset."));
+        } else {
+            reportFailure(windowTitle(), tr("Could not reset the Mozilla settings."));
         }
     }
     // Only touch the display-manager config when the choice differs from the state
     // loaded for this user; applying an unrelated reset must not change autologin.
     if (radioAutologinNo->isChecked() && autologinLoaded) {
-        if (shell->runHelper({"autologin-disable", user})) {
+        if (shell->runHelper({"autologin-disable", user}, &output)) {
             autologinLoaded = false;
             QMessageBox::information(this, tr("Autologin options"),
                                      (tr("Autologin has been disabled for the '%1' account.").arg(user)));
+        } else {
+            reportFailure(tr("Autologin options"),
+                          tr("Autologin could not be disabled for the '%1' account.").arg(user));
+            userComboBox_activated(user); // show the actual autologin state again
         }
     } else if (radioAutologinYes->isChecked() && !autologinLoaded) {
         // The helper edits whichever DM config exists; supply the desired session
@@ -428,10 +446,14 @@ void MainWindow::applyOptions()
             }
             defaultSession = QStringLiteral("plasma.desktop");
         }
-        if (shell->runHelper({"autologin-enable", user, kdeSession, defaultSession})) {
+        if (shell->runHelper({"autologin-enable", user, kdeSession, defaultSession}, &output)) {
             autologinLoaded = true;
             QMessageBox::information(this, tr("Autologin options"),
                                      (tr("Autologin has been enabled for the '%1' account.").arg(user)));
+        } else {
+            reportFailure(tr("Autologin options"),
+                          tr("Autologin could not be enabled for the '%1' account.").arg(user));
+            userComboBox_activated(user); // show the actual autologin state again
         }
     }
     setCursor(QCursor(Qt::ArrowCursor));
