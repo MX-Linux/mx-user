@@ -568,8 +568,7 @@ void MainWindow::applyAdd()
     }
     if (!passUser->lengthOK()) {
         QMessageBox::critical(this, windowTitle(),
-                              tr("Password needs to be at least 2 characters long. Please enter a longer password "
-                                 "before proceeding."));
+                              tr("The password cannot be empty. Please enter a password before proceeding."));
         return;
     }
 
@@ -655,8 +654,7 @@ void MainWindow::applyChangePass()
     }
     if (!passChange->lengthOK()) {
         QMessageBox::critical(this, windowTitle(),
-                              tr("Password needs to be at least 2 characters long. Please enter a longer password "
-                                 "before proceeding."));
+                              tr("The password cannot be empty. Please enter a password before proceeding."));
         return;
     }
 
