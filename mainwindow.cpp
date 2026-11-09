@@ -179,6 +179,22 @@ QSet<QByteArray> runningProcessNames()
     return names;
 }
 
+// Whether `user` is listed as a supplementary member of `group`.
+bool isSupplementaryMember(const QString &user, const QString &group)
+{
+    const struct group *gr = getgrnam(group.toLocal8Bit().constData());
+    if (!gr) {
+        return false;
+    }
+    const QByteArray name = user.toLocal8Bit();
+    for (char **member = gr->gr_mem; member && *member; ++member) {
+        if (name == *member) {
+            return true;
+        }
+    }
+    return false;
+}
+
 } // namespace
 
 void MainWindow::refresh()
@@ -367,6 +383,14 @@ void MainWindow::applyOptions()
                 if (!listGroups->findItems(group, Qt::MatchExactly).isEmpty()) {
                     new_group_list << group;
                 }
+            }
+            // The admin group is a separate choice (see applyAdd) and is usually
+            // not in EXTRA_GROUPS; restoring defaults must not take away admin
+            // rights the user already has.
+            const QString adminGroup = adminGroupName();
+            if (!adminGroup.isEmpty() && !new_group_list.contains(adminGroup)
+                && isSupplementaryMember(user, adminGroup)) {
+                new_group_list << adminGroup;
             }
             if (shell->runHelper({"set-groups", user, new_group_list.join(',')})) {
                 QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
