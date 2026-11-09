@@ -1,3 +1,16 @@
+mx-user (26.11.1) mx; urgency=medium
+
+  * Restoring a user's default group memberships no longer takes away their
+    administrator (sudo) rights.
+  * When a new user's password cannot be set, remove the half-created account
+    so adding the user can simply be tried again, or say clearly that the
+    account exists without a password.
+  * Show an error with the reason when restoring groups, resetting Mozilla
+    settings or changing automatic login fails, instead of showing nothing.
+  * Correct the message shown when the password is left empty.
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 09 Nov 2026 10:00:55 -0500
+
 mx-user (26.11) mx; urgency=medium
 
   * Fix resetting Mozilla settings deleting the folder a linked Mozilla
