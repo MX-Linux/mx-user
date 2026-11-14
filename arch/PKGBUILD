@@ -10,7 +10,7 @@
 # Keep pkgver in step with debian/changelog: it names the tarball.
 
 pkgname=mx-user
-pkgver=26.11
+pkgver=26.11.1
 pkgrel=1
 pkgdesc="Simple user configuration tool"
 arch=('x86_64')
