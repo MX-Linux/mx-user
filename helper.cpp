@@ -316,6 +316,7 @@ void printError(const QString &message)
         {"deluser", {"/usr/sbin/deluser", "/sbin/deluser", "/usr/bin/deluser"}},
         {"find", {"/usr/bin/find", "/bin/find"}},
         {"gpasswd", {"/usr/bin/gpasswd", "/sbin/gpasswd", "/bin/gpasswd"}},
+        {"grep", {"/usr/bin/grep", "/bin/grep"}},
         {"groupadd", {"/usr/sbin/groupadd", "/sbin/groupadd", "/usr/bin/groupadd"}},
         {"groupdel", {"/usr/sbin/groupdel", "/sbin/groupdel", "/usr/bin/groupdel"}},
         {"groupmod", {"/usr/sbin/groupmod", "/sbin/groupmod", "/usr/bin/groupmod"}},
@@ -324,6 +325,7 @@ void printError(const QString &message)
         {"rm", {"/usr/bin/rm", "/bin/rm"}},
         {"rsync", {"/usr/bin/rsync"}},
         {"sed", {"/usr/bin/sed", "/bin/sed"}},
+        {"setpriv", {"/usr/bin/setpriv", "/bin/setpriv"}},
         {"timeout", {"/usr/bin/timeout", "/bin/timeout"}},
         {"useradd", {"/usr/sbin/useradd", "/sbin/useradd", "/usr/bin/useradd"}},
         {"userdel", {"/usr/sbin/userdel", "/sbin/userdel", "/usr/bin/userdel"}},
@@ -645,9 +647,28 @@ int opRewriteHomePaths(const QStringList &args)
     const QString pattern = QStringLiteral("home/%1").arg(args.at(2));
     const QString script = QString(R"(s#home/%1([]/"'[:space:]:;,=<>()&?[]|$)#home/%2\1#g)")
                                .arg(sedLiteral(args.at(2)), args.at(3));
-    return runTool(QStringLiteral("find"),
-                   {dir, "-type", "f", "-exec", "grep", "-IqF", "-e", pattern, "{}", ";", "-exec", "sed", "-i", "-E",
-                    script, "{}", "+"});
+
+    // Run the whole find/grep/sed pass as the owner, never as root. The tree is
+    // writable by that account, which could otherwise swap a directory for a
+    // symlink between find selecting a file and the batched `sed -i` rewriting
+    // it, and have root edit a file outside the home (e.g. /etc/passwd, which
+    // contains "home/<user>:"). As the owner, sed can only change what the owner
+    // could change anyway.
+    const passwd *pw = getpwnam(args.at(0).toLocal8Bit().constData());
+    const QString find = resolveTool(QStringLiteral("find"));
+    const QString grep = resolveTool(QStringLiteral("grep"));
+    const QString sed = resolveTool(QStringLiteral("sed"));
+    if (pw == nullptr || pw->pw_uid == 0 || find.isEmpty() || grep.isEmpty() || sed.isEmpty()) {
+        printError(QStringLiteral("rewrite-home-paths: cannot run as %1").arg(args.at(0)));
+        return 1;
+    }
+    // find needs a working directory the owner can reach; the inherited one may
+    // be the administrator's private home.
+    QDir::setCurrent(QStringLiteral("/"));
+    return runTool(QStringLiteral("setpriv"),
+                   {QStringLiteral("--reuid=%1").arg(pw->pw_uid), QStringLiteral("--regid=%1").arg(pw->pw_gid),
+                    "--init-groups", "--inh-caps=-all", "--reset-env", "--", find, dir, "-type", "f", "-exec", grep, "-IqF", "-e",
+                    pattern, "{}", ";", "-exec", sed, "-i", "-E", script, "{}", "+"});
 }
 
 [[nodiscard]] int opRenameUser(const QStringList &args)
