@@ -35,6 +35,7 @@
 #include <QStringList>
 
 #include <cstdio>
+#include <grp.h>
 #include <pwd.h>
 
 namespace
@@ -689,7 +690,11 @@ int opRewriteHomePaths(const QStringList &args)
     }
 
     // Update the GECOS/full-name field if it referenced the old name (whole word).
+    gid_t primaryGid = 0;
+    bool havePrimaryGid = false;
     if (const passwd *pw = getpwnam(newName.toLocal8Bit().constData())) {
+        primaryGid = pw->pw_gid;
+        havePrimaryGid = true;
         const QString gecos = QString::fromLocal8Bit(pw->pw_gecos);
         const QRegularExpression boundary(
             QString(R"((?<![A-Za-z0-9_-])%1(?![A-Za-z0-9_-]))").arg(QRegularExpression::escape(oldName)));
@@ -701,7 +706,13 @@ int opRewriteHomePaths(const QStringList &args)
     }
 
     // Rename the user's personal group if it shared the old name (best effort).
-    runTool(QStringLiteral("groupmod"), {"--new-name", newName, oldName});
+    // Only when it is this account's primary group: a namesake group that is not
+    // (e.g. a project group, with the account's primary group being "users")
+    // belongs to whoever uses it and keeps its name.
+    const group *gr = getgrnam(oldName.toLocal8Bit().constData());
+    if (havePrimaryGid && gr != nullptr && gr->gr_gid == primaryGid) {
+        runTool(QStringLiteral("groupmod"), {"--new-name", newName, oldName});
+    }
 
     // Fix "home/<old>" references inside the (now relocated) home directory.
     opRewriteHomePaths({newName, QStringLiteral("/home/%1").arg(newName), oldName, newName});
