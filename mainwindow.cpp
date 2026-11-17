@@ -536,7 +536,13 @@ void MainWindow::applyDesktop()
             }
         }
     });
-    syncDone(shell->runHelper({"rsync-copy", job.fromUser, fromDir, toDir, job.sync ? "sync" : "copy"}), job);
+    // For a copy into an account, the helper confines the destination to that
+    // account's home and gives it ownership of everything it writes.
+    QStringList rsyncArgs {"rsync-copy", job.fromUser, fromDir, toDir, job.sync ? "sync" : "copy"};
+    if (!job.toIsDir) {
+        rsyncArgs << job.toUser;
+    }
+    syncDone(shell->runHelper(rsyncArgs), job);
     disconnect(conn);
     for (int tab = 0; tab < Tab::MAX; ++tab) {
         tabWidget->setTabEnabled(tab, true);
@@ -869,23 +875,19 @@ void MainWindow::applyRename()
 
 void MainWindow::syncDone(bool success, const CopyJob &job)
 {
+    // Captured before any follow-up helper call replaces the output buffer.
+    const QString failureOutput = success ? QString() : shell->readAllOutput();
     // A browsed directory is not a managed home: there is nothing to fix up.
+    // Ownership of a copy into an account was already set by rsync.
     if (success && !job.toIsDir) {
-        // Fix owner of exactly the copied subtree (job.toDir is what rsync wrote).
-        // rsync preserved the source account's ownership, so if this fails the
-        // destination user may be unable to use the copy: report the copy failed.
-        success = shell->runHelper({"chown-home", job.toUser, job.toDir});
-        if (success) {
-            // Fix "home/<from>" references for entire-home or .mozilla copies.
-            if (job.rewritePaths) {
-                shell->runHelper({"rewrite-home-paths", job.toUser, job.toDir, job.fromUser, job.toUser});
-            }
+        // Fix "home/<from>" references for entire-home or .mozilla copies.
+        if (job.rewritePaths) {
+            shell->runHelper({"rewrite-home-paths", job.toUser, job.toDir, job.fromUser, job.toUser});
+        }
 
-            if (job.entire) {
-                shell->runHelper({"remove-home-path", job.toUser, job.toDir + "/.recently-used"});
-                shell->runHelper({"clean-openoffice-locks", job.toUser, job.toDir}, nullptr, nullptr,
-                                 QuietMode::Yes);
-            }
+        if (job.entire) {
+            shell->runHelper({"remove-home-path", job.toUser, job.toDir + "/.recently-used"});
+            shell->runHelper({"clean-openoffice-locks", job.toUser, job.toDir}, nullptr, nullptr, QuietMode::Yes);
         }
     }
     if (success) {
@@ -895,6 +897,13 @@ void MainWindow::syncDone(bool success, const CopyJob &job)
     }
     syncProgressBar->setValue(syncProgressBar->maximum());
     setCursor(QCursor(Qt::ArrowCursor));
+    if (!success && !shell->elevationError()) {
+        // Show why the helper refused or rsync failed: the last line of its
+        // output (earlier lines are progress updates).
+        const QStringList lines = failureOutput.split(QRegularExpression("[\\r\\n]+"), Qt::SkipEmptyParts);
+        QMessageBox::critical(this, windowTitle(),
+                              lines.isEmpty() ? tr("The copy failed.") : lines.constLast().trimmed());
+    }
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event)

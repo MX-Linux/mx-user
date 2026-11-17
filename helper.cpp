@@ -312,7 +312,6 @@ void printError(const QString &message)
     static const QHash<QString, QStringList> commands {
         {"addgroup", {"/usr/sbin/addgroup", "/sbin/addgroup", "/usr/bin/addgroup"}},
         {"adduser", {"/usr/sbin/adduser", "/sbin/adduser", "/usr/bin/adduser"}},
-        {"chown", {"/usr/bin/chown", "/bin/chown"}},
         {"delgroup", {"/usr/sbin/delgroup", "/sbin/delgroup", "/usr/bin/delgroup"}},
         {"deluser", {"/usr/sbin/deluser", "/sbin/deluser", "/usr/bin/deluser"}},
         {"find", {"/usr/bin/find", "/bin/find"}},
@@ -702,19 +701,6 @@ int opRewriteHomePaths(const QStringList &args)
     return runTool(QStringLiteral("rm"), {"-rf", "--", safe});
 }
 
-[[nodiscard]] int opChownHome(const QStringList &args)
-{
-    // <user> <path under that user's home>
-    QString safe;
-    if (args.size() != 2 || !resolveWithinHome(args.at(0), args.at(1), &safe)) {
-        printError(QStringLiteral("chown-home requires <user> <path under that user's home>"));
-        return 1;
-    }
-    // "<user>:" sets the group to the user's login group, which need not share
-    // the user's name (e.g. primary group "users").
-    return runTool(QStringLiteral("chown"), {"-R", QString("%1:").arg(args.at(0)), "--", safe});
-}
-
 [[nodiscard]] int opCleanOpenOfficeLocks(const QStringList &args)
 {
     // <user> <home dir>
@@ -729,12 +715,21 @@ int opRewriteHomePaths(const QStringList &args)
 
 [[nodiscard]] int opRsyncCopy(const QStringList &args)
 {
-    // <from-user> <from-dir under that home> <to-dir> <sync|copy>
+    // <from-user> <from-dir under that home> <to-dir> <sync|copy> [<to-user>]
+    //
+    // With <to-user>, this is a copy into that account: <to-dir> must resolve
+    // inside its home, and everything rsync writes is owned by that account. All
+    // of this is checked before anything is transferred, so a destination that
+    // links out of the home (e.g. ~/Documents -> /media/data/Documents) is
+    // refused up front rather than copied into and then left with the source
+    // account's ownership. <to-dir> must lie under an allowed destination root
+    // in both modes; without <to-user> it is a browsed directory and ownership
+    // is preserved.
     QString fromSafe;
     QString toSafe;
-    if (args.size() != 4 || !resolveWithinHome(args.at(0), args.at(1), &fromSafe)
-        || !resolveCopyDestination(args.at(2), &toSafe)) {
-        printError(QStringLiteral("rsync-copy requires <from-user> <from-dir under that home> <to-dir> <sync|copy>"));
+    if ((args.size() != 4 && args.size() != 5) || !resolveWithinHome(args.at(0), args.at(1), &fromSafe)) {
+        printError(QStringLiteral(
+            "rsync-copy requires <from-user> <from-dir under that home> <to-dir> <sync|copy> [<to-user>]"));
         return 1;
     }
     const bool sync = args.at(3) == QLatin1String("sync");
@@ -742,9 +737,38 @@ int opRewriteHomePaths(const QStringList &args)
         printError(QStringLiteral("rsync-copy: mode must be 'sync' or 'copy'"));
         return 1;
     }
+    const bool toAccount = args.size() == 5;
+    const passwd *toPw = nullptr;
+    if (toAccount) {
+        const QString &toUser = args.at(4);
+        if (!isUserName(toUser) || (toPw = getpwnam(toUser.toLocal8Bit().constData())) == nullptr) {
+            printError(QStringLiteral("rsync-copy: unknown destination account"));
+            return 1;
+        }
+        QString allowed;
+        if (!resolveCopyDestination(args.at(2), &allowed) || !resolveWithinHome(toUser, allowed, &toSafe)) {
+            printError(QStringLiteral("The destination %1 is not inside the home folder of %2 (it may link to "
+                                      "another location). Nothing was copied.")
+                           .arg(args.at(2), toUser));
+            return 1;
+        }
+    } else if (!resolveCopyDestination(args.at(2), &toSafe)) {
+        printError(QStringLiteral("rsync-copy: destination %1 is not allowed").arg(args.at(2)));
+        return 1;
+    }
+    // A destination inside the source (or the reverse) would copy a tree into
+    // itself, and in sync mode delete source files.
+    if (toSafe == fromSafe || toSafe.startsWith(fromSafe + '/') || fromSafe.startsWith(toSafe + '/')) {
+        printError(QStringLiteral("The source and destination folders overlap. Nothing was copied."));
+        return 1;
+    }
     QStringList rsyncArgs {"-a", "--info=progress2"};
     if (sync) {
         rsyncArgs << "--delete-after";
+    }
+    if (toAccount) {
+        // Numeric IDs: the account's login group need not share its name.
+        rsyncArgs << QStringLiteral("--chown=%1:%2").arg(toPw->pw_uid).arg(toPw->pw_gid);
     }
     // Preserve rsync's "copy directory contents" semantics: the source always
     // carried a trailing slash in the original call.
@@ -1015,9 +1039,6 @@ int main(int argc, char *argv[])
     }
     if (action == QLatin1String("remove-home-path")) {
         return opRemoveHomePath(rest);
-    }
-    if (action == QLatin1String("chown-home")) {
-        return opChownHome(rest);
     }
     if (action == QLatin1String("rewrite-home-paths")) {
         return opRewriteHomePaths(rest);
