@@ -34,6 +34,8 @@
 #include <QStandardPaths>
 #include <QTextEdit>
 
+#include <optional>
+
 #include <grp.h>
 #include <pwd.h>
 #include <sys/stat.h>
@@ -182,12 +184,13 @@ QSet<QByteArray> runningProcessNames()
     return names;
 }
 
-// Whether `user` is listed as a supplementary member of `group`.
-bool isSupplementaryMember(const QString &user, const QString &group)
+// Whether `user` is listed as a supplementary member of `group`; empty when the
+// group cannot be looked up, so the answer is unknown rather than "no".
+std::optional<bool> isSupplementaryMember(const QString &user, const QString &group)
 {
     const struct group *gr = getgrnam(group.toLocal8Bit().constData());
     if (!gr) {
-        return false;
+        return std::nullopt;
     }
     const QByteArray name = user.toLocal8Bit();
     for (char **member = gr->gr_mem; member && *member; ++member) {
@@ -402,7 +405,7 @@ void MainWindow::applyOptions()
             // rights the user already has.
             const QString adminGroup = adminGroupName();
             if (!adminGroup.isEmpty() && !new_group_list.contains(adminGroup)
-                && isSupplementaryMember(user, adminGroup)) {
+                && isSupplementaryMember(user, adminGroup).value_or(false)) {
                 new_group_list << adminGroup;
             }
             if (shell->runHelper({"set-groups", user, new_group_list.join(',')}, &output)) {
@@ -620,12 +623,33 @@ void MainWindow::applyAdd()
     QString userNameArg = userNameEdit->text();
     const QByteArray passwordInput = userPasswordEdit->text().toUtf8() + '\n' + userPasswordEdit->text().toUtf8() + '\n';
     if (shell->runHelper({"set-password", userNameArg}, nullptr, &passwordInput, QuietMode::Yes)) {
+        // Make the admin group match the checkbox, then confirm it does: the
+        // system defaults may already have granted it, and when they have not,
+        // this call is what grants it. An unknown membership (group lookup
+        // failed) is treated as needing the change, and then reported as
+        // unverified.
+        const bool wantAdmin = checkSudoGroup->isChecked();
+        std::optional<bool> isAdmin = wantAdmin;
         if (!adminGroup.isEmpty()) {
-            shell->runHelper({checkSudoGroup->isChecked() ? "group-add-member" : "group-remove-member", userNameArg,
-                              adminGroup},
-                             nullptr, nullptr, QuietMode::Yes);
+            if (isSupplementaryMember(userNameArg, adminGroup) != wantAdmin) {
+                shell->runHelper({wantAdmin ? "group-add-member" : "group-remove-member", userNameArg, adminGroup},
+                                 nullptr, nullptr, QuietMode::Yes);
+            }
+            isAdmin = isSupplementaryMember(userNameArg, adminGroup);
         }
-        QMessageBox::information(this, windowTitle(), tr("The user was added ok."));
+        if (!isAdmin) {
+            QMessageBox::warning(this, windowTitle(),
+                                 tr("The user was added, but its membership in the %1 group could not be verified.")
+                                     .arg(adminGroup));
+        } else if (*isAdmin != wantAdmin) {
+            QMessageBox::warning(this, windowTitle(),
+                                 wantAdmin ? tr("The user was added, but could not be added to the %1 group.")
+                                                 .arg(adminGroup)
+                                           : tr("The user was added, but could not be removed from the %1 group.")
+                                                 .arg(adminGroup));
+        } else {
+            QMessageBox::information(this, windowTitle(), tr("The user was added ok."));
+        }
         refresh();
     } else {
         // The account already exists, but without a usable password. Remove the
