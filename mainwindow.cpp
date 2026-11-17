@@ -40,6 +40,7 @@
 #include <grp.h>
 #include <pwd.h>
 #include <sys/stat.h>
+#include <unistd.h>
 
 #include <cerrno>
 
@@ -720,6 +721,11 @@ void MainWindow::applyChangePass()
 void MainWindow::applyDelete()
 {
     const QString logname = currentLogname();
+    if (logname.isEmpty()) {
+        QMessageBox::critical(this, windowTitle(),
+                              tr("Could not determine which account is logged in, so users cannot be deleted."));
+        return;
+    }
     if (logname == comboDeleteUser->currentText()) {
         QMessageBox::critical(
             this, windowTitle(),
@@ -870,6 +876,11 @@ void MainWindow::applyRename()
     // Validate data before proceeding
     // Check if selected user is in use
     const QString logname = currentLogname();
+    if (logname.isEmpty()) {
+        QMessageBox::critical(this, windowTitle(),
+                              tr("Could not determine which account is logged in, so users cannot be renamed."));
+        return;
+    }
     if (logname == old_name) {
         QMessageBox::critical(
             this, windowTitle(),
@@ -1256,13 +1267,37 @@ bool MainWindow::commandExists(const QString &command) const
     return false;
 }
 
+// The account whose session this is; empty when it cannot be determined. The
+// login UID the kernel recorded at login identifies it however the GUI was
+// started (directly, or via sudo/pkexec, possibly as another account). Without
+// one, a non-root launch is that account, and an elevated one falls back to the
+// elevation tool's record of its caller. Root is never a valid answer.
 QString MainWindow::currentLogname() const
 {
-    QString logname = QString::fromUtf8(qgetenv("SUDO_USER")).trimmed();
-    if (logname.isEmpty()) {
-        logname = QString::fromUtf8(qgetenv("LOGNAME")).trimmed();
+    const auto nameOf = [](uid_t uid) {
+        const passwd *pw = uid != 0 ? getpwuid(uid) : nullptr;
+        return pw ? QString::fromLocal8Bit(pw->pw_name) : QString();
+    };
+    QFile loginUidFile(QStringLiteral("/proc/self/loginuid"));
+    if (loginUidFile.open(QIODevice::ReadOnly)) {
+        bool ok = false;
+        const uint uid = loginUidFile.readAll().trimmed().toUInt(&ok);
+        if (ok && uid != static_cast<uint>(-1)) { // -1: no login UID recorded
+            if (const QString name = nameOf(uid); !name.isEmpty()) {
+                return name;
+            }
+        }
     }
-    return logname;
+    if (getuid() != 0) {
+        return nameOf(getuid());
+    }
+    bool ok = false;
+    const uint pkexecUid = qEnvironmentVariable("PKEXEC_UID").toUInt(&ok);
+    if (ok) {
+        return nameOf(pkexecUid);
+    }
+    const passwd *pw = getpwnam(qEnvironmentVariable("SUDO_USER").trimmed().toLocal8Bit().constData());
+    return pw ? nameOf(pw->pw_uid) : QString();
 }
 
 bool MainWindow::isExcludedCopyDestination(const QString &path) const
