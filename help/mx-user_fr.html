@@ -14,27 +14,24 @@
 
 <h2>Generalites</h2>
 
-<p>Cette application comporte 6 onglets.</p>
+<p>Cette application comporte 5 onglets.</p>
 
 <ul>
-    <li>Administration : se passe de commentaire.</li>
-    <li>Options : restaure les configurations par defaut de l'utilisateur choisi.</li>
-    <li>Copier/Synchroniser : copie ou cree un lien symbolique du dossier d'un utilisateur vers un autre. Si vous utilisez un navigateur autre qu'un navigateur Mozilla, vous devrez copier manuellement le dossier cache dans votre Home (par exemple, .opera).</li>
-    <li>Liberer de l'espace : propose plusieurs actions simples pour verifier et augmenter l'espace disque disponible.</li>
+    <li>Administration : ajouter, supprimer et renommer des utilisateurs, et changer les mots de passe.</li>
+    <li>Options : reinitialise la configuration Mozilla ou les groupes de l'utilisateur choisi, et permet de choisir s'il se connecte automatiquement.</li>
+    <li>Copier/Synchroniser : copie ou synchronise tout le dossier personnel d'un utilisateur, ses Documents, son dossier Shared ou sa configuration Mozilla vers le dossier personnel d'un autre utilisateur ou vers un dossier de votre choix. Si vous utilisez un navigateur autre qu'un navigateur Mozilla, copiez manuellement son dossier de configuration.</li>
     <li>Ajouter/Retirer des groupes : se passe de commentaire.</li>
     <li>Appartenance a un groupe : permet a l'administrateur de modifier l'acces d'un utilisateur donne aux services et aux applications.</li>
 </ul>
 
 <h2>Notes</h2>
 
-<p>Onglet Options : Restaurer les valeurs par defaut : valeurs par defaut de Xfce<br />Lorsque l'utilisateur choisit de restaurer les parametres d'origine de Xfce dans MX Linux, le contenu de deux <a href="http://www.linfo.org/etc_skel.html" target="_blank" rel="noreferrer noopener">"fichiers squelettes"</a> est copie dans le dossier personnel de l'utilisateur :</p>
+<p>Onglet Options : Restaurer les valeurs par defaut</p>
 
 <ul>
-    <li><em>/etc/skel/.config/</em>, vers <em>~/.config</em></li>
-    <li><em>/etc/skel/.gtk-2.0/</em>, vers <em>~/.gtk-2.0/</em></li>
+    <li><strong>Configurations Mozilla</strong> supprime le dossier <em>~/.mozilla</em> de l'utilisateur choisi et les profils Firefox qu'il contient : marque-pages, mots de passe enregistres, historique, extensions et parametres. <strong>Aucune sauvegarde n'est faite et la suppression est irreversible.</strong> Firefox cree un nouveau profil vide a son prochain demarrage. Pour pouvoir revenir en arriere : fermez Firefox pour cet utilisateur, copiez <em>~/.mozilla</em> en lieu sur (par exemple avec l'onglet Copier/Synchroniser vers un dossier de votre choix), puis seulement lancez la reinitialisation.</li>
+    <li><strong>Groupes</strong> remplace les groupes secondaires de l'utilisateur par les groupes supplementaires par defaut definis dans <em>/etc/adduser.conf</em>. L'appartenance au groupe administrateur (sudo ou wheel) est conservee.</li>
 </ul>
-
-<p>Aucun autre fichier n'est remplace. Si l'utilisateur change plus tard d'avis, les fichiers remplaces se trouvent dans le dossier cache <em>~/.restore</em> de son dossier personnel. Il suffit alors de recopier ces dossiers archives dans Home et d'accepter l'ecrasement.</p>
 
 <p>Licence : <a href="https://mxlinux.org/wiki/licenses/license-mx-user-manager">ici</a>.</p>
 

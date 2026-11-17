@@ -366,11 +366,15 @@ void MainWindow::applyOptions()
     }
 
     if (checkGroups->isChecked() || checkMozilla->isChecked()) {
-        int ans = QMessageBox::warning(
-            this, windowTitle(),
-            tr("The user configuration will be repaired. Please close all other applications now. When finished, "
-               "please logout or reboot. Are you sure you want to repair now?"),
-            QMessageBox::Yes, QMessageBox::No);
+        QString msg = tr("The user configuration will be repaired. Please close all other applications now. When "
+                         "finished, please logout or reboot. Are you sure you want to repair now?");
+        if (checkMozilla->isChecked()) {
+            msg.prepend(tr("The folder %1 will be deleted, with the Firefox profiles it contains (bookmarks, saved "
+                           "passwords, history and extensions). No backup is made, and this cannot be undone.")
+                            .arg(home + "/.mozilla")
+                        + "\n\n");
+        }
+        int ans = QMessageBox::warning(this, windowTitle(), msg, QMessageBox::Yes, QMessageBox::No);
         if (ans != QMessageBox::Yes) {
             return;
         }

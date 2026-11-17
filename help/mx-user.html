@@ -13,27 +13,24 @@
 
 <h2>General</h2>
 
-<p>This application has 6 tabs.</p>
+<p>This application has 5 tabs.</p>
 
 	<ul>
-		<li>Administration: self-explanatory.</li>
-		<li> Options: restore default configurations for selected user.</li>
-		<li> Copy/Sync: copies or symlinks one user’s folder to another’s. If you are using a browser other than one by Mozilla, you will need to copy by hand the hidden folder in your Home (e.g., .opera)</li>
-		<li> Free Up Space: Offers several easy actions to check and increase hard drive space.</li>
-		<li> Add/Remove Groups: self-explanatory.</li>
-		<li> Group Membership: allows root to change a given user’s access to services and applications.</li>
+		<li>Administration: add, delete and rename users, and change passwords.</li>
+		<li>Options: reset the selected user&#8217;s Mozilla configuration or group memberships, and choose whether the user logs in automatically.</li>
+		<li>Copy/Sync: copies or synchronizes a user&#8217;s whole Home, Documents, Shared folder or Mozilla configuration to another user&#8217;s Home or to a folder you choose. If you use a browser not made by Mozilla, copy its configuration folder by hand.</li>
+		<li>Add/Remove Groups: self-explanatory.</li>
+		<li>Group Membership: allows root to change a given user&#8217;s access to services and applications.</li>
 	</ul>
 
 <h2>Notes</h2>
 
-<p>Options tab: Restore Defaults: Xfce defaults<br> When the user selects to restore the original Xfce settings for MX Linux, the contents of two <a href="http://www.linfo.org/etc_skel.html" target="_blank" rel="noreferrer noopener" aria-label="&quot;skeleton file (opens in a new tab)">&#8220;skeleton file</a>s&#8221; are copied to the user&#8217;s Home:</p>
+<p>Options tab: Restore defaults</p>
 
 	<ul>
-		<li><em>/etc/skel/.config/, to ~/.config</em></li>
-		<li><em> /etc/skel/.gtk-2.0/ to ~/.gtk-2.0/</em></li>
+		<li><strong>Mozilla configs</strong> deletes the selected user&#8217;s <em>~/.mozilla</em> folder and the Firefox profiles stored in it: bookmarks, saved passwords, history, extensions and settings. <strong>No backup is made, and the deletion cannot be undone.</strong> Firefox creates a new, empty profile the next time it starts. To keep a way back: close Firefox for that user, copy <em>~/.mozilla</em> somewhere safe (for example with the Copy/Sync tab to a folder you choose), and only then reset.</li>
+		<li><strong>Group memberships</strong> replaces the user&#8217;s supplementary groups with the default extra groups configured in <em>/etc/adduser.conf</em>. Membership in the administrator group (sudo or wheel) is kept.</li>
 	</ul>
-
-<p>Other than that, no files are replaced. If at some later point the user changes his/her mind, the files that were replaced can be found in the user&#8217;s Home directory in the hidden directory ~/.restore. The user would simply need to copy those archived directories, paste them back in Home, and accept to overwrite.</p>
 
 <p>License: <a href="https://mxlinux.org/wiki/licenses/license-mx-user-manager">here</a>.</p>
 
