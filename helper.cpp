@@ -808,6 +808,60 @@ int opRewriteHomePaths(const QStringList &args)
     return runToolStreaming(QStringLiteral("rsync"), rsyncArgs);
 }
 
+// In every section of the INI-style file `path` whose header is one of
+// `sections`, replace each uncommented "key=<value>" line with an empty
+// "key=", leaving all other lines untouched. Sections are tracked at their
+// actual header lines, so comments mentioning a section and adjacent matching
+// sections are handled. The file is rewritten atomically, and only if changed.
+[[nodiscard]] bool clearIniValue(const QString &path, const QStringList &sections, const QString &key,
+                                 const QString &value)
+{
+    QFile in(path);
+    if (!in.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        printError(QStringLiteral("Cannot read %1").arg(path));
+        return false;
+    }
+    const QByteArray contents = in.readAll();
+    if (in.error() != QFileDevice::NoError) {
+        printError(QStringLiteral("Cannot read %1").arg(path)); // never rewrite from a partial read
+        return false;
+    }
+    in.close();
+    QStringList lines = QString::fromUtf8(contents).split('\n');
+    if (!lines.isEmpty() && lines.constLast().isEmpty()) {
+        lines.removeLast(); // trailing newline; re-added on write
+    }
+
+    bool inSection = false;
+    bool changed = false;
+    for (QString &line : lines) {
+        const QString t = line.trimmed();
+        if (t.startsWith('[')) {
+            inSection = sections.contains(t);
+            continue;
+        }
+        if (!inSection || t.startsWith('#') || t.startsWith(';')) {
+            continue;
+        }
+        const qsizetype eq = t.indexOf('=');
+        if (eq > 0 && t.left(eq).trimmed() == key && t.mid(eq + 1).trimmed() == value) {
+            line = key + '=';
+            changed = true;
+        }
+    }
+    if (!changed) {
+        return true;
+    }
+
+    QSaveFile out(path);
+    if (!out.open(QIODevice::WriteOnly | QIODevice::Text)
+        || out.write((lines.join('\n') + '\n').toUtf8()) < 0 || !out.commit()) {
+        printError(QStringLiteral("Cannot write %1").arg(path));
+        return false;
+    }
+    return true;
+}
+
 // Set `values` (key, value pairs) in every section of the INI-style file `path`
 // whose header is one of `sections`, preserving all other lines and comments.
 // Within a matching section, the first uncommented "key=" line is rewritten and
@@ -822,8 +876,13 @@ int opRewriteHomePaths(const QStringList &args)
         printError(QStringLiteral("Cannot read %1").arg(path));
         return false;
     }
-    QStringList lines = QString::fromUtf8(in.readAll()).split('\n');
+    const QByteArray contents = in.readAll();
+    if (in.error() != QFileDevice::NoError) {
+        printError(QStringLiteral("Cannot read %1").arg(path)); // never rewrite from a partial read
+        return false;
+    }
     in.close();
+    QStringList lines = QString::fromUtf8(contents).split('\n');
     if (!lines.isEmpty() && lines.constLast().isEmpty()) {
         lines.removeLast(); // trailing newline; re-added on write
     }
@@ -958,11 +1017,13 @@ int opRewriteHomePaths(const QStringList &args)
 [[nodiscard]] int clearAutologinFor(const QString &user)
 {
     int failed = 0;
-    if (QFileInfo::exists(LightdmConf)) {
-        failed |= runTool(QStringLiteral("sed"),
-                {"-i", "-E",
-                 QString(R"(/^[[]Seat(Defaults|:[*])[]]/,/[[]/{/^[[:space:]]*autologin-user=%1[[:space:]]*$/d;})").arg(sedLiteral(user)),
-                 LightdmConf});
+    // Set an explicit empty value rather than deleting the line: lightdm.conf is
+    // read after the lightdm.conf.d drop-ins, so a deleted key would let an
+    // autologin-user set in a drop-in take effect again.
+    if (QFileInfo::exists(LightdmConf)
+        && !clearIniValue(LightdmConf, {QStringLiteral("[Seat:*]"), QStringLiteral("[SeatDefaults]")},
+                          QStringLiteral("autologin-user"), user)) {
+        failed = 1;
     }
     // Clear the user in every local SDDM file, since any of them may be the one
     // that wins; then confirm SDDM no longer resolves to this user.
