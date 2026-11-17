@@ -143,6 +143,32 @@ void printError(const QString &message)
     return true;
 }
 
+// The canonical home of `user`, which must be /home/<user>: every operation
+// here assumes that layout. If the account database records a different home,
+// an old /home/<user> may be a leftover, and acting on it would change the
+// wrong files; such accounts are refused. Empty on refusal.
+[[nodiscard]] QString canonicalHome(const QString &user)
+{
+    const QString expected = QStringLiteral("/home/%1").arg(user);
+    const passwd *pw = getpwnam(user.toLocal8Bit().constData());
+    if (pw == nullptr) {
+        printError(QStringLiteral("Unknown account: %1").arg(user));
+        return {};
+    }
+    const QString recorded = QString::fromLocal8Bit(pw->pw_dir);
+    const QString homeReal = QFileInfo(expected).canonicalFilePath();
+    if (!homeReal.isEmpty() && QFileInfo(recorded).canonicalFilePath() == homeReal) {
+        return homeReal;
+    }
+    if (QDir::cleanPath(recorded) != expected) {
+        printError(QStringLiteral("The home folder of %1 is %2, not %3; this layout is not supported.")
+                       .arg(user, recorded, expected));
+    } else {
+        printError(QStringLiteral("The home folder %1 does not exist.").arg(expected));
+    }
+    return {};
+}
+
 // Resolve `requested` against `user`'s home (/home/<user>), following symlinks,
 // and confirm the result is the home itself or strictly inside it. On success,
 // *safe receives the canonical, symlink-resolved path (no trailing slash).
@@ -159,9 +185,9 @@ void printError(const QString &message)
         || requested.contains('\r')) {
         return false;
     }
-    const QString homeReal = QFileInfo(QStringLiteral("/home/%1").arg(user)).canonicalFilePath();
+    const QString homeReal = canonicalHome(user);
     if (homeReal.isEmpty()) {
-        return false; // the user's home must exist
+        return false;
     }
     const QString clean = QDir::cleanPath(requested);
     if (!clean.startsWith('/')) {
@@ -211,7 +237,7 @@ void printError(const QString &message)
         || requested.contains('\r')) {
         return false;
     }
-    const QString homeReal = QFileInfo(QStringLiteral("/home/%1").arg(user)).canonicalFilePath();
+    const QString homeReal = canonicalHome(user);
     if (homeReal.isEmpty()) {
         return false;
     }
@@ -759,9 +785,20 @@ int opRewriteHomePaths(const QStringList &args)
     // is preserved.
     QString fromSafe;
     QString toSafe;
-    if ((args.size() != 4 && args.size() != 5) || !resolveWithinHome(args.at(0), args.at(1), &fromSafe)) {
+    if ((args.size() != 4 && args.size() != 5) || !isUserName(args.at(0))
+        || (args.size() == 5 && !isUserName(args.at(4)))) {
         printError(QStringLiteral(
             "rsync-copy requires <from-user> <from-dir under that home> <to-dir> <sync|copy> [<to-user>]"));
+        return 1;
+    }
+    // Check the account homes first and stop at once: their message explains an
+    // unsupported layout and must be the last line (the GUI shows only that).
+    if (canonicalHome(args.at(0)).isEmpty() || (args.size() == 5 && canonicalHome(args.at(4)).isEmpty())) {
+        return 1;
+    }
+    if (!resolveWithinHome(args.at(0), args.at(1), &fromSafe)) {
+        printError(QStringLiteral("The source %1 is not inside the home folder of %2. Nothing was copied.")
+                       .arg(args.at(1), args.at(0)));
         return 1;
     }
     const bool sync = args.at(3) == QLatin1String("sync");
@@ -770,13 +807,18 @@ int opRewriteHomePaths(const QStringList &args)
         return 1;
     }
     const bool toAccount = args.size() == 5;
-    const passwd *toPw = nullptr;
+    uid_t toUid = 0;
+    gid_t toGid = 0;
     if (toAccount) {
         const QString &toUser = args.at(4);
-        if (!isUserName(toUser) || (toPw = getpwnam(toUser.toLocal8Bit().constData())) == nullptr) {
-            printError(QStringLiteral("rsync-copy: unknown destination account"));
+        // IDs are copied out: the static passwd buffer is reused by later lookups.
+        const passwd *toPw = getpwnam(toUser.toLocal8Bit().constData());
+        if (toPw == nullptr || toPw->pw_uid == 0) {
+            printError(QStringLiteral("rsync-copy: invalid destination account"));
             return 1;
         }
+        toUid = toPw->pw_uid;
+        toGid = toPw->pw_gid;
         QString allowed;
         if (!resolveCopyDestination(args.at(2), &allowed) || !resolveWithinHome(toUser, allowed, &toSafe)) {
             printError(QStringLiteral("The destination %1 is not inside the home folder of %2 (it may link to "
@@ -800,7 +842,7 @@ int opRewriteHomePaths(const QStringList &args)
     }
     if (toAccount) {
         // Numeric IDs: the account's login group need not share its name.
-        rsyncArgs << QStringLiteral("--chown=%1:%2").arg(toPw->pw_uid).arg(toPw->pw_gid);
+        rsyncArgs << QStringLiteral("--chown=%1:%2").arg(toUid).arg(toGid);
     }
     // Preserve rsync's "copy directory contents" semantics: the source always
     // carried a trailing slash in the original call.
