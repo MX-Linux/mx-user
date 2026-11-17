@@ -67,7 +67,7 @@ public:
     void applyMembership();
     void applyOptions();
     void applyRename();
-    void buildListGroups();
+    bool buildListGroups();
     void buildListGroupsToRemove();
     void refresh();
     void refreshAdd();
@@ -119,6 +119,8 @@ private:
     QStringList users;
     DisplayManager displayManager = DisplayManager::None;
     bool autologinLoaded = false; // autologin state read for the user selected in userComboBox
+    bool groupNamesLoaded = false; // listGroups holds every group in /etc/group
+    bool membershipLoaded = false; // listGroups holds the complete membership of userComboMembership's user
     class PassEdit *passChange;
     class PassEdit *passUser;
     void setConnections();

@@ -31,6 +31,7 @@
 #include <QRegularExpression>
 #include <QScreen>
 #include <QSet>
+#include <QSignalBlocker>
 #include <QStandardPaths>
 #include <QTextEdit>
 
@@ -388,9 +389,13 @@ void MainWindow::applyOptions()
 
     // Restore groups
     if (checkGroups->isChecked() && user != QStringLiteral("root")) {
+        // Only the list of existing group names is used here (listGroups'
+        // memberships are for the Group Membership tab's user).
         buildListGroups();
         QStringList extra_groups_list = defaultExtraGroups();
-        if (extra_groups_list.isEmpty()) {
+        if (!groupNamesLoaded) {
+            reportFailure(windowTitle(), tr("Could not read the system groups. Group membership was not restored."));
+        } else if (extra_groups_list.isEmpty()) {
             QMessageBox::information(this, windowTitle(),
                                      tr("No default extra groups are configured on this system."));
         } else {
@@ -402,16 +407,26 @@ void MainWindow::applyOptions()
             }
             // The admin group is a separate choice (see applyAdd) and is usually
             // not in EXTRA_GROUPS; restoring defaults must not take away admin
-            // rights the user already has.
+            // rights the user already has. If that membership cannot be read,
+            // nothing is restored rather than risk removing it.
             const QString adminGroup = adminGroupName();
-            if (!adminGroup.isEmpty() && !new_group_list.contains(adminGroup)
-                && isSupplementaryMember(user, adminGroup).value_or(false)) {
-                new_group_list << adminGroup;
+            std::optional<bool> keepAdmin = false;
+            if (!adminGroup.isEmpty() && !new_group_list.contains(adminGroup)) {
+                keepAdmin = isSupplementaryMember(user, adminGroup);
             }
-            if (shell->runHelper({"set-groups", user, new_group_list.join(',')}, &output)) {
-                QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
+            if (!keepAdmin) {
+                reportFailure(windowTitle(), tr("Could not read the members of the %1 group. Group membership was "
+                                                "not restored.")
+                                                 .arg(adminGroup));
             } else {
-                reportFailure(windowTitle(), tr("Could not restore the user's group membership."));
+                if (*keepAdmin) {
+                    new_group_list << adminGroup;
+                }
+                if (shell->runHelper({"set-groups", user, new_group_list.join(',')}, &output)) {
+                    QMessageBox::information(this, windowTitle(), tr("User group membership was restored."));
+                } else {
+                    reportFailure(windowTitle(), tr("Could not restore the user's group membership."));
+                }
             }
         }
     }
@@ -826,6 +841,9 @@ void MainWindow::applyGroup()
 
 void MainWindow::applyMembership()
 {
+    if (!membershipLoaded) {
+        return; // never replace the memberships with a list that was not fully read
+    }
     QStringList groups;
     for (int i = 0; i < listGroups->count(); ++i) {
         auto *item = listGroups->item(i);
@@ -990,7 +1008,7 @@ void MainWindow::setConnections()
     connect(entireRadioButton, &QRadioButton::clicked, this, &MainWindow::entireRadioButton_clicked);
     connect(fromUserComboBox, &QComboBox::textActivated, this, &MainWindow::fromUserComboBox_activated);
     connect(groupNameEdit, &QLineEdit::textEdited, this, &MainWindow::groupNameEdit_textEdited);
-    connect(listGroups, &QListWidget::itemChanged, this, [this] { buttonApply->setEnabled(true); });
+    connect(listGroups, &QListWidget::itemChanged, this, [this] { buttonApply->setEnabled(membershipLoaded); });
     connect(mozillaRadioButton, &QRadioButton::clicked, this, &MainWindow::mozillaRadioButton_clicked);
     connect(radioAutologinNo, &QRadioButton::clicked, this, &MainWindow::radioAutologinNo_clicked);
     connect(radioAutologinYes, &QRadioButton::clicked, this, &MainWindow::radioAutologinYes_clicked);
@@ -1100,28 +1118,43 @@ void MainWindow::groupNameEdit_textEdited()
 
 void MainWindow::userComboMembership_activated(const QString & /*unused*/)
 {
-    buildListGroups();
-    buttonApply->setEnabled(true);
+    const bool loaded = buildListGroups();
+    buttonApply->setEnabled(loaded);
+    if (!loaded && !userComboMembership->currentText().isEmpty()) {
+        QMessageBox::warning(this, windowTitle(),
+                             tr("The group memberships of %1 could not be read, so they cannot be changed.")
+                                 .arg(userComboMembership->currentText()));
+    }
     if (userComboMembership->currentText() == tr("none")) {
         refresh();
     }
 }
 
-void MainWindow::buildListGroups()
+// Fill listGroups with every group, checking those the selected user belongs
+// to. Returns whether that membership is complete; applying an incomplete list
+// would strip the user of the groups that could not be read (e.g. sudo).
+bool MainWindow::buildListGroups()
 {
+    const QSignalBlocker blocker(listGroups); // itemChanged would enable Apply
+    membershipLoaded = false;
+    groupNamesLoaded = false;
     listGroups->clear();
     // Read /etc/group and add all the groups in the listGroups
     QStringList groups;
     QFile groupFile(QStringLiteral("/etc/group"));
     if (groupFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        while (!groupFile.atEnd()) {
-            const QString line = QString::fromUtf8(groupFile.readLine());
-            const QString name = line.section(':', 0, 0).trimmed();
-            if (!name.isEmpty()) {
-                groups << name;
+        const QByteArray contents = groupFile.readAll();
+        // A read error leaves a partial list, which is treated like no list.
+        if (groupFile.error() == QFileDevice::NoError) {
+            for (const QByteArray &line : contents.split('\n')) {
+                const QString name = QString::fromUtf8(line).section(':', 0, 0).trimmed();
+                if (!name.isEmpty()) {
+                    groups << name;
+                }
             }
         }
     }
+    groupNamesLoaded = !groups.isEmpty();
     groups.sort();
     for (const QString &group : groups) {
         auto *item = new QListWidgetItem;
@@ -1132,7 +1165,7 @@ void MainWindow::buildListGroups()
     // Check the boxes for the groups that the current user belongs to
     // (primary and supplementary, same set `id -nG` reports).
     const QString user = userComboMembership->currentText();
-    if (!user.isEmpty()) {
+    if (groupNamesLoaded && !user.isEmpty()) {
         const QByteArray userLocal8Bit = user.toLocal8Bit();
         if (const passwd *pw = getpwnam(userLocal8Bit.constData())) {
             int ngroups = 32;
@@ -1148,17 +1181,23 @@ void MainWindow::buildListGroups()
             // it would offer gid 0 (root) as if the user belonged to it.
             if (ret != -1) {
                 gids.resize(static_cast<size_t>(ngroups));
+                bool complete = true;
                 for (gid_t gid : gids) {
                     if (const struct group *gr = getgrgid(gid)) {
                         auto list = listGroups->findItems(QString::fromLocal8Bit(gr->gr_name), Qt::MatchExactly);
                         while (!list.isEmpty()) {
                             list.takeFirst()->setCheckState(Qt::Checked);
                         }
+                    } else {
+                        complete = false;
                     }
                 }
+                membershipLoaded = complete;
             }
         }
     }
+    listGroups->setEnabled(membershipLoaded);
+    return membershipLoaded;
 }
 
 void MainWindow::buildListGroupsToRemove()
