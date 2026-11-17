@@ -62,7 +62,6 @@ PassEdit::PassEdit(QLineEdit *master, QLineEdit *slave, int min, QObject *parent
     master->setClearButtonEnabled(true);
     slave->setClearButtonEnabled(true);
     master->installEventFilter(this);
-    master->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(master, &QLineEdit::textChanged, this, &PassEdit::masterTextChanged);
     connect(slave, &QLineEdit::textChanged, this, &PassEdit::slaveTextChanged);
     if (min == 0) {
@@ -70,7 +69,9 @@ PassEdit::PassEdit(QLineEdit *master, QLineEdit *slave, int min, QObject *parent
     }
 
     generate(); // Pre-load the generator
+    // Without a dictionary there is no suggestion to add: keep the standard menu.
     if (!gentext.isEmpty()) {
+        master->setContextMenuPolicy(Qt::CustomContextMenu);
         connect(master, &QWidget::customContextMenuRequested, this, &PassEdit::masterContextMenu);
     }
 
