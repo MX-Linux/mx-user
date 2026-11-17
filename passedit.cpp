@@ -23,13 +23,13 @@
 #include <QDebug>
 #include <QFile>
 #include <QMenu>
+#include <QRandomGenerator>
 #include <QString>
 #include <QStringList>
 
 #include <algorithm>
 #include <cmath>
 #include <cstring>
-#include <random>
 
 #ifndef WITH_ZXCVBN
 #define WITH_ZXCVBN 0
@@ -113,7 +113,9 @@ void PassEdit::generate() noexcept
     const int genmax = master->maxLength();
     do {
         if (pos >= words.count()) {
-            std::shuffle(words.begin(), words.end(), std::mt19937(std::random_device()()));
+            // The OS CSPRNG, not a Mersenne Twister seeded with 32 bits, which
+            // would cap every suggestion from this shuffle at 2^32 possibilities.
+            std::shuffle(words.begin(), words.end(), *QRandomGenerator::system());
             pos = 0;
         }
         const QString &word = words.at(pos);
