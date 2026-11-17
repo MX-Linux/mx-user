@@ -44,6 +44,7 @@ struct CopyJob
 {
     QString fromUser;
     QString toUser;
+    QString fromDir;           // rsync source, under fromUser's home
     QString toDir;             // final rsync destination, including any subdirectory
     bool toIsDir = false;      // destination is a browsed directory, not a user account
     bool entire = false;       // entire-home copy (enables ~/.recently-used and lock cleanup)

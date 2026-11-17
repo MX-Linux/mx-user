@@ -544,6 +544,7 @@ void MainWindow::applyDesktop()
     CopyJob job;
     job.fromUser = fromUserComboBox->currentText();
     job.toUser = toUserComboBox->currentText();
+    job.fromDir = fromDir;
     job.toDir = toDir;
     job.toIsDir = toUserComboBox->currentText().contains('/');
     job.entire = entireRadioButton->isChecked();
@@ -968,9 +969,20 @@ void MainWindow::syncDone(bool success, const CopyJob &job)
     // A browsed directory is not a managed home: there is nothing to fix up.
     // Ownership of a copy into an account was already set by rsync.
     if (success && !job.toIsDir) {
-        // Fix "home/<from>" references for entire-home or .mozilla copies.
+        // Fix "home/<from>" references for entire-home or .mozilla copies, only in
+        // the files that came from the source.
         if (job.rewritePaths) {
-            shell->runHelper({"rewrite-home-paths", job.toUser, job.toDir, job.fromUser, job.toUser});
+            QString rewriteOutput;
+            if (!shell->runHelper({"rewrite-home-paths", job.toUser, job.toDir, job.fromUser, job.toUser, job.fromDir},
+                                  &rewriteOutput)
+                && !shell->elevationError()) {
+                // The copy itself succeeded; only the path fix-up did not.
+                const QString msg = tr("The files were copied, but references to /home/%1 in them could not be "
+                                       "changed to /home/%2.")
+                                        .arg(job.fromUser, job.toUser);
+                QMessageBox::warning(this, windowTitle(),
+                                     rewriteOutput.isEmpty() ? msg : msg + "\n\n" + rewriteOutput);
+            }
         }
 
         if (job.entire) {

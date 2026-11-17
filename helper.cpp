@@ -357,6 +357,7 @@ void printError(const QString &message)
         {"useradd", {"/usr/sbin/useradd", "/sbin/useradd", "/usr/bin/useradd"}},
         {"userdel", {"/usr/sbin/userdel", "/sbin/userdel", "/usr/bin/userdel"}},
         {"usermod", {"/usr/sbin/usermod", "/sbin/usermod", "/usr/bin/usermod"}},
+        {"xargs", {"/usr/bin/xargs", "/bin/xargs"}},
     };
     return commands;
 }
@@ -649,12 +650,18 @@ const QString PlasmaConf = QStringLiteral("/etc/plasmalogin.conf.d/autologin.con
 
 int opRewriteHomePaths(const QStringList &args)
 {
-    // <owner-user> <dir under owner's home> <old-user> <new-user>:
-    // rewrite "home/<old>" -> "home/<new>" in files under <dir>.
+    // <owner-user> <dir under owner's home> <old-user> <new-user> [<source-dir under old-user's home>]:
+    // rewrite "home/<old>" -> "home/<new>" in files under <dir>. With a source
+    // dir (the copy that filled <dir>), only files with a counterpart there are
+    // rewritten, so the owner's own files that were not part of the copy keep
+    // their contents.
     QString dir;
-    if (args.size() != 4 || !resolveWithinHome(args.at(0), args.at(1), &dir) || !isUserName(args.at(2))
-        || !isUserName(args.at(3))) {
-        printError(QStringLiteral("rewrite-home-paths requires <owner-user> <dir under that home> <old-user> <new-user>"));
+    QString sourceDir;
+    if ((args.size() != 4 && args.size() != 5) || !resolveWithinHome(args.at(0), args.at(1), &dir)
+        || !isUserName(args.at(2)) || !isUserName(args.at(3))
+        || (args.size() == 5 && !resolveWithinHome(args.at(2), args.at(4), &sourceDir))) {
+        printError(QStringLiteral("rewrite-home-paths requires <owner-user> <dir under that home> <old-user> "
+                                  "<new-user> [<source-dir under the old user's home>]"));
         return 1;
     }
     // Only rewrite text files that actually contain the old path. The `grep -I`
@@ -692,10 +699,62 @@ int opRewriteHomePaths(const QStringList &args)
     // find needs a working directory the owner can reach; the inherited one may
     // be the administrator's private home.
     QDir::setCurrent(QStringLiteral("/"));
-    return runTool(QStringLiteral("setpriv"),
-                   {QStringLiteral("--reuid=%1").arg(pw->pw_uid), QStringLiteral("--regid=%1").arg(pw->pw_gid),
-                    "--init-groups", "--inh-caps=-all", "--reset-env", "--", find, dir, "-type", "f", "-exec", grep, "-IqF", "-e",
-                    pattern, "{}", ";", "-exec", sed, "-i", "-E", script, "{}", "+"});
+    const QStringList asOwner {QStringLiteral("--reuid=%1").arg(pw->pw_uid),
+                               QStringLiteral("--regid=%1").arg(pw->pw_gid),
+                               "--init-groups",
+                               "--inh-caps=-all",
+                               "--reset-env",
+                               "--"};
+    if (sourceDir.isEmpty()) {
+        return runTool(QStringLiteral("setpriv"), asOwner
+                           + QStringList {find, dir, "-type", "f", "-exec", grep, "-IqF", "-e", pattern, "{}", ";",
+                                          "-exec", sed, "-i", "-E", script, "{}", "+"});
+    }
+
+    // Candidates: <dir>/<path> for every regular file under the source. Only
+    // names are read here (as root, find -P never follows symlinks); opening and
+    // editing the candidates happens as the owner, like the find above. Names
+    // stay raw bytes throughout, so non-UTF-8 filenames are matched exactly.
+    const QString xargs = resolveTool(QStringLiteral("xargs"));
+    const QString setpriv = resolveTool(QStringLiteral("setpriv"));
+    if (xargs.isEmpty() || setpriv.isEmpty()) {
+        printError(QStringLiteral("rewrite-home-paths: xargs or setpriv is not available"));
+        return 1;
+    }
+    const ProcessResult listed = runProcess(find, {"-P", sourceDir, "-type", "f", "-printf", "%P\\0"});
+    if (!listed.started || listed.exitStatus != QProcess::NormalExit || listed.exitCode != 0) {
+        writeAndFlush(stderr, listed.standardError);
+        printError(QStringLiteral("rewrite-home-paths: could not list the copied files"));
+        return 1;
+    }
+    const QByteArray destPrefix = QFile::encodeName(dir) + '/';
+    QByteArray candidates;
+    for (const QByteArray &rel : listed.standardOutput.split('\0')) {
+        if (!rel.isEmpty()) {
+            candidates += destPrefix + rel + '\0';
+        }
+    }
+    // grep lists the candidates that are text and contain the old path (missing
+    // ones are skipped silently; its exit status only reflects that); sed then
+    // rewrites exactly those.
+    const ProcessResult matches = runProcess(setpriv, asOwner + QStringList {xargs, "-0", "-r", grep, "-lIZsF",
+                                                                            "-e", pattern, "--"},
+                                             candidates);
+    // xargs exits 0 when every grep matched and 123 when some did not (or a
+    // candidate was missing); anything else means setpriv, xargs or grep could
+    // not run, and the partial list is not trusted.
+    if (!matches.started || matches.exitStatus != QProcess::NormalExit
+        || (matches.exitCode != 0 && matches.exitCode != 123)) {
+        writeAndFlush(stderr, matches.standardError);
+        printError(QStringLiteral("rewrite-home-paths: could not search the copied files"));
+        return 1;
+    }
+    if (matches.standardOutput.isEmpty()) {
+        return 0;
+    }
+    return relayResult(
+        runProcess(setpriv, asOwner + QStringList {xargs, "-0", "-r", sed, "-i", "-E", script, "--"},
+                   matches.standardOutput));
 }
 
 [[nodiscard]] int opRenameUser(const QStringList &args)
