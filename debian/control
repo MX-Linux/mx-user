@@ -13,6 +13,7 @@ Package: mx-user
 Architecture: any
 Depends: adduser,
          libzxcvbn0,
+         pkexec | policykit-1,
          rsync,
          ${misc:Depends},
          ${shlibs:Depends}
