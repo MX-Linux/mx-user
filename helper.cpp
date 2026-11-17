@@ -965,51 +965,83 @@ int opRewriteHomePaths(const QStringList &args)
     return user;
 }
 
+// Create `path` (and its directory) as an empty 0644 file if it does not exist.
+// An existing file, including one another tool creates meanwhile, is left as is.
+[[nodiscard]] bool ensureConfigFile(const QString &path)
+{
+    if (QFileInfo::exists(path)) {
+        return true;
+    }
+    QFile file(path);
+    if (QDir().mkpath(QFileInfo(path).path()) && file.open(QIODevice::WriteOnly | QIODevice::NewOnly)) {
+        if (file.setPermissions(QFileDevice::ReadOwner | QFileDevice::WriteOwner | QFileDevice::ReadGroup
+                                | QFileDevice::ReadOther)) {
+            return true;
+        }
+    } else if (QFileInfo::exists(path)) {
+        return true;
+    }
+    printError(QStringLiteral("Cannot create %1").arg(path));
+    return false;
+}
+
 [[nodiscard]] int opAutologinEnable(const QStringList &args)
 {
-    // <user> <kde-session> <default-session>
-    if (args.size() != 3 || !isUserName(args.at(0)) || !isSessionToken(args.at(1)) || !isSessionToken(args.at(2))) {
-        printError(QStringLiteral("autologin-enable requires <user> <kde-session> <default-session>"));
+    // <user> <kde-session> <default-session> <lightdm|sddm|plasmalogin>
+    static const QStringList managers {QStringLiteral("lightdm"), QStringLiteral("sddm"),
+                                       QStringLiteral("plasmalogin")};
+    if (args.size() != 4 || !isUserName(args.at(0)) || !isSessionToken(args.at(1)) || !isSessionToken(args.at(2))
+        || !managers.contains(args.at(3))) {
+        printError(QStringLiteral(
+            "autologin-enable requires <user> <kde-session> <default-session> <lightdm|sddm|plasmalogin>"));
         return 1;
     }
     const QString user = args.at(0);
     const QString kdeSession = args.at(1);
     const QString defaultSession = args.at(2);
+    const QString manager = args.at(3);
 
-    // Edit every display-manager config that exists, adding the section/keys
-    // when missing. Configs are never created from scratch: with none present
-    // there is nothing to enable, which is reported rather than claimed done.
-    bool configured = false;
-    bool ok = true;
-    if (QFileInfo::exists(LightdmConf)) {
-        configured = true;
-        ok &= setIniValues(LightdmConf, {QStringLiteral("[Seat:*]"), QStringLiteral("[SeatDefaults]")},
-                           {{QStringLiteral("autologin-user"), user}});
+    // Only the running display manager (detected by the GUI) is configured:
+    // editing a leftover config of another one would report success while the
+    // active one still asks for a password. Its config is created if missing.
+    if (manager == QLatin1String("lightdm")) {
+        if (!ensureConfigFile(LightdmConf)) {
+            return 1;
+        }
+        return setIniValues(LightdmConf, {QStringLiteral("[Seat:*]"), QStringLiteral("[SeatDefaults]")},
+                            {{QStringLiteral("autologin-user"), user}})
+            ? 0
+            : 1;
     }
-    const QString sddm = sddmConfFile();
-    if (!sddm.isEmpty()) {
-        configured = true;
+    if (manager == QLatin1String("sddm")) {
+        // Without kde_settings.conf or sddm.conf, use sddm.conf: SDDM reads it
+        // last, after every drop-in.
+        QString sddm = sddmConfFile();
+        if (sddm.isEmpty()) {
+            sddm = SddmConf;
+            if (!ensureConfigFile(sddm)) {
+                return 1;
+            }
+        }
         QList<QPair<QString, QString>> values {{QStringLiteral("User"), user}};
         const QString session = sddm == SddmKdeConf ? kdeSession : defaultSession;
         if (!session.isEmpty()) {
             values.append({QStringLiteral("Session"), session});
         }
-        ok &= setIniValues(sddm, {QStringLiteral("[Autologin]")}, values);
-        QString source;
-        if (ok && sddmEffectiveUser(&source) != user) {
-            printError(QStringLiteral("SDDM autologin is overridden by %1; autologin was not enabled").arg(source));
-            ok = false;
+        if (!setIniValues(sddm, {QStringLiteral("[Autologin]")}, values)) {
+            return 1;
         }
+        QString source;
+        if (sddmEffectiveUser(&source) != user) {
+            printError(QStringLiteral("SDDM autologin is overridden by %1; autologin was not enabled").arg(source));
+            return 1;
+        }
+        return 0;
     }
-    if (QFileInfo::exists(PlasmaConf)) {
-        configured = true;
-        ok &= setIniValues(PlasmaConf, {QStringLiteral("[Autologin]")}, {{QStringLiteral("User"), user}});
-    }
-    if (!configured) {
-        printError(QStringLiteral("No display-manager configuration file found; autologin was not enabled"));
+    if (!ensureConfigFile(PlasmaConf)) {
         return 1;
     }
-    return ok ? 0 : 1;
+    return setIniValues(PlasmaConf, {QStringLiteral("[Autologin]")}, {{QStringLiteral("User"), user}}) ? 0 : 1;
 }
 
 // Clear autologin only where it is set to exactly `user`; entries for other

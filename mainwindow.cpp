@@ -456,8 +456,22 @@ void MainWindow::applyOptions()
             userComboBox_activated(user); // show the actual autologin state again
         }
     } else if (radioAutologinYes->isChecked() && !autologinLoaded) {
-        // The helper edits whichever DM config exists; supply the desired session
-        // names so it can set them on the sddm config it chooses.
+        // The helper configures only the running display manager; supply the
+        // desired session names so it can set them on the sddm config it chooses.
+        QString manager;
+        switch (displayManager) {
+        case DisplayManager::Lightdm:
+            manager = QStringLiteral("lightdm");
+            break;
+        case DisplayManager::Sddm:
+            manager = QStringLiteral("sddm");
+            break;
+        case DisplayManager::Plasmalogin:
+            manager = QStringLiteral("plasmalogin");
+            break;
+        case DisplayManager::None:
+            break; // the autologin options are hidden
+        }
         QString kdeSession;
         QString defaultSession;
         if (qEnvironmentVariable("XDG_CURRENT_DESKTOP") == QLatin1String("KDE")) {
@@ -469,7 +483,7 @@ void MainWindow::applyOptions()
             }
             defaultSession = QStringLiteral("plasma.desktop");
         }
-        if (shell->runHelper({"autologin-enable", user, kdeSession, defaultSession}, &output)) {
+        if (shell->runHelper({"autologin-enable", user, kdeSession, defaultSession, manager}, &output)) {
             autologinLoaded = true;
             QMessageBox::information(this, tr("Autologin options"),
                                      (tr("Autologin has been enabled for the '%1' account.").arg(user)));
