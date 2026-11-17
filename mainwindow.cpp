@@ -757,8 +757,18 @@ void MainWindow::applyDelete()
         }
         const bool deleted = shell->runHelper(delUserArgs);
         if (deleted) {
-            shell->runHelper({"autologin-remove-user", username});
-            QMessageBox::information(this, windowTitle(), tr("The user has been deleted."));
+            QString cleanupOutput;
+            if (shell->runHelper({"autologin-remove-user", username}, &cleanupOutput)) {
+                QMessageBox::information(this, windowTitle(), tr("The user has been deleted."));
+            } else {
+                // The account is gone either way; say what was left behind.
+                const QString msg
+                    = tr("The user has been deleted, but automatic login for %1 could not be removed from the "
+                         "display manager configuration.")
+                          .arg(username);
+                QMessageBox::warning(this, windowTitle(),
+                                     cleanupOutput.isEmpty() ? msg : msg + "\n\n" + cleanupOutput);
+            }
         } else if (!shell->elevationError()) {
             QMessageBox::critical(this, windowTitle(), tr("Failed to delete the user."));
         }
@@ -924,9 +934,16 @@ void MainWindow::applyRename()
     }
 
     // Change autologin name (Xfce and KDE)
-    shell->runHelper({"autologin-rename", old_name, new_name});
-
-    QMessageBox::information(this, windowTitle(), tr("The user was renamed."));
+    QString cleanupOutput;
+    if (shell->runHelper({"autologin-rename", old_name, new_name}, &cleanupOutput)) {
+        QMessageBox::information(this, windowTitle(), tr("The user was renamed."));
+    } else {
+        // The account is renamed either way; say what was left behind.
+        const QString msg = tr("The user was renamed, but automatic login could not be updated from %1 to %2 in the "
+                               "display manager configuration.")
+                                .arg(old_name, new_name);
+        QMessageBox::warning(this, windowTitle(), cleanupOutput.isEmpty() ? msg : msg + "\n\n" + cleanupOutput);
+    }
     refresh();
 }
 
