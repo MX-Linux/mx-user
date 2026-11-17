@@ -4,6 +4,8 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 APPNAME="$(basename "$PROJECT_DIR")"
+# Everything below works on paths relative to this directory.
+cd "$SCRIPT_DIR" || exit 1
 
 echodo() {
   echo "${@}"
@@ -31,13 +33,33 @@ if [ -z "$(grep minimum_perc .tx/config)" ]; then
         echo "minimum_perc = 25" >> .tx/config
 fi
 
-# Remove existing translations
-find . -type f -name '*.ts' -not -name '*en.ts' -delete
-
-# Get all translations
-if command -v tx >/dev/null; then
-   echodo tx pull -r antix-development.$APPNAME --all
+# Replace the translations with a fresh pull. The existing catalogs are moved
+# aside first, so languages no longer on Transifex are dropped, and are put
+# back if the pull fails.
+if ! command -v tx >/dev/null; then
+   echo "Error: the Transifex client (tx) is not installed; translations were not updated."
+   exit 1
 fi
+# The backup lives in this directory, so moving is a rename on the same
+# filesystem; any failure or interruption before the pull succeeds restores it.
+BACKUP_DIR="$(mktemp -d "$SCRIPT_DIR/.translations-backup.XXXXXX")" || exit 1
+PULLING=0
+restore_translations() {
+   echo "Error: translations were not updated; restoring the previous ones."
+   # Live catalogs are partial downloads only once the backup is complete.
+   if [ "$PULLING" = 1 ]; then
+      find . -maxdepth 1 -type f -name '*.ts' -not -name '*en.ts' -delete
+   fi
+   find "$BACKUP_DIR" -maxdepth 1 -type f -exec mv -t . {} +
+   rmdir "$BACKUP_DIR"
+}
+trap 'exit 1' INT TERM # the EXIT trap restores
+trap 'restore_translations' EXIT
+find . -maxdepth 1 -type f -name '*.ts' -not -name '*en.ts' -exec mv -t "$BACKUP_DIR" {} + || exit 1
+PULLING=1
+echodo tx pull -r antix-development.$APPNAME --all || exit 1
+trap - EXIT INT TERM
+rm -rf "$BACKUP_DIR"
 
 # en_US duplicates the English source catalog and should not be shipped.
 rm -f "${APPNAME}_en_US.ts"
